@@ -1,5 +1,5 @@
 // Quiz: jednokrotny wybór, wpisywanie wzoru/równania z klawiatury chemicznej i układanie z klocków.
-// Typy pytań: choice | formula | equation | blocks | match
+// Typy pytań: choice | formula | equation | blocks | match | balance
 // Tryb opts.exam: bez podpowiedzi i bez informacji o poprawności w trakcie, wynik dopiero na końcu.
 
 import { h, shuffle } from './dom.js';
@@ -8,15 +8,17 @@ import { record } from './leitner.js';
 import { createChemKeyboard } from './chemkeyboard.js';
 import { createBlocks } from './blocks.js';
 import { createMatch } from './match.js';
+import { createBalance } from './balance.js';
 import { equationsMatch, formulasMatch, userBalanceReport } from './chem.js';
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E'];
-export const TYPED_TYPES = ['formula', 'equation', 'blocks', 'match'];
+export const TYPED_TYPES = ['formula', 'equation', 'blocks', 'match', 'balance'];
 
 /** Poprawna odpowiedź jako HTML (do podsumowań). */
 export function correctHtml(q) {
   if (q.type === 'choice') return richText(q.options[q.answer]);
   if (q.type === 'blocks') return formatFormula(q.tokens.join(' '));
+  if (q.type === 'balance') return formatFormula(q.eq);
   if (q.type === 'match') return q.pairs.map(([l, r]) => `${richText(l)} → <strong>${richText(r)}</strong>`).join('<br>');
   return formatFormula(q.answer);
 }
@@ -125,7 +127,7 @@ export function runQuiz(root, questions, opts = {}) {
       if (!ctl.ready()) return;
       const val = ctl.value();
       let ok;
-      if (q.type === 'match') ok = ctl.correct();
+      if (q.type === 'match' || q.type === 'balance') ok = ctl.correct();
       else if (q.type === 'formula') ok = formulasMatch(val, q.answer, q.accept || []);
       else if (q.type === 'equation') ok = equationsMatch(val, q.answer);
       else ok = equationsMatch(val, q.tokens.join(' '));
@@ -139,9 +141,14 @@ export function runQuiz(root, questions, opts = {}) {
       if (kb) kb.hideKeys();
       resolve(cur, ok, feedback, compare(q, val, ok));
     };
-    check = h('button', { class: q.type === 'blocks' || q.type === 'match' ? 'btn big' : 'btn kb-submit', type: 'button', disabled: true, onClick: submit }, exam ? (idx + 1 >= queue.length ? 'Zakończ sprawdzian' : 'Zapisz i dalej →') : 'Sprawdź');
+    check = h('button', { class: q.type === 'blocks' || q.type === 'match' || q.type === 'balance' ? 'btn big' : 'btn kb-submit', type: 'button', disabled: true, onClick: submit }, exam ? (idx + 1 >= queue.length ? 'Zakończ sprawdzian' : 'Zapisz i dalej →') : 'Sprawdź');
 
-    if (q.type === 'match') {
+    if (q.type === 'balance') {
+      const bl = createBalance({ eq: q.eq, showAtoms: !exam && !opts.noHints });
+      check.disabled = false; // można od razu sprawdzić (domyślnie współczynniki 1)
+      ctl = { value: bl.userEquation, ready: () => true, lock: (ok) => bl.reveal(ok), correct: bl.correct, isBalanced: bl.isBalanced };
+      parts.body = h('div', null, bl.el, h('div', { class: 'btn-row' }, check));
+    } else if (q.type === 'match') {
       const mt = createMatch({ pairs: q.pairs, extra: q.extra || [], onChange: () => (check.disabled = !mt.full()) });
       ctl = { value: () => '', ready: mt.full, lock: (ok) => mt.reveal(ok), correct: mt.correct };
       parts.body = h('div', null, mt.el, h('div', { class: 'btn-row' }, check));
@@ -176,7 +183,7 @@ export function runQuiz(root, questions, opts = {}) {
         const r = userBalanceReport(val);
         if (!r.parsed) box.append(h('p', { class: 'muted' }, 'Nie udało się odczytać Twojego zapisu jako równania (sprawdź strzałkę i plusy).'));
         else if (!r.ok) box.append(h('p', { class: 'muted' }, 'W Twoim zapisie nie zgadza się bilans: ' + r.diffs.join('; ') + '.'));
-        else box.append(h('p', { class: 'muted' }, 'Twój zapis się bilansuje, ale to nie ta odpowiedź, o którą pytamy.'));
+        else box.append(h('p', { class: 'muted' }, q.type === 'balance' ? 'Atomy się zgadzają, ale współczynniki powinny być najmniejszymi liczbami całkowitymi.' : 'Twój zapis się bilansuje, ale to nie ta odpowiedź, o którą pytamy.'));
       }
     }
     return box;

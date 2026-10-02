@@ -50,3 +50,7 @@ Z zeszytu: NaOH – substancja stała, biała, dobrze rozpuszczalna (wydziela si
 - Odczyn zasadowy roztworów obu substancji (wynika z działów o dysocjacji i wskaźnikach).
 - **Rozpuszczalność Ca(OH)₂:** zeszyt mówi „średnio rozpuszczalny”, a jednocześnie zapisuje CaCl₂ + 2NaOH → Ca(OH)₂↓. W aplikacji obie rzeczy są zgodne z zeszytem; w karcie o wodorotlenkach trudno rozpuszczalnych dopisałem wyjaśnienie, dlaczego Ca(OH)₂ może się wytrącić.
 - **Mg(OH)₂:** w kartach o wodorotlenkach trudno rozpuszczalnych wymieniam Mg(OH)₂ jako trudno rozpuszczalny (osad biały), a w dziale o dysocjacji zasady to „wodorotlenki metali 1. i 2. grupy z wyjątkiem berylu” (jak w zeszycie). Magnez jest w 2. grupie, więc te dwa zdania się gryzą. Dlatego nie ma pytań każących zapisywać reakcję tworzenia Mg(OH)₂. Czy w zakresie sprawdzianu magnez to wyjątek?
+
+## Bilansowanie równań (dział 07)
+- Dziesięć podstawowych reakcji do ćwiczenia (spalanie metali w tlenie, reakcje z chlorem, synteza wody i amoniaku: np. 4Al + 3O₂ → 2Al₂O₃) pochodzi z wiedzy z klasy 7–8, nie z zeszytu. Czy pasują do zakresu sprawdzianu?
+- Zasada „współczynniki mają być najmniejszymi liczbami całkowitymi” jest egzekwowana: zapis zbilansowany, ale nieskrócony (np. 4Na + 4H₂O → 4NaOH + 2H₂), aplikacja uznaje za błędny i wyjaśnia dlaczego. Jeśli nauczycielka takiego zapisu nie odrzuca, można to złagodzić.

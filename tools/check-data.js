@@ -121,7 +121,7 @@ for (const e of equations) {
 
 // ---------- pytania ----------
 const questions = readJson('data/questions.json') || [];
-const TYPES = new Set(['choice', 'formula', 'equation', 'blocks', 'match']);
+const TYPES = new Set(['choice', 'formula', 'equation', 'blocks', 'match', 'balance']);
 const stats = { byTopic: {}, byLevel: {}, byType: {} };
 for (const q of questions) {
   const w = `question ${q.id}`;
@@ -165,6 +165,19 @@ for (const q of questions) {
       if ((q.extra || []).some((x) => q.tokens.includes(x))) err(w, 'extra: klocek-pułapka powtarza poprawny klocek');
       if (pool.length > 10) err(w, 'blocks: za dużo klocków (max 10)');
     }
+  }
+  if (q.type === 'balance') {
+    try {
+      const p = parseEquation(q.eq);
+      const r = checkBalance(p);
+      if (!r.ok) err(w, `eq niezbilansowane: ${r.diffs.join('; ')}`);
+      const cs = [...p.left, ...p.right].map((s) => s.coef);
+      const g = cs.reduce((a, b) => { while (b) [a, b] = [b, a % b]; return a; });
+      if (g !== 1) err(w, `współczynniki nie są najmniejsze (NWD = ${g}): ${q.eq}`);
+      if (Math.max(...cs) > 9) err(w, 'współczynnik > 9 (przyciski sięgają 9)');
+      if (Math.max(...cs) === 1) err(w, 'wszystkie współczynniki równe 1 – nic do bilansowania');
+      if (p.left.length + p.right.length > 6) err(w, 'za dużo składników (max 6)');
+    } catch (e) { err(w, `eq: ${e.message}`); }
   }
   if (q.type === 'match') {
     if (!Array.isArray(q.pairs) || q.pairs.length < 2 || q.pairs.length > 6) err(w, 'match: pairs (2–6 par)');

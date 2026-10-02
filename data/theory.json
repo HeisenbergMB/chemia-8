@@ -59,6 +59,12 @@
       "desc": "Właściwości fizyczne, chemiczne i zastosowania."
     },
     {
+      "id": "bilansowanie",
+      "title": "Bilansowanie równań",
+      "status": "active",
+      "desc": "Współczynniki, indeksy i liczenie atomów po obu stronach."
+    },
+    {
       "id": "podstawy",
       "title": "Podstawy z klas 7–8",
       "status": "soon",
@@ -388,6 +394,52 @@
       "body": "**Wodorotlenek sodu:** produkcja mydła i środków czyszczących (np. do udrażniania rur), produkcja papieru.\n**Wodorotlenek wapnia:** zaprawa murarska, pobielanie ścian, odkwaszanie gleby (wapnowanie).",
       "examples": [],
       "tip": "Zastosowania zapamiętaj parami: mydło – $NaOH$, zaprawa murarska – $Ca(OH)2$."
+    },
+    {
+      "id": "t-bl-01",
+      "topic": "bilansowanie",
+      "title": "Po co bilansujemy równania?",
+      "body": "W reakcji chemicznej atomy się nie tworzą i nie znikają, tylko łączą się inaczej. Dlatego po obu stronach równania musi być **tyle samo atomów każdego pierwiastka**.\nWyrównujemy je **współczynnikami**, czyli liczbami stojącymi **przed** wzorem.",
+      "examples": [
+        "2Na + 2H2O -> 2NaOH + H2↑"
+      ],
+      "tip": "Współczynnik mnoży cały wzór: $2H2O$ to 4 atomy wodoru i 2 atomy tlenu."
+    },
+    {
+      "id": "t-bl-02",
+      "topic": "bilansowanie",
+      "title": "Współczynnik czy indeks?",
+      "body": "**Współczynnik** stoi przed wzorem i pokazuje, ile jest cząsteczek. Przy bilansowaniu wolno zmieniać tylko współczynniki.\n**Indeks** (mała cyfra przy symbolu) opisuje budowę związku. Zmiana indeksu zmienia substancję, więc jej nie wolno robić.\nPrzykład: $2H2O$ to dwie cząsteczki wody, a $H2O2$ to już inna substancja.",
+      "examples": [],
+      "tip": "Nigdy nie dopisuj ani nie zmieniaj indeksów, żeby „dopasować” równanie."
+    },
+    {
+      "id": "t-bl-03",
+      "topic": "bilansowanie",
+      "title": "Bilansowanie krok po kroku",
+      "body": "Przykład: $!Na + H2O -> NaOH + H2$.\n**1.** Policz atomy po obu stronach: po lewej 1 Na, 2 H, 1 O; po prawej 1 Na, 3 H, 1 O.\n**2.** Zacznij od pierwiastka, którego jest najwięcej lub który stoi w jednym związku z każdej strony. Tu wodór: 2 po lewej i 3 po prawej, więc potrzeba wspólnej wielokrotności 6, a w praktyce $2H2O$ i $2NaOH$.\n**3.** Wyrównaj resztę: $2Na$.\n**4.** Sprawdź wszystkie pierwiastki: $2Na + 2H2O -> 2NaOH + H2$.",
+      "examples": [
+        "2Na + 2H2O -> 2NaOH + H2↑"
+      ],
+      "tip": "Na końcu zawsze policz atomy każdego pierwiastka jeszcze raz."
+    },
+    {
+      "id": "t-bl-04",
+      "topic": "bilansowanie",
+      "title": "Parzysta i nieparzysta liczba atomów",
+      "body": "Gdy po jednej stronie jest 2 atomy tlenu, a po drugiej 3, szukaj wspólnej wielokrotności (tu 6): wtedy po obu stronach będzie po 6 atomów.\nPrzykład: $!Al + O2 -> Al2O3$. Tlen: 2 i 3, więc bierzemy $3O2$ (6 atomów) i $2Al2O3$ (6 atomów). Teraz glin: po prawej 4, więc $4Al$.",
+      "examples": [
+        "4Al + 3O2 -> 2Al2O3"
+      ],
+      "tip": "Współczynniki mają być najmniejszymi liczbami całkowitymi (np. nie $4Na + 4H2O -> 4NaOH + 2H2$, jeśli wystarczy $2Na + 2H2O -> 2NaOH + H2$)."
+    },
+    {
+      "id": "t-bl-05",
+      "topic": "bilansowanie",
+      "title": "Jak sprawdzić wynik?",
+      "body": "Po wpisaniu współczynników policz każdy pierwiastek po lewej i po prawej stronie. Jeśli gdzieś się nie zgadza, popraw współczynnik **przy tym związku, w którym ten pierwiastek stoi**.\nW aplikacji możesz kliknąć „Pokaż bilans atomów” i zobaczyć tabelę z ✓ i ✗. Po sprawdzeniu aplikacja wskaże, który współczynnik jest błędny.",
+      "examples": [],
+      "tip": "Zaczynaj od pierwiastków, które występują w jednym związku po każdej stronie, a wodór i tlen zostaw na koniec."
     }
   ],
   "flash": [
@@ -774,6 +826,66 @@
       "topic": "wlasciwosci",
       "front": "Jak pracować z zasadami?",
       "back": "w okularach i rękawicach ochronnych"
+    },
+    {
+      "id": "f-bl-01",
+      "topic": "bilansowanie",
+      "front": "Co wolno zmieniać przy bilansowaniu?",
+      "back": "Tylko współczynniki (liczby przed wzorem)."
+    },
+    {
+      "id": "f-bl-02",
+      "topic": "bilansowanie",
+      "front": "Czego nie wolno zmieniać?",
+      "back": "Indeksów w wzorach."
+    },
+    {
+      "id": "f-bl-03",
+      "topic": "bilansowanie",
+      "front": "Co oznacza współczynnik?",
+      "back": "Liczbę cząsteczek (mnoży cały wzór)."
+    },
+    {
+      "id": "f-bl-04",
+      "topic": "bilansowanie",
+      "front": "Ile atomów H i O w $2H2O$?",
+      "back": "4 atomy H i 2 atomy O"
+    },
+    {
+      "id": "f-bl-05",
+      "topic": "bilansowanie",
+      "front": "Po co bilansujemy?",
+      "back": "Po obu stronach musi być tyle samo atomów każdego pierwiastka."
+    },
+    {
+      "id": "f-bl-06",
+      "topic": "bilansowanie",
+      "front": "$!Na + H2O -> NaOH + H2$ po zbilansowaniu",
+      "back": "$2Na + 2H2O -> 2NaOH + H2↑$"
+    },
+    {
+      "id": "f-bl-07",
+      "topic": "bilansowanie",
+      "front": "$!Ca + H2O -> Ca(OH)2 + H2$ po zbilansowaniu",
+      "back": "$Ca + 2H2O -> Ca(OH)2 + H2↑$"
+    },
+    {
+      "id": "f-bl-08",
+      "topic": "bilansowanie",
+      "front": "$!Al + O2 -> Al2O3$ po zbilansowaniu",
+      "back": "$4Al + 3O2 -> 2Al2O3$"
+    },
+    {
+      "id": "f-bl-09",
+      "topic": "bilansowanie",
+      "front": "Jakie mają być współczynniki?",
+      "back": "Najmniejsze liczby całkowite."
+    },
+    {
+      "id": "f-bl-10",
+      "topic": "bilansowanie",
+      "front": "Ile atomów O w $3Ca(OH)2$?",
+      "back": "6 atomów O"
     }
   ]
 }

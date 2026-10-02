@@ -11,7 +11,7 @@ import { renderLab } from './lab.js';
 import { renderIndicators, renderGuess } from './indicators.js';
 import { buildExam, EXAM_SIZE } from './exam.js';
 
-const APP_VERSION = '1.7.0'; // trzymaj zgodnie z VERSION w sw.js
+const APP_VERSION = '1.8.0'; // trzymaj zgodnie z VERSION w sw.js
 
 const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [], experiments: [], indicators: null };
 const main = document.getElementById('main');

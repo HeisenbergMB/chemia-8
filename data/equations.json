@@ -28,5 +28,15 @@
   {"id": "e-027", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "Ba(OH)2 -> Ba^2+ + 2OH^-"},
   {"id": "e-028", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "Sr(OH)2 -> Sr^2+ + 2OH^-"},
   {"id": "e-029", "topic": "doswiadczenia", "kind": "doswiadczenia", "eq": "CaO + H2O -> Ca(OH)2"},
-  {"id": "e-030", "topic": "doswiadczenia", "kind": "doswiadczenia", "eq": "CO2 + Ca(OH)2 -> CaCO3↓ + H2O"}
+  {"id": "e-030", "topic": "doswiadczenia", "kind": "doswiadczenia", "eq": "CO2 + Ca(OH)2 -> CaCO3↓ + H2O"},
+  {"id": "e-031", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "2H2 + O2 -> 2H2O"},
+  {"id": "e-032", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "2Mg + O2 -> 2MgO"},
+  {"id": "e-033", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "4Na + O2 -> 2Na2O"},
+  {"id": "e-034", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "4Al + 3O2 -> 2Al2O3"},
+  {"id": "e-035", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "N2 + 3H2 -> 2NH3"},
+  {"id": "e-036", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "2Al + 3Cl2 -> 2AlCl3"},
+  {"id": "e-037", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "2Fe + 3Cl2 -> 2FeCl3"},
+  {"id": "e-038", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "2K + Cl2 -> 2KCl"},
+  {"id": "e-039", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "2Cu + O2 -> 2CuO"},
+  {"id": "e-040", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "4Fe + 3O2 -> 2Fe2O3"}
 ]

@@ -624,3 +624,22 @@ input[type="date"], input[type="text"], input[type="file"] {
 .per-topic { list-style: none; margin: 0.4rem 0 1rem; padding: 0; display: grid; gap: 0.6rem; }
 .per-topic li { display: grid; grid-template-columns: 1fr auto; gap: 0.2rem 1rem; }
 .per-topic .progress { grid-column: 1 / -1; }
+
+/* ---------- bilansowanie ---------- */
+.bal-eq { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; gap: 0.6rem 0.5rem; padding: 0.4rem 0 0.2rem; }
+.bal-op { align-self: center; font-size: 1.6rem; color: var(--muted); padding: 0 0.2rem; margin-top: 0.4rem; }
+.bal-item { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; padding: 0.5rem 0.4rem 0.6rem; border: 1px solid var(--line); border-radius: 14px; background: var(--surface-2); min-width: 7.5rem; box-shadow: var(--shadow-sm); }
+.bal-item.ok { border-color: var(--ok); background: var(--ok-soft); }
+.bal-item.bad { border-color: var(--bad); background: var(--bad-soft); }
+.bal-stepper { display: flex; align-items: center; gap: 0.3rem; }
+.bal-btn { width: 48px; height: 48px; font-size: 1.6rem; line-height: 1; font-weight: 600; background: var(--surface-3); border: 1px solid #3d4d5f; border-bottom-width: 3px; border-radius: 12px; color: var(--ink); cursor: pointer; }
+.bal-btn:active:not([disabled]) { transform: translateY(1px); background: #384a5e; }
+.bal-btn[disabled] { opacity: 0.35; cursor: default; }
+.bal-coef { min-width: 2rem; text-align: center; font-size: 1.7rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--primary); }
+.bal-formula { font-size: 1.35rem; }
+.bal-mark { font-size: 0.85rem; font-weight: 650; color: var(--bad); }
+.bal-mark.ok { color: var(--ok); }
+.atom-table { border-collapse: collapse; margin: 0.8rem auto 0; min-width: 320px; }
+.atom-table th, .atom-table td { padding: 0.4rem 0.9rem; text-align: left; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.atom-table thead th { font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+.atom-table tr.bad td, .atom-table tr.bad th { color: var(--bad); font-weight: 650; }
