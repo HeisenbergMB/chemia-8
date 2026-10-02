@@ -15,7 +15,7 @@
     {
       "id": "dysocjacja",
       "title": "Dysocjacja jonowa zasad",
-      "status": "soon",
+      "status": "active",
       "desc": "Kationy metalu, aniony wodorotlenkowe i rola wody."
     },
     {
@@ -169,6 +169,56 @@
         "Cr(OH)3 – wodorotlenek chromu(III)"
       ],
       "tip": "Rzymska cyfra w nawiasie to wartościowość metalu, np. żelazo(III) = $Fe(OH)3$."
+    },
+    {
+      "id": "t-dy-01",
+      "topic": "dysocjacja",
+      "title": "Czym jest dysocjacja jonowa?",
+      "body": "Dysocjacja jonowa (elektrolityczna) to **rozpad substancji na jony** pod wpływem wody.\n**Kationy** to jony naładowane dodatnio, **aniony** to jony naładowane ujemnie.\nSubstancje, które się tak rozpadają, nazywamy elektrolitami. Roztwór z jonami przewodzi prąd elektryczny.",
+      "examples": [],
+      "tip": "Cząsteczka jako całość jest obojętna, więc ładunki dodatnie i ujemne po rozpadzie muszą się równoważyć."
+    },
+    {
+      "id": "t-dy-02",
+      "topic": "dysocjacja",
+      "title": "Dysocjacja zasad",
+      "body": "Zasady to wodorotlenki rozpuszczalne w wodzie. Są to wodorotlenki metali **1. i 2. grupy** układu okresowego, z wyjątkiem berylu.\nPodczas dysocjacji zasada rozpada się na **kation metalu** i **aniony wodorotlenkowe** $OH^-$.\nWzór ogólny: **$Me(OH)n -H2O-> Me^n+ + nOH^-$**\nn to wartościowość metalu: tyle jest grup $OH$ i tyle ładunków dodatnich na kationie.",
+      "examples": [
+        "NaOH -H2O-> Na^+ + OH^-",
+        "KOH -H2O-> K^+ + OH^-",
+        "LiOH -H2O-> Li^+ + OH^-"
+      ],
+      "tip": "Nad strzałką piszemy $H2O$, bo to woda powoduje rozpad."
+    },
+    {
+      "id": "t-dy-03",
+      "topic": "dysocjacja",
+      "title": "Metale 2. grupy: dwa ładunki, dwa aniony",
+      "body": "Metal II-wartościowy ma w kationie ładunek 2+, a w cząsteczce są dwie grupy $OH$. Dlatego przy $OH^-$ stoi współczynnik 2.\nSuma ładunków po prawej: $2+$ oraz $2 · (1−)$ daje 0, czyli tyle, ile miała cząsteczka.",
+      "examples": [
+        "Ca(OH)2 -H2O-> Ca^2+ + 2OH^-",
+        "Ba(OH)2 -H2O-> Ba^2+ + 2OH^-",
+        "Sr(OH)2 -H2O-> Sr^2+ + 2OH^-"
+      ],
+      "tip": "Współczynnik 2 przed $OH^-$ zapisujemy z przodu, nie w indeksie: $2OH^-$, a nie $OH2^-$."
+    },
+    {
+      "id": "t-dy-04",
+      "topic": "dysocjacja",
+      "title": "Rola cząsteczek wody",
+      "body": "Cząsteczka wody ma jeden biegun lekko dodatni (przy atomach wodoru) i jeden lekko ujemny (przy atomie tlenu).\nCząsteczki wody zbliżają się do kryształu zasady: biegunem ujemnym do jonów dodatnich, a dodatnim do jonów ujemnych. W ten sposób **wyrywają jony z kryształu** i otaczają je ze wszystkich stron.\nJony otoczone cząsteczkami wody swobodnie poruszają się w roztworze.",
+      "examples": [],
+      "tip": "Bez wody (np. w suchym kryształe) jony tkwią w sieci krystalicznej i dysocjacja nie zachodzi."
+    },
+    {
+      "id": "t-dy-05",
+      "topic": "dysocjacja",
+      "title": "Zapis dysocjacji krok po kroku",
+      "body": "Przykład: $Ca(OH)2$.\n**1.** Po lewej wzór zasady: $Ca(OH)2$.\n**2.** Strzałka z wodą nad nią.\n**3.** Kation metalu: wapń ma wartościowość II, więc $Ca^2+$.\n**4.** Aniony wodorotlenkowe: dwie grupy $OH$, więc $2OH^-$.\n**5.** Sprawdź ładunki: $2+$ i $2 · (1−)$ dają 0.",
+      "examples": [
+        "Ca(OH)2 -H2O-> Ca^2+ + 2OH^-"
+      ],
+      "tip": "Najczęstszy błąd: kation $Ca^+$ zamiast $Ca^2+$. Ładunek kationu = wartościowość metalu."
     }
   ],
   "flash": [
@@ -303,6 +353,66 @@
       "topic": "wodorotlenki-trudne",
       "front": "Co znaczy (III) w nazwie?",
       "back": "wartościowość żelaza"
+    },
+    {
+      "id": "f-dy-01",
+      "topic": "dysocjacja",
+      "front": "Co to dysocjacja jonowa?",
+      "back": "Rozpad substancji na jony pod wpływem wody."
+    },
+    {
+      "id": "f-dy-02",
+      "topic": "dysocjacja",
+      "front": "Kation – jaki ładunek?",
+      "back": "dodatni (+)"
+    },
+    {
+      "id": "f-dy-03",
+      "topic": "dysocjacja",
+      "front": "Anion – jaki ładunek?",
+      "back": "ujemny (−)"
+    },
+    {
+      "id": "f-dy-04",
+      "topic": "dysocjacja",
+      "front": "Anion zasad",
+      "back": "$OH^-$ – anion wodorotlenkowy"
+    },
+    {
+      "id": "f-dy-05",
+      "topic": "dysocjacja",
+      "front": "Wzór ogólny dysocjacji zasady",
+      "back": "$Me(OH)n -H2O-> Me^n+ + nOH^-$"
+    },
+    {
+      "id": "f-dy-06",
+      "topic": "dysocjacja",
+      "front": "Dysocjacja $NaOH$",
+      "back": "$NaOH -H2O-> Na^+ + OH^-$"
+    },
+    {
+      "id": "f-dy-07",
+      "topic": "dysocjacja",
+      "front": "Dysocjacja $Ca(OH)2$",
+      "back": "$Ca(OH)2 -H2O-> Ca^2+ + 2OH^-$"
+    },
+    {
+      "id": "f-dy-08",
+      "topic": "dysocjacja",
+      "front": "Dysocjacja $KOH$",
+      "back": "$KOH -H2O-> K^+ + OH^-$"
+    },
+    {
+      "id": "f-dy-09",
+      "topic": "dysocjacja",
+      "front": "Co robią cząsteczki wody przy dysocjacji?",
+      "back": "Wyrywają jony z kryształu i otaczają je."
+    },
+    {
+      "id": "f-dy-10",
+      "topic": "dysocjacja",
+      "front": "Które wodorotlenki to zasady?",
+      "back": "Metali 1. i 2. grupy (z wyjątkiem berylu), rozpuszczalne w wodzie."
     }
   ]
 }

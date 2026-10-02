@@ -4,11 +4,11 @@ import { h, shuffle } from './dom.js';
 import { richText } from './formula.js';
 import * as store from './store.js';
 import { buildReview, buildExtra, topicStats } from './leitner.js';
-import { runQuiz } from './quiz.js';
+import { runQuiz, TYPED_TYPES } from './quiz.js';
 import { renderSettings } from './settings.js';
 import { icons, withIcon } from './icons.js';
 
-const APP_VERSION = '1.2.0'; // trzymaj zgodnie z VERSION w sw.js
+const APP_VERSION = '1.3.0'; // trzymaj zgodnie z VERSION w sw.js
 
 const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [] };
 const main = document.getElementById('main');
@@ -83,7 +83,7 @@ const routes = [
   [/^#\/topic\/([\w-]+)$/, topicScreen],
   [/^#\/theory\/([\w-]+)$/, theoryScreen],
   [/^#\/flash\/([\w-]+)$/, flashScreen],
-  [/^#\/quiz\/([\w-]+)(?:\/(all))?$/, quizScreen],
+  [/^#\/quiz\/([\w-]+)(?:\/(all|zapis))?$/, quizScreen],
   [/^#\/review(?:\/(extra))?$/, reviewScreen],
   [/^#\/settings$/, settingsScreen],
 ];
@@ -200,6 +200,7 @@ function topicScreen(id) {
   const t = topicById(id);
   if (!t || t.status !== 'active') return notFound('Ten dział będzie dostępny wkrótce.');
   const qs = questionsOf(id);
+  const typedCount = qs.filter((q) => TYPED_TYPES.includes(q.type)).length;
   const st = topicStats(DATA.questions, id);
   return h(
     'div',
@@ -218,6 +219,7 @@ function topicScreen(id) {
         h('a', { class: 'btn', href: `#/theory/${id}`, html: withIcon('book', 'Teoria') }),
         h('a', { class: 'btn', href: `#/flash/${id}`, html: withIcon('cards', 'Fiszki') }),
         h('a', { class: 'btn', href: `#/quiz/${id}`, html: withIcon('check', 'Quiz (10 pytań)') }),
+        typedCount ? h('a', { class: 'btn', href: `#/quiz/${id}/zapis`, html: withIcon('pen', `Układanie zapisu (${typedCount})`) }) : null,
         h('a', { class: 'btn secondary', href: `#/quiz/${id}/all`, html: withIcon('list', `Wszystkie pytania (${qs.length})`) })
       )
     )
@@ -299,11 +301,11 @@ function flashScreen(id) {
 }
 
 // ---------- quiz działu ----------
-function quizScreen(id, all) {
+function quizScreen(id, mode) {
   const t = topicById(id);
   if (!t) return notFound('Nie znaleziono działu.');
-  const pool = questionsOf(id);
-  const picked = all ? shuffle(pool) : buildExtra(pool, 10);
+  const pool = mode === 'zapis' ? questionsOf(id).filter((q) => TYPED_TYPES.includes(q.type)) : questionsOf(id);
+  const picked = mode ? shuffle(pool) : buildExtra(pool, 10);
   const root = h('div');
   const start = (qs) => runQuiz(root, qs, { title: `Wynik: ${t.title}`, backHref: `#/topic/${id}`, onRetryMissed: start });
   if (!picked.length) return notFound('W tym dziale nie ma jeszcze pytań.');

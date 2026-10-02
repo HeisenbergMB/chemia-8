@@ -20,5 +20,11 @@
   {"id": "e-019", "topic": "wodorotlenki-trudne", "kind": "sól+zasada", "eq": "MgCl2 + 2NaOH -> Mg(OH)2↓ + 2NaCl"},
   {"id": "e-020", "topic": "wodorotlenki-trudne", "kind": "sól+zasada", "eq": "Fe2(SO4)3 + 6NaOH -> 2Fe(OH)3↓ + 3Na2SO4"},
   {"id": "e-021", "topic": "wodorotlenki-trudne", "kind": "sól+zasada", "eq": "Cu(NO3)2 + 2KOH -> Cu(OH)2↓ + 2KNO3"},
-  {"id": "e-022", "topic": "wodorotlenki-trudne", "kind": "sól+zasada", "eq": "AgNO3 + NaOH -> AgOH↓ + NaNO3"}
+  {"id": "e-022", "topic": "wodorotlenki-trudne", "kind": "sól+zasada", "eq": "AgNO3 + NaOH -> AgOH↓ + NaNO3"},
+  {"id": "e-023", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "NaOH -> Na^+ + OH^-"},
+  {"id": "e-024", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "KOH -> K^+ + OH^-"},
+  {"id": "e-025", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "LiOH -> Li^+ + OH^-"},
+  {"id": "e-026", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "Ca(OH)2 -> Ca^2+ + 2OH^-"},
+  {"id": "e-027", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "Ba(OH)2 -> Ba^2+ + 2OH^-"},
+  {"id": "e-028", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "Sr(OH)2 -> Sr^2+ + 2OH^-"}
 ]

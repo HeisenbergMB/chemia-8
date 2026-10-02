@@ -1,6 +1,6 @@
 // Service worker: pełna praca offline. Przy zmianie plików podnieś VERSION –
 // stary cache zostanie usunięty przy aktywacji.
-const VERSION = '1.2.0';
+const VERSION = '1.3.0';
 const CACHE = `chemia8-${VERSION}`;
 
 const ASSETS = [
@@ -16,6 +16,8 @@ const ASSETS = [
   'js/store.js',
   'js/leitner.js',
   'js/quiz.js',
+  'js/chemkeyboard.js',
+  'js/blocks.js',
   'js/settings.js',
   'data/theory.json',
   'data/questions.json',

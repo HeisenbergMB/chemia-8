@@ -50,6 +50,8 @@ function checkText(text, where, { balance = true } = {}) {
 }
 
 function checkSegment(seg, balance) {
+  seg = seg.replace(/-H2O(?:->|→)/g, '->'); // H₂O nad strzałką
+  if (/\bMe/.test(seg)) return; // wzory ogólne (Me(OH)n, Me^n+) nie są konkretnymi związkami
   // szablony do uzupełnienia ("2Na + 2H2O -> ?", "Na2O + H2O ->") – nie są pełnymi równaniami
   if (/\?/.test(seg) || /(?:->|→)\s*$/.test(seg)) return;
   if (/->|→/.test(seg)) {
@@ -118,7 +120,7 @@ for (const e of equations) {
 
 // ---------- pytania ----------
 const questions = readJson('data/questions.json') || [];
-const TYPES = new Set(['choice']);
+const TYPES = new Set(['choice', 'formula', 'equation', 'blocks']);
 const stats = { byTopic: {}, byLevel: {}, byType: {} };
 for (const q of questions) {
   const w = `question ${q.id}`;
@@ -136,7 +138,35 @@ for (const q of questions) {
       q.options.forEach((o, i) => checkText(o, `${w} option ${i}`, { balance: i === q.answer }));
     }
   }
+  if (q.type === 'formula') {
+    if (typeof q.answer !== 'string') err(w, 'formula: brak answer');
+    else {
+      try { parseFormula(q.answer); } catch (e) { err(w, `answer: ${e.message}`); }
+    }
+  }
+  if (q.type === 'equation') {
+    try {
+      const r = checkBalance(parseEquation(q.answer));
+      if (!r.ok) err(w, `answer niezbilansowane: ${r.diffs.join('; ')}`);
+    } catch (e) { err(w, `answer: ${e.message}`); }
+  }
+  if (q.type === 'blocks') {
+    if (!Array.isArray(q.tokens) || q.tokens.length < 3) err(w, 'blocks: tokens (min. 3)');
+    else {
+      try {
+        const r = checkBalance(parseEquation(q.tokens.join(' ')));
+        if (!r.ok) err(w, `tokens niezbilansowane: ${r.diffs.join('; ')}`);
+      } catch (e) { err(w, `tokens: ${e.message}`); }
+      for (const t of [...q.tokens.filter((x) => !['->', '+'].includes(x)), ...(q.extra || [])]) {
+        try { parseSpecies(t); parseFormula(parseSpecies(t).formula); } catch (e) { err(w, `klocek "${t}": ${e.message}`); }
+      }
+      const pool = [...q.tokens, ...(q.extra || [])];
+      if ((q.extra || []).some((x) => q.tokens.includes(x))) err(w, 'extra: klocek-pułapka powtarza poprawny klocek');
+      if (pool.length > 10) err(w, 'blocks: za dużo klocków (max 10)');
+    }
+  }
   checkText(q.q, `${w} q`);
+  if (q.hint) checkText(q.hint, `${w} hint`);
   checkText(q.explain, `${w} explain`);
   stats.byTopic[q.topic] = (stats.byTopic[q.topic] || 0) + 1;
   stats.byLevel[q.level] = (stats.byLevel[q.level] || 0) + 1;

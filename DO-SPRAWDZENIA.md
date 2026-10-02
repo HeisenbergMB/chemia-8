@@ -20,3 +20,9 @@ Aplikacja trzyma się wersji z zeszytu tam, gdzie ma to znaczenie na sprawdziani
 ## Nieczytelne miejsca w zeszycie
 - Zdanie o spalaniu wodoru „z charakterystycznym …iem” – przyjąłem „dźwiękiem” (w aplikacji: „z charakterystycznym dźwiękiem”).
 - Zadanie 250: odpowiedzi „1-TAK, 2-TAK, 3-Nie, 4-Nie” – nie widzę treści podpunktów, więc nie wiem, które substancje to dotyczy.
+
+## Dysocjacja (dział 03)
+- Zakres „zasady = wodorotlenki metali 1. i 2. grupy z wyjątkiem berylu” – przepisane z zeszytu. W zeszycie jest też dysocjacja Be(OH)₂ i Mg(OH)₂ oraz RbOH ze strzałką ←; w aplikacji ich nie ma. Czy mają być na sprawdzianie?
+- „Roztwór zasady przewodzi prąd, bo zawiera jony” oraz opis cząsteczki wody jako dipola (tlen lekko ujemny, wodory lekko dodatnie) – z wiedzy ogólnej, nie z zeszytu.
+- Zapis z H₂O nad strzałką (jak w zeszycie) jest w teorii; w odpowiedziach wpisywanych przez uczennicę strzałka z wodą i bez wody są traktowane tak samo.
+- Wzór ogólny Me(OH)n → Meⁿ⁺ + nOH⁻ – jak w zeszycie.

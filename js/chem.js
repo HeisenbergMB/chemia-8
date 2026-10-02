@@ -101,3 +101,79 @@ export function extractFormulaSegments(text) {
   while ((m = re.exec(text))) out.push(m[1]);
   return out;
 }
+
+// ---------- odpowiedzi wpisywane przez uczennicę (klawiatura chemiczna) ----------
+
+const SUP_DIGITS = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9' };
+
+/**
+ * Sprowadza zapis do postaci kanonicznej: bez spacji, indeksy dolne -> cyfry,
+ * ładunki z indeksów górnych -> ^2+ / ^-, strzałki -> "->", bez ↑/↓ i bez „H₂O nad strzałką”.
+ */
+export function canon(input) {
+  let s = String(input).replace(/\s+/g, '');
+  s = s.replace(/[₀-₉]/g, (c) => String(c.charCodeAt(0) - 0x2080));
+  s = s.replace(/([⁰¹²³⁴⁵⁶⁷⁸⁹]*)([⁺⁻])/g, (m, d, sg) => '^' + [...d].map((c) => SUP_DIGITS[c]).join('') + (sg === '⁺' ? '+' : '-'));
+  s = s.replace(/[−–—]/g, '-').replace(/[→⟶➔➜]/g, '->');
+  s = s.replace(/-H2O->/g, '->').replace(/_/g, '').replace(/[↑↓]/g, '');
+  s = s.replace(/\^1([+-])/g, '^$1');
+  return s;
+}
+
+/** Dzieli stronę równania na składniki; „+” zaraz po ^ lub ^cyfrach jest ładunkiem, nie separatorem. */
+export function splitSpecies(side) {
+  const out = [];
+  let cur = '';
+  for (const c of side) {
+    if (c === '+' && !/\^\d*$/.test(cur)) {
+      out.push(cur);
+      cur = '';
+    } else cur += c;
+  }
+  out.push(cur);
+  return out;
+}
+
+function canonSides(str) {
+  const s = canon(str);
+  const i = s.indexOf('->');
+  if (i < 0 || s.indexOf('->', i + 2) >= 0) return null;
+  const sides = [s.slice(0, i), s.slice(i + 2)].map(splitSpecies);
+  if (sides.some((side) => side.some((t) => !t))) return null;
+  return sides;
+}
+
+const speciesKey = (tok) => {
+  const m = tok.match(/^(\d*)(.+)$/);
+  return `${Number(m[1] || 1)}|${m[2]}`;
+};
+const sideKey = (side) => side.map(speciesKey).sort().join(',');
+
+/** Czy dwa równania są takie same (kolejność składników po jednej stronie nie ma znaczenia). */
+export function equationsMatch(user, expected) {
+  const U = canonSides(user);
+  const E = canonSides(expected);
+  if (!U || !E) return false;
+  return sideKey(U[0]) === sideKey(E[0]) && sideKey(U[1]) === sideKey(E[1]);
+}
+
+export function formulasMatch(user, expected, accept = []) {
+  const u = canon(user);
+  return [expected, ...accept].some((e) => canon(e) === u);
+}
+
+/** Dla błędnej odpowiedzi: czy zapis uczennicy w ogóle się bilansuje? */
+export function userBalanceReport(user) {
+  const sides = canonSides(user);
+  if (!sides) return { parsed: false };
+  try {
+    const toSp = (tok) => {
+      const m = tok.match(/^(\d*)(.+)$/);
+      return { coef: Number(m[1] || 1), formula: m[2] };
+    };
+    const r = checkBalance({ left: sides[0].map(toSp), right: sides[1].map(toSp) });
+    return { parsed: true, ok: r.ok, diffs: r.diffs };
+  } catch (e) {
+    return { parsed: false };
+  }
+}
