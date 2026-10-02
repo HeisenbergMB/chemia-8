@@ -1,62 +1,308 @@
 {
   "topics": [
-    { "id": "wodorotlenki-rozp", "title": "Wodorotlenki rozpuszczalne", "status": "active",
-      "desc": "Metal + woda i tlenek metalu + woda. Skąd biorą się NaOH, KOH, Ca(OH)₂." },
-    { "id": "wodorotlenki-trudne", "title": "Wodorotlenki trudno rozpuszczalne", "status": "soon",
-      "desc": "Sól + zasada, osady i tabela rozpuszczalności." },
-    { "id": "dysocjacja", "title": "Dysocjacja jonowa zasad", "status": "soon",
-      "desc": "Kationy metalu, aniony wodorotlenkowe i rola wody." },
-    { "id": "doswiadczenia", "title": "Doświadczenia", "status": "soon",
-      "desc": "Schemat, obserwacje, wnioski i równania." },
-    { "id": "wskazniki", "title": "Wskaźniki i odczyn", "status": "soon",
-      "desc": "Barwy wskaźników w kwasie, wodzie i zasadzie." },
-    { "id": "wlasciwosci", "title": "NaOH i Ca(OH)₂ – właściwości", "status": "soon",
-      "desc": "Właściwości fizyczne, chemiczne i zastosowania." },
-    { "id": "podstawy", "title": "Podstawy z klas 7–8", "status": "soon",
-      "desc": "Wartościowość, wzory, bilansowanie, rodzaje reakcji." }
+    {
+      "id": "wodorotlenki-rozp",
+      "title": "Wodorotlenki rozpuszczalne",
+      "status": "active",
+      "desc": "Metal + woda i tlenek metalu + woda. Skąd biorą się NaOH, KOH, Ca(OH)₂."
+    },
+    {
+      "id": "wodorotlenki-trudne",
+      "title": "Wodorotlenki trudno rozpuszczalne",
+      "status": "active",
+      "desc": "Sól + zasada, osady i tabela rozpuszczalności."
+    },
+    {
+      "id": "dysocjacja",
+      "title": "Dysocjacja jonowa zasad",
+      "status": "soon",
+      "desc": "Kationy metalu, aniony wodorotlenkowe i rola wody."
+    },
+    {
+      "id": "doswiadczenia",
+      "title": "Doświadczenia",
+      "status": "soon",
+      "desc": "Schemat, obserwacje, wnioski i równania."
+    },
+    {
+      "id": "wskazniki",
+      "title": "Wskaźniki i odczyn",
+      "status": "soon",
+      "desc": "Barwy wskaźników w kwasie, wodzie i zasadzie."
+    },
+    {
+      "id": "wlasciwosci",
+      "title": "NaOH i Ca(OH)₂ – właściwości",
+      "status": "soon",
+      "desc": "Właściwości fizyczne, chemiczne i zastosowania."
+    },
+    {
+      "id": "podstawy",
+      "title": "Podstawy z klas 7–8",
+      "status": "soon",
+      "desc": "Wartościowość, wzory, bilansowanie, rodzaje reakcji."
+    }
   ],
   "cards": [
     {
-      "id": "t-wr-01", "topic": "wodorotlenki-rozp", "title": "Czym jest wodorotlenek?",
+      "id": "t-wr-01",
+      "topic": "wodorotlenki-rozp",
+      "title": "Czym jest wodorotlenek?",
       "body": "Wodorotlenek to związek **metalu** z **grupą wodorotlenową** $OH$. Cała grupa $OH$ ma wartościowość I.\nWzór ogólny: $Me(OH)n$ – liczba grup $OH$ (n) jest równa wartościowości metalu.\nWodorotlenek, który rozpuszcza się w wodzie, nazywamy **zasadą**.",
-      "examples": ["NaOH – wodorotlenek sodu", "KOH – wodorotlenek potasu", "LiOH – wodorotlenek litu", "Ca(OH)2 – wodorotlenek wapnia", "Sr(OH)2 – wodorotlenek strontu", "Ba(OH)2 – wodorotlenek baru"],
+      "examples": [
+        "NaOH – wodorotlenek sodu",
+        "KOH – wodorotlenek potasu",
+        "LiOH – wodorotlenek litu",
+        "Ca(OH)2 – wodorotlenek wapnia",
+        "Sr(OH)2 – wodorotlenek strontu",
+        "Ba(OH)2 – wodorotlenek baru"
+      ],
       "tip": "Metal z 1. grupy ma wartościowość I (jedna grupa OH), z 2. grupy – II (dwie grupy OH)."
     },
     {
-      "id": "t-wr-02", "topic": "wodorotlenki-rozp", "title": "Sposób 1: metal + woda",
+      "id": "t-wr-02",
+      "topic": "wodorotlenki-rozp",
+      "title": "Sposób 1: metal + woda",
       "body": "Aktywne metale (z 1. i 2. grupy układu okresowego: Li, Na, K, Ca, Sr, Ba) reagują z wodą. Powstaje wodorotlenek i wydziela się wodór.\nSchemat: **metal + woda → wodorotlenek + wodór**",
-      "examples": ["2Na + 2H2O -> 2NaOH + H2↑", "2K + 2H2O -> 2KOH + H2↑", "2Li + 2H2O -> 2LiOH + H2↑", "Ca + 2H2O -> Ca(OH)2 + H2↑", "Sr + 2H2O -> Sr(OH)2 + H2↑", "Ba + 2H2O -> Ba(OH)2 + H2↑"],
+      "examples": [
+        "2Na + 2H2O -> 2NaOH + H2↑",
+        "2K + 2H2O -> 2KOH + H2↑",
+        "2Li + 2H2O -> 2LiOH + H2↑",
+        "Ca + 2H2O -> Ca(OH)2 + H2↑",
+        "Sr + 2H2O -> Sr(OH)2 + H2↑",
+        "Ba + 2H2O -> Ba(OH)2 + H2↑"
+      ],
       "tip": "Metal II-wartościowy potrzebuje dwóch cząsteczek wody (powstaje $Me(OH)2$). Strzałka ↑ oznacza gaz."
     },
     {
-      "id": "t-wr-03", "topic": "wodorotlenki-rozp", "title": "Sposób 2: tlenek metalu + woda",
+      "id": "t-wr-03",
+      "topic": "wodorotlenki-rozp",
+      "title": "Sposób 2: tlenek metalu + woda",
       "body": "Tlenki aktywnych metali (np. $Na2O$, $K2O$, $CaO$) reagują z wodą i tworzą wodorotlenek. Tym razem **nie ma** wodoru – jest tylko jeden produkt.\nSchemat: **tlenek metalu + woda → wodorotlenek**",
-      "examples": ["Na2O + H2O -> 2NaOH", "K2O + H2O -> 2KOH", "CaO + H2O -> Ca(OH)2"],
+      "examples": [
+        "Na2O + H2O -> 2NaOH",
+        "K2O + H2O -> 2KOH",
+        "CaO + H2O -> Ca(OH)2"
+      ],
       "tip": "Tlenki metali mniej aktywnych (np. $CuO$, $Fe2O3$) z wodą nie reagują."
     },
     {
-      "id": "t-wr-04", "topic": "wodorotlenki-rozp", "title": "Doświadczenie: sód z wodą",
+      "id": "t-wr-04",
+      "topic": "wodorotlenki-rozp",
+      "title": "Doświadczenie: sód z wodą",
       "body": "**Cel:** otrzymanie wodorotlenku sodu.\n**Schemat:** do naczynia z wodą i kroplą fenoloftaleiny wrzucamy kawałek sodu i przykrywamy go lejkiem z odwróconą probówką, która zbiera gaz.\n**Obserwacje:** roztwór przyjmuje malinowe zabarwienie; wydziela się gaz, który po zbliżeniu płomienia spala się z charakterystycznym dźwiękiem.\n**Wnioski:** wydzielił się wodór, powstał wodorotlenek sodu, roztwór ma odczyn zasadowy.",
-      "examples": ["2Na + 2H2O -> 2NaOH + H2↑"],
+      "examples": [
+        "2Na + 2H2O -> 2NaOH + H2↑"
+      ],
       "tip": "Malinowa barwa fenoloftaleiny to dowód, że w roztworze jest zasada."
     },
     {
-      "id": "t-wr-05", "topic": "wodorotlenki-rozp", "title": "Kiedy reakcja zachodzi?",
+      "id": "t-wr-05",
+      "topic": "wodorotlenki-rozp",
+      "title": "Kiedy reakcja zachodzi?",
       "body": "Z wodą reagują metale z **1. i 2. grupy** (w tym dziale: Li, Na, K, Ca, Sr, Ba).\nMetale takie jak miedź czy srebro z wodą nie reagują, a tlenki typu $CuO$ też nie tworzą wodorotlenku w reakcji z wodą.\nPrzy zapisie równania pilnuj liczby atomów wodoru i tlenu po obu stronach.",
       "examples": [],
       "tip": "Sprawdź zawsze: czy po lewej i po prawej jest tyle samo atomów każdego pierwiastka?"
+    },
+    {
+      "id": "t-wt-01",
+      "topic": "wodorotlenki-trudne",
+      "title": "Dlaczego nie „metal + woda”?",
+      "body": "Wodorotlenki trudno rozpuszczalne tworzą metale mniej aktywne, np. $Fe$, $Cu$, $Al$, $Cr$. Takie metale **nie reagują z wodą**, a ich tlenki też nie.\nDlatego tych wodorotlenków nie da się otrzymać sposobami z poprzedniego działu.\nUżywamy innej drogi: **sól + zasada → wodorotlenek + inna sól**. Wodorotlenek wytrąca się wtedy jako **osad**.",
+      "examples": [],
+      "tip": "Osad zaznaczamy w równaniu strzałką ↓ przy wzorze wodorotlenku."
+    },
+    {
+      "id": "t-wt-02",
+      "topic": "wodorotlenki-trudne",
+      "title": "Reakcja soli z zasadą",
+      "body": "Schemat: **sól + zasada → wodorotlenek + sól**\nZasadą jest zwykle $NaOH$ albo $KOH$ (rozpuszczają się w wodzie). Metal z soli przejmuje grupy $OH$ i tworzy trudno rozpuszczalny wodorotlenek, a metal z zasady (Na lub K) łączy się z resztą kwasową.\nTo reakcja **wymiany podwójnej**: substancje wymieniają się częściami.",
+      "examples": [
+        "FeCl3 + 3NaOH -> Fe(OH)3↓ + 3NaCl",
+        "CuSO4 + 2NaOH -> Cu(OH)2↓ + Na2SO4",
+        "AlCl3 + 3NaOH -> Al(OH)3↓ + 3NaCl",
+        "CrBr3 + 3KOH -> Cr(OH)3↓ + 3KBr",
+        "CaCl2 + 2NaOH -> Ca(OH)2↓ + 2NaCl"
+      ],
+      "tip": "Przy zapisie pilnuj, ile grup OH potrzebuje metal: tyle, ile wynosi jego wartościowość."
+    },
+    {
+      "id": "t-wt-03",
+      "topic": "wodorotlenki-trudne",
+      "title": "Zapis równania krok po kroku",
+      "body": "Przykład: $FeCl3$ + $NaOH$.\n**1.** Zapisz substraty: $FeCl3 + NaOH ->$\n**2.** Wymień partnerów: żelazo bierze grupę $OH$, sód – chlor. Żelazo jest III-wartościowe, więc $Fe(OH)3$, a sód z chlorem tworzy $NaCl$.\n**3.** Zapisz produkty: $Fe(OH)3↓ + NaCl$\n**4.** Zbilansuj: po prawej są 3 grupy $OH$ i 3 atomy $Cl$, więc potrzeba $3NaOH$ i $3NaCl$.",
+      "examples": [
+        "FeCl3 + 3NaOH -> Fe(OH)3↓ + 3NaCl"
+      ],
+      "tip": "Sprawdź na końcu każdy pierwiastek: Fe, Cl, Na, O, H – po obu stronach tyle samo."
+    },
+    {
+      "id": "t-wt-04",
+      "topic": "wodorotlenki-trudne",
+      "title": "Kiedy reakcja zachodzi?",
+      "body": "Reakcja soli z zasadą zachodzi, gdy:\n**•** sól i zasada są **rozpuszczalne w wodzie** (reagują w roztworze),\n**•** powstający wodorotlenek jest **trudno rozpuszczalny**, więc wytrąca się osad.\nWodorotlenki rozpuszczalne (zasady): $NaOH$, $KOH$, $LiOH$ i wodorotlenki z działu 1. Trudno rozpuszczalne są m.in. $Fe(OH)3$, $Cu(OH)2$, $Al(OH)3$, $Cr(OH)3$, $Mg(OH)2$.\nJeśli po zamianie partnerów nie powstaje żaden osad ani gaz, reakcja nie zachodzi, np. $NaCl$ z $KOH$.",
+      "examples": [],
+      "tip": "Pytanie kontrolne: czy któryś z produktów to trudno rozpuszczalny wodorotlenek? Jeśli nie, osadu nie będzie."
+    },
+    {
+      "id": "t-wt-05",
+      "topic": "wodorotlenki-trudne",
+      "title": "Doświadczenie: trzy probówki",
+      "body": "**Cel:** otrzymanie wodorotlenków trudno rozpuszczalnych w wodzie.\n**Schemat:** do trzech probówek z roztworami soli: I – $FeCl3$, II – $AgNO3$, III – $CuSO4$ dodajemy roztwór $NaOH$.\n**Obserwacje:** I – wytrąca się brunatny osad. II – wytrąca się szary osad, który po pewnym czasie zaczyna się rozkładać. III – wytrąca się niebieski galaretowaty osad.\n**Wnioski:** powstały trudno rozpuszczalne wodorotlenki, które wytrąciły się jako osady.",
+      "examples": [
+        "FeCl3 + 3NaOH -> Fe(OH)3↓ + 3NaCl",
+        "AgNO3 + NaOH -> AgOH↓ + NaNO3",
+        "CuSO4 + 2NaOH -> Cu(OH)2↓ + Na2SO4"
+      ],
+      "tip": "Zapis z probówki II jest taki jak w zeszycie z lekcji."
+    },
+    {
+      "id": "t-wt-06",
+      "topic": "wodorotlenki-trudne",
+      "title": "Nazwy i barwy osadów",
+      "body": "Nazwa wodorotlenku: **wodorotlenek + nazwa metalu w dopełniaczu**. Gdy metal ma kilka wartościowości, dopisujemy ją w nawiasie rzymską cyfrą.",
+      "examples": [
+        "Fe(OH)3 – wodorotlenek żelaza(III), osad brunatny",
+        "Cu(OH)2 – wodorotlenek miedzi(II), osad niebieski, galaretowaty",
+        "Al(OH)3 – wodorotlenek glinu, osad biały",
+        "Mg(OH)2 – wodorotlenek magnezu, osad biały",
+        "Cr(OH)3 – wodorotlenek chromu(III)"
+      ],
+      "tip": "Rzymska cyfra w nawiasie to wartościowość metalu, np. żelazo(III) = $Fe(OH)3$."
     }
   ],
   "flash": [
-    { "id": "f-wr-01", "topic": "wodorotlenki-rozp", "front": "Metal aktywny + woda → ?", "back": "wodorotlenek + wodór" },
-    { "id": "f-wr-02", "topic": "wodorotlenki-rozp", "front": "Tlenek metalu aktywnego + woda → ?", "back": "wodorotlenek (jeden produkt, bez wodoru)" },
-    { "id": "f-wr-03", "topic": "wodorotlenki-rozp", "front": "Wzór ogólny wodorotlenku", "back": "$Me(OH)n$ – n to wartościowość metalu" },
-    { "id": "f-wr-04", "topic": "wodorotlenki-rozp", "front": "Barwa fenoloftaleiny w zasadzie", "back": "malinowa" },
-    { "id": "f-wr-05", "topic": "wodorotlenki-rozp", "front": "Jak rozpoznać wodór?", "back": "Zbliżony płomień: gaz spala się z charakterystycznym dźwiękiem." },
-    { "id": "f-wr-06", "topic": "wodorotlenki-rozp", "front": "Które metale reagują z wodą w tym dziale?", "back": "Li, Na, K (1. grupa) oraz Ca, Sr, Ba (2. grupa)" },
-    { "id": "f-wr-07", "topic": "wodorotlenki-rozp", "front": "$2Na + 2H2O -> ?$", "back": "$2NaOH + H2↑$" },
-    { "id": "f-wr-08", "topic": "wodorotlenki-rozp", "front": "$K2O + H2O -> ?$", "back": "$2KOH$" },
-    { "id": "f-wr-09", "topic": "wodorotlenki-rozp", "front": "$Ca + 2H2O -> ?$", "back": "$Ca(OH)2 + H2↑$" },
-    { "id": "f-wr-10", "topic": "wodorotlenki-rozp", "front": "Co oznacza strzałka ↑ przy wzorze?", "back": "Wydziela się gaz." }
+    {
+      "id": "f-wr-01",
+      "topic": "wodorotlenki-rozp",
+      "front": "Metal aktywny + woda → ?",
+      "back": "wodorotlenek + wodór"
+    },
+    {
+      "id": "f-wr-02",
+      "topic": "wodorotlenki-rozp",
+      "front": "Tlenek metalu aktywnego + woda → ?",
+      "back": "wodorotlenek (jeden produkt, bez wodoru)"
+    },
+    {
+      "id": "f-wr-03",
+      "topic": "wodorotlenki-rozp",
+      "front": "Wzór ogólny wodorotlenku",
+      "back": "$Me(OH)n$ – n to wartościowość metalu"
+    },
+    {
+      "id": "f-wr-04",
+      "topic": "wodorotlenki-rozp",
+      "front": "Barwa fenoloftaleiny w zasadzie",
+      "back": "malinowa"
+    },
+    {
+      "id": "f-wr-05",
+      "topic": "wodorotlenki-rozp",
+      "front": "Jak rozpoznać wodór?",
+      "back": "Zbliżony płomień: gaz spala się z charakterystycznym dźwiękiem."
+    },
+    {
+      "id": "f-wr-06",
+      "topic": "wodorotlenki-rozp",
+      "front": "Które metale reagują z wodą w tym dziale?",
+      "back": "Li, Na, K (1. grupa) oraz Ca, Sr, Ba (2. grupa)"
+    },
+    {
+      "id": "f-wr-07",
+      "topic": "wodorotlenki-rozp",
+      "front": "$2Na + 2H2O -> ?$",
+      "back": "$2NaOH + H2↑$"
+    },
+    {
+      "id": "f-wr-08",
+      "topic": "wodorotlenki-rozp",
+      "front": "$K2O + H2O -> ?$",
+      "back": "$2KOH$"
+    },
+    {
+      "id": "f-wr-09",
+      "topic": "wodorotlenki-rozp",
+      "front": "$Ca + 2H2O -> ?$",
+      "back": "$Ca(OH)2 + H2↑$"
+    },
+    {
+      "id": "f-wr-10",
+      "topic": "wodorotlenki-rozp",
+      "front": "Co oznacza strzałka ↑ przy wzorze?",
+      "back": "Wydziela się gaz."
+    },
+    {
+      "id": "f-wt-01",
+      "topic": "wodorotlenki-trudne",
+      "front": "Jak otrzymać trudno rozpuszczalny wodorotlenek?",
+      "back": "Sól + zasada → wodorotlenek + inna sól"
+    },
+    {
+      "id": "f-wt-02",
+      "topic": "wodorotlenki-trudne",
+      "front": "Dlaczego nie metal + woda dla Cu, Fe, Al?",
+      "back": "Te metale nie reagują z wodą."
+    },
+    {
+      "id": "f-wt-03",
+      "topic": "wodorotlenki-trudne",
+      "front": "Co oznacza ↓ w równaniu?",
+      "back": "Wytrąca się osad."
+    },
+    {
+      "id": "f-wt-04",
+      "topic": "wodorotlenki-trudne",
+      "front": "Typ reakcji soli z zasadą",
+      "back": "wymiana podwójna"
+    },
+    {
+      "id": "f-wt-05",
+      "topic": "wodorotlenki-trudne",
+      "front": "Barwa osadu $Fe(OH)3$",
+      "back": "brunatna"
+    },
+    {
+      "id": "f-wt-06",
+      "topic": "wodorotlenki-trudne",
+      "front": "Barwa osadu $Cu(OH)2$",
+      "back": "niebieska, galaretowata"
+    },
+    {
+      "id": "f-wt-07",
+      "topic": "wodorotlenki-trudne",
+      "front": "$FeCl3 + 3NaOH -> ?$",
+      "back": "$Fe(OH)3↓ + 3NaCl$"
+    },
+    {
+      "id": "f-wt-08",
+      "topic": "wodorotlenki-trudne",
+      "front": "$CuSO4 + 2NaOH -> ?$",
+      "back": "$Cu(OH)2↓ + Na2SO4$"
+    },
+    {
+      "id": "f-wt-09",
+      "topic": "wodorotlenki-trudne",
+      "front": "$AlCl3 + 3NaOH -> ?$",
+      "back": "$Al(OH)3↓ + 3NaCl$"
+    },
+    {
+      "id": "f-wt-10",
+      "topic": "wodorotlenki-trudne",
+      "front": "Warunki zajścia reakcji soli z zasadą",
+      "back": "Sól i zasada rozpuszczalne, a wodorotlenek trudno rozpuszczalny (wytrąca się osad)."
+    },
+    {
+      "id": "f-wt-11",
+      "topic": "wodorotlenki-trudne",
+      "front": "Nazwa $Fe(OH)3$",
+      "back": "wodorotlenek żelaza(III)"
+    },
+    {
+      "id": "f-wt-12",
+      "topic": "wodorotlenki-trudne",
+      "front": "Co znaczy (III) w nazwie?",
+      "back": "wartościowość żelaza"
+    }
   ]
 }

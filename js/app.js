@@ -8,7 +8,7 @@ import { runQuiz } from './quiz.js';
 import { renderSettings } from './settings.js';
 import { icons, withIcon } from './icons.js';
 
-const APP_VERSION = '1.1.1'; // trzymaj zgodnie z VERSION w sw.js
+const APP_VERSION = '1.2.0'; // trzymaj zgodnie z VERSION w sw.js
 
 const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [] };
 const main = document.getElementById('main');

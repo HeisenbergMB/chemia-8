@@ -13,6 +13,7 @@ const LETTERS = ['A', 'B', 'C', 'D', 'E'];
 export function runQuiz(root, questions, opts = {}) {
   const queue = questions.map(prepare);
   const firstSeen = new Set();
+  const requeued = new Set(); // każde błędne pytanie wraca w sesji tylko raz
   const missed = [];
   let score = 0;
   let idx = 0;
@@ -58,13 +59,17 @@ export function runQuiz(root, questions, opts = {}) {
   function choose(pickedOrig, buttons, feedback) {
     const { q, order } = queue[idx];
     const ok = pickedOrig === q.answer;
+    const isRetry = firstSeen.has(q.id);
     record(q.id, ok);
     if (!firstSeen.has(q.id)) {
       firstSeen.add(q.id);
       if (ok) score++;
       else missed.push(q);
     }
-    if (!ok && !queue.slice(idx + 1).some((x) => x.q.id === q.id)) queue.push(prepare(q));
+    if (!ok && !requeued.has(q.id)) {
+      requeued.add(q.id);
+      queue.push(prepare(q));
+    }
 
     buttons.forEach((b, pos) => {
       b.disabled = true;
@@ -85,7 +90,7 @@ export function runQuiz(root, questions, opts = {}) {
         { class: `feedback ${ok ? 'ok' : 'bad'}` },
         h('h3', null, ok ? '✓ Dobrze!' : '✗ Nie tym razem'),
         h('p', { html: richText(q.explain) }),
-        !ok ? h('p', { class: 'muted' }, 'To pytanie wróci jeszcze raz na końcu.') : null
+        !ok && !isRetry ? h('p', { class: 'muted' }, 'To pytanie wróci jeszcze raz na końcu.') : null
       ),
       next
     );
