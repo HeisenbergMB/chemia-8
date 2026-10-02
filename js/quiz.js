@@ -1,5 +1,6 @@
 // Quiz: jednokrotny wybór, wpisywanie wzoru/równania z klawiatury chemicznej i układanie z klocków.
 // Typy pytań: choice | formula | equation | blocks | match
+// Tryb opts.exam: bez podpowiedzi i bez informacji o poprawności w trakcie, wynik dopiero na końcu.
 
 import { h, shuffle } from './dom.js';
 import { richText, formatFormula } from './formula.js';
@@ -22,12 +23,14 @@ export function correctHtml(q) {
 
 /**
  * Uruchamia quiz w kontenerze `root`.
- * opts: { title, backHref, onRetryMissed(questions), noHints }
+ * opts: { title, backHref, onRetryMissed(questions), noHints, exam, topicTitle(id), onFinish(result), onRestart() }
  */
 export function runQuiz(root, questions, opts = {}) {
   const queue = questions.map(prepare);
   const firstSeen = new Set();
   const requeued = new Set(); // każde błędne pytanie wraca w sesji tylko raz
+  const exam = !!opts.exam;
+  const answers = []; // tryb sprawdzian: { q, ok, given }
   const missed = [];
   let score = 0;
   let idx = 0;
@@ -53,7 +56,7 @@ export function runQuiz(root, questions, opts = {}) {
         h(
           'div',
           { class: 'quiz-head' },
-          h('span', { class: 'quiz-count' }, `Pytanie ${idx + 1} z ${queue.length}`),
+          h('span', { class: 'quiz-count' }, `${exam ? 'Sprawdzian: pytanie' : 'Pytanie'} ${idx + 1} z ${queue.length}`),
           h('span', { class: 'progress', role: 'progressbar', 'aria-valuemin': 0, 'aria-valuemax': 100, 'aria-valuenow': pct }, h('i', { style: `width:${pct}%` }))
         ),
         h('p', { class: 'question', html: richText(q.q) }),
@@ -69,15 +72,29 @@ export function runQuiz(root, questions, opts = {}) {
   function choiceBody(cur, feedback) {
     const { q, order } = cur;
     const optionsEl = h('div', { class: 'options', role: 'group', 'aria-label': 'Odpowiedzi' });
+    let pickedExam = null;
+    const confirm = exam
+      ? h('button', { class: 'btn big', type: 'button', disabled: true, onClick: () => examResolve(cur, pickedExam === q.answer, richText(q.options[pickedExam])) }, idx + 1 >= queue.length ? 'Zakończ sprawdzian' : 'Dalej →')
+      : null;
     const buttons = order.map((origIdx, pos) =>
       h(
         'button',
-        { class: 'option', type: 'button', onClick: () => choose(origIdx) },
+        { class: 'option', type: 'button', onClick: () => (exam ? select(origIdx, pos) : choose(origIdx)) },
         h('span', { class: 'letter', 'aria-hidden': 'true' }, LETTERS[pos]),
         h('span', { class: 'text', html: richText(q.options[origIdx]) })
       )
     );
     buttons.forEach((b) => optionsEl.append(b));
+
+    // tryb sprawdzian: kliknięcie tylko zaznacza odpowiedź; zatwierdza ją przycisk
+    function select(origIdx, pos) {
+      pickedExam = origIdx;
+      buttons.forEach((b, i) => {
+        b.classList.toggle('picked', i === pos);
+        b.setAttribute('aria-pressed', String(i === pos));
+      });
+      confirm.disabled = false;
+    }
 
     function choose(picked) {
       const ok = picked === q.answer;
@@ -94,7 +111,7 @@ export function runQuiz(root, questions, opts = {}) {
       });
       resolve(cur, ok, feedback, null);
     }
-    return optionsEl;
+    return exam ? h('div', null, optionsEl, h('div', { class: 'btn-row' }, confirm)) : optionsEl;
   }
 
   // ---------- wpisywanie (klawiatura chemiczna) i klocki ----------
@@ -112,13 +129,17 @@ export function runQuiz(root, questions, opts = {}) {
       else if (q.type === 'formula') ok = formulasMatch(val, q.answer, q.accept || []);
       else if (q.type === 'equation') ok = equationsMatch(val, q.answer);
       else ok = equationsMatch(val, q.tokens.join(' '));
+      if (exam) {
+        const given = q.type === 'match' ? '' : formatFormula(val);
+        return examResolve(cur, ok, given);
+      }
       check.disabled = true;
       check.hidden = true;
       ctl.lock(ok);
       if (kb) kb.hideKeys();
       resolve(cur, ok, feedback, compare(q, val, ok));
     };
-    check = h('button', { class: q.type === 'blocks' || q.type === 'match' ? 'btn big' : 'btn kb-submit', type: 'button', disabled: true, onClick: submit }, 'Sprawdź');
+    check = h('button', { class: q.type === 'blocks' || q.type === 'match' ? 'btn big' : 'btn kb-submit', type: 'button', disabled: true, onClick: submit }, exam ? (idx + 1 >= queue.length ? 'Zakończ sprawdzian' : 'Zapisz i dalej →') : 'Sprawdź');
 
     if (q.type === 'match') {
       const mt = createMatch({ pairs: q.pairs, extra: q.extra || [], onChange: () => (check.disabled = !mt.full()) });
@@ -135,7 +156,7 @@ export function runQuiz(root, questions, opts = {}) {
       parts.after = kb.keysEl;
     }
 
-    if (q.hint && !opts.noHints) {
+    if (q.hint && !opts.noHints && !exam) {
       const tip = h('div', { class: 'tip', hidden: true }, h('strong', null, 'Podpowiedź: '), h('span', { html: richText(q.hint) }));
       const btn = h('button', { class: 'btn quiet', type: 'button', onClick: () => { tip.hidden = !tip.hidden; } }, 'Podpowiedź');
       parts.body.append(h('div', { class: 'btn-row' }, btn), tip);
@@ -159,6 +180,76 @@ export function runQuiz(root, questions, opts = {}) {
       }
     }
     return box;
+  }
+
+  // ---------- tryb sprawdzian ----------
+  function examResolve(cur, ok, given) {
+    const q = cur.q;
+    record(q.id, ok);
+    answers.push({ q, ok, given });
+    idx++;
+    show();
+  }
+
+  function examSummary() {
+    const total = answers.length;
+    const score = answers.filter((a) => a.ok).length;
+    const pct = total ? Math.round((score / total) * 100) : 0;
+    const per = {};
+    for (const a of answers) {
+      const t = (per[a.q.topic] = per[a.q.topic] || { ok: 0, total: 0 });
+      t.total++;
+      if (a.ok) t.ok++;
+    }
+    const wrong = answers.filter((a) => !a.ok);
+    if (opts.onFinish) opts.onFinish({ pct, score, total, perTopic: per });
+    const msg = pct >= 90 ? 'Świetnie! Jesteś bardzo dobrze przygotowana.' : pct >= 70 ? 'Dobry wynik. Jeszcze chwila powtórki błędów i będzie świetnie.' : pct >= 50 ? 'Jest baza do dalszej nauki. Przejrzyj błędy poniżej i zrób powtórkę.' : 'Spokojnie, to dopiero próba. Błędy poniżej pokażą, co powtórzyć w pierwszej kolejności.';
+    root.replaceChildren(
+      h(
+        'div',
+        { class: 'card' },
+        h('div', { class: 'eyebrow' }, 'Wynik sprawdzianu'),
+        h('div', { class: 'score' }, `${pct}%`),
+        h('p', null, `${score} z ${total} poprawnych. ${msg}`),
+        h('h3', null, 'Wyniki według działów'),
+        h(
+          'ul',
+          { class: 'per-topic' },
+          Object.entries(per).map(([id, t]) =>
+            h('li', null, h('span', null, opts.topicTitle ? opts.topicTitle(id) : id), h('span', { class: 'muted' }, `${t.ok} z ${t.total}`), h('span', { class: 'progress', role: 'progressbar', 'aria-valuemin': 0, 'aria-valuemax': 100, 'aria-valuenow': Math.round((t.ok / t.total) * 100) }, h('i', { style: `width:${Math.round((t.ok / t.total) * 100)}%` })))
+          )
+        ),
+        wrong.length
+          ? h(
+              'div',
+              null,
+              h('h3', null, `Do powtórki (${wrong.length})`),
+              h(
+                'ul',
+                { class: 'missed' },
+                wrong.map((a) =>
+                  h(
+                    'li',
+                    null,
+                    h('div', { html: richText(a.q.q) }),
+                    a.given ? h('div', { class: 'muted' }, 'Twoja odpowiedź: ', h('span', { class: 'chem', html: a.given })) : null,
+                    h('div', { class: 'ans' }, h('span', null, 'Poprawnie: '), h('span', { class: 'chem', html: correctHtml(a.q) })),
+                    h('div', { class: 'muted small', html: richText(a.q.explain) })
+                  )
+                )
+              )
+            )
+          : h('p', null, 'Bez żadnego błędu!'),
+        h(
+          'div',
+          { class: 'btn-row' },
+          wrong.length && opts.onRetryMissed ? h('button', { class: 'btn', type: 'button', onClick: () => opts.onRetryMissed(wrong.map((a) => a.q)) }, 'Powtórz błędne') : null,
+          opts.onRestart ? h('button', { class: 'btn secondary', type: 'button', onClick: opts.onRestart }, 'Nowy sprawdzian') : null,
+          h('a', { class: 'btn quiet', href: opts.backHref || '#/' }, 'Wróć')
+        )
+      )
+    );
+    window.scrollTo(0, 0);
   }
 
   // ---------- wspólne rozliczenie odpowiedzi ----------
@@ -191,6 +282,7 @@ export function runQuiz(root, questions, opts = {}) {
   }
 
   function summary() {
+    if (exam) return examSummary();
     const total = firstSeen.size;
     const pct = total ? Math.round((score / total) * 100) : 0;
     const msg = pct === 100 ? 'Rewelacja! Bez żadnego błędu.' : pct >= 70 ? 'Bardzo dobrze, tak trzymaj.' : 'Dobry początek. Błędne pytania wrócą w powtórkach.';

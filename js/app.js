@@ -9,8 +9,9 @@ import { renderSettings } from './settings.js';
 import { icons, withIcon } from './icons.js';
 import { renderLab } from './lab.js';
 import { renderIndicators, renderGuess } from './indicators.js';
+import { buildExam, EXAM_SIZE } from './exam.js';
 
-const APP_VERSION = '1.5.0'; // trzymaj zgodnie z VERSION w sw.js
+const APP_VERSION = '1.6.0'; // trzymaj zgodnie z VERSION w sw.js
 
 const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [], experiments: [], indicators: null };
 const main = document.getElementById('main');
@@ -94,6 +95,8 @@ const routes = [
   [/^#\/lab\/([\w-]+)$/, labScreen],
   [/^#\/indicators$/, () => renderIndicators(DATA.indicators)],
   [/^#\/indicators\/guess$/, () => renderGuess(DATA.indicators)],
+  [/^#\/exam$/, examIntro],
+  [/^#\/exam\/run$/, examRun],
   [/^#\/settings$/, settingsScreen],
 ];
 
@@ -131,6 +134,7 @@ function renderSide(hash) {
       )
     ),
     h('h2', { style: 'margin-top:1rem' }, 'Inne'),
+    h('a', { href: '#/exam', 'aria-current': hash.startsWith('#/exam') ? 'page' : null }, h('span', { class: 'num', html: icons.check }), h('span', null, 'Sprawdzian próbny')),
     h('a', { href: '#/settings', 'aria-current': hash === '#/settings' ? 'page' : null }, h('span', { class: 'num', html: icons.gear }), h('span', null, 'Ustawienia'))
   );
 }
@@ -176,7 +180,7 @@ function home() {
           ]
         : [h('h1', null, 'Powtórka')],
       h('p', { class: 'due' }, dueText),
-      h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: review.queue.length ? '#/review' : '#/review/extra', html: withIcon('play', review.queue.length ? 'Powtórka na dziś' : 'Ćwicz dodatkowo') })),
+      h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: review.queue.length ? '#/review' : '#/review/extra', html: withIcon('play', review.queue.length ? 'Powtórka na dziś' : 'Ćwicz dodatkowo') }), h('a', { class: 'btn big secondary', href: '#/exam', html: withIcon('check', 'Sprawdzian próbny') })),
       h('div', { style: 'margin-top:1.25rem' }, progressBar(overall.mastered, overall.total, 'Postęp ogólny'))
     ),
     h(
@@ -335,6 +339,59 @@ function reviewScreen(extra) {
   const start = (list) => runQuiz(root, list, { title: extra ? 'Ćwiczenie dodatkowe' : 'Powtórka na dziś', backHref: '#/', onRetryMissed: start });
   start(qs);
   return h('div', null, h('a', { class: 'back', href: '#/' }, '← Ekran główny'), root);
+}
+
+// ---------- sprawdzian próbny ----------
+function examIntro() {
+  const history = (store.get().exams || []).slice().reverse();
+  const best = history.length ? Math.max(...history.map((e) => e.pct)) : null;
+  const topics = DATA.topics.filter((t) => DATA.questions.some((q) => q.topic === t.id));
+  const fmt = (ts) => new Date(ts).toLocaleString('pl-PL', { weekday: 'short', day: 'numeric', month: 'numeric', hour: '2-digit', minute: '2-digit' });
+  return h(
+    'div',
+    null,
+    h('a', { class: 'back', href: '#/' }, '← Ekran główny'),
+    h('h1', null, 'Sprawdzian próbny'),
+    h(
+      'section',
+      { class: 'card' },
+      h('p', null, `${EXAM_SIZE} losowych pytań z całego zakresu, w różnych formach: wybór, wzory, równania, klocki i dopasowywanie.`),
+      h('ul', { class: 'rules' }, h('li', null, 'Bez podpowiedzi.'), h('li', null, 'Bez informacji o poprawności w trakcie – wynik i błędy zobaczysz na końcu.'), h('li', null, 'Błędne pytania trafią do powtórek (Leitner).')),
+      h('p', { class: 'muted' }, `Zakres: ${topics.map((t) => t.title).join(', ')}.`),
+      h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: '#/exam/run', html: withIcon('play', 'Zacznij sprawdzian') }))
+    ),
+    h(
+      'section',
+      { class: 'card' },
+      h('h2', null, 'Twoje wyniki'),
+      history.length
+        ? [
+            h('p', { class: 'muted' }, `Najlepszy wynik: ${best}%. Liczba prób: ${history.length}.`),
+            h('ul', { class: 'history' }, history.slice(0, 8).map((e) => h('li', null, h('span', { class: 'muted' }, fmt(e.t)), h('strong', null, `${e.pct}%`), h('span', { class: 'muted' }, `${e.score} z ${e.total}`))))
+          ]
+        : h('p', { class: 'muted' }, 'Jeszcze nie rozwiązano żadnego sprawdzianu.')
+    )
+  );
+}
+
+function examRun() {
+  const root = h('div');
+  const topicTitle = (id) => (topicById(id) ? topicById(id).title : id);
+  const start = () => {
+    const qs = buildExam(DATA.questions, EXAM_SIZE);
+    runQuiz(root, qs, {
+      exam: true,
+      title: 'Wynik sprawdzianu',
+      backHref: '#/exam',
+      topicTitle,
+      onRestart: start,
+      onRetryMissed: retry,
+      onFinish: (r) => store.update((s) => { s.exams = [...(s.exams || []), { t: Date.now(), ...r }].slice(-30); }),
+    });
+  };
+  const retry = (list) => runQuiz(root, list, { title: 'Powtórka błędów', backHref: '#/exam', onRetryMissed: retry });
+  start();
+  return h('div', null, h('a', { class: 'back', href: '#/exam' }, '← Sprawdzian próbny'), root);
 }
 
 // ---------- laboratorium ----------

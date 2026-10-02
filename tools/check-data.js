@@ -4,6 +4,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { buildExam, EXAM_SIZE } from '../js/exam.js';
 import { parseEquation, parseSpecies, parseFormula, checkBalance, extractFormulaSegments } from '../js/chem.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -225,6 +226,23 @@ if (indData) {
   }
 }
 for (const t of theory ? theory.topics : []) for (const tool of t.tools || []) if (!/^#\//.test(tool.href || '') || !tool.label) err(`topic ${t.id}`, 'tools: potrzebne href (#/…) i label');
+
+// ---------- losowanie sprawdzianu ----------
+{
+  const activeTopics = new Set(questions.map((q) => q.topic));
+  let minTyped = Infinity;
+  for (let i = 0; i < 300; i++) {
+    const ex = buildExam(questions, EXAM_SIZE);
+    const w = `sprawdzian (próba ${i + 1})`;
+    if (ex.length !== Math.min(EXAM_SIZE, questions.length)) { err(w, `liczba pytań ${ex.length}`); break; }
+    if (new Set(ex.map((q) => q.id)).size !== ex.length) { err(w, 'powtarzające się pytania'); break; }
+    const topics = new Set(ex.map((q) => q.topic));
+    if (topics.size < Math.min(activeTopics.size, EXAM_SIZE)) { err(w, `za mało działów (${topics.size} z ${activeTopics.size})`); break; }
+    minTyped = Math.min(minTyped, ex.filter((q) => q.type !== 'choice').length);
+  }
+  if (Number.isFinite(minTyped) && minTyped < 4) err('sprawdzian', `za mało pytań innych typów niż wybór (min. ${minTyped} w próbie)`);
+  else console.log(`Losowanie sprawdzianu OK (300 prób, min. ${minTyped} pytań innych typów niż wybór).`);
+}
 
 // ---------- service worker ----------
 const swPath = join(root, 'sw.js');
