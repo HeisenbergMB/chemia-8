@@ -1,6 +1,6 @@
 // Service worker: pełna praca offline. Przy zmianie plików podnieś VERSION –
 // stary cache zostanie usunięty przy aktywacji.
-const VERSION = '1.1.0';
+const VERSION = '1.1.1';
 const CACHE = `chemia8-${VERSION}`;
 
 const ASSETS = [

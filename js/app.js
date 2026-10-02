@@ -8,7 +8,7 @@ import { runQuiz } from './quiz.js';
 import { renderSettings } from './settings.js';
 import { icons, withIcon } from './icons.js';
 
-const APP_VERSION = '1.1.0'; // trzymaj zgodnie z VERSION w sw.js
+const APP_VERSION = '1.1.1'; // trzymaj zgodnie z VERSION w sw.js
 
 const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [] };
 const main = document.getElementById('main');
@@ -112,7 +112,7 @@ function renderSide(hash) {
         'a',
         {
           href: t.status === 'active' ? `#/topic/${t.id}` : '#/',
-          class: t.status === 'active' ? '' : 'soon',
+          class: `c${(DATA.topics.indexOf(t) % 5) + 1}${t.status === 'active' ? '' : ' soon'}`,
           'aria-current': hash.includes(`/${t.id}`) ? 'page' : null,
           'aria-disabled': t.status === 'active' ? null : 'true',
         },
@@ -182,7 +182,7 @@ function home() {
           const st = topicStats(DATA.questions, t.id);
           return h(
             active ? 'a' : 'div',
-            { class: `topic${active ? '' : ' soon'}`, href: active ? `#/topic/${t.id}` : null },
+            { class: `topic c${(i % 5) + 1}${active ? '' : ' soon'}`, href: active ? `#/topic/${t.id}` : null },
             h('span', { class: 'num', 'aria-hidden': 'true' }, String(i + 1).padStart(2, '0')),
             h('h3', null, t.title),
             h('p', null, t.desc),
