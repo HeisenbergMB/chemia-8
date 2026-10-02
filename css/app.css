@@ -596,3 +596,21 @@ input[type="date"], input[type="text"], input[type="file"] {
 .match-slot { width: 100%; text-align: left; min-height: 56px; font-size: 1.02rem; }
 .match-slot .slot-n { font-family: inherit; font-size: 0.85rem; }
 .token.text { text-align: left; font-size: 1.02rem; max-width: 100%; }
+
+/* ---------- wskaźniki ---------- */
+.ind-stage { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin: 0.8rem 0; }
+.ind-tube { width: 110px; height: auto; }
+.ind-text { flex: 1 1 220px; }
+.ind-color { display: flex; align-items: center; gap: 0.7rem; font-size: 1.5rem; font-weight: 650; margin: 0.2rem 0 0.4rem; }
+.swatch { flex: none; display: inline-block; width: 1.5rem; height: 1.5rem; border-radius: 7px; border: 1px solid rgba(255, 255, 255, 0.35); }
+.swatch.clear { background: repeating-linear-gradient(135deg, transparent 0 4px, rgba(255, 255, 255, 0.28) 4px 5px); border-style: dashed; }
+.small { font-size: 0.8rem; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.ind-table { width: 100%; border-collapse: separate; border-spacing: 0; min-width: 560px; }
+.ind-table th, .ind-table td { padding: 0.7rem 0.8rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.ind-table thead th { font-size: 0.9rem; color: var(--muted); font-weight: 600; }
+.ind-table tbody th { font-weight: 600; }
+.ind-table tr.sel { background: rgba(79, 195, 177, 0.07); }
+.ind-table td.sel { background: var(--primary-soft); box-shadow: inset 0 0 0 2px var(--primary-line); border-radius: 8px; }
+.cell { display: inline-flex; align-items: center; gap: 0.55rem; }
+.linklike { font: inherit; font-weight: 600; color: var(--ink); background: none; border: 0; padding: 0; min-height: 44px; text-align: left; cursor: pointer; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; }

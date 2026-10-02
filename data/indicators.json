@@ -1,0 +1,119 @@
+{
+  "environments": [
+    {
+      "id": "kwasowy",
+      "label": "kwasowy",
+      "ph": "pH < 7",
+      "example": "np. kwas solny (HCl)",
+      "loc": "kwasowym"
+    },
+    {
+      "id": "obojetny",
+      "label": "obojętny",
+      "ph": "pH = 7",
+      "example": "np. woda destylowana",
+      "loc": "obojętnym"
+    },
+    {
+      "id": "zasadowy",
+      "label": "zasadowy",
+      "ph": "pH > 7",
+      "example": "np. roztwór NaOH",
+      "loc": "zasadowym"
+    }
+  ],
+  "indicators": [
+    {
+      "id": "fenoloftaleina",
+      "name": "Fenoloftaleina",
+      "colors": {
+        "kwasowy": {
+          "name": "bezbarwny",
+          "hex": "#e9eef3",
+          "clear": true
+        },
+        "obojetny": {
+          "name": "bezbarwny",
+          "hex": "#e9eef3",
+          "clear": true
+        },
+        "zasadowy": {
+          "name": "malinowy",
+          "hex": "#e83e8c"
+        }
+      }
+    },
+    {
+      "id": "oranz",
+      "name": "Oranż metylowy",
+      "colors": {
+        "kwasowy": {
+          "name": "czerwony",
+          "hex": "#e53935"
+        },
+        "obojetny": {
+          "name": "pomarańczowy",
+          "hex": "#f08a24"
+        },
+        "zasadowy": {
+          "name": "żółty",
+          "hex": "#f2d21c"
+        }
+      }
+    },
+    {
+      "id": "lakmus",
+      "name": "Lakmus",
+      "colors": {
+        "kwasowy": {
+          "name": "czerwony",
+          "hex": "#e53935"
+        },
+        "obojetny": {
+          "name": "fioletowy",
+          "hex": "#8e5bd0"
+        },
+        "zasadowy": {
+          "name": "niebieski",
+          "hex": "#3b72e8"
+        }
+      }
+    },
+    {
+      "id": "papierek",
+      "name": "Uniwersalny papierek wskaźnikowy",
+      "colors": {
+        "kwasowy": {
+          "name": "czerwony lub pomarańczowy",
+          "hex": "#ee5a2c"
+        },
+        "obojetny": {
+          "name": "zielony",
+          "hex": "#6fba3f"
+        },
+        "zasadowy": {
+          "name": "niebieski lub granatowy",
+          "hex": "#2c55c9"
+        }
+      }
+    },
+    {
+      "id": "btb",
+      "name": "Błękit bromotymolowy",
+      "colors": {
+        "kwasowy": {
+          "name": "żółty",
+          "hex": "#f2d21c"
+        },
+        "obojetny": {
+          "name": "zielony",
+          "hex": "#4caf50"
+        },
+        "zasadowy": {
+          "name": "niebieski",
+          "hex": "#2c6fd6"
+        }
+      }
+    }
+  ]
+}

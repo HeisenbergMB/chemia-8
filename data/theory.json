@@ -37,8 +37,20 @@
     {
       "id": "wskazniki",
       "title": "Wskaźniki i odczyn",
-      "status": "soon",
-      "desc": "Barwy wskaźników w kwasie, wodzie i zasadzie."
+      "status": "active",
+      "desc": "Barwy wskaźników w kwasie, wodzie i zasadzie.",
+      "tools": [
+        {
+          "href": "#/indicators",
+          "label": "Tabela wskaźników",
+          "icon": "palette"
+        },
+        {
+          "href": "#/indicators/guess",
+          "label": "Zgadnij odczyn po kolorze",
+          "icon": "drop"
+        }
+      ]
     },
     {
       "id": "wlasciwosci",
@@ -287,6 +299,48 @@
       "body": "**Obserwacja:** „roztwór zabarwił się na malinowo”, „wytrącił się niebieski galaretowaty osad”, „wydzielił się gaz”.\n**Wniosek:** „roztwór ma odczyn zasadowy”, „powstał wodorotlenek miedzi(II)”, „gazem jest wodór”.\nW obserwacji nie piszemy nazw substancji, których nie widać. Nazwy powstałych związków należą do wniosków.",
       "examples": [],
       "tip": "Test: czy to zobaczę lub usłyszę? Jeśli tak, to obserwacja."
+    },
+    {
+      "id": "t-ws-01",
+      "topic": "wskazniki",
+      "title": "Odczyn roztworu i skala pH",
+      "body": "Odczyn mówi, czy roztwór jest kwasowy, obojętny czy zasadowy.\n**Odczyn kwasowy:** pH poniżej 7 (w roztworze są kationy wodoru $H^+$).\n**Odczyn obojętny:** pH równe 7 (np. woda destylowana).\n**Odczyn zasadowy:** pH powyżej 7 (w roztworze są aniony wodorotlenkowe $OH^-$).\nRoztwory zasad, np. $NaOH$ i $Ca(OH)2$, mają odczyn zasadowy.",
+      "examples": [],
+      "tip": "Zasada daje aniony $OH^-$ (dysocjacja), dlatego jej roztwór ma pH powyżej 7."
+    },
+    {
+      "id": "t-ws-02",
+      "topic": "wskazniki",
+      "title": "Czym są wskaźniki?",
+      "body": "Wskaźniki (indykatory) to substancje, które **zmieniają barwę** zależnie od odczynu roztworu. Dzięki nim rozpoznajemy odczyn bez mierzenia pH.\nW szkole korzystamy z: fenoloftaleiny, oranżu metylowego, lakmusu, uniwersalnego papierka wskaźnikowego i błękitu bromotymolowego.",
+      "examples": [],
+      "tip": "Pełna tabela barw jest w zakładce „Tabela wskaźników” (przycisk w dziale)."
+    },
+    {
+      "id": "t-ws-03",
+      "topic": "wskazniki",
+      "title": "Jak zapamiętać barwy?",
+      "body": "**Fenoloftaleina:** bezbarwna w kwasie i w wodzie, **malinowa** tylko w zasadzie.\n**Lakmus:** czerwony – fioletowy – niebieski (kwas – woda – zasada).\n**Oranż metylowy:** czerwony – pomarańczowy – żółty.\n**Błękit bromotymolowy:** żółty – zielony – niebieski.\n**Papierek uniwersalny:** czerwony lub pomarańczowy – zielony – niebieski lub granatowy.",
+      "examples": [],
+      "tip": "Sposób: kolejność „kwas – woda – zasada” jest zawsze taka sama. Zasada często oznacza kolory zimne (niebieski), kwas – ciepłe (czerwony)."
+    },
+    {
+      "id": "t-ws-04",
+      "topic": "wskazniki",
+      "title": "Który wskaźnik czego nie odróżni?",
+      "body": "Fenoloftaleina jest bezbarwna w kwasie **i** w wodzie, więc nie odróżnia odczynu kwasowego od obojętnego. Dobrze za to wykrywa zasady (malinowy kolor).\nLakmus, oranż metylowy, błękit bromotymolowy i papierek uniwersalny mają różne barwy we wszystkich trzech odczynach, więc je odróżniają.",
+      "examples": [],
+      "tip": "Jeśli po dodaniu fenoloftaleiny roztwór pozostał bezbarwny, odczyn jest kwasowy lub obojętny – na pewno nie zasadowy."
+    },
+    {
+      "id": "t-ws-05",
+      "topic": "wskazniki",
+      "title": "Wskaźniki w doświadczeniu z zasadami",
+      "body": "W doświadczeniu z sodem fenoloftaleina zabarwiła roztwór na malinowo: to **obserwacja**. **Wniosek:** powstała zasada, a roztwór ma odczyn zasadowy.\nW opisie pamiętaj podać, jakiego wskaźnika użyto, bo od tego zależy barwa.",
+      "examples": [
+        "2Na + 2H2O -> 2NaOH + H2↑"
+      ],
+      "tip": "Pisząc obserwację, podawaj kolor, np. „roztwór z fenoloftaleiną zabarwił się na malinowo”."
     }
   ],
   "flash": [
@@ -547,6 +601,72 @@
       "topic": "doswiadczenia",
       "front": "Co wykryje woda wapienna?",
       "back": "$CO2$ – woda mętnieje (osad $CaCO3$)"
+    },
+    {
+      "id": "f-ws-01",
+      "topic": "wskazniki",
+      "front": "Fenoloftaleina: kwas, woda, zasada",
+      "back": "bezbarwna – bezbarwna – malinowa"
+    },
+    {
+      "id": "f-ws-02",
+      "topic": "wskazniki",
+      "front": "Lakmus: kwas, woda, zasada",
+      "back": "czerwony – fioletowy – niebieski"
+    },
+    {
+      "id": "f-ws-03",
+      "topic": "wskazniki",
+      "front": "Oranż metylowy: kwas, woda, zasada",
+      "back": "czerwony – pomarańczowy – żółty"
+    },
+    {
+      "id": "f-ws-04",
+      "topic": "wskazniki",
+      "front": "Błękit bromotymolowy: kwas, woda, zasada",
+      "back": "żółty – zielony – niebieski"
+    },
+    {
+      "id": "f-ws-05",
+      "topic": "wskazniki",
+      "front": "Papierek uniwersalny: kwas, woda, zasada",
+      "back": "czerwony lub pomarańczowy – zielony – niebieski lub granatowy"
+    },
+    {
+      "id": "f-ws-06",
+      "topic": "wskazniki",
+      "front": "Odczyn kwasowy – pH",
+      "back": "poniżej 7"
+    },
+    {
+      "id": "f-ws-07",
+      "topic": "wskazniki",
+      "front": "Odczyn obojętny – pH",
+      "back": "równe 7"
+    },
+    {
+      "id": "f-ws-08",
+      "topic": "wskazniki",
+      "front": "Odczyn zasadowy – pH",
+      "back": "powyżej 7"
+    },
+    {
+      "id": "f-ws-09",
+      "topic": "wskazniki",
+      "front": "Który jon daje odczyn zasadowy?",
+      "back": "$OH^-$ – anion wodorotlenkowy"
+    },
+    {
+      "id": "f-ws-10",
+      "topic": "wskazniki",
+      "front": "Który wskaźnik nie odróżnia kwasu od wody?",
+      "back": "fenoloftaleina (bezbarwna w obu)"
+    },
+    {
+      "id": "f-ws-11",
+      "topic": "wskazniki",
+      "front": "Co to jest wskaźnik?",
+      "back": "Substancja zmieniająca barwę zależnie od odczynu roztworu."
     }
   ]
 }

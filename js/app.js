@@ -8,10 +8,11 @@ import { runQuiz, TYPED_TYPES } from './quiz.js';
 import { renderSettings } from './settings.js';
 import { icons, withIcon } from './icons.js';
 import { renderLab } from './lab.js';
+import { renderIndicators, renderGuess } from './indicators.js';
 
-const APP_VERSION = '1.4.0'; // trzymaj zgodnie z VERSION w sw.js
+const APP_VERSION = '1.5.0'; // trzymaj zgodnie z VERSION w sw.js
 
-const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [], experiments: [] };
+const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [], experiments: [], indicators: null };
 const main = document.getElementById('main');
 const side = document.getElementById('side');
 
@@ -27,12 +28,14 @@ async function init() {
   document.getElementById('gear').innerHTML = icons.gear;
   applySettings();
   try {
-    const [theory, questions, equations, experiments] = await Promise.all([
+    const [theory, questions, equations, experiments, indicators] = await Promise.all([
       loadJson('data/theory.json'),
       loadJson('data/questions.json'),
       loadJson('data/equations.json'),
       loadJson('data/experiments.json'),
+      loadJson('data/indicators.json'),
     ]);
+    DATA.indicators = indicators;
     DATA.experiments = experiments.experiments;
     DATA.topics = theory.topics;
     DATA.cards = theory.cards;
@@ -89,6 +92,8 @@ const routes = [
   [/^#\/quiz\/([\w-]+)(?:\/(all|zapis))?$/, quizScreen],
   [/^#\/review(?:\/(extra))?$/, reviewScreen],
   [/^#\/lab\/([\w-]+)$/, labScreen],
+  [/^#\/indicators$/, () => renderIndicators(DATA.indicators)],
+  [/^#\/indicators\/guess$/, () => renderGuess(DATA.indicators)],
   [/^#\/settings$/, settingsScreen],
 ];
 
@@ -227,6 +232,7 @@ function topicScreen(id) {
           const e = DATA.experiments.find((x) => x.id === lid);
           return e ? h('a', { class: 'btn', href: `#/lab/${lid}`, html: withIcon('flask', `Laboratorium: ${e.title}`) }) : null;
         }),
+        ...(t.tools || []).map((tool) => h('a', { class: 'btn', href: tool.href, html: withIcon(tool.icon, tool.label) })),
         typedCount ? h('a', { class: 'btn', href: `#/quiz/${id}/zapis`, html: withIcon('pen', `Układanie zapisu (${typedCount})`) }) : null,
         h('a', { class: 'btn secondary', href: `#/quiz/${id}/all`, html: withIcon('list', `Wszystkie pytania (${qs.length})`) })
       )

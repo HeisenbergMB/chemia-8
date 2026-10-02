@@ -1,6 +1,6 @@
 // Service worker: pełna praca offline. Przy zmianie plików podnieś VERSION –
 // stary cache zostanie usunięty przy aktywacji.
-const VERSION = '1.4.0';
+const VERSION = '1.5.0';
 const CACHE = `chemia8-${VERSION}`;
 
 const ASSETS = [
@@ -21,11 +21,13 @@ const ASSETS = [
   'js/dnd.js',
   'js/match.js',
   'js/lab.js',
+  'js/indicators.js',
   'js/settings.js',
   'data/theory.json',
   'data/questions.json',
   'data/equations.json',
   'data/experiments.json',
+  'data/indicators.json',
   'icons/icon-192.png',
   'icons/icon-512.png',
   'icons/apple-touch-icon.png',

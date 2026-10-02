@@ -33,3 +33,12 @@ Aplikacja trzyma się wersji z zeszytu tam, gdzie ma to znaczenie na sprawdziani
 - Probówka II w animacji (AgNO₃ + NaOH → AgOH↓, szary osad) jest zgodna z zeszytem, mimo uwag z początku pliku (w rzeczywistości Ag₂O). Animacja pokazuje szary osad bez „rozkładania się”; wspominam o tym tylko w opisie.
 - Animacja sodu pokazuje gaz zbierający się w probówce pod lejkiem i „puk” po zbliżeniu płomienia – to schematyczne odwzorowanie opisu z zeszytu (nie jest to dokładny schemat aparatury).
 - Barwa osadu Fe(OH)₃ (brunatny) i Cu(OH)₂ (niebieski galaretowaty) – z zeszytu. Białe osady Al(OH)₃ i Mg(OH)₂ – z wiedzy ogólnej.
+
+## Wskaźniki i odczyn (dział 05)
+W zeszycie nie ma tabeli barw wskaźników – uzupełniłem ją z wiedzy ogólnej (`data/indicators.json`). **Proszę porównać z tabelą z podręcznika** i dać znać, co poprawić (zmiana w jednym pliku zmienia też pytania generowane z tabeli).
+- Fenoloftaleina: bezbarwna w kwasie i w wodzie, malinowa w zasadzie.
+- Lakmus: czerwony – fioletowy – niebieski (kwas – woda – zasada).
+- Oranż metylowy: czerwony – pomarańczowy – żółty. W rzeczywistości oranż metylowy jest żółty już przy pH około 4,4, więc w wodzie jest raczej żółtopomarańczowy; przyjąłem zapis podręcznikowy z trzema barwami.
+- Błękit bromotymolowy: żółty – zielony – niebieski.
+- Uniwersalny papierek wskaźnikowy: czerwony lub pomarańczowy – zielony – niebieski lub granatowy (barwa zależy od pH).
+- Skala pH: kwasowy poniżej 7, obojętny 7, zasadowy powyżej 7. Jony H⁺ jako przyczyna odczynu kwasowego – z wiedzy ogólnej.

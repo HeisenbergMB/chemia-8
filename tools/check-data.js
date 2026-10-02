@@ -208,6 +208,24 @@ if (theory && exps) {
   for (const t of theory.topics) for (const l of t.labs || []) if (!known.has(l)) err(`topic ${t.id}`, `nieznane laboratorium "${l}"`);
 }
 
+// ---------- wskaźniki ----------
+const indData = readJson('data/indicators.json');
+if (indData) {
+  const envIds = (indData.environments || []).map((e) => e.id);
+  for (const e of indData.environments || []) if (!e.loc || !e.label || !e.ph) err('indicators.json', `odczyn ${e.id}: potrzebne label, loc i ph`);
+  if (envIds.length !== 3) err('indicators.json', 'oczekuję 3 odczynów (kwasowy, obojętny, zasadowy)');
+  for (const x of indData.indicators || []) {
+    const w = `indicator ${x.id}`;
+    uniqueId(`ind:${x.id}`, w);
+    if (!x.name) err(w, 'brak name');
+    for (const e of envIds) {
+      const c = (x.colors || {})[e];
+      if (!c || !c.name || !/^#[0-9a-fA-F]{6}$/.test(c.hex || '')) err(w, `zła barwa dla odczynu "${e}" (potrzebne name i hex #rrggbb)`);
+    }
+  }
+}
+for (const t of theory ? theory.topics : []) for (const tool of t.tools || []) if (!/^#\//.test(tool.href || '') || !tool.label) err(`topic ${t.id}`, 'tools: potrzebne href (#/…) i label');
+
 // ---------- service worker ----------
 const swPath = join(root, 'sw.js');
 if (existsSync(swPath)) {
