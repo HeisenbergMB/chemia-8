@@ -643,3 +643,27 @@ input[type="date"], input[type="text"], input[type="file"] {
 .atom-table th, .atom-table td { padding: 0.4rem 0.9rem; text-align: left; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
 .atom-table thead th { font-size: 0.8rem; color: var(--muted); font-weight: 600; }
 .atom-table tr.bad td, .atom-table tr.bad th { color: var(--bad); font-weight: 650; }
+
+/* ---------- tabela rozpuszczalności ---------- */
+.sol-table { border-collapse: separate; border-spacing: 4px; min-width: 460px; }
+.sol-table th { padding: 0.3rem 0.5rem; font-weight: 650; text-align: center; white-space: nowrap; }
+.sol-table thead th { color: var(--muted); font-size: 0.95rem; }
+.sol-table td { padding: 0; }
+.sol-cell { width: 100%; min-width: 52px; height: 48px; border-radius: 10px; border: 1px solid transparent; font-weight: 700; font-size: 1.05rem; font-family: var(--mono); cursor: pointer; color: var(--ink); }
+.sol-cell.static { display: inline-flex; align-items: center; justify-content: center; width: 2rem; min-width: 2rem; height: 2rem; font-size: 0.9rem; cursor: default; }
+.sol-cell.c-R { background: rgba(79, 195, 177, 0.18); border-color: rgba(79, 195, 177, 0.5); color: #8fe3d4; }
+.sol-cell.c-S { background: rgba(240, 199, 106, 0.16); border-color: rgba(240, 199, 106, 0.5); color: var(--warn); }
+.sol-cell.c-T { background: repeating-linear-gradient(135deg, rgba(255, 150, 132, 0.2) 0 5px, rgba(255, 150, 132, 0.08) 5px 10px); border-color: rgba(255, 150, 132, 0.55); color: var(--bad); }
+.sol-cell.on { box-shadow: 0 0 0 2px var(--accent); }
+.sol-legend { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem 1.4rem; margin: 0.9rem 0 0.4rem; padding: 0; }
+.sol-legend li { display: inline-flex; align-items: center; gap: 0.5rem; }
+.sol-detail { display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap; margin: 0.3rem 0 0.4rem; }
+.sol-formula { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.01em; }
+.sol-name { font-size: 1.05rem; margin-bottom: 0.3rem; }
+.sol-badge { display: inline-block; padding: 0.15rem 0.7rem; border-radius: 999px; font-size: 0.85rem; font-weight: 650; border: 1px solid var(--line); }
+.sol-badge.c-R { color: #8fe3d4; border-color: rgba(79, 195, 177, 0.5); background: rgba(79, 195, 177, 0.12); }
+.sol-badge.c-S { color: var(--warn); border-color: rgba(240, 199, 106, 0.5); background: rgba(240, 199, 106, 0.1); }
+.sol-badge.c-T { color: var(--bad); border-color: rgba(255, 150, 132, 0.5); background: rgba(255, 150, 132, 0.1); }
+.sol-pick { margin-bottom: 0.6rem; }
+.sol-steps { margin: 0.4rem 0 1rem; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
+.sol-eq { font-size: 1.3rem; margin-bottom: 0; }

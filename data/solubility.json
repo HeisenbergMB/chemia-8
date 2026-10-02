@@ -1,0 +1,31 @@
+{
+  "legend": {
+    "R": "rozpuszczalny w wodzie",
+    "S": "średnio rozpuszczalny",
+    "T": "trudno rozpuszczalny (osad)"
+  },
+  "anions": [
+    { "id": "OH", "sym": "OH", "charge": 1, "poly": true, "label": "OH⁻", "name": "wodorotlenek" },
+    { "id": "Cl", "sym": "Cl", "charge": 1, "poly": false, "label": "Cl⁻", "name": "chlorek" },
+    { "id": "Br", "sym": "Br", "charge": 1, "poly": false, "label": "Br⁻", "name": "bromek" },
+    { "id": "NO3", "sym": "NO3", "charge": 1, "poly": true, "label": "NO₃⁻", "name": "azotan(V)" },
+    { "id": "SO4", "sym": "SO4", "charge": 2, "poly": true, "label": "SO₄²⁻", "name": "siarczan(VI)" }
+  ],
+  "cations": [
+    { "id": "Li", "sym": "Li", "charge": 1, "label": "Li⁺", "gen": "litu", "row": "RRRRR" },
+    { "id": "Na", "sym": "Na", "charge": 1, "label": "Na⁺", "gen": "sodu", "row": "RRRRR" },
+    { "id": "K", "sym": "K", "charge": 1, "label": "K⁺", "gen": "potasu", "row": "RRRRR" },
+    { "id": "Mg", "sym": "Mg", "charge": 2, "label": "Mg²⁺", "gen": "magnezu", "row": "TRRRR" },
+    { "id": "Ca", "sym": "Ca", "charge": 2, "label": "Ca²⁺", "gen": "wapnia", "row": "SRRRS" },
+    { "id": "Sr", "sym": "Sr", "charge": 2, "label": "Sr²⁺", "gen": "strontu", "row": "RRRRT" },
+    { "id": "Ba", "sym": "Ba", "charge": 2, "label": "Ba²⁺", "gen": "baru", "row": "RRRRT" },
+    { "id": "Al", "sym": "Al", "charge": 3, "label": "Al³⁺", "gen": "glinu", "row": "TRRRR" },
+    { "id": "Cr", "sym": "Cr", "charge": 3, "label": "Cr³⁺", "gen": "chromu(III)", "row": "TRRRR" },
+    { "id": "Fe2", "sym": "Fe", "charge": 2, "label": "Fe²⁺", "gen": "żelaza(II)", "row": "TRRRR" },
+    { "id": "Fe3", "sym": "Fe", "charge": 3, "label": "Fe³⁺", "gen": "żelaza(III)", "row": "TRRRR" },
+    { "id": "Cu", "sym": "Cu", "charge": 2, "label": "Cu²⁺", "gen": "miedzi(II)", "row": "TRRRR" },
+    { "id": "Zn", "sym": "Zn", "charge": 2, "label": "Zn²⁺", "gen": "cynku", "row": "TRRRR" },
+    { "id": "Ag", "sym": "Ag", "charge": 1, "label": "Ag⁺", "gen": "srebra", "row": "TTTRS" }
+  ],
+  "bases": ["Na", "K"]
+}

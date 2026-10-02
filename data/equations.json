@@ -38,5 +38,11 @@
   {"id": "e-037", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "2Fe + 3Cl2 -> 2FeCl3"},
   {"id": "e-038", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "2K + Cl2 -> 2KCl"},
   {"id": "e-039", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "2Cu + O2 -> 2CuO"},
-  {"id": "e-040", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "4Fe + 3O2 -> 2Fe2O3"}
+  {"id": "e-040", "topic": "bilansowanie", "kind": "bilansowanie", "eq": "4Fe + 3O2 -> 2Fe2O3"},
+  {"id": "e-041", "topic": "rozpuszczalnosc", "kind": "sól+zasada", "eq": "ZnCl2 + 2NaOH -> Zn(OH)2↓ + 2NaCl"},
+  {"id": "e-042", "topic": "rozpuszczalnosc", "kind": "sól+zasada", "eq": "Al2(SO4)3 + 6KOH -> 2Al(OH)3↓ + 3K2SO4"},
+  {"id": "e-043", "topic": "rozpuszczalnosc", "kind": "sól+zasada", "eq": "Al2(SO4)3 + 6NaOH -> 2Al(OH)3↓ + 3Na2SO4"},
+  {"id": "e-044", "topic": "rozpuszczalnosc", "kind": "sól+zasada", "eq": "Zn(NO3)2 + 2KOH -> Zn(OH)2↓ + 2KNO3"},
+  {"id": "e-045", "topic": "rozpuszczalnosc", "kind": "sól+zasada", "eq": "Cr(NO3)3 + 3NaOH -> Cr(OH)3↓ + 3NaNO3"},
+  {"id": "e-046", "topic": "rozpuszczalnosc", "kind": "sól+zasada", "eq": "Fe(NO3)3 + 3KOH -> Fe(OH)3↓ + 3KNO3"}
 ]

@@ -5,6 +5,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildExam, EXAM_SIZE } from '../js/exam.js';
+import { reaction as solReaction } from '../js/solubility.js';
 import { parseEquation, parseSpecies, parseFormula, checkBalance, extractFormulaSegments } from '../js/chem.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -220,6 +221,35 @@ if (exps) {
 if (theory && exps) {
   const known = new Set((exps.experiments || []).map((e) => e.id));
   for (const t of theory.topics) for (const l of t.labs || []) if (!known.has(l)) err(`topic ${t.id}`, `nieznane laboratorium "${l}"`);
+}
+
+// ---------- tabela rozpuszczalności ----------
+const sol = readJson('data/solubility.json');
+if (sol) {
+  const codes = new Set(Object.keys(sol.legend || {}));
+  const nAn = (sol.anions || []).length;
+  const catIds = new Set();
+  for (const c of sol.cations || []) {
+    const w = `solubility cation ${c.id}`;
+    if (catIds.has(c.id)) err(w, 'powtórzone id');
+    catIds.add(c.id);
+    if (!c.row || c.row.length !== nAn) err(w, `row musi mieć ${nAn} znaków (jest ${c.row ? c.row.length : 'brak'})`);
+    else for (const ch of c.row) if (!codes.has(ch)) err(w, `nieznany kod "${ch}" (legenda: ${[...codes].join(', ')})`);
+    for (const k of ['sym', 'charge', 'label', 'gen']) if (!c[k]) err(w, `brak ${k}`);
+  }
+  for (const a of sol.anions || []) for (const k of ['id', 'sym', 'charge', 'label', 'name']) if (a[k] == null) err(`solubility anion ${a.id}`, `brak ${k}`);
+  for (const b of sol.bases || []) if (!catIds.has(b)) err('solubility', `zasada "${b}" nie jest kationem z tabeli`);
+  let n = 0;
+  for (const c of sol.cations || []) for (const a of (sol.anions || []).filter((x) => x.id !== 'OH')) for (const b of sol.bases || []) {
+    const r = solReaction(sol, c.id, a.id, b);
+    if (!r.ok) continue;
+    n++;
+    try {
+      const bal = checkBalance(parseEquation(r.eq));
+      if (!bal.ok) err(`solubility ${c.id}+${a.id}+${b}`, `wygenerowane równanie niezbilansowane: ${r.eq} (${bal.diffs.join('; ')})`);
+    } catch (e) { err(`solubility ${c.id}+${a.id}+${b}`, e.message); }
+  }
+  console.log(`Tabela rozpuszczalności: ${(sol.cations || []).length} kationów × ${nAn} anionów, ${n} reakcji sprawdzonych pod kątem bilansu.`);
 }
 
 // ---------- unikalność treści pytań ----------

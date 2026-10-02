@@ -54,3 +54,13 @@ Z zeszytu: NaOH – substancja stała, biała, dobrze rozpuszczalna (wydziela si
 ## Bilansowanie równań (dział 07)
 - Dziesięć podstawowych reakcji do ćwiczenia (spalanie metali w tlenie, reakcje z chlorem, synteza wody i amoniaku: np. 4Al + 3O₂ → 2Al₂O₃) pochodzi z wiedzy z klasy 7–8, nie z zeszytu. Czy pasują do zakresu sprawdzianu?
 - Zasada „współczynniki mają być najmniejszymi liczbami całkowitymi” jest egzekwowana: zapis zbilansowany, ale nieskrócony (np. 4Na + 4H₂O → 4NaOH + 2H₂), aplikacja uznaje za błędny i wyjaśnia dlaczego. Jeśli nauczycielka takiego zapisu nie odrzuca, można to złagodzić.
+
+## Tabela rozpuszczalności (dział 03)
+W zeszycie nie ma tabeli rozpuszczalności. Zbudowałem ją z wiedzy ogólnej i zawęziłem do tego, czego dotyczy sprawdzian (kationy: Li, Na, K, Mg, Ca, Sr, Ba, Al, Cr, Fe(II), Fe(III), Cu, Zn, Ag; aniony: OH⁻, Cl⁻, Br⁻, NO₃⁻, SO₄²⁻). **Proszę porównać z tabelą z podręcznika** (plik `data/solubility.json`, jeden wiersz na kation, kolejność anionów jak w nagłówku). Najbardziej niepewne komórki:
+- **Sr(OH)₂** – przyjęty jako rozpuszczalny (R). W niektórych tabelach „średnio”.
+- **Mg(OH)₂** – trudno rozpuszczalny (T). Zob. też uwaga o magnezie w dziale o dysocjacji.
+- **Ca(OH)₂** – średnio rozpuszczalny (S), a w zeszycie CaCl₂ + 2NaOH daje osad. Kalkulator traktuje S jak wytrącający się osad („jak w zeszycie”).
+- **AgOH** – w rzeczywistości nietrwały (powstaje Ag₂O); w tabeli T, bo tak jest w zeszycie.
+- **CaSO₄ (S), Ag₂SO₄ (S), SrSO₄ i BaSO₄ (T)** – siarczany w tabelach bywają klasyfikowane inaczej.
+- Skróty R/S/T oraz słowa „trudno rozpuszczalny (osad)” – przyjęte robocze. Czy podręcznik używa np. „N” dla praktycznie nierozpuszczalnych?
+- Reguła kalkulatora: reakcja zachodzi, gdy sól jest rozpuszczalna (R), a powstały wodorotlenek jest S lub T. Sól typu S (np. CaSO₄) jest traktowana jak nieprzydatna do reakcji w roztworze.

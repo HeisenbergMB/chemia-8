@@ -16,6 +16,31 @@
       "desc": "Sól + zasada, osady i tabela rozpuszczalności.",
       "labs": [
         "osady"
+      ],
+      "tools": [
+        {
+          "href": "#/solubility/react",
+          "label": "Czy reakcja zajdzie?",
+          "icon": "flask"
+        }
+      ]
+    },
+    {
+      "id": "rozpuszczalnosc",
+      "title": "Tabela rozpuszczalności",
+      "status": "active",
+      "desc": "Co rozpuszcza się w wodzie i kiedy sól reaguje z zasadą.",
+      "tools": [
+        {
+          "href": "#/solubility",
+          "label": "Tabela rozpuszczalności",
+          "icon": "table"
+        },
+        {
+          "href": "#/solubility/react",
+          "label": "Czy reakcja zajdzie?",
+          "icon": "flask"
+        }
       ]
     },
     {
@@ -440,6 +465,50 @@
       "body": "Po wpisaniu współczynników policz każdy pierwiastek po lewej i po prawej stronie. Jeśli gdzieś się nie zgadza, popraw współczynnik **przy tym związku, w którym ten pierwiastek stoi**.\nW aplikacji możesz kliknąć „Pokaż bilans atomów” i zobaczyć tabelę z ✓ i ✗. Po sprawdzeniu aplikacja wskaże, który współczynnik jest błędny.",
       "examples": [],
       "tip": "Zaczynaj od pierwiastków, które występują w jednym związku po każdej stronie, a wodór i tlen zostaw na koniec."
+    },
+    {
+      "id": "t-rz-01",
+      "topic": "rozpuszczalnosc",
+      "title": "Co mówi tabela rozpuszczalności?",
+      "body": "Tabela pokazuje, czy dany związek rozpuszcza się w wodzie.\n**R** – rozpuszczalny w wodzie.\n**S** – średnio rozpuszczalny (np. $Ca(OH)2$).\n**T** – trudno rozpuszczalny: po zmieszaniu roztworów tworzy **osad**.\nW tabeli kationy (metale) są w wierszach, a aniony (reszty kwasowe i grupa $OH^-$) w kolumnach.",
+      "examples": [],
+      "tip": "W aplikacji stuknij komórkę tabeli, a zobaczysz wzór, nazwę i rozpuszczalność związku."
+    },
+    {
+      "id": "t-rz-02",
+      "topic": "rozpuszczalnosc",
+      "title": "Zasady, które warto zapamiętać",
+      "body": "**•** Wszystkie azotany(V) są rozpuszczalne.\n**•** Sole sodu, potasu i litu są rozpuszczalne.\n**•** Chlorki i bromki są rozpuszczalne, z wyjątkiem soli srebra.\n**•** Siarczany(VI) są rozpuszczalne, z wyjątkiem baru i strontu (wapnia i srebra – średnio).\n**•** Wodorotlenki rozpuszczalne: litu, sodu, potasu, baru i strontu. Reszta wodorotlenków (np. $Cu(OH)2$, $Fe(OH)3$, $Al(OH)3$) jest trudno rozpuszczalna.",
+      "examples": [],
+      "tip": "Najważniejsze na sprawdzian: $NaOH$ i $KOH$ są rozpuszczalne, a wodorotlenki żelaza, miedzi, glinu i chromu – nie."
+    },
+    {
+      "id": "t-rz-03",
+      "topic": "rozpuszczalnosc",
+      "title": "Jak sprawdzić, czy reakcja zajdzie?",
+      "body": "Dla reakcji **sól + zasada** zadaj trzy pytania:\n**1.** Czy sól jest rozpuszczalna? (Jeśli nie, nie ma jej jonów w roztworze.)\n**2.** Czy zasada jest rozpuszczalna? ($NaOH$ i $KOH$ tak.)\n**3.** Czy po zamianie partnerów powstaje **trudno rozpuszczalny wodorotlenek**? Jeśli tak, wytrąci się osad i reakcja zachodzi.",
+      "examples": [
+        "CuSO4 + 2NaOH -> Cu(OH)2↓ + Na2SO4"
+      ],
+      "tip": "Odpowiedź „nie” przy pytaniu 3 oznacza brak reakcji, bo wszystkie produkty zostają w roztworze."
+    },
+    {
+      "id": "t-rz-04",
+      "topic": "rozpuszczalnosc",
+      "title": "Przykłady, gdy reakcja nie zachodzi",
+      "body": "**•** $NaCl$ z $KOH$: powstałyby $NaOH$ i $KCl$, oba rozpuszczalne.\n**•** $BaCl2$ z $NaOH$: $Ba(OH)2$ jest rozpuszczalny.\n**•** $AgCl$ z $NaOH$: $AgCl$ nie rozpuszcza się w wodzie, więc nie ma jonów w roztworze.\nW takich przypadkach nie wytrąca się osad, więc nie widać żadnej zmiany.",
+      "examples": [],
+      "tip": "Brak osadu, gazu i innych zmian oznacza: reakcja nie zachodzi."
+    },
+    {
+      "id": "t-rz-05",
+      "topic": "rozpuszczalnosc",
+      "title": "Uwaga o wodorotlenku wapnia",
+      "body": "$Ca(OH)2$ jest tylko **średnio** rozpuszczalny. W zeszycie reakcja $CaCl2 + 2NaOH$ jest zapisana z osadem $Ca(OH)2↓$, dlatego w aplikacji też tak ją traktujemy.\nPodobnie zapis $AgNO3 + NaOH -> AgOH↓ + NaNO3$ jest taki jak z lekcji.",
+      "examples": [
+        "CaCl2 + 2NaOH -> Ca(OH)2↓ + 2NaCl"
+      ],
+      "tip": "Przy wątpliwościach trzymaj się wersji z lekcji i tabeli z podręcznika."
     }
   ],
   "flash": [
@@ -886,6 +955,66 @@
       "topic": "bilansowanie",
       "front": "Ile atomów O w $3Ca(OH)2$?",
       "back": "6 atomów O"
+    },
+    {
+      "id": "f-rz-01",
+      "topic": "rozpuszczalnosc",
+      "front": "Co oznacza R w tabeli?",
+      "back": "rozpuszczalny w wodzie"
+    },
+    {
+      "id": "f-rz-02",
+      "topic": "rozpuszczalnosc",
+      "front": "Co oznacza S w tabeli?",
+      "back": "średnio rozpuszczalny"
+    },
+    {
+      "id": "f-rz-03",
+      "topic": "rozpuszczalnosc",
+      "front": "Co oznacza T w tabeli?",
+      "back": "trudno rozpuszczalny – wytrąca się osad"
+    },
+    {
+      "id": "f-rz-04",
+      "topic": "rozpuszczalnosc",
+      "front": "Azotany(V) – rozpuszczalność",
+      "back": "wszystkie rozpuszczalne"
+    },
+    {
+      "id": "f-rz-05",
+      "topic": "rozpuszczalnosc",
+      "front": "Sole sodu i potasu",
+      "back": "rozpuszczalne"
+    },
+    {
+      "id": "f-rz-06",
+      "topic": "rozpuszczalnosc",
+      "front": "Chlorki – wyjątek",
+      "back": "sole srebra ($AgCl$) są trudno rozpuszczalne"
+    },
+    {
+      "id": "f-rz-07",
+      "topic": "rozpuszczalnosc",
+      "front": "Siarczany(VI) – wyjątki",
+      "back": "baru i strontu trudno, wapnia i srebra średnio rozpuszczalne"
+    },
+    {
+      "id": "f-rz-08",
+      "topic": "rozpuszczalnosc",
+      "front": "Wodorotlenki rozpuszczalne",
+      "back": "litu, sodu, potasu, baru, strontu"
+    },
+    {
+      "id": "f-rz-09",
+      "topic": "rozpuszczalnosc",
+      "front": "Trzy pytania do reakcji sól + zasada",
+      "back": "Sól rozpuszczalna? Zasada rozpuszczalna? Powstaje osad wodorotlenku?"
+    },
+    {
+      "id": "f-rz-10",
+      "topic": "rozpuszczalnosc",
+      "front": "Dlaczego $NaCl$ + $KOH$ nie reaguje?",
+      "back": "nie powstaje trudno rozpuszczalny wodorotlenek"
     }
   ]
 }

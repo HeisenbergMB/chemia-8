@@ -10,10 +10,11 @@ import { icons, withIcon } from './icons.js';
 import { renderLab } from './lab.js';
 import { renderIndicators, renderGuess } from './indicators.js';
 import { buildExam, EXAM_SIZE } from './exam.js';
+import { renderSolubility, renderReact } from './solubility.js';
 
-const APP_VERSION = '1.8.0'; // trzymaj zgodnie z VERSION w sw.js
+const APP_VERSION = '1.9.0'; // trzymaj zgodnie z VERSION w sw.js
 
-const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [], experiments: [], indicators: null };
+const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [], experiments: [], indicators: null, solubility: null };
 const main = document.getElementById('main');
 const side = document.getElementById('side');
 
@@ -29,14 +30,16 @@ async function init() {
   document.getElementById('gear').innerHTML = icons.gear;
   applySettings();
   try {
-    const [theory, questions, equations, experiments, indicators] = await Promise.all([
+    const [theory, questions, equations, experiments, indicators, solubility] = await Promise.all([
       loadJson('data/theory.json'),
       loadJson('data/questions.json'),
       loadJson('data/equations.json'),
       loadJson('data/experiments.json'),
       loadJson('data/indicators.json'),
+      loadJson('data/solubility.json'),
     ]);
     DATA.indicators = indicators;
+    DATA.solubility = solubility;
     DATA.experiments = experiments.experiments;
     DATA.topics = theory.topics;
     DATA.cards = theory.cards;
@@ -95,6 +98,8 @@ const routes = [
   [/^#\/lab\/([\w-]+)$/, labScreen],
   [/^#\/indicators$/, () => renderIndicators(DATA.indicators)],
   [/^#\/indicators\/guess$/, () => renderGuess(DATA.indicators)],
+  [/^#\/solubility$/, () => renderSolubility(DATA.solubility)],
+  [/^#\/solubility\/react(?:\/(\w+)\/(\w+))?$/, (cat, an) => renderReact(DATA.solubility, cat ? { cat, an } : null)],
   [/^#\/exam$/, examIntro],
   [/^#\/exam\/run$/, examRun],
   [/^#\/settings$/, settingsScreen],
