@@ -92,8 +92,15 @@
     {
       "id": "podstawy",
       "title": "Podstawy z klas 7–8",
-      "status": "soon",
-      "desc": "Wartościowość, wzory, bilansowanie, rodzaje reakcji."
+      "status": "active",
+      "desc": "Układ okresowy, wartościowość, wzory i nazwy tlenków, jony, rodzaje reakcji.",
+      "tools": [
+        {
+          "href": "#/valence",
+          "label": "Kalkulator wzorów (na krzyż)",
+          "icon": "flask"
+        }
+      ]
     }
   ],
   "cards": [
@@ -509,6 +516,67 @@
         "CaCl2 + 2NaOH -> Ca(OH)2↓ + 2NaCl"
       ],
       "tip": "Przy wątpliwościach trzymaj się wersji z lekcji i tabeli z podręcznika."
+    },
+    {
+      "id": "t-pd-01",
+      "topic": "podstawy",
+      "title": "Układ okresowy: grupy i okresy",
+      "body": "Pionowe kolumny układu okresowego to **grupy**, a poziome wiersze to **okresy**. Pierwiastki z tej samej grupy mają podobne właściwości.\n**Grupa 1 (litowce):** $Li$, $Na$, $K$, … – aktywne metale, które reagują z wodą.\n**Grupa 2:** $Ca$, $Sr$, $Ba$, … – również metale reagujące z wodą (w tym dziale: Ca, Sr, Ba).\nNumer grupy 1 i 2 mówi też o wartościowości: pierwiastki 1. grupy są I-wartościowe, a 2. grupy – II-wartościowe.",
+      "examples": [],
+      "tip": "Sód i potas są w tej samej grupie, dlatego ich wodorotlenki ($NaOH$, $KOH$) mają podobne wzory."
+    },
+    {
+      "id": "t-pd-02",
+      "topic": "podstawy",
+      "title": "Wartościowość",
+      "body": "Wartościowość mówi, ile wiązań może utworzyć atom danego pierwiastka. Zapisujemy ją liczbą rzymską.\n**Warto zapamiętać:** wodór – I, tlen – II, metale 1. grupy – I, metale 2. grupy – II, glin – III, chlor w chlorkach – I.\n**Reszty:** grupa $OH$ – I, reszta $NO3$ – I, reszta $SO4$ – II.",
+      "examples": [],
+      "tip": "Wartościowość metalu równa się liczbie grup OH w jego wodorotlenku: $Na$ (I) → $NaOH$, $Ca$ (II) → $Ca(OH)2$."
+    },
+    {
+      "id": "t-pd-03",
+      "topic": "podstawy",
+      "title": "Wzór sumaryczny „na krzyż”",
+      "body": "Jak zapisać wzór z wartościowości:\n**1.** Zapisz symbole, np. $Al$ i $O$.\n**2.** Nad nimi wartościowości: Al – III, O – II.\n**3.** Na krzyż: wartościowość jednego staje się indeksem drugiego, czyli $Al2O3$.\n**4.** Jeśli indeksy mają wspólny dzielnik, skróć: Ca (II) i O (II) dają $Ca2O2$, czyli $CaO$.\nIndeksu 1 nie piszemy. Grupę $OH$ bierzemy w nawias, gdy jest jej więcej niż jedna: $Ca(OH)2$.",
+      "examples": [
+        "Al2O3 – tlenek glinu",
+        "CaO – tlenek wapnia",
+        "Ca(OH)2 – wodorotlenek wapnia"
+      ],
+      "tip": "W aplikacji sprawdź to w „Kalkulatorze wzorów”: pokazuje każdy krok."
+    },
+    {
+      "id": "t-pd-04",
+      "topic": "podstawy",
+      "title": "Nazwy tlenków i wodorotlenków",
+      "body": "**Tlenek:** „tlenek” + nazwa pierwiastka w dopełniaczu, np. tlenek sodu $Na2O$, tlenek wapnia $CaO$.\n**Wodorotlenek:** „wodorotlenek” + nazwa metalu w dopełniaczu, np. wodorotlenek sodu $NaOH$.\nGdy metal ma kilka wartościowości, dopisujemy ją rzymską cyfrą w nawiasie: tlenek żelaza(III) $Fe2O3$, wodorotlenek miedzi(II) $Cu(OH)2$.",
+      "examples": [
+        "Na2O – tlenek sodu",
+        "Fe2O3 – tlenek żelaza(III)",
+        "CuO – tlenek miedzi(II)"
+      ],
+      "tip": "Cyfra w nawiasie to wartościowość metalu, nie liczba atomów."
+    },
+    {
+      "id": "t-pd-05",
+      "topic": "podstawy",
+      "title": "Kation i anion",
+      "body": "Jon to atom lub grupa atomów z ładunkiem elektrycznym.\n**Kation** ma ładunek dodatni (np. $Na^+$, $Ca^2+$) – metal oddał elektrony.\n**Anion** ma ładunek ujemny (np. $OH^-$, $Cl^-$).\nŁadunek kationu metalu jest równy jego wartościowości: $Na^+$ (I), $Ca^2+$ (II), $Al^3+$ (III).",
+      "examples": [],
+      "tip": "Ładunki w jednym związku się znoszą: $Ca^2+$ i dwa $OH^-$ dają cząsteczkę obojętną."
+    },
+    {
+      "id": "t-pd-06",
+      "topic": "podstawy",
+      "title": "Rodzaje reakcji",
+      "body": "**Synteza (łączenie):** z kilku substancji powstaje jedna, np. tlenek + woda.\n**Analiza (rozkład):** jedna substancja rozpada się na kilka.\n**Wymiana pojedyncza:** pierwiastek zastępuje inny w związku, np. metal + woda.\n**Wymiana podwójna:** dwa związki wymieniają się składnikami, np. sól + zasada.",
+      "examples": [
+        "CaO + H2O -> Ca(OH)2",
+        "2H2O -> 2H2 + O2",
+        "2Na + 2H2O -> 2NaOH + H2↑",
+        "FeCl3 + 3NaOH -> Fe(OH)3↓ + 3NaCl"
+      ],
+      "tip": "Po kolei: synteza, analiza, wymiana pojedyncza, wymiana podwójna – tyle samo w sprawdzianie, co w reakcjach z lekcji."
     }
   ],
   "flash": [
@@ -1015,6 +1083,96 @@
       "topic": "rozpuszczalnosc",
       "front": "Dlaczego $NaCl$ + $KOH$ nie reaguje?",
       "back": "nie powstaje trudno rozpuszczalny wodorotlenek"
+    },
+    {
+      "id": "f-pd-01",
+      "topic": "podstawy",
+      "front": "Pionowe kolumny układu okresowego",
+      "back": "grupy"
+    },
+    {
+      "id": "f-pd-02",
+      "topic": "podstawy",
+      "front": "Poziome wiersze układu okresowego",
+      "back": "okresy"
+    },
+    {
+      "id": "f-pd-03",
+      "topic": "podstawy",
+      "front": "Wartościowość metali 1. grupy",
+      "back": "I"
+    },
+    {
+      "id": "f-pd-04",
+      "topic": "podstawy",
+      "front": "Wartościowość metali 2. grupy",
+      "back": "II"
+    },
+    {
+      "id": "f-pd-05",
+      "topic": "podstawy",
+      "front": "Wartościowość tlenu w tlenkach",
+      "back": "II"
+    },
+    {
+      "id": "f-pd-06",
+      "topic": "podstawy",
+      "front": "Wartościowość grupy $OH$",
+      "back": "I"
+    },
+    {
+      "id": "f-pd-07",
+      "topic": "podstawy",
+      "front": "Na czym polega metoda „na krzyż”?",
+      "back": "Wartościowość jednego pierwiastka staje się indeksem drugiego."
+    },
+    {
+      "id": "f-pd-08",
+      "topic": "podstawy",
+      "front": "Nazwa $Na2O$",
+      "back": "tlenek sodu"
+    },
+    {
+      "id": "f-pd-09",
+      "topic": "podstawy",
+      "front": "Nazwa $Fe2O3$",
+      "back": "tlenek żelaza(III)"
+    },
+    {
+      "id": "f-pd-10",
+      "topic": "podstawy",
+      "front": "Kation – ładunek",
+      "back": "dodatni"
+    },
+    {
+      "id": "f-pd-11",
+      "topic": "podstawy",
+      "front": "Anion – ładunek",
+      "back": "ujemny"
+    },
+    {
+      "id": "f-pd-12",
+      "topic": "podstawy",
+      "front": "Synteza",
+      "back": "z kilku substancji powstaje jedna"
+    },
+    {
+      "id": "f-pd-13",
+      "topic": "podstawy",
+      "front": "Analiza",
+      "back": "jedna substancja rozpada się na kilka"
+    },
+    {
+      "id": "f-pd-14",
+      "topic": "podstawy",
+      "front": "Wymiana pojedyncza",
+      "back": "pierwiastek zastępuje inny w związku"
+    },
+    {
+      "id": "f-pd-15",
+      "topic": "podstawy",
+      "front": "Wymiana podwójna",
+      "back": "dwa związki wymieniają się składnikami"
     }
   ]
 }

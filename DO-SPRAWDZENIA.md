@@ -64,3 +64,12 @@ W zeszycie nie ma tabeli rozpuszczalności. Zbudowałem ją z wiedzy ogólnej i 
 - **CaSO₄ (S), Ag₂SO₄ (S), SrSO₄ i BaSO₄ (T)** – siarczany w tabelach bywają klasyfikowane inaczej.
 - Skróty R/S/T oraz słowa „trudno rozpuszczalny (osad)” – przyjęte robocze. Czy podręcznik używa np. „N” dla praktycznie nierozpuszczalnych?
 - Reguła kalkulatora: reakcja zachodzi, gdy sól jest rozpuszczalna (R), a powstały wodorotlenek jest S lub T. Sól typu S (np. CaSO₄) jest traktowana jak nieprzydatna do reakcji w roztworze.
+
+## Podstawy z klas 7–8 (dział 09)
+Cały dział jest z wiedzy ogólnej (zeszyt zawiera tylko wzory, nazwy i dysocjację). **Proszę porównać z podręcznikiem Chemia Nowej Ery**, zwłaszcza:
+- Definicja wartościowości („liczba wiązań, które atom tworzy”) i zestaw wartościowości do zapamiętania (H – I, O – II, metale 1. grupy – I, 2. grupy – II, Al – III, Cl w chlorkach – I; OH – I, NO₃ – I, SO₄ – II).
+- Nazwy tlenków i wodorotlenków (z wartościowością w nawiasie przy metalach o zmiennej wartościowości): tlenek żelaza(II) FeO, żelaza(III) Fe₂O₃, miedzi(II) CuO, chromu(III) Cr₂O₃, srebra Ag₂O (bez cyfry rzymskiej, bo srebro jest I-wartościowe).
+- Podział reakcji (synteza, analiza, wymiana pojedyncza, wymiana podwójna) i przykłady: 2H₂O → 2H₂ + O₂ oraz CaCO₃ → CaO + CO₂ jako analiza, 2Mg + O₂ → 2MgO jako synteza – spoza zeszytu.
+- Układ okresowy: litowce (1. grupa) i berylowce (2. grupa). W kartach celowo ograniczyłem się do Li, Na, K, Ca, Sr, Ba (zob. uwagi o Be i Mg wyżej).
+- Pytania o kation jako „atom, który oddał elektrony” (np. Na → Na⁺) – czy to jest w zakresie klasy 8?
+- Wzory wodorotlenków litu, magnezu, cynku, chromu(III) i żelaza(II) w pytaniach z klawiaturą są tylko ćwiczeniem na krzyż, nie dotyczą reakcji.

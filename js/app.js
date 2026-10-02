@@ -11,8 +11,9 @@ import { renderLab } from './lab.js';
 import { renderIndicators, renderGuess } from './indicators.js';
 import { buildExam, EXAM_SIZE } from './exam.js';
 import { renderSolubility, renderReact } from './solubility.js';
+import { renderValence } from './valence.js';
 
-const APP_VERSION = '1.9.0'; // trzymaj zgodnie z VERSION w sw.js
+const APP_VERSION = '1.10.0'; // trzymaj zgodnie z VERSION w sw.js
 
 const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [], experiments: [], indicators: null, solubility: null };
 const main = document.getElementById('main');
@@ -100,6 +101,7 @@ const routes = [
   [/^#\/indicators\/guess$/, () => renderGuess(DATA.indicators)],
   [/^#\/solubility$/, () => renderSolubility(DATA.solubility)],
   [/^#\/solubility\/react(?:\/(\w+)\/(\w+))?$/, (cat, an) => renderReact(DATA.solubility, cat ? { cat, an } : null)],
+  [/^#\/valence$/, () => renderValence(DATA.solubility)],
   [/^#\/exam$/, examIntro],
   [/^#\/exam\/run$/, examRun],
   [/^#\/settings$/, settingsScreen],

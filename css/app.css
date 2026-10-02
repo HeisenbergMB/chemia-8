@@ -667,3 +667,7 @@ input[type="date"], input[type="text"], input[type="file"] {
 .sol-pick { margin-bottom: 0.6rem; }
 .sol-steps { margin: 0.4rem 0 1rem; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
 .sol-eq { font-size: 1.3rem; margin-bottom: 0; }
+
+/* ---------- kalkulator wzorów ---------- */
+.cross-steps { margin: 0.4rem 0 1rem; padding-left: 1.3rem; display: grid; gap: 0.6rem; }
+.cross-steps strong { font-size: 1.15rem; }
