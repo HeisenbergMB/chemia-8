@@ -7,10 +7,11 @@ import { buildReview, buildExtra, topicStats } from './leitner.js';
 import { runQuiz, TYPED_TYPES } from './quiz.js';
 import { renderSettings } from './settings.js';
 import { icons, withIcon } from './icons.js';
+import { renderLab } from './lab.js';
 
-const APP_VERSION = '1.3.0'; // trzymaj zgodnie z VERSION w sw.js
+const APP_VERSION = '1.4.0'; // trzymaj zgodnie z VERSION w sw.js
 
-const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [] };
+const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [], experiments: [] };
 const main = document.getElementById('main');
 const side = document.getElementById('side');
 
@@ -26,11 +27,13 @@ async function init() {
   document.getElementById('gear').innerHTML = icons.gear;
   applySettings();
   try {
-    const [theory, questions, equations] = await Promise.all([
+    const [theory, questions, equations, experiments] = await Promise.all([
       loadJson('data/theory.json'),
       loadJson('data/questions.json'),
       loadJson('data/equations.json'),
+      loadJson('data/experiments.json'),
     ]);
+    DATA.experiments = experiments.experiments;
     DATA.topics = theory.topics;
     DATA.cards = theory.cards;
     DATA.flash = theory.flash;
@@ -85,6 +88,7 @@ const routes = [
   [/^#\/flash\/([\w-]+)$/, flashScreen],
   [/^#\/quiz\/([\w-]+)(?:\/(all|zapis))?$/, quizScreen],
   [/^#\/review(?:\/(extra))?$/, reviewScreen],
+  [/^#\/lab\/([\w-]+)$/, labScreen],
   [/^#\/settings$/, settingsScreen],
 ];
 
@@ -219,6 +223,10 @@ function topicScreen(id) {
         h('a', { class: 'btn', href: `#/theory/${id}`, html: withIcon('book', 'Teoria') }),
         h('a', { class: 'btn', href: `#/flash/${id}`, html: withIcon('cards', 'Fiszki') }),
         h('a', { class: 'btn', href: `#/quiz/${id}`, html: withIcon('check', 'Quiz (10 pytań)') }),
+        ...(t.labs || []).map((lid) => {
+          const e = DATA.experiments.find((x) => x.id === lid);
+          return e ? h('a', { class: 'btn', href: `#/lab/${lid}`, html: withIcon('flask', `Laboratorium: ${e.title}`) }) : null;
+        }),
         typedCount ? h('a', { class: 'btn', href: `#/quiz/${id}/zapis`, html: withIcon('pen', `Układanie zapisu (${typedCount})`) }) : null,
         h('a', { class: 'btn secondary', href: `#/quiz/${id}/all`, html: withIcon('list', `Wszystkie pytania (${qs.length})`) })
       )
@@ -321,6 +329,19 @@ function reviewScreen(extra) {
   const start = (list) => runQuiz(root, list, { title: extra ? 'Ćwiczenie dodatkowe' : 'Powtórka na dziś', backHref: '#/', onRetryMissed: start });
   start(qs);
   return h('div', null, h('a', { class: 'back', href: '#/' }, '← Ekran główny'), root);
+}
+
+// ---------- laboratorium ----------
+function labScreen(id) {
+  const exp = DATA.experiments.find((e) => e.id === id);
+  if (!exp) return notFound('Nie znaleziono doświadczenia.');
+  const topic = DATA.topics.find((t) => (t.labs || []).includes(id));
+  return h(
+    'div',
+    null,
+    h('a', { class: 'back', href: topic ? `#/topic/${topic.id}` : '#/' }, topic ? `← ${topic.title}` : '← Wróć'),
+    h('div', { class: 'card' }, renderLab(exp))
+  );
 }
 
 // ---------- ustawienia ----------

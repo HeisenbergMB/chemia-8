@@ -1,20 +1,22 @@
 // Quiz: jednokrotny wybór, wpisywanie wzoru/równania z klawiatury chemicznej i układanie z klocków.
-// Typy pytań: choice | formula | equation | blocks
+// Typy pytań: choice | formula | equation | blocks | match
 
 import { h, shuffle } from './dom.js';
 import { richText, formatFormula } from './formula.js';
 import { record } from './leitner.js';
 import { createChemKeyboard } from './chemkeyboard.js';
 import { createBlocks } from './blocks.js';
+import { createMatch } from './match.js';
 import { equationsMatch, formulasMatch, userBalanceReport } from './chem.js';
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E'];
-export const TYPED_TYPES = ['formula', 'equation', 'blocks'];
+export const TYPED_TYPES = ['formula', 'equation', 'blocks', 'match'];
 
 /** Poprawna odpowiedź jako HTML (do podsumowań). */
 export function correctHtml(q) {
   if (q.type === 'choice') return richText(q.options[q.answer]);
   if (q.type === 'blocks') return formatFormula(q.tokens.join(' '));
+  if (q.type === 'match') return q.pairs.map(([l, r]) => `${richText(l)} → <strong>${richText(r)}</strong>`).join('<br>');
   return formatFormula(q.answer);
 }
 
@@ -106,7 +108,8 @@ export function runQuiz(root, questions, opts = {}) {
       if (!ctl.ready()) return;
       const val = ctl.value();
       let ok;
-      if (q.type === 'formula') ok = formulasMatch(val, q.answer, q.accept || []);
+      if (q.type === 'match') ok = ctl.correct();
+      else if (q.type === 'formula') ok = formulasMatch(val, q.answer, q.accept || []);
       else if (q.type === 'equation') ok = equationsMatch(val, q.answer);
       else ok = equationsMatch(val, q.tokens.join(' '));
       check.disabled = true;
@@ -115,9 +118,13 @@ export function runQuiz(root, questions, opts = {}) {
       if (kb) kb.hideKeys();
       resolve(cur, ok, feedback, compare(q, val, ok));
     };
-    check = h('button', { class: q.type === 'blocks' ? 'btn big' : 'btn kb-submit', type: 'button', disabled: true, onClick: submit }, 'Sprawdź');
+    check = h('button', { class: q.type === 'blocks' || q.type === 'match' ? 'btn big' : 'btn kb-submit', type: 'button', disabled: true, onClick: submit }, 'Sprawdź');
 
-    if (q.type === 'blocks') {
+    if (q.type === 'match') {
+      const mt = createMatch({ pairs: q.pairs, extra: q.extra || [], onChange: () => (check.disabled = !mt.full()) });
+      ctl = { value: () => '', ready: mt.full, lock: (ok) => mt.reveal(ok), correct: mt.correct };
+      parts.body = h('div', null, mt.el, h('div', { class: 'btn-row' }, check));
+    } else if (q.type === 'blocks') {
       const bl = createBlocks({ tokens: q.tokens, extra: q.extra || [], onChange: () => (check.disabled = !bl.full()) });
       ctl = { value: bl.value, ready: bl.full, lock: (ok) => bl.reveal(ok) };
       parts.body = h('div', null, bl.el, h('div', { class: 'btn-row' }, check));
@@ -137,6 +144,10 @@ export function runQuiz(root, questions, opts = {}) {
 
   function compare(q, val, ok) {
     const box = h('div', { class: 'compare' });
+    if (q.type === 'match') {
+      if (!ok) box.append(h('p', null, h('span', { class: 'muted' }, 'Poprawne dopasowanie:')), h('p', { html: correctHtml(q) }));
+      return box;
+    }
     box.append(h('p', null, h('span', { class: 'muted' }, 'Twoja odpowiedź: '), h('span', { class: 'chem', html: formatFormula(val) })));
     if (!ok) {
       box.append(h('p', null, h('span', { class: 'muted' }, 'Poprawnie: '), h('strong', { class: 'chem', html: correctHtml(q) })));

@@ -568,7 +568,31 @@ input[type="date"], input[type="text"], input[type="file"] {
 }
 .token.selected { border-color: var(--primary); background: var(--primary-soft); box-shadow: 0 0 0 2px var(--primary-line); }
 .token.dragging { opacity: 0.35; }
-.token.ghost { position: fixed; z-index: 100; pointer-events: none; transform: translate(-50%, -60%); opacity: 0.95; box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5); }
+.token.ghost { position: fixed; max-width: 280px; z-index: 100; pointer-events: none; transform: translate(-50%, -60%); opacity: 0.95; box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5); }
 .compare p { margin-bottom: 0.35rem; }
 .compare .chem { font-size: 1.1rem; }
 .btn[hidden] { display: none; }
+
+/* ---------- laboratorium ---------- */
+.lab h2 { margin-bottom: 0.2rem; }
+.lab-stage { display: flex; justify-content: center; margin: 0.5rem 0 0.8rem; }
+.lab-svg { width: min(100%, 300px); height: auto; max-height: 52vh; }
+.lab-svg .glass { fill: none; stroke: #dbe6f1; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; opacity: 0.9; }
+.lab-label { fill: var(--muted); font-size: 12px; font-family: inherit; }
+.lab-pop { fill: var(--a3); font-size: 22px; font-weight: 700; font-family: inherit; }
+.lab-info { margin-top: 0.8rem; }
+.lab-note, .lab-result { background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 0.9rem 1.1rem; }
+.lab-result { border-left: 3px solid var(--a1); }
+.lab-result ul { margin: 0 0 0.5rem; padding-left: 1.2rem; }
+.lab-eq { font-size: 1.25rem; margin-bottom: 0; }
+.lab .eyebrow { margin-top: 0.5rem; }
+.lab .eyebrow:first-child { margin-top: 0; }
+
+/* ---------- dopasowywanie ---------- */
+.match-rows { display: grid; gap: 0.6rem; }
+.match-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 0.6rem; align-items: stretch; }
+@media (max-width: 560px) { .match-row { grid-template-columns: 1fr; } }
+.match-left { display: flex; align-items: center; padding: 0.6rem 0.9rem; background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; font-weight: 550; }
+.match-slot { width: 100%; text-align: left; min-height: 56px; font-size: 1.02rem; }
+.match-slot .slot-n { font-family: inherit; font-size: 0.85rem; }
+.token.text { text-align: left; font-size: 1.02rem; max-width: 100%; }

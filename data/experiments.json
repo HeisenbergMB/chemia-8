@@ -1,0 +1,44 @@
+{
+  "experiments": [
+    {
+      "id": "osady",
+      "kind": "precipitate",
+      "title": "Wytrącanie osadów wodorotlenków",
+      "aim": "Otrzymanie wodorotlenków trudno rozpuszczalnych w wodzie.",
+      "reagent": { "formula": "NaOH", "name": "wodorotlenek sodu", "color": "#cfe4ff" },
+      "tubes": [
+        { "id": "I", "salt": "FeCl3", "saltName": "chlorek żelaza(III)", "liquid": "#d9b24a", "precip": "#8b3a14", "gel": false,
+          "observation": "Wytrąca się brunatny osad.",
+          "product": "Fe(OH)3", "productName": "wodorotlenek żelaza(III)",
+          "eq": "FeCl3 + 3NaOH -> Fe(OH)3↓ + 3NaCl",
+          "conclusion": "Powstał trudno rozpuszczalny wodorotlenek żelaza(III), który wytrącił się jako brunatny osad." },
+        { "id": "II", "salt": "AgNO3", "saltName": "azotan(V) srebra", "liquid": "#c9dcea", "precip": "#8e9399", "gel": false,
+          "observation": "Wytrąca się szary osad, który po pewnym czasie zaczyna się rozkładać.",
+          "product": "AgOH", "productName": "wodorotlenek srebra(I) (zapis z lekcji)",
+          "eq": "AgNO3 + NaOH -> AgOH↓ + NaNO3",
+          "conclusion": "Powstał trudno rozpuszczalny wodorotlenek (zapis jak w zeszycie), który wytrącił się jako szary osad." },
+        { "id": "III", "salt": "CuSO4", "saltName": "siarczan(VI) miedzi(II)", "liquid": "#6fb4f5", "precip": "#3d8dea", "gel": true,
+          "observation": "Wytrąca się niebieski galaretowaty osad.",
+          "product": "Cu(OH)2", "productName": "wodorotlenek miedzi(II)",
+          "eq": "CuSO4 + 2NaOH -> Cu(OH)2↓ + Na2SO4",
+          "conclusion": "Powstał trudno rozpuszczalny wodorotlenek miedzi(II), który wytrącił się jako niebieski galaretowaty osad." }
+      ]
+    },
+    {
+      "id": "sod",
+      "kind": "gas",
+      "title": "Sód z wodą i fenoloftaleiną",
+      "aim": "Otrzymanie wodorotlenku sodu.",
+      "setup": "W naczyniu jest woda z fenoloftaleiną. Do wody wrzucamy kawałek sodu i przykrywamy go lejkiem z probówką, która zbiera gaz.",
+      "observations": [
+        "Roztwór przyjmuje malinowe zabarwienie.",
+        "Wydziela się gaz, który po podpaleniu spala się z charakterystycznym dźwiękiem."
+      ],
+      "conclusions": [
+        "Wydzielił się wodór.",
+        "Powstał wodorotlenek sodu, więc roztwór ma odczyn zasadowy."
+      ],
+      "eq": "2Na + 2H2O -> 2NaOH + H2↑"
+    }
+  ]
+}

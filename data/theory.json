@@ -4,13 +4,19 @@
       "id": "wodorotlenki-rozp",
       "title": "Wodorotlenki rozpuszczalne",
       "status": "active",
-      "desc": "Metal + woda i tlenek metalu + woda. Skąd biorą się NaOH, KOH, Ca(OH)₂."
+      "desc": "Metal + woda i tlenek metalu + woda. Skąd biorą się NaOH, KOH, Ca(OH)₂.",
+      "labs": [
+        "sod"
+      ]
     },
     {
       "id": "wodorotlenki-trudne",
       "title": "Wodorotlenki trudno rozpuszczalne",
       "status": "active",
-      "desc": "Sól + zasada, osady i tabela rozpuszczalności."
+      "desc": "Sól + zasada, osady i tabela rozpuszczalności.",
+      "labs": [
+        "osady"
+      ]
     },
     {
       "id": "dysocjacja",
@@ -21,8 +27,12 @@
     {
       "id": "doswiadczenia",
       "title": "Doświadczenia",
-      "status": "soon",
-      "desc": "Schemat, obserwacje, wnioski i równania."
+      "status": "active",
+      "desc": "Schemat, obserwacje, wnioski i równania.",
+      "labs": [
+        "sod",
+        "osady"
+      ]
     },
     {
       "id": "wskazniki",
@@ -219,6 +229,64 @@
         "Ca(OH)2 -H2O-> Ca^2+ + 2OH^-"
       ],
       "tip": "Najczęstszy błąd: kation $Ca^+$ zamiast $Ca^2+$. Ładunek kationu = wartościowość metalu."
+    },
+    {
+      "id": "t-dw-01",
+      "topic": "doswiadczenia",
+      "title": "Jak opisać doświadczenie?",
+      "body": "Opis doświadczenia ma stałe części:\n**Cel** – po co je robimy.\n**Schemat** – rysunek sprzętu i odczynników (probówka, lejek, nazwy substancji).\n**Obserwacje** – to, co widać lub słychać: kolor, osad, gaz, dźwięk.\n**Wnioski** – to, co z tego wynika: jaka substancja powstała, jaki jest odczyn.\n**Równanie reakcji** – zapis chemiczny tego, co się stało.",
+      "examples": [],
+      "tip": "Obserwacja to fakt („roztwór jest malinowy”), wniosek to interpretacja („roztwór ma odczyn zasadowy”)."
+    },
+    {
+      "id": "t-dw-02",
+      "topic": "doswiadczenia",
+      "title": "Sód z wodą i fenoloftaleiną",
+      "body": "**Cel:** otrzymanie wodorotlenku sodu.\n**Schemat:** naczynie z wodą i fenoloftaleiną, kawałek sodu, a nad nim lejek z probówką zbierającą gaz.\n**Obserwacje:** roztwór przyjmuje malinowe zabarwienie; wydziela się gaz, który po podpaleniu spala się z charakterystycznym dźwiękiem.\n**Wnioski:** wydzielił się wodór, powstał wodorotlenek sodu, roztwór ma odczyn zasadowy.",
+      "examples": [
+        "2Na + 2H2O -> 2NaOH + H2↑"
+      ],
+      "tip": "Zobacz to w laboratorium: ekran działu, przycisk „Laboratorium”."
+    },
+    {
+      "id": "t-dw-03",
+      "topic": "doswiadczenia",
+      "title": "Wytrącanie osadów: trzy probówki",
+      "body": "**Cel:** otrzymanie wodorotlenków trudno rozpuszczalnych w wodzie.\n**Schemat:** trzy probówki z roztworami soli (I – $FeCl3$, II – $AgNO3$, III – $CuSO4$), do każdej dodajemy roztwór $NaOH$.\n**Obserwacje:** I – brunatny osad, II – szary osad (po pewnym czasie zaczyna się rozkładać), III – niebieski galaretowaty osad.\n**Wnioski:** powstały trudno rozpuszczalne wodorotlenki, które wytrąciły się jako osady.",
+      "examples": [
+        "FeCl3 + 3NaOH -> Fe(OH)3↓ + 3NaCl",
+        "AgNO3 + NaOH -> AgOH↓ + NaNO3",
+        "CuSO4 + 2NaOH -> Cu(OH)2↓ + Na2SO4"
+      ],
+      "tip": "Zapis dla probówki II jest taki jak w zeszycie z lekcji."
+    },
+    {
+      "id": "t-dw-04",
+      "topic": "doswiadczenia",
+      "title": "Wapno palone, gaszone i woda wapienna",
+      "body": "**Wapno palone** to tlenek wapnia $CaO$.\nPo dodaniu wody powstaje wodorotlenek wapnia. Mętna zawiesina $Ca(OH)2$ w wodzie to **wapno gaszone** (gaszone wodą).\n**Woda wapienna** to klarowny roztwór $Ca(OH)2$ – otrzymujemy go po odsączeniu nierozpuszczonej części.",
+      "examples": [
+        "CaO + H2O -> Ca(OH)2"
+      ],
+      "tip": "Wzór $Ca(OH)2$ ma i wapno gaszone, i woda wapienna. Różni je to, czy mieszanina jest mętna (zawiesina), czy klarowna (roztwór)."
+    },
+    {
+      "id": "t-dw-05",
+      "topic": "doswiadczenia",
+      "title": "Woda wapienna jako odczynnik",
+      "body": "Po wprowadzeniu dwutlenku węgla woda wapienna **mętnieje**, bo wytrąca się biały osad węglanu wapnia. To prosty sposób wykrywania $CO2$.",
+      "examples": [
+        "CO2 + Ca(OH)2 -> CaCO3↓ + H2O"
+      ],
+      "tip": "Nie myl prób na gazy: wodór pali się z charakterystycznym dźwiękiem, a dwutlenek węgla mąci wodę wapienną."
+    },
+    {
+      "id": "t-dw-06",
+      "topic": "doswiadczenia",
+      "title": "Obserwacja czy wniosek?",
+      "body": "**Obserwacja:** „roztwór zabarwił się na malinowo”, „wytrącił się niebieski galaretowaty osad”, „wydzielił się gaz”.\n**Wniosek:** „roztwór ma odczyn zasadowy”, „powstał wodorotlenek miedzi(II)”, „gazem jest wodór”.\nW obserwacji nie piszemy nazw substancji, których nie widać. Nazwy powstałych związków należą do wniosków.",
+      "examples": [],
+      "tip": "Test: czy to zobaczę lub usłyszę? Jeśli tak, to obserwacja."
     }
   ],
   "flash": [
@@ -413,6 +481,72 @@
       "topic": "dysocjacja",
       "front": "Które wodorotlenki to zasady?",
       "back": "Metali 1. i 2. grupy (z wyjątkiem berylu), rozpuszczalne w wodzie."
+    },
+    {
+      "id": "f-dw-01",
+      "topic": "doswiadczenia",
+      "front": "Co zawiera opis doświadczenia?",
+      "back": "Cel, schemat, obserwacje, wnioski (i równanie)."
+    },
+    {
+      "id": "f-dw-02",
+      "topic": "doswiadczenia",
+      "front": "Obserwacja – co to?",
+      "back": "To, co widać lub słychać: kolor, osad, gaz, dźwięk."
+    },
+    {
+      "id": "f-dw-03",
+      "topic": "doswiadczenia",
+      "front": "Wniosek – co to?",
+      "back": "Co z obserwacji wynika: jaka substancja powstała, jaki odczyn."
+    },
+    {
+      "id": "f-dw-04",
+      "topic": "doswiadczenia",
+      "front": "Sód + woda + fenoloftaleina: obserwacje",
+      "back": "Malinowy roztwór, wydziela się gaz (spala się z dźwiękiem)."
+    },
+    {
+      "id": "f-dw-05",
+      "topic": "doswiadczenia",
+      "front": "Sód + woda + fenoloftaleina: wnioski",
+      "back": "Powstał wodorotlenek sodu, odczyn zasadowy, gaz to wodór."
+    },
+    {
+      "id": "f-dw-06",
+      "topic": "doswiadczenia",
+      "front": "$FeCl3 + NaOH$: obserwacja",
+      "back": "brunatny osad"
+    },
+    {
+      "id": "f-dw-07",
+      "topic": "doswiadczenia",
+      "front": "$CuSO4 + NaOH$: obserwacja",
+      "back": "niebieski galaretowaty osad"
+    },
+    {
+      "id": "f-dw-08",
+      "topic": "doswiadczenia",
+      "front": "Wapno palone",
+      "back": "$CaO$"
+    },
+    {
+      "id": "f-dw-09",
+      "topic": "doswiadczenia",
+      "front": "Wapno gaszone",
+      "back": "$Ca(OH)2$ – zawiesina (mętna)"
+    },
+    {
+      "id": "f-dw-10",
+      "topic": "doswiadczenia",
+      "front": "Woda wapienna",
+      "back": "$Ca(OH)2$ – klarowny roztwór"
+    },
+    {
+      "id": "f-dw-11",
+      "topic": "doswiadczenia",
+      "front": "Co wykryje woda wapienna?",
+      "back": "$CO2$ – woda mętnieje (osad $CaCO3$)"
     }
   ]
 }

@@ -26,3 +26,10 @@ Aplikacja trzyma się wersji z zeszytu tam, gdzie ma to znaczenie na sprawdziani
 - „Roztwór zasady przewodzi prąd, bo zawiera jony” oraz opis cząsteczki wody jako dipola (tlen lekko ujemny, wodory lekko dodatnie) – z wiedzy ogólnej, nie z zeszytu.
 - Zapis z H₂O nad strzałką (jak w zeszycie) jest w teorii; w odpowiedziach wpisywanych przez uczennicę strzałka z wodą i bez wody są traktowane tak samo.
 - Wzór ogólny Me(OH)n → Meⁿ⁺ + nOH⁻ – jak w zeszycie.
+
+## Doświadczenia (dział 04) i laboratorium
+- Woda wapienna mętnieje pod wpływem CO₂ (CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O) – spoza zeszytu, z wiedzy ogólnej.
+- Opis „wapno gaszone = zawiesina, woda wapienna = klarowny roztwór” jest z zeszytu. Dopisałem, że wodę wapienną otrzymuje się po odsączeniu nierozpuszczonej części – to uzupełnienie.
+- Probówka II w animacji (AgNO₃ + NaOH → AgOH↓, szary osad) jest zgodna z zeszytem, mimo uwag z początku pliku (w rzeczywistości Ag₂O). Animacja pokazuje szary osad bez „rozkładania się”; wspominam o tym tylko w opisie.
+- Animacja sodu pokazuje gaz zbierający się w probówce pod lejkiem i „puk” po zbliżeniu płomienia – to schematyczne odwzorowanie opisu z zeszytu (nie jest to dokładny schemat aparatury).
+- Barwa osadu Fe(OH)₃ (brunatny) i Cu(OH)₂ (niebieski galaretowaty) – z zeszytu. Białe osady Al(OH)₃ i Mg(OH)₂ – z wiedzy ogólnej.

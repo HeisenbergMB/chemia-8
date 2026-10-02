@@ -120,7 +120,7 @@ for (const e of equations) {
 
 // ---------- pytania ----------
 const questions = readJson('data/questions.json') || [];
-const TYPES = new Set(['choice', 'formula', 'equation', 'blocks']);
+const TYPES = new Set(['choice', 'formula', 'equation', 'blocks', 'match']);
 const stats = { byTopic: {}, byLevel: {}, byType: {} };
 for (const q of questions) {
   const w = `question ${q.id}`;
@@ -165,12 +165,47 @@ for (const q of questions) {
       if (pool.length > 10) err(w, 'blocks: za dużo klocków (max 10)');
     }
   }
+  if (q.type === 'match') {
+    if (!Array.isArray(q.pairs) || q.pairs.length < 2 || q.pairs.length > 6) err(w, 'match: pairs (2–6 par)');
+    else {
+      const rights = [...q.pairs.map((p) => p[1]), ...(q.extra || [])];
+      if (new Set(rights).size !== rights.length) err(w, 'match: odpowiedzi (prawa strona + extra) muszą być unikalne');
+      if (new Set(q.pairs.map((p) => p[0])).size !== q.pairs.length) err(w, 'match: powtarzające się wiersze po lewej');
+      q.pairs.forEach(([l, r], i) => { checkText(l, `${w} pair ${i} lewa`, { balance: false }); checkText(r, `${w} pair ${i} prawa`, { balance: false }); });
+      (q.extra || []).forEach((x, i) => checkText(x, `${w} extra ${i}`, { balance: false }));
+      if (rights.length > 8) err(w, 'match: za dużo odpowiedzi (max 8)');
+    }
+  }
   checkText(q.q, `${w} q`);
   if (q.hint) checkText(q.hint, `${w} hint`);
   checkText(q.explain, `${w} explain`);
   stats.byTopic[q.topic] = (stats.byTopic[q.topic] || 0) + 1;
   stats.byLevel[q.level] = (stats.byLevel[q.level] || 0) + 1;
   stats.byType[q.type] = (stats.byType[q.type] || 0) + 1;
+}
+
+// ---------- doświadczenia (laboratorium) ----------
+const exps = readJson('data/experiments.json');
+if (exps) {
+  for (const e of exps.experiments || []) {
+    const w = `experiment ${e.id}`;
+    uniqueId(`exp:${e.id}`, w);
+    if (!['precipitate', 'gas'].includes(e.kind)) err(w, `nieznany kind "${e.kind}"`);
+    const eqs2 = e.kind === 'precipitate' ? (e.tubes || []).map((t) => t.eq) : [e.eq];
+    if (e.kind === 'precipitate' && !(e.tubes || []).length) err(w, 'brak tubes');
+    for (const q of eqs2) {
+      try {
+        const r = checkBalance(parseEquation(q));
+        if (!r.ok) err(w, `niezbilansowane: ${r.diffs.join('; ')} [${q}]`);
+      } catch (ex) { err(w, ex.message); }
+    }
+    (e.tubes || []).forEach((t) => ['salt', 'liquid', 'precip', 'observation', 'conclusion', 'eq'].forEach((k) => { if (!t[k]) err(w, `probówka ${t.id}: brak ${k}`); }));
+  }
+}
+// laboratoria wskazywane w działach muszą istnieć
+if (theory && exps) {
+  const known = new Set((exps.experiments || []).map((e) => e.id));
+  for (const t of theory.topics) for (const l of t.labs || []) if (!known.has(l)) err(`topic ${t.id}`, `nieznane laboratorium "${l}"`);
 }
 
 // ---------- service worker ----------

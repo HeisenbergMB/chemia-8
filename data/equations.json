@@ -26,5 +26,7 @@
   {"id": "e-025", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "LiOH -> Li^+ + OH^-"},
   {"id": "e-026", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "Ca(OH)2 -> Ca^2+ + 2OH^-"},
   {"id": "e-027", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "Ba(OH)2 -> Ba^2+ + 2OH^-"},
-  {"id": "e-028", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "Sr(OH)2 -> Sr^2+ + 2OH^-"}
+  {"id": "e-028", "topic": "dysocjacja", "kind": "dysocjacja", "eq": "Sr(OH)2 -> Sr^2+ + 2OH^-"},
+  {"id": "e-029", "topic": "doswiadczenia", "kind": "doswiadczenia", "eq": "CaO + H2O -> Ca(OH)2"},
+  {"id": "e-030", "topic": "doswiadczenia", "kind": "doswiadczenia", "eq": "CO2 + Ca(OH)2 -> CaCO3↓ + H2O"}
 ]
