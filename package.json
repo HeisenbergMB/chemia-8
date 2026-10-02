@@ -1,0 +1,9 @@
+{
+  "name": "chemia-8",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node tools/check-data.js",
+    "icons": "node tools/make-icons.js"
+  }
+}

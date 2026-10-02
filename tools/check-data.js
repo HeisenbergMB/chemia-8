@@ -1,0 +1,169 @@
+// Sprawdza całą bazę: bilans atomów i ładunków równań, format pytań, unikalność id.
+// Uruchom: node tools/check-data.js   (albo: npm run check)
+
+import { readFileSync, existsSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { parseEquation, parseSpecies, parseFormula, checkBalance, extractFormulaSegments } from '../js/chem.js';
+
+const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const errors = [];
+const err = (where, msg) => errors.push(`${where}: ${msg}`);
+
+function readJson(rel, required = true) {
+  const p = join(root, rel);
+  if (!existsSync(p)) {
+    if (required) err(rel, 'brak pliku');
+    return null;
+  }
+  try {
+    return JSON.parse(readFileSync(p, 'utf8'));
+  } catch (e) {
+    err(rel, `niepoprawny JSON (${e.message})`);
+    return null;
+  }
+}
+
+const ids = new Map();
+function uniqueId(id, where) {
+  if (typeof id !== 'string' || !id) return err(where, 'brak id');
+  if (ids.has(id)) err(where, `id "${id}" już użyte w ${ids.get(id)}`);
+  else ids.set(id, where);
+}
+
+/** Sprawdza wzory zapisane w $...$ w tekście. balance=false: tylko składnia (np. błędne odpowiedzi). */
+function checkText(text, where, { balance = true } = {}) {
+  if (typeof text !== 'string') return err(where, 'to nie jest tekst');
+  if ((text.match(/\$/g) || []).length % 2 !== 0) return err(where, `nieparzysta liczba znaków $ w "${text}"`);
+  for (let seg of extractFormulaSegments(text)) {
+    let skip = false;
+    if (seg.startsWith('!')) {
+      skip = true;
+      seg = seg.slice(1);
+    }
+    try {
+      checkSegment(seg, balance && !skip);
+    } catch (e) {
+      err(where, `${e.message} (we fragmencie "${seg}")`);
+    }
+  }
+}
+
+function checkSegment(seg, balance) {
+  // szablony do uzupełnienia ("2Na + 2H2O -> ?", "Na2O + H2O ->") – nie są pełnymi równaniami
+  if (/\?/.test(seg) || /(?:->|→)\s*$/.test(seg)) return;
+  if (/->|→/.test(seg)) {
+    const eq = parseEquation(seg);
+    if (balance) {
+      const r = checkBalance(eq);
+      if (!r.ok) throw new Error(`równanie niezbilansowane: ${r.diffs.join('; ')}`);
+    } else {
+      [...eq.left, ...eq.right].forEach((sp) => parseFormula(sp.formula));
+    }
+    return;
+  }
+  // pojedynczy wzór lub lista składników z "+" – wzory z "?" i tekst opisowy pomijamy
+  if (/[?]/.test(seg)) return;
+  if (!/^[A-Z(]/.test(seg.trim()) && !/^\d+\s*[A-Z(]/.test(seg.trim())) return; // np. rzymskie cyfry, słowa
+  for (const part of seg.split(/\s\+\s/)) {
+    const sp = parseSpecies(part);
+    // „Me(OH)n” i podobne wzory ogólne zawierają małą literę n – pomijamy
+    if (/n$|\bMe\b/.test(sp.formula)) continue;
+    parseFormula(sp.formula);
+  }
+}
+
+// ---------- teoria ----------
+const theory = readJson('data/theory.json');
+const topicIds = new Set();
+if (theory) {
+  for (const t of theory.topics || []) {
+    uniqueId(`topic:${t.id}`, `theory.topics`);
+    topicIds.add(t.id);
+    for (const k of ['id', 'title', 'icon', 'status', 'desc']) if (!t[k]) err(`topic ${t.id}`, `brak pola ${k}`);
+    if (!['active', 'soon'].includes(t.status)) err(`topic ${t.id}`, `zły status "${t.status}"`);
+  }
+  for (const c of theory.cards || []) {
+    const w = `card ${c.id}`;
+    uniqueId(c.id, w);
+    if (!topicIds.has(c.topic)) err(w, `nieznany dział "${c.topic}"`);
+    if (!c.title || !c.body) err(w, 'brak title/body');
+    checkText(c.body, w);
+    for (const ex of c.examples || []) checkText(`$${ex}$`.replace(/ – .*\$$/, '$'), `${w} example`);
+    if (c.tip) checkText(c.tip, w);
+  }
+  for (const f of theory.flash || []) {
+    const w = `flash ${f.id}`;
+    uniqueId(f.id, w);
+    if (!topicIds.has(f.topic)) err(w, `nieznany dział "${f.topic}"`);
+    if (!f.front || !f.back) err(w, 'brak front/back');
+    checkText(f.front, w);
+    checkText(f.back, w);
+  }
+}
+
+// ---------- równania ----------
+const equations = readJson('data/equations.json') || [];
+for (const e of equations) {
+  const w = `equation ${e.id}`;
+  uniqueId(e.id, w);
+  if (!topicIds.has(e.topic)) err(w, `nieznany dział "${e.topic}"`);
+  try {
+    const r = checkBalance(parseEquation(e.eq));
+    if (!r.ok) err(w, `niezbilansowane: ${r.diffs.join('; ')}  [${e.eq}]`);
+  } catch (ex) {
+    err(w, ex.message);
+  }
+}
+
+// ---------- pytania ----------
+const questions = readJson('data/questions.json') || [];
+const TYPES = new Set(['choice']);
+const stats = { byTopic: {}, byLevel: {}, byType: {} };
+for (const q of questions) {
+  const w = `question ${q.id}`;
+  uniqueId(q.id, w);
+  if (!topicIds.has(q.topic)) err(w, `nieznany dział "${q.topic}"`);
+  if (!TYPES.has(q.type)) err(w, `nieznany typ "${q.type}"`);
+  if (![1, 2, 3].includes(q.level)) err(w, `level musi być 1, 2 lub 3 (jest ${q.level})`);
+  if (!q.q || typeof q.q !== 'string') err(w, 'brak treści pytania (q)');
+  if (!q.explain || typeof q.explain !== 'string' || q.explain.length < 15) err(w, 'brak wyjaśnienia (explain)');
+  if (q.type === 'choice') {
+    if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 5) err(w, 'options: 2–5 odpowiedzi');
+    else {
+      if (new Set(q.options).size !== q.options.length) err(w, 'options: powtarzające się odpowiedzi');
+      if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= q.options.length) err(w, `answer poza zakresem (${q.answer})`);
+      q.options.forEach((o, i) => checkText(o, `${w} option ${i}`, { balance: i === q.answer }));
+    }
+  }
+  checkText(q.q, `${w} q`);
+  checkText(q.explain, `${w} explain`);
+  stats.byTopic[q.topic] = (stats.byTopic[q.topic] || 0) + 1;
+  stats.byLevel[q.level] = (stats.byLevel[q.level] || 0) + 1;
+  stats.byType[q.type] = (stats.byType[q.type] || 0) + 1;
+}
+
+// ---------- service worker ----------
+const swPath = join(root, 'sw.js');
+if (existsSync(swPath)) {
+  const sw = readFileSync(swPath, 'utf8');
+  const block = sw.match(/const ASSETS = \[([\s\S]*?)\];/);
+  if (!block) err('sw.js', 'nie znaleziono listy ASSETS');
+  else {
+    for (const m of block[1].matchAll(/'([^']+)'/g)) {
+      const f = m[1];
+      if (f === './') continue;
+      if (!existsSync(join(root, f))) err('sw.js', `ASSETS wskazuje na nieistniejący plik "${f}"`);
+    }
+  }
+} else err('sw.js', 'brak pliku');
+
+// ---------- wynik ----------
+console.log(`Pytań: ${questions.length}, równań: ${equations.length}, kart teorii: ${(theory?.cards || []).length}, fiszek: ${(theory?.flash || []).length}`);
+console.log('Pytania wg działu:', stats.byTopic, ' wg poziomu:', stats.byLevel, ' wg typu:', stats.byType);
+if (errors.length) {
+  console.error(`\nBŁĘDY (${errors.length}):`);
+  errors.forEach((e) => console.error(' ✗ ' + e));
+  process.exit(1);
+}
+console.log('OK – baza spójna.');

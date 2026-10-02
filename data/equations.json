@@ -1,0 +1,13 @@
+[
+  { "id": "e-001", "topic": "wodorotlenki-rozp", "kind": "metal+woda", "eq": "2Na + 2H2O -> 2NaOH + H2↑" },
+  { "id": "e-002", "topic": "wodorotlenki-rozp", "kind": "metal+woda", "eq": "2K + 2H2O -> 2KOH + H2↑" },
+  { "id": "e-003", "topic": "wodorotlenki-rozp", "kind": "metal+woda", "eq": "2Li + 2H2O -> 2LiOH + H2↑" },
+  { "id": "e-004", "topic": "wodorotlenki-rozp", "kind": "metal+woda", "eq": "Ca + 2H2O -> Ca(OH)2 + H2↑" },
+  { "id": "e-005", "topic": "wodorotlenki-rozp", "kind": "metal+woda", "eq": "Sr + 2H2O -> Sr(OH)2 + H2↑" },
+  { "id": "e-006", "topic": "wodorotlenki-rozp", "kind": "metal+woda", "eq": "Ba + 2H2O -> Ba(OH)2 + H2↑" },
+  { "id": "e-007", "topic": "wodorotlenki-rozp", "kind": "tlenek+woda", "eq": "Na2O + H2O -> 2NaOH" },
+  { "id": "e-008", "topic": "wodorotlenki-rozp", "kind": "tlenek+woda", "eq": "K2O + H2O -> 2KOH" },
+  { "id": "e-009", "topic": "wodorotlenki-rozp", "kind": "tlenek+woda", "eq": "CaO + H2O -> Ca(OH)2" },
+  { "id": "e-010", "topic": "wodorotlenki-rozp", "kind": "tlenek+woda", "eq": "BaO + H2O -> Ba(OH)2" },
+  { "id": "e-011", "topic": "wodorotlenki-rozp", "kind": "tlenek+woda", "eq": "Li2O + H2O -> 2LiOH" }
+]

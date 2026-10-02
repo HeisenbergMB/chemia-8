@@ -1,0 +1,22 @@
+# Do sprawdzenia z podręcznikiem / nauczycielką
+
+Fakty, których nie jestem pewien albo które zeszyt zapisuje inaczej niż ścisła chemia.
+Aplikacja trzyma się wersji z zeszytu tam, gdzie ma to znaczenie na sprawdzianie.
+
+## Rozbieżności zeszyt a ścisła chemia (będą w etapie 3)
+1. **AgNO₃ + NaOH → „AgOH”, szary osad** – w rzeczywistości AgOH jest nietrwały i powstaje Ag₂O (brunatny). Czy na sprawdzianie obowiązuje zapis z zeszytu?
+2. **CaCl₂ + NaOH → Ca(OH)₂↓** – w zeszycie bez współczynnika 2 przy NaOH. Ca(OH)₂ jest tylko średnio rozpuszczalny, więc osad nie zawsze jest wyraźny. Jak traktuje to podręcznik?
+3. **Al(OH)₃, Cr(OH)₃** – rozpuszczają się w nadmiarze zasady (amfoteryczność). Zakładam, że to poza zakresem.
+4. **Be(OH)₂** – w zeszycie wypisany obok zasad, a jednocześnie „z wyjątkiem berylu”. Beryl i magnez (Mg(OH)₂ trudno rozpuszczalny) traktuję jako wyjątki od reguły „metal + woda”.
+5. **RbOH** – w zeszycie zapisany strzałką w obie strony (←). Czy to zamierzone (np. rubid jako przykład)?
+
+## Dodatki spoza zeszytu (z wiedzy ogólnej – proszę zweryfikować)
+- Sód przechowuje się pod naftą (pytanie q-wr-019).
+- Aktywność metali 1. grupy rośnie ku dołowi: K > Na > Li (pytanie q-wr-025).
+- Typ reakcji: metal + woda = wymiana pojedyncza, tlenek + woda = synteza (q-wr-020, q-wr-021).
+- Tlenki CuO, Fe₂O₃, Al₂O₃ nie reagują z wodą (q-wr-011, wskazówka w teorii).
+- Tabela barw wskaźników (etap 3) – w zeszycie jej nie ma, uzupełnię z wiedzy ogólnej.
+
+## Nieczytelne miejsca w zeszycie
+- Zdanie o spalaniu wodoru „z charakterystycznym …iem” – przyjąłem „dźwiękiem” (w aplikacji: „z charakterystycznym dźwiękiem”).
+- Zadanie 250: odpowiedzi „1-TAK, 2-TAK, 3-Nie, 4-Nie” – nie widzę treści podpunktów, więc nie wiem, które substancje to dotyczy.
