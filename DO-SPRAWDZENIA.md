@@ -42,3 +42,11 @@ W zeszycie nie ma tabeli barw wskaźników – uzupełniłem ją z wiedzy ogóln
 - Błękit bromotymolowy: żółty – zielony – niebieski.
 - Uniwersalny papierek wskaźnikowy: czerwony lub pomarańczowy – zielony – niebieski lub granatowy (barwa zależy od pH).
 - Skala pH: kwasowy poniżej 7, obojętny 7, zasadowy powyżej 7. Jony H⁺ jako przyczyna odczynu kwasowego – z wiedzy ogólnej.
+
+## Właściwości NaOH i Ca(OH)₂ (dział 06)
+Z zeszytu: NaOH – substancja stała, biała, dobrze rozpuszczalna (wydziela się ciepło), higroskopijna, żrąca. Ca(OH)₂ – żrący, biała substancja stała, średnio rozpuszczalny. Reszta to uzupełnienia z wiedzy ogólnej, **proszę zweryfikować z podręcznikiem**:
+- Zastosowania: NaOH – produkcja mydła, środków czyszczących (udrażnianie rur) i papieru; Ca(OH)₂ – zaprawa murarska, pobielanie, odkwaszanie gleby (wapnowanie). Nie wiem, które zastosowania wymienia podręcznik, więc w pytaniach użyłem tylko najbardziej typowych.
+- Zasady bezpiecznej pracy (okulary, rękawice, spłukanie wodą, szczelne zamykanie NaOH).
+- Odczyn zasadowy roztworów obu substancji (wynika z działów o dysocjacji i wskaźnikach).
+- **Rozpuszczalność Ca(OH)₂:** zeszyt mówi „średnio rozpuszczalny”, a jednocześnie zapisuje CaCl₂ + 2NaOH → Ca(OH)₂↓. W aplikacji obie rzeczy są zgodne z zeszytem; w karcie o wodorotlenkach trudno rozpuszczalnych dopisałem wyjaśnienie, dlaczego Ca(OH)₂ może się wytrącić.
+- **Mg(OH)₂:** w kartach o wodorotlenkach trudno rozpuszczalnych wymieniam Mg(OH)₂ jako trudno rozpuszczalny (osad biały), a w dziale o dysocjacji zasady to „wodorotlenki metali 1. i 2. grupy z wyjątkiem berylu” (jak w zeszycie). Magnez jest w 2. grupie, więc te dwa zdania się gryzą. Dlatego nie ma pytań każących zapisywać reakcję tworzenia Mg(OH)₂. Czy w zakresie sprawdzianu magnez to wyjątek?

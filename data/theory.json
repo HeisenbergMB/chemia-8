@@ -55,7 +55,7 @@
     {
       "id": "wlasciwosci",
       "title": "NaOH i Ca(OH)₂ – właściwości",
-      "status": "soon",
+      "status": "active",
       "desc": "Właściwości fizyczne, chemiczne i zastosowania."
     },
     {
@@ -162,7 +162,7 @@
       "id": "t-wt-04",
       "topic": "wodorotlenki-trudne",
       "title": "Kiedy reakcja zachodzi?",
-      "body": "Reakcja soli z zasadą zachodzi, gdy:\n**•** sól i zasada są **rozpuszczalne w wodzie** (reagują w roztworze),\n**•** powstający wodorotlenek jest **trudno rozpuszczalny**, więc wytrąca się osad.\nWodorotlenki rozpuszczalne (zasady): $NaOH$, $KOH$, $LiOH$ i wodorotlenki z działu 1. Trudno rozpuszczalne są m.in. $Fe(OH)3$, $Cu(OH)2$, $Al(OH)3$, $Cr(OH)3$, $Mg(OH)2$.\nJeśli po zamianie partnerów nie powstaje żaden osad ani gaz, reakcja nie zachodzi, np. $NaCl$ z $KOH$.",
+      "body": "Reakcja soli z zasadą zachodzi, gdy:\n**•** sól i zasada są **rozpuszczalne w wodzie** (reagują w roztworze),\n**•** powstający wodorotlenek jest **trudno rozpuszczalny**, więc wytrąca się osad.\nDobrze rozpuszczalne w wodzie zasady: $NaOH$, $KOH$, $LiOH$. $Ca(OH)2$ jest tylko średnio rozpuszczalny, dlatego w reakcji z solą wapnia może się wytrącić jako osad (jak w przykładzie z lekcji). Trudno rozpuszczalne są m.in. $Fe(OH)3$, $Cu(OH)2$, $Al(OH)3$, $Cr(OH)3$, $Mg(OH)2$.\nJeśli po zamianie partnerów nie powstaje żaden osad ani gaz, reakcja nie zachodzi, np. $NaCl$ z $KOH$.",
       "examples": [],
       "tip": "Pytanie kontrolne: czy któryś z produktów to trudno rozpuszczalny wodorotlenek? Jeśli nie, osadu nie będzie."
     },
@@ -341,6 +341,53 @@
         "2Na + 2H2O -> 2NaOH + H2↑"
       ],
       "tip": "Pisząc obserwację, podawaj kolor, np. „roztwór z fenoloftaleiną zabarwił się na malinowo”."
+    },
+    {
+      "id": "t-wl-01",
+      "topic": "wlasciwosci",
+      "title": "Wodorotlenek sodu NaOH",
+      "body": "**Właściwości fizyczne:**\n**•** biała substancja stała,\n**•** dobrze rozpuszcza się w wodzie, a podczas rozpuszczania wydziela się energia w postaci ciepła (roztwór się ogrzewa),\n**•** jest higroskopijny, czyli pochłania wodę (wilgoć) z powietrza.\n**Właściwości chemiczne:**\n**•** jest żrący, czyli niszczy skórę i inne materiały,\n**•** jego roztwór ma odczyn zasadowy (aniony $OH^-$).",
+      "examples": [
+        "NaOH – wodorotlenek sodu"
+      ],
+      "tip": "Nazwa „higroskopijny” = „wciąga wodę z powietrza”."
+    },
+    {
+      "id": "t-wl-02",
+      "topic": "wlasciwosci",
+      "title": "Wodorotlenek wapnia Ca(OH)₂",
+      "body": "**Właściwości fizyczne:**\n**•** biała substancja stała,\n**•** średnio rozpuszcza się w wodzie, czyli gorzej niż $NaOH$.\n**Właściwości chemiczne:**\n**•** jest żrący,\n**•** jego roztwór ma odczyn zasadowy.\nMętna zawiesina $Ca(OH)2$ w wodzie to wapno gaszone, a klarowny roztwór to woda wapienna (więcej w dziale „Doświadczenia”).",
+      "examples": [
+        "Ca(OH)2 – wodorotlenek wapnia"
+      ],
+      "tip": "Dobra rozpuszczalność to $NaOH$, średnia – $Ca(OH)2$. To częste pytanie na sprawdzianach."
+    },
+    {
+      "id": "t-wl-03",
+      "topic": "wlasciwosci",
+      "title": "NaOH i Ca(OH)₂ – porównanie",
+      "body": "**Podobieństwa:** obie substancje są białymi ciałami stałymi, są żrące, tworzą roztwory o odczynie zasadowym i dysocjują na kation metalu oraz aniony $OH^-$.\n**Różnice:** $NaOH$ rozpuszcza się w wodzie dobrze (z wydzieleniem ciepła) i jest higroskopijny, a $Ca(OH)2$ rozpuszcza się tylko średnio.",
+      "examples": [
+        "NaOH -H2O-> Na^+ + OH^-",
+        "Ca(OH)2 -H2O-> Ca^2+ + 2OH^-"
+      ],
+      "tip": "Pamiętaj: rozpuszczalność to cecha fizyczna, a „żrący” – cecha chemiczna."
+    },
+    {
+      "id": "t-wl-04",
+      "topic": "wlasciwosci",
+      "title": "Bezpieczna praca z zasadami",
+      "body": "Roztwory zasad i same zasady są żrące. W laboratorium pracujemy w **okularach i rękawicach ochronnych**. Jeśli zasada dostanie się na skórę, spłukujemy ją dużą ilością wody.\nWodorotlenek sodu przechowujemy w szczelnie zamkniętym pojemniku, bo jest higroskopijny.",
+      "examples": [],
+      "tip": "Zasady nigdy nie próbujemy ani nie dotykamy gołymi rękami."
+    },
+    {
+      "id": "t-wl-05",
+      "topic": "wlasciwosci",
+      "title": "Zastosowania",
+      "body": "**Wodorotlenek sodu:** produkcja mydła i środków czyszczących (np. do udrażniania rur), produkcja papieru.\n**Wodorotlenek wapnia:** zaprawa murarska, pobielanie ścian, odkwaszanie gleby (wapnowanie).",
+      "examples": [],
+      "tip": "Zastosowania zapamiętaj parami: mydło – $NaOH$, zaprawa murarska – $Ca(OH)2$."
     }
   ],
   "flash": [
@@ -667,6 +714,66 @@
       "topic": "wskazniki",
       "front": "Co to jest wskaźnik?",
       "back": "Substancja zmieniająca barwę zależnie od odczynu roztworu."
+    },
+    {
+      "id": "f-wl-01",
+      "topic": "wlasciwosci",
+      "front": "$NaOH$ – barwa i stan skupienia",
+      "back": "biała substancja stała"
+    },
+    {
+      "id": "f-wl-02",
+      "topic": "wlasciwosci",
+      "front": "$NaOH$ – rozpuszczalność w wodzie",
+      "back": "dobra (wydziela się ciepło)"
+    },
+    {
+      "id": "f-wl-03",
+      "topic": "wlasciwosci",
+      "front": "Co znaczy „higroskopijny”?",
+      "back": "pochłania wodę z powietrza"
+    },
+    {
+      "id": "f-wl-04",
+      "topic": "wlasciwosci",
+      "front": "$Ca(OH)2$ – barwa i stan skupienia",
+      "back": "biała substancja stała"
+    },
+    {
+      "id": "f-wl-05",
+      "topic": "wlasciwosci",
+      "front": "$Ca(OH)2$ – rozpuszczalność w wodzie",
+      "back": "średnia"
+    },
+    {
+      "id": "f-wl-06",
+      "topic": "wlasciwosci",
+      "front": "Właściwość chemiczna $NaOH$ i $Ca(OH)2$",
+      "back": "są żrące"
+    },
+    {
+      "id": "f-wl-07",
+      "topic": "wlasciwosci",
+      "front": "Odczyn roztworu $NaOH$ i $Ca(OH)2$",
+      "back": "zasadowy"
+    },
+    {
+      "id": "f-wl-08",
+      "topic": "wlasciwosci",
+      "front": "Zastosowanie $NaOH$",
+      "back": "produkcja mydła i środków czyszczących"
+    },
+    {
+      "id": "f-wl-09",
+      "topic": "wlasciwosci",
+      "front": "Zastosowanie $Ca(OH)2$",
+      "back": "zaprawa murarska, wapnowanie gleby"
+    },
+    {
+      "id": "f-wl-10",
+      "topic": "wlasciwosci",
+      "front": "Jak pracować z zasadami?",
+      "back": "w okularach i rękawicach ochronnych"
     }
   ]
 }

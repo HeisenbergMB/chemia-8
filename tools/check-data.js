@@ -209,6 +209,16 @@ if (theory && exps) {
   for (const t of theory.topics) for (const l of t.labs || []) if (!known.has(l)) err(`topic ${t.id}`, `nieznane laboratorium "${l}"`);
 }
 
+// ---------- unikalność treści pytań ----------
+{
+  const seen = new Map();
+  for (const q of questions) {
+    const key = String(q.q).replace(/\s+/g, ' ').trim().toLowerCase();
+    if (seen.has(key)) err(`question ${q.id}`, `ta sama treść pytania co ${seen.get(key)}: "${q.q}"`);
+    else seen.set(key, q.id);
+  }
+}
+
 // ---------- wskaźniki ----------
 const indData = readJson('data/indicators.json');
 if (indData) {
