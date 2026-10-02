@@ -80,7 +80,7 @@ if (theory) {
   for (const t of theory.topics || []) {
     uniqueId(`topic:${t.id}`, `theory.topics`);
     topicIds.add(t.id);
-    for (const k of ['id', 'title', 'icon', 'status', 'desc']) if (!t[k]) err(`topic ${t.id}`, `brak pola ${k}`);
+    for (const k of ['id', 'title', 'status', 'desc']) if (!t[k]) err(`topic ${t.id}`, `brak pola ${k}`);
     if (!['active', 'soon'].includes(t.status)) err(`topic ${t.id}`, `zły status "${t.status}"`);
   }
   for (const c of theory.cards || []) {

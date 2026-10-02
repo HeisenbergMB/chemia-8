@@ -1,18 +1,18 @@
 {
   "topics": [
-    { "id": "wodorotlenki-rozp", "title": "Wodorotlenki rozpuszczalne", "icon": "🧪", "status": "active",
+    { "id": "wodorotlenki-rozp", "title": "Wodorotlenki rozpuszczalne", "status": "active",
       "desc": "Metal + woda i tlenek metalu + woda. Skąd biorą się NaOH, KOH, Ca(OH)₂." },
-    { "id": "wodorotlenki-trudne", "title": "Wodorotlenki trudno rozpuszczalne", "icon": "🔵", "status": "soon",
+    { "id": "wodorotlenki-trudne", "title": "Wodorotlenki trudno rozpuszczalne", "status": "soon",
       "desc": "Sól + zasada, osady i tabela rozpuszczalności." },
-    { "id": "dysocjacja", "title": "Dysocjacja jonowa zasad", "icon": "⚡", "status": "soon",
+    { "id": "dysocjacja", "title": "Dysocjacja jonowa zasad", "status": "soon",
       "desc": "Kationy metalu, aniony wodorotlenkowe i rola wody." },
-    { "id": "doswiadczenia", "title": "Doświadczenia", "icon": "🔬", "status": "soon",
+    { "id": "doswiadczenia", "title": "Doświadczenia", "status": "soon",
       "desc": "Schemat, obserwacje, wnioski i równania." },
-    { "id": "wskazniki", "title": "Wskaźniki i odczyn", "icon": "🌈", "status": "soon",
+    { "id": "wskazniki", "title": "Wskaźniki i odczyn", "status": "soon",
       "desc": "Barwy wskaźników w kwasie, wodzie i zasadzie." },
-    { "id": "wlasciwosci", "title": "NaOH i Ca(OH)₂ – właściwości", "icon": "🧴", "status": "soon",
+    { "id": "wlasciwosci", "title": "NaOH i Ca(OH)₂ – właściwości", "status": "soon",
       "desc": "Właściwości fizyczne, chemiczne i zastosowania." },
-    { "id": "podstawy", "title": "Podstawy z klas 7–8", "icon": "📘", "status": "soon",
+    { "id": "podstawy", "title": "Podstawy z klas 7–8", "status": "soon",
       "desc": "Wartościowość, wzory, bilansowanie, rodzaje reakcji." }
   ],
   "cards": [

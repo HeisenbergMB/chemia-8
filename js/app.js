@@ -6,8 +6,9 @@ import * as store from './store.js';
 import { buildReview, buildExtra, topicStats } from './leitner.js';
 import { runQuiz } from './quiz.js';
 import { renderSettings } from './settings.js';
+import { icons, withIcon } from './icons.js';
 
-const APP_VERSION = '1.0.0'; // trzymaj zgodnie z VERSION w sw.js
+const APP_VERSION = '1.1.0'; // trzymaj zgodnie z VERSION w sw.js
 
 const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [] };
 const main = document.getElementById('main');
@@ -21,6 +22,8 @@ async function loadJson(path) {
 }
 
 async function init() {
+  document.getElementById('brand-mark').innerHTML = icons.flask;
+  document.getElementById('gear').innerHTML = icons.gear;
   applySettings();
   try {
     const [theory, questions, equations] = await Promise.all([
@@ -50,18 +53,28 @@ function applySettings() {
   updateCountdown();
 }
 
-function updateCountdown() {
-  const el = document.getElementById('countdown');
+function countInfo() {
   const iso = store.get().settings.examDate;
-  if (!iso) return (el.textContent = '');
+  if (!iso) return null;
   const [y, m, d] = iso.split('-').map(Number);
   const exam = new Date(y, m - 1, d);
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   const days = Math.round((exam - today) / 86400000);
-  if (days < 0) return (el.textContent = '');
-  const weekday = exam.toLocaleDateString('pl-PL', { weekday: 'long' });
-  el.textContent = days === 0 ? 'Sprawdzian dzisiaj – powodzenia!' : days === 1 ? `Sprawdzian jutro (${weekday})` : `Sprawdzian za ${days} dni (${weekday})`;
+  if (days < 0) return null;
+  return {
+    days,
+    weekday: exam.toLocaleDateString('pl-PL', { weekday: 'long' }),
+    full: exam.toLocaleDateString('pl-PL', { weekday: 'long', day: 'numeric', month: 'long' }),
+  };
+}
+
+const plDays = (n) => (n === 1 ? 'dzień' : 'dni');
+
+function updateCountdown() {
+  const el = document.getElementById('countdown');
+  const c = countInfo();
+  el.textContent = !c ? '' : c.days === 0 ? 'Sprawdzian dzisiaj' : c.days === 1 ? `Sprawdzian jutro · ${c.weekday}` : `Sprawdzian za ${c.days} ${plDays(c.days)} · ${c.weekday}`;
 }
 
 // ---------- router ----------
@@ -103,13 +116,13 @@ function renderSide(hash) {
           'aria-current': hash.includes(`/${t.id}`) ? 'page' : null,
           'aria-disabled': t.status === 'active' ? null : 'true',
         },
-        h('span', { class: 'ico', 'aria-hidden': 'true' }, t.icon),
+        h('span', { class: 'num', 'aria-hidden': 'true' }, String(DATA.topics.indexOf(t) + 1).padStart(2, '0')),
         h('span', null, t.title),
-        t.status === 'active' ? null : h('span', { class: 'chip' }, 'wkrótce')
+        t.status === 'active' ? null : h('span', { class: 'visually-hidden' }, ' (wkrótce)')
       )
     ),
     h('h2', { style: 'margin-top:1rem' }, 'Inne'),
-    h('a', { href: '#/settings', 'aria-current': hash === '#/settings' ? 'page' : null }, h('span', { class: 'ico', 'aria-hidden': 'true' }, '⚙️'), h('span', null, 'Ustawienia'))
+    h('a', { href: '#/settings', 'aria-current': hash === '#/settings' ? 'page' : null }, h('span', { class: 'num', html: icons.gear }), h('span', null, 'Ustawienia'))
   );
 }
 
@@ -135,8 +148,9 @@ function notFound(msg) {
 function home() {
   const review = buildReview(DATA.questions);
   const overall = topicStats(DATA.questions);
+  const c = countInfo();
   const dueText = review.queue.length
-    ? `Czeka ${review.dueTotal ? review.dueTotal + ' do powtórki' : ''}${review.dueTotal && review.fresh.length ? ' i ' : ''}${review.fresh.length ? review.fresh.length + ' nowych' : ''}.`
+    ? `Na dziś: ${[review.dueTotal ? `${review.dueTotal} do powtórki` : '', review.fresh.length ? `${review.fresh.length} nowych` : ''].filter(Boolean).join(' i ')}.`
     : 'Na teraz wszystko powtórzone. Możesz poćwiczyć dodatkowo.';
 
   return h(
@@ -145,26 +159,31 @@ function home() {
     h(
       'section',
       { class: 'card hero' },
-      h('h1', null, 'Cześć! 👋'),
-      h('p', { class: 'sub' }, 'Po trochu, spokojnie – dasz radę.'),
-      h('p', null, dueText),
-      h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: review.queue.length ? '#/review' : '#/review/extra' }, review.queue.length ? '▶ Powtórka na dziś' : '▶ Ćwicz dodatkowo')),
-      h('div', { style: 'margin-top:1rem' }, progressBar(overall.mastered, overall.total, 'Postęp ogólny'))
+      c
+        ? [
+            h('div', { class: 'eyebrow' }, 'Do sprawdzianu'),
+            h('div', { class: 'hero-days' }, c.days === 0 ? 'Dzisiaj' : [String(c.days), h('small', null, plDays(c.days))]),
+            h('div', { class: 'when' }, c.full),
+          ]
+        : [h('h1', null, 'Powtórka')],
+      h('p', { class: 'due' }, dueText),
+      h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: review.queue.length ? '#/review' : '#/review/extra', html: withIcon('play', review.queue.length ? 'Powtórka na dziś' : 'Ćwicz dodatkowo') })),
+      h('div', { style: 'margin-top:1.25rem' }, progressBar(overall.mastered, overall.total, 'Postęp ogólny'))
     ),
     h(
       'section',
       { class: 'only-narrow' },
-      h('h2', null, 'Działy'),
+      h('div', { class: 'section-title' }, 'Działy'),
       h(
         'div',
         { class: 'topic-grid' },
-        DATA.topics.map((t) => {
+        DATA.topics.map((t, i) => {
           const active = t.status === 'active';
           const st = topicStats(DATA.questions, t.id);
           return h(
             active ? 'a' : 'div',
             { class: `topic${active ? '' : ' soon'}`, href: active ? `#/topic/${t.id}` : null },
-            h('span', { class: 'ico', 'aria-hidden': 'true' }, t.icon),
+            h('span', { class: 'num', 'aria-hidden': 'true' }, String(i + 1).padStart(2, '0')),
             h('h3', null, t.title),
             h('p', null, t.desc),
             active ? progressBar(st.mastered, st.total, `Postęp: ${t.title}`) : h('span', { class: 'chip' }, 'wkrótce')
@@ -172,7 +191,7 @@ function home() {
         })
       )
     ),
-    h('p', { class: 'muted' }, 'Wskazówka: pytania, na które odpowiesz źle, wracają po kilku minutach, a te dobrze opanowane – coraz rzadziej.')
+    h('p', { class: 'muted', style: 'margin-top:1rem;font-size:.9rem' }, 'Pytania, na które odpowiesz źle, wracają po kilku minutach, a dobrze opanowane – coraz rzadziej.')
   );
 }
 
@@ -186,7 +205,7 @@ function topicScreen(id) {
     'div',
     null,
     h('a', { class: 'back', href: '#/' }, '← Wszystkie działy'),
-    h('h1', null, `${t.icon} ${t.title}`),
+    h('h1', null, t.title),
     h('p', { class: 'muted' }, t.desc),
     h('div', { class: 'card' }, progressBar(st.mastered, st.total, 'Postęp w dziale')),
     h(
@@ -196,10 +215,10 @@ function topicScreen(id) {
       h(
         'div',
         { class: 'btn-row' },
-        h('a', { class: 'btn', href: `#/theory/${id}` }, '📖 Teoria'),
-        h('a', { class: 'btn', href: `#/flash/${id}` }, '🗂 Fiszki'),
-        h('a', { class: 'btn', href: `#/quiz/${id}` }, '✅ Quiz (10 pytań)'),
-        h('a', { class: 'btn secondary', href: `#/quiz/${id}/all` }, `Wszystkie pytania (${qs.length})`)
+        h('a', { class: 'btn', href: `#/theory/${id}`, html: withIcon('book', 'Teoria') }),
+        h('a', { class: 'btn', href: `#/flash/${id}`, html: withIcon('cards', 'Fiszki') }),
+        h('a', { class: 'btn', href: `#/quiz/${id}`, html: withIcon('check', 'Quiz (10 pytań)') }),
+        h('a', { class: 'btn secondary', href: `#/quiz/${id}/all`, html: withIcon('list', `Wszystkie pytania (${qs.length})`) })
       )
     )
   );
@@ -234,7 +253,7 @@ function theoryScreen(id) {
         c.tip ? h('div', { class: 'tip' }, h('strong', null, 'Zapamiętaj: '), h('span', { html: richText(c.tip) })) : null
       )
     ),
-    h('div', { class: 'btn-row' }, h('a', { class: 'btn', href: `#/flash/${id}` }, '🗂 Fiszki'), h('a', { class: 'btn secondary', href: `#/quiz/${id}` }, '✅ Quiz'))
+    h('div', { class: 'btn-row' }, h('a', { class: 'btn', href: `#/flash/${id}`, html: withIcon('cards', 'Fiszki') }), h('a', { class: 'btn secondary', href: `#/quiz/${id}`, html: withIcon('check', 'Quiz') }))
   );
 }
 
@@ -265,7 +284,7 @@ function flashScreen(id) {
         ? h(
             'div',
             { class: 'btn-row' },
-            h('button', { class: 'btn', type: 'button', onClick: () => { known++; queue.shift(); store.update((s) => (s.flash[f.id] = true)); showCard(false); } }, '✓ Umiem'),
+            h('button', { class: 'btn', type: 'button', onClick: () => { known++; queue.shift(); store.update((s) => (s.flash[f.id] = true)); showCard(false); } }, 'Umiem'),
             h('button', { class: 'btn secondary', type: 'button', onClick: () => { queue.push(queue.shift()); showCard(false); } }, 'Jeszcze nie')
           )
         : h('div', { class: 'btn-row' }, h('button', { class: 'btn', type: 'button', onClick: () => showCard(true) }, 'Pokaż odpowiedź'))
@@ -273,7 +292,7 @@ function flashScreen(id) {
   };
   const done = () =>
     root.replaceChildren(
-      h('div', { class: 'card' }, h('h2', null, 'Wszystkie fiszki przerobione 🎉'), h('div', { class: 'btn-row' }, h('a', { class: 'btn', href: `#/quiz/${id}` }, '✅ Teraz quiz'), h('a', { class: 'btn secondary', href: `#/topic/${id}` }, 'Wróć')))
+      h('div', { class: 'card' }, h('h2', null, 'Wszystkie fiszki przerobione'), h('div', { class: 'btn-row' }, h('a', { class: 'btn', href: `#/quiz/${id}`, html: withIcon('check', 'Teraz quiz') }), h('a', { class: 'btn secondary', href: `#/topic/${id}` }, 'Wróć')))
     );
   showCard(false);
   return root;

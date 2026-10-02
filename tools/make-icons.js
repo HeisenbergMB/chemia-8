@@ -1,4 +1,4 @@
-// Generuje ikony PNG (kolba na turkusowym tle) bez żadnych zależności.
+// Generuje ikony PNG (jasna kolba na ciemnym tle) bez żadnych zależności.
 // Uruchom: node tools/make-icons.js
 
 import { deflateSync } from 'node:zlib';
@@ -59,10 +59,10 @@ const inPoly = (x, y, poly) => {
 function pixel(x, y) {
   // tło: gradient turkus -> głębszy turkus
   const t = (x + y) / 2;
-  let col = [29 + 10 * (1 - t), 122 + 25 * (1 - t), 112 + 20 * (1 - t)];
-  if (inPoly(x, y, FLASK)) col = [255, 255, 255];
-  if (inPoly(x, y, LIQUID)) col = [140, 215, 200];
-  for (const [bx, by, r] of BUBBLES) if ((x - bx) ** 2 + (y - by) ** 2 < r * r) col = [255, 255, 255];
+  let col = [14 + 12 * t, 19 + 16 * t, 24 + 20 * t];
+  if (inPoly(x, y, FLASK)) col = [233, 238, 243];
+  if (inPoly(x, y, LIQUID)) col = [79, 195, 177];
+  for (const [bx, by, r] of BUBBLES) if ((x - bx) ** 2 + (y - by) ** 2 < r * r) col = [233, 238, 243];
   return col;
 }
 
