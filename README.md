@@ -41,6 +41,11 @@ Wspólne pola: `id` (unikalne), `type`, `level` (1–3), `q`, `explain`; opcjona
 - `blocks` – `tokens` (poprawna kolejność klocków, np. `["NaOH","->","Na^+","+","OH^-"]`), `extra` (klocki-pułapki).
 - `match` – `pairs` (`[[lewa, prawa], …]`), `extra` (dodatkowe odpowiedzi-pułapki). Prawe strony muszą być unikalne.
 
+## Architektura kodu
+`js/app.js` (start, router, menu) → ekrany (`js/screens/`, `lab.js`, `indicators.js`, `solubility.js`, `valence.js`; każdy eksportuje `routes`) → `js/data.js` (`DATA`) i `js/ui.js`.
+Typy pytań są zebrane w rejestrze `js/qtypes.js` (walidacja + rysowanie + ocena w jednym miejscu).
+Testy ekranów (`tests/routes.test.js`, `tests/quiz-types.test.js`) uruchamiają prawdziwą aplikację w jsdom – bez przeglądarki. Po sklonowaniu: `npm ci`.
+
 ## Kontrola danych
 Po **każdej** zmianie danych:
 ```

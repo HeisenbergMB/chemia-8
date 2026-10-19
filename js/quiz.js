@@ -1,27 +1,14 @@
 // Quiz: jednokrotny wybór, wpisywanie wzoru/równania z klawiatury chemicznej i układanie z klocków.
-// Typy pytań: choice | formula | equation | blocks | match | balance
+// Typy pytań i ich zachowanie: js/qtypes.js (rejestr).
 // Tryb opts.exam: bez podpowiedzi i bez informacji o poprawności w trakcie, wynik dopiero na końcu.
 
 import { h, shuffle } from './dom.js';
 import { richText, formatFormula } from './formula.js';
 import { record } from './leitner.js';
-import { createChemKeyboard } from './chemkeyboard.js';
-import { createBlocks } from './blocks.js';
-import { createMatch } from './match.js';
-import { createBalance } from './balance.js';
-import { equationsMatch, formulasMatch, userBalanceReport } from './chem.js';
+import { userBalanceReport } from './chem.js';
+import { QTYPES, correctHtml } from './qtypes.js';
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E'];
-export const TYPED_TYPES = ['formula', 'equation', 'blocks', 'match', 'balance'];
-
-/** Poprawna odpowiedź jako HTML (do podsumowań). */
-export function correctHtml(q) {
-  if (q.type === 'choice') return richText(q.options[q.answer]);
-  if (q.type === 'blocks') return formatFormula(q.tokens.join(' '));
-  if (q.type === 'balance') return formatFormula(q.eq);
-  if (q.type === 'match') return q.pairs.map(([l, r]) => `${richText(l)} → <strong>${richText(r)}</strong>`).join('<br>');
-  return formatFormula(q.answer);
-}
 
 /**
  * Uruchamia quiz w kontenerze `root`.
@@ -116,52 +103,29 @@ export function runQuiz(root, questions, opts = {}) {
     return exam ? h('div', null, optionsEl, h('div', { class: 'btn-row' }, confirm)) : optionsEl;
   }
 
-  // ---------- wpisywanie (klawiatura chemiczna) i klocki ----------
+  // ---------- odpowiedzi budowane/wpisywane (typy z rejestru qtypes.js) ----------
   function typedBody(cur, feedback, parts) {
     const q = cur.q;
+    const def = QTYPES[q.type];
     let check;
-    let ctl; // { value(), ready(), lock(), reveal?(ok) }
-    let kb = null;
+    let ctl;
 
     const submit = () => {
       if (!ctl.ready()) return;
       const val = ctl.value();
-      let ok;
-      if (q.type === 'match' || q.type === 'balance') ok = ctl.correct();
-      else if (q.type === 'formula') ok = formulasMatch(val, q.answer, q.accept || []);
-      else if (q.type === 'equation') ok = equationsMatch(val, q.answer);
-      else ok = equationsMatch(val, q.tokens.join(' '));
-      if (exam) {
-        const given = q.type === 'match' ? '' : formatFormula(val);
-        return examResolve(cur, ok, given);
-      }
+      const ok = ctl.isCorrect();
+      if (exam) return examResolve(cur, ok, def.showsValue ? formatFormula(val) : '');
       check.disabled = true;
       check.hidden = true;
       ctl.lock(ok);
-      if (kb) kb.hideKeys();
+      if (ctl.done) ctl.done();
       resolve(cur, ok, feedback, compare(q, val, ok));
     };
-    check = h('button', { class: q.type === 'blocks' || q.type === 'match' || q.type === 'balance' ? 'btn big' : 'btn kb-submit', type: 'button', disabled: true, onClick: submit }, exam ? (idx + 1 >= queue.length ? 'Zakończ sprawdzian' : 'Zapisz i dalej →') : 'Sprawdź');
+    check = h('button', { class: def.bigSubmit ? 'btn big' : 'btn kb-submit', type: 'button', disabled: true, onClick: submit }, exam ? (idx + 1 >= queue.length ? 'Zakończ sprawdzian' : 'Zapisz i dalej →') : 'Sprawdź');
 
-    if (q.type === 'balance') {
-      const bl = createBalance({ eq: q.eq, showAtoms: !exam && !opts.noHints });
-      check.disabled = false; // można od razu sprawdzić (domyślnie współczynniki 1)
-      ctl = { value: bl.userEquation, ready: () => true, lock: (ok) => bl.reveal(ok), correct: bl.correct, isBalanced: bl.isBalanced };
-      parts.body = h('div', null, bl.el, h('div', { class: 'btn-row' }, check));
-    } else if (q.type === 'match') {
-      const mt = createMatch({ pairs: q.pairs, extra: q.extra || [], onChange: () => (check.disabled = !mt.full()) });
-      ctl = { value: () => '', ready: mt.full, lock: (ok) => mt.reveal(ok), correct: mt.correct };
-      parts.body = h('div', null, mt.el, h('div', { class: 'btn-row' }, check));
-    } else if (q.type === 'blocks') {
-      const bl = createBlocks({ tokens: q.tokens, extra: q.extra || [], onChange: () => (check.disabled = !bl.full()) });
-      ctl = { value: bl.value, ready: bl.full, lock: (ok) => bl.reveal(ok) };
-      parts.body = h('div', null, bl.el, h('div', { class: 'btn-row' }, check));
-    } else {
-      kb = createChemKeyboard({ onChange: (v) => (check.disabled = !v.trim()), onEnter: submit, submitButton: check });
-      ctl = { value: kb.getValue, ready: () => !!kb.getValue().trim(), lock: () => kb.lock() };
-      parts.body = h('div', null, kb.inputEl);
-      parts.after = kb.keysEl;
-    }
+    ctl = def.mount(q, { check, submit, exam, hints: !exam && !opts.noHints });
+    parts.body = ctl.body;
+    parts.after = ctl.after || null;
 
     if (q.hint && !opts.noHints && !exam) {
       const tip = h('div', { class: 'tip', hidden: true }, h('strong', null, 'Podpowiedź: '), h('span', { html: richText(q.hint) }));
@@ -172,14 +136,14 @@ export function runQuiz(root, questions, opts = {}) {
 
   function compare(q, val, ok) {
     const box = h('div', { class: 'compare' });
-    if (q.type === 'match') {
+    if (!QTYPES[q.type].showsValue) {
       if (!ok) box.append(h('p', null, h('span', { class: 'muted' }, 'Poprawne dopasowanie:')), h('p', { html: correctHtml(q) }));
       return box;
     }
     box.append(h('p', null, h('span', { class: 'muted' }, 'Twoja odpowiedź: '), h('span', { class: 'chem', html: formatFormula(val) })));
     if (!ok) {
       box.append(h('p', null, h('span', { class: 'muted' }, 'Poprawnie: '), h('strong', { class: 'chem', html: correctHtml(q) })));
-      if (q.type !== 'formula') {
+      if (QTYPES[q.type].balanceReport) {
         const r = userBalanceReport(val);
         if (!r.parsed) box.append(h('p', { class: 'muted' }, 'Nie udało się odczytać Twojego zapisu jako równania (sprawdź strzałkę i plusy).'));
         else if (!r.ok) box.append(h('p', { class: 'muted' }, 'W Twoim zapisie nie zgadza się bilans: ' + r.diffs.join('; ') + '.'));

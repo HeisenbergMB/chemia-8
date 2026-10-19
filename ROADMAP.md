@@ -26,9 +26,9 @@ Odhaczamy w trakcie pracy. Legenda: `[x]` zrobione, `[ ]` do zrobienia, `[~]` w 
 - [x] 1.7 Wdrożenie na Pages tylko po zielonym `verify` (workflow `verify-and-deploy`, Pages ze źródłem „GitHub Actions”)
 
 ## Faza 2 – kod
-- [ ] 2.1 Ekrany rejestrują własne trasy (`register(router)`)
-- [ ] 2.2 Rejestr typów pytań (render + check + validate)
-- [ ] 2.3 Smoke test tras (jsdom/Playwright)
+- [x] 2.1 Ekrany rejestrują własne trasy (`routes` w każdym module ekranu; `app.js` je scala)
+- [x] 2.2 Rejestr typów pytań (`js/qtypes.js`: render + ocena + walidacja)
+- [x] 2.3 Test dymny tras i typów pytań w jsdom (`tests/routes.test.js`, `tests/quiz-types.test.js`)
 
 ## Faza 3b – dalsze skille
 - [ ] 3.4 Skill `add-questions`

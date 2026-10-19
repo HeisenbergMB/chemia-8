@@ -1,7 +1,7 @@
 // Service worker: pełna praca offline. Przy zmianie plików podnieś VERSION –
 // stary cache zostanie usunięty przy aktywacji.
 // VERSION i ASSETS są GENEROWANE (npm run build) – wersję zmieniaj w package.json (npm run bump).
-const VERSION = '1.10.3';
+const VERSION = '1.10.4';
 const CACHE = `chemia8-${VERSION}`;
 
 const ASSETS = [
@@ -15,7 +15,9 @@ const ASSETS = [
   'js/blocks.js',
   'js/chem.js',
   'js/chemkeyboard.js',
+  'js/countdown.js',
   'js/curriculum.js',
+  'js/data.js',
   'js/dnd.js',
   'js/dom.js',
   'js/exam.js',
@@ -25,10 +27,17 @@ const ASSETS = [
   'js/lab.js',
   'js/leitner.js',
   'js/match.js',
+  'js/qtypes.js',
   'js/quiz.js',
+  'js/router.js',
+  'js/screens/exam.js',
+  'js/screens/home.js',
+  'js/screens/review.js',
+  'js/screens/topic.js',
   'js/settings.js',
   'js/solubility.js',
   'js/store.js',
+  'js/ui.js',
   'js/valence.js',
   'js/version.js',
   'data/curriculum.json',

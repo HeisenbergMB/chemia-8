@@ -9,6 +9,7 @@ import { reaction as solReaction } from '../js/solubility.js';
 import { staleFiles } from './build.js';
 import { loadData } from './load-data.js';
 import { questionsInScope } from '../js/curriculum.js';
+import { QTYPES } from '../js/qtypes.js';
 import { readLock, diffLock, currentIds } from './lock-ids.js';
 import { parseEquation, parseSpecies, parseFormula, checkBalance, extractFormulaSegments } from '../js/chem.js';
 
@@ -147,75 +148,16 @@ for (const e of equations) {
 
 // ---------- pytania ----------
 const questions = theory ? theory.questions : [];
-const TYPES = new Set(['choice', 'formula', 'equation', 'blocks', 'match', 'balance']);
 const stats = { byTopic: {}, byLevel: {}, byType: {} };
 for (const q of questions) {
   const w = `question ${q.id}`;
   uniqueId(q.id, w);
   if (!topicIds.has(q.topic)) err(w, `nieznany dział "${q.topic}"`);
-  if (!TYPES.has(q.type)) err(w, `nieznany typ "${q.type}"`);
+  if (!QTYPES[q.type]) err(w, `nieznany typ "${q.type}"`);
   if (![1, 2, 3].includes(q.level)) err(w, `level musi być 1, 2 lub 3 (jest ${q.level})`);
   if (!q.q || typeof q.q !== 'string') err(w, 'brak treści pytania (q)');
   if (!q.explain || typeof q.explain !== 'string' || q.explain.length < 15) err(w, 'brak wyjaśnienia (explain)');
-  if (q.type === 'choice') {
-    if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 5) err(w, 'options: 2–5 odpowiedzi');
-    else {
-      if (new Set(q.options).size !== q.options.length) err(w, 'options: powtarzające się odpowiedzi');
-      if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= q.options.length) err(w, `answer poza zakresem (${q.answer})`);
-      q.options.forEach((o, i) => checkText(o, `${w} option ${i}`, { balance: i === q.answer }));
-    }
-  }
-  if (q.type === 'formula') {
-    if (typeof q.answer !== 'string') err(w, 'formula: brak answer');
-    else {
-      try { parseFormula(q.answer); } catch (e) { err(w, `answer: ${e.message}`); }
-    }
-  }
-  if (q.type === 'equation') {
-    try {
-      const r = checkBalance(parseEquation(q.answer));
-      if (!r.ok) err(w, `answer niezbilansowane: ${r.diffs.join('; ')}`);
-    } catch (e) { err(w, `answer: ${e.message}`); }
-  }
-  if (q.type === 'blocks') {
-    if (!Array.isArray(q.tokens) || q.tokens.length < 3) err(w, 'blocks: tokens (min. 3)');
-    else {
-      try {
-        const r = checkBalance(parseEquation(q.tokens.join(' ')));
-        if (!r.ok) err(w, `tokens niezbilansowane: ${r.diffs.join('; ')}`);
-      } catch (e) { err(w, `tokens: ${e.message}`); }
-      for (const t of [...q.tokens.filter((x) => !['->', '+'].includes(x)), ...(q.extra || [])]) {
-        try { parseSpecies(t); parseFormula(parseSpecies(t).formula); } catch (e) { err(w, `klocek "${t}": ${e.message}`); }
-      }
-      const pool = [...q.tokens, ...(q.extra || [])];
-      if ((q.extra || []).some((x) => q.tokens.includes(x))) err(w, 'extra: klocek-pułapka powtarza poprawny klocek');
-      if (pool.length > 10) err(w, 'blocks: za dużo klocków (max 10)');
-    }
-  }
-  if (q.type === 'balance') {
-    try {
-      const p = parseEquation(q.eq);
-      const r = checkBalance(p);
-      if (!r.ok) err(w, `eq niezbilansowane: ${r.diffs.join('; ')}`);
-      const cs = [...p.left, ...p.right].map((s) => s.coef);
-      const g = cs.reduce((a, b) => { while (b) [a, b] = [b, a % b]; return a; });
-      if (g !== 1) err(w, `współczynniki nie są najmniejsze (NWD = ${g}): ${q.eq}`);
-      if (Math.max(...cs) > 9) err(w, 'współczynnik > 9 (przyciski sięgają 9)');
-      if (Math.max(...cs) === 1) err(w, 'wszystkie współczynniki równe 1 – nic do bilansowania');
-      if (p.left.length + p.right.length > 6) err(w, 'za dużo składników (max 6)');
-    } catch (e) { err(w, `eq: ${e.message}`); }
-  }
-  if (q.type === 'match') {
-    if (!Array.isArray(q.pairs) || q.pairs.length < 2 || q.pairs.length > 6) err(w, 'match: pairs (2–6 par)');
-    else {
-      const rights = [...q.pairs.map((p) => p[1]), ...(q.extra || [])];
-      if (new Set(rights).size !== rights.length) err(w, 'match: odpowiedzi (prawa strona + extra) muszą być unikalne');
-      if (new Set(q.pairs.map((p) => p[0])).size !== q.pairs.length) err(w, 'match: powtarzające się wiersze po lewej');
-      q.pairs.forEach(([l, r], i) => { checkText(l, `${w} pair ${i} lewa`, { balance: false }); checkText(r, `${w} pair ${i} prawa`, { balance: false }); });
-      (q.extra || []).forEach((x, i) => checkText(x, `${w} extra ${i}`, { balance: false }));
-      if (rights.length > 8) err(w, 'match: za dużo odpowiedzi (max 8)');
-    }
-  }
+  if (QTYPES[q.type]) QTYPES[q.type].validate(q, { err: (msg) => err(w, msg), text: (text, label, o) => checkText(text, `${w} ${label}`, o) });
   checkText(q.q, `${w} q`);
   if (q.hint) checkText(q.hint, `${w} hint`);
   checkText(q.explain, `${w} explain`);

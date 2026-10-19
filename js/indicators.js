@@ -2,6 +2,7 @@
 // Barwy zawsze mają też podpis słowny (nie opieramy sensu wyłącznie na kolorze).
 
 import { h, shuffle } from './dom.js';
+import { DATA } from './data.js';
 
 let uid = 0;
 
@@ -175,3 +176,8 @@ export function renderGuess(data, rounds = 10) {
   nextRound();
   return root;
 }
+
+export const routes = [
+  [/^#\/indicators$/, () => renderIndicators(DATA.indicators)],
+  [/^#\/indicators\/guess$/, () => renderGuess(DATA.indicators)],
+];

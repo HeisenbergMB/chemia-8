@@ -4,11 +4,12 @@ PWA (czysty HTML/CSS/JS, ES modules, bez bibliotek i backendu) do powtórek z ch
 Działa offline, postęp w `localStorage`. Szczegóły formatu danych: `README.md`. Plan prac: `ROADMAP.md`.
 
 ## Komendy
+- `npm ci` (raz po sklonowaniu) – instaluje jsdom do testów ekranów. Aplikacja nie ma zależności uruchomieniowych.
 - `npm run verify` – komplet kontroli (build aktualny + `check-data` + testy). **Uruchom przed zakończeniem pracy.**
 - `npm run check` – kontrola danych (bilans równań, format pytań, id, sprawdzian).
 - `npm test` – testy jednostkowe (`tests/*.test.js`, `node --test`).
 - `npm run build` – regeneruje `js/version.js` oraz `VERSION`/`ASSETS` w `sw.js`.
-- `npm run bump` – podbija wersję patch w `package.json` i buduje (po każdej zmianie, którą ma zobaczyć użytkownik).
+- `npm run bump` – podbija wersję patch w `package.json` i buduje. **Po każdej zmianie plików aplikacji** (`js/`, `css/`, `data/`, `index.html`) – także po refaktorze, inaczej stary cache offline zostaje na urządzeniu.
 - `npm run lock` – dopisuje nowe id pytań/fiszek do `data/ids.lock.json`.
 - Serwer lokalnie: `python3 -m http.server 8000`.
 
@@ -27,7 +28,9 @@ Działa offline, postęp w `localStorage`. Szczegóły formatu danych: `README.m
 - Wzory w tekstach w `$…$` (`$Ca(OH)2$`, `$Ca^2+$`, `$2Na + 2H2O -> 2NaOH + H2↑$`). Wzór celowo niezbilansowany: `$!…$`.
 - Id: `q-<skrót działu>-NNN` (pytania), `f-<skrót>-NN` (fiszki), `t-<skrót>-NN` (karty teorii). Skrót bierz z istniejących w danym dziale.
 - Pytanie: pole `explain` obowiązkowe (min. 15 znaków), `level` 1–3, bez powtórzonych treści pytań. Mieszaj typy pytań (nie same `choice`).
-- Dane składa `js/curriculum.js` (`assemble`); ekrany to moduły w `js/` (`renderXxx(data)` zwraca węzeł DOM), trasy w tablicy `routes` w `js/app.js`. DOM budujemy przez `h()` z `js/dom.js`, nigdy przez `innerHTML` z danymi użytkownika.
+- Dane składa `js/curriculum.js` (`assemble`) i trzyma `js/data.js` (`DATA`). Ekrany: `js/screens/*.js` oraz moduły funkcji (`lab`, `indicators`, `solubility`, `valence`); każdy eksportuje własne `routes` (`[wyrażenie, funkcja]`), a `js/app.js` je tylko scala. Zależności idą w jedną stronę: `app.js → ekrany → data/ui` – ekran nigdy nie importuje `app.js`.
+- **Nowy ekran** = plik z `routes` + jedna linia w `routes` w `app.js`. Test `tests/routes.test.js` przejdzie po wszystkich linkach i wykryje nieistniejącą trasę lub trasę zasłoniętą przez inną.
+- **Nowy typ pytania** = jeden wpis w `QTYPES` (`js/qtypes.js`: walidacja, rysowanie, ocena) + przypadki w `tests/qtypes.test.js`. Nie twórz drugiej listy typów gdzie indziej. DOM budujemy przez `h()` z `js/dom.js`, nigdy przez `innerHTML` z danymi użytkownika.
 - Dostępność: `aria-*`, `visually-hidden`, obsługa klawiatury i dotyku (docelowo iPad).
 
 ## Nowa lekcja / dział

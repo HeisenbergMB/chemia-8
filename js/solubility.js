@@ -4,6 +4,7 @@
 
 import { h } from './dom.js';
 import { formatFormula } from './formula.js';
+import { DATA } from './data.js';
 
 const gcd = (a, b) => (b ? gcd(b, a % b) : a);
 
@@ -182,3 +183,8 @@ export function renderReact(data, preset) {
   render();
   return root;
 }
+
+export const routes = [
+  [/^#\/solubility$/, () => renderSolubility(DATA.solubility)],
+  [/^#\/solubility\/react(?:\/(\w+)\/(\w+))?$/, (cat, an) => renderReact(DATA.solubility, cat ? { cat, an } : null)],
+];

@@ -3,6 +3,8 @@
 
 import { h } from './dom.js';
 import { richText, formatFormula } from './formula.js';
+import { DATA } from './data.js';
+import { notFound } from './ui.js';
 
 const NS = 'http://www.w3.org/2000/svg';
 const svgEl = (tag, attrs = {}, ...kids) => {
@@ -299,3 +301,18 @@ async function runFlame(stage, alive) {
   gas.style.fillOpacity = '0';
   await sleep(700);
 }
+
+// ---------- ekran doświadczenia ----------
+function labScreen(id) {
+  const exp = DATA.experiments.find((e) => e.id === id);
+  if (!exp) return notFound('Nie znaleziono doświadczenia.');
+  const topic = DATA.topics.find((t) => (t.labs || []).includes(id));
+  return h(
+    'div',
+    null,
+    h('a', { class: 'back', href: topic ? `#/topic/${topic.id}` : '#/' }, topic ? `← ${topic.title}` : '← Wróć'),
+    h('div', { class: 'card' }, renderLab(exp))
+  );
+}
+
+export const routes = [[/^#\/lab\/([\w-]+)$/, labScreen]];

@@ -3,6 +3,7 @@
 
 import { h } from './dom.js';
 import { formatFormula } from './formula.js';
+import { DATA } from './data.js';
 import { compoundFormula, compoundName } from './solubility.js';
 
 const ROMAN = ['', 'I', 'II', 'III', 'IV'];
@@ -75,3 +76,5 @@ export function renderValence(data) {
   render();
   return root;
 }
+
+export const routes = [[/^#\/valence$/, () => renderValence(DATA.solubility)]];
