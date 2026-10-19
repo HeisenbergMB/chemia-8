@@ -1,0 +1,120 @@
+{
+  "modules": [
+    {
+      "id": "wodorotlenki",
+      "title": "Wodorotlenki i ich właściwości",
+      "desc": "Powstawanie, rozpuszczalność, dysocjacja, doświadczenia i wskaźniki.",
+      "topics": [
+        {
+          "id": "wodorotlenki-rozp",
+          "title": "Wodorotlenki rozpuszczalne",
+          "status": "active",
+          "desc": "Metal + woda i tlenek metalu + woda. Skąd biorą się NaOH, KOH, Ca(OH)₂.",
+          "labs": [
+            "sod"
+          ]
+        },
+        {
+          "id": "wodorotlenki-trudne",
+          "title": "Wodorotlenki trudno rozpuszczalne",
+          "status": "active",
+          "desc": "Sól + zasada, osady i tabela rozpuszczalności.",
+          "labs": [
+            "osady"
+          ],
+          "tools": [
+            {
+              "href": "#/solubility/react",
+              "label": "Czy reakcja zajdzie?",
+              "icon": "flask"
+            }
+          ]
+        },
+        {
+          "id": "rozpuszczalnosc",
+          "title": "Tabela rozpuszczalności",
+          "status": "active",
+          "desc": "Co rozpuszcza się w wodzie i kiedy sól reaguje z zasadą.",
+          "tools": [
+            {
+              "href": "#/solubility",
+              "label": "Tabela rozpuszczalności",
+              "icon": "table"
+            },
+            {
+              "href": "#/solubility/react",
+              "label": "Czy reakcja zajdzie?",
+              "icon": "flask"
+            }
+          ]
+        },
+        {
+          "id": "dysocjacja",
+          "title": "Dysocjacja jonowa zasad",
+          "status": "active",
+          "desc": "Kationy metalu, aniony wodorotlenkowe i rola wody."
+        },
+        {
+          "id": "doswiadczenia",
+          "title": "Doświadczenia",
+          "status": "active",
+          "desc": "Schemat, obserwacje, wnioski i równania.",
+          "labs": [
+            "sod",
+            "osady"
+          ]
+        },
+        {
+          "id": "wskazniki",
+          "title": "Wskaźniki i odczyn",
+          "status": "active",
+          "desc": "Barwy wskaźników w kwasie, wodzie i zasadzie.",
+          "tools": [
+            {
+              "href": "#/indicators",
+              "label": "Tabela wskaźników",
+              "icon": "palette"
+            },
+            {
+              "href": "#/indicators/guess",
+              "label": "Zgadnij odczyn po kolorze",
+              "icon": "drop"
+            }
+          ]
+        },
+        {
+          "id": "wlasciwosci",
+          "title": "NaOH i Ca(OH)₂ – właściwości",
+          "status": "active",
+          "desc": "Właściwości fizyczne, chemiczne i zastosowania."
+        }
+      ]
+    },
+    {
+      "id": "podstawy-bilansowanie",
+      "title": "Podstawy i bilansowanie",
+      "desc": "Układ okresowy, wartościowość, wzory oraz bilansowanie równań reakcji.",
+      "topics": [
+        {
+          "id": "bilansowanie",
+          "title": "Bilansowanie równań",
+          "status": "active",
+          "desc": "Współczynniki, indeksy i liczenie atomów po obu stronach."
+        },
+        {
+          "id": "podstawy",
+          "title": "Podstawy z klas 7–8",
+          "status": "active",
+          "desc": "Układ okresowy, wartościowość, wzory i nazwy tlenków, jony, rodzaje reakcji.",
+          "tools": [
+            {
+              "href": "#/valence",
+              "label": "Kalkulator wzorów (na krzyż)",
+              "icon": "flask"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

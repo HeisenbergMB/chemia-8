@@ -1,12 +1,14 @@
 // Sprawdza całą bazę: bilans atomów i ładunków równań, format pytań, unikalność id.
 // Uruchom: node tools/check-data.js   (albo: npm run check)
 
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildExam, EXAM_SIZE } from '../js/exam.js';
 import { reaction as solReaction } from '../js/solubility.js';
 import { staleFiles } from './build.js';
+import { loadData } from './load-data.js';
+import { questionsInScope } from '../js/curriculum.js';
 import { readLock, diffLock, currentIds } from './lock-ids.js';
 import { parseEquation, parseSpecies, parseFormula, checkBalance, extractFormulaSegments } from '../js/chem.js';
 
@@ -79,16 +81,37 @@ function checkSegment(seg, balance) {
   }
 }
 
-// ---------- teoria ----------
-const theory = readJson('data/theory.json');
+// ---------- program (moduły → działy) i paczki działów ----------
+const loaded = loadData();
+loaded.problems.forEach((p) => errors.push(p));
+const theory = loaded.data;
 const topicIds = new Set();
-if (theory) {
-  for (const t of theory.topics || []) {
-    uniqueId(`topic:${t.id}`, `theory.topics`);
+if (loaded.curriculum && theory) {
+  const moduleIds = new Set();
+  for (const m of loaded.curriculum.modules) {
+    uniqueId(`module:${m.id}`, 'curriculum.modules');
+    moduleIds.add(m.id);
+    for (const k of ['id', 'title', 'desc']) if (!m[k]) err(`module ${m.id}`, `brak pola ${k}`);
+    if (!Array.isArray(m.topics) || !m.topics.length) err(`module ${m.id}`, 'moduł bez działów');
+  }
+  for (const t of theory.topics) {
+    uniqueId(`topic:${t.id}`, `curriculum.topics`);
     topicIds.add(t.id);
     for (const k of ['id', 'title', 'status', 'desc']) if (!t[k]) err(`topic ${t.id}`, `brak pola ${k}`);
     if (!['active', 'soon'].includes(t.status)) err(`topic ${t.id}`, `zły status "${t.status}"`);
+    const pack = loaded.packs[t.id];
+    if (t.status === 'active' && pack) {
+      if (!(pack.theory && pack.theory.cards && pack.theory.cards.length)) err(`topic ${t.id}`, 'aktywny dział bez kart teorii');
+      if (!(pack.questions && pack.questions.length)) err(`topic ${t.id}`, 'aktywny dział bez pytań');
+      for (const [kind, list] of [['card', pack.theory && pack.theory.cards], ['flash', pack.theory && pack.theory.flash], ['question', pack.questions]]) {
+        for (const x of list || []) if ('topic' in x) err(`${kind} ${x.id}`, 'pole "topic" jest zbędne w paczce (dział wynika z katalogu)');
+      }
+    }
   }
+  const dir = join(root, 'data', 'topics');
+  if (existsSync(dir)) for (const d of readdirSync(dir)) if (!topicIds.has(d)) err(`data/topics/${d}`, 'katalog nie jest działem z curriculum.json');
+}
+if (theory) {
   for (const c of theory.cards || []) {
     const w = `card ${c.id}`;
     uniqueId(c.id, w);
@@ -123,7 +146,7 @@ for (const e of equations) {
 }
 
 // ---------- pytania ----------
-const questions = readJson('data/questions.json') || [];
+const questions = theory ? theory.questions : [];
 const TYPES = new Set(['choice', 'formula', 'equation', 'blocks', 'match', 'balance']);
 const stats = { byTopic: {}, byLevel: {}, byType: {} };
 for (const q of questions) {
@@ -281,6 +304,20 @@ if (indData) {
   }
 }
 for (const t of theory ? theory.topics : []) for (const tool of t.tools || []) if (!/^#\//.test(tool.href || '') || !tool.label) err(`topic ${t.id}`, 'tools: potrzebne href (#/…) i label');
+
+// ---------- losowanie sprawdzianu z modułu ----------
+if (theory) {
+  for (const m of theory.modules) {
+    const scope = questionsInScope(theory, m.id);
+    const w = `sprawdzian z modułu ${m.id}`;
+    for (let i = 0; i < 50; i++) {
+      const ex = buildExam(scope, EXAM_SIZE);
+      if (ex.length !== Math.min(EXAM_SIZE, scope.length)) { err(w, `liczba pytań ${ex.length} (zakres ${scope.length})`); break; }
+      if (new Set(ex.map((q) => q.id)).size !== ex.length) { err(w, 'powtarzające się pytania'); break; }
+      if (!ex.every((q) => scope.includes(q))) { err(w, 'pytanie spoza modułu'); break; }
+    }
+  }
+}
 
 // ---------- losowanie sprawdzianu ----------
 {

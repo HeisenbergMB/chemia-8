@@ -1,13 +1,15 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
 import { buildExam, EXAM_SIZE } from '../js/exam.js';
 import { record, isDue, INTERVALS_MIN } from '../js/leitner.js';
 import * as store from '../js/store.js';
 import { staleFiles } from '../tools/build.js';
 import { currentIds, readLock, diffLock } from '../tools/lock-ids.js';
 
-const questions = JSON.parse(readFileSync(new URL('../data/questions.json', import.meta.url), 'utf8'));
+import { loadData } from '../tools/load-data.js';
+
+const { data } = loadData();
+const questions = data.questions;
 
 test('sprawdzian: właściwa liczba, bez powtórzeń, z każdego działu', () => {
   const topics = new Set(questions.map((q) => q.topic));

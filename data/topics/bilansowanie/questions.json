@@ -1,0 +1,194 @@
+[
+ {
+  "id": "q-bl-001",
+  "type": "choice",
+  "level": 1,
+  "q": "Co wolno zmieniać przy bilansowaniu równania?",
+  "options": [
+   "współczynniki",
+   "indeksy",
+   "wzory substancji",
+   "symbole pierwiastków"
+  ],
+  "answer": 0,
+  "explain": "Bilansujemy wyłącznie współczynnikami. Indeksy opisują budowę związku i nie wolno ich zmieniać."
+ },
+ {
+  "id": "q-bl-002",
+  "type": "choice",
+  "level": 1,
+  "q": "Co oznacza liczba 2 w zapisie $2H2O$?",
+  "options": [
+   "dwie cząsteczki wody",
+   "dwa atomy tlenu w jednej cząsteczce",
+   "cząsteczka z dwoma atomami wodoru, której nie wolno liczyć",
+   "podwójne wiązanie"
+  ],
+  "answer": 0,
+  "explain": "Liczba stojąca przed wzorem to współczynnik: dwie cząsteczki wody."
+ },
+ {
+  "id": "q-bl-003",
+  "type": "choice",
+  "level": 2,
+  "q": "Ile atomów wodoru jest w $2H2O$?",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "6"
+  ],
+  "answer": 2,
+  "explain": "Dwie cząsteczki po 2 atomy wodoru to 4 atomy."
+ },
+ {
+  "id": "q-bl-004",
+  "type": "choice",
+  "level": 2,
+  "q": "Ile atomów tlenu jest w $3Ca(OH)2$?",
+  "options": [
+   "3",
+   "2",
+   "6",
+   "9"
+  ],
+  "answer": 2,
+  "explain": "W jednej jednostce $Ca(OH)2$ są 2 atomy tlenu, więc w trzech jest ich 6."
+ },
+ {
+  "id": "q-bl-005",
+  "type": "choice",
+  "level": 2,
+  "q": "Ile atomów wodoru jest w $2Ca(OH)2$?",
+  "options": [
+   "2",
+   "4",
+   "6",
+   "8"
+  ],
+  "answer": 1,
+  "explain": "W jednej jednostce $Ca(OH)2$ są 2 atomy wodoru, więc w dwóch jest ich 4."
+ },
+ {
+  "id": "q-bl-006",
+  "type": "choice",
+  "level": 2,
+  "q": "Dlaczego nie wolno zmieniać indeksów?",
+  "options": [
+   "bo zmiana indeksu zmienia substancję",
+   "bo indeksy są zawsze równe 2",
+   "bo indeksy to współczynniki",
+   "bo nie ma to znaczenia"
+  ],
+  "answer": 0,
+  "explain": "Wzór opisuje konkretną substancję. Inny indeks to już inny związek."
+ },
+ {
+  "id": "q-bl-007",
+  "type": "choice",
+  "level": 3,
+  "q": "Jaki współczynnik należy wpisać przed $O2$: $4Al + ?O2 -> 2Al2O3$?",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "6"
+  ],
+  "answer": 1,
+  "explain": "Po prawej jest 6 atomów tlenu (2 · 3), więc po lewej potrzeba 3 cząsteczek $O2$."
+ },
+ {
+  "id": "q-bl-008",
+  "type": "choice",
+  "level": 3,
+  "q": "Które z równań ma poprawnie dobrane współczynniki?",
+  "options": [
+   "$4Al + 3O2 -> 2Al2O3$",
+   "$!Al + O2 -> Al2O3$",
+   "$2Al + 3O2 -> 2Al2O3$",
+   "$4Al + 2O2 -> 2Al2O3$"
+  ],
+  "answer": 0,
+  "explain": "Po obu stronach są 4 atomy glinu i 6 atomów tlenu."
+ },
+ {
+  "id": "q-bl-009",
+  "type": "balance",
+  "level": 1,
+  "q": "Zbilansuj równanie reakcji: $!H2 + O2 -> H2O$",
+  "eq": "2H2 + O2 -> 2H2O",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 4 H, 2 O. Współczynniki: 2, 1, 2."
+ },
+ {
+  "id": "q-bl-010",
+  "type": "balance",
+  "level": 1,
+  "q": "Zbilansuj równanie reakcji: $!Mg + O2 -> MgO$",
+  "eq": "2Mg + O2 -> 2MgO",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 2 Mg, 2 O. Współczynniki: 2, 1, 2."
+ },
+ {
+  "id": "q-bl-011",
+  "type": "balance",
+  "level": 2,
+  "q": "Zbilansuj równanie reakcji: $!Na + O2 -> Na2O$",
+  "eq": "4Na + O2 -> 2Na2O",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 4 Na, 2 O. Współczynniki: 4, 1, 2."
+ },
+ {
+  "id": "q-bl-012",
+  "type": "balance",
+  "level": 2,
+  "q": "Zbilansuj równanie reakcji: $!Al + O2 -> Al2O3$",
+  "eq": "4Al + 3O2 -> 2Al2O3",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 4 Al, 6 O. Współczynniki: 4, 3, 2."
+ },
+ {
+  "id": "q-bl-013",
+  "type": "balance",
+  "level": 2,
+  "q": "Zbilansuj równanie reakcji: $!N2 + H2 -> NH3$",
+  "eq": "N2 + 3H2 -> 2NH3",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 2 N, 6 H. Współczynniki: 1, 3, 2."
+ },
+ {
+  "id": "q-bl-014",
+  "type": "balance",
+  "level": 2,
+  "q": "Zbilansuj równanie reakcji: $!Al + Cl2 -> AlCl3$",
+  "eq": "2Al + 3Cl2 -> 2AlCl3",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 2 Al, 6 Cl. Współczynniki: 2, 3, 2."
+ },
+ {
+  "id": "q-bl-015",
+  "type": "balance",
+  "level": 2,
+  "q": "Zbilansuj równanie reakcji: $!Fe + Cl2 -> FeCl3$",
+  "eq": "2Fe + 3Cl2 -> 2FeCl3",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 6 Cl, 2 Fe. Współczynniki: 2, 3, 2."
+ },
+ {
+  "id": "q-bl-016",
+  "type": "balance",
+  "level": 1,
+  "q": "Zbilansuj równanie reakcji: $!K + Cl2 -> KCl$",
+  "eq": "2K + Cl2 -> 2KCl",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 2 Cl, 2 K. Współczynniki: 2, 1, 2."
+ },
+ {
+  "id": "q-bl-017",
+  "type": "balance",
+  "level": 1,
+  "q": "Zbilansuj równanie reakcji: $!Cu + O2 -> CuO$",
+  "eq": "2Cu + O2 -> 2CuO",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 2 Cu, 2 O. Współczynniki: 2, 1, 2."
+ },
+ {
+  "id": "q-bl-018",
+  "type": "balance",
+  "level": 2,
+  "q": "Zbilansuj równanie reakcji: $!Fe + O2 -> Fe2O3$",
+  "eq": "4Fe + 3O2 -> 2Fe2O3",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 4 Fe, 6 O. Współczynniki: 4, 3, 2."
+ }
+]

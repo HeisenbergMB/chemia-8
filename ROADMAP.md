@@ -16,13 +16,13 @@ Odhaczamy w trakcie pracy. Legenda: `[x]` zrobione, `[ ]` do zrobienia, `[~]` w 
 - [x] 3.2 Skill `add-lesson`
 - [x] 3.3 Hook: po edycji `data/**/*.json` uruchom `check-data`; allowlista komend
 
-## Faza 1 – model treści (następny krok)
-- [ ] 1.1 `data/curriculum.json`: moduły → tematy
-- [ ] 1.2 Paczki per temat (`theory`, `questions`, `flash`), leniwe ładowanie
-- [ ] 1.3 Ekran modułu, strona główna z modułami
-- [ ] 1.4 `buildExam(scope)` z zakresem
-- [ ] 1.5 Migracja istniejących danych bez utraty id
-- [ ] 1.6 Po zmianie układu plików zaktualizować: `currentIds()` (tools/lock-ids.js), `listAssets()` (tools/build.js), skill `add-lesson`, `CLAUDE.md`, README
+## Faza 1 – model treści
+- [x] 1.1 `data/curriculum.json`: moduły → tematy
+- [x] 1.2 Paczki per temat (`data/topics/<id>/theory.json` + `questions.json`); ładowane naraz, ale `assemble` pozwala przejść na leniwe ładowanie per moduł
+- [x] 1.3 Ekran modułu, strona główna z modułami
+- [x] 1.4 `buildExam(scope)` z zakresem
+- [x] 1.5 Migracja istniejących danych bez utraty id
+- [x] 1.6 Po zmianie układu plików zaktualizować: `currentIds()` (tools/lock-ids.js), `listAssets()` (tools/build.js), skill `add-lesson`, `CLAUDE.md`, README
 - [ ] 1.7 Wdrożenie na Pages tylko po zielonym `verify` (Pages z Actions albo PR + branch protection) – dziś Pages publikuje `main` mimo czerwonego CI
 
 ## Faza 2 – kod

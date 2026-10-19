@@ -1,0 +1,126 @@
+{
+ "cards": [
+  {
+   "id": "t-wt-01",
+   "title": "Dlaczego nie „metal + woda”?",
+   "body": "Wodorotlenki trudno rozpuszczalne tworzą metale mniej aktywne, np. $Fe$, $Cu$, $Al$, $Cr$. Takie metale **nie reagują z wodą**, a ich tlenki też nie.\nDlatego tych wodorotlenków nie da się otrzymać sposobami z poprzedniego działu.\nUżywamy innej drogi: **sól + zasada → wodorotlenek + inna sól**. Wodorotlenek wytrąca się wtedy jako **osad**.",
+   "examples": [],
+   "tip": "Osad zaznaczamy w równaniu strzałką ↓ przy wzorze wodorotlenku."
+  },
+  {
+   "id": "t-wt-02",
+   "title": "Reakcja soli z zasadą",
+   "body": "Schemat: **sól + zasada → wodorotlenek + sól**\nZasadą jest zwykle $NaOH$ albo $KOH$ (rozpuszczają się w wodzie). Metal z soli przejmuje grupy $OH$ i tworzy trudno rozpuszczalny wodorotlenek, a metal z zasady (Na lub K) łączy się z resztą kwasową.\nTo reakcja **wymiany podwójnej**: substancje wymieniają się częściami.",
+   "examples": [
+    "FeCl3 + 3NaOH -> Fe(OH)3↓ + 3NaCl",
+    "CuSO4 + 2NaOH -> Cu(OH)2↓ + Na2SO4",
+    "AlCl3 + 3NaOH -> Al(OH)3↓ + 3NaCl",
+    "CrBr3 + 3KOH -> Cr(OH)3↓ + 3KBr",
+    "CaCl2 + 2NaOH -> Ca(OH)2↓ + 2NaCl"
+   ],
+   "tip": "Przy zapisie pilnuj, ile grup OH potrzebuje metal: tyle, ile wynosi jego wartościowość."
+  },
+  {
+   "id": "t-wt-03",
+   "title": "Zapis równania krok po kroku",
+   "body": "Przykład: $FeCl3$ + $NaOH$.\n**1.** Zapisz substraty: $FeCl3 + NaOH ->$\n**2.** Wymień partnerów: żelazo bierze grupę $OH$, sód – chlor. Żelazo jest III-wartościowe, więc $Fe(OH)3$, a sód z chlorem tworzy $NaCl$.\n**3.** Zapisz produkty: $Fe(OH)3↓ + NaCl$\n**4.** Zbilansuj: po prawej są 3 grupy $OH$ i 3 atomy $Cl$, więc potrzeba $3NaOH$ i $3NaCl$.",
+   "examples": [
+    "FeCl3 + 3NaOH -> Fe(OH)3↓ + 3NaCl"
+   ],
+   "tip": "Sprawdź na końcu każdy pierwiastek: Fe, Cl, Na, O, H – po obu stronach tyle samo."
+  },
+  {
+   "id": "t-wt-04",
+   "title": "Kiedy reakcja zachodzi?",
+   "body": "Reakcja soli z zasadą zachodzi, gdy:\n**•** sól i zasada są **rozpuszczalne w wodzie** (reagują w roztworze),\n**•** powstający wodorotlenek jest **trudno rozpuszczalny**, więc wytrąca się osad.\nDobrze rozpuszczalne w wodzie zasady: $NaOH$, $KOH$, $LiOH$. $Ca(OH)2$ jest tylko średnio rozpuszczalny, dlatego w reakcji z solą wapnia może się wytrącić jako osad (jak w przykładzie z lekcji). Trudno rozpuszczalne są m.in. $Fe(OH)3$, $Cu(OH)2$, $Al(OH)3$, $Cr(OH)3$, $Mg(OH)2$.\nJeśli po zamianie partnerów nie powstaje żaden osad ani gaz, reakcja nie zachodzi, np. $NaCl$ z $KOH$.",
+   "examples": [],
+   "tip": "Pytanie kontrolne: czy któryś z produktów to trudno rozpuszczalny wodorotlenek? Jeśli nie, osadu nie będzie."
+  },
+  {
+   "id": "t-wt-05",
+   "title": "Doświadczenie: trzy probówki",
+   "body": "**Cel:** otrzymanie wodorotlenków trudno rozpuszczalnych w wodzie.\n**Schemat:** do trzech probówek z roztworami soli: I – $FeCl3$, II – $AgNO3$, III – $CuSO4$ dodajemy roztwór $NaOH$.\n**Obserwacje:** I – wytrąca się brunatny osad. II – wytrąca się szary osad, który po pewnym czasie zaczyna się rozkładać. III – wytrąca się niebieski galaretowaty osad.\n**Wnioski:** powstały trudno rozpuszczalne wodorotlenki, które wytrąciły się jako osady.",
+   "examples": [
+    "FeCl3 + 3NaOH -> Fe(OH)3↓ + 3NaCl",
+    "AgNO3 + NaOH -> AgOH↓ + NaNO3",
+    "CuSO4 + 2NaOH -> Cu(OH)2↓ + Na2SO4"
+   ],
+   "tip": "Zapis z probówki II jest taki jak w zeszycie z lekcji."
+  },
+  {
+   "id": "t-wt-06",
+   "title": "Nazwy i barwy osadów",
+   "body": "Nazwa wodorotlenku: **wodorotlenek + nazwa metalu w dopełniaczu**. Gdy metal ma kilka wartościowości, dopisujemy ją w nawiasie rzymską cyfrą.",
+   "examples": [
+    "Fe(OH)3 – wodorotlenek żelaza(III), osad brunatny",
+    "Cu(OH)2 – wodorotlenek miedzi(II), osad niebieski, galaretowaty",
+    "Al(OH)3 – wodorotlenek glinu, osad biały",
+    "Mg(OH)2 – wodorotlenek magnezu, osad biały",
+    "Cr(OH)3 – wodorotlenek chromu(III)"
+   ],
+   "tip": "Rzymska cyfra w nawiasie to wartościowość metalu, np. żelazo(III) = $Fe(OH)3$."
+  }
+ ],
+ "flash": [
+  {
+   "id": "f-wt-01",
+   "front": "Jak otrzymać trudno rozpuszczalny wodorotlenek?",
+   "back": "Sól + zasada → wodorotlenek + inna sól"
+  },
+  {
+   "id": "f-wt-02",
+   "front": "Dlaczego nie metal + woda dla Cu, Fe, Al?",
+   "back": "Te metale nie reagują z wodą."
+  },
+  {
+   "id": "f-wt-03",
+   "front": "Co oznacza ↓ w równaniu?",
+   "back": "Wytrąca się osad."
+  },
+  {
+   "id": "f-wt-04",
+   "front": "Typ reakcji soli z zasadą",
+   "back": "wymiana podwójna"
+  },
+  {
+   "id": "f-wt-05",
+   "front": "Barwa osadu $Fe(OH)3$",
+   "back": "brunatna"
+  },
+  {
+   "id": "f-wt-06",
+   "front": "Barwa osadu $Cu(OH)2$",
+   "back": "niebieska, galaretowata"
+  },
+  {
+   "id": "f-wt-07",
+   "front": "$FeCl3 + 3NaOH -> ?$",
+   "back": "$Fe(OH)3↓ + 3NaCl$"
+  },
+  {
+   "id": "f-wt-08",
+   "front": "$CuSO4 + 2NaOH -> ?$",
+   "back": "$Cu(OH)2↓ + Na2SO4$"
+  },
+  {
+   "id": "f-wt-09",
+   "front": "$AlCl3 + 3NaOH -> ?$",
+   "back": "$Al(OH)3↓ + 3NaCl$"
+  },
+  {
+   "id": "f-wt-10",
+   "front": "Warunki zajścia reakcji soli z zasadą",
+   "back": "Sól i zasada rozpuszczalne, a wodorotlenek trudno rozpuszczalny (wytrąca się osad)."
+  },
+  {
+   "id": "f-wt-11",
+   "front": "Nazwa $Fe(OH)3$",
+   "back": "wodorotlenek żelaza(III)"
+  },
+  {
+   "id": "f-wt-12",
+   "front": "Co znaczy (III) w nazwie?",
+   "back": "wartościowość żelaza"
+  }
+ ]
+}

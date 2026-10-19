@@ -1,7 +1,7 @@
 // Service worker: pełna praca offline. Przy zmianie plików podnieś VERSION –
 // stary cache zostanie usunięty przy aktywacji.
 // VERSION i ASSETS są GENEROWANE (npm run build) – wersję zmieniaj w package.json (npm run bump).
-const VERSION = '1.10.2';
+const VERSION = '1.10.3';
 const CACHE = `chemia8-${VERSION}`;
 
 const ASSETS = [
@@ -15,6 +15,7 @@ const ASSETS = [
   'js/blocks.js',
   'js/chem.js',
   'js/chemkeyboard.js',
+  'js/curriculum.js',
   'js/dnd.js',
   'js/dom.js',
   'js/exam.js',
@@ -30,12 +31,29 @@ const ASSETS = [
   'js/store.js',
   'js/valence.js',
   'js/version.js',
+  'data/curriculum.json',
   'data/equations.json',
   'data/experiments.json',
   'data/indicators.json',
-  'data/questions.json',
   'data/solubility.json',
-  'data/theory.json',
+  'data/topics/bilansowanie/questions.json',
+  'data/topics/bilansowanie/theory.json',
+  'data/topics/doswiadczenia/questions.json',
+  'data/topics/doswiadczenia/theory.json',
+  'data/topics/dysocjacja/questions.json',
+  'data/topics/dysocjacja/theory.json',
+  'data/topics/podstawy/questions.json',
+  'data/topics/podstawy/theory.json',
+  'data/topics/rozpuszczalnosc/questions.json',
+  'data/topics/rozpuszczalnosc/theory.json',
+  'data/topics/wlasciwosci/questions.json',
+  'data/topics/wlasciwosci/theory.json',
+  'data/topics/wodorotlenki-rozp/questions.json',
+  'data/topics/wodorotlenki-rozp/theory.json',
+  'data/topics/wodorotlenki-trudne/questions.json',
+  'data/topics/wodorotlenki-trudne/theory.json',
+  'data/topics/wskazniki/questions.json',
+  'data/topics/wskazniki/theory.json',
   'icons/apple-touch-icon.png',
   'icons/icon-192.png',
   'icons/icon-512.png',

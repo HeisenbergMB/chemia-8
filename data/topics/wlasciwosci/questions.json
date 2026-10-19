@@ -1,0 +1,335 @@
+[
+ {
+  "id": "q-wl-001",
+  "type": "choice",
+  "level": 1,
+  "q": "Jaki stan skupienia i barwę ma wodorotlenek sodu w temperaturze pokojowej?",
+  "options": [
+   "biała substancja stała",
+   "bezbarwna ciecz",
+   "żółta substancja stała",
+   "bezbarwny gaz"
+  ],
+  "answer": 0,
+  "explain": "Wodorotlenek sodu to biała substancja stała."
+ },
+ {
+  "id": "q-wl-002",
+  "type": "choice",
+  "level": 1,
+  "q": "Jak wodorotlenek sodu rozpuszcza się w wodzie?",
+  "options": [
+   "dobrze",
+   "słabo",
+   "wcale",
+   "tylko po ogrzaniu"
+  ],
+  "answer": 0,
+  "explain": "$NaOH$ dobrze rozpuszcza się w wodzie."
+ },
+ {
+  "id": "q-wl-003",
+  "type": "choice",
+  "level": 2,
+  "q": "Co dzieje się podczas rozpuszczania $NaOH$ w wodzie?",
+  "options": [
+   "wydziela się ciepło, roztwór się ogrzewa",
+   "roztwór silnie się oziębia",
+   "wydziela się wodór",
+   "wytrąca się osad"
+  ],
+  "answer": 0,
+  "explain": "Rozpuszczanie wodorotlenku sodu jest związane z wydzielaniem energii w postaci ciepła."
+ },
+ {
+  "id": "q-wl-004",
+  "type": "choice",
+  "level": 2,
+  "q": "Co oznacza, że wodorotlenek sodu jest higroskopijny?",
+  "options": [
+   "pochłania wodę z powietrza",
+   "dobrze przewodzi prąd",
+   "ma silny zapach",
+   "rozkłada się w wodzie"
+  ],
+  "answer": 0,
+  "explain": "Substancja higroskopijna pochłania wilgoć z powietrza."
+ },
+ {
+  "id": "q-wl-005",
+  "type": "choice",
+  "level": 1,
+  "q": "Jaką właściwość chemiczną mają wodorotlenek sodu i wodorotlenek wapnia?",
+  "options": [
+   "są żrące",
+   "są kwaśne w smaku",
+   "są gazami",
+   "są bezzapachowymi cieczami"
+  ],
+  "answer": 0,
+  "explain": "Zarówno wodorotlenek sodu, jak i wodorotlenek wapnia są żrące."
+ },
+ {
+  "id": "q-wl-006",
+  "type": "choice",
+  "level": 2,
+  "q": "Dlaczego wodorotlenek sodu przechowujemy w szczelnie zamkniętym pojemniku?",
+  "options": [
+   "bo pochłania wilgoć z powietrza",
+   "bo świeci w ciemności",
+   "bo paruje",
+   "bo jest gazem"
+  ],
+  "answer": 0,
+  "explain": "Wodorotlenek sodu jest higroskopijny, więc zawilgociłby się w otwartym naczyniu."
+ },
+ {
+  "id": "q-wl-007",
+  "type": "choice",
+  "level": 1,
+  "q": "Jak wygląda wodorotlenek wapnia w temperaturze pokojowej?",
+  "options": [
+   "biała substancja stała",
+   "niebieska ciecz",
+   "zielony gaz",
+   "czarny proszek"
+  ],
+  "answer": 0,
+  "explain": "Wodorotlenek wapnia to biała substancja stała."
+ },
+ {
+  "id": "q-wl-008",
+  "type": "choice",
+  "level": 2,
+  "q": "Jak wodorotlenek wapnia rozpuszcza się w wodzie?",
+  "options": [
+   "średnio",
+   "bardzo dobrze",
+   "wcale",
+   "słabo, podobnie jak $Fe(OH)3$"
+  ],
+  "answer": 0,
+  "explain": "$Ca(OH)2$ rozpuszcza się w wodzie tylko średnio."
+ },
+ {
+  "id": "q-wl-009",
+  "type": "choice",
+  "level": 2,
+  "q": "Która z zasad rozpuszcza się w wodzie lepiej?",
+  "options": [
+   "$NaOH$",
+   "$Ca(OH)2$",
+   "obie jednakowo",
+   "żadna się nie rozpuszcza"
+  ],
+  "answer": 0,
+  "explain": "$NaOH$ dobrze rozpuszcza się w wodzie, a $Ca(OH)2$ tylko średnio."
+ },
+ {
+  "id": "q-wl-010",
+  "type": "choice",
+  "level": 2,
+  "q": "Jak należy pracować z wodorotlenkiem sodu w laboratorium?",
+  "options": [
+   "w okularach i rękawicach ochronnych",
+   "tylko w rękawicach, bez okularów",
+   "bez ochrony, jeśli ilość jest mała",
+   "tylko w okularach, bez rękawic"
+  ],
+  "answer": 0,
+  "explain": "Zasady są żrące, więc chronimy oczy i skórę."
+ },
+ {
+  "id": "q-wl-011",
+  "type": "choice",
+  "level": 2,
+  "q": "Które zastosowanie ma wodorotlenek sodu?",
+  "options": [
+   "produkcja mydła",
+   "napełnianie balonów",
+   "produkcja napojów gazowanych",
+   "wypalanie cegieł"
+  ],
+  "answer": 0,
+  "explain": "$NaOH$ służy m.in. do produkcji mydła i środków czyszczących."
+ },
+ {
+  "id": "q-wl-012",
+  "type": "choice",
+  "level": 2,
+  "q": "Które zastosowanie ma wodorotlenek wapnia?",
+  "options": [
+   "składnik zaprawy murarskiej",
+   "składnik napojów",
+   "paliwo",
+   "tworzywo na opakowania"
+  ],
+  "answer": 0,
+  "explain": "$Ca(OH)2$ wchodzi w skład zaprawy murarskiej i służy też do odkwaszania gleby."
+ },
+ {
+  "id": "q-wl-013",
+  "type": "choice",
+  "level": 3,
+  "q": "Dlaczego rozpuszczanie $NaOH$ w wodzie wymaga ostrożności?",
+  "options": [
+   "wydziela się ciepło, a roztwór jest żrący",
+   "roztwór się oziębia, więc grozi odmrożeniem",
+   "wydziela się wodór, który łatwo się zapala",
+   "powstaje osad, który blokuje naczynie"
+  ],
+  "answer": 0,
+  "explain": "Wodorotlenek sodu wydziela ciepło przy rozpuszczaniu, a jego roztwór jest żrący."
+ },
+ {
+  "id": "q-wl-014",
+  "type": "choice",
+  "level": 2,
+  "q": "Jaki odczyn mają roztwory $NaOH$ i $Ca(OH)2$?",
+  "options": [
+   "zasadowy",
+   "kwasowy",
+   "obojętny",
+   "zależy od temperatury"
+  ],
+  "answer": 0,
+  "explain": "Obie substancje są zasadami, a ich roztwory mają odczyn zasadowy."
+ },
+ {
+  "id": "q-wl-015",
+  "type": "choice",
+  "level": 2,
+  "q": "Jak potocznie nazywamy mętną zawiesinę $Ca(OH)2$ w wodzie?",
+  "options": [
+   "wapno gaszone",
+   "wapno palone",
+   "woda wapienna",
+   "wapień"
+  ],
+  "answer": 0,
+  "explain": "Mętna zawiesina wodorotlenku wapnia to wapno gaszone."
+ },
+ {
+  "id": "q-wl-016",
+  "type": "choice",
+  "level": 3,
+  "q": "Czym różni się rozpuszczalność $NaOH$ i $Ca(OH)2$?",
+  "options": [
+   "$NaOH$ rozpuszcza się dobrze, $Ca(OH)2$ średnio",
+   "$NaOH$ średnio, $Ca(OH)2$ dobrze",
+   "oba rozpuszczają się jednakowo",
+   "$NaOH$ nie rozpuszcza się w wodzie"
+  ],
+  "answer": 0,
+  "explain": "Dobrze rozpuszcza się wodorotlenek sodu, a wodorotlenek wapnia tylko średnio."
+ },
+ {
+  "id": "q-wl-017",
+  "type": "choice",
+  "level": 2,
+  "q": "Które zdanie o wodorotlenku sodu jest prawdziwe?",
+  "options": [
+   "to biała substancja stała, dobrze rozpuszczalna w wodzie",
+   "to bezbarwny gaz",
+   "to substancja nierozpuszczalna w wodzie",
+   "to czerwona ciecz"
+  ],
+  "answer": 0,
+  "explain": "Wodorotlenek sodu jest białą substancją stałą dobrze rozpuszczalną w wodzie."
+ },
+ {
+  "id": "q-wl-018",
+  "type": "choice",
+  "level": 3,
+  "q": "Która cecha jest właściwością chemiczną, a nie fizyczną?",
+  "options": [
+   "jest żrący",
+   "jest biały",
+   "jest ciałem stałym",
+   "dobrze rozpuszcza się w wodzie"
+  ],
+  "answer": 0,
+  "explain": "Barwa, stan skupienia i rozpuszczalność to cechy fizyczne. Żrące działanie to cecha chemiczna."
+ },
+ {
+  "id": "q-wl-019",
+  "type": "formula",
+  "level": 1,
+  "q": "Zapisz wzór wodorotlenku sodu.",
+  "answer": "NaOH",
+  "hint": "Metal, potem grupa OH.",
+  "explain": "Sód jest I-wartościowy, więc ma jedną grupę $OH$."
+ },
+ {
+  "id": "q-wl-020",
+  "type": "formula",
+  "level": 2,
+  "q": "Zapisz wzór wodorotlenku wapnia.",
+  "answer": "Ca(OH)2",
+  "hint": "Grupa OH w nawiasie, potem indeks.",
+  "explain": "Wapń jest II-wartościowy, więc potrzebne są dwie grupy $OH$: $Ca(OH)2$."
+ },
+ {
+  "id": "q-wl-021",
+  "type": "match",
+  "level": 2,
+  "q": "Dopasuj zastosowania do substancji.",
+  "pairs": [
+   [
+    "produkcja mydła",
+    "$NaOH$"
+   ],
+   [
+    "zaprawa murarska",
+    "wapno gaszone ($Ca(OH)2$)"
+   ],
+   [
+    "otrzymywanie wapna gaszonego",
+    "wapno palone ($CaO$)"
+   ]
+  ],
+  "extra": [
+   "$Fe(OH)3$"
+  ],
+  "explain": "Wodorotlenek sodu służy do produkcji mydła, wapno gaszone – do zaprawy, a wapno palone po dodaniu wody daje wapno gaszone."
+ },
+ {
+  "id": "q-wl-022",
+  "type": "match",
+  "level": 2,
+  "q": "Dopasuj opis właściwości do substancji.",
+  "pairs": [
+   [
+    "biała substancja stała, dobrze rozpuszczalna w wodzie, higroskopijna",
+    "$NaOH$"
+   ],
+   [
+    "biała substancja stała, średnio rozpuszczalna w wodzie",
+    "$Ca(OH)2$"
+   ]
+  ],
+  "extra": [
+   "$Al(OH)3$ (trudno rozpuszczalny)"
+  ],
+  "explain": "Obie substancje są białe i żrące, ale różnią się rozpuszczalnością."
+ },
+ {
+  "id": "q-wl-023",
+  "type": "blocks",
+  "level": 2,
+  "q": "Ułóż równanie otrzymywania $NaOH$ z tlenku sodu i wody.",
+  "tokens": [
+   "Na2O",
+   "+",
+   "H2O",
+   "->",
+   "2NaOH"
+  ],
+  "extra": [
+   "NaOH",
+   "H2",
+   "2Na"
+  ],
+  "explain": "Tlenek sodu z wodą daje wodorotlenek sodu: $Na2O + H2O -> 2NaOH$."
+ }
+]

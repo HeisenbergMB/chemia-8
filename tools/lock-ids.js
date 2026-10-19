@@ -8,16 +8,18 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { loadData } from './load-data.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 export const LOCK_PATH = join(root, 'data', 'ids.lock.json');
 
 /** Id objęte blokadą: { 'q-wr-001': 'wodorotlenki-rozp', ... } z pytań i fiszek. */
 export function currentIds() {
-  const read = (f) => JSON.parse(readFileSync(join(root, 'data', f), 'utf8'));
+  const { data, problems } = loadData();
+  if (!data) throw new Error(problems.join('; '));
   const out = {};
-  for (const q of read('questions.json')) out[q.id] = q.topic;
-  for (const f of read('theory.json').flash) out[f.id] = f.topic;
+  for (const q of data.questions) out[q.id] = q.topic;
+  for (const f of data.flash) out[f.id] = f.topic;
   return out;
 }
 

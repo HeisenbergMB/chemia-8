@@ -1,0 +1,578 @@
+[
+ {
+  "id": "q-wr-001",
+  "type": "choice",
+  "level": 1,
+  "q": "Co powstaje, gdy aktywny metal (np. sód) reaguje z wodą?",
+  "options": [
+   "wodorotlenek i wodór",
+   "tlenek i wodór",
+   "kwas i tlen",
+   "sól i woda"
+  ],
+  "answer": 0,
+  "explain": "Metal aktywny wypiera wodór z wody. Powstaje wodorotlenek metalu, a wodór ucieka jako gaz."
+ },
+ {
+  "id": "q-wr-002",
+  "type": "choice",
+  "level": 1,
+  "q": "Który wzór jest wzorem wodorotlenku sodu?",
+  "options": [
+   "$NaOH$",
+   "$Na2OH$",
+   "$NaO$",
+   "$Na(OH)2$"
+  ],
+  "answer": 0,
+  "explain": "Sód jest I-wartościowy, więc łączy się z jedną grupą $OH$: $NaOH$."
+ },
+ {
+  "id": "q-wr-003",
+  "type": "choice",
+  "level": 1,
+  "q": "Który wzór jest wzorem wodorotlenku wapnia?",
+  "options": [
+   "$Ca(OH)2$",
+   "$CaOH$",
+   "$Ca2OH$",
+   "$CaO2H$"
+  ],
+  "answer": 0,
+  "explain": "Wapń jest II-wartościowy, więc potrzebuje dwóch grup $OH$. Grupę zapisujemy w nawiasie: $Ca(OH)2$."
+ },
+ {
+  "id": "q-wr-004",
+  "type": "choice",
+  "level": 1,
+  "q": "Jaki gaz wydziela się w reakcji sodu z wodą?",
+  "options": [
+   "wodór",
+   "tlen",
+   "dwutlenek węgla",
+   "chlor"
+  ],
+  "answer": 0,
+  "explain": "Sód odbiera wodór cząsteczkom wody, więc wydziela się $H2$."
+ },
+ {
+  "id": "q-wr-005",
+  "type": "choice",
+  "level": 1,
+  "q": "Jaką barwę przyjmuje fenoloftaleina w roztworze wodorotlenku sodu?",
+  "options": [
+   "malinową",
+   "bezbarwną",
+   "żółtą",
+   "niebieską"
+  ],
+  "answer": 0,
+  "explain": "W środowisku zasadowym fenoloftaleina jest malinowa. W kwasie i w wodzie jest bezbarwna."
+ },
+ {
+  "id": "q-wr-006",
+  "type": "choice",
+  "level": 2,
+  "q": "Które równanie reakcji sodu z wodą jest poprawnie zbilansowane?",
+  "options": [
+   "$2Na + 2H2O -> 2NaOH + H2↑$",
+   "$Na + H2O -> NaOH + H2$",
+   "$2Na + H2O -> 2NaOH + H2$",
+   "$Na + 2H2O -> 2NaOH + H2↑$"
+  ],
+  "answer": 0,
+  "explain": "Po obu stronach musi być tyle samo atomów każdego pierwiastka: 2 Na, 4 H i 2 O."
+ },
+ {
+  "id": "q-wr-007",
+  "type": "choice",
+  "level": 2,
+  "q": "Który z metali NIE reaguje z wodą z utworzeniem wodorotlenku?",
+  "options": [
+   "miedź ($Cu$)",
+   "potas ($K$)",
+   "bar ($Ba$)",
+   "lit ($Li$)"
+  ],
+  "answer": 0,
+  "explain": "Z wodą reagują metale z 1. i 2. grupy. Miedź jest metalem mało aktywnym i z wodą nie reaguje."
+ },
+ {
+  "id": "q-wr-008",
+  "type": "choice",
+  "level": 2,
+  "q": "Uzupełnij: $Na2O + H2O ->$ ?",
+  "options": [
+   "$2NaOH$",
+   "$NaOH + H2$",
+   "$Na2OH$",
+   "$2Na + O2$"
+  ],
+  "answer": 0,
+  "explain": "Tlenek metalu + woda daje tylko wodorotlenek: $Na2O + H2O -> 2NaOH$. Atomów jest po obu stronach tyle samo: 2 Na, 2 H, 2 O."
+ },
+ {
+  "id": "q-wr-009",
+  "type": "choice",
+  "level": 2,
+  "q": "Jaką wartościowość ma metal w $Ba(OH)2$?",
+  "options": [
+   "I",
+   "II",
+   "III",
+   "IV"
+  ],
+  "answer": 1,
+  "explain": "W $Ba(OH)2$ są dwie grupy $OH$, każda ma wartościowość I, więc bar jest II-wartościowy."
+ },
+ {
+  "id": "q-wr-010",
+  "type": "choice",
+  "level": 2,
+  "q": "Ile cząsteczek wody trzeba do reakcji: $Ca + ?H2O -> Ca(OH)2 + H2↑$",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 1,
+  "explain": "Po prawej jest 4 atomy H (2 w $Ca(OH)2$ i 2 w $H2$) i 2 atomy O (w $Ca(OH)2$), więc po lewej potrzebne są 2 cząsteczki $H2O$."
+ },
+ {
+  "id": "q-wr-011",
+  "type": "choice",
+  "level": 2,
+  "q": "Który tlenek reaguje z wodą, tworząc wodorotlenek?",
+  "options": [
+   "$CaO$",
+   "$CuO$",
+   "$Fe2O3$",
+   "$Al2O3$"
+  ],
+  "answer": 0,
+  "explain": "Z wodą reaguje tlenek aktywnego metalu z 2. grupy: $CaO + H2O -> Ca(OH)2$. Pozostałe tlenki z wodą nie reagują."
+ },
+ {
+  "id": "q-wr-012",
+  "type": "choice",
+  "level": 1,
+  "q": "Co powstaje w reakcji $K2O + H2O$?",
+  "options": [
+   "$2KOH$",
+   "$K(OH)2$",
+   "$KOH + H2$",
+   "$K2 + O2$"
+  ],
+  "answer": 0,
+  "explain": "Tlenek potasu z wodą daje wodorotlenek potasu: $K2O + H2O -> 2KOH$. Potas jest I-wartościowy, więc wzór to $KOH$."
+ },
+ {
+  "id": "q-wr-013",
+  "type": "choice",
+  "level": 2,
+  "q": "Co w doświadczeniu z sodem świadczy o powstaniu zasady?",
+  "options": [
+   "malinowe zabarwienie roztworu z fenoloftaleiną",
+   "wydzielanie się gazu",
+   "zmętnienie roztworu",
+   "bezbarwny roztwór"
+  ],
+  "answer": 0,
+  "explain": "Gaz (wodór) świadczy o reakcji z wodą. Zasadę wykrywa fenoloftaleina: zabarwia się na malinowo."
+ },
+ {
+  "id": "q-wr-014",
+  "type": "choice",
+  "level": 2,
+  "q": "Jak sprawdzić, że wydzielony gaz to wodór?",
+  "options": [
+   "zbliżyć płomień – gaz spala się z charakterystycznym dźwiękiem",
+   "włożyć tlące się łuczywko – zapala się jasnym płomieniem",
+   "przepuścić gaz przez wodę wapienną – mętnieje",
+   "zbliżyć płonące łuczywko – gaśnie"
+  ],
+  "answer": 0,
+  "explain": "Wodór pali się z charakterystycznym dźwiękiem. Zapalenie się tlącego łuczywka to próba na tlen, mętnienie wody wapiennej – na dwutlenek węgla."
+ },
+ {
+  "id": "q-wr-015",
+  "type": "choice",
+  "level": 3,
+  "q": "Wskaż produkty reakcji $Sr + 2H2O ->$ ?",
+  "options": [
+   "$Sr(OH)2 + H2↑$",
+   "$SrOH + H2↑$",
+   "$Sr(OH)2 + O2↑$",
+   "$SrO + H2↑$"
+  ],
+  "answer": 0,
+  "explain": "Stront jest II-wartościowy, więc powstaje $Sr(OH)2$, a drugim produktem jest wodór."
+ },
+ {
+  "id": "q-wr-016",
+  "type": "choice",
+  "level": 2,
+  "q": "Jaki współczynnik brakuje? $2Li + ?H2O -> 2LiOH + H2↑$",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 1,
+  "explain": "Po prawej jest 4 atomy H ($2LiOH$ daje 2, $H2$ daje 2) i 2 atomy O, więc po lewej potrzebne są 2 cząsteczki wody."
+ },
+ {
+  "id": "q-wr-017",
+  "type": "choice",
+  "level": 2,
+  "q": "Które równanie przedstawia reakcję baru z wodą?",
+  "options": [
+   "$Ba + 2H2O -> Ba(OH)2 + H2↑$",
+   "$Ba + H2O -> Ba(OH)2 + H2↑$",
+   "$Ba + 2H2O -> BaOH + H2↑$",
+   "$2Ba + 2H2O -> 2Ba(OH)2 + H2↑$"
+  ],
+  "answer": 0,
+  "explain": "Bar jest II-wartościowy, więc $Ba(OH)2$, a atomów H i O musi być tyle samo po obu stronach: 4 H i 2 O."
+ },
+ {
+  "id": "q-wr-018",
+  "type": "choice",
+  "level": 1,
+  "q": "Metale z których grup układu okresowego reagują z wodą w tym dziale?",
+  "options": [
+   "z 1. i 2.",
+   "z 13. i 14.",
+   "z 17. i 18.",
+   "z 16. i 17."
+  ],
+  "answer": 0,
+  "explain": "Chodzi o litowce (1. grupa: Li, Na, K) i berylowce (2. grupa: Ca, Sr, Ba)."
+ },
+ {
+  "id": "q-wr-019",
+  "type": "choice",
+  "level": 3,
+  "q": "Dlaczego sód przechowuje się pod warstwą nafty?",
+  "options": [
+   "bo reaguje z wodą i składnikami powietrza",
+   "bo jest lżejszy od wody",
+   "bo świeci w ciemności",
+   "bo wydziela zapach"
+  ],
+  "answer": 0,
+  "explain": "Sód jest bardzo aktywny. Reaguje z wilgocią i tlenem z powietrza, więc trzymamy go pod naftą, która go od nich izoluje."
+ },
+ {
+  "id": "q-wr-020",
+  "type": "choice",
+  "level": 2,
+  "q": "Jaki to typ reakcji? $CaO + H2O -> Ca(OH)2$",
+  "options": [
+   "synteza (łączenie)",
+   "analiza (rozkład)",
+   "wymiana pojedyncza",
+   "wymiana podwójna"
+  ],
+  "answer": 0,
+  "explain": "Z dwóch substancji powstaje jedna, więc to reakcja syntezy."
+ },
+ {
+  "id": "q-wr-021",
+  "type": "choice",
+  "level": 3,
+  "q": "Jaki to typ reakcji? $2Na + 2H2O -> 2NaOH + H2↑$",
+  "options": [
+   "wymiana pojedyncza",
+   "synteza",
+   "analiza",
+   "wymiana podwójna"
+  ],
+  "answer": 0,
+  "explain": "Sód zajmuje miejsce wodoru w cząsteczce wody, a wodór zostaje wyparty. Prosta substancja i związek dają inną prostą substancję i inny związek – to wymiana pojedyncza."
+ },
+ {
+  "id": "q-wr-022",
+  "type": "choice",
+  "level": 1,
+  "q": "Co oznacza strzałka w górę (↑) po wzorze produktu?",
+  "options": [
+   "wydziela się gaz",
+   "wytrąca się osad",
+   "reakcja jest odwracalna",
+   "wydziela się ciepło"
+  ],
+  "answer": 0,
+  "explain": "Strzałka ↑ oznacza gaz uciekający z mieszaniny. Strzałka ↓ oznacza osad."
+ },
+ {
+  "id": "q-wr-023",
+  "type": "choice",
+  "level": 1,
+  "q": "Jaki odczyn ma roztwór po reakcji sodu z wodą?",
+  "options": [
+   "zasadowy",
+   "kwasowy",
+   "obojętny",
+   "nie da się określić"
+  ],
+  "answer": 0,
+  "explain": "Powstaje wodorotlenek sodu, który jest zasadą, więc roztwór ma odczyn zasadowy."
+ },
+ {
+  "id": "q-wr-024",
+  "type": "choice",
+  "level": 2,
+  "q": "Ile atomów wodoru jest po lewej stronie równania $2K + 2H2O -> 2KOH + H2↑$?",
+  "options": [
+   "2",
+   "4",
+   "6",
+   "8"
+  ],
+  "answer": 1,
+  "explain": "Wodór jest tylko w wodzie: 2 cząsteczki $H2O$ po 2 atomy to 4 atomy. Po prawej: 2 w $2KOH$ i 2 w $H2$, razem też 4."
+ },
+ {
+  "id": "q-wr-025",
+  "type": "choice",
+  "level": 3,
+  "q": "Który z metali reaguje z wodą najgwałtowniej?",
+  "options": [
+   "potas ($K$)",
+   "sód ($Na$)",
+   "lit ($Li$)",
+   "wszystkie jednakowo"
+  ],
+  "answer": 0,
+  "explain": "W 1. grupie aktywność rośnie ku dołowi układu okresowego. Potas stoi najniżej z trzech, więc reaguje najbardziej gwałtownie."
+ },
+ {
+  "id": "q-wr-026",
+  "type": "choice",
+  "level": 1,
+  "q": "Jak nazywa się związek o wzorze $LiOH$?",
+  "options": [
+   "wodorotlenek litu",
+   "tlenek litu",
+   "wodorek litu",
+   "kwas litowy"
+  ],
+  "answer": 0,
+  "explain": "Metal + grupa $OH$ to wodorotlenek. Nazwa: wodorotlenek + nazwa metalu w dopełniaczu, czyli wodorotlenek litu."
+ },
+ {
+  "id": "q-wr-027",
+  "type": "choice",
+  "level": 3,
+  "q": "Co jest nie tak z zapisem $!Ca + H2O -> Ca(OH)2 + H2$?",
+  "options": [
+   "brakuje współczynnika 2 przy $H2O$",
+   "brakuje współczynnika 2 przy $Ca$",
+   "wodór powinien być po lewej stronie",
+   "wzór $Ca(OH)2$ jest błędny"
+  ],
+  "answer": 0,
+  "explain": "Po lewej są 2 atomy H i 1 atom O, a po prawej 4 atomy H i 2 atomy O. Dopiero $Ca + 2H2O -> Ca(OH)2 + H2↑$ się zgadza."
+ },
+ {
+  "id": "q-wr-028",
+  "type": "choice",
+  "level": 3,
+  "q": "Ile cząsteczek $NaOH$ powstaje z jednej cząsteczki $Na2O$ w reakcji z wodą?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 1,
+  "explain": "$Na2O + H2O -> 2NaOH$: w $Na2O$ są dwa atomy sodu, a każda cząsteczka $NaOH$ ma jeden."
+ },
+ {
+  "id": "q-wr-029",
+  "type": "choice",
+  "level": 1,
+  "q": "Jak nazywamy wodorotlenek rozpuszczalny w wodzie?",
+  "options": [
+   "zasadą",
+   "kwasem",
+   "solą",
+   "tlenkiem"
+  ],
+  "answer": 0,
+  "explain": "Wodorotlenki, które rozpuszczają się w wodzie, nazywamy zasadami."
+ },
+ {
+  "id": "q-wr-030",
+  "type": "choice",
+  "level": 2,
+  "q": "Który wzór ma wodorotlenek potasu?",
+  "options": [
+   "$KOH$",
+   "$K(OH)2$",
+   "$K2OH$",
+   "$KO2H$"
+  ],
+  "answer": 0,
+  "explain": "Potas jest I-wartościowy, więc jedna grupa $OH$: $KOH$."
+ },
+ {
+  "id": "q-wr-031",
+  "type": "equation",
+  "level": 2,
+  "q": "Zapisz równanie reakcji potasu z wodą.",
+  "answer": "2K + 2H2O -> 2KOH + H2↑",
+  "hint": "Produkty: wodorotlenek i wodór. Pilnuj współczynników 2.",
+  "explain": "Potas wypiera wodór z wody, powstaje wodorotlenek potasu."
+ },
+ {
+  "id": "q-wr-032",
+  "type": "equation",
+  "level": 2,
+  "q": "Zapisz równanie reakcji litu z wodą.",
+  "answer": "2Li + 2H2O -> 2LiOH + H2↑",
+  "hint": "Lit jest w 1. grupie, więc wodorotlenek ma jedną grupę OH.",
+  "explain": "Lit jest I-wartościowy, więc powstaje $LiOH$ i wodór."
+ },
+ {
+  "id": "q-wr-033",
+  "type": "equation",
+  "level": 3,
+  "q": "Zapisz równanie reakcji baru z wodą.",
+  "answer": "Ba + 2H2O -> Ba(OH)2 + H2↑",
+  "hint": "Bar jest w 2. grupie: dwie grupy OH, dwie cząsteczki wody.",
+  "explain": "Bar jest II-wartościowy, więc potrzebne są 2 cząsteczki wody."
+ },
+ {
+  "id": "q-wr-034",
+  "type": "equation",
+  "level": 2,
+  "q": "Zapisz równanie reakcji tlenku potasu z wodą.",
+  "answer": "K2O + H2O -> 2KOH",
+  "hint": "Jest tylko jeden produkt, wodorotlenek potasu.",
+  "explain": "Tlenek metalu z wodą daje tylko wodorotlenek, bez wodoru."
+ },
+ {
+  "id": "q-wr-035",
+  "type": "blocks",
+  "level": 2,
+  "q": "Ułóż równanie reakcji strontu z wodą.",
+  "tokens": [
+   "Sr",
+   "+",
+   "2H2O",
+   "->",
+   "Sr(OH)2",
+   "+",
+   "H2↑"
+  ],
+  "extra": [
+   "SrOH",
+   "H2O",
+   "O2"
+  ],
+  "explain": "Stront jest II-wartościowy: $Sr + 2H2O -> Sr(OH)2 + H2↑$."
+ },
+ {
+  "id": "q-wr-036",
+  "type": "blocks",
+  "level": 2,
+  "q": "Ułóż równanie reakcji tlenku wapnia z wodą.",
+  "tokens": [
+   "CaO",
+   "+",
+   "H2O",
+   "->",
+   "Ca(OH)2"
+  ],
+  "extra": [
+   "Ca",
+   "H2↑",
+   "2OH"
+  ],
+  "explain": "Tlenek wapnia z wodą daje wodorotlenek wapnia, bez wydzielania gazu."
+ },
+ {
+  "id": "q-wr-037",
+  "type": "formula",
+  "level": 1,
+  "q": "Zapisz wzór wodorotlenku potasu.",
+  "answer": "KOH",
+  "explain": "Potas jest I-wartościowy, więc ma jedną grupę $OH$."
+ },
+ {
+  "id": "q-wr-038",
+  "type": "balance",
+  "level": 2,
+  "q": "Zbilansuj równanie reakcji: $!Na + H2O -> NaOH + H2↑$",
+  "eq": "2Na + 2H2O -> 2NaOH + H2↑",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 2 Na, 4 H, 2 O. Współczynniki: 2, 2, 2, 1."
+ },
+ {
+  "id": "q-wr-039",
+  "type": "balance",
+  "level": 2,
+  "q": "Zbilansuj równanie reakcji: $!K + H2O -> KOH + H2↑$",
+  "eq": "2K + 2H2O -> 2KOH + H2↑",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 2 K, 4 H, 2 O. Współczynniki: 2, 2, 2, 1."
+ },
+ {
+  "id": "q-wr-040",
+  "type": "balance",
+  "level": 2,
+  "q": "Zbilansuj równanie reakcji: $!Li + H2O -> LiOH + H2↑$",
+  "eq": "2Li + 2H2O -> 2LiOH + H2↑",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 2 Li, 4 H, 2 O. Współczynniki: 2, 2, 2, 1."
+ },
+ {
+  "id": "q-wr-041",
+  "type": "balance",
+  "level": 1,
+  "q": "Zbilansuj równanie reakcji: $!Ca + H2O -> Ca(OH)2 + H2↑$",
+  "eq": "Ca + 2H2O -> Ca(OH)2 + H2↑",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 1 Ca, 4 H, 2 O. Współczynniki: 1, 2, 1, 1."
+ },
+ {
+  "id": "q-wr-042",
+  "type": "balance",
+  "level": 1,
+  "q": "Zbilansuj równanie reakcji: $!Sr + H2O -> Sr(OH)2 + H2↑$",
+  "eq": "Sr + 2H2O -> Sr(OH)2 + H2↑",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 1 Sr, 4 H, 2 O. Współczynniki: 1, 2, 1, 1."
+ },
+ {
+  "id": "q-wr-043",
+  "type": "balance",
+  "level": 1,
+  "q": "Zbilansuj równanie reakcji: $!Ba + H2O -> Ba(OH)2 + H2↑$",
+  "eq": "Ba + 2H2O -> Ba(OH)2 + H2↑",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 1 Ba, 4 H, 2 O. Współczynniki: 1, 2, 1, 1."
+ },
+ {
+  "id": "q-wr-044",
+  "type": "balance",
+  "level": 1,
+  "q": "Zbilansuj równanie reakcji: $!Na2O + H2O -> NaOH$",
+  "eq": "Na2O + H2O -> 2NaOH",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 2 Na, 2 H, 2 O. Współczynniki: 1, 1, 2."
+ },
+ {
+  "id": "q-wr-045",
+  "type": "balance",
+  "level": 1,
+  "q": "Zbilansuj równanie reakcji: $!K2O + H2O -> KOH$",
+  "eq": "K2O + H2O -> 2KOH",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 2 K, 2 H, 2 O. Współczynniki: 1, 1, 2."
+ },
+ {
+  "id": "q-wr-046",
+  "type": "balance",
+  "level": 1,
+  "q": "Zbilansuj równanie reakcji: $!Li2O + H2O -> LiOH$",
+  "eq": "Li2O + H2O -> 2LiOH",
+  "explain": "Po zbilansowaniu po obu stronach jest tyle samo atomów: 2 Li, 2 H, 2 O. Współczynniki: 1, 1, 2."
+ }
+]

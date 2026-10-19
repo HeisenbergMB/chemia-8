@@ -13,9 +13,10 @@ import { buildExam, EXAM_SIZE } from './exam.js';
 import { renderSolubility, renderReact } from './solubility.js';
 import { renderValence } from './valence.js';
 import { APP_VERSION } from './version.js';
+import { CURRICULUM_PATH, topicPackPath, packTopics, assemble, questionsInScope } from './curriculum.js';
 
 
-const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [], experiments: [], indicators: null, solubility: null };
+const DATA = { modules: [], topics: [], cards: [], flash: [], questions: [], experiments: [], indicators: null, solubility: null };
 const main = document.getElementById('main');
 const side = document.getElementById('side');
 
@@ -31,22 +32,22 @@ async function init() {
   document.getElementById('gear').innerHTML = icons.gear;
   applySettings();
   try {
-    const [theory, questions, equations, experiments, indicators, solubility] = await Promise.all([
-      loadJson('data/theory.json'),
-      loadJson('data/questions.json'),
-      loadJson('data/equations.json'),
+    const curriculum = await loadJson(CURRICULUM_PATH);
+    // Wszystkie paczki działów ładujemy naraz (są małe i i tak leżą w cache offline).
+    // Gdyby danych przybyło, wystarczy zamienić to na ładowanie per moduł – reszta aplikacji czyta z DATA.
+    const [packList, experiments, indicators, solubility] = await Promise.all([
+      Promise.all(packTopics(curriculum).map(async (t) => {
+        const [theory, questions] = await Promise.all([loadJson(topicPackPath(t.id, 'theory')), loadJson(topicPackPath(t.id, 'questions'))]);
+        return [t.id, { theory, questions }];
+      })),
       loadJson('data/experiments.json'),
       loadJson('data/indicators.json'),
       loadJson('data/solubility.json'),
     ]);
+    Object.assign(DATA, assemble(curriculum, Object.fromEntries(packList)));
     DATA.indicators = indicators;
     DATA.solubility = solubility;
     DATA.experiments = experiments.experiments;
-    DATA.topics = theory.topics;
-    DATA.cards = theory.cards;
-    DATA.flash = theory.flash;
-    DATA.questions = questions;
-    DATA.equations = equations;
   } catch (e) {
     main.replaceChildren(h('div', { class: 'card' }, h('h2', null, 'Nie udało się wczytać danych'), h('p', null, 'Sprawdź połączenie i odśwież stronę. Szczegóły: ' + e.message)));
     return;
@@ -91,6 +92,9 @@ function updateCountdown() {
 // ---------- router ----------
 const routes = [
   [/^#\/?$/, home],
+  [/^#\/module\/([\w-]+)$/, moduleScreen],
+  [/^#\/module\/([\w-]+)\/exam$/, examIntro],
+  [/^#\/module\/([\w-]+)\/exam\/run$/, examRun],
   [/^#\/topic\/([\w-]+)$/, topicScreen],
   [/^#\/theory\/([\w-]+)$/, theoryScreen],
   [/^#\/flash\/([\w-]+)$/, flashScreen],
@@ -123,23 +127,30 @@ function route() {
   location.hash = '#/';
 }
 
+const topicNum = (t) => String(DATA.topics.indexOf(t) + 1).padStart(2, '0');
+
 function renderSide(hash) {
+  const current = (t) => new RegExp(`^#/(topic|theory|flash|quiz)/${t.id}(/|$)`).test(hash);
+  const multi = DATA.modules.length > 1;
   side.replaceChildren(
-    h('h2', null, 'Działy'),
-    ...DATA.topics.map((t) =>
-      h(
-        'a',
-        {
-          href: t.status === 'active' ? `#/topic/${t.id}` : '#/',
-          class: `c${(DATA.topics.indexOf(t) % 5) + 1}${t.status === 'active' ? '' : ' soon'}`,
-          'aria-current': hash.includes(`/${t.id}`) ? 'page' : null,
-          'aria-disabled': t.status === 'active' ? null : 'true',
-        },
-        h('span', { class: 'num', 'aria-hidden': 'true' }, String(DATA.topics.indexOf(t) + 1).padStart(2, '0')),
-        h('span', null, t.title),
-        t.status === 'active' ? null : h('span', { class: 'visually-hidden' }, ' (wkrótce)')
-      )
-    ),
+    ...DATA.modules.flatMap((m) => [
+      h('h2', { style: multi ? 'margin-top:1rem' : null }, multi ? h('a', { href: `#/module/${m.id}`, style: 'color:inherit' }, m.title) : 'Działy'),
+      ...m.topics.map((raw) => {
+        const t = DATA.topics.find((x) => x.id === raw.id);
+        return h(
+          'a',
+          {
+            href: t.status === 'active' ? `#/topic/${t.id}` : '#/',
+            class: `c${(DATA.topics.indexOf(t) % 5) + 1}${t.status === 'active' ? '' : ' soon'}`,
+            'aria-current': current(t) ? 'page' : null,
+            'aria-disabled': t.status === 'active' ? null : 'true',
+          },
+          h('span', { class: 'num', 'aria-hidden': 'true' }, topicNum(t)),
+          h('span', null, t.title),
+          t.status === 'active' ? null : h('span', { class: 'visually-hidden' }, ' (wkrótce)')
+        );
+      }),
+    ]),
     h('h2', { style: 'margin-top:1rem' }, 'Inne'),
     h('a', { href: '#/exam', 'aria-current': hash.startsWith('#/exam') ? 'page' : null }, h('span', { class: 'num', html: icons.check }), h('span', null, 'Sprawdzian próbny')),
     h('a', { href: '#/settings', 'aria-current': hash === '#/settings' ? 'page' : null }, h('span', { class: 'num', html: icons.gear }), h('span', null, 'Ustawienia'))
@@ -149,6 +160,7 @@ function renderSide(hash) {
 // ---------- pomocnicze ----------
 const topicById = (id) => DATA.topics.find((t) => t.id === id);
 const questionsOf = (topicId) => DATA.questions.filter((q) => q.topic === topicId);
+const moduleById = (id) => DATA.modules.find((m) => m.id === id);
 
 function progressBar(done, total, label) {
   const pct = total ? Math.round((done / total) * 100) : 0;
@@ -193,25 +205,52 @@ function home() {
     h(
       'section',
       { class: 'only-narrow' },
-      h('div', { class: 'section-title' }, 'Działy'),
-      h(
-        'div',
-        { class: 'topic-grid' },
-        DATA.topics.map((t, i) => {
-          const active = t.status === 'active';
-          const st = topicStats(DATA.questions, t.id);
-          return h(
-            active ? 'a' : 'div',
-            { class: `topic c${(i % 5) + 1}${active ? '' : ' soon'}`, href: active ? `#/topic/${t.id}` : null },
-            h('span', { class: 'num', 'aria-hidden': 'true' }, String(i + 1).padStart(2, '0')),
-            h('h3', null, t.title),
-            h('p', null, t.desc),
-            active ? progressBar(st.mastered, st.total, `Postęp: ${t.title}`) : h('span', { class: 'chip' }, 'wkrótce')
-          );
-        })
+      DATA.modules.map((m) =>
+        h(
+          'div',
+          null,
+          h('div', { class: 'section-title' }, DATA.modules.length > 1 ? h('a', { href: `#/module/${m.id}`, style: 'color:inherit' }, m.title) : 'Działy'),
+          topicGrid(DATA.topics.filter((t) => t.module === m.id))
+        )
       )
     ),
     h('p', { class: 'muted', style: 'margin-top:1rem;font-size:.9rem' }, 'Pytania, na które odpowiesz źle, wracają po kilku minutach, a dobrze opanowane – coraz rzadziej.')
+  );
+}
+
+function topicGrid(topics) {
+  return h(
+    'div',
+    { class: 'topic-grid' },
+    topics.map((t) => {
+      const active = t.status === 'active';
+      const st = topicStats(DATA.questions, t.id);
+      return h(
+        active ? 'a' : 'div',
+        { class: `topic c${(DATA.topics.indexOf(t) % 5) + 1}${active ? '' : ' soon'}`, href: active ? `#/topic/${t.id}` : null },
+        h('span', { class: 'num', 'aria-hidden': 'true' }, topicNum(t)),
+        h('h3', null, t.title),
+        h('p', null, t.desc),
+        active ? progressBar(st.mastered, st.total, `Postęp: ${t.title}`) : h('span', { class: 'chip' }, 'wkrótce')
+      );
+    })
+  );
+}
+
+// ---------- moduł ----------
+function moduleScreen(id) {
+  const m = moduleById(id);
+  if (!m) return notFound('Nie znaleziono modułu.');
+  const qs = questionsInScope(DATA, id);
+  const st = topicStats(qs);
+  return h(
+    'div',
+    null,
+    h('a', { class: 'back', href: '#/' }, '← Ekran główny'),
+    h('h1', null, m.title),
+    h('p', { class: 'muted' }, m.desc),
+    h('div', { class: 'card' }, progressBar(st.mastered, st.total, `Postęp: ${m.title}`), h('div', { class: 'btn-row', style: 'margin-top:1rem' }, h('a', { class: 'btn', href: `#/module/${id}/exam`, html: withIcon('check', 'Sprawdzian z modułu') }))),
+    topicGrid(DATA.topics.filter((t) => t.module === id))
   );
 }
 
@@ -349,23 +388,27 @@ function reviewScreen(extra) {
 }
 
 // ---------- sprawdzian próbny ----------
-function examIntro() {
-  const history = (store.get().exams || []).slice().reverse();
+function examIntro(moduleId) {
+  const mod = moduleId ? moduleById(moduleId) : null;
+  if (moduleId && !mod) return notFound('Nie znaleziono modułu.');
+  const scope = questionsInScope(DATA, moduleId);
+  const runHref = moduleId ? `#/module/${moduleId}/exam/run` : '#/exam/run';
+  const history = (store.get().exams || []).filter((e) => (e.scope || null) === (moduleId || null)).reverse();
   const best = history.length ? Math.max(...history.map((e) => e.pct)) : null;
-  const topics = DATA.topics.filter((t) => DATA.questions.some((q) => q.topic === t.id));
+  const topics = DATA.topics.filter((t) => scope.some((q) => q.topic === t.id));
   const fmt = (ts) => new Date(ts).toLocaleString('pl-PL', { weekday: 'short', day: 'numeric', month: 'numeric', hour: '2-digit', minute: '2-digit' });
   return h(
     'div',
     null,
-    h('a', { class: 'back', href: '#/' }, '← Ekran główny'),
-    h('h1', null, 'Sprawdzian próbny'),
+    h('a', { class: 'back', href: mod ? `#/module/${moduleId}` : '#/' }, mod ? `← ${mod.title}` : '← Ekran główny'),
+    h('h1', null, mod ? `Sprawdzian: ${mod.title}` : 'Sprawdzian próbny'),
     h(
       'section',
       { class: 'card' },
-      h('p', null, `${EXAM_SIZE} losowych pytań z całego zakresu, w różnych formach: wybór, wzory, równania, klocki i dopasowywanie.`),
+      h('p', null, `${EXAM_SIZE} losowych pytań ${mod ? 'z tego modułu' : 'z całego zakresu'}, w różnych formach: wybór, wzory, równania, klocki i dopasowywanie.`),
       h('ul', { class: 'rules' }, h('li', null, 'Bez podpowiedzi.'), h('li', null, 'Bez informacji o poprawności w trakcie – wynik i błędy zobaczysz na końcu.'), h('li', null, 'Błędne pytania trafią do powtórek (Leitner).')),
       h('p', { class: 'muted' }, `Zakres: ${topics.map((t) => t.title).join(', ')}.`),
-      h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: '#/exam/run', html: withIcon('play', 'Zacznij sprawdzian') }))
+      h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: runHref, html: withIcon('play', 'Zacznij sprawdzian') }))
     ),
     h(
       'section',
@@ -381,24 +424,27 @@ function examIntro() {
   );
 }
 
-function examRun() {
+function examRun(moduleId) {
+  const mod = moduleId ? moduleById(moduleId) : null;
+  if (moduleId && !mod) return notFound('Nie znaleziono modułu.');
+  const examHref = moduleId ? `#/module/${moduleId}/exam` : '#/exam';
   const root = h('div');
   const topicTitle = (id) => (topicById(id) ? topicById(id).title : id);
   const start = () => {
-    const qs = buildExam(DATA.questions, EXAM_SIZE);
+    const qs = buildExam(questionsInScope(DATA, moduleId), EXAM_SIZE);
     runQuiz(root, qs, {
       exam: true,
       title: 'Wynik sprawdzianu',
-      backHref: '#/exam',
+      backHref: examHref,
       topicTitle,
       onRestart: start,
       onRetryMissed: retry,
-      onFinish: (r) => store.update((s) => { s.exams = [...(s.exams || []), { t: Date.now(), ...r }].slice(-30); }),
+      onFinish: (r) => store.update((s) => { s.exams = [...(s.exams || []), { t: Date.now(), scope: moduleId || null, ...r }].slice(-30); }),
     });
   };
-  const retry = (list) => runQuiz(root, list, { title: 'Powtórka błędów', backHref: '#/exam', onRetryMissed: retry });
+  const retry = (list) => runQuiz(root, list, { title: 'Powtórka błędów', backHref: examHref, onRetryMissed: retry });
   start();
-  return h('div', null, h('a', { class: 'back', href: '#/exam' }, '← Sprawdzian próbny'), root);
+  return h('div', null, h('a', { class: 'back', href: examHref }, '← Sprawdzian próbny'), root);
 }
 
 // ---------- laboratorium ----------

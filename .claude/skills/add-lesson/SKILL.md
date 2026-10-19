@@ -12,15 +12,17 @@ Zanim zaczniesz, przeczytaj `CLAUDE.md` (zasady) i `README.md` (formaty danych).
 - Czy lekcja ma mieć narzędzia (`tools`: kalkulatory) albo doświadczenia (`labs`) – jeśli tak, wymaga to nowego kodu; zaproponuj osobny krok.
 
 ## 2. Sprawdź, co już jest
-- Wypisz istniejące działy i skróty id: `node -e "const t=require('./data/theory.json');console.log(t.topics.map(x=>x.id))"` oraz przykładowe id w tych działach.
+- Wypisz moduły i działy: `node -e "const c=require('./data/curriculum.json');c.modules.forEach(m=>console.log(m.id, m.topics.map(t=>t.id).join(', ')))"` oraz przykładowe id pytań w sąsiednich działach (`data/topics/<dział>/questions.json`).
+- Zdecyduj, do którego **modułu** należy lekcja. Nowy moduł tworzysz tylko wtedy, gdy temat nie pasuje do żadnego istniejącego (dodaj `id`, `title`, `desc` w `curriculum.json`).
 - Wybierz **nowe, unikalne** id działu (kebab-case, bez polskich znaków) i krótki skrót do id pytań (`q-<skrót>-001…`). Sprawdź, że nie koliduje.
 
 ## 3. Dodaj dane (tylko dopisywanie, nic nie zmieniaj w istniejących id)
-1. `data/theory.json` → `topics`: `{ id, title, status: "active", desc }`. Nowy dział dopisz na końcu (kolejność = numeracja w menu).
-2. `cards` – 3–6 kart: `{ id: "t-<skrót>-NN", topic, title, body, examples?, tip? }`. Wzory w `$…$`.
-3. `flash` – 8–15 fiszek: `{ id: "f-<skrót>-NN", topic, front, back }`.
-4. `data/questions.json` – 12–20 pytań, poziomy 1–3, **co najmniej 40% typów innych niż `choice`** (`formula`, `equation`, `blocks`, `match`, `balance`) tam, gdzie temat na to pozwala. Każde z `explain`. Dystraktory mają być wiarygodne (typowe błędy ucznia), a poprawna odpowiedź nie zawsze na tej samej pozycji.
-5. Równania do bilansowania: tylko poprawne i w najmniejszych współczynnikach (`check` to wymusza).
+1. `data/curriculum.json` → `modules[].topics`: `{ id, title, status: "active", desc }` (opcjonalnie `labs`, `tools`). Dział dopisz na końcu modułu (kolejność = numeracja w menu).
+2. `data/topics/<id>/theory.json` → `cards` – 3–6 kart: `{ id: "t-<skrót>-NN", title, body, examples?, tip? }`. Wzory w `$…$`.
+3. Ten sam plik → `flash` – 8–15 fiszek: `{ id: "f-<skrót>-NN", front, back }`.
+4. `data/topics/<id>/questions.json` – 12–20 pytań, poziomy 1–3, **co najmniej 40% typów innych niż `choice`** (`formula`, `equation`, `blocks`, `match`, `balance`) tam, gdzie temat na to pozwala. Każde z `explain`. Dystraktory mają być wiarygodne (typowe błędy ucznia), a poprawna odpowiedź nie zawsze na tej samej pozycji.
+Nie wpisuj pola `topic` – dział wynika z katalogu.
+5. Równania do bilansowania (opcjonalnie `data/equations.json`, z polem `topic`): tylko poprawne i w najmniejszych współczynnikach (`check` to wymusza).
 
 Nie wymyślaj faktów. Jeśli nie jesteś pewien (nazwa, wartościowość, rozpuszczalność, kolor wskaźnika), **nie wstawiaj** – dopisz do `DO-SPRAWDZENIA.md` i zapytaj użytkownika.
 
