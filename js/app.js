@@ -12,8 +12,8 @@ import { renderIndicators, renderGuess } from './indicators.js';
 import { buildExam, EXAM_SIZE } from './exam.js';
 import { renderSolubility, renderReact } from './solubility.js';
 import { renderValence } from './valence.js';
+import { APP_VERSION } from './version.js';
 
-const APP_VERSION = '1.10.0'; // trzymaj zgodnie z VERSION w sw.js
 
 const DATA = { topics: [], cards: [], flash: [], questions: [], equations: [], experiments: [], indicators: null, solubility: null };
 const main = document.getElementById('main');

@@ -40,9 +40,15 @@ Sprawdza m.in. bilans atomów i ładunków każdego równania (też w pytaniach 
 unikalność identyfikatorów i treści pytań, tabelę wskaźników oraz symuluje 300 losowań sprawdzianu.
 
 ## Wersje i cache
-Po zmianie dowolnego pliku podnieś `VERSION` w `sw.js` oraz `APP_VERSION` w `js/app.js`
-(service worker trzyma stary cache do czasu zmiany wersji). Na iPadzie: Ustawienia → „Odśwież aplikację”.
-Nowy plik `.js`/`.json` dopisz też do listy `ASSETS` w `sw.js` (kontrola sprawdza, czy pliki istnieją).
+Wersja żyje w jednym miejscu: `package.json`. Po zmianie, którą ma zobaczyć użytkownik, uruchom `npm run bump`
+– `tools/build.js` zaktualizuje `js/version.js` oraz `VERSION` i listę `ASSETS` w `sw.js` (service worker trzyma
+stary cache do czasu zmiany wersji). Nowe pliki `.js`/`.json`/`.css` trafiają do cache same. Nie edytuj tych wartości ręcznie.
+Na iPadzie: Ustawienia → „Odśwież aplikację”.
+
+## Kontrole i testy
+`npm run verify` = aktualność plików generowanych + `check-data` + testy jednostkowe (`tests/`). To samo robi GitHub Actions.
+`data/ids.lock.json` blokuje id pytań i fiszek (postęp ucznia jest zapisany pod nimi): po dodaniu treści `npm run lock`.
+Zmiana kształtu zapisanych danych wymaga migracji w `js/store.js` (`SCHEMA_VERSION`, `MIGRATIONS`).
 
 ## GitHub Pages
 Settings → Pages → Deploy from branch → `main` / `(root)`. Wszystkie ścieżki są względne.

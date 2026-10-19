@@ -1,41 +1,45 @@
 // Service worker: pełna praca offline. Przy zmianie plików podnieś VERSION –
 // stary cache zostanie usunięty przy aktywacji.
-const VERSION = '1.10.0';
+// VERSION i ASSETS są GENEROWANE (npm run build) – wersję zmieniaj w package.json (npm run bump).
+const VERSION = '1.10.2';
 const CACHE = `chemia8-${VERSION}`;
 
 const ASSETS = [
+  // BEGIN GENERATED ASSETS (node tools/build.js)
   './',
   'index.html',
   'manifest.webmanifest',
   'css/app.css',
   'js/app.js',
-  'js/dom.js',
+  'js/balance.js',
+  'js/blocks.js',
   'js/chem.js',
+  'js/chemkeyboard.js',
+  'js/dnd.js',
+  'js/dom.js',
+  'js/exam.js',
   'js/formula.js',
   'js/icons.js',
-  'js/store.js',
-  'js/leitner.js',
-  'js/quiz.js',
-  'js/chemkeyboard.js',
-  'js/blocks.js',
-  'js/dnd.js',
-  'js/match.js',
-  'js/balance.js',
-  'js/lab.js',
   'js/indicators.js',
-  'js/solubility.js',
-  'js/valence.js',
-  'js/exam.js',
+  'js/lab.js',
+  'js/leitner.js',
+  'js/match.js',
+  'js/quiz.js',
   'js/settings.js',
-  'data/theory.json',
-  'data/questions.json',
+  'js/solubility.js',
+  'js/store.js',
+  'js/valence.js',
+  'js/version.js',
   'data/equations.json',
   'data/experiments.json',
   'data/indicators.json',
+  'data/questions.json',
   'data/solubility.json',
+  'data/theory.json',
+  'icons/apple-touch-icon.png',
   'icons/icon-192.png',
   'icons/icon-512.png',
-  'icons/apple-touch-icon.png',
+  // END GENERATED ASSETS
 ];
 
 self.addEventListener('install', (event) => {

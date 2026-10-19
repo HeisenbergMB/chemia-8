@@ -6,6 +6,8 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildExam, EXAM_SIZE } from '../js/exam.js';
 import { reaction as solReaction } from '../js/solubility.js';
+import { staleFiles } from './build.js';
+import { readLock, diffLock, currentIds } from './lock-ids.js';
 import { parseEquation, parseSpecies, parseFormula, checkBalance, extractFormulaSegments } from '../js/chem.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -297,20 +299,31 @@ for (const t of theory ? theory.topics : []) for (const tool of t.tools || []) i
   else console.log(`Losowanie sprawdzianu OK (300 prób, min. ${minTyped} pytań innych typów niż wybór).`);
 }
 
-// ---------- service worker ----------
-const swPath = join(root, 'sw.js');
-if (existsSync(swPath)) {
-  const sw = readFileSync(swPath, 'utf8');
+// ---------- pliki generowane (version.js, sw.js) ----------
+for (const f of staleFiles()) err(f, 'plik generowany jest nieaktualny – uruchom: npm run build');
+{
+  const swPath = join(root, 'sw.js');
+  const sw = existsSync(swPath) ? readFileSync(swPath, 'utf8') : '';
   const block = sw.match(/const ASSETS = \[([\s\S]*?)\];/);
   if (!block) err('sw.js', 'nie znaleziono listy ASSETS');
   else {
     for (const m of block[1].matchAll(/'([^']+)'/g)) {
-      const f = m[1];
-      if (f === './') continue;
-      if (!existsSync(join(root, f))) err('sw.js', `ASSETS wskazuje na nieistniejący plik "${f}"`);
+      if (m[1] !== './' && !existsSync(join(root, m[1]))) err('sw.js', `ASSETS wskazuje na nieistniejący plik "${m[1]}"`);
     }
   }
-} else err('sw.js', 'brak pliku');
+}
+
+// ---------- blokada identyfikatorów (postęp ucznia) ----------
+{
+  const { missing, moved, fresh } = diffLock(readLock(), currentIds());
+  if (missing.length) err('ids.lock', `zniknęły id (postęp ucznia się zgubi): ${missing.slice(0, 8).join(', ')}${missing.length > 8 ? '…' : ''}. Przywróć je albo świadomie: npm run lock -- --prune`);
+  if (moved.length) err('ids.lock', `id zmieniły dział: ${moved.slice(0, 8).join(', ')}`);
+  if (fresh.length) {
+    const msg = `${fresh.length} nowych id nie ma w data/ids.lock.json – uruchom: npm run lock`;
+    if (process.env.CI) err('ids.lock', msg);
+    else console.warn('UWAGA: ' + msg);
+  }
+}
 
 // ---------- wynik ----------
 console.log(`Pytań: ${questions.length}, równań: ${equations.length}, kart teorii: ${(theory?.cards || []).length}, fiszek: ${(theory?.flash || []).length}`);
