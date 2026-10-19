@@ -1,7 +1,14 @@
-name: verify
+name: verify-and-deploy
 on:
   push:
   pull_request:
+  workflow_dispatch:
+
+# Pages są wdrażane wyłącznie stąd (Settings → Pages → Source: GitHub Actions),
+# więc czerwone `verify` oznacza, że nic nie trafia na iPada.
+permissions:
+  contents: read
+
 jobs:
   verify:
     runs-on: ubuntu-latest
@@ -11,5 +18,31 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
       - run: npm run verify
+
+  deploy:
+    needs: verify
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Złóż katalog strony (tylko pliki aplikacji)
+        run: |
+          mkdir _site
+          cp -r index.html manifest.webmanifest sw.js css js data icons _site/
+          rm -f _site/data/ids.lock.json
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

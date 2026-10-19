@@ -23,7 +23,7 @@ Odhaczamy w trakcie pracy. Legenda: `[x]` zrobione, `[ ]` do zrobienia, `[~]` w 
 - [x] 1.4 `buildExam(scope)` z zakresem
 - [x] 1.5 Migracja istniejących danych bez utraty id
 - [x] 1.6 Po zmianie układu plików zaktualizować: `currentIds()` (tools/lock-ids.js), `listAssets()` (tools/build.js), skill `add-lesson`, `CLAUDE.md`, README
-- [ ] 1.7 Wdrożenie na Pages tylko po zielonym `verify` (Pages z Actions albo PR + branch protection) – dziś Pages publikuje `main` mimo czerwonego CI
+- [x] 1.7 Wdrożenie na Pages tylko po zielonym `verify` (workflow `verify-and-deploy`, Pages ze źródłem „GitHub Actions”)
 
 ## Faza 2 – kod
 - [ ] 2.1 Ekrany rejestrują własne trasy (`register(router)`)

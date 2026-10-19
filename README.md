@@ -61,7 +61,8 @@ Na iPadzie: Ustawienia → „Odśwież aplikację”.
 Zmiana kształtu zapisanych danych wymaga migracji w `js/store.js` (`SCHEMA_VERSION`, `MIGRATIONS`).
 
 ## GitHub Pages
-Settings → Pages → Deploy from branch → `main` / `(root)`. Wszystkie ścieżki są względne.
+Wdrożenie robi workflow `.github/workflows/verify.yml`: po pushu na `main` najpierw `npm run verify`, dopiero potem publikacja
+(Settings → Pages → Source: **GitHub Actions**). Czerwone `verify` = brak wdrożenia. Wszystkie ścieżki są względne.
 
 ## Prywatne materiały
 Folder `materialy-prywatne/` jest w `.gitignore` i nie trafia do repozytorium.
