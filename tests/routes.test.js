@@ -18,7 +18,7 @@ before(async () => {
     if (visited.has(hash)) continue;
     const final = await app.goto(hash);
     visited.set(hash, { final, text: app.main.textContent.trim() });
-    for (const l of app.links()) if (!visited.has(l)) queue.push(l);
+    for (const l of app.links()) if (!visited.has(l) && !l.startsWith('#/subject/')) queue.push(l); // przełączenie przedmiotu jest akcją – test w subjects.test.js
   }
 });
 

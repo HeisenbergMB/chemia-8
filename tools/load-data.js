@@ -3,12 +3,12 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { CURRICULUM_PATH, topicPackPath, packTopics, assemble } from '../js/curriculum.js';
+import { DEFAULT_SUBJECT, SUBJECTS_PATH, activeSubjects, curriculumPath, topicPackPath, packTopics, assemble } from '../js/curriculum.js';
 
 export const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
-/** Zwraca { curriculum, packs, data, problems } – problems to błędy wczytywania (brak pliku, zły JSON). */
-export function loadData() {
+/** Dane jednego przedmiotu. Zwraca { curriculum, packs, data, problems } – problems to błędy wczytywania (brak pliku, zły JSON). */
+export function loadData(subjectId = DEFAULT_SUBJECT) {
   const problems = [];
   const readJson = (rel) => {
     const p = join(root, rel);
@@ -19,13 +19,26 @@ export function loadData() {
       problems.push(`${rel}: niepoprawny JSON (${e.message})`);
     }
   };
-  const curriculum = readJson(CURRICULUM_PATH);
+  const curriculum = readJson(curriculumPath(subjectId));
   const packs = {};
   if (curriculum && Array.isArray(curriculum.modules)) {
     for (const t of packTopics(curriculum)) {
-      packs[t.id] = { theory: readJson(topicPackPath(t.id, 'theory')), questions: readJson(topicPackPath(t.id, 'questions')) };
+      packs[t.id] = { theory: readJson(topicPackPath(subjectId, t.id, 'theory')), questions: readJson(topicPackPath(subjectId, t.id, 'questions')) };
     }
-  } else if (curriculum) problems.push(`${CURRICULUM_PATH}: brak tablicy modules`);
+  } else if (curriculum) problems.push(`${curriculumPath(subjectId)}: brak tablicy modules`);
   const data = curriculum && Array.isArray(curriculum.modules) ? assemble(curriculum, packs) : null;
   return { curriculum, packs, data, problems };
+}
+
+/** Lista przedmiotów z data/subjects.json: { subjects, active, problems }. */
+export function loadSubjects() {
+  const p = join(root, SUBJECTS_PATH);
+  if (!existsSync(p)) return { subjects: [], active: [], problems: [`${SUBJECTS_PATH}: brak pliku`] };
+  try {
+    const { subjects } = JSON.parse(readFileSync(p, 'utf8'));
+    if (!Array.isArray(subjects)) return { subjects: [], active: [], problems: [`${SUBJECTS_PATH}: brak tablicy subjects`] };
+    return { subjects, active: activeSubjects(subjects), problems: [] };
+  } catch (e) {
+    return { subjects: [], active: [], problems: [`${SUBJECTS_PATH}: niepoprawny JSON (${e.message})`] };
+  }
 }

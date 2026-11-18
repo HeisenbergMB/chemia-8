@@ -3,7 +3,7 @@
 import * as store from './store.js';
 
 export function countInfo() {
-  const iso = store.get().settings.examDate;
+  const iso = store.examDate();
   if (!iso) return null;
   const [y, m, d] = iso.split('-').map(Number);
   const exam = new Date(y, m - 1, d);

@@ -3,7 +3,7 @@
 import { h } from './dom.js';
 import * as store from './store.js';
 
-export function renderSettings({ version, onChange }) {
+export function renderSettings({ version, onChange, subjectTitle = '' }) {
   const status = h('div', { class: 'status', role: 'status', 'aria-live': 'polite' });
   const say = (msg) => status.replaceChildren(msg);
 
@@ -32,9 +32,10 @@ export function renderSettings({ version, onChange }) {
   paintSeg();
 
   // --- data sprawdzianu ---
-  const date = h('input', { type: 'date', id: 'exam-date', value: store.get().settings.examDate || '' });
+  const subject = store.get().settings.subject;
+  const date = h('input', { type: 'date', id: 'exam-date', value: store.examDate(subject) });
   date.addEventListener('change', () => {
-    store.update((s) => (s.settings.examDate = date.value));
+    store.update((s) => (s.settings.examDates[subject] = date.value));
     onChange();
     say('Zapisano datę sprawdzianu.');
   });
@@ -42,11 +43,11 @@ export function renderSettings({ version, onChange }) {
   // --- eksport ---
   const doExport = async () => {
     const text = store.exportJson();
-    const name = `chemia8-postep-${new Date().toISOString().slice(0, 10)}.json`;
+    const name = `powtorka8-postep-${new Date().toISOString().slice(0, 10)}.json`;
     const file = new File([text], name, { type: 'application/json' });
     try {
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        await navigator.share({ files: [file], title: 'Postęp – Chemia 8' });
+        await navigator.share({ files: [file], title: 'Postęp – Powtórka 8' });
         say('Gotowe. Zapisz plik np. w aplikacji Pliki lub wyślij go sobie.');
         return;
       }
@@ -125,7 +126,7 @@ export function renderSettings({ version, onChange }) {
     h('a', { class: 'back', href: '#/' }, '← Wróć'),
     h('h1', null, 'Ustawienia'),
     h('section', { class: 'card' }, h('h2', null, 'Rozmiar czcionki'), seg),
-    h('section', { class: 'card' }, h('h2', null, 'Data sprawdzianu'), h('label', { for: 'exam-date', class: 'muted' }, 'Pokaże się licznik dni na górze ekranu.'), h('div', { style: 'margin-top:.5rem' }, date)),
+    h('section', { class: 'card' }, h('h2', null, subjectTitle ? `Data sprawdzianu: ${subjectTitle}` : 'Data sprawdzianu'), h('label', { for: 'exam-date', class: 'muted' }, 'Pokaże się licznik dni na górze ekranu.'), h('div', { style: 'margin-top:.5rem' }, date)),
     h(
       'section',
       { class: 'card' },

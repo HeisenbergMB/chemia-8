@@ -1,4 +1,4 @@
-/* Chemia 8 – ciemny, spokojny motyw. Jeden akcent (turkus), cienkie ramki, bez cieni i gradientów. */
+/* Powtórka 8 – ciemny, spokojny motyw. Jeden akcent (turkus), cienkie ramki, bez cieni i gradientów. */
 
 :root {
   color-scheme: dark;
@@ -188,6 +188,9 @@ sub, sup { line-height: 0; font-size: 0.72em; }
   background: var(--c);
 }
 .side a.soon { color: var(--muted); }
+.subject-switch { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 0.75rem 0.25rem; }
+.subject-switch .btn[aria-current="true"] { border-color: var(--primary); background: var(--primary-soft); color: var(--primary); }
+.subject-switch .btn.disabled { opacity: 0.5; cursor: default; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 .num {

@@ -1,7 +1,7 @@
 {
-  "name": "Chemia 8 – powtórka do sprawdzianu",
-  "short_name": "Chemia 8",
-  "description": "Nauka chemii do sprawdzianu, klasa 8",
+  "name": "Powtórka 8 – nauka do sprawdzianów i konkursów",
+  "short_name": "Powtórka 8",
+  "description": "Powtórki do sprawdzianów i konkursów, klasa 8",
   "lang": "pl",
   "start_url": "./",
   "scope": "./",

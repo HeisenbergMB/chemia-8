@@ -1,21 +1,31 @@
 // Postęp w localStorage + eksport/import + prośba o trwały zapis
 
 const KEY = 'chemia8.v1'; // klucz localStorage – NIE zmieniaj (stracisz postęp); wersję danych oznacza pole `version`
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
+export const DEFAULT_SUBJECT = 'chemia';
 
 // Migracje: MIGRATIONS[n] zamienia stan w wersji n na wersję n+1 (czysta funkcja, zwraca nowy obiekt).
 // Zmieniasz kształt zapisanych danych? Podnieś SCHEMA_VERSION, dopisz migrację i test w tests/store.test.js.
 export const MIGRATIONS = {
   // 1 -> 2: stara domyślna data sprawdzianu była zaszyta w kodzie; teraz domyślnie pusta
   1: (s) => ({ ...s, settings: { ...(s.settings || {}), examDate: (s.settings || {}).examDate === '2026-10-05' ? '' : (s.settings || {}).examDate } }),
+  // 2 -> 3: kilka przedmiotów – data sprawdzianu jest per przedmiot, wyniki sprawdzianów mają `subject` (dotychczasowe są z chemii)
+  2: (s) => {
+    const { examDate, ...settings } = s.settings || {};
+    return {
+      ...s,
+      settings: { ...settings, subject: DEFAULT_SUBJECT, examDates: examDate ? { [DEFAULT_SUBJECT]: examDate } : {} },
+      exams: (s.exams || []).map((e) => ({ subject: DEFAULT_SUBJECT, ...e })),
+    };
+  },
 };
 
 const defaults = () => ({
   version: SCHEMA_VERSION,
-  settings: { fontScale: 'm', examDate: '' },
+  settings: { fontScale: 'm', subject: DEFAULT_SUBJECT, examDates: {} }, // examDates: id przedmiotu -> data RRRR-MM-DD
   cards: {}, // id pytania -> { box, due, seen, ok, bad, last }
   flash: {}, // id fiszki -> true (umiem)
-  exams: [], // wyniki trybu sprawdzian
+  exams: [], // wyniki trybu sprawdzian: { t, subject, scope, … }
 });
 
 let memoryOnly = false;
@@ -58,7 +68,7 @@ export function normalize(raw) {
   return {
     ...d,
     ...obj,
-    settings: { ...d.settings, ...(obj.settings || {}) },
+    settings: { ...d.settings, ...(obj.settings || {}), examDates: { ...((obj.settings || {}).examDates || {}) } },
     cards: obj.cards || {},
     flash: obj.flash || {},
     exams: obj.exams || [],
@@ -66,6 +76,9 @@ export function normalize(raw) {
 }
 
 export const get = () => state;
+
+/** Data sprawdzianu (RRRR-MM-DD) wybranego przedmiotu; pusta, gdy nie ustawiono. */
+export const examDate = (subjectId = state.settings.subject) => state.settings.examDates[subjectId] || '';
 export const isMemoryOnly = () => memoryOnly;
 
 export function save() {
@@ -82,15 +95,19 @@ export function update(fn) {
   save();
 }
 
+// Identyfikator pliku z postępem. Starsze eksporty (z czasów samej chemii) mają 'chemia-8' – nadal je przyjmujemy.
+const EXPORT_APP = 'powtorka-8';
+const IMPORT_APPS = [EXPORT_APP, 'chemia-8'];
+
 export function exportJson() {
-  return JSON.stringify({ app: 'chemia-8', exportedAt: new Date().toISOString(), data: state }, null, 2);
+  return JSON.stringify({ app: EXPORT_APP, exportedAt: new Date().toISOString(), data: state }, null, 2);
 }
 
 /** Zwraca { ok, message }. */
 export function importJson(text) {
   try {
     const parsed = JSON.parse(text);
-    const data = parsed && parsed.app === 'chemia-8' ? parsed.data : null;
+    const data = parsed && IMPORT_APPS.includes(parsed.app) ? parsed.data : null;
     if (!data || typeof data !== 'object' || !data.cards) {
       return { ok: false, message: 'To nie wygląda na plik z postępem tej aplikacji.' };
     }

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { migrate, normalize, importJson, SCHEMA_VERSION, MIGRATIONS } from '../js/store.js';
+import { migrate, normalize, importJson, exportJson, SCHEMA_VERSION, MIGRATIONS } from '../js/store.js';
 
 test('każda wersja poniżej SCHEMA_VERSION ma migrację', () => {
   for (let v = 1; v < SCHEMA_VERSION; v++) assert.equal(typeof MIGRATIONS[v], 'function', `brak migracji ${v} -> ${v + 1}`);
@@ -13,11 +13,14 @@ test('stary zapis (bez pola version) trafia na bieżącą wersję i zachowuje po
   assert.equal(s.cards['q-wr-001'].box, 3);
   assert.equal(s.flash['f-wr-01'], true);
   assert.equal(s.settings.fontScale, 'l');
-  assert.equal(s.settings.examDate, '', 'stara zaszyta data jest czyszczona');
+  assert.deepEqual(s.settings.examDates, {}, 'stara zaszyta data jest czyszczona');
+  assert.equal(s.settings.subject, 'chemia');
 });
 
 test('data sprawdzianu wybrana przez użytkownika przetrwa migrację', () => {
-  assert.equal(normalize({ cards: {}, settings: { examDate: '2027-01-15' } }).settings.examDate, '2027-01-15');
+  const s = normalize({ cards: {}, settings: { examDate: '2027-01-15' } });
+  assert.deepEqual(s.settings.examDates, { chemia: '2027-01-15' }, 'data trafia do przedmiotu chemia');
+  assert.equal('examDate' in s.settings, false);
 });
 
 test('dane z nowszej wersji są odrzucane', () => {
@@ -42,4 +45,28 @@ test('zapis z nowszej wersji aplikacji nie jest nadpisywany', async () => {
   } finally {
     delete globalThis.localStorage;
   }
+});
+
+test('migracja 2 -> 3: wyniki sprawdzianów dostają przedmiot chemia, postęp zostaje bez zmian', () => {
+  const v2 = {
+    version: 2,
+    settings: { fontScale: 'm', examDate: '2027-02-01' },
+    cards: { 'q-wr-001': { box: 2, due: 5, seen: 3, ok: 2, bad: 1, last: 4 } },
+    flash: { 'f-wr-01': true },
+    exams: [{ t: 1, scope: null, pct: 80 }, { t: 2, scope: 'wodorotlenki', pct: 90 }],
+  };
+  const s = normalize(v2);
+  assert.equal(s.version, SCHEMA_VERSION);
+  assert.deepEqual(s.cards, v2.cards);
+  assert.deepEqual(s.flash, v2.flash);
+  assert.deepEqual(s.exams.map((e) => e.subject), ['chemia', 'chemia']);
+  assert.deepEqual(s.exams.map((e) => e.pct), [80, 90]);
+  assert.equal(s.settings.examDates.chemia, '2027-02-01');
+});
+
+test('eksport z poprzedniej wersji aplikacji (app: "chemia-8") nadal da się wczytać; nowy eksport ma nową nazwę', () => {
+  const old = JSON.stringify({ app: 'chemia-8', data: { version: 2, cards: {}, flash: {}, settings: { examDate: '' }, exams: [] } });
+  assert.equal(importJson(old).ok, true);
+  assert.equal(JSON.parse(exportJson()).app, 'powtorka-8');
+  assert.equal(importJson(exportJson()).ok, true);
 });

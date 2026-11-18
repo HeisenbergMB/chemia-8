@@ -22,7 +22,8 @@ export function seeded(seed) {
   };
 }
 
-export async function bootApp({ hash = '#/' } = {}) {
+/** `files`: { 'ścieżka/pliku.json': obiekt } – podmienia pliki danych (np. dodatkowy przedmiot do testów) zamiast czytać je z dysku. */
+export async function bootApp({ hash = '#/', files = {} } = {}) {
   const errors = [];
   const vc = new VirtualConsole();
   vc.on('jsdomError', (e) => errors.push(`jsdomError: ${e.message}`));
@@ -39,6 +40,10 @@ export async function bootApp({ hash = '#/' } = {}) {
   }
   for (const k of ['File', 'HTMLElement', 'Node', 'CustomEvent']) globalThis[k] = window[k];
   globalThis.fetch = async (path) => {
+    if (String(path) in files) {
+      const text = JSON.stringify(files[String(path)]);
+      return { ok: true, status: 200, json: async () => JSON.parse(text), text: async () => text };
+    }
     try {
       const text = readFileSync(join(root, String(path)), 'utf8');
       return { ok: true, status: 200, json: async () => JSON.parse(text), text: async () => text };

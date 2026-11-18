@@ -5,7 +5,7 @@ import { buildReview, topicStats } from '../leitner.js';
 import { withIcon } from '../icons.js';
 import { questionsInScope } from '../curriculum.js';
 import { DATA, moduleById, topicNum } from '../data.js';
-import { progressBar, notFound } from '../ui.js';
+import { progressBar, notFound, subjectSwitcher } from '../ui.js';
 import { countInfo, plDays } from '../countdown.js';
 
 function home() {
@@ -16,9 +16,11 @@ function home() {
     ? `Na dziś: ${[review.dueTotal ? `${review.dueTotal} do powtórki` : '', review.fresh.length ? `${review.fresh.length} nowych` : ''].filter(Boolean).join(' i ')}.`
     : 'Na teraz wszystko powtórzone. Możesz poćwiczyć dodatkowo.';
 
+  const switcher = subjectSwitcher(DATA.subjects, DATA.subject.id);
   return h(
     'div',
     null,
+    switcher ? h('section', { class: 'only-narrow', style: 'margin-bottom:1rem' }, switcher) : null,
     h(
       'section',
       { class: 'card hero' },

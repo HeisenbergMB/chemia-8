@@ -36,4 +36,12 @@ Odhaczamy w trakcie pracy. Legenda: `[x]` zrobione, `[ ]` do zrobienia, `[~]` w 
 
 ## Faza 4 – opcjonalnie
 - [ ] 4.1 Synchronizacja postępu między urządzeniami
-- [ ] 4.2 Kolejny przedmiot
+- [x] 4.2 Kolejny przedmiot → rozpisane jako Faza 5
+
+## Faza 5 – kolejny przedmiot: angielski (konkurs kuratoryjny, woj. łódzkie)
+Wzorzec testów: `docs/angielski-wzorzec-konkursu.md` (oficjalne arkusze Łódzkiego Kuratora Oświaty; własne pytania, bez kopiowania arkuszy).
+- [x] 5.0 Szkielet bez zmiany zachowania (wersja 1.11.0, schema v3, nazwa „Powtórka 8”): `data/subjects.json`, chemia → `data/chemia/`, schema v3 (aktywny przedmiot, `examDate` per przedmiot), przełącznik przedmiotu, `check-data`/`lock` po przedmiotach, neutralna nazwa aplikacji (PWA ≠ nazwa przedmiotu)
+- [ ] 5.1 Silnik zadań konkursowych: typy z repertuaru (open-cloze, key-word, word-formation, first-letter, gapped-text, tf, …) w `QTYPES`, listy akceptowanych odpowiedzi, samoocena, zadania z tekstem (`passage`)
+- [ ] 5.2 Format testu: szablony arkuszy per etap (czas 60/90/120 min, 100 pkt, sekcje z repertuaru), tryb „cały arkusz” z licznikiem czasu
+- [ ] 5.3 Treść: etap szkolny → rejonowy (pełne arkusze własne) → wojewódzki
+- [ ] 5.4 Skille: `add-lesson` i fact-check per przedmiot; kontrola „jedna poprawna odpowiedź”, poziom, naturalność zdań

@@ -7,8 +7,8 @@ import { fileURLToPath } from 'node:url';
 import { buildExam, EXAM_SIZE } from '../js/exam.js';
 import { reaction as solReaction } from '../js/solubility.js';
 import { staleFiles } from './build.js';
-import { loadData } from './load-data.js';
-import { questionsInScope } from '../js/curriculum.js';
+import { loadData, loadSubjects } from './load-data.js';
+import { questionsInScope, subjectPath, hasFeature } from '../js/curriculum.js';
 import { QTYPES } from '../js/qtypes.js';
 import { readLock, diffLock, currentIds } from './lock-ids.js';
 import { parseEquation, parseSpecies, parseFormula, checkBalance, extractFormulaSegments } from '../js/chem.js';
@@ -38,9 +38,12 @@ function uniqueId(id, where) {
   else ids.set(id, where);
 }
 
+let chemText = true; // czy w tekstach bieżącego przedmiotu wzory $…$ są wzorami chemicznymi (cecha „chem”)
+
 /** Sprawdza wzory zapisane w $...$ w tekście. balance=false: tylko składnia (np. błędne odpowiedzi). */
 function checkText(text, where, { balance = true } = {}) {
   if (typeof text !== 'string') return err(where, 'to nie jest tekst');
+  if (!chemText) return;
   if ((text.match(/\$/g) || []).length % 2 !== 0) return err(where, `nieparzysta liczba znaków $ w "${text}"`);
   for (let seg of extractFormulaSegments(text)) {
     let skip = false;
@@ -82,201 +85,230 @@ function checkSegment(seg, balance) {
   }
 }
 
-// ---------- program (moduły → działy) i paczki działów ----------
-const loaded = loadData();
-loaded.problems.forEach((p) => errors.push(p));
-const theory = loaded.data;
-const topicIds = new Set();
-if (loaded.curriculum && theory) {
-  const moduleIds = new Set();
-  for (const m of loaded.curriculum.modules) {
-    uniqueId(`module:${m.id}`, 'curriculum.modules');
-    moduleIds.add(m.id);
-    for (const k of ['id', 'title', 'desc']) if (!m[k]) err(`module ${m.id}`, `brak pola ${k}`);
-    if (!Array.isArray(m.topics) || !m.topics.length) err(`module ${m.id}`, 'moduł bez działów');
+// ---------- przedmioty (data/subjects.json) ----------
+const subjectList = loadSubjects();
+subjectList.problems.forEach((p) => errors.push(p));
+{
+  const seen = new Set();
+  for (const sj of subjectList.subjects) {
+    uniqueId(`subject:${sj.id}`, 'subjects.json');
+    seen.add(sj.id);
+    for (const k of ['id', 'title', 'desc', 'icon', 'status']) if (!sj[k]) err(`subject ${sj.id}`, `brak pola ${k}`);
+    if (!['active', 'soon'].includes(sj.status)) err(`subject ${sj.id}`, `zły status "${sj.status}"`);
+    if (!Array.isArray(sj.features)) err(`subject ${sj.id}`, 'features musi być tablicą (może być pusta)');
+    const dirExists = existsSync(join(root, 'data', sj.id));
+    if (sj.status === 'active' && !dirExists) err(`subject ${sj.id}`, `brak katalogu data/${sj.id}`);
   }
-  for (const t of theory.topics) {
-    uniqueId(`topic:${t.id}`, `curriculum.topics`);
-    topicIds.add(t.id);
-    for (const k of ['id', 'title', 'status', 'desc']) if (!t[k]) err(`topic ${t.id}`, `brak pola ${k}`);
-    if (!['active', 'soon'].includes(t.status)) err(`topic ${t.id}`, `zły status "${t.status}"`);
-    const pack = loaded.packs[t.id];
-    if (t.status === 'active' && pack) {
-      if (!(pack.theory && pack.theory.cards && pack.theory.cards.length)) err(`topic ${t.id}`, 'aktywny dział bez kart teorii');
-      if (!(pack.questions && pack.questions.length)) err(`topic ${t.id}`, 'aktywny dział bez pytań');
-      for (const [kind, list] of [['card', pack.theory && pack.theory.cards], ['flash', pack.theory && pack.theory.flash], ['question', pack.questions]]) {
-        for (const x of list || []) if ('topic' in x) err(`${kind} ${x.id}`, 'pole "topic" jest zbędne w paczce (dział wynika z katalogu)');
+  if (!subjectList.active.length) err('subjects.json', 'brak aktywnego przedmiotu');
+  const dataDir = join(root, 'data');
+  for (const d of readdirSync(dataDir, { withFileTypes: true })) if (d.isDirectory() && !seen.has(d.name)) err(`data/${d.name}`, 'katalog nie jest przedmiotem z subjects.json');
+}
+
+// ---------- dane każdego aktywnego przedmiotu ----------
+function checkSubject(subject) {
+  const chem = hasFeature(subject, 'chem');
+  chemText = chem;
+  const rj = (file) => (chem ? readJson(subjectPath(subject.id, file)) : null); // pliki funkcji chemicznych
+  // ---------- program (moduły → działy) i paczki działów ----------
+  const loaded = loadData(subject.id);
+  loaded.problems.forEach((p) => errors.push(p));
+  const theory = loaded.data;
+  const topicIds = new Set();
+  if (loaded.curriculum && theory) {
+    const moduleIds = new Set();
+    for (const m of loaded.curriculum.modules) {
+      uniqueId(`module:${m.id}`, 'curriculum.modules');
+      moduleIds.add(m.id);
+      for (const k of ['id', 'title', 'desc']) if (!m[k]) err(`module ${m.id}`, `brak pola ${k}`);
+      if (!Array.isArray(m.topics) || !m.topics.length) err(`module ${m.id}`, 'moduł bez działów');
+    }
+    for (const t of theory.topics) {
+      uniqueId(`topic:${t.id}`, `curriculum.topics`);
+      topicIds.add(t.id);
+      for (const k of ['id', 'title', 'status', 'desc']) if (!t[k]) err(`topic ${t.id}`, `brak pola ${k}`);
+      if (!['active', 'soon'].includes(t.status)) err(`topic ${t.id}`, `zły status "${t.status}"`);
+      const pack = loaded.packs[t.id];
+      if (t.status === 'active' && pack) {
+        if (!(pack.theory && pack.theory.cards && pack.theory.cards.length)) err(`topic ${t.id}`, 'aktywny dział bez kart teorii');
+        if (!(pack.questions && pack.questions.length)) err(`topic ${t.id}`, 'aktywny dział bez pytań');
+        for (const [kind, list] of [['card', pack.theory && pack.theory.cards], ['flash', pack.theory && pack.theory.flash], ['question', pack.questions]]) {
+          for (const x of list || []) if ('topic' in x) err(`${kind} ${x.id}`, 'pole "topic" jest zbędne w paczce (dział wynika z katalogu)');
+        }
+      }
+    }
+    const dir = join(root, subjectPath(subject.id, 'topics'));
+    if (existsSync(dir)) for (const d of readdirSync(dir)) if (!topicIds.has(d)) err(`${subjectPath(subject.id, 'topics')}/${d}`, 'katalog nie jest działem z curriculum.json');
+  }
+  if (theory) {
+    for (const c of theory.cards || []) {
+      const w = `card ${c.id}`;
+      uniqueId(c.id, w);
+      if (!topicIds.has(c.topic)) err(w, `nieznany dział "${c.topic}"`);
+      if (!c.title || !c.body) err(w, 'brak title/body');
+      checkText(c.body, w);
+      for (const ex of c.examples || []) checkText(`$${ex}$`.replace(/ – .*\$$/, '$'), `${w} example`);
+      if (c.tip) checkText(c.tip, w);
+    }
+    for (const f of theory.flash || []) {
+      const w = `flash ${f.id}`;
+      uniqueId(f.id, w);
+      if (!topicIds.has(f.topic)) err(w, `nieznany dział "${f.topic}"`);
+      if (!f.front || !f.back) err(w, 'brak front/back');
+      checkText(f.front, w);
+      checkText(f.back, w);
+    }
+  }
+
+  // ---------- równania ----------
+  const equations = rj('equations.json') || [];
+  for (const e of equations) {
+    const w = `equation ${e.id}`;
+    uniqueId(e.id, w);
+    if (!topicIds.has(e.topic)) err(w, `nieznany dział "${e.topic}"`);
+    try {
+      const r = checkBalance(parseEquation(e.eq));
+      if (!r.ok) err(w, `niezbilansowane: ${r.diffs.join('; ')}  [${e.eq}]`);
+    } catch (ex) {
+      err(w, ex.message);
+    }
+  }
+
+  // ---------- pytania ----------
+  const questions = theory ? theory.questions : [];
+  const stats = { byTopic: {}, byLevel: {}, byType: {} };
+  for (const q of questions) {
+    const w = `question ${q.id}`;
+    uniqueId(q.id, w);
+    if (!topicIds.has(q.topic)) err(w, `nieznany dział "${q.topic}"`);
+    if (!QTYPES[q.type]) err(w, `nieznany typ "${q.type}"`);
+    if (![1, 2, 3].includes(q.level)) err(w, `level musi być 1, 2 lub 3 (jest ${q.level})`);
+    if (!q.q || typeof q.q !== 'string') err(w, 'brak treści pytania (q)');
+    if (!q.explain || typeof q.explain !== 'string' || q.explain.length < 15) err(w, 'brak wyjaśnienia (explain)');
+    if (QTYPES[q.type]) QTYPES[q.type].validate(q, { err: (msg) => err(w, msg), text: (text, label, o) => checkText(text, `${w} ${label}`, o) });
+    checkText(q.q, `${w} q`);
+    if (q.hint) checkText(q.hint, `${w} hint`);
+    checkText(q.explain, `${w} explain`);
+    stats.byTopic[q.topic] = (stats.byTopic[q.topic] || 0) + 1;
+    stats.byLevel[q.level] = (stats.byLevel[q.level] || 0) + 1;
+    stats.byType[q.type] = (stats.byType[q.type] || 0) + 1;
+  }
+
+  // ---------- doświadczenia (laboratorium) ----------
+  const exps = rj('experiments.json');
+  if (exps) {
+    for (const e of exps.experiments || []) {
+      const w = `experiment ${e.id}`;
+      uniqueId(`exp:${e.id}`, w);
+      if (!['precipitate', 'gas'].includes(e.kind)) err(w, `nieznany kind "${e.kind}"`);
+      const eqs2 = e.kind === 'precipitate' ? (e.tubes || []).map((t) => t.eq) : [e.eq];
+      if (e.kind === 'precipitate' && !(e.tubes || []).length) err(w, 'brak tubes');
+      for (const q of eqs2) {
+        try {
+          const r = checkBalance(parseEquation(q));
+          if (!r.ok) err(w, `niezbilansowane: ${r.diffs.join('; ')} [${q}]`);
+        } catch (ex) { err(w, ex.message); }
+      }
+      (e.tubes || []).forEach((t) => ['salt', 'liquid', 'precip', 'observation', 'conclusion', 'eq'].forEach((k) => { if (!t[k]) err(w, `probówka ${t.id}: brak ${k}`); }));
+    }
+  }
+  // laboratoria wskazywane w działach muszą istnieć
+  if (theory && exps) {
+    const known = new Set((exps.experiments || []).map((e) => e.id));
+    for (const t of theory.topics) for (const l of t.labs || []) if (!known.has(l)) err(`topic ${t.id}`, `nieznane laboratorium "${l}"`);
+  }
+
+  // ---------- tabela rozpuszczalności ----------
+  const sol = rj('solubility.json');
+  if (sol) {
+    const codes = new Set(Object.keys(sol.legend || {}));
+    const nAn = (sol.anions || []).length;
+    const catIds = new Set();
+    for (const c of sol.cations || []) {
+      const w = `solubility cation ${c.id}`;
+      if (catIds.has(c.id)) err(w, 'powtórzone id');
+      catIds.add(c.id);
+      if (!c.row || c.row.length !== nAn) err(w, `row musi mieć ${nAn} znaków (jest ${c.row ? c.row.length : 'brak'})`);
+      else for (const ch of c.row) if (!codes.has(ch)) err(w, `nieznany kod "${ch}" (legenda: ${[...codes].join(', ')})`);
+      for (const k of ['sym', 'charge', 'label', 'gen']) if (!c[k]) err(w, `brak ${k}`);
+    }
+    for (const a of sol.anions || []) for (const k of ['id', 'sym', 'charge', 'label', 'name']) if (a[k] == null) err(`solubility anion ${a.id}`, `brak ${k}`);
+    for (const b of sol.bases || []) if (!catIds.has(b)) err('solubility', `zasada "${b}" nie jest kationem z tabeli`);
+    let n = 0;
+    for (const c of sol.cations || []) for (const a of (sol.anions || []).filter((x) => x.id !== 'OH')) for (const b of sol.bases || []) {
+      const r = solReaction(sol, c.id, a.id, b);
+      if (!r.ok) continue;
+      n++;
+      try {
+        const bal = checkBalance(parseEquation(r.eq));
+        if (!bal.ok) err(`solubility ${c.id}+${a.id}+${b}`, `wygenerowane równanie niezbilansowane: ${r.eq} (${bal.diffs.join('; ')})`);
+      } catch (e) { err(`solubility ${c.id}+${a.id}+${b}`, e.message); }
+    }
+    console.log(`Tabela rozpuszczalności: ${(sol.cations || []).length} kationów × ${nAn} anionów, ${n} reakcji sprawdzonych pod kątem bilansu.`);
+  }
+
+  // ---------- unikalność treści pytań ----------
+  {
+    const seen = new Map();
+    for (const q of questions) {
+      const key = String(q.q).replace(/\s+/g, ' ').trim().toLowerCase();
+      if (seen.has(key)) err(`question ${q.id}`, `ta sama treść pytania co ${seen.get(key)}: "${q.q}"`);
+      else seen.set(key, q.id);
+    }
+  }
+
+  // ---------- wskaźniki ----------
+  const indData = rj('indicators.json');
+  if (indData) {
+    const envIds = (indData.environments || []).map((e) => e.id);
+    for (const e of indData.environments || []) if (!e.loc || !e.label || !e.ph) err('indicators.json', `odczyn ${e.id}: potrzebne label, loc i ph`);
+    if (envIds.length !== 3) err('indicators.json', 'oczekuję 3 odczynów (kwasowy, obojętny, zasadowy)');
+    for (const x of indData.indicators || []) {
+      const w = `indicator ${x.id}`;
+      uniqueId(`ind:${x.id}`, w);
+      if (!x.name) err(w, 'brak name');
+      for (const e of envIds) {
+        const c = (x.colors || {})[e];
+        if (!c || !c.name || !/^#[0-9a-fA-F]{6}$/.test(c.hex || '')) err(w, `zła barwa dla odczynu "${e}" (potrzebne name i hex #rrggbb)`);
       }
     }
   }
-  const dir = join(root, 'data', 'topics');
-  if (existsSync(dir)) for (const d of readdirSync(dir)) if (!topicIds.has(d)) err(`data/topics/${d}`, 'katalog nie jest działem z curriculum.json');
-}
-if (theory) {
-  for (const c of theory.cards || []) {
-    const w = `card ${c.id}`;
-    uniqueId(c.id, w);
-    if (!topicIds.has(c.topic)) err(w, `nieznany dział "${c.topic}"`);
-    if (!c.title || !c.body) err(w, 'brak title/body');
-    checkText(c.body, w);
-    for (const ex of c.examples || []) checkText(`$${ex}$`.replace(/ – .*\$$/, '$'), `${w} example`);
-    if (c.tip) checkText(c.tip, w);
-  }
-  for (const f of theory.flash || []) {
-    const w = `flash ${f.id}`;
-    uniqueId(f.id, w);
-    if (!topicIds.has(f.topic)) err(w, `nieznany dział "${f.topic}"`);
-    if (!f.front || !f.back) err(w, 'brak front/back');
-    checkText(f.front, w);
-    checkText(f.back, w);
-  }
-}
+  for (const t of theory ? theory.topics : []) for (const tool of t.tools || []) if (!/^#\//.test(tool.href || '') || !tool.label) err(`topic ${t.id}`, 'tools: potrzebne href (#/…) i label');
 
-// ---------- równania ----------
-const equations = readJson('data/equations.json') || [];
-for (const e of equations) {
-  const w = `equation ${e.id}`;
-  uniqueId(e.id, w);
-  if (!topicIds.has(e.topic)) err(w, `nieznany dział "${e.topic}"`);
-  try {
-    const r = checkBalance(parseEquation(e.eq));
-    if (!r.ok) err(w, `niezbilansowane: ${r.diffs.join('; ')}  [${e.eq}]`);
-  } catch (ex) {
-    err(w, ex.message);
-  }
-}
-
-// ---------- pytania ----------
-const questions = theory ? theory.questions : [];
-const stats = { byTopic: {}, byLevel: {}, byType: {} };
-for (const q of questions) {
-  const w = `question ${q.id}`;
-  uniqueId(q.id, w);
-  if (!topicIds.has(q.topic)) err(w, `nieznany dział "${q.topic}"`);
-  if (!QTYPES[q.type]) err(w, `nieznany typ "${q.type}"`);
-  if (![1, 2, 3].includes(q.level)) err(w, `level musi być 1, 2 lub 3 (jest ${q.level})`);
-  if (!q.q || typeof q.q !== 'string') err(w, 'brak treści pytania (q)');
-  if (!q.explain || typeof q.explain !== 'string' || q.explain.length < 15) err(w, 'brak wyjaśnienia (explain)');
-  if (QTYPES[q.type]) QTYPES[q.type].validate(q, { err: (msg) => err(w, msg), text: (text, label, o) => checkText(text, `${w} ${label}`, o) });
-  checkText(q.q, `${w} q`);
-  if (q.hint) checkText(q.hint, `${w} hint`);
-  checkText(q.explain, `${w} explain`);
-  stats.byTopic[q.topic] = (stats.byTopic[q.topic] || 0) + 1;
-  stats.byLevel[q.level] = (stats.byLevel[q.level] || 0) + 1;
-  stats.byType[q.type] = (stats.byType[q.type] || 0) + 1;
-}
-
-// ---------- doświadczenia (laboratorium) ----------
-const exps = readJson('data/experiments.json');
-if (exps) {
-  for (const e of exps.experiments || []) {
-    const w = `experiment ${e.id}`;
-    uniqueId(`exp:${e.id}`, w);
-    if (!['precipitate', 'gas'].includes(e.kind)) err(w, `nieznany kind "${e.kind}"`);
-    const eqs2 = e.kind === 'precipitate' ? (e.tubes || []).map((t) => t.eq) : [e.eq];
-    if (e.kind === 'precipitate' && !(e.tubes || []).length) err(w, 'brak tubes');
-    for (const q of eqs2) {
-      try {
-        const r = checkBalance(parseEquation(q));
-        if (!r.ok) err(w, `niezbilansowane: ${r.diffs.join('; ')} [${q}]`);
-      } catch (ex) { err(w, ex.message); }
-    }
-    (e.tubes || []).forEach((t) => ['salt', 'liquid', 'precip', 'observation', 'conclusion', 'eq'].forEach((k) => { if (!t[k]) err(w, `probówka ${t.id}: brak ${k}`); }));
-  }
-}
-// laboratoria wskazywane w działach muszą istnieć
-if (theory && exps) {
-  const known = new Set((exps.experiments || []).map((e) => e.id));
-  for (const t of theory.topics) for (const l of t.labs || []) if (!known.has(l)) err(`topic ${t.id}`, `nieznane laboratorium "${l}"`);
-}
-
-// ---------- tabela rozpuszczalności ----------
-const sol = readJson('data/solubility.json');
-if (sol) {
-  const codes = new Set(Object.keys(sol.legend || {}));
-  const nAn = (sol.anions || []).length;
-  const catIds = new Set();
-  for (const c of sol.cations || []) {
-    const w = `solubility cation ${c.id}`;
-    if (catIds.has(c.id)) err(w, 'powtórzone id');
-    catIds.add(c.id);
-    if (!c.row || c.row.length !== nAn) err(w, `row musi mieć ${nAn} znaków (jest ${c.row ? c.row.length : 'brak'})`);
-    else for (const ch of c.row) if (!codes.has(ch)) err(w, `nieznany kod "${ch}" (legenda: ${[...codes].join(', ')})`);
-    for (const k of ['sym', 'charge', 'label', 'gen']) if (!c[k]) err(w, `brak ${k}`);
-  }
-  for (const a of sol.anions || []) for (const k of ['id', 'sym', 'charge', 'label', 'name']) if (a[k] == null) err(`solubility anion ${a.id}`, `brak ${k}`);
-  for (const b of sol.bases || []) if (!catIds.has(b)) err('solubility', `zasada "${b}" nie jest kationem z tabeli`);
-  let n = 0;
-  for (const c of sol.cations || []) for (const a of (sol.anions || []).filter((x) => x.id !== 'OH')) for (const b of sol.bases || []) {
-    const r = solReaction(sol, c.id, a.id, b);
-    if (!r.ok) continue;
-    n++;
-    try {
-      const bal = checkBalance(parseEquation(r.eq));
-      if (!bal.ok) err(`solubility ${c.id}+${a.id}+${b}`, `wygenerowane równanie niezbilansowane: ${r.eq} (${bal.diffs.join('; ')})`);
-    } catch (e) { err(`solubility ${c.id}+${a.id}+${b}`, e.message); }
-  }
-  console.log(`Tabela rozpuszczalności: ${(sol.cations || []).length} kationów × ${nAn} anionów, ${n} reakcji sprawdzonych pod kątem bilansu.`);
-}
-
-// ---------- unikalność treści pytań ----------
-{
-  const seen = new Map();
-  for (const q of questions) {
-    const key = String(q.q).replace(/\s+/g, ' ').trim().toLowerCase();
-    if (seen.has(key)) err(`question ${q.id}`, `ta sama treść pytania co ${seen.get(key)}: "${q.q}"`);
-    else seen.set(key, q.id);
-  }
-}
-
-// ---------- wskaźniki ----------
-const indData = readJson('data/indicators.json');
-if (indData) {
-  const envIds = (indData.environments || []).map((e) => e.id);
-  for (const e of indData.environments || []) if (!e.loc || !e.label || !e.ph) err('indicators.json', `odczyn ${e.id}: potrzebne label, loc i ph`);
-  if (envIds.length !== 3) err('indicators.json', 'oczekuję 3 odczynów (kwasowy, obojętny, zasadowy)');
-  for (const x of indData.indicators || []) {
-    const w = `indicator ${x.id}`;
-    uniqueId(`ind:${x.id}`, w);
-    if (!x.name) err(w, 'brak name');
-    for (const e of envIds) {
-      const c = (x.colors || {})[e];
-      if (!c || !c.name || !/^#[0-9a-fA-F]{6}$/.test(c.hex || '')) err(w, `zła barwa dla odczynu "${e}" (potrzebne name i hex #rrggbb)`);
+  // ---------- losowanie sprawdzianu z modułu ----------
+  if (theory) {
+    for (const m of theory.modules) {
+      const scope = questionsInScope(theory, m.id);
+      const w = `sprawdzian z modułu ${m.id}`;
+      for (let i = 0; i < 50; i++) {
+        const ex = buildExam(scope, EXAM_SIZE);
+        if (ex.length !== Math.min(EXAM_SIZE, scope.length)) { err(w, `liczba pytań ${ex.length} (zakres ${scope.length})`); break; }
+        if (new Set(ex.map((q) => q.id)).size !== ex.length) { err(w, 'powtarzające się pytania'); break; }
+        if (!ex.every((q) => scope.includes(q))) { err(w, 'pytanie spoza modułu'); break; }
+      }
     }
   }
-}
-for (const t of theory ? theory.topics : []) for (const tool of t.tools || []) if (!/^#\//.test(tool.href || '') || !tool.label) err(`topic ${t.id}`, 'tools: potrzebne href (#/…) i label');
 
-// ---------- losowanie sprawdzianu z modułu ----------
-if (theory) {
-  for (const m of theory.modules) {
-    const scope = questionsInScope(theory, m.id);
-    const w = `sprawdzian z modułu ${m.id}`;
-    for (let i = 0; i < 50; i++) {
-      const ex = buildExam(scope, EXAM_SIZE);
-      if (ex.length !== Math.min(EXAM_SIZE, scope.length)) { err(w, `liczba pytań ${ex.length} (zakres ${scope.length})`); break; }
+  // ---------- losowanie sprawdzianu ----------
+  {
+    const activeTopics = new Set(questions.map((q) => q.topic));
+    let minTyped = Infinity;
+    for (let i = 0; i < 300; i++) {
+      const ex = buildExam(questions, EXAM_SIZE);
+      const w = `sprawdzian (próba ${i + 1})`;
+      if (ex.length !== Math.min(EXAM_SIZE, questions.length)) { err(w, `liczba pytań ${ex.length}`); break; }
       if (new Set(ex.map((q) => q.id)).size !== ex.length) { err(w, 'powtarzające się pytania'); break; }
-      if (!ex.every((q) => scope.includes(q))) { err(w, 'pytanie spoza modułu'); break; }
+      const topics = new Set(ex.map((q) => q.topic));
+      if (topics.size < Math.min(activeTopics.size, EXAM_SIZE)) { err(w, `za mało działów (${topics.size} z ${activeTopics.size})`); break; }
+      minTyped = Math.min(minTyped, ex.filter((q) => q.type !== 'choice').length);
     }
+    if (Number.isFinite(minTyped) && minTyped < 4) err('sprawdzian', `za mało pytań innych typów niż wybór (min. ${minTyped} w próbie)`);
+    else console.log(`Losowanie sprawdzianu OK (300 prób, min. ${minTyped} pytań innych typów niż wybór).`);
   }
-}
 
-// ---------- losowanie sprawdzianu ----------
-{
-  const activeTopics = new Set(questions.map((q) => q.topic));
-  let minTyped = Infinity;
-  for (let i = 0; i < 300; i++) {
-    const ex = buildExam(questions, EXAM_SIZE);
-    const w = `sprawdzian (próba ${i + 1})`;
-    if (ex.length !== Math.min(EXAM_SIZE, questions.length)) { err(w, `liczba pytań ${ex.length}`); break; }
-    if (new Set(ex.map((q) => q.id)).size !== ex.length) { err(w, 'powtarzające się pytania'); break; }
-    const topics = new Set(ex.map((q) => q.topic));
-    if (topics.size < Math.min(activeTopics.size, EXAM_SIZE)) { err(w, `za mało działów (${topics.size} z ${activeTopics.size})`); break; }
-    minTyped = Math.min(minTyped, ex.filter((q) => q.type !== 'choice').length);
-  }
-  if (Number.isFinite(minTyped) && minTyped < 4) err('sprawdzian', `za mało pytań innych typów niż wybór (min. ${minTyped} w próbie)`);
-  else console.log(`Losowanie sprawdzianu OK (300 prób, min. ${minTyped} pytań innych typów niż wybór).`);
+  console.log(`[${subject.id}] Pytań: ${questions.length}, równań: ${equations.length}, kart teorii: ${(theory?.cards || []).length}, fiszek: ${(theory?.flash || []).length}`);
+  console.log(`[${subject.id}] Pytania wg działu:`, stats.byTopic, ' wg poziomu:', stats.byLevel, ' wg typu:', stats.byType);
 }
+for (const subject of subjectList.active) checkSubject(subject);
 
 // ---------- pliki generowane (version.js, sw.js) ----------
 for (const f of staleFiles()) err(f, 'plik generowany jest nieaktualny – uruchom: npm run build');
@@ -305,8 +337,6 @@ for (const f of staleFiles()) err(f, 'plik generowany jest nieaktualny – uruch
 }
 
 // ---------- wynik ----------
-console.log(`Pytań: ${questions.length}, równań: ${equations.length}, kart teorii: ${(theory?.cards || []).length}, fiszek: ${(theory?.flash || []).length}`);
-console.log('Pytania wg działu:', stats.byTopic, ' wg poziomu:', stats.byLevel, ' wg typu:', stats.byType);
 if (errors.length) {
   console.error(`\nBŁĘDY (${errors.length}):`);
   errors.forEach((e) => console.error(' ✗ ' + e));

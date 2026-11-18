@@ -1,6 +1,7 @@
-# Chemia 8 – powtórka do sprawdzianu
+# Powtórka 8
 
-Aplikacja PWA (czysty HTML/CSS/JS, bez bibliotek i bez backendu) do nauki chemii w klasie 8.
+Aplikacja PWA (czysty HTML/CSS/JS, bez bibliotek i bez backendu) do powtórek do sprawdzianów i konkursów w klasie 8.
+Obsługuje wiele przedmiotów (dziś: chemia; w planie angielski – patrz `ROADMAP.md`, Faza 5).
 Działa offline, zapisuje postęp w `localStorage` (z eksportem/importem w Ustawieniach).
 
 ## Uruchomienie lokalnie
@@ -9,22 +10,27 @@ python3 -m http.server 8000      # i otwórz http://localhost:8000
 ```
 
 ## Dane (`data/`)
-Program to **moduły → działy (tematy)**. Treść każdego działu jest w osobnej paczce; `js/curriculum.js` składa całość
-(ta sama funkcja działa w aplikacji, w narzędziach i w testach).
+Struktura: **przedmioty → moduły → działy (tematy)**. Lista przedmiotów jest w `data/subjects.json`, a dane każdego
+w katalogu `data/<przedmiot>/`. Treść działu jest w osobnej paczce; `js/curriculum.js` składa całość
+(ta sama funkcja działa w aplikacji, w narzędziach i w testach). Aplikacja trzyma w pamięci dane jednego, wybranego przedmiotu.
 
 | Plik | Zawartość |
 |---|---|
-| `curriculum.json` | `modules[]` → `topics[]` (`id`, `title`, `desc`, `status` `active`/`soon`, opcjonalnie `labs`, `tools`). Kolejność = numeracja w menu |
-| `topics/<id>/theory.json` | `cards` (karty teorii) i `flash` (fiszki) działu |
-| `topics/<id>/questions.json` | pytania działu |
-| `equations.json` | równania reakcji (tylko do kontroli bilansu; pole `topic` wskazuje dział) |
-| `experiments.json` | doświadczenia do laboratorium (probówki, sód z wodą) |
-| `indicators.json` | tabela barw wskaźników (z niej powstają też pytania) |
-| `solubility.json` | tabela rozpuszczalności |
-| `ids.lock.json` | blokada id pytań i fiszek (generowana: `npm run lock`) |
+| `subjects.json` | `subjects[]`: `id`, `title`, `desc`, `icon`, `status` (`active`/`soon`), `features` (np. `chem` włącza laboratorium, wskaźniki, tabelę rozpuszczalności i wartościowość) |
+| `<przedmiot>/curriculum.json` | `modules[]` → `topics[]` (`id`, `title`, `desc`, `status` `active`/`soon`, opcjonalnie `labs`, `tools`). Kolejność = numeracja w menu |
+| `<przedmiot>/topics/<id>/theory.json` | `cards` (karty teorii) i `flash` (fiszki) działu |
+| `<przedmiot>/topics/<id>/questions.json` | pytania działu |
+| `chemia/equations.json` | równania reakcji (tylko do kontroli bilansu; pole `topic` wskazuje dział) |
+| `chemia/experiments.json` | doświadczenia do laboratorium (probówki, sód z wodą) |
+| `chemia/indicators.json` | tabela barw wskaźników (z niej powstają też pytania) |
+| `chemia/solubility.json` | tabela rozpuszczalności |
+| `ids.lock.json` | blokada id pytań i fiszek wszystkich przedmiotów (generowana: `npm run lock`) |
 
-W paczkach **nie wpisujemy pola `topic`** – dział wynika z katalogu (kontrola zgłasza je jako błąd).
-Nowy dział = wpis w `curriculum.json` + katalog `topics/<id>/` z dwoma plikami. Aktywny dział musi mieć karty i pytania.
+Id kart, fiszek i pytań są **unikalne w całej aplikacji** (każdy przedmiot ma własny skrót w id), bo postęp ucznia
+jest zapisany pod samym id. W paczkach **nie wpisujemy pola `topic`** – dział wynika z katalogu (kontrola zgłasza je jako błąd).
+Nowy dział = wpis w `<przedmiot>/curriculum.json` + katalog `topics/<id>/` z dwoma plikami. Aktywny dział musi mieć karty i pytania.
+Nowy przedmiot = wpis w `subjects.json` + katalog `data/<id>/` z `curriculum.json`; do czasu pierwszej treści ma status `soon`.
+Przełączanie przedmiotu: menu boczne / ekran główny (`#/subject/<id>`). Data sprawdzianu i historia wyników są osobne dla każdego przedmiotu.
 Sprawdzian można losować z całości (`#/exam`) albo z modułu (`#/module/<id>/exam`).
 
 ### Zapis wzorów w tekstach

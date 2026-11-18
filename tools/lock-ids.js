@@ -8,18 +8,22 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadData } from './load-data.js';
+import { loadData, loadSubjects } from './load-data.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 export const LOCK_PATH = join(root, 'data', 'ids.lock.json');
 
-/** Id objęte blokadą: { 'q-wr-001': 'wodorotlenki-rozp', ... } z pytań i fiszek. */
+/** Id objęte blokadą (jedna lista dla wszystkich przedmiotów – id są unikalne globalnie): { 'q-wr-001': 'wodorotlenki-rozp', ... }. */
 export function currentIds() {
-  const { data, problems } = loadData();
-  if (!data) throw new Error(problems.join('; '));
   const out = {};
-  for (const q of data.questions) out[q.id] = q.topic;
-  for (const f of data.flash) out[f.id] = f.topic;
+  for (const subject of loadSubjects().active) {
+    const { data, problems } = loadData(subject.id);
+    if (!data) throw new Error(problems.join('; '));
+    for (const x of [...data.questions, ...data.flash]) {
+      if (x.id in out) throw new Error(`id "${x.id}" użyte dwa razy (przedmiot ${subject.id})`);
+      out[x.id] = x.topic;
+    }
+  }
   return out;
 }
 

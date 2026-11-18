@@ -1,4 +1,4 @@
-// Generuje ikony PNG (jasna kolba na ciemnym tle) bez żadnych zależności.
+// Generuje ikony PNG (jasny pierścień z ptaszkiem na ciemnym tle – neutralne, bez motywu przedmiotu) bez żadnych zależności.
 // Uruchom: node tools/make-icons.js
 
 import { deflateSync } from 'node:zlib';
@@ -42,27 +42,20 @@ const png = (w, h, rgb) => {
 };
 
 // kształty w układzie 0..1
-const FLASK = [[0.42, 0.2], [0.58, 0.2], [0.58, 0.42], [0.74, 0.72], [0.74, 0.75], [0.26, 0.75], [0.26, 0.72], [0.42, 0.42]];
-const LIQUID = [[0.355, 0.56], [0.645, 0.56], [0.74, 0.72], [0.74, 0.75], [0.26, 0.75], [0.26, 0.72]];
-const BUBBLES = [[0.46, 0.64, 0.03], [0.55, 0.68, 0.022], [0.5, 0.58, 0.016]];
+const CHECK = [[0.34, 0.52], [0.46, 0.64], [0.67, 0.38]];
 
-const inPoly = (x, y, poly) => {
-  let inside = false;
-  for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
-    const [xi, yi] = poly[i];
-    const [xj, yj] = poly[j];
-    if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside;
-  }
-  return inside;
+const distSeg = (x, y, [x1, y1], [x2, y2]) => {
+  const dx = x2 - x1, dy = y2 - y1;
+  const t = Math.max(0, Math.min(1, ((x - x1) * dx + (y - y1) * dy) / (dx * dx + dy * dy)));
+  return Math.hypot(x - (x1 + t * dx), y - (y1 + t * dy));
 };
 
 function pixel(x, y) {
   // tło: gradient turkus -> głębszy turkus
   const t = (x + y) / 2;
   let col = [14 + 12 * t, 19 + 16 * t, 24 + 20 * t];
-  if (inPoly(x, y, FLASK)) col = [233, 238, 243];
-  if (inPoly(x, y, LIQUID)) col = [79, 195, 177];
-  for (const [bx, by, r] of BUBBLES) if ((x - bx) ** 2 + (y - by) ** 2 < r * r) col = [233, 238, 243];
+  if (Math.abs(Math.hypot(x - 0.5, y - 0.5) - 0.3) < 0.022) col = [233, 238, 243];
+  if (Math.min(distSeg(x, y, CHECK[0], CHECK[1]), distSeg(x, y, CHECK[1], CHECK[2])) < 0.03) col = [79, 195, 177];
   return col;
 }
 

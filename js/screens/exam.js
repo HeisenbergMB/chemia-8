@@ -5,7 +5,7 @@ import * as store from '../store.js';
 import { runQuiz } from '../quiz.js';
 import { withIcon } from '../icons.js';
 import { buildExam, EXAM_SIZE } from '../exam.js';
-import { questionsInScope } from '../curriculum.js';
+import { questionsInScope, DEFAULT_SUBJECT } from '../curriculum.js';
 import { DATA, topicById, moduleById } from '../data.js';
 import { notFound } from '../ui.js';
 
@@ -14,7 +14,7 @@ function examIntro(moduleId) {
   if (moduleId && !mod) return notFound('Nie znaleziono modułu.');
   const scope = questionsInScope(DATA, moduleId);
   const runHref = moduleId ? `#/module/${moduleId}/exam/run` : '#/exam/run';
-  const history = (store.get().exams || []).filter((e) => (e.scope || null) === (moduleId || null)).reverse();
+  const history = (store.get().exams || []).filter((e) => (e.subject || DEFAULT_SUBJECT) === DATA.subject.id && (e.scope || null) === (moduleId || null)).reverse();
   const best = history.length ? Math.max(...history.map((e) => e.pct)) : null;
   const topics = DATA.topics.filter((t) => scope.some((q) => q.topic === t.id));
   const fmt = (ts) => new Date(ts).toLocaleString('pl-PL', { weekday: 'short', day: 'numeric', month: 'numeric', hour: '2-digit', minute: '2-digit' });
@@ -60,7 +60,7 @@ function examRun(moduleId) {
       topicTitle,
       onRestart: start,
       onRetryMissed: retry,
-      onFinish: (r) => store.update((s) => { s.exams = [...(s.exams || []), { t: Date.now(), scope: moduleId || null, ...r }].slice(-30); }),
+      onFinish: (r) => store.update((s) => { s.exams = [...(s.exams || []), { t: Date.now(), subject: DATA.subject.id, scope: moduleId || null, ...r }].slice(-30); }),
     });
   };
   const retry = (list) => runQuiz(root, list, { title: 'Powtórka błędów', backHref: examHref, onRetryMissed: retry });

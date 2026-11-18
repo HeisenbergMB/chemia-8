@@ -1,8 +1,9 @@
-// Dane aplikacji: jeden obiekt DATA wypełniany raz przy starcie (loadAll) i czytany przez ekrany.
+// Dane aplikacji: jeden obiekt DATA wypełniany przy starcie i przy zmianie przedmiotu (loadAll), czytany przez ekrany.
 
-import { CURRICULUM_PATH, topicPackPath, packTopics, assemble } from './curriculum.js';
+import { SUBJECTS_PATH, DEFAULT_SUBJECT, activeSubjects, curriculumPath, subjectPath, topicPackPath, hasFeature, packTopics, assemble } from './curriculum.js';
 
-export const DATA = { modules: [], topics: [], cards: [], flash: [], questions: [], experiments: [], indicators: null, solubility: null };
+// DATA zawiera dane jednego (aktywnego) przedmiotu; `subjects` to lista wszystkich.
+export const DATA = { subjects: [], subject: null, modules: [], topics: [], cards: [], flash: [], questions: [], experiments: [], indicators: null, solubility: null };
 
 export const topicById = (id) => DATA.topics.find((t) => t.id === id);
 export const moduleById = (id) => DATA.modules.find((m) => m.id === id);
@@ -16,23 +17,30 @@ async function loadJson(path) {
   return res.json();
 }
 
-/** Wczytuje program i paczki działów. Rzuca błąd, gdy któregoś pliku nie da się pobrać. */
-export async function loadAll() {
-  const curriculum = await loadJson(CURRICULUM_PATH);
+/** Wczytuje listę przedmiotów i dane przedmiotu `wanted` (gdy go nie ma lub jeszcze nie działa – pierwszy aktywny). */
+export async function loadAll(wanted = DEFAULT_SUBJECT) {
+  const { subjects } = await loadJson(SUBJECTS_PATH);
+  const active = activeSubjects(subjects);
+  const subject = active.find((s) => s.id === wanted) || active[0];
+  if (!subject) throw new Error(`${SUBJECTS_PATH}: brak aktywnego przedmiotu`);
+  const curriculum = await loadJson(curriculumPath(subject.id));
   // Wszystkie paczki działów ładujemy naraz (są małe i i tak leżą w cache offline).
   // Gdyby danych przybyło, wystarczy zamienić to na ładowanie per moduł – reszta aplikacji czyta z DATA.
+  const chem = hasFeature(subject, 'chem');
   const [packList, experiments, indicators, solubility] = await Promise.all([
     Promise.all(
       packTopics(curriculum).map(async (t) => {
-        const [theory, questions] = await Promise.all([loadJson(topicPackPath(t.id, 'theory')), loadJson(topicPackPath(t.id, 'questions'))]);
+        const [theory, questions] = await Promise.all([loadJson(topicPackPath(subject.id, t.id, 'theory')), loadJson(topicPackPath(subject.id, t.id, 'questions'))]);
         return [t.id, { theory, questions }];
       })
     ),
-    loadJson('data/experiments.json'),
-    loadJson('data/indicators.json'),
-    loadJson('data/solubility.json'),
+    chem ? loadJson(subjectPath(subject.id, 'experiments.json')) : { experiments: [] },
+    chem ? loadJson(subjectPath(subject.id, 'indicators.json')) : null,
+    chem ? loadJson(subjectPath(subject.id, 'solubility.json')) : null,
   ]);
   Object.assign(DATA, assemble(curriculum, Object.fromEntries(packList)));
+  DATA.subjects = subjects;
+  DATA.subject = subject;
   DATA.indicators = indicators;
   DATA.solubility = solubility;
   DATA.experiments = experiments.experiments;

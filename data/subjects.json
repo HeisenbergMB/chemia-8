@@ -1,0 +1,20 @@
+{
+  "subjects": [
+    {
+      "id": "chemia",
+      "title": "Chemia",
+      "desc": "Klasa 8: wodorotlenki, dysocjacja, sole i doświadczenia.",
+      "icon": "flask",
+      "status": "active",
+      "features": ["chem"]
+    },
+    {
+      "id": "angielski",
+      "title": "Angielski",
+      "desc": "Konkurs kuratoryjny: etap szkolny, rejonowy i wojewódzki.",
+      "icon": "book",
+      "status": "soon",
+      "features": []
+    }
+  ]
+}
