@@ -1,0 +1,114 @@
+{
+ "cards": [
+  {
+   "id": "t-en-rgram-01",
+   "title": "Luki w tekście: co najczęściej wpada",
+   "body": "Najczęściej brakuje jednego z tych elementów:\n**przyimek** (in advance, out of, depend on), **rodzajnik** (the, a), **zaimek względny** (which, whose, where, who), **czasownik pomocniczy** (have, was, would), **spójnik** (because, although, but), **wyrażenie ilości** (some, many, most), **część czasownika frazowego** (find out, turn off).\nPrzeczytaj całe zdanie i określ część mowy brakującego słowa, potem wybierz konkretną formę.",
+   "tip": "W lukach nie wolno używać skróceń (isn't, can't)."
+  },
+  {
+   "id": "t-en-rgram-02",
+   "title": "Past Perfect Continuous i III okres warunkowy",
+   "body": "**had been + -ing** – czynność trwała przed innym momentem w przeszłości: She had been waiting for an hour when the bus came.\n**III okres warunkowy** – nierealna przeszłość: **If + Past Perfect, would have + III forma**: If he had studied harder, he would have passed."
+  },
+  {
+   "id": "t-en-rgram-03",
+   "title": "Strona bierna i have something done",
+   "body": "Strona bierna we wszystkich czasach: be (w odpowiednim czasie) + III forma: is made, was made, has been made, will be made, is being made, would have been made.\n**have/get + dopełnienie + III forma** – usługa wykonana przez kogoś: We are having our car repaired."
+  },
+  {
+   "id": "t-en-rgram-04",
+   "title": "Mowa zależna z różnymi czasownikami",
+   "body": "Po said i told są też czasowniki oddające cel wypowiedzi:\n**admit** (to) + -ing: He admitted breaking the window.\n**warn** + osoba + (not) to: She warned us not to enter.\n**order / advise / remind** + osoba + to: He ordered them to leave.\n**suggest** + -ing / that: She suggested going out."
+  },
+  {
+   "id": "t-en-rgram-05",
+   "title": "Czasowniki modalne w przeszłości",
+   "body": "**must have + III forma** – pewny wniosek (She must have forgotten).\n**can't / couldn't have + III forma** – pewność, że coś nie zaszło.\n**might / may / could have + III forma** – możliwość.\n**should have + III forma** – krytyka lub żal (You should have called).\n**needn't have + III forma** – zrobione niepotrzebnie."
+  },
+  {
+   "id": "t-en-rgram-06",
+   "title": "Zwyczaje i przyzwyczajenia",
+   "body": "**used to / would** – dawne zwyczaje (would tylko dla czynności).\n**be used to + -ing** – być przyzwyczajonym; **get used to + -ing** – przyzwyczajać się.\n**had better + bezokolicznik bez to** – lepiej, żebyś: You had better leave now.\n**It's high time + Past Simple**: It's high time you went to bed."
+  },
+  {
+   "id": "t-en-rgram-07",
+   "title": "Imiesłowy, so/such, cleft sentences",
+   "body": "**Imiesłów czynny:** Walking home, I met Ben. **Bierny:** Built in 1900, the bridge is still used.\n**so + przymiotnik / such + (a/an) + przymiotnik + rzeczownik:** so boring / such a boring film.\n**Cleft:** It was Tom who broke the window.\n**So am I / Neither am I:** I'm tired. – So am I."
+  },
+  {
+   "id": "t-en-rgram-08",
+   "title": "Przekształcenia ze słowem kluczowym (rejonowy)",
+   "body": "Limit to **pięć wyrazów wliczając podany**; skróconą formę (mustn't) liczymy jako jedno słowo. Podanej formy nie wolno zmienić.\nTypowe struktury arkusza: **strona bierna, mowa zależna, have/get something done, wish/if, used to/would, zdania względne z whose, czasowniki frazowe, porównania (so/such, as ... as)**.\nNajpierw ustal strukturę, potem sprawdź, czy mieścisz się w limicie."
+  }
+ ],
+ "flash": [
+  {
+   "id": "f-en-rgram-01",
+   "front": "must have + III forma",
+   "back": "pewny wniosek o przeszłości"
+  },
+  {
+   "id": "f-en-rgram-02",
+   "front": "can't have + III forma",
+   "back": "pewność, że coś się nie stało"
+  },
+  {
+   "id": "f-en-rgram-03",
+   "front": "should have + III forma",
+   "back": "krytyka lub żal: powinieneś był"
+  },
+  {
+   "id": "f-en-rgram-04",
+   "front": "III okres warunkowy",
+   "back": "If + Past Perfect, would have + III forma"
+  },
+  {
+   "id": "f-en-rgram-05",
+   "front": "have something done",
+   "back": "zlecić wykonanie usługi: have my hair cut"
+  },
+  {
+   "id": "f-en-rgram-06",
+   "front": "warn + osoba + ?",
+   "back": "(not) to + bezokolicznik"
+  },
+  {
+   "id": "f-en-rgram-07",
+   "front": "admit + ?",
+   "back": "-ing: admitted breaking"
+  },
+  {
+   "id": "f-en-rgram-08",
+   "front": "It's high time + ?",
+   "back": "Past Simple: It's high time you left."
+  },
+  {
+   "id": "f-en-rgram-09",
+   "front": "had better + ?",
+   "back": "bezokolicznik bez to"
+  },
+  {
+   "id": "f-en-rgram-10",
+   "front": "Past Perfect Continuous: budowa",
+   "back": "had been + -ing"
+  },
+  {
+   "id": "f-en-rgram-11",
+   "front": "Odpowiedź na \"I'm tired.\" w znaczeniu \"ja też\"",
+   "back": "So am I."
+  },
+  {
+   "id": "f-en-rgram-12",
+   "front": "Skrócenie (mustn't) w limicie słów",
+   "back": "liczy się jako jedno słowo"
+  }
+ ],
+ "groups": [
+  {
+   "id": "g-en-rgram-01",
+   "instruction": "Przeczytaj poniższy tekst. Uzupełnij każdą lukę (1–15) JEDNYM wyrazem, tak aby otrzymać spójny i poprawny językowo tekst. Wymagana jest całkowita poprawność pisowni. Nie wolno używać skróceń (isn't, can't itd.). Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+   "text": "Taking a gap year\n\nMany young people in Europe now decide to take a gap year, which means spending twelve months (1)___ of education or work before starting university. Some travel (2)___ the world, while others volunteer in projects in distant countries, (3)___ they help to build schools or look after animals.\n\nThe idea has several advantages. First of all, it gives students time to find (4)___ what they really want to study. A young person who has just left school is often (5)___ sure about the future, and a year of new experiences can change their plans completely. (6)___ addition, living abroad is an excellent way of improving a foreign language, since there is no other choice (7)___ to speak it every day.\n\nNevertheless, there are also drawbacks. A gap year can be expensive, (8)___ the cost of flights, accommodation and insurance has to be paid by the family. Some parents worry (9)___ their children will lose the habit of studying, and (10)___ of them never return to education at all. Universities, however, usually welcome applicants who (11)___ spent a year doing something useful, because such students tend to be more mature and independent.\n\nIf you are thinking of going abroad, plan carefully. It is better to prepare everything well (12)___ advance, to learn at least a few words of the local language and to tell someone at home (13)___ you are at all times. And do not forget that the most important thing is (14)___ the journey itself, but what you learn from it. Anyone (15)___ returns with new skills and a wider view of the world has certainly spent the year well."
+  }
+ ]
+}

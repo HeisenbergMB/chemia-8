@@ -1,0 +1,377 @@
+[
+ {
+  "id": "q-en-rgram-001",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (1)",
+  "group": "g-en-rgram-01",
+  "gap": 1,
+  "answers": [
+   "out"
+  ],
+  "explain": "Wyrażenie: out of education (poza edukacją)."
+ },
+ {
+  "id": "q-en-rgram-002",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (2)",
+  "group": "g-en-rgram-01",
+  "gap": 2,
+  "answers": [
+   "around",
+   "across",
+   "round"
+  ],
+  "explain": "Travel around the world – podróżować dookoła świata."
+ },
+ {
+  "id": "q-en-rgram-003",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (3)",
+  "group": "g-en-rgram-01",
+  "gap": 3,
+  "answers": [
+   "where"
+  ],
+  "explain": "Zaimek względny miejsca po countries: where (gdzie)."
+ },
+ {
+  "id": "q-en-rgram-004",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (4)",
+  "group": "g-en-rgram-01",
+  "gap": 4,
+  "answers": [
+   "out"
+  ],
+  "explain": "Czasownik frazowy: find out (dowiedzieć się)."
+ },
+ {
+  "id": "q-en-rgram-005",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (5)",
+  "group": "g-en-rgram-01",
+  "gap": 5,
+  "answers": [
+   "not"
+  ],
+  "explain": "Often not sure – często niepewny; sens podpowiada dalsze zdanie o zmianie planów."
+ },
+ {
+  "id": "q-en-rgram-006",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (6)",
+  "group": "g-en-rgram-01",
+  "gap": 6,
+  "answers": [
+   "in"
+  ],
+  "explain": "Stałe wyrażenie: In addition (ponadto)."
+ },
+ {
+  "id": "q-en-rgram-007",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (7)",
+  "group": "g-en-rgram-01",
+  "gap": 7,
+  "answers": [
+   "but",
+   "than"
+  ],
+  "explain": "No other choice but/than to + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-008",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (8)",
+  "group": "g-en-rgram-01",
+  "gap": 8,
+  "answers": [
+   "because",
+   "as",
+   "since"
+  ],
+  "explain": "Spójnik przyczyny: because (as, since)."
+ },
+ {
+  "id": "q-en-rgram-009",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (9)",
+  "group": "g-en-rgram-01",
+  "gap": 9,
+  "answers": [
+   "that",
+   "if",
+   "whether"
+  ],
+  "explain": "Worry that/if + zdanie: martwić się, że ..."
+ },
+ {
+  "id": "q-en-rgram-010",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (10)",
+  "group": "g-en-rgram-01",
+  "gap": 10,
+  "answers": [
+   "some",
+   "many"
+  ],
+  "explain": "Wyrażenie ilości przed of them: some of them / many of them."
+ },
+ {
+  "id": "q-en-rgram-011",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (11)",
+  "group": "g-en-rgram-01",
+  "gap": 11,
+  "answers": [
+   "have",
+   "had"
+  ],
+  "explain": "Zdanie przydawkowe: applicants who have spent (Present Perfect)."
+ },
+ {
+  "id": "q-en-rgram-012",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (12)",
+  "group": "g-en-rgram-01",
+  "gap": 12,
+  "answers": [
+   "in"
+  ],
+  "explain": "Stałe wyrażenie: in advance (z wyprzedzeniem)."
+ },
+ {
+  "id": "q-en-rgram-013",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (13)",
+  "group": "g-en-rgram-01",
+  "gap": 13,
+  "answers": [
+   "where"
+  ],
+  "explain": "Pytanie pośrednie: tell someone where you are."
+ },
+ {
+  "id": "q-en-rgram-014",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (14)",
+  "group": "g-en-rgram-01",
+  "gap": 14,
+  "answers": [
+   "not"
+  ],
+  "explain": "Konstrukcja: the most important thing is not X, but Y."
+ },
+ {
+  "id": "q-en-rgram-015",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (15)",
+  "group": "g-en-rgram-01",
+  "gap": 15,
+  "answers": [
+   "who",
+   "that"
+  ],
+  "explain": "Zaimek względny dla osoby w roli podmiotu: Anyone who returns ..."
+ },
+ {
+  "id": "q-en-rgram-016",
+  "type": "write",
+  "level": 2,
+  "q": "I'm sure the shop was closed because of the holiday. (MUST)\nThe shop ___ closed because of the holiday.",
+  "keyword": "must",
+  "maxWords": 5,
+  "answers": [
+   "must have been"
+  ],
+  "explain": "Pewny wniosek o przeszłości: must have been."
+ },
+ {
+  "id": "q-en-rgram-017",
+  "type": "write",
+  "level": 3,
+  "q": "We have almost no time left to finish the report. (SHORT)\nWe ___ time to finish the report.",
+  "keyword": "short",
+  "maxWords": 5,
+  "answers": [
+   "are short of",
+   "are running short of"
+  ],
+  "explain": "Be short of = brakować czegoś."
+ },
+ {
+  "id": "q-en-rgram-018",
+  "type": "write",
+  "level": 2,
+  "q": "My advice is to talk to your teacher about it. (WERE)\nIf I ___, I would talk to your teacher about it.",
+  "keyword": "were",
+  "maxWords": 5,
+  "answers": [
+   "were you",
+   "were in your position"
+  ],
+  "explain": "Rada w II okresie warunkowym: If I were you, ..."
+ },
+ {
+  "id": "q-en-rgram-019",
+  "type": "write",
+  "level": 2,
+  "q": "Anna began collecting stamps ten years ago and still does. (BEEN)\nAnna ___ stamps for ten years.",
+  "keyword": "been",
+  "maxWords": 5,
+  "answers": [
+   "has been collecting"
+  ],
+  "explain": "Czynność trwa do teraz: Present Perfect Continuous."
+ },
+ {
+  "id": "q-en-rgram-020",
+  "type": "write",
+  "level": 3,
+  "q": "I met a woman yesterday. Her son is a famous chef. (WHOSE)\nI met a woman yesterday, ___ a famous chef.",
+  "keyword": "whose",
+  "maxWords": 5,
+  "answers": [
+   "whose son is"
+  ],
+  "explain": "Zdanie przydawkowe z whose: whose son is a famous chef."
+ },
+ {
+  "id": "q-en-rgram-021",
+  "type": "write",
+  "level": 1,
+  "q": "Somebody stole my bike last night. (WAS)\nMy bike ___ last night.",
+  "keyword": "was",
+  "maxWords": 5,
+  "answers": [
+   "was stolen"
+  ],
+  "explain": "Strona bierna w Past Simple: was stolen."
+ },
+ {
+  "id": "q-en-rgram-022",
+  "type": "write",
+  "level": 2,
+  "q": "As a child, I used to climb that tree every summer. (WOULD)\nAs a child, I ___ that tree every summer.",
+  "keyword": "would",
+  "maxWords": 5,
+  "answers": [
+   "would climb",
+   "would often climb"
+  ],
+  "explain": "Dawny, powtarzający się zwyczaj: would + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-023",
+  "type": "write",
+  "level": 3,
+  "q": "'Don't touch the machine!' the technician told us. (WARNED)\nThe technician ___ the machine.",
+  "keyword": "warned",
+  "maxWords": 5,
+  "answers": [
+   "warned us not to touch"
+  ],
+  "explain": "Zakaz w mowie zależnej: warned + osoba + not to + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-024",
+  "type": "write",
+  "level": 3,
+  "q": "I will never find it easy to speak in public. (GET)\nI will never ___ speaking in public.",
+  "keyword": "get",
+  "maxWords": 5,
+  "answers": [
+   "get used to"
+  ],
+  "explain": "Get used to + -ing = przyzwyczaić się."
+ },
+ {
+  "id": "q-en-rgram-025",
+  "type": "write",
+  "level": 3,
+  "q": "Somebody will paint our house next week. (HAVE)\nWe ___ painted next week.",
+  "keyword": "have",
+  "maxWords": 5,
+  "answers": [
+   "will have our house",
+   "'ll have our house"
+  ],
+  "explain": "Konstrukcja have + dopełnienie + III forma: usługa wykonana przez kogoś."
+ },
+ {
+  "id": "q-en-rgram-026",
+  "type": "write",
+  "level": 2,
+  "q": "He was able to solve the problem without any help. (MANAGED)\nHe ___ the problem without any help.",
+  "keyword": "managed",
+  "maxWords": 5,
+  "answers": [
+   "managed to solve"
+  ],
+  "explain": "Manage to + bezokolicznik = udać się coś zrobić."
+ },
+ {
+  "id": "q-en-rgram-027",
+  "type": "write",
+  "level": 2,
+  "q": "If you don't hurry, you will miss the bus. (UNLESS)\nYou will miss the bus ___ hurry.",
+  "keyword": "unless",
+  "maxWords": 5,
+  "answers": [
+   "unless you"
+  ],
+  "explain": "Unless = jeśli nie: unless you hurry."
+ },
+ {
+  "id": "q-en-rgram-028",
+  "type": "write",
+  "level": 2,
+  "q": "'Are you hungry?' she asked me. (WHETHER)\nShe asked me ___ hungry.",
+  "keyword": "whether",
+  "maxWords": 5,
+  "answers": [
+   "whether I was"
+  ],
+  "explain": "Pytanie zamknięte w mowie zależnej: whether + szyk twierdzący, czas cofnięty."
+ },
+ {
+  "id": "q-en-rgram-029",
+  "type": "write",
+  "level": 3,
+  "q": "I think you should spend less on clothes. (CUT)\nI think you should ___ spending on clothes.",
+  "keyword": "cut",
+  "maxWords": 5,
+  "answers": [
+   "cut down on",
+   "cut back on"
+  ],
+  "explain": "Czasownik frazowy: cut down on / cut back on (ograniczyć)."
+ },
+ {
+  "id": "q-en-rgram-030",
+  "type": "write",
+  "level": 2,
+  "q": "It was such a difficult exam that nobody passed it. (SO)\nThe exam ___ that nobody passed it.",
+  "keyword": "so",
+  "maxWords": 5,
+  "answers": [
+   "was so difficult"
+  ],
+  "explain": "Such + rzeczownik zamieniamy na so + przymiotnik: was so difficult that."
+ }
+]

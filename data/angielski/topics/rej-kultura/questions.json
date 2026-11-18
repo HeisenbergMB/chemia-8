@@ -1,0 +1,212 @@
+[
+ {
+  "id": "q-en-rkult-001",
+  "type": "choice",
+  "level": 2,
+  "q": "Pancake Day is also known as ...",
+  "options": [
+   "Ash Wednesday",
+   "Maundy Thursday",
+   "Shrove Tuesday",
+   "Good Friday"
+  ],
+  "answer": 2,
+  "explain": "Pancake Day to Shrove Tuesday, dzień przed Środą Popielcową."
+ },
+ {
+  "id": "q-en-rkult-002",
+  "type": "choice",
+  "level": 2,
+  "q": "In Britain, people wear red poppies in memory of soldiers around ...",
+  "options": [
+   "11 November",
+   "1 November",
+   "5 November",
+   "25 December"
+  ],
+  "answer": 0,
+  "explain": "Mak symbolizuje pamięć o poległych; Remembrance Day przypada 11 listopada."
+ },
+ {
+  "id": "q-en-rkult-003",
+  "type": "choice",
+  "level": 1,
+  "q": "On Halloween, children in the USA go from door to door and say 'Trick or ...'",
+  "options": [
+   "candy",
+   "sweet",
+   "treat",
+   "gift"
+  ],
+  "answer": 2,
+  "explain": "Okrzyk to \"Trick or treat!\"."
+ },
+ {
+  "id": "q-en-rkult-004",
+  "type": "choice",
+  "level": 3,
+  "q": "Martin Luther King Jr. Day is observed in the USA on the ... Monday of January.",
+  "options": [
+   "third",
+   "first",
+   "second",
+   "last"
+  ],
+  "answer": 0,
+  "explain": "Dzień Martina Luthera Kinga przypada w trzeci poniedziałek stycznia."
+ },
+ {
+  "id": "q-en-rkult-005",
+  "type": "choice",
+  "level": 2,
+  "q": "Memorial Day in the USA honours ...",
+  "options": [
+   "all workers",
+   "the first president",
+   "the people who arrived on the Mayflower",
+   "soldiers who died in military service"
+  ],
+  "answer": 3,
+  "explain": "Memorial Day to dzień pamięci poległych żołnierzy."
+ },
+ {
+  "id": "q-en-rkult-006",
+  "type": "choice",
+  "level": 3,
+  "q": "Which festival in Edinburgh is famous for its performing arts shows every August?",
+  "options": [
+   "Glastonbury",
+   "The Fringe",
+   "Notting Hill Carnival",
+   "Hogmanay"
+  ],
+  "answer": 1,
+  "explain": "Edinburgh Festival Fringe to sierpniowy festiwal sztuk scenicznych."
+ },
+ {
+  "id": "q-en-rkult-007",
+  "type": "choice",
+  "level": 2,
+  "q": "Hogmanay is the Scottish name for ...",
+  "options": [
+   "Easter",
+   "Halloween",
+   "Midsummer Day",
+   "New Year's Eve"
+  ],
+  "answer": 3,
+  "explain": "Hogmanay to szkocka nazwa Sylwestra."
+ },
+ {
+  "id": "q-en-rkult-008",
+  "type": "choice",
+  "level": 2,
+  "q": "Burns Night, celebrated on 25 January, honours the poet ...",
+  "options": [
+   "William Wordsworth",
+   "Robert Burns",
+   "Walter Scott",
+   "Dylan Thomas"
+  ],
+  "answer": 1,
+  "explain": "Burns Night upamiętnia szkockiego poetę Roberta Burnsa."
+ },
+ {
+  "id": "q-en-rkult-009",
+  "type": "choice",
+  "level": 1,
+  "q": "St David's Day, celebrated on 1 March, is the national day of ...",
+  "options": [
+   "Wales",
+   "Scotland",
+   "England",
+   "Ireland"
+  ],
+  "answer": 0,
+  "explain": "Dzień św. Dawida jest świętem narodowym Walii."
+ },
+ {
+  "id": "q-en-rkult-010",
+  "type": "choice",
+  "level": 2,
+  "q": "St Patrick's Day is celebrated on ...",
+  "options": [
+   "1 March",
+   "23 April",
+   "17 March",
+   "30 November"
+  ],
+  "answer": 2,
+  "explain": "Dzień św. Patryka to 17 marca; 23 kwietnia to św. Jerzy, 30 listopada św. Andrzej."
+ },
+ {
+  "id": "q-en-rkult-011",
+  "type": "choice",
+  "level": 1,
+  "q": "On Guy Fawkes Night people traditionally watch ...",
+  "options": [
+   "bonfires and fireworks",
+   "boat races",
+   "horse races",
+   "car parades"
+  ],
+  "answer": 0,
+  "explain": "Podczas Bonfire Night palą się ogniska i pokazuje fajerwerki."
+ },
+ {
+  "id": "q-en-rkult-012",
+  "type": "choice",
+  "level": 1,
+  "q": "The traditional British Christmas dinner usually includes roast ...",
+  "options": [
+   "lamb",
+   "rabbit",
+   "turkey",
+   "salmon"
+  ],
+  "answer": 2,
+  "explain": "Tradycyjnym daniem jest pieczony indyk (roast turkey)."
+ },
+ {
+  "id": "q-en-rkult-013",
+  "type": "choice",
+  "level": 1,
+  "q": "Labor Day in the USA honours ...",
+  "options": [
+   "soldiers",
+   "workers",
+   "presidents",
+   "teachers"
+  ],
+  "answer": 1,
+  "explain": "Labor Day to święto pracowników."
+ },
+ {
+  "id": "q-en-rkult-014",
+  "type": "choice",
+  "level": 2,
+  "q": "The Notting Hill Carnival, held in London every August, is famous for its ...",
+  "options": [
+   "horse races",
+   "rugby matches",
+   "Christmas lights",
+   "Caribbean-style street parade"
+  ],
+  "answer": 3,
+  "explain": "Notting Hill Carnival to uliczna parada o karaibskich korzeniach."
+ },
+ {
+  "id": "q-en-rkult-015",
+  "type": "choice",
+  "level": 3,
+  "q": "Groundhog Day in the USA is celebrated on ...",
+  "options": [
+   "14 February",
+   "2 February",
+   "17 March",
+   "4 July"
+  ],
+  "answer": 1,
+  "explain": "Dzień Świstaka obchodzi się 2 lutego."
+ }
+]

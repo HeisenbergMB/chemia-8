@@ -30,6 +30,37 @@
      "desc": "Geografia, święta i znane miejsca w krajach angielskojęzycznych."
     }
    ]
+  },
+  {
+   "id": "rejonowy",
+   "title": "Etap rejonowy",
+   "desc": "Zakres etapu rejonowego: dłuższe teksty, słowotwórstwo, przekształcanie zdań i święta w UK i USA.",
+   "topics": [
+    {
+     "id": "rej-czytanie",
+     "title": "Czytanie i spójność tekstu",
+     "status": "active",
+     "desc": "Prawda/fałsz do artykułu oraz tekst z brakującymi zdaniami."
+    },
+    {
+     "id": "rej-gramatyka",
+     "title": "Luki i przekształcenia",
+     "status": "active",
+     "desc": "Tekst z lukami i zdania ze słowem kluczowym na poziomie rejonowym."
+    },
+    {
+     "id": "rej-slownictwo",
+     "title": "Słowotwórstwo i słownictwo",
+     "status": "active",
+     "desc": "Wyrazy pochodne, synonimy i tłumaczenie zwrotów."
+    },
+    {
+     "id": "rej-kultura",
+     "title": "Święta i festiwale",
+     "status": "active",
+     "desc": "Święta, tradycje i festiwale w Wielkiej Brytanii i USA."
+    }
+   ]
   }
  ]
 }

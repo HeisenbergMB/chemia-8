@@ -1,0 +1,71 @@
+{
+ "cards": [
+  {
+   "id": "t-en-rkult-01",
+   "title": "Boże Narodzenie i Wielkanoc w UK i USA",
+   "body": "**Christmas:** Christmas Day 25 grudnia, Christmas pudding, crackers (papierowe tuby z niespodzianką), orędzie monarchy.\n**Easter:** Good Friday (Wielki Piątek), Easter Sunday, Easter Monday, polowanie na czekoladowe jajka (egg hunt).\nW UK święta państwowe nazywają się **bank holidays**."
+  },
+  {
+   "id": "t-en-rkult-02",
+   "title": "Święta państwowe w USA",
+   "body": "Federalne święta: **Presidents' Day** (trzeci poniedziałek lutego), **Veterans Day** (11 listopada, upamiętnia weteranów), **Columbus Day** (drugi poniedziałek października), **Juneteenth** (19 czerwca).\n**Mother's Day** przypada w drugą niedzielę maja, **Father's Day** w trzecią niedzielę czerwca."
+  },
+  {
+   "id": "t-en-rkult-03",
+   "title": "Festiwale i tradycje w UK",
+   "body": "**Glastonbury** – wielki festiwal muzyczny w Anglii; **Notting Hill Carnival** – londyńska parada karaibska; **Edinburgh Festival Fringe** – festiwal sztuk scenicznych; **Bonfire Night** – ogniska i fajerwerki 5 listopada; **Burns Night** – 25 stycznia, wieczór poezji Roberta Burnsa; **Hogmanay** – szkocki Sylwester z pieśnią Auld Lang Syne."
+  }
+ ],
+ "flash": [
+  {
+   "id": "f-en-rkult-01",
+   "front": "Good Friday",
+   "back": "Wielki Piątek"
+  },
+  {
+   "id": "f-en-rkult-02",
+   "front": "bank holiday",
+   "back": "święto państwowe w UK"
+  },
+  {
+   "id": "f-en-rkult-03",
+   "front": "Presidents' Day (USA)",
+   "back": "trzeci poniedziałek lutego"
+  },
+  {
+   "id": "f-en-rkult-04",
+   "front": "Veterans Day (USA)",
+   "back": "11 listopada – weterani"
+  },
+  {
+   "id": "f-en-rkult-05",
+   "front": "Mother's Day (USA)",
+   "back": "druga niedziela maja"
+  },
+  {
+   "id": "f-en-rkult-06",
+   "front": "Father's Day (USA)",
+   "back": "trzecia niedziela czerwca"
+  },
+  {
+   "id": "f-en-rkult-07",
+   "front": "Juneteenth (USA)",
+   "back": "19 czerwca"
+  },
+  {
+   "id": "f-en-rkult-08",
+   "front": "Christmas crackers",
+   "back": "papierowe tuby z niespodzianką na świątecznym stole"
+  },
+  {
+   "id": "f-en-rkult-09",
+   "front": "Auld Lang Syne",
+   "back": "szkocka pieśń śpiewana o północy w Sylwestra"
+  },
+  {
+   "id": "f-en-rkult-10",
+   "front": "Glastonbury",
+   "back": "wielki festiwal muzyczny w Anglii"
+  }
+ ]
+}

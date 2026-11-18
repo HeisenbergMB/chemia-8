@@ -1,0 +1,102 @@
+{
+ "cards": [
+  {
+   "id": "t-en-rslow-01",
+   "title": "Słowotwórstwo: przyrostki",
+   "body": "**Rzeczowniki:** -tion/-sion (decision), -ment (agreement), -ness (kindness), -ity (ability), -ship (friendship), -ence/-ance (importance), -ism, -ist (specialist).\n**Przymiotniki:** -ful (useful), -less (careless), -ous (famous), -ive (creative), -able/-ible (reliable), -al (national), -ic (economic), -y (windy).\n**Przysłówki:** -ly (quickly); zmiana y → i (easy – easily).\n**Czasowniki:** -ise/-ize (organise), -en (widen), -ify (simplify).",
+   "tip": "Sprawdź, jakiej części mowy wymaga zdanie – to połowa odpowiedzi."
+  },
+  {
+   "id": "t-en-rslow-02",
+   "title": "Słowotwórstwo: przedrostki przeczące",
+   "body": "**un-** (unpleasant), **in-** (incredible, inactive), **im-** przed m, p, b (impossible, immature), **il-** przed l (illegal), **ir-** przed r (irresponsible), **dis-** (disapproval, disagree), **mis-** (misunderstand).\nCzęsto trzeba dodać zarówno przedrostek, jak i przyrostek: effect → ineffective, predict → unpredictable."
+  },
+  {
+   "id": "t-en-rslow-03",
+   "title": "Synonimy i słowa bliskoznaczne",
+   "body": "W zadaniach z podkreślonym słowem chodzi o **znaczenie w danym kontekście**, nie o pierwsze tłumaczenie z listy.\nUczmy się par: huge – enormous, begin – start, hide – conceal, delay – postpone, angry – furious, tired – exhausted, quick – rapid, important – significant.\nSprawdź, czy wybrane słowo pasuje także gramatycznie."
+  },
+  {
+   "id": "t-en-rslow-04",
+   "title": "Słowa mylące",
+   "body": "**actual** (rzeczywisty), nie \"aktualny\" (current); **eventually** (w końcu), nie \"ewentualnie\" (possibly); **sensible** (rozsądny), nie \"wrażliwy\" (sensitive); **economic** (ekonomiczny, dotyczący gospodarki) – **economical** (oszczędny); **historic** (przełomowy) – **historical** (historyczny, dotyczący historii).\nZnajomość takich par pomaga w zadaniach z tłumaczeniem."
+  }
+ ],
+ "flash": [
+  {
+   "id": "f-en-rslow-01",
+   "front": "-less",
+   "back": "bez (careless, useless, homeless)"
+  },
+  {
+   "id": "f-en-rslow-02",
+   "front": "-ful",
+   "back": "pełen (helpful, useful, powerful)"
+  },
+  {
+   "id": "f-en-rslow-03",
+   "front": "-ship",
+   "back": "stan, relacja (friendship, leadership)"
+  },
+  {
+   "id": "f-en-rslow-04",
+   "front": "im- / il- / ir-",
+   "back": "przeczące przedrostki przed p/m/b, l, r"
+  },
+  {
+   "id": "f-en-rslow-05",
+   "front": "dis- / mis-",
+   "back": "przeczące / błędne (disagree, misunderstand)"
+  },
+  {
+   "id": "f-en-rslow-06",
+   "front": "-ly",
+   "back": "przysłówek (carefully); y → i (easily)"
+  },
+  {
+   "id": "f-en-rslow-07",
+   "front": "actual",
+   "back": "rzeczywisty (nie: aktualny = current)"
+  },
+  {
+   "id": "f-en-rslow-08",
+   "front": "eventually",
+   "back": "w końcu (nie: ewentualnie = possibly)"
+  },
+  {
+   "id": "f-en-rslow-09",
+   "front": "sensible / sensitive",
+   "back": "rozsądny / wrażliwy"
+  },
+  {
+   "id": "f-en-rslow-10",
+   "front": "delay = ?",
+   "back": "postpone – odłożyć"
+  },
+  {
+   "id": "f-en-rslow-11",
+   "front": "enormous = ?",
+   "back": "huge – ogromny"
+  },
+  {
+   "id": "f-en-rslow-12",
+   "front": "furious = ?",
+   "back": "very angry – wściekły"
+  },
+  {
+   "id": "f-en-rslow-13",
+   "front": "conceal = ?",
+   "back": "hide – ukrywać"
+  },
+  {
+   "id": "f-en-rslow-14",
+   "front": "achieve",
+   "back": "osiągnąć"
+  },
+  {
+   "id": "f-en-rslow-15",
+   "front": "improve",
+   "back": "poprawić"
+  }
+ ]
+}

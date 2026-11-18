@@ -1,0 +1,184 @@
+[
+ {
+  "id": "q-en-rczyt-001",
+  "type": "choice",
+  "level": 2,
+  "q": "Keeping bees in cities has been a popular hobby since our grandparents' time.",
+  "group": "g-en-rczyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Tekst mówi, że ule w miastach pojawiły się w ostatniej dekadzie i dla dziadków byłyby absurdem."
+ },
+ {
+  "id": "q-en-rczyt-002",
+  "type": "choice",
+  "level": 2,
+  "q": "In some European cities, bees kept in town can produce more honey than bees kept in farming areas.",
+  "group": "g-en-rczyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Badania \"suggest that city bees often produce more honey\" niż pszczoły z terenów rolniczych."
+ },
+ {
+  "id": "q-en-rczyt-003",
+  "type": "choice",
+  "level": 2,
+  "q": "Farmland offers bees a more varied food supply than parks and gardens in a city.",
+  "group": "g-en-rczyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "To miasto oferuje różnorodny pokarm; pola uprawne mają jedną uprawę kwitnącą kilka tygodni."
+ },
+ {
+  "id": "q-en-rczyt-004",
+  "type": "choice",
+  "level": 2,
+  "q": "According to Elena Marsh, honeybees are in danger of disappearing.",
+  "group": "g-en-rczyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Marsh mówi, że pszczoły miodne nie są zagrożone (\"not endangered\"), zagrożone są gatunki dzikie."
+ },
+ {
+  "id": "q-en-rczyt-005",
+  "type": "choice",
+  "level": 3,
+  "q": "Elena Marsh thinks that planting more flowers would help nature more than creating new hives.",
+  "group": "g-en-rczyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Proponuje, by władze skupiły się na sadzeniu kwiatów i niekoszeniu trawy zamiast promować ule."
+ },
+ {
+  "id": "q-en-rczyt-006",
+  "type": "choice",
+  "level": 1,
+  "q": "Beekeepers claim that the only benefit of their hives is the honey.",
+  "group": "g-en-rczyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Pszczelarze wskazują też inne korzyści, na przykład obserwację przyrody przez uczniów."
+ },
+ {
+  "id": "q-en-rczyt-007",
+  "type": "choice",
+  "level": 2,
+  "q": "People who start keeping bees may be asked to register their hives.",
+  "group": "g-en-rczyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Początkujący zwykle muszą ukończyć kurs i zarejestrować ule."
+ },
+ {
+  "id": "q-en-rczyt-008",
+  "type": "choice",
+  "level": 1,
+  "q": "Well-looked-after bees tend to sting passers-by frequently.",
+  "group": "g-en-rczyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Użądlenia są rzadkie, bo dobrze utrzymane pszczoły są spokojne."
+ },
+ {
+  "id": "q-en-rczyt-009",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (1)",
+  "group": "g-en-rczyt-02",
+  "gap": 1,
+  "answer": 1,
+  "explain": "Fragment B kończy akapit opisem unikania ciszy; kolejne zdanie z \"however\" przeciwstawia mu opinię psychologów."
+ },
+ {
+  "id": "q-en-rczyt-010",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (2)",
+  "group": "g-en-rczyt-02",
+  "gap": 2,
+  "answer": 3,
+  "explain": "Po poleceniu usiedzenia bez zajęcia pasuje opis zachowania uczestników, a \"Many admitted afterwards\" rozwija ich odczucia."
+ },
+ {
+  "id": "q-en-rczyt-011",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (3)",
+  "group": "g-en-rczyt-02",
+  "gap": 3,
+  "answer": 6,
+  "explain": "Po zapowiedzi wyjaśnienia (\"in the following way\") pasuje zdanie, do którego odnosi się zaimek \"It\" (the mind)."
+ },
+ {
+  "id": "q-en-rczyt-012",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (4)",
+  "group": "g-en-rczyt-02",
+  "gap": 4,
+  "answer": 5,
+  "explain": "Akapit o dzieciach zaczyna się od zdania ogólnego o małych dzieciach; dalej nauczyciele opisują uczniów."
+ },
+ {
+  "id": "q-en-rczyt-013",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (5)",
+  "group": "g-en-rczyt-02",
+  "gap": 5,
+  "answer": 7,
+  "explain": "Po zdaniu \"this does not mean we should switch off all devices\" pasuje zdanie o użyteczności telefonów; potem \"The problem begins when...\"."
+ },
+ {
+  "id": "q-en-rczyt-014",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (6)",
+  "group": "g-en-rczyt-02",
+  "gap": 6,
+  "answer": 0,
+  "explain": "Zdanie o pierwszych próbach tłumaczy \"the discomfort\" w kolejnym zdaniu (po kilku dniach niewygoda mija)."
+ },
+ {
+  "id": "q-en-rczyt-015",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (7)",
+  "group": "g-en-rczyt-02",
+  "gap": 7,
+  "answer": 2,
+  "explain": "Końcowe zdanie ujmuje wniosek tekstu: nuda jako nauczyciel; kolejne zdanie rozwija myśl o umiejętności nicnierobienia."
+ }
+]

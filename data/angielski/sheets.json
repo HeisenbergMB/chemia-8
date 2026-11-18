@@ -5,6 +5,12 @@
    "title": "Etap szkolny",
    "minutes": 60,
    "points": 100
+  },
+  {
+   "id": "rejonowy",
+   "title": "Etap rejonowy",
+   "minutes": 90,
+   "points": 100
   }
  ],
  "sheets": [
@@ -159,6 +165,161 @@
       "q-en-kult-008",
       "q-en-kult-009",
       "q-en-kult-010"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s-en-rej-01",
+   "format": "rejonowy",
+   "title": "Arkusz 1 – etap rejonowy",
+   "tasks": [
+    {
+     "kind": "tf",
+     "group": "g-en-rczyt-01",
+     "items": [
+      "q-en-rczyt-001",
+      "q-en-rczyt-002",
+      "q-en-rczyt-003",
+      "q-en-rczyt-004",
+      "q-en-rczyt-005",
+      "q-en-rczyt-006",
+      "q-en-rczyt-007",
+      "q-en-rczyt-008"
+     ]
+    },
+    {
+     "kind": "gapped-text",
+     "group": "g-en-rczyt-02",
+     "items": [
+      "q-en-rczyt-009",
+      "q-en-rczyt-010",
+      "q-en-rczyt-011",
+      "q-en-rczyt-012",
+      "q-en-rczyt-013",
+      "q-en-rczyt-014",
+      "q-en-rczyt-015"
+     ]
+    },
+    {
+     "kind": "open-cloze",
+     "group": "g-en-rgram-01",
+     "items": [
+      "q-en-rgram-001",
+      "q-en-rgram-002",
+      "q-en-rgram-003",
+      "q-en-rgram-004",
+      "q-en-rgram-005",
+      "q-en-rgram-006",
+      "q-en-rgram-007",
+      "q-en-rgram-008",
+      "q-en-rgram-009",
+      "q-en-rgram-010",
+      "q-en-rgram-011",
+      "q-en-rgram-012",
+      "q-en-rgram-013",
+      "q-en-rgram-014",
+      "q-en-rgram-015"
+     ]
+    },
+    {
+     "kind": "word-formation",
+     "instruction": "Uzupełnij luki odpowiednią formą wyrazu utworzonego od wyrazu podanego w nawiasie. Wymagana jest całkowita poprawność pisowni wpisywanych słów. Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+     "items": [
+      "q-en-rslow-001",
+      "q-en-rslow-002",
+      "q-en-rslow-003",
+      "q-en-rslow-004",
+      "q-en-rslow-005",
+      "q-en-rslow-006",
+      "q-en-rslow-007",
+      "q-en-rslow-008",
+      "q-en-rslow-009",
+      "q-en-rslow-010",
+      "q-en-rslow-011",
+      "q-en-rslow-012",
+      "q-en-rslow-013",
+      "q-en-rslow-014",
+      "q-en-rslow-015"
+     ]
+    },
+    {
+     "kind": "key-word",
+     "instruction": "Przeczytaj zdania (1–15). Wykorzystując wyraz podany wielkimi literami, uzupełnij drugie zdanie z luką tak, aby precyzyjnie oddać sens zdania wyjściowego. Wymagana jest całkowita poprawność pisowni i gramatyki. Nie zmieniaj formy podanego wyrazu. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany. Formy skrócone (np. mustn't) liczą się jako jedno słowo.",
+     "items": [
+      "q-en-rgram-016",
+      "q-en-rgram-017",
+      "q-en-rgram-018",
+      "q-en-rgram-019",
+      "q-en-rgram-020",
+      "q-en-rgram-021",
+      "q-en-rgram-022",
+      "q-en-rgram-023",
+      "q-en-rgram-024",
+      "q-en-rgram-025",
+      "q-en-rgram-026",
+      "q-en-rgram-027",
+      "q-en-rgram-028",
+      "q-en-rgram-029",
+      "q-en-rgram-030"
+     ]
+    },
+    {
+     "kind": "synonym-replace",
+     "instruction": "Przeczytaj zdania (1–10). Wybierz tę z opcji A–D, której znaczenie jest najbardziej zbliżone do podkreślonego słowa.",
+     "items": [
+      "q-en-rslow-016",
+      "q-en-rslow-017",
+      "q-en-rslow-018",
+      "q-en-rslow-019",
+      "q-en-rslow-020",
+      "q-en-rslow-021",
+      "q-en-rslow-022",
+      "q-en-rslow-023",
+      "q-en-rslow-024",
+      "q-en-rslow-025"
+     ]
+    },
+    {
+     "kind": "translation-choice",
+     "instruction": "Przeczytaj zdania (1–15). Wybierz tę z opcji A–D, która zawiera najwierniejsze tłumaczenie słowa lub wyrażenia w nawiasie.",
+     "items": [
+      "q-en-rslow-026",
+      "q-en-rslow-027",
+      "q-en-rslow-028",
+      "q-en-rslow-029",
+      "q-en-rslow-030",
+      "q-en-rslow-031",
+      "q-en-rslow-032",
+      "q-en-rslow-033",
+      "q-en-rslow-034",
+      "q-en-rslow-035",
+      "q-en-rslow-036",
+      "q-en-rslow-037",
+      "q-en-rslow-038",
+      "q-en-rslow-039",
+      "q-en-rslow-040"
+     ]
+    },
+    {
+     "kind": "culture",
+     "instruction": "Przeczytaj uważnie pytania, a następnie wybierz prawidłową odpowiedź A–D. Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+     "items": [
+      "q-en-rkult-001",
+      "q-en-rkult-002",
+      "q-en-rkult-003",
+      "q-en-rkult-004",
+      "q-en-rkult-005",
+      "q-en-rkult-006",
+      "q-en-rkult-007",
+      "q-en-rkult-008",
+      "q-en-rkult-009",
+      "q-en-rkult-010",
+      "q-en-rkult-011",
+      "q-en-rkult-012",
+      "q-en-rkult-013",
+      "q-en-rkult-014",
+      "q-en-rkult-015"
      ]
     }
    ]

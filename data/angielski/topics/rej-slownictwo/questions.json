@@ -1,0 +1,504 @@
+[
+ {
+  "id": "q-en-rslow-001",
+  "type": "write",
+  "level": 2,
+  "q": "The medicine proved completely ___ against the headache. (USE)",
+  "answers": [
+   "useless"
+  ],
+  "explain": "Przymiotnik z przyrostkiem -less: use → useless (bezużyteczny)."
+ },
+ {
+  "id": "q-en-rslow-002",
+  "type": "write",
+  "level": 2,
+  "q": "We were all impressed by his ___ during the interview. (HONEST)",
+  "answers": [
+   "honesty"
+  ],
+  "explain": "Rzeczownik od honest: honesty (h jest nieme)."
+ },
+ {
+  "id": "q-en-rslow-003",
+  "type": "write",
+  "level": 3,
+  "q": "The match ended with a ___ victory for the home team. (DECIDE)",
+  "answers": [
+   "decisive"
+  ],
+  "explain": "Przymiotnik od decide: decisive (rozstrzygający)."
+ },
+ {
+  "id": "q-en-rslow-004",
+  "type": "write",
+  "level": 1,
+  "q": "It is ___ to finish the project by tomorrow. (POSSIBLE)",
+  "answers": [
+   "impossible"
+  ],
+  "explain": "Przeciwieństwo z przedrostkiem im- przed p: impossible."
+ },
+ {
+  "id": "q-en-rslow-005",
+  "type": "write",
+  "level": 2,
+  "q": "She spoke very ___ in front of the large audience. (CONFIDENCE)",
+  "answers": [
+   "confidently"
+  ],
+  "explain": "Przysłówek od confident: confidently."
+ },
+ {
+  "id": "q-en-rslow-006",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ of the festival took almost a year. (ORGANISE)",
+  "answers": [
+   "organisation",
+   "organization"
+  ],
+  "explain": "Rzeczownik od organise: organisation (brytyjska) lub organization."
+ },
+ {
+  "id": "q-en-rslow-007",
+  "type": "write",
+  "level": 2,
+  "q": "He was punished for his ___ in class. (BEHAVE)",
+  "answers": [
+   "behaviour",
+   "behavior"
+  ],
+  "explain": "Rzeczownik od behave: behaviour (UK) / behavior (US)."
+ },
+ {
+  "id": "q-en-rslow-008",
+  "type": "write",
+  "level": 3,
+  "q": "The rainy weather made the journey extremely ___. (PLEASE)",
+  "answers": [
+   "unpleasant"
+  ],
+  "explain": "Przymiotnik z przeczeniem: pleasant → unpleasant (nie please → displease)."
+ },
+ {
+  "id": "q-en-rslow-009",
+  "type": "write",
+  "level": 3,
+  "q": "The company is looking for a ___ assistant. (RELY)",
+  "answers": [
+   "reliable"
+  ],
+  "explain": "Przymiotnik od rely: reliable (niezawodny)."
+ },
+ {
+  "id": "q-en-rslow-010",
+  "type": "write",
+  "level": 1,
+  "q": "Their ___ lasted for more than fifty years. (FRIEND)",
+  "answers": [
+   "friendship"
+  ],
+  "explain": "Rzeczownik z przyrostkiem -ship: friendship."
+ },
+ {
+  "id": "q-en-rslow-011",
+  "type": "write",
+  "level": 2,
+  "q": "She was so ___ that she lost her keys twice a week. (CARE)",
+  "answers": [
+   "careless"
+  ],
+  "explain": "Przymiotnik z przyrostkiem -less: careless (nieostrożny)."
+ },
+ {
+  "id": "q-en-rslow-012",
+  "type": "write",
+  "level": 2,
+  "q": "The scientists made an important ___ last year. (DISCOVER)",
+  "answers": [
+   "discovery"
+  ],
+  "explain": "Rzeczownik od discover: discovery (zmiana końcówki)."
+ },
+ {
+  "id": "q-en-rslow-013",
+  "type": "write",
+  "level": 2,
+  "q": "He has an ___ collection of old maps. (IMPRESS)",
+  "answers": [
+   "impressive"
+  ],
+  "explain": "Przymiotnik od impress: impressive; przed samogłoską stoi an."
+ },
+ {
+  "id": "q-en-rslow-014",
+  "type": "write",
+  "level": 2,
+  "q": "A good ___ of foreign languages is useful in many jobs. (KNOW)",
+  "answers": [
+   "knowledge"
+  ],
+  "explain": "Rzeczownik od know: knowledge (ze zmianą pisowni)."
+ },
+ {
+  "id": "q-en-rslow-015",
+  "type": "write",
+  "level": 3,
+  "q": "The results of the first tests were very ___. (ENCOURAGE)",
+  "answers": [
+   "encouraging"
+  ],
+  "explain": "Przymiotnik od encourage: encouraging (zniknięcie e)."
+ },
+ {
+  "id": "q-en-rslow-016",
+  "type": "choice",
+  "level": 2,
+  "q": "The two countries signed an ++agreement++ on trade.",
+  "options": [
+   "quarrel",
+   "deal",
+   "order",
+   "opinion"
+  ],
+  "answer": 1,
+  "explain": "Agreement = porozumienie, umowa; najbliższe znaczeniowo jest deal."
+ },
+ {
+  "id": "q-en-rslow-017",
+  "type": "choice",
+  "level": 2,
+  "q": "Her ++ambition++ is to become a pilot.",
+  "options": [
+   "habit",
+   "fear",
+   "skill",
+   "aim"
+  ],
+  "answer": 3,
+  "explain": "Ambition = ambicja, cel; najbliższe jest aim."
+ },
+ {
+  "id": "q-en-rslow-018",
+  "type": "choice",
+  "level": 2,
+  "q": "The audience was ++furious++ about the delay.",
+  "options": [
+   "very tired",
+   "very angry",
+   "very bored",
+   "very surprised"
+  ],
+  "answer": 1,
+  "explain": "Furious = wściekły, czyli very angry."
+ },
+ {
+  "id": "q-en-rslow-019",
+  "type": "choice",
+  "level": 2,
+  "q": "We need to ++postpone++ the meeting until Monday.",
+  "options": [
+   "cancel",
+   "prepare",
+   "shorten",
+   "delay"
+  ],
+  "answer": 3,
+  "explain": "Postpone = odłożyć na później, czyli delay."
+ },
+ {
+  "id": "q-en-rslow-020",
+  "type": "choice",
+  "level": 2,
+  "q": "He is known for his ++generous++ character.",
+  "options": [
+   "clever",
+   "quiet",
+   "giving",
+   "strict"
+  ],
+  "answer": 2,
+  "explain": "Generous = hojny; najbliższe jest giving (skłonny dawać)."
+ },
+ {
+  "id": "q-en-rslow-021",
+  "type": "choice",
+  "level": 1,
+  "q": "The ++huge++ rock blocked the road.",
+  "options": [
+   "enormous",
+   "rough",
+   "sharp",
+   "ancient"
+  ],
+  "answer": 0,
+  "explain": "Huge = ogromny, czyli enormous."
+ },
+ {
+  "id": "q-en-rslow-022",
+  "type": "choice",
+  "level": 1,
+  "q": "Scientists have ++discovered++ a new species of frog.",
+  "options": [
+   "created",
+   "protected",
+   "found",
+   "photographed"
+  ],
+  "answer": 2,
+  "explain": "Discover = odkryć, czyli find (found)."
+ },
+ {
+  "id": "q-en-rslow-023",
+  "type": "choice",
+  "level": 1,
+  "q": "The teacher gave us a ++brief++ summary of the story.",
+  "options": [
+   "short",
+   "detailed",
+   "written",
+   "boring"
+  ],
+  "answer": 0,
+  "explain": "Brief = krótki, zwięzły, czyli short."
+ },
+ {
+  "id": "q-en-rslow-024",
+  "type": "choice",
+  "level": 2,
+  "q": "The ++crowd++ cheered when the singer appeared on the stage.",
+  "options": [
+   "row of seats",
+   "piece of music",
+   "family",
+   "large group of people"
+  ],
+  "answer": 3,
+  "explain": "Crowd = tłum, czyli duża grupa ludzi."
+ },
+ {
+  "id": "q-en-rslow-025",
+  "type": "choice",
+  "level": 3,
+  "q": "He tried to ++conceal++ the truth from his parents.",
+  "options": [
+   "explain",
+   "hide",
+   "check",
+   "discover"
+  ],
+  "answer": 1,
+  "explain": "Conceal = ukrywać, czyli hide."
+ },
+ {
+  "id": "q-en-rslow-026",
+  "type": "choice",
+  "level": 2,
+  "q": "The mayor promised to (zmniejszyć) the number of cars in the centre.",
+  "options": [
+   "produce",
+   "require",
+   "introduce",
+   "reduce"
+  ],
+  "answer": 3,
+  "explain": "Reduce = zmniejszyć, ograniczyć."
+ },
+ {
+  "id": "q-en-rslow-027",
+  "type": "choice",
+  "level": 2,
+  "q": "Her speech was so (wzruszająca) that many people cried.",
+  "options": [
+   "moved",
+   "moving",
+   "movable",
+   "movement"
+  ],
+  "answer": 1,
+  "explain": "Przymiotnik opisujący to, co wzrusza: moving (moved opisuje osobę)."
+ },
+ {
+  "id": "q-en-rslow-028",
+  "type": "choice",
+  "level": 2,
+  "q": "The film received excellent (recenzje).",
+  "options": [
+   "revisions",
+   "reports",
+   "reviewers",
+   "reviews"
+  ],
+  "answer": 3,
+  "explain": "Review = recenzja; revision to powtórka lub korekta."
+ },
+ {
+  "id": "q-en-rslow-029",
+  "type": "choice",
+  "level": 1,
+  "q": "I'm sorry, but I can't (zgodzić się) with you.",
+  "options": [
+   "accept",
+   "agree",
+   "admit",
+   "allow"
+  ],
+  "answer": 1,
+  "explain": "Agree with + osoba = zgadzać się z kimś."
+ },
+ {
+  "id": "q-en-rslow-030",
+  "type": "choice",
+  "level": 2,
+  "q": "(Bezrobocie) has fallen again this year.",
+  "options": [
+   "Unemployment",
+   "Employment",
+   "Unemployed",
+   "Employer"
+  ],
+  "answer": 0,
+  "explain": "Unemployment = bezrobocie (rzeczownik)."
+ },
+ {
+  "id": "q-en-rslow-031",
+  "type": "choice",
+  "level": 2,
+  "q": "She (przyznała się) that she had made a mistake.",
+  "options": [
+   "allowed",
+   "remembered",
+   "admitted",
+   "avoided"
+  ],
+  "answer": 2,
+  "explain": "Admit = przyznać się."
+ },
+ {
+  "id": "q-en-rslow-032",
+  "type": "choice",
+  "level": 2,
+  "q": "The tickets were (wyprzedane) within an hour.",
+  "options": [
+   "sold out",
+   "sold off",
+   "sold up",
+   "out of sale"
+  ],
+  "answer": 0,
+  "explain": "Sold out = wyprzedane."
+ },
+ {
+  "id": "q-en-rslow-033",
+  "type": "choice",
+  "level": 1,
+  "q": "We (zdecydowaliśmy się) to change the date.",
+  "options": [
+   "deciding",
+   "were decide",
+   "decided",
+   "have deciding"
+  ],
+  "answer": 2,
+  "explain": "Decide to + bezokolicznik: we decided to change."
+ },
+ {
+  "id": "q-en-rslow-034",
+  "type": "choice",
+  "level": 1,
+  "q": "He is very (utalentowany).",
+  "options": [
+   "talent",
+   "talented",
+   "talents",
+   "talentful"
+  ],
+  "answer": 1,
+  "explain": "Przymiotnik od talent: talented."
+ },
+ {
+  "id": "q-en-rslow-035",
+  "type": "choice",
+  "level": 1,
+  "q": "I look forward (do) hearing from you.",
+  "options": [
+   "for",
+   "at",
+   "on",
+   "to"
+  ],
+  "answer": 3,
+  "explain": "Look forward to + -ing."
+ },
+ {
+  "id": "q-en-rslow-036",
+  "type": "choice",
+  "level": 2,
+  "q": "(Mimo że) he was tired, he finished the race.",
+  "options": [
+   "Despite",
+   "Although",
+   "Whereas",
+   "Unless"
+  ],
+  "answer": 1,
+  "explain": "Although + zdanie; despite wymaga rzeczownika lub -ing."
+ },
+ {
+  "id": "q-en-rslow-037",
+  "type": "choice",
+  "level": 3,
+  "q": "She was (zazdrosna o) her sister's success.",
+  "options": [
+   "jealous about",
+   "envious from",
+   "proud with",
+   "jealous of"
+  ],
+  "answer": 3,
+  "explain": "Be jealous of = być zazdrosnym o."
+ },
+ {
+  "id": "q-en-rslow-038",
+  "type": "choice",
+  "level": 2,
+  "q": "It is (wygodniej) to travel by train.",
+  "options": [
+   "comfortabler",
+   "most comfortable",
+   "more comfortable",
+   "comfortably"
+  ],
+  "answer": 2,
+  "explain": "Stopień wyższy długiego przymiotnika: more comfortable."
+ },
+ {
+  "id": "q-en-rslow-039",
+  "type": "choice",
+  "level": 1,
+  "q": "He apologised (za) being late.",
+  "options": [
+   "for",
+   "of",
+   "to",
+   "with"
+  ],
+  "answer": 0,
+  "explain": "Apologise for = przepraszać za."
+ },
+ {
+  "id": "q-en-rslow-040",
+  "type": "choice",
+  "level": 2,
+  "q": "(Dzięki) the new bridge, the journey is faster.",
+  "options": [
+   "Because",
+   "Due",
+   "Thanks to",
+   "Owing"
+  ],
+  "answer": 2,
+  "explain": "Thanks to + rzeczownik = dzięki."
+ }
+]

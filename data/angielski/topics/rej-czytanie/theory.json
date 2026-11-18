@@ -1,0 +1,80 @@
+{
+ "cards": [
+  {
+   "id": "t-en-rczyt-01",
+   "title": "Zdania wstawiane w lukę: jak dobierać",
+   "body": "Przy zadaniu z usuniętymi zdaniami szukaj **powiązań** między zdaniem przed luką, tym po luce i fragmentem:\n- **zaimki** (it, they, this, these) – do kogo lub czego się odnoszą;\n- **spójniki i wyrażenia łączące** (however, as a result, in addition, on the other hand);\n- **rodzajniki i powtórzenia** (a problem → the problem);\n- **czas i kolejność** zdarzeń.\nZwykle dwa fragmenty są zbędne – nie zaczynaj od tych, które \"jakoś pasują\", tylko od najpewniejszych luk.",
+   "tip": "Przekreślaj wykorzystane fragmenty. Na końcu sprawdź, czy tekst czyta się płynnie."
+  },
+  {
+   "id": "t-en-rczyt-02",
+   "title": "Teksty popularnonaukowe: stopnie pewności",
+   "body": "Autorzy artykułów rzadko piszą kategorycznie. **Hedging** – słowa łagodzące – zmienia prawdziwość zdania:\n**suggest, may, might, seem, appear, often, some, tend to** – możliwość, nie pewność;\n**prove, show, always, never, all, definitely** – pewność.\nZdanie typu \"studies suggest that A\" nie potwierdza, że A jest udowodnione."
+  },
+  {
+   "id": "t-en-rczyt-03",
+   "title": "TRUE/FALSE na poziomie rejonowym",
+   "body": "Zdania są często **uogólnieniem lub zmianą szczegółu**: tekst mówi o niektórych, a zdanie o wszystkich; tekst o jednej osobie, a zdanie o grupie; tekst o planie, a zdanie o decyzji.\nSprawdź także **przyczynę i skutek** (because, led to, as a result) oraz **autora** wypowiedzi: czy opinia należy do krytyków, do badaczy czy do autora tekstu."
+  },
+  {
+   "id": "t-en-rczyt-04",
+   "title": "Czas w arkuszu rejonowym",
+   "body": "Arkusz rejonowy trwa **90 minut** i ma **100 punktów**.\nDługie zadania z tekstem (czytanie, luki, brakujące zdania) zajmują najwięcej czasu, więc rozłóż siły: przeczytaj tekst raz do końca, potem rozwiązuj luki. Krótkie zadania słownikowe rozwiązuj szybko – tu liczy się znajomość słów, nie czas namysłu."
+  }
+ ],
+ "flash": [
+  {
+   "id": "f-en-rczyt-01",
+   "front": "suggest / may / seem w tekście",
+   "back": "Zdanie nie jest pewne – nie możesz uznać go za udowodnione."
+  },
+  {
+   "id": "f-en-rczyt-02",
+   "front": "Tekst: \"some people\". Zdanie: \"all people\".",
+   "back": "FALSE – uogólnienie."
+  },
+  {
+   "id": "f-en-rczyt-03",
+   "front": "however / on the other hand",
+   "back": "wyrażenia przeciwstawne – zapowiadają zmianę kierunku myśli"
+  },
+  {
+   "id": "f-en-rczyt-04",
+   "front": "as a result",
+   "back": "w rezultacie – po nim następuje skutek"
+  },
+  {
+   "id": "f-en-rczyt-05",
+   "front": "Ile trwa arkusz rejonowy i ile ma punktów?",
+   "back": "90 minut i 100 punktów."
+  },
+  {
+   "id": "f-en-rczyt-06",
+   "front": "Dwa zdania w zadaniu z brakującymi zdaniami są ...",
+   "back": "zbędne – nie pasują do żadnej luki."
+  }
+ ],
+ "groups": [
+  {
+   "id": "g-en-rczyt-01",
+   "instruction": "Przeczytaj uważnie tekst, a następnie zdania pod tekstem (1–8) i zdecyduj, czy są prawdziwe (TRUE), czy fałszywe (FALSE). Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+   "text": "Buzzing above the traffic: why cities are becoming homes for bees\n\nWhen most people imagine a beehive, they picture a quiet meadow or an orchard in the countryside. Yet over the last decade, hundreds of beehives have appeared in places that would have seemed absurd to our grandparents: the rooftops of hotels, office towers and even a famous opera house. Urban beekeeping, once a curious hobby, has grown into a movement that attracts both enthusiasts and serious researchers.\n\nOne reason for its popularity is a surprising discovery. Studies carried out in several European capitals suggest that city bees often produce more honey than those kept in farming areas. The explanation lies in the food supply. Modern agriculture relies on huge fields of a single crop, which flower for only a few weeks, leaving bees hungry for most of the year. A city, by contrast, offers a mixture of parks, gardens, balconies and street trees that bloom at different times from early spring until autumn.\n\nHowever, the idea is not without critics. Some ecologists warn that keeping too many honeybees in one place can harm wild pollinators such as bumblebees and solitary bees, which compete for the same flowers. 'Honeybees are not endangered,' says biologist Elena Marsh. 'Many wild species are. Placing a hive on every roof may feel like helping nature, but it can actually make things worse.' She suggests that city authorities should focus on planting more flowers and leaving some grass uncut instead of promoting new hives.\n\nBeekeepers answer that their work has other benefits. Hives on school roofs give pupils a chance to observe nature at close range, and some companies use the honey as a gift for clients, which improves their image. There are practical concerns, too. Beginners are usually required to complete a course, register their hives and keep them at a safe distance from busy pavements. Stings are rare, because bees that are well looked after are calm and prefer to fly upwards, high above the heads of passers-by.\n\nWhatever one thinks about the debate, the story of urban bees shows how flexible nature can be. Cities, so often described as grey and lifeless, may turn out to be useful allies in protecting insects, provided that people plan carefully and listen to scientists as well as enthusiasts.\n\n(Tekst został wymyślony na potrzeby ćwiczenia; opisane badania i osoby są fikcyjne.)"
+  },
+  {
+   "id": "g-en-rczyt-02",
+   "instruction": "Przeczytaj tekst, z którego usunięto 7 zdań. Dla każdej luki wybierz literę (A–I) oznaczającą brakujące zdanie tak, aby otrzymać spójny i logiczny tekst. Uwaga: 2 zdania zostały podane dodatkowo i nie pasują do żadnej luki.",
+   "text": "Most of us do everything possible to avoid being bored. We take out our phones in queues, put on headphones on the bus and switch on the television the moment we get home. (1)___ Psychologists, however, are beginning to suggest that this habit may be costing us more than we realise.\n\nIn one small experiment, volunteers were asked to sit alone in a quiet room for fifteen minutes, with no phone, no book and nothing else to do. (2)___ Many admitted afterwards that the time had felt much longer than it really was. Yet when the same people were later tested on creative tasks, those who had been bored for a while came up with more original ideas than those who had spent the same time on a simple, undemanding activity.\n\nResearchers explain this result in the following way. (3)___ It starts to wander, connecting memories and facts that normally remain separate, and this is exactly how new ideas are born. Constant entertainment, on the other hand, keeps the mind busy with other people's content and leaves it no room for its own.\n\nChildren are an interesting case. (4)___ Teachers report that pupils who are given a few minutes of free time between tasks often return to work more focused. Parents, meanwhile, are often tempted to fill every free hour with lessons and activities, which can make it harder for a child to learn how to entertain themselves.\n\nThis does not mean that we should switch off all our devices for good. (5)___ The problem begins when we use them automatically, without noticing, simply to avoid an empty moment. A better approach is to choose some small times in the day, such as a walk to school or a journey by train, and to leave the phone in the pocket.\n\n(6)___ After a few days, many people find that the discomfort disappears and is replaced by a feeling of calm. They also notice details around them that they had never seen before. (7)___ In a world that never stops offering something new to watch, learning to do nothing for a while may be one of the most valuable skills of all.\n\n(Tekst został wymyślony na potrzeby ćwiczenia.)",
+   "bank": [
+    "The first attempts may feel unpleasant, so it is worth being patient.",
+    "Silence and empty time have come to feel almost uncomfortable.",
+    "Boredom, it seems, is not an enemy to be defeated but a quiet teacher.",
+    "At first, the participants looked restless and kept checking their empty hands.",
+    "Some researchers disagree and claim that creativity cannot be measured at all.",
+    "Young children are usually quite good at inventing games out of nothing.",
+    "In a boring moment the mind is no longer given any task.",
+    "Phones and tablets are useful, and nobody needs to feel guilty about using them.",
+    "Boredom is also one of the most common reasons why teenagers give up their hobbies."
+   ]
+  }
+ ]
+}

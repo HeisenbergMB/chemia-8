@@ -50,6 +50,8 @@ Wzorzec testów: `docs/angielski-wzorzec-konkursu.md` (oficjalne arkusze Łódzk
   - [x] Etap szkolny, arkusz 1 (`s-en-sz-01`, wersja 1.14.1): 100 pytań w układzie i na poziomie oficjalnego arkusza 2023/24 (8 zadań, 60 min), działy: czytanie, gramatyka, słownictwo, Wielka Brytania i USA; karty teorii i fiszki bez odpowiedzi z arkusza
   - [x] Etap szkolny: 119 osobnych pytań ćwiczeniowych (wersja 1.14.3): 2 nowe teksty do czytania, gramatyka, słownictwo, kultura – quizy i powtórki działają przed arkuszem
   - [ ] Etap szkolny, kolejne arkusze
-  - [ ] Etap rejonowy (90 min; tekst z lukami, słowotwórstwo, tłumaczenie, święta UK/USA), etap wojewódzki (120 min; idiomy, wyrazy wieloznaczne, życiorysy)
+  - [x] Etap rejonowy, arkusz 1 (`s-en-rej-01`, wersja 1.14.5): 100 pytań w układzie arkusza 2025/26 (90 min, 8 zadań: TRUE/FALSE, tekst z brakującymi zdaniami, tekst z lukami, słowotwórstwo, przekształcanie zdań, synonimy, tłumaczenie, święta UK/USA); działy w module „Etap rejonowy”, karty i fiszki
+  - [ ] Etap rejonowy: osobne pytania ćwiczeniowe (dziś działy rejonowe mają tylko teorię, fiszki i arkusz) i kolejne arkusze
+  - [ ] Etap wojewódzki (120 min; idiomy, wyrazy wieloznaczne, życiorysy, zdania warunkowe mieszane, inwersja)
   - [x] Pytania z arkusza są ukryte w ćwiczeniach do pierwszego zatwierdzenia arkusza (`js/practice.js`). Skutek: w angielskim są teraz tylko teoria, fiszki i arkusz – quizy działów pojawią się po zatwierdzeniu arkusza 1 albo po dopisaniu osobnych pytań ćwiczeniowych
 - [ ] 5.4 Skille: `add-lesson` i fact-check per przedmiot; kontrola „jedna poprawna odpowiedź”, poziom, naturalność zdań

@@ -83,3 +83,11 @@ Całość napisana przeze mnie, bez drugiej pary oczu. Proszę o przejrzenie prz
 - **Poziom trudności**: tak jak w oficjalnym arkuszu szkolnym 2023/24 (struktury ponad podstawę), ale to moja ocena.
 - Typy odpowiedzi tekstowych mają samoocenę w przeglądzie arkusza; ewentualne brakujące warianty uczeń może uznać sam.
 - Pytania ćwiczeniowe (q-en-czyt-011…, q-en-gram-051…, q-en-slow-031…, q-en-kult-011…) też pisałem sam; dwa nowe teksty do czytania i ich dane są wymyślone. Pytania o UK/USA zawierają tylko fakty, które uważam za pewne (np. Snowdon – najwyższy szczyt Walii, Mur Hadriana zbudowali Rzymianie, Liberty Bell w Filadelfii).
+
+## Angielski (etap rejonowy, arkusz 1) – do sprawdzenia przez nauczyciela
+Też napisane przeze mnie bez drugiej pary oczu. Szczególnie:
+- **Zadanie z brakującymi zdaniami** (`rej-czytanie`, luki 1–7, bank A–I): sprawdzić, czy każde zdanie pasuje tylko do jednej luki (zbędne są E i I). Klucz: luka 1→B, 2→D, 3→G, 4→F, 5→H, 6→A, 7→C.
+- **Tekst z lukami** (`rej-gramatyka`): warianty odpowiedzi w lukach 2, 5, 7, 9, 10, 11 (np. around/across/round; but/than; that/if/whether). Jeśli klucz konkursu przyjmuje mniej wariantów, ograniczyć listy `answers`.
+- **Słowotwórstwo:** organisation/organization i behaviour/behavior przyjmuję w obu pisowniach.
+- **Święta i festiwale** (`rej-kultura`): daty i fakty (Remembrance Day 11 listopada, Martin Luther King Jr. Day – trzeci poniedziałek stycznia, Burns Night 25 stycznia, Dzień Świstaka 2 lutego) uważam za pewne, ale warto potwierdzić w literaturze konkursu.
+- Teksty i dane w zadaniach 1 i 2 są wymyślone i tak oznaczone.

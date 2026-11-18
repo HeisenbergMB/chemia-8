@@ -1,7 +1,7 @@
 # Powtórka 8
 
 Aplikacja PWA (czysty HTML/CSS/JS, bez bibliotek i bez backendu) do powtórek do sprawdzianów i konkursów w klasie 8.
-Obsługuje wiele przedmiotów: chemia (klasa 8) oraz angielski (konkurs kuratoryjny, woj. łódzkie: pełne arkusze etapu szkolnego; rejonowy i wojewódzki w planie – `ROADMAP.md`, Faza 5).
+Obsługuje wiele przedmiotów: chemia (klasa 8) oraz angielski (konkurs kuratoryjny, woj. łódzkie: pełne arkusze etapu szkolnego i rejonowego; wojewódzki w planie – `ROADMAP.md`, Faza 5).
 Działa offline, zapisuje postęp w `localStorage` (z eksportem/importem w Ustawieniach).
 
 ## Uruchomienie lokalnie
