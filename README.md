@@ -33,6 +33,19 @@ Nowy przedmiot = wpis w `subjects.json` + katalog `data/<id>/` z `curriculum.jso
 Przełączanie przedmiotu: menu boczne / ekran główny (`#/subject/<id>`). Data sprawdzianu i historia wyników są osobne dla każdego przedmiotu.
 Sprawdzian można losować z całości (`#/exam`) albo z modułu (`#/module/<id>/exam`).
 
+### Arkusze konkursowe (`<przedmiot>/sheets.json`, cecha `sheets`)
+Pełny test w układzie z konkursu: zadania jedno po drugim, wszystkie pytania zadania na jednej stronie, powroty i poprawki, czas liczony od startu.
+```
+{ "formats": [{ "id", "title", "minutes", "points" }],                      // etap: czas i suma punktów (100)
+  "sheets":  [{ "id": "s-en-…", "format", "title",
+                "tasks": [{ "kind", "group"?, "instruction"?, "items": ["q-en-…", …] }] }] }
+```
+Pytania i grupy leżą w paczkach działów, arkusz tylko ustawia je w kolejności z arkusza. Zadanie ma `group` (polecenie, tekst, bank) albo własne `instruction`.
+`kind` – rodzaj zadania z `TASK_KINDS` w `js/sheets.js` (opis wzorca: `docs/angielski-wzorzec-konkursu.md`). W arkuszu działają typy `choice`, `write`, `bank`
+(punkt za pytanie, `points` – inna punktacja). Kontrola sprawdza m.in.: suma punktów = `points` formatu, brak powtórzeń, zgodność grup, numery luk w tekście = pola `gap` pytań (`(0)` to przykład).
+Rozpoczęty arkusz zapisuje się sam (`draft` w `localStorage`) i przeżywa przeładowanie; czas płynie od startu także przy zamkniętej aplikacji. Po zakończeniu odpowiedzi są zablokowane;
+w przeglądzie uczeń może uznać własną poprawną odpowiedź (`write`), a dopiero „Zatwierdź wynik” zapisuje pytania do powtórek i wynik do historii.
+
 ### Zapis wzorów w tekstach
 Wzory wpisujemy między `$…$`: `$Ca(OH)2$`, `$Ca^2+$`, `$OH^-$`, `$2Na + 2H2O -> 2NaOH + H2↑$`.
 Cyfra po symbolu lub nawiasie staje się indeksem dolnym, `^2+` – górnym, `-H2O->` rysuje H₂O nad strzałką.

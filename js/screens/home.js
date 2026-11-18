@@ -3,7 +3,7 @@
 import { h } from '../dom.js';
 import { buildReview, topicStats } from '../leitner.js';
 import { withIcon } from '../icons.js';
-import { questionsInScope } from '../curriculum.js';
+import { questionsInScope, hasFeature } from '../curriculum.js';
 import { DATA, moduleById, topicNum } from '../data.js';
 import { progressBar, notFound, subjectSwitcher } from '../ui.js';
 import { countInfo, plDays } from '../countdown.js';
@@ -32,7 +32,7 @@ function home() {
           ]
         : [h('h1', null, 'Powtórka')],
       h('p', { class: 'due' }, dueText),
-      h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: review.queue.length ? '#/review' : '#/review/extra', html: withIcon('play', review.queue.length ? 'Powtórka na dziś' : 'Ćwicz dodatkowo') }), h('a', { class: 'btn big secondary', href: '#/exam', html: withIcon('check', 'Sprawdzian próbny') })),
+      h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: review.queue.length ? '#/review' : '#/review/extra', html: withIcon('play', review.queue.length ? 'Powtórka na dziś' : 'Ćwicz dodatkowo') }), h('a', { class: 'btn big secondary', href: '#/exam', html: withIcon('check', 'Sprawdzian próbny') }), hasFeature(DATA.subject, 'sheets') ? h('a', { class: 'btn big secondary', href: '#/sheets', html: withIcon('list', 'Arkusze konkursowe') }) : null),
       h('div', { style: 'margin-top:1.25rem' }, progressBar(overall.mastered, overall.total, 'Postęp ogólny'))
     ),
     h(

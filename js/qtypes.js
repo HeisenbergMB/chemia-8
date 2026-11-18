@@ -9,6 +9,7 @@
 //   balanceReport– czy przy błędzie dołączamy raport bilansu zapisu użytkownika
 //   valueHtml(val)        – (opcjonalnie) odpowiedź użytkownika jako HTML; domyślnie zapis chemiczny
 //   plain         – true: odpowiedź to zwykły tekst (bez stylu wzoru chemicznego)
+//   sheet         – (opcjonalnie) typ dopuszczony w arkuszu konkursowym: { grade(q, raw), show(q, raw) } – ocena i podgląd odpowiedzi zapisanej w surowej postaci
 //   selfGrade     – true: przy błędzie uczeń może uznać swoją odpowiedź za poprawną (klucz nie przewiduje wszystkich wariantów)
 //   correctHtml(q)        – poprawna odpowiedź jako HTML
 //   validate(q, v)        – kontrola danych; v.err(msg), v.text(tekst, etykieta, { balance })
@@ -44,6 +45,10 @@ function balancedOrErr(v, label, str) {
 export const QTYPES = {
   choice: {
     typed: false,
+    sheet: {
+      grade: (q, raw) => raw === q.answer, // raw = indeks odpowiedzi w q.options (w arkuszu kolejność nie jest mieszana)
+      show: (q, raw) => (Number.isInteger(raw) && q.options[raw] != null ? `${letterOf(raw)} – ${richText(q.options[raw])}` : ''),
+    },
     correctHtml: (q) => richText(q.options[q.answer]),
     validate(q, v) {
       if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 5) return v.err('options: 2–5 odpowiedzi');
@@ -202,6 +207,7 @@ export const QTYPES = {
     selfGrade: true,
     plain: true,
     valueHtml: (val) => escapeHtml(val),
+    sheet: { grade: (q, raw) => typeof raw === 'string' && matchesAnswer(raw, q.answers), show: (q, raw) => escapeHtml(raw || '') },
     correctHtml: (q) => q.answers.map(escapeHtml).join(' / '),
     validate(q, v) {
       if (!Array.isArray(q.answers) || !q.answers.length || q.answers.some((a) => typeof a !== 'string' || !a.trim())) return v.err('write: answers – niepusta lista odpowiedzi (tekst)');
@@ -242,6 +248,13 @@ export const QTYPES = {
     balanceReport: false,
     plain: true,
     valueHtml: (val) => escapeHtml(val),
+    sheet: {
+      grade: (q, raw) => raw === q.answer, // raw = indeks w banku grupy
+      show(q, raw) {
+        const g = groupById(q.group);
+        return Number.isInteger(raw) && g && g.bank && g.bank[raw] != null ? `${letterOf(raw)} – ${escapeHtml(g.bank[raw])}` : '';
+      },
+    },
     correctHtml(q) {
       const g = groupById(q.group);
       return g && g.bank ? `${letterOf(q.answer)} – ${escapeHtml(g.bank[q.answer])}` : letterOf(q.answer);
@@ -291,6 +304,8 @@ export const QTYPES = {
 };
 
 export const TYPES = Object.keys(QTYPES);
+/** Typy dopuszczone w arkuszu konkursowym (mają `sheet`). */
+export const SHEET_TYPES = TYPES.filter((t) => QTYPES[t].sheet);
 export const TYPED_TYPES = TYPES.filter((t) => QTYPES[t].typed);
 
 /** Odpowiedź użytkownika jako HTML (domyślnie zapis chemiczny). */

@@ -25,7 +25,9 @@
       "desc": "Konkurs kuratoryjny: etap szkolny, rejonowy i wojewódzki.",
       "icon": "book",
       "status": "soon",
-      "features": [],
+      "features": [
+        "sheets"
+      ],
       "types": [
         "choice",
         "match",

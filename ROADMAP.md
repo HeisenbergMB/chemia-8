@@ -44,6 +44,7 @@ Wzorzec testów: `docs/angielski-wzorzec-konkursu.md` (oficjalne arkusze Łódzk
 - [x] 5.1 Silnik zadań konkursowych (wersja 1.12.0): typ `write` (luki, słowotwórstwo, przekształcanie, tłumaczenie – jawne listy odpowiedzi, `keyword`, `maxWords`, normalizacja jak w kluczach), typ `bank` (litery A–I), `choice` ze stałą kolejnością (TRUE/FALSE), grupy zadań z tekstem (`groups`), samoocena w ćwiczeniach, `types` i `idTag` per przedmiot, tekst bez wzorów dla przedmiotów bez cechy `chem`
   - Odłożone do 5.2: samoocena w trybie sprawdzianu (wynik liczy się na końcu, więc wymaga zmiany podsumowania), losowanie całych grup w sprawdzianie, symulacja sprawdzianu w `check-data` dopasowana do przedmiotu (dziś wymaga ≥4 pytań innych niż wybór)
   - Odłożone do 5.3 (razem z treścią): fiszki z przykładowym zdaniem i wymową
-- [ ] 5.2 Format testu: szablony arkuszy per etap (czas 60/90/120 min, 100 pkt, sekcje z repertuaru), tryb „cały arkusz” z licznikiem czasu
+- [x] 5.2 Arkusze konkursowe (wersja 1.13.0): `sheets.json` (formaty: czas i 100 pkt; arkusze: zadania z grup i pytań), kontrola zgodności z papierem, tryb „cały arkusz” (strony zadań, timer z zegara, szkic w store – schema v4, wznowienie po przeładowaniu, przegląd z kluczem i samooceną, zatwierdzenie do powtórek), historia wyników osobno per przedmiot i zakres
+  - Poza zakresem (świadomie): losowe składanie arkuszy – arkusze są pisane ręcznie w 5.3, bo mają odwzorować układ papierowy; zadania wymagające typów `match`/`blocks` w arkuszu
 - [ ] 5.3 Treść: etap szkolny → rejonowy (pełne arkusze własne) → wojewódzki
 - [ ] 5.4 Skille: `add-lesson` i fact-check per przedmiot; kontrola „jedna poprawna odpowiedź”, poziom, naturalność zdań

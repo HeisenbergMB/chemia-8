@@ -1,7 +1,7 @@
 // Postęp w localStorage + eksport/import + prośba o trwały zapis
 
 const KEY = 'chemia8.v1'; // klucz localStorage – NIE zmieniaj (stracisz postęp); wersję danych oznacza pole `version`
-export const SCHEMA_VERSION = 3;
+export const SCHEMA_VERSION = 4;
 export const DEFAULT_SUBJECT = 'chemia';
 
 // Migracje: MIGRATIONS[n] zamienia stan w wersji n na wersję n+1 (czysta funkcja, zwraca nowy obiekt).
@@ -18,6 +18,8 @@ export const MIGRATIONS = {
       exams: (s.exams || []).map((e) => ({ subject: DEFAULT_SUBJECT, ...e })),
     };
   },
+  // 3 -> 4: rozpoczęty arkusz konkursowy (draft) przeżywa przeładowanie strony
+  3: (s) => ({ ...s, draft: null }),
 };
 
 const defaults = () => ({
@@ -26,6 +28,7 @@ const defaults = () => ({
   cards: {}, // id pytania -> { box, due, seen, ok, bad, last }
   flash: {}, // id fiszki -> true (umiem)
   exams: [], // wyniki trybu sprawdzian: { t, subject, scope, … }
+  draft: null, // rozpoczęty arkusz: { subject, sheet, startedAt, finishedAt, task, answers: {id pytania: odpowiedź}, overrides: {id: true} }
 });
 
 let memoryOnly = false;
@@ -72,6 +75,7 @@ export function normalize(raw) {
     cards: obj.cards || {},
     flash: obj.flash || {},
     exams: obj.exams || [],
+    draft: obj.draft || null,
   };
 }
 
@@ -98,6 +102,17 @@ export function update(fn) {
 // Identyfikator pliku z postępem. Starsze eksporty (z czasów samej chemii) mają 'chemia-8' – nadal je przyjmujemy.
 const EXPORT_APP = 'powtorka-8';
 const IMPORT_APPS = [EXPORT_APP, 'chemia-8'];
+
+const EXAMS_PER_SCOPE = 30;
+
+/** Dopisuje wynik sprawdzianu/arkusza; historia jest ograniczona osobno dla każdego przedmiotu i zakresu (nie wypiera innych). */
+export function addExamResult(result) {
+  update((s) => {
+    const key = (e) => `${e.subject}|${e.scope || ''}`;
+    const same = [...s.exams.filter((e) => key(e) === key(result)), result].slice(-EXAMS_PER_SCOPE);
+    s.exams = [...s.exams.filter((e) => key(e) !== key(result)), ...same].sort((a, b) => a.t - b.t);
+  });
+}
 
 export function exportJson() {
   return JSON.stringify({ app: EXPORT_APP, exportedAt: new Date().toISOString(), data: state }, null, 2);

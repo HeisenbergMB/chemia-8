@@ -23,6 +23,7 @@ Liczba zadań, kolejność i podział punktów zmieniają się co roku:
 Stałe jest **repertuar typów zadań**. Test w aplikacji = lista sekcji z tego repertuaru, a układ wybiera szablon (rok wzorcowy).
 
 ## Repertuar typów zadań
+Kody poniżej to `TASK_KINDS` w `js/sheets.js` (tam jest źródło prawdy; tabela opisuje je i ich zastosowanie).
 | Kod | Zadanie | Etapy | Sprawdzanie |
 |---|---|---|---|
 | `tf` | Tekst + zdania PRAWDA/FAŁSZ | S R W | jedna odpowiedź |

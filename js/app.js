@@ -19,6 +19,7 @@ import { routes as labRoutes } from './lab.js';
 import { routes as indicatorRoutes } from './indicators.js';
 import { routes as solubilityRoutes } from './solubility.js';
 import { routes as valenceRoutes } from './valence.js';
+import { routes as sheetRoutes } from './screens/sheets.js';
 
 const main = document.getElementById('main');
 const side = document.getElementById('side');
@@ -46,8 +47,8 @@ function subjectScreen(id) {
 
 /** Trasy dostępne zawsze. Nowy ekran = nowy plik z `routes` + jedna linia tutaj. */
 const coreRoutes = [...homeRoutes, ...topicRoutes, ...reviewRoutes, ...examRoutes, [/^#\/subject\/([\w-]+)$/, subjectScreen], [/^#\/settings$/, settingsScreen]];
-/** Trasy włączane cechą przedmiotu (`features` w data/subjects.json): chemia → laboratorium, wskaźniki, tabela rozpuszczalności, wartościowość. */
-const featureRoutes = { chem: [...labRoutes, ...indicatorRoutes, ...solubilityRoutes, ...valenceRoutes] };
+/** Trasy włączane cechą przedmiotu (`features` w data/subjects.json): chem → laboratorium, wskaźniki, tabela rozpuszczalności, wartościowość; sheets → arkusze konkursowe. */
+const featureRoutes = { chem: [...labRoutes, ...indicatorRoutes, ...solubilityRoutes, ...valenceRoutes], sheets: sheetRoutes };
 
 /** Wszystkie trasy (test tras sprawdza je pod kątem zasłaniania). */
 export const routes = [...coreRoutes, ...Object.values(featureRoutes).flat()];
@@ -118,6 +119,7 @@ function renderSide(hash) {
       }),
     ]),
     h('h2', { style: 'margin-top:1rem' }, 'Inne'),
+    ...(hasFeature(DATA.subject, 'sheets') ? [h('a', { href: '#/sheets', 'aria-current': /^#\/sheets?(\/|$)/.test(hash) ? 'page' : null }, h('span', { class: 'num', html: icons.list }), h('span', null, 'Arkusze konkursowe'))] : []),
     h('a', { href: '#/exam', 'aria-current': hash.startsWith('#/exam') ? 'page' : null }, h('span', { class: 'num', html: icons.check }), h('span', null, 'Sprawdzian próbny')),
     h('a', { href: '#/settings', 'aria-current': hash === '#/settings' ? 'page' : null }, h('span', { class: 'num', html: icons.gear }), h('span', null, 'Ustawienia'))
   );

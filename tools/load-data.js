@@ -3,11 +3,11 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { DEFAULT_SUBJECT, SUBJECTS_PATH, activeSubjects, curriculumPath, topicPackPath, packTopics, assemble } from '../js/curriculum.js';
+import { DEFAULT_SUBJECT, SUBJECTS_PATH, activeSubjects, curriculumPath, subjectPath, topicPackPath, packTopics, assemble } from '../js/curriculum.js';
 
 export const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
-/** Dane jednego przedmiotu. Zwraca { curriculum, packs, data, problems } – problems to błędy wczytywania (brak pliku, zły JSON). */
+/** Dane jednego przedmiotu. Zwraca { curriculum, packs, data, sheets, problems } – problems to błędy wczytywania (brak pliku, zły JSON). */
 export function loadData(subjectId = DEFAULT_SUBJECT) {
   const problems = [];
   const readJson = (rel) => {
@@ -27,7 +27,9 @@ export function loadData(subjectId = DEFAULT_SUBJECT) {
     }
   } else if (curriculum) problems.push(`${curriculumPath(subjectId)}: brak tablicy modules`);
   const data = curriculum && Array.isArray(curriculum.modules) ? assemble(curriculum, packs) : null;
-  return { curriculum, packs, data, problems };
+  const sheetsPath = subjectPath(subjectId, 'sheets.json');
+  const sheets = existsSync(join(root, sheetsPath)) ? readJson(sheetsPath) : null; // opcjonalne (cecha „sheets”)
+  return { curriculum, packs, data, sheets, problems };
 }
 
 /** Lista przedmiotów z data/subjects.json: { subjects, active, problems }. */

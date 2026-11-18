@@ -10,6 +10,7 @@ import { staleFiles } from './build.js';
 import { loadData, loadSubjects } from './load-data.js';
 import { questionsInScope, subjectPath, hasFeature } from '../js/curriculum.js';
 import { QTYPES } from '../js/qtypes.js';
+import { validateSheets } from '../js/sheets.js';
 import { readLock, diffLock, currentIds } from './lock-ids.js';
 import { parseEquation, parseSpecies, parseFormula, checkBalance, extractFormulaSegments } from '../js/chem.js';
 
@@ -298,6 +299,16 @@ function checkSubject(subject) {
   }
   for (const t of theory ? theory.topics : []) for (const tool of t.tools || []) if (!/^#\//.test(tool.href || '') || !tool.label) err(`topic ${t.id}`, 'tools: potrzebne href (#/…) i label');
 
+  // ---------- arkusze konkursowe (cecha „sheets”) ----------
+  if (hasFeature(subject, 'sheets')) {
+    if (!loaded.sheets) err(`${subject.id}/sheets.json`, 'brak pliku (przedmiot ma cechę „sheets”)');
+    else {
+      const sheetIdRe = new RegExp(`^s-${subject.idTag}-`);
+      for (const sh of loaded.sheets.sheets || []) if (subject.idTag && !sheetIdRe.test(sh.id || '')) err(`sheet ${sh.id}`, `id przedmiotu ${subject.id} musi mieć postać s-${subject.idTag}-…`);
+      validateSheets(loaded.sheets, { byId: new Map(questions.map((q) => [q.id, q])), groups: groupsById, uniqueId }, (where, msg) => err(where, msg));
+    }
+  } else if (loaded.sheets) err(`${subject.id}/sheets.json`, 'plik jest, ale przedmiot nie ma cechy „sheets”');
+
   // ---------- losowanie sprawdzianu z modułu ----------
   if (theory) {
     for (const m of theory.modules) {
@@ -325,7 +336,7 @@ function checkSubject(subject) {
       if (topics.size < Math.min(activeTopics.size, EXAM_SIZE)) { err(w, `za mało działów (${topics.size} z ${activeTopics.size})`); break; }
       minTyped = Math.min(minTyped, ex.filter((q) => q.type !== 'choice').length);
     }
-    if (Number.isFinite(minTyped) && minTyped < 4) err('sprawdzian', `za mało pytań innych typów niż wybór (min. ${minTyped} w próbie)`);
+    if (chem && Number.isFinite(minTyped) && minTyped < 4) err('sprawdzian', `za mało pytań innych typów niż wybór (min. ${minTyped} w próbie)`);
     else console.log(`Losowanie sprawdzianu OK (300 prób, min. ${minTyped} pytań innych typów niż wybór).`);
   }
 

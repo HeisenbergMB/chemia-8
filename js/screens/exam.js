@@ -5,7 +5,7 @@ import * as store from '../store.js';
 import { runQuiz } from '../quiz.js';
 import { withIcon } from '../icons.js';
 import { buildExam, EXAM_SIZE } from '../exam.js';
-import { questionsInScope, DEFAULT_SUBJECT } from '../curriculum.js';
+import { questionsInScope, DEFAULT_SUBJECT, hasFeature } from '../curriculum.js';
 import { DATA, topicById, moduleById } from '../data.js';
 import { notFound } from '../ui.js';
 
@@ -26,7 +26,7 @@ function examIntro(moduleId) {
     h(
       'section',
       { class: 'card' },
-      h('p', null, `${EXAM_SIZE} losowych pytań ${mod ? 'z tego modułu' : 'z całego zakresu'}, w różnych formach: wybór, wzory, równania, klocki i dopasowywanie.`),
+      h('p', null, `${EXAM_SIZE} losowych pytań ${mod ? 'z tego modułu' : 'z całego zakresu'}, w różnych formach${hasFeature(DATA.subject, 'chem') ? ': wybór, wzory, równania, klocki i dopasowywanie' : ''}.`),
       h('ul', { class: 'rules' }, h('li', null, 'Bez podpowiedzi.'), h('li', null, 'Bez informacji o poprawności w trakcie – wynik i błędy zobaczysz na końcu.'), h('li', null, 'Błędne pytania trafią do powtórek (Leitner).')),
       h('p', { class: 'muted' }, `Zakres: ${topics.map((t) => t.title).join(', ')}.`),
       h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: runHref, html: withIcon('play', 'Zacznij sprawdzian') }))
@@ -60,7 +60,7 @@ function examRun(moduleId) {
       topicTitle,
       onRestart: start,
       onRetryMissed: retry,
-      onFinish: (r) => store.update((s) => { s.exams = [...(s.exams || []), { t: Date.now(), subject: DATA.subject.id, scope: moduleId || null, ...r }].slice(-30); }),
+      onFinish: (r) => store.addExamResult({ t: Date.now(), subject: DATA.subject.id, scope: moduleId || null, ...r }),
     });
   };
   const retry = (list) => runQuiz(root, list, { title: 'Powtórka błędów', backHref: examHref, onRetryMissed: retry });

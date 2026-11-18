@@ -499,6 +499,31 @@ input[type="date"], input[type="text"], input[type="file"] {
   .qa-layout .group { position: sticky; top: calc(4.5rem + env(safe-area-inset-top)); max-height: calc(100dvh - 6rem); overflow-y: auto; margin: 0; }
 }
 
+/* arkusz konkursowy */
+.sheet-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; align-items: baseline; margin-bottom: 0.6rem; }
+.sheet-meta { display: flex; gap: 1rem; align-items: baseline; }
+.timer { font-variant-numeric: tabular-nums; font-size: 1.35rem; font-weight: 600; color: var(--primary); }
+.sheet-nav { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1rem; }
+.chip-btn { min-width: 2.6rem; min-height: 2.6rem; padding: 0 0.6rem; font: inherit; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; cursor: pointer; }
+.chip-btn.done { border-color: var(--primary-line); color: var(--primary); }
+.chip-btn[aria-current="step"] { background: var(--primary-soft); border-color: var(--primary); color: var(--primary); }
+.task-title { font-size: 1.1rem; margin: 0 0 0.4rem; }
+.bank { margin: 0.6rem 0 0; padding-left: 1.6rem; }
+.sheet-items, .review-items { margin: 0; padding: 0; list-style: none; }
+.sheet-item, .review-item { padding: 0.8rem 0; border-top: 1px solid var(--line); }
+.sheet-item:first-child, .review-item:first-child { border-top: 0; }
+.sheet-item .no, .review-item .no { font-weight: 600; color: var(--muted); margin-right: 0.45rem; }
+.picks { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.4rem; }
+.pick { min-width: 2.8rem; min-height: 2.8rem; padding: 0 0.7rem; font: inherit; font-weight: 600; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; cursor: pointer; }
+.pick.wide { min-width: 6rem; }
+.pick.picked, .option.picked { background: var(--primary-soft); border-color: var(--primary); color: var(--primary); }
+.sheet-foot { margin-top: 1.25rem; }
+.confirm { margin-top: 1.25rem; border-color: var(--primary-line); }
+.review-task h3 { margin: 1.5rem 0 0.4rem; }
+.verdict-ok { color: var(--primary); font-weight: 600; }
+.verdict-bad { color: #ff8a80; font-weight: 600; }
+.task-list { padding-left: 1.4rem; }
+
 .kbd {
   position: sticky;
   bottom: 0;
