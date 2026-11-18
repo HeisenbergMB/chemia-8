@@ -1,0 +1,86 @@
+{
+ "cards": [
+  {
+   "id": "t-en-kult-01",
+   "title": "Zjednoczone Królestwo: kraje, stolice, święci",
+   "body": "UK to **England** (stolica London, patron St George), **Scotland** (Edinburgh, St Andrew), **Wales** (Cardiff, St David) i **Northern Ireland** (Belfast, St Patrick). Wielka Brytania (Great Britain) to wyspa z Anglią, Szkocją i Walią.\nFlaga **Union Jack** łączy krzyże św. Jerzego, św. Andrzeja i św. Patryka."
+  },
+  {
+   "id": "t-en-kult-02",
+   "title": "Święta i zwyczaje w UK i USA",
+   "body": "**UK:** Bonfire Night (Guy Fawkes Night) – 5 listopada; Boxing Day – 26 grudnia; Remembrance Day – 11 listopada.\n**USA:** Independence Day – 4 lipca; Halloween – 31 października; Memorial Day – ostatni poniedziałek maja; Labor Day – pierwszy poniedziałek września."
+  },
+  {
+   "id": "t-en-kult-03",
+   "title": "Znane miejsca w UK",
+   "body": "**Tower Bridge** (Londyn), **Loch Ness** (Szkocja), **Snowdon** – najwyższy szczyt Walii, **Windsor Castle**, **Hadrian's Wall** (mur rzymski na północy Anglii)."
+  },
+  {
+   "id": "t-en-kult-04",
+   "title": "Znane miejsca w USA",
+   "body": "**White House** i **Capitol** – Waszyngton, D.C.; **Empire State Building** – Nowy Jork; **Mount Rushmore** – Dakota Południowa; **Niagara Falls** – na granicy USA i Kanady; **Liberty Bell** – Filadelfia; **Grand Canyon** – Arizona."
+  }
+ ],
+ "flash": [
+  {
+   "id": "f-en-kult-01",
+   "front": "Stolica Walii",
+   "back": "Cardiff"
+  },
+  {
+   "id": "f-en-kult-02",
+   "front": "Stolica Irlandii Północnej",
+   "back": "Belfast"
+  },
+  {
+   "id": "f-en-kult-03",
+   "front": "Patron Anglii",
+   "back": "St George"
+  },
+  {
+   "id": "f-en-kult-04",
+   "front": "Patron Szkocji",
+   "back": "St Andrew"
+  },
+  {
+   "id": "f-en-kult-05",
+   "front": "Patron Walii",
+   "back": "St David"
+  },
+  {
+   "id": "f-en-kult-06",
+   "front": "Union Jack łączy krzyże świętych...",
+   "back": "Jerzego, Andrzeja i Patryka"
+  },
+  {
+   "id": "f-en-kult-07",
+   "front": "Guy Fawkes Night",
+   "back": "Bonfire Night, 5 listopada"
+  },
+  {
+   "id": "f-en-kult-08",
+   "front": "Independence Day (USA)",
+   "back": "Dzień Niepodległości, 4 lipca"
+  },
+  {
+   "id": "f-en-kult-09",
+   "front": "Boxing Day",
+   "back": "26 grudnia"
+  },
+  {
+   "id": "f-en-kult-10",
+   "front": "Najwyższy szczyt Walii",
+   "back": "Snowdon"
+  },
+  {
+   "id": "f-en-kult-11",
+   "front": "Mount Rushmore leży w stanie ...",
+   "back": "South Dakota (Dakota Południowa)"
+  },
+  {
+   "id": "f-en-kult-12",
+   "front": "Niagara Falls leży na granicy USA i ...",
+   "back": "Kanady"
+  }
+ ]
+}

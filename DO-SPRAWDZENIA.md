@@ -73,3 +73,12 @@ Cały dział jest z wiedzy ogólnej (zeszyt zawiera tylko wzory, nazwy i dysocja
 - Układ okresowy: litowce (1. grupa) i berylowce (2. grupa). W kartach celowo ograniczyłem się do Li, Na, K, Ca, Sr, Ba (zob. uwagi o Be i Mg wyżej).
 - Pytania o kation jako „atom, który oddał elektrony” (np. Na → Na⁺) – czy to jest w zakresie klasy 8?
 - Wzory wodorotlenków litu, magnezu, cynku, chromu(III) i żelaza(II) w pytaniach z klawiaturą są tylko ćwiczeniem na krzyż, nie dotyczą reakcji.
+
+
+## Angielski (etap szkolny, arkusz 1) – do sprawdzenia przez nauczyciela
+Całość napisana przeze mnie, bez drugiej pary oczu. Proszę o przejrzenie przez osobę znającą konkurs, zwłaszcza:
+- **Klucze z wieloma wariantami** (zadania otwarte): `data/angielski/topics/gramatyka/questions.json` – np. q-en-gram-004 (will/would ever be able to), q-en-gram-018 (because/as/since), q-en-gram-025 (must/may/might/could), q-en-gram-038 (zdanie bierne lub „What broke the window?”). Jeśli w oficjalnych kluczach przyjmuje się mniej lub więcej wariantów, dostosować listę `answers`.
+- **Pytania o UK/USA** (`topics/kultura`): zawierają tylko fakty, które uważam za pewne (Statua Wolności, Big Ben, Edynburg, Golden Gate, Hollywood, Stonehenge, Yellowstone, Giant's Causeway, Dzień Dziękczynienia, Lake District). Warto potwierdzić w literaturze konkursowej (Spotlight on Britain / the USA).
+- **Tekst z zadania I** i statystyki w nim są wymyślone (oznaczone w tekście).
+- **Poziom trudności**: tak jak w oficjalnym arkuszu szkolnym 2023/24 (struktury ponad podstawę), ale to moja ocena.
+- Typy odpowiedzi tekstowych mają samoocenę w przeglądzie arkusza; ewentualne brakujące warianty uczeń może uznać sam.

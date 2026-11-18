@@ -7,6 +7,7 @@ import { buildExtra, topicStats } from '../leitner.js';
 import { runQuiz } from '../quiz.js';
 import { TYPED_TYPES } from '../qtypes.js';
 import { withIcon } from '../icons.js';
+import { hasFeature } from '../curriculum.js';
 import { DATA, topicById, questionsOf } from '../data.js';
 import { progressBar, notFound } from '../ui.js';
 
@@ -38,7 +39,7 @@ function topicScreen(id) {
           return e ? h('a', { class: 'btn', href: `#/lab/${lid}`, html: withIcon('flask', `Laboratorium: ${e.title}`) }) : null;
         }),
         ...(t.tools || []).map((tool) => h('a', { class: 'btn', href: tool.href, html: withIcon(tool.icon, tool.label) })),
-        typedCount ? h('a', { class: 'btn', href: `#/quiz/${id}/zapis`, html: withIcon('pen', `Układanie zapisu (${typedCount})`) }) : null,
+        typedCount ? h('a', { class: 'btn', href: `#/quiz/${id}/zapis`, html: withIcon('pen', `${hasFeature(DATA.subject, 'chem') ? 'Układanie zapisu' : 'Odpowiedzi wpisywane'} (${typedCount})`) }) : null,
         h('a', { class: 'btn secondary', href: `#/quiz/${id}/all`, html: withIcon('list', `Wszystkie pytania (${qs.length})`) })
       )
     )

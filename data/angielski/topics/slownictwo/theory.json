@@ -1,0 +1,126 @@
+{
+ "cards": [
+  {
+   "id": "t-en-slow-01",
+   "title": "Litery podane w słowie: jak zgadywać",
+   "body": "Podane litery stoją na swoich miejscach, a każda kreska to jedna brakująca litera. Najpierw ustal z kontekstu **część mowy i znaczenie**, potem policz litery i dopasuj słowo.\nSprawdź pisownię – w arkuszu liczy się każda litera. Pamiętaj o niemych literach (knife, honest, receipt) i o brytyjskiej pisowni (colour, centre)."
+  },
+  {
+   "id": "t-en-slow-02",
+   "title": "Kolokacje: make, do, take, have, get",
+   "body": "**make** a decision, make friends, make progress, make a noise\n**do** homework, do the washing-up, do your best, do business\n**take** a photo, take a break, take part in, take place\n**have** a shower, have a good time, have a look\n**get** angry, get better, get a job\nCałe wyrażenie trzeba znać na pamięć – tłumaczenie słowo w słowo często zawodzi."
+  },
+  {
+   "id": "t-en-slow-03",
+   "title": "Przyimki po przymiotnikach i czasownikach",
+   "body": "keen **on**, famous **for**, capable **of**, similar **to**, responsible **for**, afraid **of**, fond **of**, different **from**, depend **on**, rely **on**, belong **to**, apologise **for**.\nPo przyimku następuje rzeczownik lub forma -ing."
+  },
+  {
+   "id": "t-en-slow-04",
+   "title": "Czasowniki frazowe",
+   "body": "Czasownik + przysłówek/przyimek zmienia znaczenie: **carry on** (kontynuować), **find out** (dowiedzieć się), **work out** (rozwiązać; ćwiczyć), **set off** (wyruszyć), **break down** (zepsuć się), **look up** (sprawdzić w słowniku), **take off** (wystartować; zdjąć).\nUczmy się ich całymi wyrażeniami i w zdaniach."
+  }
+ ],
+ "flash": [
+  {
+   "id": "f-en-slow-01",
+   "front": "keen on",
+   "back": "zainteresowany, chętny do (czegoś)"
+  },
+  {
+   "id": "f-en-slow-02",
+   "front": "famous for",
+   "back": "znany z (czegoś)"
+  },
+  {
+   "id": "f-en-slow-03",
+   "front": "depend on",
+   "back": "zależeć od"
+  },
+  {
+   "id": "f-en-slow-04",
+   "front": "rely on",
+   "back": "polegać na"
+  },
+  {
+   "id": "f-en-slow-05",
+   "front": "responsible for",
+   "back": "odpowiedzialny za"
+  },
+  {
+   "id": "f-en-slow-06",
+   "front": "similar to",
+   "back": "podobny do"
+  },
+  {
+   "id": "f-en-slow-07",
+   "front": "carry on",
+   "back": "kontynuować"
+  },
+  {
+   "id": "f-en-slow-08",
+   "front": "find out",
+   "back": "dowiedzieć się"
+  },
+  {
+   "id": "f-en-slow-09",
+   "front": "set off",
+   "back": "wyruszyć w drogę"
+  },
+  {
+   "id": "f-en-slow-10",
+   "front": "break down",
+   "back": "zepsuć się (o maszynie)"
+  },
+  {
+   "id": "f-en-slow-11",
+   "front": "look up (a word)",
+   "back": "sprawdzić (słowo w słowniku)"
+  },
+  {
+   "id": "f-en-slow-12",
+   "front": "make progress",
+   "back": "robić postępy"
+  },
+  {
+   "id": "f-en-slow-13",
+   "front": "take part in",
+   "back": "brać udział w"
+  },
+  {
+   "id": "f-en-slow-14",
+   "front": "take place",
+   "back": "odbywać się"
+  },
+  {
+   "id": "f-en-slow-15",
+   "front": "do your best",
+   "back": "starać się jak najlepiej"
+  },
+  {
+   "id": "f-en-slow-16",
+   "front": "have a look",
+   "back": "rzucić okiem"
+  },
+  {
+   "id": "f-en-slow-17",
+   "front": "get better",
+   "back": "poprawiać się, wyzdrowieć"
+  },
+  {
+   "id": "f-en-slow-18",
+   "front": "a lack of",
+   "back": "brak (czegoś)"
+  },
+  {
+   "id": "f-en-slow-19",
+   "front": "achieve",
+   "back": "osiągnąć"
+  },
+  {
+   "id": "f-en-slow-20",
+   "front": "improve",
+   "back": "poprawić (się)"
+  }
+ ]
+}

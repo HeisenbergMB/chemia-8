@@ -1,0 +1,112 @@
+{
+ "cards": [
+  {
+   "id": "t-en-gram-01",
+   "title": "Used to, would i be used to",
+   "body": "**used to + bezokolicznik** – dawny nawyk lub stan, już nieaktualny: My uncle used to smoke.\n**would + bezokolicznik** – dawny, powtarzający się zwyczaj (nie dla stanów): We would visit the lake every summer.\n**be / get used to + -ing** – przyzwyczajenie: I am used to working late.\nPytania i przeczenia: Did you use to...? I didn't use to...",
+   "tip": "Used to nie ma formy teraźniejszej – o dzisiejszym nawyku mówimy Present Simple."
+  },
+  {
+   "id": "t-en-gram-02",
+   "title": "Strona bierna we wszystkich czasach",
+   "body": "Budowa: **be + III forma czasownika**; czas wskazuje forma czasownika be.\n- Present Simple: The letters are sent every day.\n- Present Continuous: The road is being repaired.\n- Past Simple: The letter was sent yesterday.\n- Present Perfect: The letter has been sent.\n- Future Simple: The letter will be sent tomorrow.\nWykonawcę podajemy z by, gdy jest ważny: written by a student."
+  },
+  {
+   "id": "t-en-gram-03",
+   "title": "Mowa zależna",
+   "body": "Gdy przekazujemy cudze słowa w przeszłości, czasy **cofają się**: am/is → was, play → played, have played → had played, will → would.\n**Pytania zamknięte:** if / whether + szyk zdania twierdzącego (He asked if I was ready).\n**Pytania z wyrazem pytającym:** wyraz pytający + szyk twierdzący, bez do/did (She asked where I was going).\n**Polecenia:** told / asked + osoba + (not) to + bezokolicznik (He told me not to be late)."
+  },
+  {
+   "id": "t-en-gram-04",
+   "title": "II okres warunkowy",
+   "body": "Sytuacja nierealna lub mało prawdopodobna: **If + Past Simple, would + bezokolicznik**.\nIf she knew the answer, she would tell us.\nPo I/he/she/it można użyć were: If I were you, ...\nNigdy nie używamy would po if. W pytaniach: Would you be nervous if ...?"
+  },
+  {
+   "id": "t-en-gram-05",
+   "title": "Present Perfect Continuous i Future Continuous",
+   "body": "**have/has been + -ing** – czynność trwa od jakiegoś czasu do teraz albo widać jej skutek: He has been working since morning.\n**Present Perfect** – stany i wynik: She has known him for years.\n**will be + -ing** – będzie trwać w określonym momencie przyszłości: This time next week I will be lying on a beach."
+  },
+  {
+   "id": "t-en-gram-06",
+   "title": "Pytania o część zdania",
+   "body": "**Pytanie o podmiot** (kto, co wykonuje czynność) nie ma do/does/did: Who broke the cup?\n**Pytanie o dopełnienie** ma czasownik pomocniczy: What did he break?\nPrzyimek zwykle stoi na końcu: Who is Anna waiting for? (formalnie: For whom is Anna waiting?)\n**how many / how much / how often / how long / whose / which / what colour** – pytania o liczbę, częstotliwość, czas, właściciela, wybór, cechę."
+  },
+  {
+   "id": "t-en-gram-07",
+   "title": "Question tags",
+   "body": "Zdanie twierdzące → tag przeczący, zdanie przeczące → tag twierdzący; pomocniczy zgodny ze zdaniem głównym.\nYou are tired, aren't you? / You aren't tired, are you?\nHe can swim, can't he? / They went home, didn't they?\nPo **nobody, nothing, never, hardly** tag jest twierdzący (Nothing happened, did it?), a zaimkiem po nobody/somebody jest they."
+  },
+  {
+   "id": "t-en-gram-08",
+   "title": "Gerund czy bezokolicznik",
+   "body": "**-ing** po: enjoy, avoid, mind, finish, can't stand, look forward to, be good at, be interested in.\n**to + bezokolicznik** po: want, decide, hope, plan, manage, promise, refuse.\n**Bezokolicznik bez to** po: let, make, modal verbs (can, must, should).\nPrzykłady: enjoy swimming, decide to leave, let him go."
+  },
+  {
+   "id": "t-en-gram-09",
+   "title": "Zadanie ze słowem kluczowym",
+   "body": "W luce możesz wpisać **maksymalnie 5 wyrazów, wliczając podany wyraz**. Podane słowo **musi wystąpić w niezmienionej formie** (nie zamieniaj need na needn't).\nNajpierw ustal, jakiej struktury wymaga zdanie (strona bierna, mowa zależna, porównanie, tryb warunkowy), potem dopasuj słowo.\n**Przykład:** \"It is too cold to swim. (ENOUGH)\" → \"It isn't warm enough to swim.\""
+  }
+ ],
+ "flash": [
+  {
+   "id": "f-en-gram-01",
+   "front": "used to + ?",
+   "back": "bezokolicznik: dawny nawyk lub stan"
+  },
+  {
+   "id": "f-en-gram-02",
+   "front": "be used to + ?",
+   "back": "-ing lub rzeczownik: być przyzwyczajonym"
+  },
+  {
+   "id": "f-en-gram-03",
+   "front": "Strona bierna: Past Simple",
+   "back": "was/were + III forma"
+  },
+  {
+   "id": "f-en-gram-04",
+   "front": "Strona bierna: Present Perfect",
+   "back": "have/has + been + III forma"
+  },
+  {
+   "id": "f-en-gram-05",
+   "front": "Mowa zależna: will zmienia się w ...",
+   "back": "would"
+  },
+  {
+   "id": "f-en-gram-06",
+   "front": "II okres warunkowy: schemat",
+   "back": "If + Past Simple, would + bezokolicznik"
+  },
+  {
+   "id": "f-en-gram-07",
+   "front": "Present Perfect Continuous: budowa",
+   "back": "have/has + been + -ing"
+  },
+  {
+   "id": "f-en-gram-08",
+   "front": "Future Continuous: budowa",
+   "back": "will be + -ing"
+  },
+  {
+   "id": "f-en-gram-09",
+   "front": "Pytanie o podmiot: czy potrzebne did/does?",
+   "back": "Nie: Who broke the cup?"
+  },
+  {
+   "id": "f-en-gram-10",
+   "front": "Question tag do: You aren't tired, ...",
+   "back": "are you?"
+  },
+  {
+   "id": "f-en-gram-11",
+   "front": "enjoy / avoid / mind + ?",
+   "back": "forma -ing"
+  },
+  {
+   "id": "f-en-gram-12",
+   "front": "let / make + osoba + ?",
+   "back": "bezokolicznik bez to"
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 # Powtórka 8
 
 Aplikacja PWA (czysty HTML/CSS/JS, bez bibliotek i bez backendu) do powtórek do sprawdzianów i konkursów w klasie 8.
-Obsługuje wiele przedmiotów (dziś: chemia; w planie angielski – patrz `ROADMAP.md`, Faza 5).
+Obsługuje wiele przedmiotów: chemia (klasa 8) oraz angielski (konkurs kuratoryjny, woj. łódzkie: pełne arkusze etapu szkolnego; rejonowy i wojewódzki w planie – `ROADMAP.md`, Faza 5).
 Działa offline, zapisuje postęp w `localStorage` (z eksportem/importem w Ustawieniach).
 
 ## Uruchomienie lokalnie
@@ -63,7 +63,7 @@ Wspólne pola: `id` (unikalne), `type`, `level` (1–3), `q`, `explain`; opcjona
 - `match` – `pairs` (`[[lewa, prawa], …]`), `extra` (dodatkowe odpowiedzi-pułapki). Prawe strony muszą być unikalne.
 - `write` – odpowiedź wpisana jako zwykły tekst (luki, słowotwórstwo, przekształcanie zdań, tłumaczenie): `answers` – **jawna, płaska lista** akceptowanych odpowiedzi
   (warianty z klucza rozpisujemy ręcznie, np. `["mind if I turn up", "mind my turning up"]`); opcjonalnie `keyword` (wyraz kluczowy, musi wystąpić w każdej odpowiedzi
-  w niezmienionej formie) i `maxWords` (limit wyrazów; skrócenia `n't`, `'ll` liczą się osobno, jak w poleceniach konkursu).
+  w niezmienionej formie) i `maxWords` (limit wyrazów wliczając wyraz kluczowy, jak w poleceniach konkursu; skrócenie typu `hasn't` to jeden wyraz).
   Porównanie ignoruje wielkość liter, nadmiarowe spacje, końcową kropkę i apostrofy typograficzne (iPad); pisownia i łączniki są ścisłe.
   Przy błędzie uczeń widzi klucz i może uznać swoją odpowiedź za poprawną – dopiero wtedy wynik trafia do powtórek.
 - `bank` – wybór z banku odpowiedzi zadania (fragmenty A–I, osoby A–E): `group` (grupa z `bank`), `answer` (indeks w banku). Kolejność banku jest stała.

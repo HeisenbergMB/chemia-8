@@ -19,13 +19,10 @@ export function matchesAnswer(value, answers) {
   return v !== '' && answers.some((a) => normalizeAnswer(a) === v);
 }
 
-const CONTRACTION = /(n't|'ll|'ve|'re|'d|'m)\b/gi;
-
-/** Liczba wyrazów jak w poleceniu „maksymalnie pięć wyrazów, wliczając skrócone”: skrócenie (n't, 'll…) liczy się jako osobny wyraz. */
+/** Liczba wyrazów jak w poleceniu „maksymalnie pięć wyrazów, wliczając w to wyraz już podany”: skrócenie (hasn't) to jeden wyraz. */
 export function wordCount(s) {
   const t = normalizeAnswer(s);
-  if (!t) return 0;
-  return t.split(' ').length + (t.match(CONTRACTION) || []).length;
+  return t ? t.split(' ').length : 0;
 }
 
 /** Czy wyraz kluczowy występuje w odpowiedzi w niezmienionej formie (jako osobny wyraz). */

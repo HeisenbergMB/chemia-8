@@ -1,0 +1,142 @@
+[
+ {
+  "id": "q-en-czyt-001",
+  "type": "choice",
+  "level": 2,
+  "q": "Most of the teenagers questioned would rather read a printed book than an e-book.",
+  "group": "g-en-czyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "68 procent to wyraźna większość (\"almost seven in ten\") i tyle osób woli książkę papierową."
+ },
+ {
+  "id": "q-en-czyt-002",
+  "type": "choice",
+  "level": 1,
+  "q": "On average, the teenagers questioned read more than five books for pleasure a year.",
+  "group": "g-en-czyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Średnio czytają trzy książki rocznie (\"three books for pleasure every year\")."
+ },
+ {
+  "id": "q-en-czyt-003",
+  "type": "choice",
+  "level": 2,
+  "q": "Teenagers aged 13 and 14 are the group least interested in printed books.",
+  "group": "g-en-czyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "To właśnie najmłodsi najczęściej wybierają papier – 74 procent, czyli więcej niż średnio."
+ },
+ {
+  "id": "q-en-czyt-004",
+  "type": "choice",
+  "level": 2,
+  "q": "One of the teenagers says that reading on a phone makes it harder to concentrate.",
+  "group": "g-en-czyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Piętnastolatek mówi, że na telefonie co kilka minut sprawdza wiadomości, a papierowa książka go nie rozprasza."
+ },
+ {
+  "id": "q-en-czyt-005",
+  "type": "choice",
+  "level": 2,
+  "q": "More than half of the teenagers chose paper because a book does not send notifications.",
+  "group": "g-en-czyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Ten powód podało 52 procent, czyli więcej niż połowa."
+ },
+ {
+  "id": "q-en-czyt-006",
+  "type": "choice",
+  "level": 2,
+  "q": "E-books are mainly read at home in the evening.",
+  "group": "g-en-czyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Tekst mówi, że e-booki czyta się głównie w podróży (\"while travelling\")."
+ },
+ {
+  "id": "q-en-czyt-007",
+  "type": "choice",
+  "level": 2,
+  "q": "Audiobooks are less popular than e-books among the teenagers questioned.",
+  "group": "g-en-czyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Audiobooki słuchało 19 procent, a e-booki czytało 46 procent badanych."
+ },
+ {
+  "id": "q-en-czyt-008",
+  "type": "choice",
+  "level": 1,
+  "q": "Money is the obstacle to reading that teenagers mention most often.",
+  "group": "g-en-czyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Najczęstszą przeszkodą jest brak czasu (57 procent), a pieniądze to tylko 14 procent."
+ },
+ {
+  "id": "q-en-czyt-009",
+  "type": "choice",
+  "level": 2,
+  "q": "According to a librarian, many teenagers do not realise that joining a library is free.",
+  "group": "g-en-czyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Helen Brooks mówi, że nastolatkowie często zapominają, że zapisanie się do biblioteki nic nie kosztuje."
+ },
+ {
+  "id": "q-en-czyt-010",
+  "type": "choice",
+  "level": 1,
+  "q": "All students liked the idea of silent reading from the very beginning.",
+  "group": "g-en-czyt-01",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Dyrektor mówi, że na początku niektórzy uczniowie narzekali (\"some of them complained\")."
+ }
+]

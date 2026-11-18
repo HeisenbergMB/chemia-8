@@ -29,17 +29,17 @@ Kody poniżej to `TASK_KINDS` w `js/sheets.js` (tam jest źródło prawdy; tabel
 | `tf` | Tekst + zdania PRAWDA/FAŁSZ | S R W | jedna odpowiedź |
 | `choice-text` | Tekst + pytania A–D (też A–E, „który akapit”) | R W | jedna odpowiedź |
 | `gapped-text` | Tekst z usuniętymi fragmentami/zdaniami + 1–2 zbędne | R W | jedna odpowiedź |
-| `open-cloze` | Tekst z lukami, jedno słowo, bez skrótów (isn’t) | S R W | lista akceptowanych |
-| `first-letter` | Luki z podanymi literami i kreskami | S R | lista akceptowanych |
+| `open-cloze` | Jedno słowo, bez skrótów (isn’t). Etap szkolny: 15 osobnych zdań; rejonowy i wojewódzki: tekst z lukami | S R W | lista akceptowanych |
+| `first-letter` | Słowo z podanymi literami w różnych miejscach i kreskami za brakujące | S R | lista akceptowanych |
 | `brackets-form` | Wyrazy w nawiasach: zmień formę, można dodać słowa (czas, strona bierna…) | S | lista akceptowanych |
 | `word-formation` | Wyraz w nawiasie/na końcu zdania → forma pochodna | R W | lista akceptowanych |
-| `key-word` | Zdanie + wyraz kluczowy, luka do 5 wyrazów (nie zmieniać formy) | S R W | lista akceptowanych + wzór |
-| `mc-cloze` | Zdania z luką, wybór A–D | S R W | jedna odpowiedź |
-| `translation-choice` | Wybór poprawnego tłumaczenia zwrotu | S R | jedna odpowiedź |
+| `key-word` | Zdanie + wyraz kluczowy, w luce maks. 5 wyrazów **wliczając podany** (nie zmieniać formy) | S R W | lista akceptowanych |
+| `mc-cloze` | Zdania z luką, wybór A–D | R W | jedna odpowiedź |
+| `translation-choice` | Wybór poprawnego tłumaczenia zwrotu (3 odpowiedzi A–C) | S R | jedna odpowiedź |
 | `translation-write` | Przetłumacz fragment na angielski | W | lista akceptowanych |
 | `question-form` | Zadaj pytanie o podkreśloną część zdania | S | lista akceptowanych |
 | `synonym-replace` | Zwrot najlepiej zastępujący zaznaczony | R | jedna odpowiedź |
-| `culture` | Święta/dni UK i USA: uzupełnij nazwę, dopasuj, pytania | R | lista / jedna |
+| `culture` | Etap szkolny: 10 pytań o geografię i atrakcje UK/USA (3 odpowiedzi). Rejonowy: święta i dni UK/USA – uzupełnij nazwę, dopasuj | S R | lista / jedna |
 | `matching-people` | Teksty o osobach, przyporządkuj A–E (każdy wielokrotnie) | W | jedna odpowiedź |
 | `triple-gap` | Jedno słowo pasuje do 3 zdań (wieloznaczność) | W | lista akceptowanych |
 | `word-box` | Wyrazy z ramki w zmienionej formie, kilka zbędnych | W | lista akceptowanych |
@@ -57,4 +57,7 @@ S = szkolny, R = rejonowy, W = wojewódzki.
 ## Zasady oceniania z oficjalnego schematu
 - Przy zadaniach otwartych **każda poprawna odpowiedź spełniająca polecenie jest zaliczana**, także spoza modelu → aplikacja musi mieć listy akceptowanych odpowiedzi i możliwość samooceny.
 - Wymagana pełna poprawność ortograficzna; w lukach jednowyrazowych zakaz skróceń.
-- 1 punkt za poprawną odpowiedź (w `key-word` maks. 5 wyrazów w luce).
+- 1 punkt za poprawną odpowiedź. W `key-word` limit to pięć wyrazów, wliczając podany; skrócenie (hasn’t) to jeden wyraz.
+
+## Poziom
+Arkusze etapu szkolnego są trudniejsze niż podstawa programowa klasy 8: teksty z prasy (ok. 450–600 słów), struktury z listy „ponad podstawę” (used to, strona bierna, mowa zależna, pytania pośrednie, II okres warunkowy), słownictwo na poziomie B1+/B2 i pytania o UK/USA. Własne arkusze w aplikacji mają mieć ten sam poziom; teksty i dane w nich są wymyślone i tak oznaczone.

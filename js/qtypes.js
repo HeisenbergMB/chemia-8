@@ -215,7 +215,7 @@ export const QTYPES = {
       if (new Set(norm).size !== norm.length) v.err('write: powtórzone odpowiedzi w answers (po normalizacji)');
       if ('maxWords' in q && !(Number.isInteger(q.maxWords) && q.maxWords > 0)) v.err('write: maxWords musi być liczbą całkowitą > 0');
       for (const a of q.answers) {
-        if (q.maxWords && wordCount(a) > q.maxWords) v.err(`write: odpowiedź "${a}" ma ${wordCount(a)} wyrazów (max ${q.maxWords}, skrócenia liczą się osobno)`);
+        if (q.maxWords && wordCount(a) > q.maxWords) v.err(`write: odpowiedź "${a}" ma ${wordCount(a)} wyrazów (max ${q.maxWords}, wliczając wyraz kluczowy)`);
         if (q.keyword && !containsWord(a, q.keyword)) v.err(`write: odpowiedź "${a}" nie zawiera wyrazu kluczowego "${q.keyword}" w niezmienionej formie`);
       }
       if ('keyword' in q && (typeof q.keyword !== 'string' || !q.keyword.trim())) v.err('write: keyword musi być niepustym tekstem');

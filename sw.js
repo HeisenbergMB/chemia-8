@@ -1,7 +1,7 @@
 // Service worker: pełna praca offline. Przy zmianie plików podnieś VERSION –
 // stary cache zostanie usunięty przy aktywacji.
 // VERSION i ASSETS są GENEROWANE (npm run build) – wersję zmieniaj w package.json (npm run bump).
-const VERSION = '1.13.0';
+const VERSION = '1.14.1';
 const CACHE = `chemia8-${VERSION}`;
 
 const ASSETS = [
@@ -44,6 +44,16 @@ const ASSETS = [
   'js/ui.js',
   'js/valence.js',
   'js/version.js',
+  'data/angielski/curriculum.json',
+  'data/angielski/sheets.json',
+  'data/angielski/topics/czytanie/questions.json',
+  'data/angielski/topics/czytanie/theory.json',
+  'data/angielski/topics/gramatyka/questions.json',
+  'data/angielski/topics/gramatyka/theory.json',
+  'data/angielski/topics/kultura/questions.json',
+  'data/angielski/topics/kultura/theory.json',
+  'data/angielski/topics/slownictwo/questions.json',
+  'data/angielski/topics/slownictwo/theory.json',
   'data/chemia/curriculum.json',
   'data/chemia/equations.json',
   'data/chemia/experiments.json',

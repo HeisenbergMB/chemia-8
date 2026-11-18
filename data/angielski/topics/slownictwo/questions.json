@@ -1,0 +1,348 @@
+[
+ {
+  "id": "q-en-slow-001",
+  "type": "choice",
+  "level": 1,
+  "q": "(Jak długo) ___ have you lived in this city?",
+  "options": [
+   "How long",
+   "How much time",
+   "How many times"
+  ],
+  "answer": 0,
+  "explain": "Pytanie o czas trwania: How long have you lived ...?"
+ },
+ {
+  "id": "q-en-slow-002",
+  "type": "choice",
+  "level": 2,
+  "q": "She (zrezygnowała z) ___ her job last month.",
+  "options": [
+   "gave in",
+   "gave out",
+   "gave up"
+  ],
+  "answer": 2,
+  "explain": "Czasownik frazowy give up = zrezygnować, poddać się."
+ },
+ {
+  "id": "q-en-slow-003",
+  "type": "choice",
+  "level": 2,
+  "q": "We (nie mamy już) ___ milk. Let's buy some.",
+  "options": [
+   "have run out",
+   "have run out of",
+   "are running away"
+  ],
+  "answer": 1,
+  "explain": "Run out of = zabraknąć czegoś; po run out stoi of + rzeczownik."
+ },
+ {
+  "id": "q-en-slow-004",
+  "type": "choice",
+  "level": 2,
+  "q": "I (nie znoszę) ___ waiting in queues.",
+  "options": [
+   "am not standing",
+   "can't stand",
+   "don't stand to"
+  ],
+  "answer": 1,
+  "explain": "Can't stand + -ing = nie znosić."
+ },
+ {
+  "id": "q-en-slow-005",
+  "type": "choice",
+  "level": 2,
+  "q": "She (wpadła na) ___ her old teacher in the supermarket.",
+  "options": [
+   "bumped into",
+   "bumped on",
+   "bumped at"
+  ],
+  "answer": 0,
+  "explain": "Bump into = przypadkiem kogoś spotkać."
+ },
+ {
+  "id": "q-en-slow-006",
+  "type": "choice",
+  "level": 3,
+  "q": "My dad (kazał mi) ___ the dishes.",
+  "options": [
+   "made me to wash",
+   "made me washing",
+   "made me wash"
+  ],
+  "answer": 2,
+  "explain": "Make + osoba + bezokolicznik bez to: made me wash."
+ },
+ {
+  "id": "q-en-slow-007",
+  "type": "choice",
+  "level": 2,
+  "q": "She (jest uzależniona od) ___ her phone.",
+  "options": [
+   "is addicted of",
+   "is addicted with",
+   "is addicted to"
+  ],
+  "answer": 2,
+  "explain": "Be addicted to + rzeczownik."
+ },
+ {
+  "id": "q-en-slow-008",
+  "type": "choice",
+  "level": 2,
+  "q": "(Chociaż) ___ it was raining, we went for a walk.",
+  "options": [
+   "Despite",
+   "Although",
+   "In spite"
+  ],
+  "answer": 1,
+  "explain": "Although + zdanie; despite i in spite of wymagają rzeczownika lub -ing."
+ },
+ {
+  "id": "q-en-slow-009",
+  "type": "choice",
+  "level": 3,
+  "q": "He (nie powinien był być) ___ so rude.",
+  "options": [
+   "shouldn't have been",
+   "shouldn't have be",
+   "hasn't should been"
+  ],
+  "answer": 0,
+  "explain": "Zarzut o przeszłości: shouldn't have been + przymiotnik."
+ },
+ {
+  "id": "q-en-slow-010",
+  "type": "choice",
+  "level": 1,
+  "q": "This is the (najgorszy) ___ film I have ever seen.",
+  "options": [
+   "worst",
+   "baddest",
+   "most bad"
+  ],
+  "answer": 0,
+  "explain": "Nieregularny stopień najwyższy: bad – worse – the worst."
+ },
+ {
+  "id": "q-en-slow-011",
+  "type": "choice",
+  "level": 3,
+  "q": "My parents (pozwalają mi) ___ stay out late at weekends.",
+  "options": [
+   "allow me",
+   "suggest me",
+   "let me"
+  ],
+  "answer": 2,
+  "explain": "Let + osoba + bezokolicznik bez to; allow wymaga to."
+ },
+ {
+  "id": "q-en-slow-012",
+  "type": "choice",
+  "level": 2,
+  "q": "I am not (przyzwyczajony do) ___ cold weather.",
+  "options": [
+   "use to",
+   "used to",
+   "used of"
+  ],
+  "answer": 1,
+  "explain": "Be used to + rzeczownik/-ing = być przyzwyczajonym."
+ },
+ {
+  "id": "q-en-slow-013",
+  "type": "choice",
+  "level": 1,
+  "q": "(Ile) ___ cheese do we need?",
+  "options": [
+   "How many",
+   "How much",
+   "How long"
+  ],
+  "answer": 1,
+  "explain": "Cheese jest niepoliczalne: How much."
+ },
+ {
+  "id": "q-en-slow-014",
+  "type": "choice",
+  "level": 2,
+  "q": "I will call you (jak tylko) ___ I arrive.",
+  "options": [
+   "as soon as",
+   "as long as",
+   "as well as"
+  ],
+  "answer": 0,
+  "explain": "As soon as = jak tylko."
+ },
+ {
+  "id": "q-en-slow-015",
+  "type": "choice",
+  "level": 1,
+  "q": "Don't worry (o) ___ the exam.",
+  "options": [
+   "for",
+   "of",
+   "about"
+  ],
+  "answer": 2,
+  "explain": "Worry about = martwić się o."
+ },
+ {
+  "id": "q-en-slow-016",
+  "type": "write",
+  "level": 2,
+  "q": "Our n _ _ g _ _ _ _ _ s, who live next door, invited us for dinner.",
+  "answers": [
+   "neighbours",
+   "neighbors"
+  ],
+  "explain": "Neighbours – sąsiedzi (brytyjska pisownia)."
+ },
+ {
+  "id": "q-en-slow-017",
+  "type": "write",
+  "level": 2,
+  "q": "You need a pair of s _ _ s _ _ _ s to cut paper.",
+  "answers": [
+   "scissors"
+  ],
+  "explain": "Scissors – nożyczki (zawsze liczba mnoga)."
+ },
+ {
+  "id": "q-en-slow-018",
+  "type": "write",
+  "level": 2,
+  "q": "We heard t _ _ n _ _ r and saw lightning during the storm.",
+  "answers": [
+   "thunder"
+  ],
+  "explain": "Thunder – grzmot."
+ },
+ {
+  "id": "q-en-slow-019",
+  "type": "write",
+  "level": 3,
+  "q": "The more I read, the more k _ _ _ l _ _ _ e I have.",
+  "answers": [
+   "knowledge"
+  ],
+  "explain": "Knowledge – wiedza (nieme k na początku)."
+ },
+ {
+  "id": "q-en-slow-020",
+  "type": "write",
+  "level": 1,
+  "q": "You must show your p _ _ s _ _ _ t at the airport.",
+  "answers": [
+   "passport"
+  ],
+  "explain": "Passport – paszport."
+ },
+ {
+  "id": "q-en-slow-021",
+  "type": "write",
+  "level": 3,
+  "q": "Keep the r _ _ e _ _ t in case you want to return the shirt.",
+  "answers": [
+   "receipt"
+  ],
+  "explain": "Receipt – paragon (nieme p)."
+ },
+ {
+  "id": "q-en-slow-022",
+  "type": "write",
+  "level": 2,
+  "q": "Somebody called an a _ _ u _ _ _ _ e because the man was badly hurt.",
+  "answers": [
+   "ambulance"
+  ],
+  "explain": "Ambulance – karetka."
+ },
+ {
+  "id": "q-en-slow-023",
+  "type": "write",
+  "level": 2,
+  "q": "I bought some medicine at the p _ _ r _ _ _ y.",
+  "answers": [
+   "pharmacy"
+  ],
+  "explain": "Pharmacy – apteka."
+ },
+ {
+  "id": "q-en-slow-024",
+  "type": "write",
+  "level": 2,
+  "q": "The elephant was e _ _ r _ _ _ s – much bigger than I expected.",
+  "answers": [
+   "enormous"
+  ],
+  "explain": "Enormous – ogromny."
+ },
+ {
+  "id": "q-en-slow-025",
+  "type": "write",
+  "level": 2,
+  "q": "My sister's son is my n _ _ h _ _.",
+  "answers": [
+   "nephew"
+  ],
+  "explain": "Nephew – bratanek, siostrzeniec."
+ },
+ {
+  "id": "q-en-slow-026",
+  "type": "write",
+  "level": 2,
+  "q": "She wore a silver b _ _ c _ _ _ t on her wrist.",
+  "answers": [
+   "bracelet"
+  ],
+  "explain": "Bracelet – bransoletka."
+ },
+ {
+  "id": "q-en-slow-027",
+  "type": "write",
+  "level": 3,
+  "q": "After the marathon the runners were completely e _ _ a _ _ _ _ d.",
+  "answers": [
+   "exhausted"
+  ],
+  "explain": "Exhausted – wyczerpany."
+ },
+ {
+  "id": "q-en-slow-028",
+  "type": "write",
+  "level": 2,
+  "q": "Don't forget your l _ _ g _ _ e – you have two bags.",
+  "answers": [
+   "luggage"
+  ],
+  "explain": "Luggage – bagaż (niepoliczalne)."
+ },
+ {
+  "id": "q-en-slow-029",
+  "type": "write",
+  "level": 2,
+  "q": "This sofa is very c _ _ f _ _ _ _ _ _ e. I could sleep on it.",
+  "answers": [
+   "comfortable"
+  ],
+  "explain": "Comfortable – wygodny."
+ },
+ {
+  "id": "q-en-slow-030",
+  "type": "write",
+  "level": 3,
+  "q": "My grandfather is eighty and he has a lot of w _ _ n _ _ _ s on his face.",
+  "answers": [
+   "wrinkles"
+  ],
+  "explain": "Wrinkles – zmarszczki."
+ }
+]

@@ -46,5 +46,9 @@ Wzorzec testów: `docs/angielski-wzorzec-konkursu.md` (oficjalne arkusze Łódzk
   - Odłożone do 5.3 (razem z treścią): fiszki z przykładowym zdaniem i wymową
 - [x] 5.2 Arkusze konkursowe (wersja 1.13.0): `sheets.json` (formaty: czas i 100 pkt; arkusze: zadania z grup i pytań), kontrola zgodności z papierem, tryb „cały arkusz” (strony zadań, timer z zegara, szkic w store – schema v4, wznowienie po przeładowaniu, przegląd z kluczem i samooceną, zatwierdzenie do powtórek), historia wyników osobno per przedmiot i zakres
   - Poza zakresem (świadomie): losowe składanie arkuszy – arkusze są pisane ręcznie w 5.3, bo mają odwzorować układ papierowy; zadania wymagające typów `match`/`blocks` w arkuszu
-- [ ] 5.3 Treść: etap szkolny → rejonowy (pełne arkusze własne) → wojewódzki
+- [~] 5.3 Treść: etap szkolny → rejonowy (pełne arkusze własne) → wojewódzki
+  - [x] Etap szkolny, arkusz 1 (`s-en-sz-01`, wersja 1.14.1): 100 pytań w układzie i na poziomie oficjalnego arkusza 2023/24 (8 zadań, 60 min), działy: czytanie, gramatyka, słownictwo, Wielka Brytania i USA; karty teorii i fiszki bez odpowiedzi z arkusza
+  - [ ] Etap szkolny, kolejne arkusze (i osobne pytania ćwiczeniowe, żeby nie „spalić” arkusza)
+  - [ ] Etap rejonowy (90 min; tekst z lukami, słowotwórstwo, tłumaczenie, święta UK/USA), etap wojewódzki (120 min; idiomy, wyrazy wieloznaczne, życiorysy)
+  - [ ] Rozstrzygnąć: ćwiczenia (powtórki, quizy) nie powinny pokazywać pytań z arkusza, dopóki uczeń go nie rozwiąże
 - [ ] 5.4 Skille: `add-lesson` i fact-check per przedmiot; kontrola „jedna poprawna odpowiedź”, poziom, naturalność zdań

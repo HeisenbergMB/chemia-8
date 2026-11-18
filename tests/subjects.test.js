@@ -2,6 +2,7 @@
 
 import { test, before } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { bootApp } from './helpers/app-env.js';
 import { loadSubjects, loadData } from '../tools/load-data.js';
 import { activeSubjects, hasFeature, subjectPath, curriculumPath, topicPackPath } from '../js/curriculum.js';
@@ -32,9 +33,13 @@ test('subjects.json: każdy aktywny przedmiot ma dane, a chemia ma cechę chem',
   assert.equal(hasFeature(active.find((s) => s.id === 'chemia'), 'chem'), true);
 });
 
+// do testów dokładamy przedmiot „wkrótce” (prawdziwy angielski jest już aktywny)
+const subjectsJson = JSON.parse(readFileSync(new URL('../data/subjects.json', import.meta.url), 'utf8'));
+subjectsJson.subjects.push({ id: 'wkrotce', title: 'Wkrótce', desc: 'test', icon: 'book', status: 'soon', features: [], types: ['choice'], idTag: 'xx' });
+
 let app;
 before(async () => {
-  app = await bootApp();
+  app = await bootApp({ files: { 'data/subjects.json': subjectsJson } });
 });
 
 test('aplikacja startuje na zapisanym przedmiocie (domyślnie chemia) z jego danymi', () => {
@@ -47,8 +52,9 @@ test('przełącznik przedmiotu jest w menu, a przedmiot „wkrótce” nie ma li
   await app.goto('#/');
   const links = app.links();
   assert.ok(links.includes('#/subject/chemia'), 'brak linku do przedmiotu chemia');
-  assert.ok(!links.includes('#/subject/angielski'), 'przedmiot „wkrótce” nie powinien być linkiem');
-  assert.ok(app.side.textContent.includes('Angielski'), 'przedmiot „wkrótce” jest widoczny w menu');
+  assert.ok(links.includes('#/subject/angielski'), 'angielski jest aktywny');
+  assert.ok(!links.includes('#/subject/wkrotce'), 'przedmiot „wkrótce” nie powinien być linkiem');
+  assert.ok(app.side.textContent.includes('Wkrótce'), 'przedmiot „wkrótce” jest widoczny w menu');
 });
 
 test('przełączenie na ten sam przedmiot wraca na start i niczego nie psuje', async () => {
@@ -60,7 +66,7 @@ test('przełączenie na ten sam przedmiot wraca na start i niczego nie psuje', a
 });
 
 test('przedmiot „wkrótce” albo nieistniejący – ekran „nie znaleziono”, bez zmiany wyboru', async () => {
-  for (const id of ['angielski', 'nie-ma']) {
+  for (const id of ['wkrotce', 'nie-ma']) {
     await app.goto(`#/subject/${id}`);
     assert.ok(app.main.textContent.includes('Nie znaleziono przedmiotu'), id);
   }

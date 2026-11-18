@@ -1,0 +1,132 @@
+[
+ {
+  "id": "q-en-kult-001",
+  "type": "choice",
+  "level": 1,
+  "q": "The Statue of Liberty stands in the harbour of ...",
+  "options": [
+   "New York",
+   "Boston",
+   "Philadelphia"
+  ],
+  "answer": 0,
+  "explain": "Statua Wolności stoi na wyspie w porcie Nowego Jorku."
+ },
+ {
+  "id": "q-en-kult-002",
+  "type": "choice",
+  "level": 2,
+  "q": "Big Ben is the nickname of the great bell in the clock tower of ...",
+  "options": [
+   "Buckingham Palace",
+   "the Tower of London",
+   "the Palace of Westminster"
+  ],
+  "answer": 2,
+  "explain": "Big Ben to nazwa wielkiego dzwonu w wieży zegarowej Pałacu Westminsterskiego."
+ },
+ {
+  "id": "q-en-kult-003",
+  "type": "choice",
+  "level": 1,
+  "q": "The capital of Scotland is ...",
+  "options": [
+   "Glasgow",
+   "Edinburgh",
+   "Dundee"
+  ],
+  "answer": 1,
+  "explain": "Stolicą Szkocji jest Edynburg (Edinburgh)."
+ },
+ {
+  "id": "q-en-kult-004",
+  "type": "choice",
+  "level": 1,
+  "q": "The Golden Gate Bridge is a famous landmark of ...",
+  "options": [
+   "Los Angeles",
+   "San Francisco",
+   "Seattle"
+  ],
+  "answer": 1,
+  "explain": "Most Golden Gate jest symbolem San Francisco."
+ },
+ {
+  "id": "q-en-kult-005",
+  "type": "choice",
+  "level": 2,
+  "q": "Hollywood, the centre of the American film industry, is a district of ...",
+  "options": [
+   "Los Angeles",
+   "San Diego",
+   "Las Vegas"
+  ],
+  "answer": 0,
+  "explain": "Hollywood to dzielnica Los Angeles."
+ },
+ {
+  "id": "q-en-kult-006",
+  "type": "choice",
+  "level": 2,
+  "q": "Stonehenge, a famous prehistoric monument, is in ...",
+  "options": [
+   "Scotland",
+   "Northern Ireland",
+   "England"
+  ],
+  "answer": 2,
+  "explain": "Stonehenge leży w południowej Anglii (hrabstwo Wiltshire)."
+ },
+ {
+  "id": "q-en-kult-007",
+  "type": "choice",
+  "level": 3,
+  "q": "Yellowstone, the oldest national park in the USA, lies mostly in the state of ...",
+  "options": [
+   "Texas",
+   "Florida",
+   "Wyoming"
+  ],
+  "answer": 2,
+  "explain": "Park Yellowstone leży głównie w stanie Wyoming."
+ },
+ {
+  "id": "q-en-kult-008",
+  "type": "choice",
+  "level": 3,
+  "q": "The Giant's Causeway, famous for its hexagonal stone columns, is in ...",
+  "options": [
+   "Wales",
+   "Northern Ireland",
+   "Scotland"
+  ],
+  "answer": 1,
+  "explain": "Giant's Causeway leży w Irlandii Północnej (hrabstwo Antrim)."
+ },
+ {
+  "id": "q-en-kult-009",
+  "type": "choice",
+  "level": 2,
+  "q": "In the USA, Thanksgiving is celebrated on the ... Thursday of November.",
+  "options": [
+   "fourth",
+   "first",
+   "second"
+  ],
+  "answer": 0,
+  "explain": "Dzień Dziękczynienia przypada w czwarty czwartek listopada."
+ },
+ {
+  "id": "q-en-kult-010",
+  "type": "choice",
+  "level": 3,
+  "q": "The Lake District, a popular national park with lakes and mountains, is in the ... of England.",
+  "options": [
+   "north-west",
+   "south-east",
+   "east"
+  ],
+  "answer": 0,
+  "explain": "Kraina Jezior (Lake District) leży w północno-zachodniej Anglii."
+ }
+]

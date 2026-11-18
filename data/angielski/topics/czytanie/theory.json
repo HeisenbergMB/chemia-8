@@ -1,0 +1,69 @@
+{
+ "cards": [
+  {
+   "id": "t-en-czyt-01",
+   "title": "Prawda/fałsz: jak sprawdzać zdanie",
+   "body": "Dla każdego zdania znajdź w tekście **dokładny fragment**, którego dotyczy. Dopiero po przeczytaniu go decyduj.\n1. TRUE – tekst mówi to samo, choćby innymi słowami.\n2. FALSE – tekst mówi coś przeciwnego albo zmienia szczegół (liczbę, osobę, czas, miejsce).\n3. Jeśli tekst o czymś nie wspomina, nie zgaduj z własnej wiedzy: w arkuszu odpowiedź zawsze wynika z tekstu."
+  },
+  {
+   "id": "t-en-czyt-02",
+   "title": "Parafrazy i zaprzeczenia",
+   "body": "Zdania w zadaniu rzadko powtarzają tekst słowo w słowo. Szukaj **znaczenia**, nie tych samych wyrazów.\n**Przykład:** tekst: \"She has never travelled abroad.\" → zdanie: \"She has been to many countries.\" = FALSE.\nUważaj na zaprzeczenia (not, never, no, nobody) i na pary przeciwieństw (win – lose, early – late, increase – fall).",
+   "tip": "Podkreśl w tekście liczby, nazwy własne i słowa never, only, all."
+  },
+  {
+   "id": "t-en-czyt-03",
+   "title": "Liczby i procenty w tekście",
+   "body": "Teksty prasowe często podają statystyki, a zdania je przeformułowują:\n**more than half** – powyżej 50%; **a quarter** – 25%; **a third** – około 33%; **one in five** – 20%; **almost / nearly** – tuż poniżej; **about / around** – w przybliżeniu.\n**Przykład:** 41 procent to \"fewer than half\", ale \"more than a third\". Policz, zanim ocenisz zdanie."
+  },
+  {
+   "id": "t-en-czyt-04",
+   "title": "Słowa-pułapki: all, always, only, most",
+   "body": "Wyrazy o skrajnym znaczeniu (**all, always, never, only, nobody, every**) łatwo zmieniają prawdziwe zdanie w fałszywe.\n**Przykład:** tekst: \"Some shops close at five.\" → zdanie: \"All shops close at five.\" = FALSE.\nSprawdź, czy tekst naprawdę potwierdza to \"wszystko\" lub \"zawsze\". Wyrazy **most** (większość) i **some** (niektórzy) są łagodniejsze, ale też wymagają liczb lub słów z tekstu."
+  },
+  {
+   "id": "t-en-czyt-05",
+   "title": "Czas w arkuszu szkolnym",
+   "body": "Arkusz szkolny trwa **60 minut** i ma **100 punktów** – to średnio około pół minuty na punkt.\nZadanie z tekstem czytaj raz uważnie, potem odpowiadaj. Zaczynaj od tych luk, których jesteś pewien, i wracaj do trudniejszych. Zostaw kilka minut na przejrzenie całości – w arkuszu można poprawiać odpowiedzi."
+  }
+ ],
+ "flash": [
+  {
+   "id": "f-en-czyt-01",
+   "front": "Zdanie zawiera always, never lub all. Na co uważasz?",
+   "back": "To słowa o skrajnym znaczeniu: sprawdź, czy tekst naprawdę potwierdza \"zawsze/nigdy/wszystko\"."
+  },
+  {
+   "id": "f-en-czyt-02",
+   "front": "Tekst nie wspomina o rzeczy z zdania. Co robisz?",
+   "back": "Nie zgadujesz z własnej wiedzy: odpowiedź w arkuszu wynika z tekstu."
+  },
+  {
+   "id": "f-en-czyt-03",
+   "front": "more than half",
+   "back": "więcej niż połowa (ponad 50%)"
+  },
+  {
+   "id": "f-en-czyt-04",
+   "front": "one in five",
+   "back": "jeden na pięciu, czyli 20%"
+  },
+  {
+   "id": "f-en-czyt-05",
+   "front": "Ile czasu i punktów ma arkusz etapu szkolnego?",
+   "back": "60 minut i 100 punktów."
+  },
+  {
+   "id": "f-en-czyt-06",
+   "front": "Co jest ważniejsze: te same słowa czy to samo znaczenie?",
+   "back": "Znaczenie – zdania są zwykle parafrazą tekstu."
+  }
+ ],
+ "groups": [
+  {
+   "id": "g-en-czyt-01",
+   "instruction": "Przeczytaj tekst, a następnie zdania pod tekstem (1–10) i zdecyduj, czy są prawdziwe (TRUE), czy fałszywe (FALSE). Za każdy poprawny wybór otrzymasz 1 punkt.",
+   "text": "Pages, not screens: why teenagers are returning to paper books\n\nA survey of 1,500 teenagers aged 13 to 17, carried out by Redfield Research, has shown that paper books are far more popular than many adults believed. On average, the teenagers questioned read three books for pleasure every year, and almost seven in ten of them (68 per cent) said they preferred a printed book to an e-book. Among the youngest group, aged 13 and 14, the figure rose to 74 per cent.\n\nWhy do young readers choose paper? The most common reason, given by 52 per cent, was that a book does not send notifications. 'When I read on my phone, I check my messages every few minutes,' said one fifteen-year-old. 'With a paper book, there is nothing to distract me.' Another 31 per cent said they simply enjoyed the smell and the feel of a real book, while 22 per cent liked being able to lend books to friends.\n\nHowever, the survey also showed that e-books are far from dead. Almost half of the teenagers (46 per cent) had read at least one e-book in the past year, mostly while travelling, because a phone or a tablet is easier to carry than several heavy books. About one in five (19 per cent) said that they had listened to an audiobook, usually while doing sport or helping at home.\n\nThe biggest obstacle to reading, shared by 57 per cent, is a lack of time because of homework and after-school activities. A further 38 per cent admitted that they sometimes find it hard to choose a book, and 14 per cent said that books are too expensive. Librarians say that this last problem is easy to solve. 'Teenagers often forget that joining a library costs nothing,' says Helen Brooks, who runs a school library in Leeds. 'Many students are surprised when they find out that they can borrow up to ten books at a time.'\n\nTo encourage more reading, a number of schools have introduced ten minutes of silent reading at the beginning of every lesson. Head teacher Mark Davies says that the change has made students calmer. 'At first, some of them complained,' he says. 'Now they ask for their ten minutes if we forget.'\n\n(Tekst i dane zostały wymyślone na potrzeby ćwiczenia.)"
+  }
+ ]
+}

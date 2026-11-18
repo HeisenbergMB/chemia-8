@@ -1,0 +1,35 @@
+{
+ "modules": [
+  {
+   "id": "szkolny",
+   "title": "Etap szkolny",
+   "desc": "Zakres etapu szkolnego konkursu kuratoryjnego: czytanie, gramatyka, słownictwo i wiedza o krajach angielskojęzycznych.",
+   "topics": [
+    {
+     "id": "czytanie",
+     "title": "Czytanie ze zrozumieniem",
+     "status": "active",
+     "desc": "Prawda/fałsz do artykułu prasowego: parafrazy, liczby i słowa-pułapki."
+    },
+    {
+     "id": "gramatyka",
+     "title": "Gramatyka i budowa zdań",
+     "status": "active",
+     "desc": "Zmiana formy wyrazów, luki, pytania i przekształcanie zdań – zakres szkolny konkursu."
+    },
+    {
+     "id": "slownictwo",
+     "title": "Słownictwo i kolokacje",
+     "status": "active",
+     "desc": "Tłumaczenie zwrotów, słowa z odsłoniętymi literami, przyimki i czasowniki frazowe."
+    },
+    {
+     "id": "kultura",
+     "title": "Wielka Brytania i USA",
+     "status": "active",
+     "desc": "Geografia, święta i znane miejsca w krajach angielskojęzycznych."
+    }
+   ]
+  }
+ ]
+}

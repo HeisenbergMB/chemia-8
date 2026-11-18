@@ -32,7 +32,7 @@ function home() {
           ]
         : [h('h1', null, 'Powtórka')],
       h('p', { class: 'due' }, dueText),
-      h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: review.queue.length ? '#/review' : '#/review/extra', html: withIcon('play', review.queue.length ? 'Powtórka na dziś' : 'Ćwicz dodatkowo') }), h('a', { class: 'btn big secondary', href: '#/exam', html: withIcon('check', 'Sprawdzian próbny') }), hasFeature(DATA.subject, 'sheets') ? h('a', { class: 'btn big secondary', href: '#/sheets', html: withIcon('list', 'Arkusze konkursowe') }) : null),
+      h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: review.queue.length ? '#/review' : '#/review/extra', html: withIcon('play', review.queue.length ? 'Powtórka na dziś' : 'Ćwicz dodatkowo') }), hasFeature(DATA.subject, 'sheets') ? null : h('a', { class: 'btn big secondary', href: '#/exam', html: withIcon('check', 'Sprawdzian próbny') }), hasFeature(DATA.subject, 'sheets') ? h('a', { class: 'btn big secondary', href: '#/sheets', html: withIcon('list', 'Arkusze konkursowe') }) : null),
       h('div', { style: 'margin-top:1.25rem' }, progressBar(overall.mastered, overall.total, 'Postęp ogólny'))
     ),
     h(
@@ -82,7 +82,7 @@ function moduleScreen(id) {
     h('a', { class: 'back', href: '#/' }, '← Ekran główny'),
     h('h1', null, m.title),
     h('p', { class: 'muted' }, m.desc),
-    h('div', { class: 'card' }, progressBar(st.mastered, st.total, `Postęp: ${m.title}`), h('div', { class: 'btn-row', style: 'margin-top:1rem' }, h('a', { class: 'btn', href: `#/module/${id}/exam`, html: withIcon('check', 'Sprawdzian z modułu') }))),
+    h('div', { class: 'card' }, progressBar(st.mastered, st.total, `Postęp: ${m.title}`), h('div', { class: 'btn-row', style: 'margin-top:1rem' }, hasFeature(DATA.subject, 'sheets') ? null : h('a', { class: 'btn', href: `#/module/${id}/exam`, html: withIcon('check', 'Sprawdzian z modułu') }))),
     topicGrid(DATA.topics.filter((t) => t.module === id))
   );
 }

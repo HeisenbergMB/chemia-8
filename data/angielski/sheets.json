@@ -1,0 +1,167 @@
+{
+ "formats": [
+  {
+   "id": "szkolny",
+   "title": "Etap szkolny",
+   "minutes": 60,
+   "points": 100
+  }
+ ],
+ "sheets": [
+  {
+   "id": "s-en-sz-01",
+   "format": "szkolny",
+   "title": "Arkusz 1 – etap szkolny",
+   "tasks": [
+    {
+     "kind": "tf",
+     "group": "g-en-czyt-01",
+     "items": [
+      "q-en-czyt-001",
+      "q-en-czyt-002",
+      "q-en-czyt-003",
+      "q-en-czyt-004",
+      "q-en-czyt-005",
+      "q-en-czyt-006",
+      "q-en-czyt-007",
+      "q-en-czyt-008",
+      "q-en-czyt-009",
+      "q-en-czyt-010"
+     ]
+    },
+    {
+     "kind": "brackets-form",
+     "instruction": "Uzupełnij zdania (1–15), wykorzystując podane w nawiasach wyrazy. Zmień ich formę, jeśli to konieczne. Nie zmieniaj kolejności podanych wyrazów, ale możesz dodać inne wyrazy, tak aby otrzymać logiczne i poprawne gramatycznie zdania. Wymagana jest pełna poprawność pisowni wpisywanych fragmentów zdań.",
+     "items": [
+      "q-en-gram-001",
+      "q-en-gram-002",
+      "q-en-gram-003",
+      "q-en-gram-004",
+      "q-en-gram-005",
+      "q-en-gram-006",
+      "q-en-gram-007",
+      "q-en-gram-008",
+      "q-en-gram-009",
+      "q-en-gram-010",
+      "q-en-gram-011",
+      "q-en-gram-012",
+      "q-en-gram-013",
+      "q-en-gram-014",
+      "q-en-gram-015"
+     ]
+    },
+    {
+     "kind": "open-cloze",
+     "instruction": "Uzupełnij każde zdanie jednym wyrazem tak, aby było ono logiczne i poprawne gramatycznie. Wymagana jest całkowita poprawność pisowni. Nie wolno wstawiać w luki skróceń (isn't, can't itd.).",
+     "items": [
+      "q-en-gram-016",
+      "q-en-gram-017",
+      "q-en-gram-018",
+      "q-en-gram-019",
+      "q-en-gram-020",
+      "q-en-gram-021",
+      "q-en-gram-022",
+      "q-en-gram-023",
+      "q-en-gram-024",
+      "q-en-gram-025",
+      "q-en-gram-026",
+      "q-en-gram-027",
+      "q-en-gram-028",
+      "q-en-gram-029",
+      "q-en-gram-030"
+     ]
+    },
+    {
+     "kind": "question-form",
+     "instruction": "Zadaj pytania o podkreśloną część zdań. Wymagana jest całkowita poprawność pisowni i gramatyki.",
+     "items": [
+      "q-en-gram-031",
+      "q-en-gram-032",
+      "q-en-gram-033",
+      "q-en-gram-034",
+      "q-en-gram-035",
+      "q-en-gram-036",
+      "q-en-gram-037",
+      "q-en-gram-038",
+      "q-en-gram-039",
+      "q-en-gram-040"
+     ]
+    },
+    {
+     "kind": "translation-choice",
+     "instruction": "Wybierz odpowiednie tłumaczenie zwrotów podanych w nawiasach. Zwróć uwagę na poprawność gramatyczną i ortograficzną.",
+     "items": [
+      "q-en-slow-001",
+      "q-en-slow-002",
+      "q-en-slow-003",
+      "q-en-slow-004",
+      "q-en-slow-005",
+      "q-en-slow-006",
+      "q-en-slow-007",
+      "q-en-slow-008",
+      "q-en-slow-009",
+      "q-en-slow-010",
+      "q-en-slow-011",
+      "q-en-slow-012",
+      "q-en-slow-013",
+      "q-en-slow-014",
+      "q-en-slow-015"
+     ]
+    },
+    {
+     "kind": "first-letter",
+     "instruction": "Uzupełnij każde zdanie jednym pasującym wyrazem. Wymagana jest całkowita poprawność pisowni. Liczba kresek odpowiada liczbie brakujących liter w wyrazie, niektóre litery są już podane.",
+     "items": [
+      "q-en-slow-016",
+      "q-en-slow-017",
+      "q-en-slow-018",
+      "q-en-slow-019",
+      "q-en-slow-020",
+      "q-en-slow-021",
+      "q-en-slow-022",
+      "q-en-slow-023",
+      "q-en-slow-024",
+      "q-en-slow-025",
+      "q-en-slow-026",
+      "q-en-slow-027",
+      "q-en-slow-028",
+      "q-en-slow-029",
+      "q-en-slow-030"
+     ]
+    },
+    {
+     "kind": "key-word",
+     "instruction": "Przeczytaj zdania (1–10). Wykorzystując wyraz podany wielkimi literami, uzupełnij drugie zdanie tak, aby zachować sens zdania wyjściowego. Nie zmieniaj formy podanego wyrazu. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany. Wymagana jest pełna poprawność pisowni i gramatyki.",
+     "items": [
+      "q-en-gram-041",
+      "q-en-gram-042",
+      "q-en-gram-043",
+      "q-en-gram-044",
+      "q-en-gram-045",
+      "q-en-gram-046",
+      "q-en-gram-047",
+      "q-en-gram-048",
+      "q-en-gram-049",
+      "q-en-gram-050"
+     ]
+    },
+    {
+     "kind": "culture",
+     "instruction": "Wybierz poprawną odpowiedź.",
+     "items": [
+      "q-en-kult-001",
+      "q-en-kult-002",
+      "q-en-kult-003",
+      "q-en-kult-004",
+      "q-en-kult-005",
+      "q-en-kult-006",
+      "q-en-kult-007",
+      "q-en-kult-008",
+      "q-en-kult-009",
+      "q-en-kult-010"
+     ]
+    }
+   ]
+  }
+ ]
+}

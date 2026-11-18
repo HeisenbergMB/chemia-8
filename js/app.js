@@ -120,7 +120,8 @@ function renderSide(hash) {
     ]),
     h('h2', { style: 'margin-top:1rem' }, 'Inne'),
     ...(hasFeature(DATA.subject, 'sheets') ? [h('a', { href: '#/sheets', 'aria-current': /^#\/sheets?(\/|$)/.test(hash) ? 'page' : null }, h('span', { class: 'num', html: icons.list }), h('span', null, 'Arkusze konkursowe'))] : []),
-    h('a', { href: '#/exam', 'aria-current': hash.startsWith('#/exam') ? 'page' : null }, h('span', { class: 'num', html: icons.check }), h('span', null, 'Sprawdzian próbny')),
+    // przedmioty z arkuszami nie mają losowego sprawdzianu: odpowiedzi wpisywane nie mają w nim samooceny (arkusz ma)
+    ...(hasFeature(DATA.subject, 'sheets') ? [] : [h('a', { href: '#/exam', 'aria-current': hash.startsWith('#/exam') ? 'page' : null }, h('span', { class: 'num', html: icons.check }), h('span', null, 'Sprawdzian próbny'))]),
     h('a', { href: '#/settings', 'aria-current': hash === '#/settings' ? 'page' : null }, h('span', { class: 'num', html: icons.gear }), h('span', null, 'Ustawienia'))
   );
 }

@@ -1,7 +1,7 @@
 # Powtórka 8 – wskazówki dla Claude
 
 PWA (czysty HTML/CSS/JS, ES modules, bez bibliotek i backendu) do powtórek do sprawdzianów i konkursów dla ucznia klasy 8.
-Przedmioty: chemia (gotowa) i angielski (konkurs kuratoryjny, w budowie – `ROADMAP.md` Faza 5, wzorzec: `docs/angielski-wzorzec-konkursu.md`).
+Przedmioty: chemia (gotowa) i angielski (konkurs kuratoryjny: etap szkolny, arkusz 1 gotowy; reszta w budowie – `ROADMAP.md` Faza 5, wzorzec: `docs/angielski-wzorzec-konkursu.md`). Pytania do arkuszy piszemy własne i na poziomie oficjalnych arkuszy; arkusze z kuratorium nie trafiają do repo.
 Działa offline, postęp w `localStorage`. Szczegóły formatu danych: `README.md`. Plan prac: `ROADMAP.md`.
 
 ## Komendy

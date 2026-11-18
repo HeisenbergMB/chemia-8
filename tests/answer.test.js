@@ -25,10 +25,10 @@ test('dopasowanie do listy akceptowanych odpowiedzi; pusty tekst nigdy nie pasuj
   assert.equal(matchesAnswer('   ', ['a']), false);
 });
 
-test('liczba wyrazów: skrócenia liczą się osobno (jak w poleceniu konkursu)', () => {
+test('liczba wyrazów: skrócenie to jeden wyraz, a podany wyraz kluczowy wlicza się do limitu', () => {
   assert.equal(wordCount('spend two minutes brushing'), 4);
-  assert.equal(wordCount("he wouldn't have gone"), 5); // wouldn't = would + not
-  assert.equal(wordCount("I'll"), 2);
+  assert.equal(wordCount("which I haven't"), 3);
+  assert.equal(wordCount("  I'll  "), 1);
   assert.equal(wordCount(''), 0);
 });
 
