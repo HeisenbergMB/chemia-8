@@ -78,10 +78,20 @@ test('crawl po angielskim: wszystkie linki prowadzą do istniejących ekranów',
     assert.equal(end, h, `${h} przekierowuje na ${end}`);
     assert.ok(text.length > 20 && !text.includes('Wróć na start'), `${h}: pusty lub „nie znaleziono”`);
   }
-  for (const k of ['topic', 'theory', 'flash', 'sheets', 'sheet']) assert.ok([...seen.keys()].some((h) => h.split('/')[1] === k), `brak ekranu ${k}`);
+  for (const k of ['topic', 'theory', 'flash', 'quiz', 'sheets', 'sheet']) assert.ok([...seen.keys()].some((h) => h.split('/')[1] === k), `brak ekranu ${k}`);
   assert.ok(!app.main.textContent.includes('NaOH'), 'żadnej chemii');
   assert.ok(![...seen.keys()].some((h) => h.startsWith('#/exam')), 'brak losowego sprawdzianu (arkusze mają samoocenę)');
-  assert.ok(![...seen.keys()].some((h) => h.startsWith('#/quiz')), 'pytania z niezatwierdzonego arkusza nie są w ćwiczeniach');
+  assert.ok([...seen.keys()].some((h) => h.startsWith('#/quiz')), 'są pytania ćwiczeniowe, więc quizy działów działają od razu');
+});
+
+test('ćwiczenia: pytania z arkusza ukryte, a osobnych pytań ćwiczeniowych jest dość na quizy i powtórki', async () => {
+  const { practiceQuestions } = await import('../js/practice.js');
+  const inSheets = new Set(sheets.sheets.flatMap((sh) => sh.tasks.flatMap((t) => t.items)));
+  const pool = practiceQuestions();
+  assert.ok(pool.every((q) => !inSheets.has(q.id)), 'w ćwiczeniach nie ma pytań z niezatwierdzonego arkusza');
+  assert.ok(pool.length >= 100, `pytań ćwiczeniowych: ${pool.length}`);
+  for (const topic of ['czytanie', 'gramatyka', 'slownictwo', 'kultura']) assert.ok(pool.filter((q) => q.topic === topic).length >= 10, `dział ${topic} ma za mało pytań ćwiczeniowych`);
+  assert.ok(pool.filter((q) => q.type !== 'choice').length >= 30, 'ćwiczenia zawierają też pytania wpisywane');
 });
 
 test('wszystkie pytania angielskiego dają się wyrenderować w quizie i na sprawdzianie', async () => {

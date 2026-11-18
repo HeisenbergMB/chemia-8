@@ -344,5 +344,365 @@
    "wrinkles"
   ],
   "explain": "Wrinkles – zmarszczki."
+ },
+ {
+  "id": "q-en-slow-031",
+  "type": "choice",
+  "level": 1,
+  "q": "(Ile) ___ people live in your village?",
+  "options": [
+   "How much",
+   "How many",
+   "How long"
+  ],
+  "answer": 1,
+  "explain": "Ludzie są policzalni: How many."
+ },
+ {
+  "id": "q-en-slow-032",
+  "type": "choice",
+  "level": 1,
+  "q": "She (czeka na) ___ the bus.",
+  "options": [
+   "is waiting for",
+   "is waiting on",
+   "is waiting to"
+  ],
+  "answer": 0,
+  "explain": "Wait for = czekać na."
+ },
+ {
+  "id": "q-en-slow-033",
+  "type": "choice",
+  "level": 2,
+  "q": "He (zgadza się z) ___ me.",
+  "options": [
+   "agrees to",
+   "agrees on",
+   "agrees with"
+  ],
+  "answer": 2,
+  "explain": "Agree with + osoba = zgadzać się z kimś."
+ },
+ {
+  "id": "q-en-slow-034",
+  "type": "choice",
+  "level": 2,
+  "q": "I (nie muszę) ___ get up early on Sundays.",
+  "options": [
+   "mustn't",
+   "haven't to",
+   "don't have to"
+  ],
+  "answer": 2,
+  "explain": "Brak obowiązku: don't have to (mustn't to zakaz)."
+ },
+ {
+  "id": "q-en-slow-035",
+  "type": "choice",
+  "level": 1,
+  "q": "They (rozmawiali o) ___ the trip for hours.",
+  "options": [
+   "talked on",
+   "talked about",
+   "talked at"
+  ],
+  "answer": 1,
+  "explain": "Talk about = rozmawiać o."
+ },
+ {
+  "id": "q-en-slow-036",
+  "type": "choice",
+  "level": 2,
+  "q": "I (spodziewam się) ___ him to arrive soon.",
+  "options": [
+   "expect",
+   "wait",
+   "hope"
+  ],
+  "answer": 0,
+  "explain": "Expect + osoba + to + bezokolicznik; hope i wait tak nie działają."
+ },
+ {
+  "id": "q-en-slow-037",
+  "type": "choice",
+  "level": 2,
+  "q": "She (wyglądała na) ___ tired.",
+  "options": [
+   "looked",
+   "looked like",
+   "looked as"
+  ],
+  "answer": 0,
+  "explain": "Look + przymiotnik: looked tired."
+ },
+ {
+  "id": "q-en-slow-038",
+  "type": "choice",
+  "level": 1,
+  "q": "He (zdał) ___ the exam.",
+  "options": [
+   "took",
+   "made",
+   "passed"
+  ],
+  "answer": 2,
+  "explain": "Pass an exam = zdać egzamin; take an exam = do niego przystąpić."
+ },
+ {
+  "id": "q-en-slow-039",
+  "type": "choice",
+  "level": 1,
+  "q": "(Odwiedzę cię) ___ tomorrow.",
+  "options": [
+   "I'll visit to you",
+   "I'll visit you",
+   "I'll visiting you"
+  ],
+  "answer": 1,
+  "explain": "Visit nie wymaga przyimka: visit you."
+ },
+ {
+  "id": "q-en-slow-040",
+  "type": "choice",
+  "level": 1,
+  "q": "(Nie wolno) ___ park here.",
+  "options": [
+   "You don't have to",
+   "You mustn't",
+   "You needn't"
+  ],
+  "answer": 1,
+  "explain": "Zakaz: mustn't."
+ },
+ {
+  "id": "q-en-slow-041",
+  "type": "choice",
+  "level": 2,
+  "q": "(Pomimo) ___ the rain, we played outside.",
+  "options": [
+   "Despite",
+   "Although",
+   "However"
+  ],
+  "answer": 0,
+  "explain": "Despite + rzeczownik: Despite the rain."
+ },
+ {
+  "id": "q-en-slow-042",
+  "type": "choice",
+  "level": 2,
+  "q": "We (musieliśmy) ___ leave early.",
+  "options": [
+   "must",
+   "have to",
+   "had to"
+  ],
+  "answer": 2,
+  "explain": "Obowiązek w przeszłości: had to."
+ },
+ {
+  "id": "q-en-slow-043",
+  "type": "write",
+  "level": 1,
+  "q": "Carrots, onions and potatoes are v _ g _ _ a _ _ _ s.",
+  "answers": [
+   "vegetables"
+  ],
+  "explain": "Vegetables – warzywa."
+ },
+ {
+  "id": "q-en-slow-044",
+  "type": "write",
+  "level": 2,
+  "q": "If you don't know a word, look it up in a d _ c _ _ _ _ _ _ y.",
+  "answers": [
+   "dictionary"
+  ],
+  "explain": "Dictionary – słownik."
+ },
+ {
+  "id": "q-en-slow-045",
+  "type": "write",
+  "level": 2,
+  "q": "Exhaust fumes from cars cause air p _ _ _ u _ _ _ n.",
+  "answers": [
+   "pollution"
+  ],
+  "explain": "Pollution – zanieczyszczenie."
+ },
+ {
+  "id": "q-en-slow-046",
+  "type": "write",
+  "level": 3,
+  "q": "We should protect the e _ _ i _ _ _ _ _ _ t.",
+  "answers": [
+   "environment"
+  ],
+  "explain": "Environment – środowisko."
+ },
+ {
+  "id": "q-en-slow-047",
+  "type": "write",
+  "level": 2,
+  "q": "Marie Curie was a famous s _ _ e _ _ _ _ t.",
+  "answers": [
+   "scientist"
+  ],
+  "explain": "Scientist – naukowiec."
+ },
+ {
+  "id": "q-en-slow-048",
+  "type": "write",
+  "level": 2,
+  "q": "During the storm there was a bright flash of l _ _ h _ _ _ _ g.",
+  "answers": [
+   "lightning"
+  ],
+  "explain": "Lightning – błyskawica (nie mylić z lightening)."
+ },
+ {
+  "id": "q-en-slow-049",
+  "type": "write",
+  "level": 2,
+  "q": "Tables, chairs and beds are f _ _ n _ _ _ _ e.",
+  "answers": [
+   "furniture"
+  ],
+  "explain": "Furniture – meble (niepoliczalne)."
+ },
+ {
+  "id": "q-en-slow-050",
+  "type": "write",
+  "level": 2,
+  "q": "Swimming in this river is d _ _ g _ _ _ _ s – there are strong currents.",
+  "answers": [
+   "dangerous"
+  ],
+  "explain": "Dangerous – niebezpieczny."
+ },
+ {
+  "id": "q-en-slow-051",
+  "type": "write",
+  "level": 2,
+  "q": "I ate too much and now I have a pain in my s _ _ m _ _ h.",
+  "answers": [
+   "stomach"
+  ],
+  "explain": "Stomach – żołądek, brzuch (ch czytamy jak k)."
+ },
+ {
+  "id": "q-en-slow-052",
+  "type": "write",
+  "level": 2,
+  "q": "The weather forecast says the t _ _ p _ _ _ _ _ _ e will fall below zero.",
+  "answers": [
+   "temperature"
+  ],
+  "explain": "Temperature – temperatura."
+ },
+ {
+  "id": "q-en-slow-053",
+  "type": "write",
+  "level": 1,
+  "q": "He plays the g _ _ t _ _ in a band.",
+  "answers": [
+   "guitar"
+  ],
+  "explain": "Guitar – gitara."
+ },
+ {
+  "id": "q-en-slow-054",
+  "type": "write",
+  "level": 2,
+  "q": "Our science teacher explains physics and c _ _ m _ _ _ _ y.",
+  "answers": [
+   "chemistry"
+  ],
+  "explain": "Chemistry – chemia."
+ },
+ {
+  "id": "q-en-slow-055",
+  "type": "choice",
+  "level": 1,
+  "q": "I would like to ___ a table for two at eight o'clock.",
+  "options": [
+   "build",
+   "catch",
+   "hire",
+   "book"
+  ],
+  "answer": 3,
+  "explain": "Book a table – zarezerwować stolik."
+ },
+ {
+  "id": "q-en-slow-056",
+  "type": "choice",
+  "level": 2,
+  "q": "He didn't ___ any attention to the teacher.",
+  "options": [
+   "do",
+   "pay",
+   "take",
+   "have"
+  ],
+  "answer": 1,
+  "explain": "Stała kolokacja: pay attention."
+ },
+ {
+  "id": "q-en-slow-057",
+  "type": "choice",
+  "level": 1,
+  "q": "We need to ___ a decision before Friday.",
+  "options": [
+   "do",
+   "have",
+   "put",
+   "make"
+  ],
+  "answer": 3,
+  "explain": "Make a decision – podjąć decyzję."
+ },
+ {
+  "id": "q-en-slow-058",
+  "type": "choice",
+  "level": 2,
+  "q": "She ___ a good job at the interview.",
+  "options": [
+   "made",
+   "did",
+   "took",
+   "wrote"
+  ],
+  "answer": 1,
+  "explain": "Do a good job – dobrze się spisać."
+ },
+ {
+  "id": "q-en-slow-059",
+  "type": "choice",
+  "level": 3,
+  "q": "They have ___ an agreement after long talks.",
+  "options": [
+   "reached",
+   "arrived",
+   "got",
+   "taken"
+  ],
+  "answer": 0,
+  "explain": "Reach an agreement – osiągnąć porozumienie."
+ },
+ {
+  "id": "q-en-slow-060",
+  "type": "choice",
+  "level": 2,
+  "q": "There was ___ rain all night.",
+  "options": [
+   "strong",
+   "big",
+   "heavy",
+   "high"
+  ],
+  "answer": 2,
+  "explain": "Heavy rain – ulewny deszcz."
  }
 ]

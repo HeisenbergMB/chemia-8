@@ -82,3 +82,4 @@ Całość napisana przeze mnie, bez drugiej pary oczu. Proszę o przejrzenie prz
 - **Tekst z zadania I** i statystyki w nim są wymyślone (oznaczone w tekście).
 - **Poziom trudności**: tak jak w oficjalnym arkuszu szkolnym 2023/24 (struktury ponad podstawę), ale to moja ocena.
 - Typy odpowiedzi tekstowych mają samoocenę w przeglądzie arkusza; ewentualne brakujące warianty uczeń może uznać sam.
+- Pytania ćwiczeniowe (q-en-czyt-011…, q-en-gram-051…, q-en-slow-031…, q-en-kult-011…) też pisałem sam; dwa nowe teksty do czytania i ich dane są wymyślone. Pytania o UK/USA zawierają tylko fakty, które uważam za pewne (np. Snowdon – najwyższy szczyt Walii, Mur Hadriana zbudowali Rzymianie, Liberty Bell w Filadelfii).

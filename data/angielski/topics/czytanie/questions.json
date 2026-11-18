@@ -138,5 +138,250 @@
   ],
   "answer": 1,
   "explain": "Dyrektor mówi, że na początku niektórzy uczniowie narzekali (\"some of them complained\")."
+ },
+ {
+  "id": "q-en-czyt-011",
+  "type": "choice",
+  "level": 2,
+  "q": "The idea of car-free Sundays was proposed by a person who lived in the town.",
+  "group": "g-en-czyt-02",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Pomysł zgłosiła miejscowa właścicielka sklepu, Rita Osborne."
+ },
+ {
+  "id": "q-en-czyt-012",
+  "type": "choice",
+  "level": 1,
+  "q": "Cars are banned from the town centre every Sunday.",
+  "group": "g-en-czyt-02",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Zakaz obowiązuje w każdą pierwszą niedzielę miesiąca, a nie w każdą niedzielę."
+ },
+ {
+  "id": "q-en-czyt-013",
+  "type": "choice",
+  "level": 1,
+  "q": "All residents supported the plan from the beginning.",
+  "group": "g-en-czyt-02",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Na początku wielu mieszkańców było przeciw (\"many residents were against the plan\")."
+ },
+ {
+  "id": "q-en-czyt-014",
+  "type": "choice",
+  "level": 2,
+  "q": "The council organised free transport for people who could not park in the centre.",
+  "group": "g-en-czyt-02",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Rada uruchomiła bezpłatne minibusy z parkingów na obrzeżach miasta."
+ },
+ {
+  "id": "q-en-czyt-015",
+  "type": "choice",
+  "level": 1,
+  "q": "Car-free Sundays attract more visitors than ordinary Sundays.",
+  "group": "g-en-czyt-02",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Liczba odwiedzających jest o 35 procent wyższa."
+ },
+ {
+  "id": "q-en-czyt-016",
+  "type": "choice",
+  "level": 1,
+  "q": "The cafés earn less money since the ban was introduced.",
+  "group": "g-en-czyt-02",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Kawiarnie zarabiają około jednej piątej więcej."
+ },
+ {
+  "id": "q-en-czyt-017",
+  "type": "choice",
+  "level": 2,
+  "q": "Dan Price was sure from the start that the plan would help his business.",
+  "group": "g-en-czyt-02",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Początkowo obawiał się utraty klientów (\"I thought I would lose customers\")."
+ },
+ {
+  "id": "q-en-czyt-018",
+  "type": "choice",
+  "level": 2,
+  "q": "The council wants to allow cars in some special situations.",
+  "group": "g-en-czyt-02",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Rada obiecała wyjątki, na przykład dla osób, które muszą dowieźć niepełnosprawnych do apteki."
+ },
+ {
+  "id": "q-en-czyt-019",
+  "type": "choice",
+  "level": 2,
+  "q": "Rita Osborne thinks that only small towns can introduce such a ban.",
+  "group": "g-en-czyt-02",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Uważa, że jeśli może to zrobić małe miasto, to i duże."
+ },
+ {
+  "id": "q-en-czyt-020",
+  "type": "choice",
+  "level": 1,
+  "q": "Taxi drivers say that the ban has increased their income.",
+  "group": "g-en-czyt-02",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Taksówkarze mówią, że w te dni tracą pieniądze."
+ },
+ {
+  "id": "q-en-czyt-021",
+  "type": "choice",
+  "level": 1,
+  "q": "What gave Zoe the idea for her invention?",
+  "group": "g-en-czyt-03",
+  "fixed": true,
+  "options": [
+   "A lesson at school.",
+   "Finding an old sandwich in her school bag.",
+   "An article in a magazine."
+  ],
+  "answer": 1,
+  "explain": "Pomysł przyszedł po znalezieniu starej kanapki na dnie plecaka."
+ },
+ {
+  "id": "q-en-czyt-022",
+  "type": "choice",
+  "level": 2,
+  "q": "Why did Zoe's first experiments fail?",
+  "group": "g-en-czyt-03",
+  "fixed": true,
+  "options": [
+   "She could not find sensors that were both affordable and accurate.",
+   "Her brother gave her wrong advice.",
+   "She did not have enough time."
+  ],
+  "answer": 0,
+  "explain": "Drogie czujniki były za drogie, a tańsze dawały złe wyniki."
+ },
+ {
+  "id": "q-en-czyt-023",
+  "type": "choice",
+  "level": 1,
+  "q": "Who built the final version of the lunch box?",
+  "group": "g-en-czyt-03",
+  "fixed": true,
+  "options": [
+   "Zoe's older brother.",
+   "A group of students.",
+   "Zoe herself."
+  ],
+  "answer": 2,
+  "explain": "Brat pomógł znaleźć rozwiązanie, ale ostateczną wersję zbudowała Zoe sama."
+ },
+ {
+  "id": "q-en-czyt-024",
+  "type": "choice",
+  "level": 1,
+  "q": "What does a yellow light on the lid mean?",
+  "group": "g-en-czyt-03",
+  "fixed": true,
+  "options": [
+   "The food is perfectly fresh.",
+   "The food must be thrown away.",
+   "The food should be eaten soon."
+  ],
+  "answer": 2,
+  "explain": "Żółte światło oznacza, że jedzenie trzeba zjeść wkrótce."
+ },
+ {
+  "id": "q-en-czyt-025",
+  "type": "choice",
+  "level": 2,
+  "q": "What happened in the school science competition?",
+  "group": "g-en-czyt-03",
+  "fixed": true,
+  "options": [
+   "Zoe's invention won first prize.",
+   "Zoe's invention won second prize.",
+   "Zoe did not win any prize."
+  ],
+  "answer": 1,
+  "explain": "Wynalazek Zoe zajął drugie miejsce; wygrała grupa z rowerowym światłem."
+ },
+ {
+  "id": "q-en-czyt-026",
+  "type": "choice",
+  "level": 2,
+  "q": "What did Zoe tell the food company?",
+  "group": "g-en-czyt-03",
+  "fixed": true,
+  "options": [
+   "She wants to improve the product before selling it.",
+   "She will sell the lunch box immediately.",
+   "She is not interested in selling it at all."
+  ],
+  "answer": 0,
+  "explain": "Zoe odpowiedziała, że jeszcze nie sprzedaje i chce najpierw ulepszyć pudełko."
+ },
+ {
+  "id": "q-en-czyt-027",
+  "type": "choice",
+  "level": 2,
+  "q": "What is Zoe's main aim?",
+  "group": "g-en-czyt-03",
+  "fixed": true,
+  "options": [
+   "To stop good food from being wasted.",
+   "To become a famous inventor.",
+   "To win more competitions."
+  ],
+  "answer": 0,
+  "explain": "Jej marzenie to zapobieganie marnowaniu dobrego jedzenia."
  }
 ]

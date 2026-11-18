@@ -539,5 +539,665 @@
    "used to play"
   ],
   "explain": "Dawny nawyk: used to + bezokolicznik."
+ },
+ {
+  "id": "q-en-gram-051",
+  "type": "write",
+  "level": 1,
+  "q": "She (use/live) ___ in Canada, but now she lives in Poland.",
+  "answers": [
+   "used to live"
+  ],
+  "explain": "Dawny stan: used to + bezokolicznik."
+ },
+ {
+  "id": "q-en-gram-052",
+  "type": "write",
+  "level": 2,
+  "q": "Would you (mind/help) ___ me with this bag?",
+  "answers": [
+   "mind helping"
+  ],
+  "explain": "Po mind używamy formy -ing."
+ },
+ {
+  "id": "q-en-gram-053",
+  "type": "write",
+  "level": 3,
+  "q": "The bridge (not/finish) ___ yet. The workers are still there.",
+  "answers": [
+   "has not been finished",
+   "hasn't been finished"
+  ],
+  "explain": "Strona bierna w Present Perfect: has not been finished."
+ },
+ {
+  "id": "q-en-gram-054",
+  "type": "write",
+  "level": 2,
+  "q": "My brother (learn) ___ to drive since January.",
+  "answers": [
+   "has been learning"
+  ],
+  "explain": "Czynność trwa od stycznia do teraz: Present Perfect Continuous."
+ },
+ {
+  "id": "q-en-gram-055",
+  "type": "write",
+  "level": 2,
+  "q": "He asked me (I/like) ___ spicy food.",
+  "answers": [
+   "if I liked",
+   "whether I liked"
+  ],
+  "explain": "Pytanie zamknięte w mowie zależnej: if/whether + czas cofnięty."
+ },
+ {
+  "id": "q-en-gram-056",
+  "type": "write",
+  "level": 1,
+  "q": "If we (have) ___ a garden, we would keep a dog.",
+  "answers": [
+   "had"
+  ],
+  "explain": "II okres warunkowy: If + Past Simple."
+ },
+ {
+  "id": "q-en-gram-057",
+  "type": "write",
+  "level": 3,
+  "q": "Next summer, at this time, I (lie) ___ on a beach in Greece.",
+  "answers": [
+   "will be lying",
+   "'ll be lying"
+  ],
+  "explain": "Czynność trwająca w przyszłym momencie: Future Continuous."
+ },
+ {
+  "id": "q-en-gram-058",
+  "type": "write",
+  "level": 2,
+  "q": "(you/be) ___ able to help me tomorrow?",
+  "answers": [
+   "Will you be"
+  ],
+  "explain": "Przyszła zdolność w pytaniu: Will you be able to ...?"
+ },
+ {
+  "id": "q-en-gram-059",
+  "type": "write",
+  "level": 2,
+  "q": "It was (such/interesting) ___ lesson that nobody wanted to leave.",
+  "answers": [
+   "such an interesting"
+  ],
+  "explain": "Such + an + przymiotnik zaczynający się samogłoską + rzeczownik."
+ },
+ {
+  "id": "q-en-gram-060",
+  "type": "write",
+  "level": 2,
+  "q": "My sister runs (far/fast) ___ than I do.",
+  "answers": [
+   "far faster"
+  ],
+  "explain": "Stopień wyższy przysłówka: faster; far wzmacnia porównanie."
+ },
+ {
+  "id": "q-en-gram-061",
+  "type": "write",
+  "level": 2,
+  "q": "The letter (send) ___ tomorrow morning.",
+  "answers": [
+   "will be sent"
+  ],
+  "explain": "Strona bierna w Future Simple: will be + III forma."
+ },
+ {
+  "id": "q-en-gram-062",
+  "type": "write",
+  "level": 2,
+  "q": "The doctor told him (not/eat) ___ fatty food.",
+  "answers": [
+   "not to eat"
+  ],
+  "explain": "Zakaz w mowie zależnej: told + osoba + not to + bezokolicznik."
+ },
+ {
+  "id": "q-en-gram-063",
+  "type": "write",
+  "level": 2,
+  "q": "You (ought/apologise) ___ to her.",
+  "answers": [
+   "ought to apologise",
+   "ought to apologize"
+  ],
+  "explain": "Powinność: ought to + bezokolicznik."
+ },
+ {
+  "id": "q-en-gram-064",
+  "type": "write",
+  "level": 3,
+  "q": "This is the first time I (ever/be) ___ to a concert.",
+  "answers": [
+   "have ever been"
+  ],
+  "explain": "Po \"the first time\" używamy Present Perfect: have ever been."
+ },
+ {
+  "id": "q-en-gram-065",
+  "type": "write",
+  "level": 1,
+  "q": "She is fond ___ painting.",
+  "answers": [
+   "of"
+  ],
+  "explain": "Be fond of + -ing."
+ },
+ {
+  "id": "q-en-gram-066",
+  "type": "write",
+  "level": 1,
+  "q": "I will call you as soon ___ I get home.",
+  "answers": [
+   "as"
+  ],
+  "explain": "As soon as – jak tylko."
+ },
+ {
+  "id": "q-en-gram-067",
+  "type": "write",
+  "level": 2,
+  "q": "He is the man ___ car was stolen.",
+  "answers": [
+   "whose"
+  ],
+  "explain": "Whose wskazuje na przynależność: jego samochód."
+ },
+ {
+  "id": "q-en-gram-068",
+  "type": "write",
+  "level": 3,
+  "q": "There were ___ few people that we cancelled the meeting.",
+  "answers": [
+   "so"
+  ],
+  "explain": "So + przymiotnik/określenie + that: tak mało ludzi, że ..."
+ },
+ {
+  "id": "q-en-gram-069",
+  "type": "write",
+  "level": 1,
+  "q": "Please don't forget to bring ___ umbrella.",
+  "answers": [
+   "an"
+  ],
+  "explain": "Przed samogłoską: an umbrella."
+ },
+ {
+  "id": "q-en-gram-070",
+  "type": "write",
+  "level": 1,
+  "q": "We have lived here ___ ten years.",
+  "answers": [
+   "for"
+  ],
+  "explain": "For + okres czasu."
+ },
+ {
+  "id": "q-en-gram-071",
+  "type": "write",
+  "level": 2,
+  "q": "Jack suggested ___ to the cinema.",
+  "answers": [
+   "going"
+  ],
+  "explain": "Po suggest używamy formy -ing."
+ },
+ {
+  "id": "q-en-gram-072",
+  "type": "write",
+  "level": 2,
+  "q": "If it rains tomorrow, we ___ stay at home.",
+  "answers": [
+   "will",
+   "may",
+   "might",
+   "could"
+  ],
+  "explain": "I okres warunkowy: will (także may/might/could) + bezokolicznik."
+ },
+ {
+  "id": "q-en-gram-073",
+  "type": "write",
+  "level": 2,
+  "q": "Neither of them ___ speak French.",
+  "answers": [
+   "can",
+   "could"
+  ],
+  "explain": "Neither of them + czasownik w liczbie pojedynczej lub modalny: can/could speak."
+ },
+ {
+  "id": "q-en-gram-074",
+  "type": "write",
+  "level": 1,
+  "q": "I have never ___ to Scotland.",
+  "answers": [
+   "been"
+  ],
+  "explain": "Have been to – być gdzieś (i wrócić)."
+ },
+ {
+  "id": "q-en-gram-075",
+  "type": "write",
+  "level": 1,
+  "q": "This book is ___ interesting than the film.",
+  "answers": [
+   "more"
+  ],
+  "explain": "Stopień wyższy długiego przymiotnika: more interesting."
+ },
+ {
+  "id": "q-en-gram-076",
+  "type": "write",
+  "level": 3,
+  "q": "Hardly had we left ___ it started to rain.",
+  "answers": [
+   "when",
+   "before"
+  ],
+  "explain": "Inwersja z hardly: Hardly had we left when ... (ledwo wyszliśmy, gdy ...)."
+ },
+ {
+  "id": "q-en-gram-077",
+  "type": "write",
+  "level": 1,
+  "q": "They are meeting ++outside the cinema++.",
+  "answers": [
+   "Where are they meeting?"
+  ],
+  "explain": "Pytanie o miejsce: Where are they meeting?"
+ },
+ {
+  "id": "q-en-gram-078",
+  "type": "write",
+  "level": 1,
+  "q": "Tom's uncle works ++in a bank++.",
+  "answers": [
+   "Where does Tom's uncle work?"
+  ],
+  "explain": "Pytanie o miejsce w Present Simple: Where does ... work?"
+ },
+ {
+  "id": "q-en-gram-079",
+  "type": "write",
+  "level": 1,
+  "q": "The concert starts ++at eight++.",
+  "answers": [
+   "What time does the concert start?",
+   "When does the concert start?"
+  ],
+  "explain": "Pytanie o godzinę: What time does the concert start?"
+ },
+ {
+  "id": "q-en-gram-080",
+  "type": "write",
+  "level": 2,
+  "q": "++Sara++ borrowed my dictionary.",
+  "answers": [
+   "Who borrowed my dictionary?"
+  ],
+  "explain": "Pytanie o podmiot nie ma did: Who borrowed my dictionary?"
+ },
+ {
+  "id": "q-en-gram-081",
+  "type": "write",
+  "level": 2,
+  "q": "The children have been playing ++for two hours++.",
+  "answers": [
+   "How long have the children been playing?"
+  ],
+  "explain": "Pytanie o czas trwania: How long have ... been playing?"
+ },
+ {
+  "id": "q-en-gram-082",
+  "type": "write",
+  "level": 1,
+  "q": "The tickets cost ++twelve pounds++.",
+  "answers": [
+   "How much do the tickets cost?"
+  ],
+  "explain": "Pytanie o cenę: How much do the tickets cost?"
+ },
+ {
+  "id": "q-en-gram-083",
+  "type": "write",
+  "level": 2,
+  "q": "Mark is looking at ++the map++.",
+  "answers": [
+   "What is Mark looking at?",
+   "At what is Mark looking?"
+  ],
+  "explain": "Pytanie z przyimkiem: What is Mark looking at?"
+ },
+ {
+  "id": "q-en-gram-084",
+  "type": "write",
+  "level": 2,
+  "q": "Her phone was stolen ++on the bus++.",
+  "answers": [
+   "Where was her phone stolen?"
+  ],
+  "explain": "Pytanie o miejsce w stronie biernej: Where was her phone stolen?"
+ },
+ {
+  "id": "q-en-gram-085",
+  "type": "write",
+  "level": 1,
+  "q": "He will arrive ++next Friday++.",
+  "answers": [
+   "When will he arrive?",
+   "What day will he arrive?"
+  ],
+  "explain": "Pytanie o czas: When will he arrive?"
+ },
+ {
+  "id": "q-en-gram-086",
+  "type": "write",
+  "level": 3,
+  "q": "Ann likes ++classical music++ best.",
+  "answers": [
+   "What kind of music does Ann like best?",
+   "What music does Ann like best?"
+  ],
+  "explain": "Pytanie o rodzaj: What kind of music does Ann like best?"
+ },
+ {
+  "id": "q-en-gram-087",
+  "type": "write",
+  "level": 3,
+  "q": "I am sure he was at home. (MUST)\nHe ___ at home.",
+  "keyword": "must",
+  "maxWords": 5,
+  "answers": [
+   "must have been"
+  ],
+  "explain": "Pewny wniosek o przeszłości: must have + III forma."
+ },
+ {
+  "id": "q-en-gram-088",
+  "type": "write",
+  "level": 3,
+  "q": "Perhaps they didn't get the message. (MIGHT)\nThey ___ the message.",
+  "keyword": "might",
+  "maxWords": 5,
+  "answers": [
+   "might not have got",
+   "might not have gotten",
+   "might not have received"
+  ],
+  "explain": "Przypuszczenie o przeszłości: might not have + III forma."
+ },
+ {
+  "id": "q-en-gram-089",
+  "type": "write",
+  "level": 2,
+  "q": "I haven't seen my cousin for two years. (LAST)\nThe ___ my cousin was two years ago.",
+  "keyword": "last",
+  "maxWords": 5,
+  "answers": [
+   "last time I saw"
+  ],
+  "explain": "Konstrukcja the last time I saw ... (ostatni raz widziałem)."
+ },
+ {
+  "id": "q-en-gram-090",
+  "type": "write",
+  "level": 3,
+  "q": "Mia is better at maths than Paul. (AS)\nPaul ___ maths as Mia.",
+  "keyword": "as",
+  "maxWords": 5,
+  "answers": [
+   "isn't as good at",
+   "is not as good at"
+  ],
+  "explain": "Porównanie przeczące: not as good at ... as."
+ },
+ {
+  "id": "q-en-gram-091",
+  "type": "write",
+  "level": 2,
+  "q": "'Where do you live?' he asked her. (WHERE)\nHe asked her ___.",
+  "keyword": "where",
+  "maxWords": 5,
+  "answers": [
+   "where she lived"
+  ],
+  "explain": "Pytanie z where w mowie zależnej: szyk twierdzący i czas cofnięty."
+ },
+ {
+  "id": "q-en-gram-092",
+  "type": "write",
+  "level": 3,
+  "q": "It was wrong of you to shout at him. (SHOULD)\nYou ___ at him.",
+  "keyword": "should",
+  "maxWords": 5,
+  "answers": [
+   "should not have shouted"
+  ],
+  "explain": "Krytyka przeszłości: should not have + III forma."
+ },
+ {
+  "id": "q-en-gram-093",
+  "type": "write",
+  "level": 2,
+  "q": "They started building the house in May and are still building it. (BEEN)\nThey ___ the house since May.",
+  "keyword": "been",
+  "maxWords": 5,
+  "answers": [
+   "have been building"
+  ],
+  "explain": "Czynność trwająca do teraz: have been + -ing."
+ },
+ {
+  "id": "q-en-gram-094",
+  "type": "write",
+  "level": 2,
+  "q": "Because of the fog, the flight was cancelled. (DUE)\nThe flight was cancelled ___ fog.",
+  "keyword": "due",
+  "maxWords": 5,
+  "answers": [
+   "due to the"
+  ],
+  "explain": "Przyczyna przed rzeczownikiem: due to the fog."
+ },
+ {
+  "id": "q-en-gram-095",
+  "type": "write",
+  "level": 2,
+  "q": "You cannot enter without a ticket. (UNLESS)\nYou cannot enter ___ a ticket.",
+  "keyword": "unless",
+  "maxWords": 5,
+  "answers": [
+   "unless you have"
+  ],
+  "explain": "Unless = jeśli nie: unless you have a ticket."
+ },
+ {
+  "id": "q-en-gram-096",
+  "type": "write",
+  "level": 3,
+  "q": "Our teacher made us rewrite the essay. (WERE)\nWe ___ rewrite the essay by our teacher.",
+  "keyword": "were",
+  "maxWords": 5,
+  "answers": [
+   "were made to"
+  ],
+  "explain": "Strona bierna po make: were made to + bezokolicznik."
+ },
+ {
+  "id": "q-en-gram-097",
+  "type": "write",
+  "level": 2,
+  "q": "I don't want to go out tonight. (FEEL)\nI don't ___ going out tonight.",
+  "keyword": "feel",
+  "maxWords": 5,
+  "answers": [
+   "feel like"
+  ],
+  "explain": "Feel like + -ing = mieć ochotę."
+ },
+ {
+  "id": "q-en-gram-098",
+  "type": "write",
+  "level": 3,
+  "q": "Someone is repairing my laptop at the moment. (BEING)\nMy laptop ___ at the moment.",
+  "keyword": "being",
+  "maxWords": 5,
+  "answers": [
+   "is being repaired"
+  ],
+  "explain": "Strona bierna w Present Continuous: is being repaired."
+ },
+ {
+  "id": "q-en-gram-099",
+  "type": "choice",
+  "level": 3,
+  "q": "By the time we arrived, the film ___.",
+  "options": [
+   "already started",
+   "has already started",
+   "had already started",
+   "was already starting"
+  ],
+  "answer": 2,
+  "explain": "Czynność wcześniejsza od innej w przeszłości: Past Perfect."
+ },
+ {
+  "id": "q-en-gram-100",
+  "type": "choice",
+  "level": 2,
+  "q": "I am used to ___ up early.",
+  "options": [
+   "getting",
+   "get",
+   "got",
+   "have got"
+  ],
+  "answer": 0,
+  "explain": "Be used to + forma -ing."
+ },
+ {
+  "id": "q-en-gram-101",
+  "type": "choice",
+  "level": 2,
+  "q": "He said that he ___ the book the day before.",
+  "options": [
+   "has read",
+   "reads",
+   "had read",
+   "will read"
+  ],
+  "answer": 2,
+  "explain": "W mowie zależnej Past Simple zmienia się w Past Perfect."
+ },
+ {
+  "id": "q-en-gram-102",
+  "type": "choice",
+  "level": 2,
+  "q": "If I ___ you, I would apologise.",
+  "options": [
+   "were",
+   "am",
+   "will be",
+   "would be"
+  ],
+  "answer": 0,
+  "explain": "II okres warunkowy: If I were you."
+ },
+ {
+  "id": "q-en-gram-103",
+  "type": "choice",
+  "level": 1,
+  "q": "The new shop is ___ than the old one.",
+  "options": [
+   "more big",
+   "most big",
+   "bigger as",
+   "much bigger"
+  ],
+  "answer": 3,
+  "explain": "Krótki przymiotnik: bigger than; much wzmacnia."
+ },
+ {
+  "id": "q-en-gram-104",
+  "type": "choice",
+  "level": 2,
+  "q": "She is the girl ___ brother plays for Barcelona.",
+  "options": [
+   "who",
+   "whose",
+   "which",
+   "whom"
+  ],
+  "answer": 1,
+  "explain": "Whose wskazuje na przynależność."
+ },
+ {
+  "id": "q-en-gram-105",
+  "type": "choice",
+  "level": 2,
+  "q": "We ___ dinner when the lights went out.",
+  "options": [
+   "had",
+   "have had",
+   "are having",
+   "were having"
+  ],
+  "answer": 3,
+  "explain": "Czynność w toku przerwana inną: Past Continuous."
+ },
+ {
+  "id": "q-en-gram-106",
+  "type": "choice",
+  "level": 2,
+  "q": "Neither Tom ___ Eve knew the answer.",
+  "options": [
+   "or",
+   "nor",
+   "and",
+   "but"
+  ],
+  "answer": 1,
+  "explain": "Neither ... nor."
+ },
+ {
+  "id": "q-en-gram-107",
+  "type": "choice",
+  "level": 2,
+  "q": "She asked me ___ I wanted tea or coffee.",
+  "options": [
+   "whether",
+   "that",
+   "what",
+   "which"
+  ],
+  "answer": 0,
+  "explain": "Pytanie z wyborem w mowie zależnej: whether."
+ },
+ {
+  "id": "q-en-gram-108",
+  "type": "choice",
+  "level": 1,
+  "q": "You ___ wear a seat belt. It is the law.",
+  "options": [
+   "needn't",
+   "may",
+   "must",
+   "can't"
+  ],
+  "answer": 2,
+  "explain": "Obowiązek wynikający z prawa: must."
  }
 ]

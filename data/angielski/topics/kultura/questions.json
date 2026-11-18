@@ -128,5 +128,187 @@
   ],
   "answer": 0,
   "explain": "Kraina Jezior (Lake District) leży w północno-zachodniej Anglii."
+ },
+ {
+  "id": "q-en-kult-011",
+  "type": "choice",
+  "level": 1,
+  "q": "The capital of Wales is ...",
+  "options": [
+   "Swansea",
+   "Newport",
+   "Cardiff"
+  ],
+  "answer": 2,
+  "explain": "Stolicą Walii jest Cardiff."
+ },
+ {
+  "id": "q-en-kult-012",
+  "type": "choice",
+  "level": 1,
+  "q": "The patron saint of Scotland is ...",
+  "options": [
+   "St George",
+   "St Andrew",
+   "St David"
+  ],
+  "answer": 1,
+  "explain": "Patronem Szkocji jest św. Andrzej (St Andrew)."
+ },
+ {
+  "id": "q-en-kult-013",
+  "type": "choice",
+  "level": 2,
+  "q": "Bonfire Night is celebrated in Britain on ...",
+  "options": [
+   "5 November",
+   "31 October",
+   "25 December"
+  ],
+  "answer": 0,
+  "explain": "Bonfire Night (Guy Fawkes Night) przypada 5 listopada."
+ },
+ {
+  "id": "q-en-kult-014",
+  "type": "choice",
+  "level": 1,
+  "q": "The American holiday on 4 July is called ...",
+  "options": [
+   "Independence Day",
+   "Memorial Day",
+   "Labor Day"
+  ],
+  "answer": 0,
+  "explain": "4 lipca to Independence Day – Dzień Niepodległości."
+ },
+ {
+  "id": "q-en-kult-015",
+  "type": "choice",
+  "level": 2,
+  "q": "Boxing Day in Britain is on ...",
+  "options": [
+   "1 January",
+   "25 December",
+   "26 December"
+  ],
+  "answer": 2,
+  "explain": "Boxing Day to 26 grudnia, dzień po Bożym Narodzeniu."
+ },
+ {
+  "id": "q-en-kult-016",
+  "type": "choice",
+  "level": 3,
+  "q": "Mount Rushmore, with the faces of four presidents, is in the state of ...",
+  "options": [
+   "Colorado",
+   "South Dakota",
+   "Montana"
+  ],
+  "answer": 1,
+  "explain": "Mount Rushmore leży w Dakocie Południowej (South Dakota)."
+ },
+ {
+  "id": "q-en-kult-017",
+  "type": "choice",
+  "level": 3,
+  "q": "The highest mountain in Wales is ...",
+  "options": [
+   "Ben Nevis",
+   "Snowdon",
+   "Scafell Pike"
+  ],
+  "answer": 1,
+  "explain": "Snowdon to najwyższy szczyt Walii; Ben Nevis jest w Szkocji, Scafell Pike w Anglii."
+ },
+ {
+  "id": "q-en-kult-018",
+  "type": "choice",
+  "level": 1,
+  "q": "Niagara Falls lies on the border between the USA and ...",
+  "options": [
+   "Canada",
+   "Mexico",
+   "Cuba"
+  ],
+  "answer": 0,
+  "explain": "Wodospad Niagara leży na granicy USA i Kanady."
+ },
+ {
+  "id": "q-en-kult-019",
+  "type": "choice",
+  "level": 3,
+  "q": "Which of these is NOT part of the United Kingdom?",
+  "options": [
+   "Northern Ireland",
+   "Wales",
+   "The Republic of Ireland"
+  ],
+  "answer": 2,
+  "explain": "Republika Irlandii to osobne państwo; Irlandia Północna należy do UK."
+ },
+ {
+  "id": "q-en-kult-020",
+  "type": "choice",
+  "level": 3,
+  "q": "The Union Jack combines the crosses of St George, St Andrew and ...",
+  "options": [
+   "St David",
+   "St Columba",
+   "St Patrick"
+  ],
+  "answer": 2,
+  "explain": "Flaga łączy krzyże trzech świętych: Jerzego, Andrzeja i Patryka."
+ },
+ {
+  "id": "q-en-kult-021",
+  "type": "choice",
+  "level": 1,
+  "q": "The White House, the home of the US president, is in ...",
+  "options": [
+   "New York",
+   "Washington, D.C.",
+   "Philadelphia"
+  ],
+  "answer": 1,
+  "explain": "Biały Dom stoi w Waszyngtonie."
+ },
+ {
+  "id": "q-en-kult-022",
+  "type": "choice",
+  "level": 2,
+  "q": "Windsor Castle, a royal residence, is near ...",
+  "options": [
+   "London",
+   "Edinburgh",
+   "Cardiff"
+  ],
+  "answer": 0,
+  "explain": "Zamek Windsor leży niedaleko Londynu."
+ },
+ {
+  "id": "q-en-kult-023",
+  "type": "choice",
+  "level": 2,
+  "q": "Hadrian's Wall in the north of England was built by the ...",
+  "options": [
+   "Romans",
+   "Vikings",
+   "Normans"
+  ],
+  "answer": 0,
+  "explain": "Mur Hadriana zbudowali Rzymianie."
+ },
+ {
+  "id": "q-en-kult-024",
+  "type": "choice",
+  "level": 3,
+  "q": "The Liberty Bell is displayed in ...",
+  "options": [
+   "Boston",
+   "Chicago",
+   "Philadelphia"
+  ],
+  "answer": 2,
+  "explain": "Dzwon Wolności (Liberty Bell) jest w Filadelfii."
  }
 ]
