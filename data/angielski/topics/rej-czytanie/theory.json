@@ -75,6 +75,26 @@
     "Phones and tablets are useful, and nobody needs to feel guilty about using them.",
     "Boredom is also one of the most common reasons why teenagers give up their hobbies."
    ]
+  },
+  {
+   "id": "g-en-rczyt-03",
+   "instruction": "Przeczytaj tekst, a następnie zdania pod tekstem i zdecyduj, czy są prawdziwe (TRUE), czy fałszywe (FALSE).",
+   "text": "Typing is faster than writing by hand, and for most adults a keyboard is now the main tool of everyday communication. Yet a growing number of schools in several countries are bringing handwriting lessons back into the timetable, and researchers say they have good reasons.\n\nOne of the main arguments concerns memory. In a small study, students who took notes by hand during a lecture remembered more of the main ideas a week later than those who typed everything on laptops. The researchers believe that handwriting forces people to listen carefully and to summarise, whereas typists tend to copy sentences word for word without really thinking about them.\n\nAnother benefit may be connected with young children. Teachers report that pupils who learn to form letters with a pencil recognise them faster than those who only press keys. Writing also develops the small muscles of the hand, which are needed for many other everyday tasks, from buttoning a coat to using scissors.\n\nNot everybody welcomes the change. Some parents argue that children will spend their adult lives typing, so valuable lesson time should be devoted to keyboard skills. There is also the problem of speed: pupils with untidy handwriting may feel discouraged when they cannot read their own notes, and teachers admit that marking handwritten work takes longer.\n\nMost experts, however, do not recommend choosing one method over the other. A sensible compromise, they say, is to teach children to write by hand in the early years and to introduce typing gradually later, so that they can use both skills depending on the task.\n\n(Tekst został wymyślony na potrzeby ćwiczenia.)"
+  },
+  {
+   "id": "g-en-rczyt-04",
+   "instruction": "Przeczytaj tekst, z którego usunięto 6 zdań. Dla każdej luki wybierz literę (A–H) oznaczającą brakujące zdanie. Uwaga: 2 zdania zostały podane dodatkowo i nie pasują do żadnej luki.",
+   "text": "Almost everybody feels nervous before speaking in front of an audience. Some people get dry mouths, others shake or forget the first sentence. (1)___ Psychologists explain that this reaction is a leftover from the time when humans had to react quickly to danger.\n\nWhen we feel threatened, the body prepares to run or fight. The heart beats faster, breathing becomes shallow and muscles tense. (2)___ A presentation, however, is not a dangerous animal, and the energy has nowhere to go.\n\nExperts recommend several ways of dealing with this problem. The first is thorough preparation. (3)___ Speakers who have rehearsed their talk several times usually worry less about forgetting words.\n\nAnother useful technique is to slow down the breathing. (4)___ Taking a few deep breaths before going on the stage can calm the heart and make the voice more steady.\n\nIt also helps to change the way we think about stress. (5)___ Some studies suggest that people who tell themselves 'I am excited' perform better than those who repeat 'I am calm'.\n\nFinally, it is worth remembering that the audience is usually on the speaker's side. (6)___ Most people are too busy thinking about their own opinions to notice small mistakes.\n\n(Tekst został wymyślony na potrzeby ćwiczenia.)",
+   "bank": [
+    "When we are afraid, we usually breathe quickly and not deeply enough.",
+    "Most listeners want the speaker to succeed and are not looking for errors.",
+    "Public speaking is taught in only a few schools around the world.",
+    "In a primitive situation, this physical response was extremely useful.",
+    "Some speakers prefer to read their texts aloud from a sheet of paper.",
+    "Knowing the material well gives a feeling of control.",
+    "This is why even very experienced speakers admit that they feel a little afraid.",
+    "Instead of trying to hide the excitement, we can treat it as useful energy."
+   ]
   }
  ]
 }

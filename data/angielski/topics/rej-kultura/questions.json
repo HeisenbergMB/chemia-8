@@ -208,5 +208,173 @@
   ],
   "answer": 1,
   "explain": "Dzień Świstaka obchodzi się 2 lutego."
+ },
+ {
+  "id": "q-en-rkult-016",
+  "type": "choice",
+  "level": 2,
+  "q": "Lent, the Christian period before Easter, lasts about ... days.",
+  "options": [
+   "thirty",
+   "fifty",
+   "twenty",
+   "forty"
+  ],
+  "answer": 3,
+  "explain": "Wielki Post trwa czterdzieści dni."
+ },
+ {
+  "id": "q-en-rkult-017",
+  "type": "choice",
+  "level": 2,
+  "q": "Mother's Day in the USA falls on the second Sunday of ...",
+  "options": [
+   "March",
+   "May",
+   "June",
+   "December"
+  ],
+  "answer": 1,
+  "explain": "W USA Dzień Matki przypada w drugą niedzielę maja."
+ },
+ {
+  "id": "q-en-rkult-018",
+  "type": "choice",
+  "level": 2,
+  "q": "Father's Day in the USA falls on the third Sunday of ...",
+  "options": [
+   "May",
+   "August",
+   "November",
+   "June"
+  ],
+  "answer": 3,
+  "explain": "Dzień Ojca w USA to trzecia niedziela czerwca."
+ },
+ {
+  "id": "q-en-rkult-019",
+  "type": "choice",
+  "level": 3,
+  "q": "Which American holiday is celebrated on 19 June?",
+  "options": [
+   "Labor Day",
+   "Juneteenth",
+   "Memorial Day",
+   "Thanksgiving"
+  ],
+  "answer": 1,
+  "explain": "Juneteenth upamiętnia koniec niewolnictwa i przypada 19 czerwca."
+ },
+ {
+  "id": "q-en-rkult-020",
+  "type": "choice",
+  "level": 2,
+  "q": "Veterans Day in the USA is observed on ...",
+  "options": [
+   "11 November",
+   "4 July",
+   "1 September",
+   "25 December"
+  ],
+  "answer": 0,
+  "explain": "Veterans Day to 11 listopada."
+ },
+ {
+  "id": "q-en-rkult-021",
+  "type": "choice",
+  "level": 2,
+  "q": "Columbus Day in the USA is observed in ...",
+  "options": [
+   "April",
+   "July",
+   "October",
+   "January"
+  ],
+  "answer": 2,
+  "explain": "Columbus Day przypada w październiku."
+ },
+ {
+  "id": "q-en-rkult-022",
+  "type": "choice",
+  "level": 2,
+  "q": "Christmas crackers are traditionally pulled at the table in ...",
+  "options": [
+   "Britain",
+   "Brazil",
+   "Japan",
+   "Mexico"
+  ],
+  "answer": 0,
+  "explain": "Christmas crackers to brytyjska tradycja świąteczna."
+ },
+ {
+  "id": "q-en-rkult-023",
+  "type": "choice",
+  "level": 3,
+  "q": "The Eisteddfod is a traditional festival of music and poetry in ...",
+  "options": [
+   "Scotland",
+   "England",
+   "Wales",
+   "Ireland"
+  ],
+  "answer": 2,
+  "explain": "Eisteddfod to walijski festiwal muzyki i poezji."
+ },
+ {
+  "id": "q-en-rkult-024",
+  "type": "choice",
+  "level": 3,
+  "q": "Presidents' Day in the USA is observed on the third Monday of ...",
+  "options": [
+   "March",
+   "February",
+   "September",
+   "December"
+  ],
+  "answer": 1,
+  "explain": "Presidents' Day przypada w trzeci poniedziałek lutego."
+ },
+ {
+  "id": "q-en-rkult-025",
+  "type": "choice",
+  "level": 2,
+  "q": "The Mardi Gras carnival is especially famous in the American city of ...",
+  "options": [
+   "Boston",
+   "Seattle",
+   "Denver",
+   "New Orleans"
+  ],
+  "answer": 3,
+  "explain": "Mardi Gras jest szczególnie znany w Nowym Orleanie."
+ },
+ {
+  "id": "q-en-rkult-026",
+  "type": "choice",
+  "level": 3,
+  "q": "First-footing, the custom of being the first guest of the year, takes place on ...",
+  "options": [
+   "Easter Monday",
+   "New Year's morning",
+   "Midsummer Day",
+   "Burns Night"
+  ],
+  "answer": 1,
+  "explain": "First-footing to szkocki zwyczaj odwiedzin po północy w Nowy Rok."
+ },
+ {
+  "id": "q-en-rkult-027",
+  "type": "choice",
+  "level": 1,
+  "q": "Valentine's Day is celebrated on ...",
+  "options": [
+   "14 March",
+   "1 April",
+   "31 October",
+   "14 February"
+  ],
+  "answer": 3,
+  "explain": "Walentynki przypadają 14 lutego."
  }
 ]

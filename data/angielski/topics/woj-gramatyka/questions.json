@@ -462,5 +462,446 @@
   ],
   "answer": 2,
   "explain": "Konstrukcja bezosobowa: are said to be."
+ },
+ {
+  "id": "q-en-wgram-037",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (1)",
+  "group": "g-en-wgram-02",
+  "gap": 1,
+  "answers": [
+   "have"
+  ],
+  "explain": "Present Perfect: habits have changed."
+ },
+ {
+  "id": "q-en-wgram-038",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (2)",
+  "group": "g-en-wgram-02",
+  "gap": 2,
+  "answers": [
+   "which"
+  ],
+  "explain": "Zaimek odnoszący się do całego zdania: ..., which means that ..."
+ },
+ {
+  "id": "q-en-wgram-039",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (3)",
+  "group": "g-en-wgram-02",
+  "gap": 3,
+  "answers": [
+   "on"
+  ],
+  "explain": "Stałe wyrażenie: On the other hand."
+ },
+ {
+  "id": "q-en-wgram-040",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (4)",
+  "group": "g-en-wgram-02",
+  "gap": 4,
+  "answers": [
+   "better"
+  ],
+  "explain": "Stopień wyższy przysłówka: recommend ... better than any algorithm."
+ },
+ {
+  "id": "q-en-wgram-041",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (5)",
+  "group": "g-en-wgram-02",
+  "gap": 5,
+  "answers": [
+   "many",
+   "some",
+   "most"
+  ],
+  "explain": "Wyrażenie ilości przed people: many/some/most people."
+ },
+ {
+  "id": "q-en-wgram-042",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (6)",
+  "group": "g-en-wgram-02",
+  "gap": 6,
+  "answers": [
+   "to",
+   "with"
+  ],
+  "explain": "Talk to/with someone."
+ },
+ {
+  "id": "q-en-wgram-043",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (7)",
+  "group": "g-en-wgram-02",
+  "gap": 7,
+  "answers": [
+   "with"
+  ],
+  "explain": "Stałe wyrażenie: with the result that."
+ },
+ {
+  "id": "q-en-wgram-044",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (8)",
+  "group": "g-en-wgram-02",
+  "gap": 8,
+  "answers": [
+   "all"
+  ],
+  "explain": "Not all + liczba mnoga = nie wszyscy."
+ },
+ {
+  "id": "q-en-wgram-045",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (9)",
+  "group": "g-en-wgram-02",
+  "gap": 9,
+  "answers": [
+   "out"
+  ],
+  "explain": "Point out that = zwrócić uwagę, że."
+ },
+ {
+  "id": "q-en-wgram-046",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (10)",
+  "group": "g-en-wgram-02",
+  "gap": 10,
+  "answers": [
+   "outcome",
+   "result"
+  ],
+  "explain": "Whatever the outcome turns out to be – jakikolwiek będzie wynik."
+ },
+ {
+  "id": "q-en-wgram-047",
+  "type": "write",
+  "level": 3,
+  "q": "I regret not telling her the truth. (WISH)\nI ___ her the truth.",
+  "keyword": "wish",
+  "maxWords": 5,
+  "answers": [
+   "wish I had told",
+   "wish I'd told"
+  ],
+  "explain": "Wish + Past Perfect: żal o przeszłość."
+ },
+ {
+  "id": "q-en-wgram-048",
+  "type": "write",
+  "level": 3,
+  "q": "The police suspect that the thief entered through the window. (SUSPECTED)\nThe thief ___ entered through the window.",
+  "keyword": "suspected",
+  "maxWords": 5,
+  "answers": [
+   "is suspected to have"
+  ],
+  "explain": "Konstrukcja bezosobowa z bezokolicznikiem dokonanym: is suspected to have + III forma."
+ },
+ {
+  "id": "q-en-wgram-049",
+  "type": "write",
+  "level": 2,
+  "q": "It is not necessary for you to come early. (NEED)\nYou ___ come early.",
+  "keyword": "need",
+  "maxWords": 5,
+  "answers": [
+   "do not need to",
+   "don't need to",
+   "need not"
+  ],
+  "explain": "Brak konieczności: don't need to / need not."
+ },
+ {
+  "id": "q-en-wgram-050",
+  "type": "write",
+  "level": 3,
+  "q": "She started her speech immediately after he finished his. (SOONER)\nNo ___ finished his speech than she started hers.",
+  "keyword": "sooner",
+  "maxWords": 5,
+  "answers": [
+   "sooner had he"
+  ],
+  "explain": "Inwersja: No sooner had he finished ... than."
+ },
+ {
+  "id": "q-en-wgram-051",
+  "type": "write",
+  "level": 2,
+  "q": "Despite feeling ill, Tom went to work. (ALTHOUGH)\n___ ill, Tom went to work.",
+  "keyword": "although",
+  "maxWords": 5,
+  "answers": [
+   "Although he felt",
+   "Although he was"
+  ],
+  "explain": "Although + zdanie: Although he felt ill."
+ },
+ {
+  "id": "q-en-wgram-052",
+  "type": "write",
+  "level": 3,
+  "q": "Everyone believes that the diamond was stolen by a guard. (BELIEVED)\nThe diamond ___ stolen by a guard.",
+  "keyword": "believed",
+  "maxWords": 5,
+  "answers": [
+   "is believed to have been"
+  ],
+  "explain": "Is believed to have been + III forma."
+ },
+ {
+  "id": "q-en-wgram-053",
+  "type": "write",
+  "level": 3,
+  "q": "I would prefer you not to smoke here. (RATHER)\nI would ___ smoke here.",
+  "keyword": "rather",
+  "maxWords": 5,
+  "answers": [
+   "rather you didn't",
+   "rather you did not"
+  ],
+  "explain": "Would rather + podmiot + Past Simple."
+ },
+ {
+  "id": "q-en-wgram-054",
+  "type": "write",
+  "level": 2,
+  "q": "He is able to run a marathon in under three hours. (CAPABLE)\nHe ___ a marathon in under three hours.",
+  "keyword": "capable",
+  "maxWords": 5,
+  "answers": [
+   "is capable of running"
+  ],
+  "explain": "Be capable of + -ing."
+ },
+ {
+  "id": "q-en-wgram-055",
+  "type": "write",
+  "level": 3,
+  "q": "The shop refunded me because the camera was faulty. (MONEY)\nThe shop ___ because the camera was faulty.",
+  "keyword": "money",
+  "maxWords": 5,
+  "answers": [
+   "gave me my money back"
+  ],
+  "explain": "Give someone their money back = zwrócić pieniądze."
+ },
+ {
+  "id": "q-en-wgram-056",
+  "type": "write",
+  "level": 3,
+  "q": "If you had told me earlier, I would have helped you. (HAD)\n___ told me earlier, I would have helped you.",
+  "keyword": "had",
+  "maxWords": 5,
+  "answers": [
+   "Had you"
+  ],
+  "explain": "Inwersja w III okresie warunkowym: Had you told ..."
+ },
+ {
+  "id": "q-en-wgram-057",
+  "type": "write",
+  "level": 2,
+  "q": "She finds it difficult to get up early. (USED)\nShe is not ___ up early.",
+  "keyword": "used",
+  "maxWords": 5,
+  "answers": [
+   "used to getting"
+  ],
+  "explain": "Be used to + -ing."
+ },
+ {
+  "id": "q-en-wgram-058",
+  "type": "write",
+  "level": 3,
+  "q": "He agreed only after a long discussion. (UNTIL)\nHe did ___ a long discussion.",
+  "keyword": "until",
+  "maxWords": 5,
+  "answers": [
+   "not agree until after"
+  ],
+  "explain": "Not ... until = dopiero po (not agree until after)."
+ },
+ {
+  "id": "q-en-wgram-059",
+  "type": "choice",
+  "level": 2,
+  "q": "She suggested ___ the meeting until Friday.",
+  "options": [
+   "to postpone",
+   "us to postpone",
+   "postpone",
+   "postponing"
+  ],
+  "answer": 3,
+  "explain": "Suggest + -ing."
+ },
+ {
+  "id": "q-en-wgram-060",
+  "type": "choice",
+  "level": 3,
+  "q": "Had I known about the delay, I ___ earlier.",
+  "options": [
+   "would leave",
+   "would have left",
+   "had left",
+   "will leave"
+  ],
+  "answer": 1,
+  "explain": "III okres warunkowy z inwersją: Had I known, I would have left."
+ },
+ {
+  "id": "q-en-wgram-061",
+  "type": "choice",
+  "level": 3,
+  "q": "Not until yesterday ___ the news.",
+  "options": [
+   "I heard",
+   "had I heard",
+   "I did hear",
+   "did I hear"
+  ],
+  "answer": 3,
+  "explain": "Inwersja po not until: did I hear."
+ },
+ {
+  "id": "q-en-wgram-062",
+  "type": "choice",
+  "level": 3,
+  "q": "By next year, scientists ___ a cure.",
+  "options": [
+   "will find",
+   "will have found",
+   "find",
+   "have found"
+  ],
+  "answer": 1,
+  "explain": "Future Perfect: will have found."
+ },
+ {
+  "id": "q-en-wgram-063",
+  "type": "choice",
+  "level": 3,
+  "q": "She is thought ___ the country last year.",
+  "options": [
+   "to have left",
+   "to leave",
+   "leaving",
+   "having left"
+  ],
+  "answer": 0,
+  "explain": "Konstrukcja bezosobowa dla przeszłości: is thought to have left."
+ },
+ {
+  "id": "q-en-wgram-064",
+  "type": "choice",
+  "level": 2,
+  "q": "The more you practise, ___ you become.",
+  "options": [
+   "better",
+   "the best",
+   "the better",
+   "more better"
+  ],
+  "answer": 2,
+  "explain": "Podwójny stopień wyższy: the more ..., the better ..."
+ },
+ {
+  "id": "q-en-wgram-065",
+  "type": "choice",
+  "level": 3,
+  "q": "I would sooner you ___ me the truth.",
+  "options": [
+   "told",
+   "tell",
+   "will tell",
+   "telling"
+  ],
+  "answer": 0,
+  "explain": "Would sooner + podmiot + Past Simple."
+ },
+ {
+  "id": "q-en-wgram-066",
+  "type": "choice",
+  "level": 3,
+  "q": "Hardly ___ the room when the lights went off.",
+  "options": [
+   "she had entered",
+   "did she enter",
+   "had she entered",
+   "she entered"
+  ],
+  "answer": 2,
+  "explain": "Inwersja po hardly: Hardly had she entered when ..."
+ },
+ {
+  "id": "q-en-wgram-067",
+  "type": "choice",
+  "level": 3,
+  "q": "If it ___ for his help, we would have lost.",
+  "options": [
+   "wasn't",
+   "hadn't been",
+   "weren't",
+   "hasn't been"
+  ],
+  "answer": 1,
+  "explain": "Stałe wyrażenie: If it hadn't been for."
+ },
+ {
+  "id": "q-en-wgram-068",
+  "type": "choice",
+  "level": 2,
+  "q": "It is high time you ___ looking for a job.",
+  "options": [
+   "start",
+   "will start",
+   "have started",
+   "started"
+  ],
+  "answer": 3,
+  "explain": "It's high time + Past Simple."
+ },
+ {
+  "id": "q-en-wgram-069",
+  "type": "choice",
+  "level": 3,
+  "q": "She was made ___ the room.",
+  "options": [
+   "leave",
+   "to leave",
+   "leaving",
+   "left"
+  ],
+  "answer": 1,
+  "explain": "Strona bierna po make: was made to leave."
+ },
+ {
+  "id": "q-en-wgram-070",
+  "type": "choice",
+  "level": 3,
+  "q": "The suspect denied ___ anywhere near the bank.",
+  "options": [
+   "to have been",
+   "to be",
+   "been",
+   "having been"
+  ],
+  "answer": 3,
+  "explain": "Deny + having + III forma: zaprzeczać, że się było."
  }
 ]

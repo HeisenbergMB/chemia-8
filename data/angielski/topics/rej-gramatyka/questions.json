@@ -373,5 +373,441 @@
    "was so difficult"
   ],
   "explain": "Such + rzeczownik zamieniamy na so + przymiotnik: was so difficult that."
+ },
+ {
+  "id": "q-en-rgram-031",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (1)",
+  "group": "g-en-rgram-02",
+  "gap": 1,
+  "answers": [
+   "which"
+  ],
+  "explain": "Zaimek względny w zdaniu dopowiedzenia po przecinku: games, which many people thought ..."
+ },
+ {
+  "id": "q-en-rgram-032",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (2)",
+  "group": "g-en-rgram-02",
+  "gap": 2,
+  "answers": [
+   "over",
+   "with"
+  ],
+  "explain": "Play (a game) over a coffee – grać przy kawie."
+ },
+ {
+  "id": "q-en-rgram-033",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (3)",
+  "group": "g-en-rgram-02",
+  "gap": 3,
+  "answers": [
+   "at",
+   "during"
+  ],
+  "explain": "At big fairs – na dużych targach."
+ },
+ {
+  "id": "q-en-rgram-034",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (4)",
+  "group": "g-en-rgram-02",
+  "gap": 4,
+  "answers": [
+   "do",
+   "can"
+  ],
+  "explain": "Screens do not / cannot offer – ekrany tego nie oferują."
+ },
+ {
+  "id": "q-en-rgram-035",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (5)",
+  "group": "g-en-rgram-02",
+  "gap": 5,
+  "answers": [
+   "because",
+   "as",
+   "since",
+   "when"
+  ],
+  "explain": "Przyczyna sporów: because the rules are not always clear."
+ },
+ {
+  "id": "q-en-rgram-036",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (6)",
+  "group": "g-en-rgram-02",
+  "gap": 6,
+  "answers": [
+   "spite"
+  ],
+  "explain": "In spite of = mimo."
+ },
+ {
+  "id": "q-en-rgram-037",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (7)",
+  "group": "g-en-rgram-02",
+  "gap": 7,
+  "answers": [
+   "have"
+  ],
+  "explain": "Present Perfect: Teachers have discovered."
+ },
+ {
+  "id": "q-en-rgram-038",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (8)",
+  "group": "g-en-rgram-02",
+  "gap": 8,
+  "answers": [
+   "how"
+  ],
+  "explain": "Teach children how to count."
+ },
+ {
+  "id": "q-en-rgram-039",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (9)",
+  "group": "g-en-rgram-02",
+  "gap": 9,
+  "answers": [
+   "where"
+  ],
+  "explain": "Zaimek względny miejsca: tournaments, where pupils compete."
+ },
+ {
+  "id": "q-en-rgram-040",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (10)",
+  "group": "g-en-rgram-02",
+  "gap": 10,
+  "answers": [
+   "more"
+  ],
+  "explain": "Take more time than – zająć więcej czasu niż."
+ },
+ {
+  "id": "q-en-rgram-041",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (11)",
+  "group": "g-en-rgram-02",
+  "gap": 11,
+  "answers": [
+   "at"
+  ],
+  "explain": "At least = co najmniej."
+ },
+ {
+  "id": "q-en-rgram-042",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (12)",
+  "group": "g-en-rgram-02",
+  "gap": 12,
+  "answers": [
+   "it"
+  ],
+  "explain": "Be worth it = być wartym wysiłku."
+ },
+ {
+  "id": "q-en-rgram-043",
+  "type": "write",
+  "level": 3,
+  "q": "I am sure they did not hear the alarm. (CANNOT)\nThey ___ the alarm.",
+  "keyword": "cannot",
+  "maxWords": 5,
+  "answers": [
+   "cannot have heard"
+  ],
+  "explain": "Pewność, że coś nie zaszło: cannot have + III forma."
+ },
+ {
+  "id": "q-en-rgram-044",
+  "type": "write",
+  "level": 2,
+  "q": "It is a pity we did not visit the museum. (SHOULD)\nWe ___ the museum.",
+  "keyword": "should",
+  "maxWords": 5,
+  "answers": [
+   "should have visited"
+  ],
+  "explain": "Żal o przeszłość: should have + III forma."
+ },
+ {
+  "id": "q-en-rgram-045",
+  "type": "write",
+  "level": 3,
+  "q": "Someone is following us. (BEING)\nWe ___ followed.",
+  "keyword": "being",
+  "maxWords": 5,
+  "answers": [
+   "are being"
+  ],
+  "explain": "Strona bierna w Present Continuous: are being followed."
+ },
+ {
+  "id": "q-en-rgram-046",
+  "type": "write",
+  "level": 2,
+  "q": "The film was so long that I fell asleep. (SUCH)\nIt ___ film that I fell asleep.",
+  "keyword": "such",
+  "maxWords": 5,
+  "answers": [
+   "was such a long"
+  ],
+  "explain": "Such + a + przymiotnik + rzeczownik."
+ },
+ {
+  "id": "q-en-rgram-047",
+  "type": "write",
+  "level": 2,
+  "q": "'I will call you tomorrow,' said Ewa. (PROMISED)\nEwa ___ me the next day.",
+  "keyword": "promised",
+  "maxWords": 5,
+  "answers": [
+   "promised to call"
+  ],
+  "explain": "Promise to + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-048",
+  "type": "write",
+  "level": 3,
+  "q": "He did not hear the news until Monday. (ONLY)\nIt ___ he heard the news.",
+  "keyword": "only",
+  "maxWords": 5,
+  "answers": [
+   "was only on Monday that"
+  ],
+  "explain": "Cleft sentence: It was only on Monday that ..."
+ },
+ {
+  "id": "q-en-rgram-049",
+  "type": "write",
+  "level": 3,
+  "q": "Peter regrets selling his guitar. (WISHES)\nPeter ___ his guitar.",
+  "keyword": "wishes",
+  "maxWords": 5,
+  "answers": [
+   "wishes he hadn't sold",
+   "wishes he had not sold"
+  ],
+  "explain": "Wish + Past Perfect: żal o przeszłość."
+ },
+ {
+  "id": "q-en-rgram-050",
+  "type": "write",
+  "level": 3,
+  "q": "I would prefer you not to tell anyone. (RATHER)\nI would ___ tell anyone.",
+  "keyword": "rather",
+  "maxWords": 5,
+  "answers": [
+   "rather you didn't",
+   "rather you did not"
+  ],
+  "explain": "Would rather + podmiot + Past Simple."
+ },
+ {
+  "id": "q-en-rgram-051",
+  "type": "write",
+  "level": 3,
+  "q": "Without your help we would have failed. (HAD)\nIf you ___ us, we would have failed.",
+  "keyword": "had",
+  "maxWords": 5,
+  "answers": [
+   "had not helped"
+  ],
+  "explain": "III okres warunkowy: If + Past Perfect."
+ },
+ {
+  "id": "q-en-rgram-052",
+  "type": "write",
+  "level": 1,
+  "q": "It is forbidden to smoke here. (ALLOWED)\nSmoking ___ here.",
+  "keyword": "allowed",
+  "maxWords": 5,
+  "answers": [
+   "is not allowed"
+  ],
+  "explain": "Be not allowed = nie wolno."
+ },
+ {
+  "id": "q-en-rgram-053",
+  "type": "write",
+  "level": 2,
+  "q": "Tom drove me to the station. (LIFT)\nTom ___ to the station.",
+  "keyword": "lift",
+  "maxWords": 5,
+  "answers": [
+   "gave me a lift"
+  ],
+  "explain": "Give someone a lift = podwieźć kogoś samochodem."
+ },
+ {
+  "id": "q-en-rgram-054",
+  "type": "write",
+  "level": 2,
+  "q": "Her mother is very like her. (AFTER)\nShe ___ her mother.",
+  "keyword": "after",
+  "maxWords": 5,
+  "answers": [
+   "takes after"
+  ],
+  "explain": "Take after = być podobnym do (rodzica)."
+ },
+ {
+  "id": "q-en-rgram-055",
+  "type": "choice",
+  "level": 1,
+  "q": "She has been living here ___ 2015.",
+  "options": [
+   "for",
+   "since",
+   "from",
+   "during"
+  ],
+  "answer": 1,
+  "explain": "Since + moment w przeszłości."
+ },
+ {
+  "id": "q-en-rgram-056",
+  "type": "choice",
+  "level": 2,
+  "q": "I would rather you ___ me the truth.",
+  "options": [
+   "tell",
+   "will tell",
+   "telling",
+   "told"
+  ],
+  "answer": 3,
+  "explain": "Would rather + podmiot + Past Simple."
+ },
+ {
+  "id": "q-en-rgram-057",
+  "type": "choice",
+  "level": 2,
+  "q": "If I had known, I ___ you.",
+  "options": [
+   "would tell",
+   "would have told",
+   "had told",
+   "told"
+  ],
+  "answer": 1,
+  "explain": "III okres warunkowy: would have + III forma."
+ },
+ {
+  "id": "q-en-rgram-058",
+  "type": "choice",
+  "level": 2,
+  "q": "The film ___ already when we arrived.",
+  "options": [
+   "has started",
+   "started",
+   "was starting",
+   "had started"
+  ],
+  "answer": 3,
+  "explain": "Czynność wcześniejsza od innej w przeszłości: Past Perfect."
+ },
+ {
+  "id": "q-en-rgram-059",
+  "type": "choice",
+  "level": 2,
+  "q": "He denied ___ the window.",
+  "options": [
+   "to break",
+   "break",
+   "breaking",
+   "to be broken"
+  ],
+  "answer": 2,
+  "explain": "Po czasowniku deny używamy formy -ing (denied breaking)."
+ },
+ {
+  "id": "q-en-rgram-060",
+  "type": "choice",
+  "level": 1,
+  "q": "___ the traffic, we arrived on time.",
+  "options": [
+   "In spite of",
+   "Although",
+   "Despite of",
+   "However"
+  ],
+  "answer": 0,
+  "explain": "In spite of + rzeczownik; despite nie łączy się z of."
+ },
+ {
+  "id": "q-en-rgram-061",
+  "type": "choice",
+  "level": 2,
+  "q": "She is looking forward ___ you.",
+  "options": [
+   "to meet",
+   "for meeting",
+   "to meeting",
+   "at meeting"
+  ],
+  "answer": 2,
+  "explain": "Look forward to + -ing."
+ },
+ {
+  "id": "q-en-rgram-062",
+  "type": "choice",
+  "level": 1,
+  "q": "The bag was ___ heavy that I could not lift it.",
+  "options": [
+   "so",
+   "such",
+   "too",
+   "very"
+  ],
+  "answer": 0,
+  "explain": "So + przymiotnik + that."
+ },
+ {
+  "id": "q-en-rgram-063",
+  "type": "choice",
+  "level": 2,
+  "q": "There is no need ___ so loudly.",
+  "options": [
+   "shouting",
+   "for shout",
+   "of shouting",
+   "to shout"
+  ],
+  "answer": 3,
+  "explain": "No need to + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-064",
+  "type": "choice",
+  "level": 2,
+  "q": "The letter ___ yesterday, but it has not arrived yet.",
+  "options": [
+   "sent",
+   "was sent",
+   "has sent",
+   "is sending"
+  ],
+  "answer": 1,
+  "explain": "Strona bierna w Past Simple: was sent."
  }
 ]

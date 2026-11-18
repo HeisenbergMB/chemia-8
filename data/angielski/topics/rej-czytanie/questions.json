@@ -180,5 +180,177 @@
   "gap": 7,
   "answer": 2,
   "explain": "Końcowe zdanie ujmuje wniosek tekstu: nuda jako nauczyciel; kolejne zdanie rozwija myśl o umiejętności nicnierobienia."
+ },
+ {
+  "id": "q-en-rczyt-016",
+  "type": "choice",
+  "level": 1,
+  "q": "For most adults, writing by hand is faster than typing.",
+  "group": "g-en-rczyt-03",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Tekst zaczyna się od stwierdzenia, że pisanie na klawiaturze jest szybsze."
+ },
+ {
+  "id": "q-en-rczyt-017",
+  "type": "choice",
+  "level": 1,
+  "q": "Several schools have decided to bring back handwriting lessons.",
+  "group": "g-en-rczyt-03",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Rosnąca liczba szkół wprowadza lekcje pisania ręcznego z powrotem do planu."
+ },
+ {
+  "id": "q-en-rczyt-018",
+  "type": "choice",
+  "level": 2,
+  "q": "In the study mentioned, students who wrote by hand remembered more ideas after a week.",
+  "group": "g-en-rczyt-03",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Notujący ręcznie zapamiętali więcej głównych myśli niż piszący na laptopach."
+ },
+ {
+  "id": "q-en-rczyt-019",
+  "type": "choice",
+  "level": 2,
+  "q": "According to the researchers, people who type summarise lectures better than those who write by hand.",
+  "group": "g-en-rczyt-03",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Piszący na klawiaturze zwykle kopiują zdania słowo w słowo, a ręczne notowanie wymusza streszczanie."
+ },
+ {
+  "id": "q-en-rczyt-020",
+  "type": "choice",
+  "level": 2,
+  "q": "Teachers say that children who learn letters with a pencil recognise them more slowly.",
+  "group": "g-en-rczyt-03",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Uczniowie piszący ołówkiem rozpoznają litery szybciej."
+ },
+ {
+  "id": "q-en-rczyt-021",
+  "type": "choice",
+  "level": 2,
+  "q": "Writing by hand helps develop hand muscles that are useful in other activities.",
+  "group": "g-en-rczyt-03",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Pisanie rozwija małe mięśnie dłoni potrzebne np. do zapinania guzików."
+ },
+ {
+  "id": "q-en-rczyt-022",
+  "type": "choice",
+  "level": 2,
+  "q": "Some parents think that keyboard skills should get more lesson time than handwriting.",
+  "group": "g-en-rczyt-03",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Część rodziców uważa, że lekcje powinny służyć nauce pisania na klawiaturze."
+ },
+ {
+  "id": "q-en-rczyt-023",
+  "type": "choice",
+  "level": 2,
+  "q": "Most experts recommend giving up typing in schools completely.",
+  "group": "g-en-rczyt-03",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Eksperci zalecają kompromis: ręczne pisanie najpierw, a pisanie na klawiaturze stopniowo później."
+ },
+ {
+  "id": "q-en-rczyt-024",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (1)",
+  "group": "g-en-rczyt-04",
+  "gap": 1,
+  "answer": 6,
+  "explain": "Zdanie G zamyka opis objawów, a następne zaczyna się od psychologów wyjaśniających \"this reaction\"."
+ },
+ {
+  "id": "q-en-rczyt-025",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (2)",
+  "group": "g-en-rczyt-04",
+  "gap": 2,
+  "answer": 3,
+  "explain": "Fragment D opisuje, że ta reakcja była kiedyś pożyteczna; \"however\" przeciwstawia ją sytuacji prezentacji."
+ },
+ {
+  "id": "q-en-rczyt-026",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (3)",
+  "group": "g-en-rczyt-04",
+  "gap": 3,
+  "answer": 5,
+  "explain": "Po zdaniu o przygotowaniu pasuje myśl o poczuciu kontroli; dalej mowa o prowadzących próby."
+ },
+ {
+  "id": "q-en-rczyt-027",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (4)",
+  "group": "g-en-rczyt-04",
+  "gap": 4,
+  "answer": 0,
+  "explain": "Przed zdaniem o głębokich oddechach pasuje zdanie o szybkim, płytkim oddychaniu ze strachu."
+ },
+ {
+  "id": "q-en-rczyt-028",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (5)",
+  "group": "g-en-rczyt-04",
+  "gap": 5,
+  "answer": 7,
+  "explain": "Zmiana myślenia o stresie: zdanie o traktowaniu emocji jako energii poprzedza badania o \"I am excited\"."
+ },
+ {
+  "id": "q-en-rczyt-029",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (6)",
+  "group": "g-en-rczyt-04",
+  "gap": 6,
+  "answer": 1,
+  "explain": "Zdanie o życzliwości słuchaczy tłumaczy, dlaczego większość nie zauważa drobnych błędów."
  }
 ]

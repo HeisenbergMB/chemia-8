@@ -426,5 +426,477 @@
    "whether you know"
   ],
   "explain": "Pytanie pośrednie: if/whether + szyk twierdzący."
+ },
+ {
+  "id": "q-en-wslow-036",
+  "type": "choice",
+  "level": 2,
+  "q": "She has been ___ all week; she has so much work to do.",
+  "options": [
+   "on cloud nine",
+   "in the pink",
+   "snowed under"
+  ],
+  "answer": 2,
+  "explain": "Snowed under = zawalony pracą."
+ },
+ {
+  "id": "q-en-wslow-037",
+  "type": "choice",
+  "level": 2,
+  "q": "I can't believe you told her! You really ___.",
+  "options": [
+   "broke a leg",
+   "let the cat out of the bag",
+   "rocked the boat"
+  ],
+  "answer": 1,
+  "explain": "Let the cat out of the bag = zdradzić sekret."
+ },
+ {
+  "id": "q-en-wslow-038",
+  "type": "choice",
+  "level": 1,
+  "q": "Good luck with your exam – ___!",
+  "options": [
+   "break a leg",
+   "hit the sack",
+   "cut corners"
+  ],
+  "answer": 0,
+  "explain": "Break a leg = powodzenia."
+ },
+ {
+  "id": "q-en-wslow-039",
+  "type": "choice",
+  "level": 2,
+  "q": "I'm exhausted. I'm going to ___ early tonight.",
+  "options": [
+   "hit the sack",
+   "hit the roof",
+   "miss the boat"
+  ],
+  "answer": 0,
+  "explain": "Hit the sack = iść spać."
+ },
+ {
+  "id": "q-en-wslow-040",
+  "type": "choice",
+  "level": 2,
+  "q": "When he saw the damage to his car, he ___.",
+  "options": [
+   "broke even",
+   "paid through the nose",
+   "saw red"
+  ],
+  "answer": 2,
+  "explain": "See red = wściec się."
+ },
+ {
+  "id": "q-en-wslow-041",
+  "type": "choice",
+  "level": 2,
+  "q": "You can't trust him; he is ___.",
+  "options": [
+   "down-to-earth",
+   "two-faced",
+   "over the hill"
+  ],
+  "answer": 1,
+  "explain": "Two-faced = dwulicowy."
+ },
+ {
+  "id": "q-en-wslow-042",
+  "type": "choice",
+  "level": 2,
+  "q": "Don't worry about the test; I'm sure you'll ___.",
+  "options": [
+   "cry over spilt milk",
+   "pass with flying colours",
+   "add fuel to the fire"
+  ],
+  "answer": 1,
+  "explain": "Pass with flying colours = zdać śpiewająco."
+ },
+ {
+  "id": "q-en-wslow-043",
+  "type": "choice",
+  "level": 3,
+  "q": "Try not to ___ – we have enough problems already.",
+  "options": [
+   "add fuel to the fire",
+   "break the ice",
+   "save your breath"
+  ],
+  "answer": 0,
+  "explain": "Add fuel to the fire = dolewać oliwy do ognia."
+ },
+ {
+  "id": "q-en-wslow-044",
+  "type": "choice",
+  "level": 3,
+  "q": "Working from home gives you ___: flexibility and a salary.",
+  "options": [
+   "a blessing in disguise",
+   "a drop in the ocean",
+   "the best of both worlds"
+  ],
+  "answer": 2,
+  "explain": "The best of both worlds = to, co najlepsze z obu stron."
+ },
+ {
+  "id": "q-en-wslow-045",
+  "type": "choice",
+  "level": 3,
+  "q": "Losing the job was ___; it made him start his own business.",
+  "options": [
+   "a red herring",
+   "a white elephant",
+   "a blessing in disguise"
+  ],
+  "answer": 2,
+  "explain": "A blessing in disguise = szczęście w nieszczęściu."
+ },
+ {
+  "id": "q-en-wslow-046",
+  "type": "choice",
+  "level": 2,
+  "q": "She was so tired that she was ___ the moment her head touched the pillow.",
+  "options": [
+   "over the moon",
+   "out like a light",
+   "under the weather"
+  ],
+  "answer": 1,
+  "explain": "Out like a light = natychmiast zasnąć."
+ },
+ {
+  "id": "q-en-wslow-047",
+  "type": "choice",
+  "level": 1,
+  "q": "The price of that car is ___ – nobody can afford it.",
+  "options": [
+   "sky-high",
+   "rock-bottom",
+   "dirt-cheap"
+  ],
+  "answer": 0,
+  "explain": "Sky-high = astronomicznie wysoki."
+ },
+ {
+  "id": "q-en-wslow-048",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (1)",
+  "group": "g-en-wslow-02",
+  "gap": 1,
+  "answers": [
+   "significantly"
+  ],
+  "explain": "Przysłówek od significant: significantly."
+ },
+ {
+  "id": "q-en-wslow-049",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (2)",
+  "group": "g-en-wslow-02",
+  "gap": 2,
+  "answers": [
+   "immediately"
+  ],
+  "explain": "Przysłówek od immediate: immediately."
+ },
+ {
+  "id": "q-en-wslow-050",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (3)",
+  "group": "g-en-wslow-02",
+  "gap": 3,
+  "answers": [
+   "playful"
+  ],
+  "explain": "Przymiotnik od play: playful (zabawowy)."
+ },
+ {
+  "id": "q-en-wslow-051",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (4)",
+  "group": "g-en-wslow-02",
+  "gap": 4,
+  "answers": [
+   "fluency"
+  ],
+  "explain": "Rzeczownik od fluent: fluency (płynność)."
+ },
+ {
+  "id": "q-en-wslow-052",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (5)",
+  "group": "g-en-wslow-02",
+  "gap": 5,
+  "answers": [
+   "corrections"
+  ],
+  "explain": "Rzeczownik od correct w liczbie mnogiej: corrections."
+ },
+ {
+  "id": "q-en-wslow-053",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (6)",
+  "group": "g-en-wslow-02",
+  "gap": 6,
+  "answers": [
+   "weakness"
+  ],
+  "explain": "Rzeczownik od weak: weakness (słabość)."
+ },
+ {
+  "id": "q-en-wslow-054",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (7)",
+  "group": "g-en-wslow-02",
+  "gap": 7,
+  "answers": [
+   "memorisation",
+   "memorization"
+  ],
+  "explain": "Rzeczownik od memorise: memorisation (UK) / memorization (US)."
+ },
+ {
+  "id": "q-en-wslow-055",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (8)",
+  "group": "g-en-wslow-02",
+  "gap": 8,
+  "answers": [
+   "successful"
+  ],
+  "explain": "Przymiotnik od success: successful."
+ },
+ {
+  "id": "q-en-wslow-056",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (9)",
+  "group": "g-en-wslow-02",
+  "gap": 9,
+  "answers": [
+   "entertaining"
+  ],
+  "explain": "Przymiotnik od entertain: entertaining (zabawny, interesujący)."
+ },
+ {
+  "id": "q-en-wslow-057",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (10)",
+  "group": "g-en-wslow-02",
+  "gap": 10,
+  "answers": [
+   "willing"
+  ],
+  "explain": "Przymiotnik od will: willing (chętny)."
+ },
+ {
+  "id": "q-en-wslow-058",
+  "type": "write",
+  "level": 3,
+  "q": "(Gdybym wiedział) ___ about the party, I would have come.",
+  "answers": [
+   "If I had known",
+   "Had I known"
+  ],
+  "explain": "III okres warunkowy: If I had known / Had I known."
+ },
+ {
+  "id": "q-en-wslow-059",
+  "type": "write",
+  "level": 3,
+  "q": "(Ledwo wyszliśmy) ___ when it started to snow.",
+  "answers": [
+   "Hardly had we left",
+   "We had hardly left"
+  ],
+  "explain": "Hardly had + podmiot + III forma + when."
+ },
+ {
+  "id": "q-en-wslow-060",
+  "type": "write",
+  "level": 3,
+  "q": "He denied (że to zrobił) ___.",
+  "answers": [
+   "having done it",
+   "doing it",
+   "that he had done it",
+   "that he did it"
+  ],
+  "explain": "Deny + -ing lub deny that + zdanie."
+ },
+ {
+  "id": "q-en-wslow-061",
+  "type": "write",
+  "level": 3,
+  "q": "I would rather (żebyś nie mówił) ___ anyone about it.",
+  "answers": [
+   "you didn't tell",
+   "you did not tell"
+  ],
+  "explain": "Would rather + podmiot + Past Simple."
+ },
+ {
+  "id": "q-en-wslow-062",
+  "type": "write",
+  "level": 3,
+  "q": "By the end of the year she (będzie pracować) ___ here for a decade.",
+  "answers": [
+   "will have been working"
+  ],
+  "explain": "Future Perfect Continuous: will have been working."
+ },
+ {
+  "id": "q-en-wslow-063",
+  "type": "write",
+  "level": 2,
+  "q": "(Im więcej ćwiczysz) ___, the better you play.",
+  "answers": [
+   "The more you practise",
+   "The more you practice"
+  ],
+  "explain": "The more ..., the better ... (podwójny stopień wyższy)."
+ },
+ {
+  "id": "q-en-wslow-064",
+  "type": "write",
+  "level": 2,
+  "q": "He is said (że jest) ___ the richest man in town.",
+  "answers": [
+   "to be"
+  ],
+  "explain": "Konstrukcja bezosobowa: is said to be."
+ },
+ {
+  "id": "q-en-wslow-065",
+  "type": "write",
+  "level": 3,
+  "q": "We (kazaliśmy naprawić nasz samochód) ___ yesterday.",
+  "answers": [
+   "had our car repaired",
+   "got our car repaired"
+  ],
+  "explain": "Have/get + dopełnienie + III forma."
+ },
+ {
+  "id": "q-en-wslow-066",
+  "type": "write",
+  "level": 2,
+  "q": "(Mimo że był zmęczony) ___, he continued working.",
+  "answers": [
+   "Although he was tired",
+   "Even though he was tired",
+   "Though he was tired",
+   "Tired as he was"
+  ],
+  "explain": "Although/even though + zdanie."
+ },
+ {
+  "id": "q-en-wslow-067",
+  "type": "write",
+  "level": 3,
+  "q": "She (nie mogła być) ___ at home – the lights were off.",
+  "answers": [
+   "can't have been",
+   "cannot have been",
+   "couldn't have been"
+  ],
+  "explain": "Pewność, że coś nie zaszło: can't have been."
+ },
+ {
+  "id": "q-en-wslow-068",
+  "type": "write",
+  "level": 2,
+  "q": "I am (przyzwyczajony do pracy) ___ at night.",
+  "answers": [
+   "used to working",
+   "accustomed to working"
+  ],
+  "explain": "Be used to + -ing."
+ },
+ {
+  "id": "q-en-wslow-069",
+  "type": "write",
+  "level": 2,
+  "q": "(Nigdy wcześniej nie widziałem) ___ such a beautiful view.",
+  "answers": [
+   "I had never seen",
+   "I'd never seen"
+  ],
+  "explain": "Past Perfect z never: I had never seen."
+ },
+ {
+  "id": "q-en-wslow-070",
+  "type": "write",
+  "level": 2,
+  "q": "1) This suitcase is so ___ that I can carry it with one hand.\n2) Please switch off the ___ when you leave the room.\n3) She has beautiful ___ blue eyes.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "light"
+  ],
+  "explain": "Light: lekki / światło / jasny (light blue)."
+ },
+ {
+  "id": "q-en-wslow-071",
+  "type": "write",
+  "level": 3,
+  "q": "1) I need to go to the ___ to withdraw some money.\n2) We sat on the ___ of the river and watched the boats.\n3) Don't ___ on him – he is unreliable.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "bank"
+  ],
+  "explain": "Bank: bank / brzeg rzeki / bank on = liczyć na."
+ },
+ {
+  "id": "q-en-wslow-072",
+  "type": "write",
+  "level": 2,
+  "q": "1) We watched a football ___ last night.\n2) The colour of the curtains does not ___ the sofa.\n3) Light the candle with a ___.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "match"
+  ],
+  "explain": "Match: mecz / pasować / zapałka."
+ },
+ {
+  "id": "q-en-wslow-073",
+  "type": "write",
+  "level": 3,
+  "q": "1) She decided to ___ for president.\n2) The children like to ___ across the garden.\n3) We will soon ___ out of milk.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "run"
+  ],
+  "explain": "Run: kandydować / biegać / run out of = skończyć się."
+ },
+ {
+  "id": "q-en-wslow-074",
+  "type": "write",
+  "level": 2,
+  "q": "1) 'How are you?' – 'I'm ___, thank you.'\n2) You will have to pay a ___ if you park there.\n3) The weather was ___, so we went for a walk.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "fine"
+  ],
+  "explain": "Fine: dobrze / mandat / ładny (o pogodzie)."
+ },
+ {
+  "id": "q-en-wslow-075",
+  "type": "write",
+  "level": 3,
+  "q": "1) There is no ___ in arguing with him.\n2) He asked me not to ___ at him.\n3) The sharp ___ of the pencil broke.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "point"
+  ],
+  "explain": "Point: sens / wskazywać palcem / czubek."
  }
 ]

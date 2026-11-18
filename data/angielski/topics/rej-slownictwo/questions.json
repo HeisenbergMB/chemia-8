@@ -500,5 +500,405 @@
   ],
   "answer": 2,
   "explain": "Thanks to + rzeczownik = dzięki."
+ },
+ {
+  "id": "q-en-rslow-041",
+  "type": "write",
+  "level": 2,
+  "q": "There is a big ___ between the two versions of the story. (DIFFER)",
+  "answers": [
+   "difference"
+  ],
+  "explain": "Rzeczownik od differ: difference."
+ },
+ {
+  "id": "q-en-rslow-042",
+  "type": "write",
+  "level": 2,
+  "q": "Young children are naturally very ___. (ACT)",
+  "answers": [
+   "active"
+  ],
+  "explain": "Przymiotnik od act: active."
+ },
+ {
+  "id": "q-en-rslow-043",
+  "type": "write",
+  "level": 2,
+  "q": "He waited ___ for his turn. (PATIENT)",
+  "answers": [
+   "patiently"
+  ],
+  "explain": "Przysłówek od patient: patiently."
+ },
+ {
+  "id": "q-en-rslow-044",
+  "type": "write",
+  "level": 2,
+  "q": "After long talks the two sides reached an ___. (AGREE)",
+  "answers": [
+   "agreement"
+  ],
+  "explain": "Rzeczownik od agree: agreement."
+ },
+ {
+  "id": "q-en-rslow-045",
+  "type": "write",
+  "level": 2,
+  "q": "The trip was great fun and very ___. (ENJOY)",
+  "answers": [
+   "enjoyable"
+  ],
+  "explain": "Przymiotnik od enjoy: enjoyable."
+ },
+ {
+  "id": "q-en-rslow-046",
+  "type": "write",
+  "level": 2,
+  "q": "Football is a ___ sport in Brazil. (NATION)",
+  "answers": [
+   "national"
+  ],
+  "explain": "Przymiotnik od nation: national."
+ },
+ {
+  "id": "q-en-rslow-047",
+  "type": "write",
+  "level": 3,
+  "q": "His ___ was completely unconvincing. (EXPLAIN)",
+  "answers": [
+   "explanation"
+  ],
+  "explain": "Rzeczownik od explain: explanation (zmiana pisowni)."
+ },
+ {
+  "id": "q-en-rslow-048",
+  "type": "write",
+  "level": 2,
+  "q": "I am sorry, but I will be ___ to come to your party. (ABLE)",
+  "answers": [
+   "unable"
+  ],
+  "explain": "Przeciwieństwo przymiotnika: able → unable."
+ },
+ {
+  "id": "q-en-rslow-049",
+  "type": "write",
+  "level": 3,
+  "q": "The ___ of the whole family was visible in the photo. (HAPPY)",
+  "answers": [
+   "happiness"
+  ],
+  "explain": "Rzeczownik od happy: happiness (y → i)."
+ },
+ {
+  "id": "q-en-rslow-050",
+  "type": "write",
+  "level": 3,
+  "q": "Prices in this shop are ___ low. (COMPARE)",
+  "answers": [
+   "comparatively"
+  ],
+  "explain": "Przysłówek od compare: comparatively."
+ },
+ {
+  "id": "q-en-rslow-051",
+  "type": "write",
+  "level": 2,
+  "q": "She remembers her ___ in a small village very well. (CHILD)",
+  "answers": [
+   "childhood"
+  ],
+  "explain": "Rzeczownik z przyrostkiem -hood: childhood."
+ },
+ {
+  "id": "q-en-rslow-052",
+  "type": "write",
+  "level": 3,
+  "q": "Her sudden ___ on the stage surprised everybody. (APPEAR)",
+  "answers": [
+   "appearance"
+  ],
+  "explain": "Rzeczownik od appear: appearance."
+ },
+ {
+  "id": "q-en-rslow-053",
+  "type": "choice",
+  "level": 2,
+  "q": "He gave a ++reasonable++ explanation of what had happened.",
+  "options": [
+   "cheap",
+   "secret",
+   "sensible",
+   "loud"
+  ],
+  "answer": 2,
+  "explain": "Reasonable = rozsądny, czyli sensible."
+ },
+ {
+  "id": "q-en-rslow-054",
+  "type": "choice",
+  "level": 1,
+  "q": "The ++journey++ took three hours.",
+  "options": [
+   "trip",
+   "meal",
+   "lesson",
+   "road"
+  ],
+  "answer": 0,
+  "explain": "Journey = podróż, czyli trip."
+ },
+ {
+  "id": "q-en-rslow-055",
+  "type": "choice",
+  "level": 2,
+  "q": "The ++cost++ of living has risen sharply.",
+  "options": [
+   "speed",
+   "height",
+   "expense",
+   "habit"
+  ],
+  "answer": 2,
+  "explain": "Cost = koszt, czyli expense."
+ },
+ {
+  "id": "q-en-rslow-056",
+  "type": "choice",
+  "level": 2,
+  "q": "She felt ++embarrassed++ after her mistake.",
+  "options": [
+   "ashamed",
+   "sleepy",
+   "proud",
+   "curious"
+  ],
+  "answer": 0,
+  "explain": "Embarrassed = zawstydzony, czyli ashamed."
+ },
+ {
+  "id": "q-en-rslow-057",
+  "type": "choice",
+  "level": 2,
+  "q": "The ++damage++ caused by the storm was serious.",
+  "options": [
+   "gift",
+   "game",
+   "pain",
+   "harm"
+  ],
+  "answer": 3,
+  "explain": "Damage = szkoda, czyli harm."
+ },
+ {
+  "id": "q-en-rslow-058",
+  "type": "choice",
+  "level": 1,
+  "q": "We ++purchased++ new furniture last week.",
+  "options": [
+   "borrowed",
+   "bought",
+   "built",
+   "sold"
+  ],
+  "answer": 1,
+  "explain": "Purchase = kupić, czyli buy (bought)."
+ },
+ {
+  "id": "q-en-rslow-059",
+  "type": "choice",
+  "level": 3,
+  "q": "His ++behaviour++ was strange.",
+  "options": [
+   "clothes",
+   "voice",
+   "plan",
+   "conduct"
+  ],
+  "answer": 3,
+  "explain": "Behaviour = zachowanie, czyli conduct."
+ },
+ {
+  "id": "q-en-rslow-060",
+  "type": "choice",
+  "level": 2,
+  "q": "It was a ++challenging++ task.",
+  "options": [
+   "boring",
+   "difficult",
+   "short",
+   "pleasant"
+  ],
+  "answer": 1,
+  "explain": "Challenging = wymagający, czyli difficult."
+ },
+ {
+  "id": "q-en-rslow-061",
+  "type": "choice",
+  "level": 2,
+  "q": "(Zamiast) ___ going by bus, we walked.",
+  "options": [
+   "Instead of",
+   "Instead",
+   "Rather",
+   "Besides"
+  ],
+  "answer": 0,
+  "explain": "Instead of + -ing."
+ },
+ {
+  "id": "q-en-rslow-062",
+  "type": "choice",
+  "level": 2,
+  "q": "He (poradził mi) ___ to see a doctor.",
+  "options": [
+   "suggested me",
+   "recommended me",
+   "advised me",
+   "adviced me"
+  ],
+  "answer": 2,
+  "explain": "Advise + osoba + to + bezokolicznik."
+ },
+ {
+  "id": "q-en-rslow-063",
+  "type": "choice",
+  "level": 2,
+  "q": "She is (odpowiedzialna za) ___ the project.",
+  "options": [
+   "responsible for",
+   "responsible of",
+   "responsible about",
+   "responsible with"
+  ],
+  "answer": 0,
+  "explain": "Be responsible for."
+ },
+ {
+  "id": "q-en-rslow-064",
+  "type": "choice",
+  "level": 2,
+  "q": "The company (zatrudnia) ___ fifty people.",
+  "options": [
+   "employees",
+   "employers",
+   "employs",
+   "employments"
+  ],
+  "answer": 2,
+  "explain": "Czasownik employ: employs."
+ },
+ {
+  "id": "q-en-rslow-065",
+  "type": "choice",
+  "level": 3,
+  "q": "I (nie mam nic przeciwko) ___ waiting.",
+  "options": [
+   "don't care",
+   "don't mind",
+   "don't matter",
+   "am not caring"
+  ],
+  "answer": 1,
+  "explain": "Don't mind + -ing = nie mieć nic przeciwko."
+ },
+ {
+  "id": "q-en-rslow-066",
+  "type": "choice",
+  "level": 2,
+  "q": "He (wychował się) ___ in a small village.",
+  "options": [
+   "grown up",
+   "raised up",
+   "grow up",
+   "grew up"
+  ],
+  "answer": 3,
+  "explain": "Grow up – grew up – grown up."
+ },
+ {
+  "id": "q-en-rslow-067",
+  "type": "choice",
+  "level": 3,
+  "q": "(Co sądzisz o) ___ the new teacher?",
+  "options": [
+   "How do you think of",
+   "What do you think of",
+   "What you think of",
+   "What think you of"
+  ],
+  "answer": 1,
+  "explain": "Pytanie o opinię: What do you think of ...?"
+ },
+ {
+  "id": "q-en-rslow-068",
+  "type": "choice",
+  "level": 2,
+  "q": "The meeting was (odwołane) ___.",
+  "options": [
+   "cancelling",
+   "cancel",
+   "cancels",
+   "cancelled"
+  ],
+  "answer": 3,
+  "explain": "Strona bierna: was cancelled."
+ },
+ {
+  "id": "q-en-rslow-069",
+  "type": "choice",
+  "level": 2,
+  "q": "She speaks English (płynnie) ___.",
+  "options": [
+   "fluent",
+   "fluency",
+   "fluently",
+   "fluential"
+  ],
+  "answer": 2,
+  "explain": "Przysłówek: fluently."
+ },
+ {
+  "id": "q-en-rslow-070",
+  "type": "choice",
+  "level": 3,
+  "q": "He is very tall (jak na swój wiek) ___ his age.",
+  "options": [
+   "for",
+   "to",
+   "at",
+   "by"
+  ],
+  "answer": 0,
+  "explain": "Tall for his age."
+ },
+ {
+  "id": "q-en-rslow-071",
+  "type": "choice",
+  "level": 2,
+  "q": "I will (zajmę się) ___ the children tonight.",
+  "options": [
+   "look for",
+   "look at",
+   "look after",
+   "look up"
+  ],
+  "answer": 2,
+  "explain": "Look after = opiekować się."
+ },
+ {
+  "id": "q-en-rslow-072",
+  "type": "choice",
+  "level": 3,
+  "q": "The film (nie był tak dobry jak) ___ the book.",
+  "options": [
+   "wasn't as good as",
+   "wasn't as good than",
+   "wasn't good as",
+   "wasn't the same good as"
+  ],
+  "answer": 0,
+  "explain": "Porównanie: not as good as."
  }
 ]

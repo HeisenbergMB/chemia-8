@@ -280,5 +280,254 @@
   ],
   "answer": 2,
   "explain": "Akapit 3: menedżerowie zauważyli mniej zwolnień chorobowych."
+ },
+ {
+  "id": "q-en-wczyt-018",
+  "type": "choice",
+  "level": 2,
+  "q": "What did many residents expect when the Wi-Fi switch-off was announced?",
+  "group": "g-en-wczyt-03",
+  "options": [
+   "A celebration.",
+   "A fall in tourism.",
+   "Protests.",
+   "A new council."
+  ],
+  "answer": 2,
+  "explain": "Mieszkańcy spodziewali się protestów, ale reakcja była inna."
+ },
+ {
+  "id": "q-en-wczyt-019",
+  "type": "choice",
+  "level": 2,
+  "q": "What happened in the village square after the first week?",
+  "group": "g-en-wczyt-03",
+  "options": [
+   "It filled with people who talked to each other.",
+   "It was closed to the public.",
+   "It became a car park.",
+   "It was used only by teenagers."
+  ],
+  "answer": 0,
+  "explain": "Plac się zapełnił, a ludzie siedzieli przy tych samych stolikach."
+ },
+ {
+  "id": "q-en-wczyt-020",
+  "type": "choice",
+  "level": 2,
+  "q": "Who proposed the experiment?",
+  "group": "g-en-wczyt-03",
+  "options": [
+   "A café owner.",
+   "A university researcher.",
+   "A teacher worried about teenagers' breaks.",
+   "A group of parents."
+  ],
+  "answer": 2,
+  "explain": "Pomysł miała nauczycielka, która zauważyła nastolatków wpatrzonych w ekrany."
+ },
+ {
+  "id": "q-en-wczyt-021",
+  "type": "choice",
+  "level": 3,
+  "q": "On what condition did the council agree to the experiment?",
+  "group": "g-en-wczyt-03",
+  "options": [
+   "The shops would remain connected to the internet.",
+   "The experiment would last three months.",
+   "The university would pay for it.",
+   "Teenagers would not take part."
+  ],
+  "answer": 0,
+  "explain": "Sklepy miały zachować internet, żeby nikt nie był odcięty od niezbędnych usług."
+ },
+ {
+  "id": "q-en-wczyt-022",
+  "type": "choice",
+  "level": 3,
+  "q": "How did some young people react?",
+  "group": "g-en-wczyt-03",
+  "options": [
+   "They moved to a neighbouring town.",
+   "They organised a football match.",
+   "They thanked the council.",
+   "They complained of being treated like children and met outside the village."
+  ],
+  "answer": 3,
+  "explain": "Część młodych narzekała i spotykała się na parkingu poza wsią, gdzie był zasięg."
+ },
+ {
+  "id": "q-en-wczyt-023",
+  "type": "choice",
+  "level": 3,
+  "q": "Why do the researchers advise caution about the results?",
+  "group": "g-en-wczyt-03",
+  "options": [
+   "The experiment was not finished.",
+   "One month is short and August is a holiday period.",
+   "Only adults took part.",
+   "Nobody collected any data."
+  ],
+  "answer": 1,
+  "explain": "Według badaczy miesiąc to za mało, a sierpień to czas wakacji."
+ },
+ {
+  "id": "q-en-wczyt-024",
+  "type": "choice",
+  "level": 2,
+  "q": "What does the village plan for the next summer?",
+  "group": "g-en-wczyt-03",
+  "options": [
+   "To close all the shops.",
+   "To build a new Wi-Fi network.",
+   "To end the experiment.",
+   "To repeat the project with more events in the square."
+  ],
+  "answer": 3,
+  "explain": "Wieś chce powtórzyć projekt z dłuższym programem wydarzeń na placu."
+ },
+ {
+  "id": "q-en-wczyt-025",
+  "type": "choice",
+  "level": 2,
+  "q": "Which paragraph discusses the environmental cost of demolishing buildings?",
+  "group": "g-en-wczyt-04",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 2,
+  "explain": "Akapit 3: demolka produkuje odpady, a energia włożona w budowę przepada (\"embodied energy\")."
+ },
+ {
+  "id": "q-en-wczyt-026",
+  "type": "choice",
+  "level": 2,
+  "q": "Which paragraph mentions income from tourism?",
+  "group": "g-en-wczyt-04",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 1,
+  "explain": "Akapit 2: zabytkowe dzielnice przynoszą pieniądze od turystów."
+ },
+ {
+  "id": "q-en-wczyt-027",
+  "type": "choice",
+  "level": 2,
+  "q": "Which paragraph describes difficulties such as heating and access for disabled people?",
+  "group": "g-en-wczyt-04",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 4,
+  "explain": "Akapit 5: stare domy są zimne i trudne do dostosowania dla osób z niepełnosprawnościami."
+ },
+ {
+  "id": "q-en-wczyt-028",
+  "type": "choice",
+  "level": 2,
+  "q": "Which paragraph suggests that old buildings help people feel connected to a place?",
+  "group": "g-en-wczyt-04",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 3,
+  "explain": "Akapit 4: znajome ulice i domy dają mieszkańcom poczucie związku z okolicą."
+ },
+ {
+  "id": "q-en-wczyt-029",
+  "type": "choice",
+  "level": 2,
+  "q": "Which paragraph gives examples of buildings that were given a new function?",
+  "group": "g-en-wczyt-04",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 5,
+  "explain": "Akapit 6: dworce w muzea, fabryki w mieszkania, hala targowa w bibliotekę."
+ },
+ {
+  "id": "q-en-wczyt-030",
+  "type": "choice",
+  "level": 3,
+  "q": "Which paragraph mentions the problem of waste?",
+  "group": "g-en-wczyt-04",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 2,
+  "explain": "Akapit 3 mówi o dużych ilościach odpadów z rozbiórki."
+ },
+ {
+  "id": "q-en-wczyt-031",
+  "type": "choice",
+  "level": 3,
+  "q": "Which paragraph states that renovation can be cheaper than new construction?",
+  "group": "g-en-wczyt-04",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 1,
+  "explain": "Akapit 2: remont starego budynku bywa tańszy niż budowa nowego."
+ },
+ {
+  "id": "q-en-wczyt-032",
+  "type": "choice",
+  "level": 2,
+  "q": "Which paragraph says that many cities prefer modern buildings?",
+  "group": "g-en-wczyt-04",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 0,
+  "explain": "Akapit 1: władze wielu miast wolą nowoczesną zabudowę."
  }
 ]

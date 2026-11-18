@@ -51,6 +51,18 @@ for (const sheet of sheets.sheets) {
   });
 }
 
+test('każde pytanie wpisywane przyjmuje wszystkie swoje odpowiedzi i odrzuca losowy tekst; wybory mają poprawny indeks', async () => {
+  const { matchesAnswer } = await import('../js/answer.js');
+  for (const q of data.questions) {
+    if (q.type === 'write') {
+      for (const a of q.answers) assert.ok(matchesAnswer(a.toUpperCase() + '.', q.answers), `${q.id}: "${a}"`);
+      assert.equal(matchesAnswer('xyzzy', q.answers), false, q.id);
+    } else if (q.type === 'choice') {
+      assert.ok(q.answer >= 0 && q.answer < q.options.length, q.id);
+    }
+  }
+});
+
 test('prawda/fałsz w arkuszu: nie same TRUE ani same FALSE', () => {
   const tf = data.questions.filter((q) => q.fixed);
   const t = tf.filter((q) => q.answer === 0).length;
@@ -90,7 +102,7 @@ test('ćwiczenia: pytania z arkusza ukryte, a osobnych pytań ćwiczeniowych jes
   const pool = practiceQuestions();
   assert.ok(pool.every((q) => !inSheets.has(q.id)), 'w ćwiczeniach nie ma pytań z niezatwierdzonego arkusza');
   assert.ok(pool.length >= 100, `pytań ćwiczeniowych: ${pool.length}`);
-  for (const topic of ['czytanie', 'gramatyka', 'slownictwo', 'kultura']) assert.ok(pool.filter((q) => q.topic === topic).length >= 10, `dział ${topic} ma za mało pytań ćwiczeniowych`);
+  for (const t of data.topics.filter((x) => x.status === 'active')) assert.ok(pool.filter((q) => q.topic === t.id).length >= 10, `dział ${t.id} ma za mało pytań ćwiczeniowych`);
   assert.ok(pool.filter((q) => q.type !== 'choice').length >= 30, 'ćwiczenia zawierają też pytania wpisywane');
 });
 

@@ -154,5 +154,161 @@
   ],
   "answer": 1,
   "explain": "Alexander Graham Bell urodził się w Szkocji (Edynburg); później mieszkał w Kanadzie i USA."
+ },
+ {
+  "id": "q-en-wkult-013",
+  "type": "choice",
+  "level": 1,
+  "q": "Was Isaac Newton an English scientist?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Isaac Newton był angielskim fizykiem i matematykiem."
+ },
+ {
+  "id": "q-en-wkult-014",
+  "type": "choice",
+  "level": 2,
+  "q": "Did Thomas Edison improve the electric light bulb?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Edison opracował praktyczną żarówkę elektryczną."
+ },
+ {
+  "id": "q-en-wkult-015",
+  "type": "choice",
+  "level": 1,
+  "q": "Is Uluru a famous rock in Australia?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Uluru to ogromna czerwona skała w centralnej Australii."
+ },
+ {
+  "id": "q-en-wkult-016",
+  "type": "choice",
+  "level": 2,
+  "q": "Is the CN Tower in Vancouver?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 1,
+  "explain": "CN Tower stoi w Toronto."
+ },
+ {
+  "id": "q-en-wkult-017",
+  "type": "choice",
+  "level": 1,
+  "q": "Was Queen Victoria a British monarch in the 19th century?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Wiktoria panowała w XIX wieku (1837–1901)."
+ },
+ {
+  "id": "q-en-wkult-018",
+  "type": "choice",
+  "level": 1,
+  "q": "Did the Beatles come from Liverpool?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "The Beatles pochodzili z Liverpoolu."
+ },
+ {
+  "id": "q-en-wkult-019",
+  "type": "choice",
+  "level": 3,
+  "q": "Was Amelia Earhart the first woman to fly solo across the Atlantic?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Amelia Earhart przeleciała samotnie Atlantyk w 1932 roku jako pierwsza kobieta."
+ },
+ {
+  "id": "q-en-wkult-020",
+  "type": "choice",
+  "level": 2,
+  "q": "Is English the only official language of Canada?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 1,
+  "explain": "Kanada ma dwa języki urzędowe: angielski i francuski."
+ },
+ {
+  "id": "q-en-wkult-021",
+  "type": "choice",
+  "level": 2,
+  "q": "Is Auckland the capital of New Zealand?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 1,
+  "explain": "Stolicą jest Wellington; Auckland to największe miasto."
+ },
+ {
+  "id": "q-en-wkult-022",
+  "type": "choice",
+  "level": 1,
+  "q": "Was Steve Jobs one of the founders of Apple?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Steve Jobs współzałożył firmę Apple."
+ },
+ {
+  "id": "q-en-wkult-023",
+  "type": "choice",
+  "level": 2,
+  "q": "Did Charles Dickens write 'Oliver Twist'?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "\"Oliver Twist\" to powieść Charlesa Dickensa."
+ },
+ {
+  "id": "q-en-wkult-024",
+  "type": "choice",
+  "level": 1,
+  "q": "Did Mark Twain write 'Harry Potter'?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 1,
+  "explain": "\"Harry'ego Pottera\" napisała J. K. Rowling."
  }
 ]

@@ -99,3 +99,11 @@ Bez drugiej pary oczu. Szczególnie:
 - **Idiomy:** wszystkie użyte idiomy są powszechne, ale warto potwierdzić, że żaden dystraktor nie pasuje do zdania.
 - **Wiedza ogólna tak/nie** (`woj-kultura`): fakty uważam za pewne (stolice, Darwin, Lincoln, Nightingale, Austen, Aoraki / Mount Cook, Armstrong, Wielka Rafa Koralowa, A. G. Bell urodzony w Szkocji).
 - Teksty w zadaniach 1 i 2 są wymyślone i tak oznaczone.
+
+## Angielski – pytania ćwiczeniowe rejonowe i wojewódzkie
+Napisane przeze mnie bez drugiej pary oczu (po 90–100 pytań na etap). Najbardziej wymagają sprawdzenia:
+- **Zadania „jedno słowo do trzech zdań”** (`woj-slownictwo`, ostatnie 6): light, bank, match, run, fine, point – czy każde słowo pasuje do trzech zdań w tej samej formie.
+- **Teksty z lukami** (`rej-gramatyka` luki 1–12 z drugiego tekstu, `woj-gramatyka` luki 1–10): warianty odpowiedzi.
+- **Idiomy** (`woj-slownictwo`) i **tłumaczenie fragmentów** (klucze z wieloma wariantami).
+- **Pytania o święta i sławne osoby** (`rej-kultura`, `woj-kultura`): fakty uważam za pewne (m.in. Juneteenth 19 czerwca, Presidents' Day w lutym, Amelia Earhart pierwsza kobieta w samotnym locie przez Atlantyk).
+- Dwa nowe teksty rejonowe i trzy wojewódzkie w ćwiczeniach są wymyślone i tak oznaczone.
