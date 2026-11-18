@@ -2,13 +2,14 @@
 // Porównanie jego odpowiedzi z kluczem wykrywa pytania z dwiema poprawnymi odpowiedziami, błędy klucza i pytania niejasne.
 //   node tools/blind-sheet.js angielski s-en-sz-01          – cały arkusz
 //   node tools/blind-sheet.js angielski --topic gramatyka    – wszystkie pytania działu
+//   node tools/blind-sheet.js angielski --topic czytanie,gramatyka --practice   – kilka działów, tylko pytania spoza arkuszy (ćwiczeniowe)
 
 import { fileURLToPath } from 'node:url';
 import { loadData } from './load-data.js';
 import { letterOf } from '../js/qtypes.js';
 
 /** Zwraca tekst zadań bez odpowiedzi. */
-export function blindText({ data, sheets }, { sheetId = null, topic = null }) {
+export function blindText({ data, sheets }, { sheetId = null, topic = null, practice = false }) {
   const byId = new Map(data.questions.map((q) => [q.id, q]));
   const groups = new Map(data.groups.map((g) => [g.id, g]));
   const out = [];
@@ -30,10 +31,12 @@ export function blindText({ data, sheets }, { sheetId = null, topic = null }) {
       t.items.forEach((id, i) => out.push(item(byId.get(id), i + 1)));
     });
   } else {
-    const qs = data.questions.filter((q) => q.topic === topic);
+    const topics = String(topic).split(',');
+    const inSheets = new Set(practice && sheets ? sheets.sheets.flatMap((sh) => sh.tasks.flatMap((t) => t.items)) : []);
+    const qs = data.questions.filter((q) => topics.includes(q.topic) && !inSheets.has(q.id));
     if (!qs.length) throw new Error(`brak pytań w dziale ${topic}`);
     const shown = new Set();
-    out.push(`# Dział ${topic}`);
+    out.push(`# Dział ${topic}${practice ? ' (pytania ćwiczeniowe)' : ''}`);
     qs.forEach((q, i) => {
       if (q.group && !shown.has(q.group)) {
         shown.add(q.group);
@@ -53,5 +56,5 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   }
   const loaded = loadData(subject);
   const ti = rest.indexOf('--topic');
-  console.log(blindText(loaded, ti >= 0 ? { topic: rest[ti + 1] } : { sheetId: rest[0] }));
+  console.log(blindText(loaded, ti >= 0 ? { topic: rest[ti + 1], practice: rest.includes('--practice') } : { sheetId: rest[0] }));
 }

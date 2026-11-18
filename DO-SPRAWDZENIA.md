@@ -111,3 +111,7 @@ Napisane przeze mnie bez drugiej pary oczu (po 90–100 pytań na etap). Najbard
 ## Ślepy przegląd arkuszy (angielski)
 Trzy arkusze (szkolny, rejonowy, wojewódzki – po 100 zadań) rozwiązało niezależnie, bez wglądu w klucz, trzech osobnych agentów (ten sam model co autor treści). Zgodność z kluczem: 297 z 300. Rozbieżności i sensowne warianty odpowiedzi dopisano do kluczy (37 wariantów). Pytania wyboru: żadnego zgłoszenia „dwie poprawne odpowiedzi”.
 **Ograniczenie:** to ten sam model, więc błędy wynikające z jego wspólnych słabych punktów (zwłaszcza fakty o UK i USA, rzadkie idiomy, wyczucie naturalności) mogły nie zostać wykryte. Przegląd przez nauczyciela dalej jest potrzebny; ta lista powyżej wskazuje, co sprawdzić w pierwszej kolejności.
+
+### Ślepy przegląd pytań ćwiczeniowych (angielski)
+312 pytań ćwiczeniowych (szkolny 119, rejonowy 92, wojewódzki 101) rozwiązali niezależnie trzej agenci bez wglądu w klucz. Zgodność: 307 z 312. Dwa pytania były dwuznaczne i zostały przeredagowane (q-en-gram-060: „far/fast” dawało też „farther”; q-en-gram-075: „more/less interesting”), do kluczy dopisano 43 sensowne warianty. Ograniczenie jak wyżej: to ten sam model co autor.
+**Do decyzji nauczyciela:** forma skrócona słowa kluczowego (np. `shouldn't` przy SHOULD, `hadn't` przy HAD, `needn't` przy NEED). Klucze jej nie uznają, bo polecenie każe nie zmieniać formy podanego wyrazu; w oficjalnych kluczach nie widziałem takiego przypadku. Uczeń może uznać taką odpowiedź w przeglądzie arkusza.

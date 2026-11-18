@@ -49,7 +49,7 @@ Wzorzec testów: `docs/angielski-wzorzec-konkursu.md` (oficjalne arkusze Łódzk
 - [~] 5.3 Treść: etap szkolny → rejonowy (pełne arkusze własne) → wojewódzki
   - [x] Etap szkolny, arkusz 1 (`s-en-sz-01`, wersja 1.14.1): 100 pytań w układzie i na poziomie oficjalnego arkusza 2023/24 (8 zadań, 60 min), działy: czytanie, gramatyka, słownictwo, Wielka Brytania i USA; karty teorii i fiszki bez odpowiedzi z arkusza
   - [x] Etap szkolny: 119 osobnych pytań ćwiczeniowych (wersja 1.14.3): 2 nowe teksty do czytania, gramatyka, słownictwo, kultura – quizy i powtórki działają przed arkuszem
-  - [x] Ślepy przegląd trzech arkuszy przez niezależnych agentów (297 z 300 zgodnych; 37 wariantów dopisanych do kluczy). Do zrobienia: przegląd pytań ćwiczeniowych i weryfikacja przez nauczyciela
+  - [x] Ślepy przegląd trzech arkuszy przez niezależnych agentów (297 z 300 zgodnych; 37 wariantów dopisanych do kluczy). Pytania ćwiczeniowe (312) też przejrzane ślepo: 307 zgodnych, 2 przeredagowane, 43 warianty dopisane. Do zrobienia: weryfikacja przez nauczyciela
   - [ ] Etap szkolny, kolejne arkusze
   - [x] Etap rejonowy, arkusz 1 (`s-en-rej-01`, wersja 1.14.5): 100 pytań w układzie arkusza 2025/26 (90 min, 8 zadań: TRUE/FALSE, tekst z brakującymi zdaniami, tekst z lukami, słowotwórstwo, przekształcanie zdań, synonimy, tłumaczenie, święta UK/USA); działy w module „Etap rejonowy”, karty i fiszki
   - [x] Etap rejonowy: 92 osobne pytania ćwiczeniowe (wersja 1.14.8): dwa teksty, luki, przekształcenia, słowotwórstwo, synonimy, tłumaczenie, święta

@@ -609,7 +609,8 @@
   "maxWords": 5,
   "answers": [
    "wishes he hadn't sold",
-   "wishes he had not sold"
+   "wishes he had not sold",
+   "wishes he had never sold"
   ],
   "explain": "Wish + Past Perfect: żal o przeszłość."
  },
@@ -646,7 +647,8 @@
   "keyword": "allowed",
   "maxWords": 5,
   "answers": [
-   "is not allowed"
+   "is not allowed",
+   "isn't allowed"
   ],
   "explain": "Be not allowed = nie wolno."
  },

@@ -580,7 +580,9 @@
   "q": "The bridge (not/finish) ___ yet. The workers are still there.",
   "answers": [
    "has not been finished",
-   "hasn't been finished"
+   "hasn't been finished",
+   "is not finished",
+   "isn't finished"
   ],
   "explain": "Strona bierna w Present Perfect: has not been finished."
  },
@@ -622,7 +624,8 @@
   "q": "Next summer, at this time, I (lie) ___ on a beach in Greece.",
   "answers": [
    "will be lying",
-   "'ll be lying"
+   "'ll be lying",
+   "shall be lying"
   ],
   "explain": "Czynność trwająca w przyszłym momencie: Future Continuous."
  },
@@ -632,7 +635,8 @@
   "level": 2,
   "q": "(you/be) ___ able to help me tomorrow?",
   "answers": [
-   "Will you be"
+   "Will you be",
+   "Are you going to be"
   ],
   "explain": "Przyszła zdolność w pytaniu: Will you be able to ...?"
  },
@@ -650,11 +654,11 @@
   "id": "q-en-gram-060",
   "type": "write",
   "level": 2,
-  "q": "My sister runs (far/fast) ___ than I do.",
+  "q": "My sister runs (much/fast) ___ than I do.",
   "answers": [
-   "far faster"
+   "much faster"
   ],
-  "explain": "Stopień wyższy przysłówka: faster; far wzmacnia porównanie."
+  "explain": "Stopień wyższy przysłówka fast to faster; much wzmacnia porównanie."
  },
  {
   "id": "q-en-gram-061",
@@ -662,7 +666,8 @@
   "level": 2,
   "q": "The letter (send) ___ tomorrow morning.",
   "answers": [
-   "will be sent"
+   "will be sent",
+   "is going to be sent"
   ],
   "explain": "Strona bierna w Future Simple: will be + III forma."
  },
@@ -693,7 +698,8 @@
   "level": 3,
   "q": "This is the first time I (ever/be) ___ to a concert.",
   "answers": [
-   "have ever been"
+   "have ever been",
+   "'ve ever been"
   ],
   "explain": "Po \"the first time\" używamy Present Perfect: have ever been."
  },
@@ -776,7 +782,9 @@
    "will",
    "may",
    "might",
-   "could"
+   "could",
+   "can",
+   "'ll"
   ],
   "explain": "I okres warunkowy: will (także may/might/could) + bezokolicznik."
  },
@@ -805,7 +813,7 @@
   "id": "q-en-gram-075",
   "type": "write",
   "level": 1,
-  "q": "This book is ___ interesting than the film.",
+  "q": "Everyone says the book is ___ interesting than the film, so I read the book first.",
   "answers": [
    "more"
   ],
@@ -849,7 +857,8 @@
   "q": "The concert starts ++at eight++.",
   "answers": [
    "What time does the concert start?",
-   "When does the concert start?"
+   "When does the concert start?",
+   "At what time does the concert start?"
   ],
   "explain": "Pytanie o godzinę: What time does the concert start?"
  },
@@ -922,7 +931,8 @@
   "q": "Ann likes ++classical music++ best.",
   "answers": [
    "What kind of music does Ann like best?",
-   "What music does Ann like best?"
+   "What music does Ann like best?",
+   "What type of music does Ann like best?"
   ],
   "explain": "Pytanie o rodzaj: What kind of music does Ann like best?"
  },
@@ -960,7 +970,8 @@
   "keyword": "last",
   "maxWords": 5,
   "answers": [
-   "last time I saw"
+   "last time I saw",
+   "last time I met"
   ],
   "explain": "Konstrukcja the last time I saw ... (ostatni raz widziałem)."
  },
@@ -985,7 +996,8 @@
   "keyword": "where",
   "maxWords": 5,
   "answers": [
-   "where she lived"
+   "where she lived",
+   "where she was living"
   ],
   "explain": "Pytanie z where w mowie zależnej: szyk twierdzący i czas cofnięty."
  },
@@ -1009,7 +1021,8 @@
   "keyword": "been",
   "maxWords": 5,
   "answers": [
-   "have been building"
+   "have been building",
+   "'ve been building"
   ],
   "explain": "Czynność trwająca do teraz: have been + -ing."
  },
@@ -1033,7 +1046,9 @@
   "keyword": "unless",
   "maxWords": 5,
   "answers": [
-   "unless you have"
+   "unless you have",
+   "unless you've got",
+   "unless you have got"
   ],
   "explain": "Unless = jeśli nie: unless you have a ticket."
  },
@@ -1069,7 +1084,8 @@
   "keyword": "being",
   "maxWords": 5,
   "answers": [
-   "is being repaired"
+   "is being repaired",
+   "is being fixed"
   ],
   "explain": "Strona bierna w Present Continuous: is being repaired."
  },

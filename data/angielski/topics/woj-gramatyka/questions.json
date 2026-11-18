@@ -530,7 +530,8 @@
   "answers": [
    "many",
    "some",
-   "most"
+   "most",
+   "several"
   ],
   "explain": "Wyrażenie ilości przed people: many/some/most people."
  },
@@ -656,7 +657,9 @@
   "maxWords": 5,
   "answers": [
    "Although he felt",
-   "Although he was"
+   "Although he was",
+   "Although feeling",
+   "Although he was feeling"
   ],
   "explain": "Although + zdanie: Although he felt ill."
  },
@@ -705,7 +708,9 @@
   "keyword": "money",
   "maxWords": 5,
   "answers": [
-   "gave me my money back"
+   "gave me my money back",
+   "gave me the money back",
+   "gave me back my money"
   ],
   "explain": "Give someone their money back = zwrócić pieniądze."
  },

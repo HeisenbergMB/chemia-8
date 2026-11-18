@@ -647,7 +647,8 @@
   "group": "g-en-wslow-02",
   "gap": 5,
   "answers": [
-   "corrections"
+   "corrections",
+   "correction"
   ],
   "explain": "Rzeczownik od correct w liczbie mnogiej: corrections."
  },
@@ -672,7 +673,9 @@
   "gap": 7,
   "answers": [
    "memorisation",
-   "memorization"
+   "memorization",
+   "memorising",
+   "memorizing"
   ],
   "explain": "Rzeczownik od memorise: memorisation (UK) / memorization (US)."
  },
@@ -730,7 +733,11 @@
   "q": "(Ledwo wyszliśmy) ___ when it started to snow.",
   "answers": [
    "Hardly had we left",
-   "We had hardly left"
+   "We had hardly left",
+   "Scarcely had we left",
+   "Barely had we left",
+   "We had barely left",
+   "We had scarcely left"
   ],
   "explain": "Hardly had + podmiot + III forma + when."
  },
@@ -743,7 +750,9 @@
    "having done it",
    "doing it",
    "that he had done it",
-   "that he did it"
+   "that he did it",
+   "having done that",
+   "doing that"
   ],
   "explain": "Deny + -ing lub deny that + zdanie."
  },
@@ -754,7 +763,9 @@
   "q": "I would rather (żebyś nie mówił) ___ anyone about it.",
   "answers": [
    "you didn't tell",
-   "you did not tell"
+   "you did not tell",
+   "you didn't talk to",
+   "you did not talk to"
   ],
   "explain": "Would rather + podmiot + Past Simple."
  },
@@ -775,7 +786,8 @@
   "q": "(Im więcej ćwiczysz) ___, the better you play.",
   "answers": [
    "The more you practise",
-   "The more you practice"
+   "The more you practice",
+   "The more you train"
   ],
   "explain": "The more ..., the better ... (podwójny stopień wyższy)."
  },
@@ -796,7 +808,9 @@
   "q": "We (kazaliśmy naprawić nasz samochód) ___ yesterday.",
   "answers": [
    "had our car repaired",
-   "got our car repaired"
+   "got our car repaired",
+   "had our car fixed",
+   "got our car fixed"
   ],
   "explain": "Have/get + dopełnienie + III forma."
  },
@@ -809,7 +823,8 @@
    "Although he was tired",
    "Even though he was tired",
    "Though he was tired",
-   "Tired as he was"
+   "Tired as he was",
+   "Although he felt tired"
   ],
   "explain": "Although/even though + zdanie."
  },
@@ -821,7 +836,8 @@
   "answers": [
    "can't have been",
    "cannot have been",
-   "couldn't have been"
+   "couldn't have been",
+   "could not have been"
   ],
   "explain": "Pewność, że coś nie zaszło: can't have been."
  },
@@ -843,7 +859,11 @@
   "q": "(Nigdy wcześniej nie widziałem) ___ such a beautiful view.",
   "answers": [
    "I had never seen",
-   "I'd never seen"
+   "I'd never seen",
+   "I have never seen",
+   "I've never seen",
+   "Never before had I seen",
+   "I had never before seen"
   ],
   "explain": "Past Perfect z never: I had never seen."
  },

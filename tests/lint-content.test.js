@@ -87,4 +87,9 @@ test('blind-sheet: wypisuje zadania bez kluczy i wyjaśnień', async () => {
   }
   assert.ok(blindText(loaded, { topic: 'kultura' }).includes('[q-en-kult-001]'));
   assert.throws(() => blindText(loaded, { sheetId: 'nie-ma' }), /nie ma arkusza/);
+  const inSheets = new Set(loaded.sheets.sheets.flatMap((sh) => sh.tasks.flatMap((t) => t.items)));
+  const practice = blindText(loaded, { topic: 'czytanie,gramatyka', practice: true });
+  const ids = [...practice.matchAll(/\[(q-en-[\w-]+)\]/g)].map((m) => m[1]);
+  assert.ok(ids.length > 20 && ids.every((id) => !inSheets.has(id)), 'tylko pytania spoza arkuszy');
+  assert.ok(blindText(loaded, { topic: 'czytanie' }).includes('q-en-czyt-001'), 'bez --practice są też pytania arkusza');
 });
