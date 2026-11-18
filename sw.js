@@ -1,7 +1,7 @@
 // Service worker: pełna praca offline. Przy zmianie plików podnieś VERSION –
 // stary cache zostanie usunięty przy aktywacji.
 // VERSION i ASSETS są GENEROWANE (npm run build) – wersję zmieniaj w package.json (npm run bump).
-const VERSION = '1.14.14';
+const VERSION = '1.14.15';
 const CACHE = `chemia8-${VERSION}`;
 
 const ASSETS = [

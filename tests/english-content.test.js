@@ -137,3 +137,16 @@ test('arkusz wojewódzki: „który akapit” i tak/nie mają kompaktowe przycis
 });
 
 test('brak błędów JS', () => assert.deepEqual(app.errors, []));
+
+test('wyrazy z ramki: w arkuszu ramka to lista słów bez liter, a fragmenty tekstu mają litery', async () => {
+  const store = await import('../js/store.js');
+  store.update((st) => (st.draft = null));
+  await app.goto('#/sheet/s-en-woj-02/run');
+  const next = () => [...app.main.querySelectorAll('button')].find((b) => b.textContent.includes('Następne zadanie')).click();
+  assert.ok(app.main.querySelector('ol.bank'), 'zadanie I: fragmenty z literami');
+  for (let i = 0; i < 5; i++) next(); // zadanie VI: ramka wyrazów
+  assert.ok(app.main.querySelector('ul.bank-box'), 'ramka wyrazów jako lista słów');
+  assert.equal(app.main.querySelectorAll('ul.bank-box li').length, 14);
+  assert.equal(app.main.querySelector('ol.bank'), null);
+  store.update((st) => (st.draft = null));
+});

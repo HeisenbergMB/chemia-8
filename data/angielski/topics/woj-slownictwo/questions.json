@@ -1022,7 +1022,7 @@
   "id": "q-en-wslow-085",
   "type": "write",
   "level": 3,
-  "q": "Many customers were ___ with the quality of the service. (SATISFY)",
+  "q": "Many customers wrote angry letters because they were ___ with the quality of the service. (SATISFY)",
   "answers": [
    "dissatisfied",
    "unsatisfied"
@@ -1161,7 +1161,7 @@
   "id": "q-en-wslow-098",
   "type": "write",
   "level": 2,
-  "q": "The ___ of the city has increased over the last decade.",
+  "q": "There has been rapid economic ___ in the region over the last decade.",
   "group": "g-en-wslow-03",
   "answers": [
    "growth"
@@ -1183,7 +1183,7 @@
   "id": "q-en-wslow-100",
   "type": "write",
   "level": 3,
-  "q": "For her age she is remarkably ___.",
+  "q": "She left home at sixteen and is now completely financially ___ of her parents.",
   "group": "g-en-wslow-03",
   "answers": [
    "independent"
@@ -1361,7 +1361,8 @@
    "insisted that I stay",
    "insisted that I should stay",
    "insisted that I stayed",
-   "insisted on my staying"
+   "insisted on my staying",
+   "insisted on me staying"
   ],
   "explain": "Insist that + podmiot + (should) + bezokolicznik albo insist on + -ing."
  },
@@ -1375,7 +1376,8 @@
    "behaves as if she was",
    "behaves as though she were",
    "acts as if she were",
-   "acts as if she was"
+   "acts as if she was",
+   "behaves as though she was"
   ],
   "explain": "As if / as though + Past Simple (were)."
  },
@@ -1422,7 +1424,9 @@
    "The earlier we leave",
    "The sooner we leave",
    "The faster we leave",
-   "The quicker we leave"
+   "The quicker we leave",
+   "The earlier we set off",
+   "The sooner we set off"
   ],
   "explain": "Podwójny stopień wyższy: the earlier ..., the sooner ..."
  },
@@ -1461,7 +1465,8 @@
    "is thought to be",
    "is said to be",
    "is regarded as",
-   "is believed to be"
+   "is believed to be",
+   "is considered"
   ],
   "explain": "Konstrukcje bezosobowe: is considered / thought / said to be."
  },

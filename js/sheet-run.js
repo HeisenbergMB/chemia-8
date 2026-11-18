@@ -84,6 +84,11 @@ export function runSheet(root, ctx) {
   const taskTitle = (t, ti) => `Zadanie ${ROMAN[ti] || ti + 1}`;
   const itemNo = (q, i) => (q.gap != null ? q.gap : i + 1);
 
+  /** Bank odpowiedzi: z literami A, B, C… gdy uczeń wybiera literę (typ bank); ramka wyrazów (zadania write) to lista słów bez liter. */
+  function bankList(g, lettered) {
+    return lettered ? h('ol', { class: 'bank', type: 'A' }, g.bank.map((b) => h('li', { html: richText(b) }))) : h('ul', { class: 'bank-box', 'aria-label': 'Wyrazy do wykorzystania' }, g.bank.map((b) => h('li', { html: richText(b) })));
+  }
+
   function groupBlock(t, ti, withText = true) {
     const g = t.group ? groupOf(t.group) : null;
     const max = taskMax(t);
@@ -93,7 +98,7 @@ export function runSheet(root, ctx) {
       h('h2', { class: 'task-title' }, `${taskTitle(t, ti)} `, h('span', { class: 'muted' }, `(0–${max} pkt)`)),
       h('p', { class: 'muted group-instr', html: richText(g ? g.instruction : t.instruction) }),
       withText && g && g.text ? h('div', { class: 'group-text', html: richText(g.text) }) : null,
-      g && g.bank ? h('ol', { class: 'bank', type: 'A' }, g.bank.map((b) => h('li', { html: richText(b) }))) : null
+      g && g.bank ? bankList(g, t.items.some((id) => byId.get(id).type === 'bank')) : null
     );
   }
 

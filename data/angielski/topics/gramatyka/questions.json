@@ -1279,7 +1279,8 @@
   "level": 3,
   "q": "I (be/wait) ___ here for twenty minutes when the bus finally arrived.",
   "answers": [
-   "had been waiting"
+   "had been waiting",
+   "'d been waiting"
   ],
   "explain": "Czynność trwająca przed momentem w przeszłości: Past Perfect Continuous."
  },
@@ -1301,7 +1302,9 @@
   "q": "The teacher asked the boy (he/finish) ___ his homework.",
   "answers": [
    "if he had finished",
-   "whether he had finished"
+   "whether he had finished",
+   "if he'd finished",
+   "whether he'd finished"
   ],
   "explain": "Pytanie zamknięte w mowie zależnej: if/whether + Past Perfect."
  },
@@ -1333,7 +1336,8 @@
   "level": 3,
   "q": "The documents (just/send) ___ to your office.",
   "answers": [
-   "have just been sent"
+   "have just been sent",
+   "'ve just been sent"
   ],
   "explain": "Strona bierna w Present Perfect z just: have just been sent."
  },
@@ -1516,7 +1520,9 @@
   "q": "Did anybody call me while I was ___?",
   "answers": [
    "out",
-   "away"
+   "away",
+   "asleep",
+   "abroad"
   ],
   "explain": "Be out/away = być poza domem."
  },
@@ -1529,7 +1535,8 @@
    "get",
    "arrive",
    "reach",
-   "am"
+   "am",
+   "come"
   ],
   "explain": "Po as soon as używamy Present Simple: get/arrive/reach home."
  },
@@ -1592,7 +1599,8 @@
   "level": 1,
   "q": "The match was cancelled ++because of the rain++.",
   "answers": [
-   "Why was the match cancelled?"
+   "Why was the match cancelled?",
+   "Why was the match canceled?"
   ],
   "explain": "Pytanie o przyczynę w stronie biernej."
  },
@@ -1633,7 +1641,8 @@
   "level": 2,
   "q": "They usually travel to the coast ++by train++.",
   "answers": [
-   "How do they usually travel to the coast?"
+   "How do they usually travel to the coast?",
+   "How do they usually get to the coast?"
   ],
   "explain": "Pytanie o sposób: How do they usually travel ...?"
  },
@@ -1643,7 +1652,8 @@
   "level": 1,
   "q": "The conference lasted ++three days++.",
   "answers": [
-   "How long did the conference last?"
+   "How long did the conference last?",
+   "How long was the conference?"
   ],
   "explain": "Pytanie o czas trwania: How long did ... last?"
  },
@@ -1679,7 +1689,8 @@
   "keyword": "had",
   "maxWords": 5,
   "answers": [
-   "had my bike repaired"
+   "had my bike repaired",
+   "had my bike fixed"
   ],
   "explain": "Have + dopełnienie + III forma: usługa wykonana przez kogoś."
  },
@@ -1716,7 +1727,8 @@
   "keyword": "such",
   "maxWords": 5,
   "answers": [
-   "was such a difficult"
+   "was such a difficult",
+   "was such a hard"
   ],
   "explain": "Such + a + przymiotnik + rzeczownik."
  },
@@ -1729,7 +1741,9 @@
   "maxWords": 5,
   "answers": [
    "is not as tall as",
-   "isn't as tall as"
+   "isn't as tall as",
+   "is not so tall as",
+   "isn't so tall as"
   ],
   "explain": "Porównanie przeczące: not as tall as."
  },

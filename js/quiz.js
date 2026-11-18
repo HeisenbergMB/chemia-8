@@ -68,7 +68,7 @@ export function runQuiz(root, questions, opts = {}) {
       h(
         'div',
         { class: 'qa-layout' },
-        h('section', { class: 'group', 'aria-label': 'Polecenie i tekst' }, h('p', { class: 'muted group-instr', html: richText(g.instruction) }), g.text ? h('div', { class: 'group-text', html: text }) : null),
+        h('section', { class: 'group', 'aria-label': 'Polecenie i tekst' }, h('p', { class: 'muted group-instr', html: richText(g.instruction) }), g.text ? h('div', { class: 'group-text', html: text }) : null, g.bank && q.type !== 'bank' ? h('ul', { class: 'bank-box', 'aria-label': 'Wyrazy do wykorzystania' }, g.bank.map((b) => h('li', { html: richText(b) }))) : null),
         h('div', { class: 'qa-main' }, ...main)
       ),
     ];

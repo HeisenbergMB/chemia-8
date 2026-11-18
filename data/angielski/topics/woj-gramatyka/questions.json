@@ -942,7 +942,9 @@
    "cannot afford",
    "can't afford",
    "am unable to afford",
-   "can not afford"
+   "can not afford",
+   "cannot afford to buy",
+   "can't afford to buy"
   ],
   "explain": "Afford = pozwolić sobie finansowo na; zwykle z can/cannot."
  },

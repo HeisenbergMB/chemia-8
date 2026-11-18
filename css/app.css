@@ -509,6 +509,7 @@ input[type="date"], input[type="text"], input[type="file"] {
 .chip-btn[aria-current="step"] { background: var(--primary-soft); border-color: var(--primary); color: var(--primary); }
 .task-title { font-size: 1.1rem; margin: 0 0 0.4rem; }
 .bank { margin: 0.6rem 0 0; padding-left: 1.6rem; }
+.bank-box { display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem; margin: 0.6rem 0 0; padding: 0.5rem 0.75rem; list-style: none; border: 1px dashed var(--primary-line); border-radius: 10px; font-weight: 600; }
 .sheet-items, .review-items { margin: 0; padding: 0; list-style: none; }
 .sheet-item, .review-item { padding: 0.8rem 0; border-top: 1px solid var(--line); }
 .sheet-item:first-child, .review-item:first-child { border-top: 0; }

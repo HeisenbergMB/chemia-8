@@ -20,14 +20,14 @@ export function blindText({ data, sheets }, { sheetId = null, topic = null, prac
     if (q.type === 'write') lines.push('   Odpowiedź: ______');
     return lines.join('\n');
   };
-  const group = (g) => [`— Polecenie: ${g.instruction}`, g.text ? `— Tekst:\n${g.text}` : null, g.bank ? `— Fragmenty:\n${g.bank.map((b, i) => `   ${letterOf(i)}) ${b}`).join('\n')}` : null].filter(Boolean).join('\n');
+  const group = (g, lettered = true) => [`— Polecenie: ${g.instruction}`, g.text ? `— Tekst:\n${g.text}` : null, g.bank ? (lettered ? `— Fragmenty:\n${g.bank.map((b, i) => `   ${letterOf(i)}) ${b}`).join('\n')}` : `— Wyrazy do wykorzystania (zmień ich formę): ${g.bank.join(', ')}`) : null].filter(Boolean).join('\n');
   if (sheetId) {
     const sh = sheets && sheets.sheets.find((x) => x.id === sheetId);
     if (!sh) throw new Error(`nie ma arkusza ${sheetId}`);
     out.push(`# ${sh.title}`);
     sh.tasks.forEach((t, ti) => {
       const g = t.group ? groups.get(t.group) : null;
-      out.push(`\n## Zadanie ${ti + 1}`, g ? group(g) : `— Polecenie: ${t.instruction}`);
+      out.push(`\n## Zadanie ${ti + 1}`, g ? group(g, t.items.some((id) => byId.get(id).type === 'bank')) : `— Polecenie: ${t.instruction}`);
       t.items.forEach((id, i) => out.push(item(byId.get(id), i + 1)));
     });
   } else {
@@ -40,7 +40,7 @@ export function blindText({ data, sheets }, { sheetId = null, topic = null, prac
     qs.forEach((q, i) => {
       if (q.group && !shown.has(q.group)) {
         shown.add(q.group);
-        out.push(`\n${group(groups.get(q.group))}`);
+        out.push(`\n${group(groups.get(q.group), qs.some((x) => x.group === q.group && x.type === 'bank'))}`);
       }
       out.push(item(q, i + 1));
     });

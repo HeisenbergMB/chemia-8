@@ -892,7 +892,12 @@
    "believe",
    "claim",
    "suggest",
-   "argue"
+   "argue",
+   "insist",
+   "state",
+   "maintain",
+   "feel",
+   "add"
   ],
   "explain": "Others say/think/believe that ... – inni twierdzą, że ..."
  },
@@ -917,7 +922,9 @@
   "gap": 8,
   "answers": [
    "among",
-   "with"
+   "with",
+   "amongst",
+   "for"
   ],
   "explain": "Especially among/with young people – zwłaszcza wśród młodych."
  },
@@ -1040,7 +1047,9 @@
   "maxWords": 5,
   "answers": [
    "mind if I open",
-   "mind my opening"
+   "mind my opening",
+   "mind me opening",
+   "mind if I opened"
   ],
   "explain": "Do you mind if I + Present Simple?"
  },
@@ -1052,7 +1061,9 @@
   "keyword": "spend",
   "maxWords": 5,
   "answers": [
-   "spend an hour cooking"
+   "spend an hour cooking",
+   "spend about an hour cooking",
+   "spend one hour cooking"
   ],
   "explain": "Spend + czas + -ing."
  },
@@ -1076,7 +1087,10 @@
   "keyword": "should",
   "maxWords": 5,
   "answers": [
-   "should have called"
+   "should have called",
+   "should have phoned",
+   "should have rung",
+   "should have telephoned"
   ],
   "explain": "Should have + III forma: zaniedbanie w przeszłości."
  },
@@ -1100,7 +1114,8 @@
   "keyword": "used",
   "maxWords": 5,
   "answers": [
-   "get used to"
+   "get used to",
+   "get used to accepting"
   ],
   "explain": "Get used to + rzeczownik/-ing = przyzwyczaić się."
  },
@@ -1114,7 +1129,9 @@
   "answers": [
    "admitted breaking",
    "admitted having broken",
-   "admitted to breaking"
+   "admitted to breaking",
+   "admitted that she broke",
+   "admitted she broke"
   ],
   "explain": "Admit + -ing / having + III forma."
  },
