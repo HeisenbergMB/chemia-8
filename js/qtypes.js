@@ -7,6 +7,9 @@
 //   bigSubmit    – true: duży przycisk „Sprawdź” (klocki, dopasowanie), false: przycisk przy klawiaturze
 //   showsValue   – czy po odpowiedzi pokazujemy „Twoja odpowiedź” (dopasowanie: nie)
 //   balanceReport– czy przy błędzie dołączamy raport bilansu zapisu użytkownika
+//   valueHtml(val)        – (opcjonalnie) odpowiedź użytkownika jako HTML; domyślnie zapis chemiczny
+//   plain         – true: odpowiedź to zwykły tekst (bez stylu wzoru chemicznego)
+//   selfGrade     – true: przy błędzie uczeń może uznać swoją odpowiedź za poprawną (klucz nie przewiduje wszystkich wariantów)
 //   correctHtml(q)        – poprawna odpowiedź jako HTML
 //   validate(q, v)        – kontrola danych; v.err(msg), v.text(tekst, etykieta, { balance })
 //   mount(q, env)         – (tylko typed) buduje kontrolkę, patrz niżej
@@ -14,13 +17,17 @@
 // mount(q, env) -> { body, after?, value(), ready(), lock(ok), isCorrect(), done?() }
 //   env: { check (przycisk zatwierdzenia), submit(), exam, hints }
 
-import { richText, formatFormula } from './formula.js';
+import { richText, formatFormula, escapeHtml } from './formula.js';
+import { matchesAnswer, normalizeAnswer, wordCount, containsWord } from './answer.js';
+import { groupById } from './data.js';
 import { createChemKeyboard } from './chemkeyboard.js';
 import { createBlocks } from './blocks.js';
 import { createMatch } from './match.js';
 import { createBalance } from './balance.js';
 import { h } from './dom.js';
 import { parseEquation, parseSpecies, parseFormula, checkBalance, equationsMatch, formulasMatch } from './chem.js';
+
+export const letterOf = (i) => String.fromCharCode(65 + i);
 
 const withButton = (el, check) => h('div', null, el, h('div', { class: 'btn-row' }, check));
 
@@ -42,6 +49,7 @@ export const QTYPES = {
       if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 5) return v.err('options: 2–5 odpowiedzi');
       if (new Set(q.options).size !== q.options.length) v.err('options: powtarzające się odpowiedzi');
       if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= q.options.length) v.err(`answer poza zakresem (${q.answer})`);
+      if ('fixed' in q && typeof q.fixed !== 'boolean') v.err('fixed musi być true/false (true: stała kolejność odpowiedzi, np. TRUE/FALSE)');
       q.options.forEach((o, i) => v.text(o, `option ${i}`, { balance: i === q.answer }));
     },
   },
@@ -184,10 +192,109 @@ export const QTYPES = {
       return { body: withButton(bl.el, env.check), value: bl.userEquation, ready: () => true, lock: (ok) => bl.reveal(ok), isCorrect: bl.correct };
     },
   },
+  // Odpowiedź wpisana jako zwykły tekst (angielski): luki, słowotwórstwo, przekształcanie zdań, tłumaczenie.
+  // `answers` – jawna, płaska lista akceptowanych odpowiedzi (warianty z klucza rozpisujemy ręcznie).
+  write: {
+    typed: true,
+    bigSubmit: false,
+    showsValue: true,
+    balanceReport: false,
+    selfGrade: true,
+    plain: true,
+    valueHtml: (val) => escapeHtml(val),
+    correctHtml: (q) => q.answers.map(escapeHtml).join(' / '),
+    validate(q, v) {
+      if (!Array.isArray(q.answers) || !q.answers.length || q.answers.some((a) => typeof a !== 'string' || !a.trim())) return v.err('write: answers – niepusta lista odpowiedzi (tekst)');
+      const norm = q.answers.map(normalizeAnswer);
+      if (new Set(norm).size !== norm.length) v.err('write: powtórzone odpowiedzi w answers (po normalizacji)');
+      if ('maxWords' in q && !(Number.isInteger(q.maxWords) && q.maxWords > 0)) v.err('write: maxWords musi być liczbą całkowitą > 0');
+      for (const a of q.answers) {
+        if (q.maxWords && wordCount(a) > q.maxWords) v.err(`write: odpowiedź "${a}" ma ${wordCount(a)} wyrazów (max ${q.maxWords}, skrócenia liczą się osobno)`);
+        if (q.keyword && !containsWord(a, q.keyword)) v.err(`write: odpowiedź "${a}" nie zawiera wyrazu kluczowego "${q.keyword}" w niezmienionej formie`);
+      }
+      if ('keyword' in q && (typeof q.keyword !== 'string' || !q.keyword.trim())) v.err('write: keyword musi być niepustym tekstem');
+    },
+    mount(q, env) {
+      // iPad: bez autokorekty i wielkich liter, żeby system nie poprawiał odpowiedzi ucznia
+      const input = h('input', { type: 'text', class: 'text-input', 'aria-label': 'Twoja odpowiedź', autocapitalize: 'none', autocorrect: 'off', autocomplete: 'off', spellcheck: 'false', enterkeyhint: 'done' });
+      input.addEventListener('input', () => (env.check.disabled = !input.value.trim()));
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          env.submit();
+        }
+      });
+      return {
+        body: withButton(input, env.check),
+        value: () => input.value.trim(),
+        ready: () => !!input.value.trim(),
+        lock: () => (input.readOnly = true),
+        isCorrect: () => matchesAnswer(input.value, q.answers),
+      };
+    },
+  },
+
+  // Wybór fragmentu/osoby/słowa z banku grupy (zadanie z literami A–I). Kolejność banku jest stała (litery z arkusza).
+  bank: {
+    typed: true,
+    bigSubmit: true,
+    showsValue: true,
+    balanceReport: false,
+    plain: true,
+    valueHtml: (val) => escapeHtml(val),
+    correctHtml(q) {
+      const g = groupById(q.group);
+      return g && g.bank ? `${letterOf(q.answer)} – ${escapeHtml(g.bank[q.answer])}` : letterOf(q.answer);
+    },
+    validate(q, v) {
+      if (!q.group) return v.err('bank: brak pola group (zadanie z bankiem odpowiedzi)');
+      if (!v.group || !Array.isArray(v.group.bank)) return v.err(`bank: grupa "${q.group}" nie ma banku (bank[])`);
+      if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= v.group.bank.length) v.err(`bank: answer poza zakresem banku (${q.answer})`);
+    },
+    mount(q, env) {
+      const bank = (groupById(q.group) || { bank: [] }).bank;
+      let picked = null;
+      const buttons = bank.map((text, i) =>
+        h(
+          'button',
+          {
+            class: 'option',
+            type: 'button',
+            'aria-pressed': 'false',
+            onClick: () => {
+              picked = i;
+              buttons.forEach((b, j) => {
+                b.classList.toggle('picked', j === i);
+                b.setAttribute('aria-pressed', String(j === i));
+              });
+              env.check.disabled = false;
+            },
+          },
+          h('span', { class: 'letter', 'aria-hidden': 'true' }, letterOf(i)),
+          h('span', { class: 'text', html: richText(text) })
+        )
+      );
+      return {
+        body: withButton(h('div', { class: 'options', role: 'group', 'aria-label': 'Odpowiedzi do wyboru' }, buttons), env.check),
+        value: () => (picked == null ? '' : `${letterOf(picked)} – ${bank[picked]}`),
+        ready: () => picked != null,
+        lock: (ok) =>
+          buttons.forEach((b, i) => {
+            b.disabled = true;
+            if (i === q.answer) b.classList.add('ok');
+            else if (i === picked && !ok) b.classList.add('bad');
+          }),
+        isCorrect: () => picked === q.answer,
+      };
+    },
+  },
 };
 
 export const TYPES = Object.keys(QTYPES);
 export const TYPED_TYPES = TYPES.filter((t) => QTYPES[t].typed);
+
+/** Odpowiedź użytkownika jako HTML (domyślnie zapis chemiczny). */
+export const valueHtml = (q, val) => (QTYPES[q.type].valueHtml ? QTYPES[q.type].valueHtml(val) : formatFormula(val));
 
 /** Poprawna odpowiedź jako HTML (do podsumowań). */
 export const correctHtml = (q) => QTYPES[q.type].correctHtml(q);

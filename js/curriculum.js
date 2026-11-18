@@ -19,14 +19,16 @@ export const packTopics = (curriculum) => curriculum.modules.flatMap((m) => m.to
 /**
  * @param curriculum  zawartość curriculum.json
  * @param packs       { [topicId]: { theory: {cards, flash}, questions: [...] } }
- * Zwraca: { modules, topics (płaska lista z polem `module`), cards, flash, questions } –
- * każda karta, fiszka i pytanie dostaje `topic` z nazwy paczki (jedno źródło prawdy).
+ * Zwraca: { modules, topics (płaska lista z polem `module`), cards, flash, questions, groups } –
+ * `groups` to zadania ze wspólną instrukcją/tekstem/bankiem odpowiedzi (`theory.json` → `groups`), do których odwołują się pytania polem `group`.
+ * Każda karta, fiszka, grupa i pytanie dostaje `topic` z nazwy paczki (jedno źródło prawdy).
  */
 export function assemble(curriculum, packs) {
   const topics = [];
   const cards = [];
   const flash = [];
   const questions = [];
+  const groups = [];
   for (const m of curriculum.modules) {
     for (const t of m.topics) {
       topics.push({ ...t, module: m.id });
@@ -36,9 +38,10 @@ export function assemble(curriculum, packs) {
       cards.push(...((pack.theory && pack.theory.cards) || []).map(tag));
       flash.push(...((pack.theory && pack.theory.flash) || []).map(tag));
       questions.push(...(pack.questions || []).map(tag));
+      groups.push(...((pack.theory && pack.theory.groups) || []).map(tag));
     }
   }
-  return { modules: curriculum.modules, topics, cards, flash, questions };
+  return { modules: curriculum.modules, topics, cards, flash, questions, groups };
 }
 
 /** Pytania z podanego zakresu: moduł (`moduleId`) albo null = wszystko. */

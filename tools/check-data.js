@@ -96,6 +96,9 @@ subjectList.problems.forEach((p) => errors.push(p));
     for (const k of ['id', 'title', 'desc', 'icon', 'status']) if (!sj[k]) err(`subject ${sj.id}`, `brak pola ${k}`);
     if (!['active', 'soon'].includes(sj.status)) err(`subject ${sj.id}`, `zły status "${sj.status}"`);
     if (!Array.isArray(sj.features)) err(`subject ${sj.id}`, 'features musi być tablicą (może być pusta)');
+    if (!Array.isArray(sj.types) || !sj.types.length) err(`subject ${sj.id}`, 'types: lista dozwolonych typów pytań (z js/qtypes.js)');
+    else for (const t of sj.types) if (!QTYPES[t]) err(`subject ${sj.id}`, `types: nieznany typ "${t}"`);
+    if (typeof sj.idTag !== 'string') err(`subject ${sj.id}`, 'idTag: tekst ("" dla chemii, np. "en" dla angielskiego – id mają postać q-en-…)');
     const dirExists = existsSync(join(root, 'data', sj.id));
     if (sj.status === 'active' && !dirExists) err(`subject ${sj.id}`, `brak katalogu data/${sj.id}`);
   }
@@ -131,7 +134,7 @@ function checkSubject(subject) {
       if (t.status === 'active' && pack) {
         if (!(pack.theory && pack.theory.cards && pack.theory.cards.length)) err(`topic ${t.id}`, 'aktywny dział bez kart teorii');
         if (!(pack.questions && pack.questions.length)) err(`topic ${t.id}`, 'aktywny dział bez pytań');
-        for (const [kind, list] of [['card', pack.theory && pack.theory.cards], ['flash', pack.theory && pack.theory.flash], ['question', pack.questions]]) {
+        for (const [kind, list] of [['card', pack.theory && pack.theory.cards], ['flash', pack.theory && pack.theory.flash], ['group', pack.theory && pack.theory.groups], ['question', pack.questions]]) {
           for (const x of list || []) if ('topic' in x) err(`${kind} ${x.id}`, 'pole "topic" jest zbędne w paczce (dział wynika z katalogu)');
         }
       }
@@ -159,6 +162,21 @@ function checkSubject(subject) {
     }
   }
 
+  // ---------- zadania ze wspólnym tekstem/bankiem (groups) ----------
+  const groupsById = new Map();
+  for (const g of (theory && theory.groups) || []) {
+    const w = `group ${g.id}`;
+    uniqueId(g.id, w);
+    groupsById.set(g.id, g);
+    if (!topicIds.has(g.topic)) err(w, `nieznany dział "${g.topic}"`);
+    if (subject.idTag && !new RegExp(`^g-${subject.idTag}-`).test(g.id)) err(w, `id przedmiotu ${subject.id} musi mieć postać g-${subject.idTag}-…`);
+    if (!g.instruction || typeof g.instruction !== 'string') err(w, 'brak instruction (polecenie zadania)');
+    if ('text' in g && (typeof g.text !== 'string' || !g.text.trim())) err(w, 'text musi być niepustym tekstem');
+    if ('bank' in g && (!Array.isArray(g.bank) || g.bank.length < 2 || g.bank.length > 12 || g.bank.some((b) => typeof b !== 'string' || !b.trim()))) err(w, 'bank: 2–12 niepustych tekstów (litery A, B, C… wynikają z kolejności)');
+    checkText(g.instruction, `${w} instruction`);
+    if (g.text) checkText(g.text, `${w} text`);
+  }
+
   // ---------- równania ----------
   const equations = rj('equations.json') || [];
   for (const e of equations) {
@@ -179,12 +197,18 @@ function checkSubject(subject) {
   for (const q of questions) {
     const w = `question ${q.id}`;
     uniqueId(q.id, w);
+    if (subject.idTag && !new RegExp(`^q-${subject.idTag}-`).test(q.id)) err(w, `id przedmiotu ${subject.id} musi mieć postać q-${subject.idTag}-…`);
     if (!topicIds.has(q.topic)) err(w, `nieznany dział "${q.topic}"`);
     if (!QTYPES[q.type]) err(w, `nieznany typ "${q.type}"`);
+    else if (Array.isArray(subject.types) && !subject.types.includes(q.type)) err(w, `typ "${q.type}" nie jest dozwolony w przedmiocie ${subject.id} (subjects.json → types)`);
+    const grp = q.group ? groupsById.get(q.group) : undefined;
+    if (q.group && !grp) err(w, `nieznana grupa "${q.group}"`);
+    else if (grp && grp.topic !== q.topic) err(w, `grupa "${q.group}" jest z innego działu (${grp.topic})`);
+    if (q.gap != null && !(grp && grp.text && new RegExp(`\\(${q.gap}\\)`).test(grp.text))) err(w, `gap ${q.gap}: w tekście grupy brak znacznika (${q.gap})`);
     if (![1, 2, 3].includes(q.level)) err(w, `level musi być 1, 2 lub 3 (jest ${q.level})`);
     if (!q.q || typeof q.q !== 'string') err(w, 'brak treści pytania (q)');
     if (!q.explain || typeof q.explain !== 'string' || q.explain.length < 15) err(w, 'brak wyjaśnienia (explain)');
-    if (QTYPES[q.type]) QTYPES[q.type].validate(q, { err: (msg) => err(w, msg), text: (text, label, o) => checkText(text, `${w} ${label}`, o) });
+    if (QTYPES[q.type]) QTYPES[q.type].validate(q, { err: (msg) => err(w, msg), group: grp, text: (text, label, o) => checkText(text, `${w} ${label}`, o) });
     checkText(q.q, `${w} q`);
     if (q.hint) checkText(q.hint, `${w} hint`);
     checkText(q.explain, `${w} explain`);
@@ -250,7 +274,7 @@ function checkSubject(subject) {
   {
     const seen = new Map();
     for (const q of questions) {
-      const key = String(q.q).replace(/\s+/g, ' ').trim().toLowerCase();
+      const key = `${q.group || ''}|${q.gap ?? ''}|${String(q.q).replace(/\s+/g, ' ').trim().toLowerCase()}`; // pytania jednego zadania mogą mieć ten sam tekst (np. „Luka”) tylko z różnym gap
       if (seen.has(key)) err(`question ${q.id}`, `ta sama treść pytania co ${seen.get(key)}: "${q.q}"`);
       else seen.set(key, q.id);
     }

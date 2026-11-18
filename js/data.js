@@ -1,12 +1,14 @@
 // Dane aplikacji: jeden obiekt DATA wypełniany przy starcie i przy zmianie przedmiotu (loadAll), czytany przez ekrany.
 
+import { setFormulaMode } from './formula.js';
 import { SUBJECTS_PATH, DEFAULT_SUBJECT, activeSubjects, curriculumPath, subjectPath, topicPackPath, hasFeature, packTopics, assemble } from './curriculum.js';
 
 // DATA zawiera dane jednego (aktywnego) przedmiotu; `subjects` to lista wszystkich.
-export const DATA = { subjects: [], subject: null, modules: [], topics: [], cards: [], flash: [], questions: [], experiments: [], indicators: null, solubility: null };
+export const DATA = { subjects: [], subject: null, modules: [], topics: [], cards: [], flash: [], questions: [], groups: [], experiments: [], indicators: null, solubility: null };
 
 export const topicById = (id) => DATA.topics.find((t) => t.id === id);
 export const moduleById = (id) => DATA.modules.find((m) => m.id === id);
+export const groupById = (id) => DATA.groups.find((g) => g.id === id);
 export const questionsOf = (topicId) => DATA.questions.filter((q) => q.topic === topicId);
 /** Numer działu w menu (kolejność w curriculum.json, przez wszystkie moduły). */
 export const topicNum = (t) => String(DATA.topics.indexOf(t) + 1).padStart(2, '0');
@@ -40,6 +42,7 @@ export async function loadAll(wanted = DEFAULT_SUBJECT) {
   ]);
   Object.assign(DATA, assemble(curriculum, Object.fromEntries(packList)));
   DATA.subjects = subjects;
+  setFormulaMode(chem); // znak $ to wzór tylko w przedmiotach z cechą „chem”
   DATA.subject = subject;
   DATA.indicators = indicators;
   DATA.solubility = solubility;

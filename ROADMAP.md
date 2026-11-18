@@ -41,7 +41,9 @@ Odhaczamy w trakcie pracy. Legenda: `[x]` zrobione, `[ ]` do zrobienia, `[~]` w 
 ## Faza 5 – kolejny przedmiot: angielski (konkurs kuratoryjny, woj. łódzkie)
 Wzorzec testów: `docs/angielski-wzorzec-konkursu.md` (oficjalne arkusze Łódzkiego Kuratora Oświaty; własne pytania, bez kopiowania arkuszy).
 - [x] 5.0 Szkielet bez zmiany zachowania (wersja 1.11.0, schema v3, nazwa „Powtórka 8”): `data/subjects.json`, chemia → `data/chemia/`, schema v3 (aktywny przedmiot, `examDate` per przedmiot), przełącznik przedmiotu, `check-data`/`lock` po przedmiotach, neutralna nazwa aplikacji (PWA ≠ nazwa przedmiotu)
-- [ ] 5.1 Silnik zadań konkursowych: typy z repertuaru (open-cloze, key-word, word-formation, first-letter, gapped-text, tf, …) w `QTYPES`, listy akceptowanych odpowiedzi, samoocena, zadania z tekstem (`passage`)
+- [x] 5.1 Silnik zadań konkursowych (wersja 1.12.0): typ `write` (luki, słowotwórstwo, przekształcanie, tłumaczenie – jawne listy odpowiedzi, `keyword`, `maxWords`, normalizacja jak w kluczach), typ `bank` (litery A–I), `choice` ze stałą kolejnością (TRUE/FALSE), grupy zadań z tekstem (`groups`), samoocena w ćwiczeniach, `types` i `idTag` per przedmiot, tekst bez wzorów dla przedmiotów bez cechy `chem`
+  - Odłożone do 5.2: samoocena w trybie sprawdzianu (wynik liczy się na końcu, więc wymaga zmiany podsumowania), losowanie całych grup w sprawdzianie, symulacja sprawdzianu w `check-data` dopasowana do przedmiotu (dziś wymaga ≥4 pytań innych niż wybór)
+  - Odłożone do 5.3 (razem z treścią): fiszki z przykładowym zdaniem i wymową
 - [ ] 5.2 Format testu: szablony arkuszy per etap (czas 60/90/120 min, 100 pkt, sekcje z repertuaru), tryb „cały arkusz” z licznikiem czasu
 - [ ] 5.3 Treść: etap szkolny → rejonowy (pełne arkusze własne) → wojewódzki
 - [ ] 5.4 Skille: `add-lesson` i fact-check per przedmiot; kontrola „jedna poprawna odpowiedź”, poziom, naturalność zdań

@@ -42,22 +42,26 @@ export function formatFormula(src) {
   return out;
 }
 
+let formulaMode = true; // false: przedmiot bez cechy „chem” – znak $ to zwykły znak (np. $750,000), bez wzorów
+export const setFormulaMode = (on) => (formulaMode = !!on);
+
 /**
  * Tekst z wzorami: fragmenty w $...$ są formatowane jako wzory,
- * **pogrubienie**, nowa linia -> <br>. Wzór zaczynający się od "!" jest tylko
+ * **pogrubienie**, ++podkreślenie++, nowa linia -> <br>. Wzór zaczynający się od "!" jest tylko
  * formatowany (znacznik "!" służy skryptowi sprawdzającemu).
  */
 export function richText(text) {
-  const parts = String(text).split(/(\$[^$]+\$)/g);
+  const parts = formulaMode ? String(text).split(/(\$[^$]+\$)/g) : [String(text)];
   return parts
     .map((p) => {
-      if (p.length > 1 && p.startsWith('$') && p.endsWith('$')) {
+      if (formulaMode && p.length > 1 && p.startsWith('$') && p.endsWith('$')) {
         let f = p.slice(1, -1);
         if (f.startsWith('!')) f = f.slice(1);
         return `<span class="chem">${formatFormula(f)}</span>`;
       }
       return escapeHtml(p)
         .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\+\+(.+?)\+\+/g, '<u>$1</u>') // ++podkreślenie++ (np. „zadaj pytanie o podkreśloną część”)
         .replace(/\n/g, '<br>');
     })
     .join('');

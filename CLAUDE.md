@@ -27,10 +27,11 @@ Działa offline, postęp w `localStorage`. Szczegóły formatu danych: `README.m
 ## Konwencje
 - Język treści i interfejsu: polski. Kod i komentarze: zgodnie z istniejącym stylem (polskie komentarze, krótko).
 - Wzory w tekstach w `$…$` (`$Ca(OH)2$`, `$Ca^2+$`, `$2Na + 2H2O -> 2NaOH + H2↑$`). Wzór celowo niezbilansowany: `$!…$`.
-- Id są unikalne w całej aplikacji, także między przedmiotami. Id: `q-<skrót działu>-NNN` (pytania), `f-<skrót>-NN` (fiszki), `t-<skrót>-NN` (karty teorii). Skrót bierz z istniejących w danym dziale.
+- Id są unikalne w całej aplikacji, także między przedmiotami. Angielski ma `idTag: "en"` w `subjects.json`: `q-en-<dział>-NNN`, `f-en-…`, `t-en-…`, `g-en-…` (kontrola to wymusza). Chemia: `q-<skrót działu>-NNN` (pytania), `f-<skrót>-NN` (fiszki), `t-<skrót>-NN` (karty teorii). Skrót bierz z istniejących w danym dziale.
 - Pytanie: pole `explain` obowiązkowe (min. 15 znaków), `level` 1–3, bez powtórzonych treści pytań. Mieszaj typy pytań (nie same `choice`).
 - Dane przedmiotu leżą w `data/<przedmiot>/` (lista: `data/subjects.json`, cechy przedmiotu w `features`). Składa je `js/curriculum.js` (`assemble`), trzyma `js/data.js` (`DATA` = aktywny przedmiot). Funkcje tylko dla chemii (`lab`, `indicators`, `solubility`, `valence`) mają trasy włączane cechą `chem` w `js/app.js` (`featureRoutes`). Ekrany: `js/screens/*.js` oraz moduły funkcji (`lab`, `indicators`, `solubility`, `valence`); każdy eksportuje własne `routes` (`[wyrażenie, funkcja]`), a `js/app.js` je tylko scala. Zależności idą w jedną stronę: `app.js → ekrany → data/ui` – ekran nigdy nie importuje `app.js`.
 - **Nowy ekran** = plik z `routes` + jedna linia w `coreRoutes` w `app.js` (ekran dostępny w każdym przedmiocie) albo w `featureRoutes` (ekran włączany cechą przedmiotu). Test `tests/routes.test.js` przejdzie po wszystkich linkach i wykryje nieistniejącą trasę lub trasę zasłoniętą przez inną.
+- Typy pytań dozwolone w przedmiocie: `types` w `data/subjects.json`. Zadania z tekstem/bankiem odpowiedzi: `groups` w `theory.json` + pole `group` w pytaniu (README).
 - **Nowy typ pytania** = jeden wpis w `QTYPES` (`js/qtypes.js`: walidacja, rysowanie, ocena) + przypadki w `tests/qtypes.test.js`. Nie twórz drugiej listy typów gdzie indziej. DOM budujemy przez `h()` z `js/dom.js`, nigdy przez `innerHTML` z danymi użytkownika.
 - Dostępność: `aria-*`, `visually-hidden`, obsługa klawiatury i dotyku (docelowo iPad).
 

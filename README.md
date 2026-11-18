@@ -38,6 +38,8 @@ Wzory wpisujemy między `$…$`: `$Ca(OH)2$`, `$Ca^2+$`, `$OH^-$`, `$2Na + 2H2O 
 Cyfra po symbolu lub nawiasie staje się indeksem dolnym, `^2+` – górnym, `-H2O->` rysuje H₂O nad strzałką.
 Wzór zaczynający się od `!` (np. `$!Ca + H2O -> …$`) jest celowo niezbilansowany i pomijany przez kontrolę.
 Skrypt traktuje też jako szablony fragmenty z `?` i równania urwane na strzałce.
+Wzory `$…$` działają tylko w przedmiotach z cechą `chem`; w pozostałych `$` jest zwykłym znakiem (np. `$750,000`).
+W każdym tekście: `**pogrubienie**`, `++podkreślenie++`, nowa linia = `\n`.
 
 ### Typy pytań (`topics/<id>/questions.json`)
 Wspólne pola: `id` (unikalne), `type`, `level` (1–3), `q`, `explain`; opcjonalnie `hint` (podpowiedź, niewidoczna na sprawdzianie).
@@ -46,6 +48,20 @@ Wspólne pola: `id` (unikalne), `type`, `level` (1–3), `q`, `explain`; opcjona
 - `equation` – `answer` (całe równanie, np. `"NaOH -> Na^+ + OH^-"`); kolejność składników po jednej stronie nie ma znaczenia, strzałki ↑ i ↓ są ignorowane.
 - `blocks` – `tokens` (poprawna kolejność klocków, np. `["NaOH","->","Na^+","+","OH^-"]`), `extra` (klocki-pułapki).
 - `match` – `pairs` (`[[lewa, prawa], …]`), `extra` (dodatkowe odpowiedzi-pułapki). Prawe strony muszą być unikalne.
+- `write` – odpowiedź wpisana jako zwykły tekst (luki, słowotwórstwo, przekształcanie zdań, tłumaczenie): `answers` – **jawna, płaska lista** akceptowanych odpowiedzi
+  (warianty z klucza rozpisujemy ręcznie, np. `["mind if I turn up", "mind my turning up"]`); opcjonalnie `keyword` (wyraz kluczowy, musi wystąpić w każdej odpowiedzi
+  w niezmienionej formie) i `maxWords` (limit wyrazów; skrócenia `n't`, `'ll` liczą się osobno, jak w poleceniach konkursu).
+  Porównanie ignoruje wielkość liter, nadmiarowe spacje, końcową kropkę i apostrofy typograficzne (iPad); pisownia i łączniki są ścisłe.
+  Przy błędzie uczeń widzi klucz i może uznać swoją odpowiedź za poprawną – dopiero wtedy wynik trafia do powtórek.
+- `bank` – wybór z banku odpowiedzi zadania (fragmenty A–I, osoby A–E): `group` (grupa z `bank`), `answer` (indeks w banku). Kolejność banku jest stała.
+- `choice` z `fixed: true` – stała kolejność odpowiedzi (np. `["TRUE","FALSE"]`).
+
+Który przedmiot może używać których typów: `types` w `subjects.json` (kontrola to wymusza).
+
+### Zadania ze wspólnym tekstem (`groups` w `topics/<id>/theory.json`)
+Zadania z arkuszy (tekst + kilka pytań, wspólny bank odpowiedzi) opisuje grupa: `{ id, instruction, text?, bank? }`. Pytania odwołują się do niej polem `group`
+(i `gap`, gdy dotyczą luki oznaczonej w tekście jako `(3)___`). Na szerokim ekranie tekst jest obok pytania, bieżąca luka jest zaznaczona.
+`topic` w grupie, tak jak w pytaniach, wynika z katalogu paczki.
 
 ## Architektura kodu
 `js/app.js` (start, router, menu) → ekrany (`js/screens/`, `lab.js`, `indicators.js`, `solubility.js`, `valence.js`; każdy eksportuje `routes`) → `js/data.js` (`DATA`) i `js/ui.js`.

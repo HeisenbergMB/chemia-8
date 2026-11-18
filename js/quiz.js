@@ -6,7 +6,8 @@ import { h, shuffle } from './dom.js';
 import { richText, formatFormula } from './formula.js';
 import { record } from './leitner.js';
 import { userBalanceReport } from './chem.js';
-import { QTYPES, correctHtml } from './qtypes.js';
+import { QTYPES, correctHtml, valueHtml } from './qtypes.js';
+import { groupById } from './data.js';
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E'];
 
@@ -25,7 +26,8 @@ export function runQuiz(root, questions, opts = {}) {
   let idx = 0;
 
   function prepare(q) {
-    return { q, order: q.type === 'choice' ? shuffle(q.options.map((_, i) => i)) : null };
+    const idx = q.type === 'choice' ? q.options.map((_, i) => i) : null;
+    return { q, order: idx && !q.fixed ? shuffle(idx) : idx }; // fixed: stała kolejność (TRUE/FALSE)
   }
 
   function show() {
@@ -48,13 +50,28 @@ export function runQuiz(root, questions, opts = {}) {
           h('span', { class: 'quiz-count' }, `${exam ? 'Sprawdzian: pytanie' : 'Pytanie'} ${idx + 1} z ${queue.length}`),
           h('span', { class: 'progress', role: 'progressbar', 'aria-valuemin': 0, 'aria-valuemax': 100, 'aria-valuenow': pct }, h('i', { style: `width:${pct}%` }))
         ),
-        h('p', { class: 'question', html: richText(q.q) }),
-        parts.body,
-        feedback,
-        parts.after
+        ...questionBlock(q, parts, feedback)
       )
     );
-    window.scrollTo(0, 0);
+    if (q.group) root.querySelector('.qa-main').scrollIntoView({ block: 'start' }); // długi tekst nad pytaniem – nie wracamy na górę strony
+    else window.scrollTo(0, 0);
+  }
+
+  /** Treść pytania z odpowiedzią. Pytanie z grupy (zadanie z tekstem/bankiem) dostaje obok instrukcję i tekst. */
+  function questionBlock(q, parts, feedback) {
+    const main = [h('p', { class: 'question', html: richText(q.q) }), parts.body, feedback, parts.after];
+    const g = q.group ? groupById(q.group) : null;
+    if (!g) return main;
+    let text = g.text ? richText(g.text) : '';
+    if (text && q.gap != null) text = text.replace(new RegExp(`\\(${q.gap}\\)_*`), (m) => `<mark>${m}</mark>`); // zaznacz bieżącą lukę
+    return [
+      h(
+        'div',
+        { class: 'qa-layout' },
+        h('section', { class: 'group', 'aria-label': 'Polecenie i tekst' }, h('p', { class: 'muted group-instr', html: richText(g.instruction) }), g.text ? h('div', { class: 'group-text', html: text }) : null),
+        h('div', { class: 'qa-main' }, ...main)
+      ),
+    ];
   }
 
   // ---------- jednokrotny wybór ----------
@@ -114,11 +131,12 @@ export function runQuiz(root, questions, opts = {}) {
       if (!ctl.ready()) return;
       const val = ctl.value();
       const ok = ctl.isCorrect();
-      if (exam) return examResolve(cur, ok, def.showsValue ? formatFormula(val) : '');
+      if (exam) return examResolve(cur, ok, def.showsValue ? valueHtml(q, val) : '');
       check.disabled = true;
       check.hidden = true;
       ctl.lock(ok);
       if (ctl.done) ctl.done();
+      if (!ok && def.selfGrade) return selfGrade(cur, val, feedback);
       resolve(cur, ok, feedback, compare(q, val, ok));
     };
     check = h('button', { class: def.bigSubmit ? 'btn big' : 'btn kb-submit', type: 'button', disabled: true, onClick: submit }, exam ? (idx + 1 >= queue.length ? 'Zakończ sprawdzian' : 'Zapisz i dalej →') : 'Sprawdź');
@@ -134,15 +152,36 @@ export function runQuiz(root, questions, opts = {}) {
     }
   }
 
+  /** Typy z `selfGrade`: klucz mógł nie przewidzieć poprawnego wariantu – uczeń sam decyduje, zanim wynik trafi do powtórek. */
+  function selfGrade(cur, val, feedback) {
+    const q = cur.q;
+    feedback.replaceChildren(
+      h(
+        'div',
+        { class: 'feedback bad' },
+        h('h3', null, 'Porównaj z kluczem'),
+        compare(q, val, false),
+        h('p', { class: 'muted' }, 'Klucz nie zawsze zawiera każdy poprawny wariant. Jeśli Twoja odpowiedź też spełnia polecenie, zalicz ją.'),
+        h(
+          'div',
+          { class: 'btn-row' },
+          h('button', { class: 'btn', type: 'button', onClick: () => resolve(cur, true, feedback, compare(q, val, true)) }, 'Moja odpowiedź też jest poprawna'),
+          h('button', { class: 'btn secondary', type: 'button', onClick: () => resolve(cur, false, feedback, compare(q, val, false)) }, 'Nie, to błąd')
+        )
+      )
+    );
+  }
+
   function compare(q, val, ok) {
     const box = h('div', { class: 'compare' });
     if (!QTYPES[q.type].showsValue) {
       if (!ok) box.append(h('p', null, h('span', { class: 'muted' }, 'Poprawne dopasowanie:')), h('p', { html: correctHtml(q) }));
       return box;
     }
-    box.append(h('p', null, h('span', { class: 'muted' }, 'Twoja odpowiedź: '), h('span', { class: 'chem', html: formatFormula(val) })));
+    const cls = QTYPES[q.type].plain ? '' : 'chem';
+    box.append(h('p', null, h('span', { class: 'muted' }, 'Twoja odpowiedź: '), h('span', { class: cls, html: valueHtml(q, val) })));
     if (!ok) {
-      box.append(h('p', null, h('span', { class: 'muted' }, 'Poprawnie: '), h('strong', { class: 'chem', html: correctHtml(q) })));
+      box.append(h('p', null, h('span', { class: 'muted' }, 'Poprawnie: '), h('strong', { class: cls, html: correctHtml(q) })));
       if (QTYPES[q.type].balanceReport) {
         const r = userBalanceReport(val);
         if (!r.parsed) box.append(h('p', { class: 'muted' }, 'Nie udało się odczytać Twojego zapisu jako równania (sprawdź strzałkę i plusy).'));
@@ -203,8 +242,8 @@ export function runQuiz(root, questions, opts = {}) {
                     'li',
                     null,
                     h('div', { html: richText(a.q.q) }),
-                    a.given ? h('div', { class: 'muted' }, 'Twoja odpowiedź: ', h('span', { class: 'chem', html: a.given })) : null,
-                    h('div', { class: 'ans' }, h('span', null, 'Poprawnie: '), h('span', { class: 'chem', html: correctHtml(a.q) })),
+                    a.given ? h('div', { class: 'muted' }, 'Twoja odpowiedź: ', h('span', { class: QTYPES[a.q.type].plain ? '' : 'chem', html: a.given })) : null,
+                    h('div', { class: 'ans' }, h('span', null, 'Poprawnie: '), h('span', { class: QTYPES[a.q.type].plain ? '' : 'chem', html: correctHtml(a.q) })),
                     h('div', { class: 'muted small', html: richText(a.q.explain) })
                   )
                 )
@@ -273,7 +312,7 @@ export function runQuiz(root, questions, opts = {}) {
                 'ul',
                 { class: 'missed' },
                 missed.map((q) =>
-                  h('li', null, h('div', { html: richText(q.q) }), h('div', { class: 'ans' }, h('span', null, 'Poprawnie: '), h('span', { class: 'chem', html: correctHtml(q) })))
+                  h('li', null, h('div', { html: richText(q.q) }), h('div', { class: 'ans' }, h('span', null, 'Poprawnie: '), h('span', { class: QTYPES[q.type].plain ? '' : 'chem', html: correctHtml(q) })))
                 )
               )
             )

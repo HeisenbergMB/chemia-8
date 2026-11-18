@@ -6,7 +6,18 @@
       "desc": "Klasa 8: wodorotlenki, dysocjacja, sole i doświadczenia.",
       "icon": "flask",
       "status": "active",
-      "features": ["chem"]
+      "features": [
+        "chem"
+      ],
+      "types": [
+        "choice",
+        "formula",
+        "equation",
+        "blocks",
+        "match",
+        "balance"
+      ],
+      "idTag": ""
     },
     {
       "id": "angielski",
@@ -14,7 +25,14 @@
       "desc": "Konkurs kuratoryjny: etap szkolny, rejonowy i wojewódzki.",
       "icon": "book",
       "status": "soon",
-      "features": []
+      "features": [],
+      "types": [
+        "choice",
+        "match",
+        "write",
+        "bank"
+      ],
+      "idTag": "en"
     }
   ]
 }
