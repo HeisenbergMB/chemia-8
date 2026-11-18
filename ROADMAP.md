@@ -50,5 +50,5 @@ Wzorzec testów: `docs/angielski-wzorzec-konkursu.md` (oficjalne arkusze Łódzk
   - [x] Etap szkolny, arkusz 1 (`s-en-sz-01`, wersja 1.14.1): 100 pytań w układzie i na poziomie oficjalnego arkusza 2023/24 (8 zadań, 60 min), działy: czytanie, gramatyka, słownictwo, Wielka Brytania i USA; karty teorii i fiszki bez odpowiedzi z arkusza
   - [ ] Etap szkolny, kolejne arkusze (i osobne pytania ćwiczeniowe, żeby nie „spalić” arkusza)
   - [ ] Etap rejonowy (90 min; tekst z lukami, słowotwórstwo, tłumaczenie, święta UK/USA), etap wojewódzki (120 min; idiomy, wyrazy wieloznaczne, życiorysy)
-  - [ ] Rozstrzygnąć: ćwiczenia (powtórki, quizy) nie powinny pokazywać pytań z arkusza, dopóki uczeń go nie rozwiąże
+  - [x] Pytania z arkusza są ukryte w ćwiczeniach do pierwszego zatwierdzenia arkusza (`js/practice.js`). Skutek: w angielskim są teraz tylko teoria, fiszki i arkusz – quizy działów pojawią się po zatwierdzeniu arkusza 1 albo po dopisaniu osobnych pytań ćwiczeniowych
 - [ ] 5.4 Skille: `add-lesson` i fact-check per przedmiot; kontrola „jedna poprawna odpowiedź”, poziom, naturalność zdań

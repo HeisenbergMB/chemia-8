@@ -23,6 +23,7 @@ export const questions = [
   q('q-en-106', { type: 'write', points: 2, q: 'He is taller than me. (AS) I am ___ him.', keyword: 'as', answers: ['not as tall as'] }),
   q('q-en-107', { type: 'bank', group: 'g-en-03', gap: 1, q: 'Fragment do luki 1', answer: 1 }),
   q('q-en-108', { type: 'bank', group: 'g-en-03', gap: 2, q: 'Fragment do luki 2', answer: 0 }),
+  q('q-en-109', { type: 'write', q: 'Pytanie ćwiczeniowe spoza arkusza: I ___ (go) there.', answers: ['went'] }), // nie należy do żadnego arkusza
 ];
 
 export const sheetsJson = {

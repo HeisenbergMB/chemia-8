@@ -8,11 +8,12 @@ import { buildExam, EXAM_SIZE } from '../exam.js';
 import { questionsInScope, DEFAULT_SUBJECT, hasFeature } from '../curriculum.js';
 import { DATA, topicById, moduleById } from '../data.js';
 import { notFound } from '../ui.js';
+import { practiceQuestions } from '../practice.js';
 
 function examIntro(moduleId) {
   const mod = moduleId ? moduleById(moduleId) : null;
   if (moduleId && !mod) return notFound('Nie znaleziono modułu.');
-  const scope = questionsInScope(DATA, moduleId);
+  const scope = questionsInScope({ ...DATA, questions: practiceQuestions() }, moduleId);
   const runHref = moduleId ? `#/module/${moduleId}/exam/run` : '#/exam/run';
   const history = (store.get().exams || []).filter((e) => (e.subject || DEFAULT_SUBJECT) === DATA.subject.id && (e.scope || null) === (moduleId || null)).reverse();
   const best = history.length ? Math.max(...history.map((e) => e.pct)) : null;
@@ -52,7 +53,7 @@ function examRun(moduleId) {
   const root = h('div');
   const topicTitle = (id) => (topicById(id) ? topicById(id).title : id);
   const start = () => {
-    const qs = buildExam(questionsInScope(DATA, moduleId), EXAM_SIZE);
+    const qs = buildExam(questionsInScope({ ...DATA, questions: practiceQuestions() }, moduleId), EXAM_SIZE);
     runQuiz(root, qs, {
       exam: true,
       title: 'Wynik sprawdzianu',

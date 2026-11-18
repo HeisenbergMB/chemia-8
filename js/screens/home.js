@@ -5,12 +5,15 @@ import { buildReview, topicStats } from '../leitner.js';
 import { withIcon } from '../icons.js';
 import { questionsInScope, hasFeature } from '../curriculum.js';
 import { DATA, moduleById, topicNum } from '../data.js';
+import { practiceQuestions, sealedCount, SEALED_NOTE } from '../practice.js';
 import { progressBar, notFound, subjectSwitcher } from '../ui.js';
 import { countInfo, plDays } from '../countdown.js';
 
 function home() {
-  const review = buildReview(DATA.questions);
-  const overall = topicStats(DATA.questions);
+  const pool = practiceQuestions();
+  const review = buildReview(pool);
+  const overall = topicStats(pool);
+  const noPractice = !pool.length && sealedCount() > 0; // wszystkie pytania czekają w arkuszach
   const c = countInfo();
   const dueText = review.queue.length
     ? `Na dziś: ${[review.dueTotal ? `${review.dueTotal} do powtórki` : '', review.fresh.length ? `${review.fresh.length} nowych` : ''].filter(Boolean).join(' i ')}.`
@@ -31,8 +34,8 @@ function home() {
             h('div', { class: 'when' }, c.full),
           ]
         : [h('h1', null, 'Powtórka')],
-      h('p', { class: 'due' }, dueText),
-      h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: review.queue.length ? '#/review' : '#/review/extra', html: withIcon('play', review.queue.length ? 'Powtórka na dziś' : 'Ćwicz dodatkowo') }), hasFeature(DATA.subject, 'sheets') ? null : h('a', { class: 'btn big secondary', href: '#/exam', html: withIcon('check', 'Sprawdzian próbny') }), hasFeature(DATA.subject, 'sheets') ? h('a', { class: 'btn big secondary', href: '#/sheets', html: withIcon('list', 'Arkusze konkursowe') }) : null),
+      h('p', { class: 'due' }, noPractice ? SEALED_NOTE : dueText),
+      h('div', { class: 'btn-row' }, noPractice ? null : h('a', { class: 'btn big', href: review.queue.length ? '#/review' : '#/review/extra', html: withIcon('play', review.queue.length ? 'Powtórka na dziś' : 'Ćwicz dodatkowo') }), hasFeature(DATA.subject, 'sheets') ? null : h('a', { class: 'btn big secondary', href: '#/exam', html: withIcon('check', 'Sprawdzian próbny') }), hasFeature(DATA.subject, 'sheets') ? h('a', { class: 'btn big secondary', href: '#/sheets', html: withIcon('list', 'Arkusze konkursowe') }) : null),
       h('div', { style: 'margin-top:1.25rem' }, progressBar(overall.mastered, overall.total, 'Postęp ogólny'))
     ),
     h(
@@ -57,7 +60,7 @@ export function topicGrid(topics) {
     { class: 'topic-grid' },
     topics.map((t) => {
       const active = t.status === 'active';
-      const st = topicStats(DATA.questions, t.id);
+      const st = topicStats(practiceQuestions(), t.id);
       return h(
         active ? 'a' : 'div',
         { class: `topic c${(DATA.topics.indexOf(t) % 5) + 1}${active ? '' : ' soon'}`, href: active ? `#/topic/${t.id}` : null },
@@ -74,7 +77,7 @@ export function topicGrid(topics) {
 function moduleScreen(id) {
   const m = moduleById(id);
   if (!m) return notFound('Nie znaleziono modułu.');
-  const qs = questionsInScope(DATA, id);
+  const qs = questionsInScope({ ...DATA, questions: practiceQuestions() }, id);
   const st = topicStats(qs);
   return h(
     'div',

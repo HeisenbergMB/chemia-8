@@ -43,6 +43,7 @@ Pełny test w układzie z konkursu: zadania jedno po drugim, wszystkie pytania z
 Pytania i grupy leżą w paczkach działów, arkusz tylko ustawia je w kolejności z arkusza. Zadanie ma `group` (polecenie, tekst, bank) albo własne `instruction`.
 `kind` – rodzaj zadania z `TASK_KINDS` w `js/sheets.js` (opis wzorca: `docs/angielski-wzorzec-konkursu.md`). W arkuszu działają typy `choice`, `write`, `bank`
 (punkt za pytanie, `points` – inna punktacja). Kontrola sprawdza m.in.: suma punktów = `points` formatu, brak powtórzeń, zgodność grup, numery luk w tekście = pola `gap` pytań (`(0)` to przykład).
+**Pytania z arkusza są ukryte w ćwiczeniach** (quiz działu, powtórka na dziś, ćwiczenie dodatkowe, postęp) do pierwszego zatwierdzenia wyniku tego arkusza – `js/practice.js`; pierwsze podejście jest więc „na zimno”. Pytania wspólne dla kilku arkuszy czekają na zatwierdzenie wszystkich. Pytania ćwiczeniowe spoza arkuszy są dostępne od razu.
 Rozpoczęty arkusz zapisuje się sam (`draft` w `localStorage`) i przeżywa przeładowanie; czas płynie od startu także przy zamkniętej aplikacji. Po zakończeniu odpowiedzi są zablokowane;
 w przeglądzie uczeń może uznać własną poprawną odpowiedź (`write`), a dopiero „Zatwierdź wynik” zapisuje pytania do powtórek i wynik do historii.
 

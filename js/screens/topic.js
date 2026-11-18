@@ -8,15 +8,17 @@ import { runQuiz } from '../quiz.js';
 import { TYPED_TYPES } from '../qtypes.js';
 import { withIcon } from '../icons.js';
 import { hasFeature } from '../curriculum.js';
-import { DATA, topicById, questionsOf } from '../data.js';
+import { DATA, topicById } from '../data.js';
+import { practiceQuestions, practiceOf, sealedCount, SEALED_NOTE } from '../practice.js';
 import { progressBar, notFound } from '../ui.js';
 
 function topicScreen(id) {
   const t = topicById(id);
   if (!t || t.status !== 'active') return notFound('Ten dział będzie dostępny wkrótce.');
-  const qs = questionsOf(id);
+  const qs = practiceOf(id);
+  const sealed = sealedCount(id);
   const typedCount = qs.filter((q) => TYPED_TYPES.includes(q.type)).length;
-  const st = topicStats(DATA.questions, id);
+  const st = topicStats(practiceQuestions(), id);
   return h(
     'div',
     null,
@@ -33,15 +35,16 @@ function topicScreen(id) {
         { class: 'btn-row' },
         h('a', { class: 'btn', href: `#/theory/${id}`, html: withIcon('book', 'Teoria') }),
         h('a', { class: 'btn', href: `#/flash/${id}`, html: withIcon('cards', 'Fiszki') }),
-        h('a', { class: 'btn', href: `#/quiz/${id}`, html: withIcon('check', 'Quiz (10 pytań)') }),
+        qs.length ? h('a', { class: 'btn', href: `#/quiz/${id}`, html: withIcon('check', 'Quiz (10 pytań)') }) : null,
         ...(t.labs || []).map((lid) => {
           const e = DATA.experiments.find((x) => x.id === lid);
           return e ? h('a', { class: 'btn', href: `#/lab/${lid}`, html: withIcon('flask', `Laboratorium: ${e.title}`) }) : null;
         }),
         ...(t.tools || []).map((tool) => h('a', { class: 'btn', href: tool.href, html: withIcon(tool.icon, tool.label) })),
         typedCount ? h('a', { class: 'btn', href: `#/quiz/${id}/zapis`, html: withIcon('pen', `${hasFeature(DATA.subject, 'chem') ? 'Układanie zapisu' : 'Odpowiedzi wpisywane'} (${typedCount})`) }) : null,
-        h('a', { class: 'btn secondary', href: `#/quiz/${id}/all`, html: withIcon('list', `Wszystkie pytania (${qs.length})`) })
-      )
+        qs.length ? h('a', { class: 'btn secondary', href: `#/quiz/${id}/all`, html: withIcon('list', `Wszystkie pytania (${qs.length})`) }) : null
+      ),
+      sealed ? h('p', { class: 'muted' }, `${qs.length ? `Jeszcze ${sealed} pytań czeka w arkuszu. ` : ''}${SEALED_NOTE}`) : null
     )
   );
 }
@@ -75,7 +78,7 @@ function theoryScreen(id) {
         c.tip ? h('div', { class: 'tip' }, h('strong', null, 'Zapamiętaj: '), h('span', { html: richText(c.tip) })) : null
       )
     ),
-    h('div', { class: 'btn-row' }, h('a', { class: 'btn', href: `#/flash/${id}`, html: withIcon('cards', 'Fiszki') }), h('a', { class: 'btn secondary', href: `#/quiz/${id}`, html: withIcon('check', 'Quiz') }))
+    h('div', { class: 'btn-row' }, h('a', { class: 'btn', href: `#/flash/${id}`, html: withIcon('cards', 'Fiszki') }), practiceOf(id).length ? h('a', { class: 'btn secondary', href: `#/quiz/${id}`, html: withIcon('check', 'Quiz') }) : null)
   );
 }
 
@@ -114,7 +117,7 @@ function flashScreen(id) {
   };
   const done = () =>
     root.replaceChildren(
-      h('div', { class: 'card' }, h('h2', null, 'Wszystkie fiszki przerobione'), h('div', { class: 'btn-row' }, h('a', { class: 'btn', href: `#/quiz/${id}`, html: withIcon('check', 'Teraz quiz') }), h('a', { class: 'btn secondary', href: `#/topic/${id}` }, 'Wróć')))
+      h('div', { class: 'card' }, h('h2', null, 'Wszystkie fiszki przerobione'), h('div', { class: 'btn-row' }, practiceOf(id).length ? h('a', { class: 'btn', href: `#/quiz/${id}`, html: withIcon('check', 'Teraz quiz') }) : null, h('a', { class: 'btn secondary', href: `#/topic/${id}` }, 'Wróć')))
     );
   showCard(false);
   return root;
@@ -124,11 +127,11 @@ function flashScreen(id) {
 function quizScreen(id, mode) {
   const t = topicById(id);
   if (!t) return notFound('Nie znaleziono działu.');
-  const pool = mode === 'zapis' ? questionsOf(id).filter((q) => TYPED_TYPES.includes(q.type)) : questionsOf(id);
+  const pool = mode === 'zapis' ? practiceOf(id).filter((q) => TYPED_TYPES.includes(q.type)) : practiceOf(id);
   const picked = mode ? shuffle(pool) : buildExtra(pool, 10);
   const root = h('div');
   const start = (qs) => runQuiz(root, qs, { title: `Wynik: ${t.title}`, backHref: `#/topic/${id}`, onRetryMissed: start });
-  if (!picked.length) return notFound('W tym dziale nie ma jeszcze pytań.');
+  if (!picked.length) return notFound(sealedCount(id) ? SEALED_NOTE : 'W tym dziale nie ma jeszcze pytań.');
   start(picked);
   return h('div', null, h('a', { class: 'back', href: `#/topic/${id}` }, `← ${t.title}`), root);
 }

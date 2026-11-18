@@ -72,6 +72,7 @@ function sheetIntro(id) {
       { class: 'card' },
       h('p', null, h('strong', null, format.title), `: ${format.minutes} minut, ${sheetMax(sheet, byId)} punktów, ${sheet.tasks.length} zadań.`),
       h('ul', { class: 'rules' }, h('li', null, 'Jak na papierze: wszystkie pytania zadania są na jednej stronie, do zadań można wracać i poprawiać odpowiedzi.'), h('li', null, 'Bez podpowiedzi i bez informacji o poprawności – klucz zobaczysz po zakończeniu.'), h('li', null, 'Czas płynie od startu także wtedy, gdy zamkniesz aplikację lub tablet uśnie – jak na prawdziwym konkursie. Odpowiedzi zapisują się same.'), h('li', null, 'Po zakończeniu odpowiedzi są zablokowane. W przeglądzie możesz uznać własną poprawną odpowiedź, której nie ma w kluczu.')),
+      h('p', { class: 'muted' }, 'Pytania z tego arkusza są ukryte w ćwiczeniach i powtórkach, dopóki nie zatwierdzisz jego wyniku.'),
       h('ol', { class: 'task-list' }, sheet.tasks.map((t, i) => h('li', { value: i + 1 }, `${ROMAN[i] || i + 1}. ${KIND_LABELS[t.kind] || t.kind} (${t.items.length})`))),
       draft && draft.finishedAt
         ? h('div', { class: 'btn-row' }, h('a', { class: 'btn big', href: `#/sheet/${id}/run`, html: withIcon('check', 'Przejdź do wyniku') }))

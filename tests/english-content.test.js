@@ -78,9 +78,10 @@ test('crawl po angielskim: wszystkie linki prowadzą do istniejących ekranów',
     assert.equal(end, h, `${h} przekierowuje na ${end}`);
     assert.ok(text.length > 20 && !text.includes('Wróć na start'), `${h}: pusty lub „nie znaleziono”`);
   }
-  for (const k of ['topic', 'theory', 'flash', 'quiz', 'sheets', 'sheet']) assert.ok([...seen.keys()].some((h) => h.split('/')[1] === k), `brak ekranu ${k}`);
+  for (const k of ['topic', 'theory', 'flash', 'sheets', 'sheet']) assert.ok([...seen.keys()].some((h) => h.split('/')[1] === k), `brak ekranu ${k}`);
   assert.ok(!app.main.textContent.includes('NaOH'), 'żadnej chemii');
   assert.ok(![...seen.keys()].some((h) => h.startsWith('#/exam')), 'brak losowego sprawdzianu (arkusze mają samoocenę)');
+  assert.ok(![...seen.keys()].some((h) => h.startsWith('#/quiz')), 'pytania z niezatwierdzonego arkusza nie są w ćwiczeniach');
 });
 
 test('wszystkie pytania angielskiego dają się wyrenderować w quizie i na sprawdzianie', async () => {
