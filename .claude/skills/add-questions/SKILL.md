@@ -31,7 +31,7 @@ Wzory w `$…$`, równania zbilansowane w najmniejszych współczynnikach (`chec
 ### Angielski
 - Pytania są **własne**. Arkuszy z kuratorium nie kopiujemy; wzorzec formatu: `docs/angielski-wzorzec-konkursu.md`, poziom jak w oficjalnych arkuszach danego etapu (szkolny ≈ B1+/B2, rejonowy i wojewódzki wyżej).
 - `write`: w `answers` wpisz **wszystkie** poprawne warianty (także brytyjską i amerykańską pisownię, formy skrócone i pełne), pierwszą odpowiedź zapisz w poprawnej pisowni (wielka litera, `?` w pytaniach). Zasada konkursu: w lukach jednowyrazowych bez skróceń.
-- Zadania ze słowem kluczowym: `keyword` + `maxWords: 5` (wlicza słowo kluczowe, skrócenie to jeden wyraz); słowo kluczowe zapisz w treści jako `(SŁOWO)`; **każda** odpowiedź zawiera je w niezmienionej formie.
+- Zadania ze słowem kluczowym: `keyword` + `maxWords: 5` (wlicza słowo kluczowe, skrócenie to jeden wyraz); słowo kluczowe zapisz w treści jako `(SŁOWO)`; **każda** odpowiedź zawiera je w niezmienionej formie. Dozwolona jest skrócona forma przeczna słowa kluczowego (should → shouldn't, had → hadn't, can → can't), więc klucz ma mieć **oba** warianty (`should not have shouted`, `shouldn't have shouted`) – `lint:content` to sprawdza.
 - Zadania z tekstem: grupa `groups` w `theory.json` (`instruction`, `text`, opcjonalnie `bank`), pytania z `group` i `gap` (numery luk w tekście jako `(1)___`).
 - Litery w słowie: `n _ _ g _ _ _ _ _ s` – liczba kresek = liczba brakujących liter (`lint:content` to sprawdza).
 - Karty teorii i fiszki **nie mogą zawierać odpowiedzi z arkusza** (przykłady dobieraj inne niż w pytaniach arkusza).

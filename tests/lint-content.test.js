@@ -93,3 +93,12 @@ test('blind-sheet: wypisuje zadania bez kluczy i wyjaśnień', async () => {
   assert.ok(ids.length > 20 && ids.every((id) => !inSheets.has(id)), 'tylko pytania spoza arkuszy');
   assert.ok(blindText(loaded, { topic: 'czytanie' }).includes('q-en-czyt-001'), 'bez --practice są też pytania arkusza');
 });
+
+test('słowo kluczowe: klucz ma mieć oba warianty – pełny i skrócony przeczny', () => {
+  const full = q('q-1', { type: 'write', q: 'Wrong. (SHOULD)\nYou ___ at him.', keyword: 'should', answers: ['should not have shouted'] });
+  const both = q('q-2', { type: 'write', q: 'Wrong. (SHOULD)\nYou ___ at him.', keyword: 'should', answers: ['should not have shouted', "shouldn't have shouted"] });
+  const shortOnly = q('q-3', { type: 'write', q: 'Wrong. (HAD)\nIf you ___ us.', keyword: 'had', answers: ["hadn't helped"] });
+  assert.equal(msgs(lintData(base([full]))).length, 1);
+  assert.deepEqual(lintData(base([both])), []);
+  assert.match(msgs(lintData(base([shortOnly])))[0], /had not/);
+});

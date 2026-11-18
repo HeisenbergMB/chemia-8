@@ -958,7 +958,10 @@
   "answers": [
    "might not have got",
    "might not have gotten",
-   "might not have received"
+   "might not have received",
+   "mightn't have got",
+   "mightn't have gotten",
+   "mightn't have received"
   ],
   "explain": "Przypuszczenie o przeszłości: might not have + III forma."
  },
@@ -1009,7 +1012,8 @@
   "keyword": "should",
   "maxWords": 5,
   "answers": [
-   "should not have shouted"
+   "should not have shouted",
+   "shouldn't have shouted"
   ],
   "explain": "Krytyka przeszłości: should not have + III forma."
  },

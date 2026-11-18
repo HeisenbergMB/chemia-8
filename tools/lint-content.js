@@ -47,6 +47,13 @@ export function lintData(data, sheets = null) {
         const word = q.answers[0].toLowerCase();
         if (!runs.some((r) => patternFits(r, word))) add('error', w, `wzór „${runs.map((r) => r.join(' ')).join('” / „')}” nie pasuje do odpowiedzi „${q.answers[0]}”`);
       }
+      // zadanie ze słowem kluczowym: skrócona forma przeczna jest dozwolona, więc klucz ma mieć oba warianty (should not / shouldn't)
+      if (q.keyword) for (const a of q.answers) {
+        const full = /\b(is|are|was|were|has|have|had|do|does|did|should|would|could|must|need|might|ought) not\b/i.exec(a);
+        if (full && !q.answers.some((b) => b.toLowerCase() === a.toLowerCase().replace(full[0].toLowerCase(), `${full[1].toLowerCase()}n't`))) add('warn', w, `odpowiedź „${a}” nie ma wariantu ze skróconą formą przeczną`);
+        const short = /\b(\w+)n't\b/i.exec(a);
+        if (short && !/^(ca|wo|sha)$/i.test(short[1]) && !q.answers.some((b) => b.toLowerCase() === a.toLowerCase().replace(short[0].toLowerCase(), `${short[1].toLowerCase()} not`))) add('warn', w, `odpowiedź „${a}” nie ma wariantu z pełną formą „${short[1]} not”`);
+      }
       // luka jednowyrazowa z grupy-tekstu: zakaz skróceń (w poleceniach konkursu)
       if (q.group && q.gap != null) for (const a of q.answers) if (/['’]/.test(a) && !/\s/.test(a)) add('warn', w, `odpowiedź „${a}” jest skróceniem – w lukach jednowyrazowych nie wolno (sprawdź polecenie zadania)`);
       // odpowiedzi pytań zaczynających zdanie: wielka litera i znak zapytania w kluczu wyświetlanym uczniowi

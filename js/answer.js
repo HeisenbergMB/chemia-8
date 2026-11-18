@@ -25,8 +25,16 @@ export function wordCount(s) {
   return t ? t.split(' ').length : 0;
 }
 
-/** Czy wyraz kluczowy występuje w odpowiedzi w niezmienionej formie (jako osobny wyraz). */
+const NEGATED = { can: "can't", will: "won't", shall: "shan't" };
+
+/**
+ * Czy wyraz kluczowy występuje w odpowiedzi jako osobny wyraz w niezmienionej formie.
+ * Dozwolona jest jego skrócona forma przeczna (should → shouldn't, had → hadn't, can → can't, will → won't).
+ */
 export function containsWord(answer, word) {
-  const re = new RegExp(`(^|[^\\p{L}'])${normalizeAnswer(word).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}($|[^\\p{L}'])`, 'u');
+  const esc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const w = normalizeAnswer(word);
+  const forms = [w, NEGATED[w] || `${w}n't`];
+  const re = new RegExp(`(^|[^\\p{L}'])(?:${forms.map(esc).join('|')})($|[^\\p{L}'])`, 'u');
   return re.test(normalizeAnswer(answer));
 }

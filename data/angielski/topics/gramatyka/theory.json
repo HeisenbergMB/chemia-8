@@ -44,7 +44,7 @@
   {
    "id": "t-en-gram-09",
    "title": "Zadanie ze słowem kluczowym",
-   "body": "W luce możesz wpisać **maksymalnie 5 wyrazów, wliczając podany wyraz**. Podane słowo **musi wystąpić w niezmienionej formie** (nie zamieniaj need na needn't).\nNajpierw ustal, jakiej struktury wymaga zdanie (strona bierna, mowa zależna, porównanie, tryb warunkowy), potem dopasuj słowo.\n**Przykład:** \"It is too cold to swim. (ENOUGH)\" → \"It isn't warm enough to swim.\""
+   "body": "W luce możesz wpisać **maksymalnie 5 wyrazów, wliczając podany wyraz**. Podane słowo **musi wystąpić w niezmienionej formie**; dozwolona jest jego skrócona forma przeczna (should → shouldn't, had → hadn't, can → can't, need → needn't), ale nie inna zmiana (needs, needed).\nNajpierw ustal, jakiej struktury wymaga zdanie (strona bierna, mowa zależna, porównanie, tryb warunkowy), potem dopasuj słowo.\n**Przykład:** \"It is too cold to swim. (ENOUGH)\" → \"It isn't warm enough to swim.\""
   }
  ],
  "flash": [

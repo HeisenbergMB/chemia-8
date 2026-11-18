@@ -32,10 +32,15 @@ test('liczba wyrazów: skrócenie to jeden wyraz, a podany wyraz kluczowy wlicza
   assert.equal(wordCount(''), 0);
 });
 
-test('wyraz kluczowy musi wystąpić jako osobny wyraz, w niezmienionej formie', () => {
+test('wyraz kluczowy musi wystąpić jako osobny wyraz, w niezmienionej formie (dozwolona skrócona forma przeczna)', () => {
   assert.equal(containsWord('are you fond of', 'fond'), true);
   assert.equal(containsWord('are you fonder of', 'fond'), false);
   assert.equal(containsWord('I was used to', 'used'), true);
   assert.equal(containsWord('unused', 'used'), false);
-  assert.equal(containsWord("he can't", 'can'), false); // can't to inny wyraz niż can
+  assert.equal(containsWord("shouldn't have shouted", 'should'), true);
+  assert.equal(containsWord("hadn't helped", 'had'), true);
+  assert.equal(containsWord("needn't come", 'need'), true);
+  assert.equal(containsWord("he can't swim", 'can'), true);
+  assert.equal(containsWord("it won't work", 'will'), true);
+  assert.equal(containsWord("he shouldn't go", 'shoul'), false, 'fragment wyrazu to nie wyraz kluczowy');
 });

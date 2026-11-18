@@ -635,7 +635,8 @@
   "keyword": "had",
   "maxWords": 5,
   "answers": [
-   "had not helped"
+   "had not helped",
+   "hadn't helped"
   ],
   "explain": "III okres warunkowy: If + Past Perfect."
  },
