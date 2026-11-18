@@ -7,6 +7,8 @@ description: Dodaje nową lekcję/dział do aplikacji Powtórka 8 (przedmiot z `
 
 Zanim zaczniesz, przeczytaj `CLAUDE.md` (zasady) i `README.md` (formaty danych). Pracuj na gałęzi lub w osobnym commicie: **jedna lekcja = jeden commit**.
 
+> **Angielski:** nowy dział z teorią robisz tym skillem, ale same pytania (zadania konkursowe, grupy, tekst, bank) pisz według skilla `add-questions` (zasady dla angielskiego) i po wszystkim uruchom `fact-check`. Numerację id sprawdzaj przez `node tools/next-id.js <przedmiot> <dział>`.
+
 ## 1. Ustal zakres (zapytaj tylko o to, czego nie wiesz)
 - Temat i poziom (klasa 8, program podstawowy), źródło treści (zdjęcia z `materialy-prywatne/` nie trafiają do repo – wolno z nich korzystać tylko jako źródła wiedzy).
 - Czy lekcja ma mieć narzędzia (`tools`: kalkulatory) albo doświadczenia (`labs`) – jeśli tak, wymaga to nowego kodu; zaproponuj osobny krok.

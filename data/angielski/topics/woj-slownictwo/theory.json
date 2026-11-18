@@ -3,35 +3,35 @@
   {
    "id": "t-en-wslow-01",
    "title": "Idiomy: jak się ich uczyć",
-   "body": "Idiomu nie da się przetłumaczyć słowo w słowo – ucz się go **w całym zdaniu** i z obrazem.\nPrzykłady: **a piece of cake** (bardzo łatwe), **under the weather** (źle się czuć), **break the ice** (przełamać lody), **cost an arm and a leg** (kosztować fortunę), **let the cat out of the bag** (zdradzić sekret), **hit the books** (zakuwać)."
+   "body": "Idiomu nie da się przetłumaczyć słowo w słowo – ucz się go **w całym zdaniu** i z obrazem.\nPrzykłady: **on the same page** (mieć wspólne zdanie), **the ball is in your court** (teraz Twoja kolej), **bite off more than you can chew** (porwać się z motyką na słońce), **cost an arm and a leg** (kosztować fortunę), **let the cat out of the bag** (zdradzić sekret), **hit the books** (zakuwać)."
   },
   {
    "id": "t-en-wslow-02",
    "title": "Słowotwórstwo w tekście",
-   "body": "W tekście z lukami zwróć uwagę na **część mowy** wymaganą przez zdanie: po przedimku i przymiotniku rzeczownik, przed rzeczownikiem przymiotnik, przy czasowniku przysłówek.\nCzęsto zmienia się też liczba (ingredient → ingredients) i pisownia (create → creativity, relate → relationship)."
+   "body": "W tekście z lukami zwróć uwagę na **część mowy** wymaganą przez zdanie: po przedimku i przymiotniku rzeczownik, przed rzeczownikiem przymiotnik, przy czasowniku przysłówek.\nCzęsto zmienia się też liczba (potato → potatoes) i pisownia (produce → production, apply → application)."
   },
   {
    "id": "t-en-wslow-03",
    "title": "Tłumaczenie fragmentów zdań",
-   "body": "W zadaniu z tłumaczeniem liczy się **poprawna struktura**, nie dosłowność. Typowe pułapki: neither ... nor, the + liczebnik porządkowy + time, Past Perfect Continuous, avoid + -ing w stronie biernej, supposing/suppose, can't have + III forma, tłumaczenie czasu Present Perfect z for/since.",
+   "body": "W zadaniu z tłumaczeniem liczy się **poprawna struktura**, nie dosłowność. Typowe pułapki: neither ... nor, the + liczebnik porządkowy + time, Past Perfect Continuous, avoid + -ing w stronie biernej, konstrukcje typu „zakładając, że”, can't have + III forma, tłumaczenie czasu Present Perfect z for/since.",
    "tip": "Sprawdź, czy tłumaczenie wstawione do zdania jest gramatyczne."
   }
  ],
  "flash": [
   {
    "id": "f-en-wslow-01",
-   "front": "a piece of cake",
-   "back": "bułka z masłem, bardzo łatwe"
+   "front": "on the same page",
+   "back": "mieć wspólne zdanie"
   },
   {
    "id": "f-en-wslow-02",
-   "front": "under the weather",
-   "back": "niezbyt dobrze się czujący"
+   "front": "the ball is in your court",
+   "back": "teraz Twoja kolej na działanie"
   },
   {
    "id": "f-en-wslow-03",
-   "front": "break the ice",
-   "back": "przełamać lody"
+   "front": "bite off more than you can chew",
+   "back": "porwać się z motyką na słońce"
   },
   {
    "id": "f-en-wslow-04",
@@ -60,18 +60,18 @@
   },
   {
    "id": "f-en-wslow-09",
-   "front": "freedom",
-   "back": "rzeczownik od free"
+   "front": "production",
+   "back": "rzeczownik od produce"
   },
   {
    "id": "f-en-wslow-10",
-   "front": "creativity",
-   "back": "rzeczownik od create"
+   "front": "application",
+   "back": "rzeczownik od apply"
   },
   {
    "id": "f-en-wslow-11",
-   "front": "inventive",
-   "back": "przymiotnik od invent"
+   "front": "adventurous",
+   "back": "przymiotnik od adventure"
   },
   {
    "id": "f-en-wslow-12",

@@ -6,10 +6,10 @@
   "q": "Why were early predictions about public libraries gloomy?",
   "group": "g-en-wczyt-01",
   "options": [
-   "Fewer people were able to read printed books.",
-   "Experts thought that digital reading would make library buildings unnecessary.",
-   "Libraries were too expensive to build.",
-   "Most librarians wanted to retire."
+   "Experts believed that fewer people could read printed books any more.",
+   "Experts believed digital reading would make buildings unnecessary.",
+   "Experts thought that libraries cost too much to build and maintain.",
+   "Experts expected most librarians to retire during the next decade."
   ],
   "answer": 1,
   "explain": "Eksperci pytali, kto będzie potrzebował budynku pełnego papieru, skoro książki można kupić online."
@@ -21,10 +21,10 @@
   "q": "According to the text, why do more people visit libraries today?",
   "group": "g-en-wczyt-01",
   "options": [
-   "Libraries sell books at lower prices.",
-   "Libraries have become much bigger.",
-   "More people have stopped using the Internet.",
-   "Libraries now work as meeting places with many activities."
+   "Libraries sell new books at much lower prices than shops.",
+   "Libraries have become much bigger than they used to be.",
+   "More people have stopped using the Internet at home.",
+   "Libraries now work as meeting places."
   ],
   "answer": 3,
   "explain": "Biblioteki \"have become meeting places\" i oferują znacznie więcej niż regały."
@@ -36,10 +36,10 @@
   "q": "What does the text say about language cafés?",
   "group": "g-en-wczyt-01",
   "options": [
-   "They teach foreign languages to local children.",
-   "Newcomers practise the local language there with volunteers.",
-   "They are open only to university students.",
-   "They replace regular language courses."
+   "They teach foreign languages to the children of the town.",
+   "Newcomers practise the local language with volunteers.",
+   "They are open only to university students and teachers.",
+   "They have replaced regular language courses in schools."
   ],
   "answer": 1,
   "explain": "Przybysze ćwiczą język z wolontariuszami przy herbacie."
@@ -51,10 +51,10 @@
   "q": "Why may a library be especially important for some people?",
   "group": "g-en-wczyt-01",
   "options": [
-   "It lends them money for their studies.",
-   "It offers free medical advice.",
-   "It finds them a job directly.",
-   "It gives them access to a computer to apply for jobs and fill in forms."
+   "It lends money to students who cannot pay for their studies.",
+   "It gives free medical advice to people without a doctor.",
+   "It finds jobs directly for people who visit regularly.",
+   "It offers a computer for job applications and forms."
   ],
   "answer": 3,
   "explain": "Bez komputera w domu biblioteka bywa jedynym miejscem do składania podań i formularzy online."
@@ -66,10 +66,10 @@
   "q": "What do critics of modern libraries claim?",
   "group": "g-en-wczyt-01",
   "options": [
-   "Libraries should be closed completely.",
-   "Libraries should sell e-books.",
-   "A library with too few books is no longer a real library.",
-   "Librarians are not well educated."
+   "Libraries should be closed and replaced by shopping centres.",
+   "Libraries should stop lending books and sell e-books instead.",
+   "A library with few books is not a real library.",
+   "Librarians are not educated well enough for the new tasks."
   ],
   "answer": 2,
   "explain": "Krytycy twierdzą, że biblioteka bez wystarczającej liczby książek przestaje być biblioteką."
@@ -81,10 +81,10 @@
   "q": "How do librarians answer the critics?",
   "group": "g-en-wczyt-01",
   "options": [
-   "They say that collections now include digital materials.",
-   "They agree and plan to buy more shelves.",
-   "They ask the government for more volunteers.",
-   "They refuse to comment."
+   "Collections now include digital materials.",
+   "They agree and plan to buy many more shelves for books.",
+   "They ask the government to send them more volunteers.",
+   "They refuse to comment because the question is unfair."
   ],
   "answer": 0,
   "explain": "Zbiory się rozrosły o e-booki, audiobooki i cyfrowe czasopisma."
@@ -96,10 +96,10 @@
   "q": "What did the director of the northern library consider the key to success?",
   "group": "g-en-wczyt-01",
   "options": [
-   "Opening on Sundays only.",
-   "Hiring more librarians.",
-   "Asking residents about their needs before planning.",
-   "Copying a famous library abroad."
+   "Opening the library only on Sundays for families.",
+   "Hiring many more librarians from other towns.",
+   "Asking residents about their needs first.",
+   "Copying a famous library from another country."
   ],
   "answer": 2,
   "explain": "Dyrektorka mówi, że klucz to pytanie mieszkańców, czego potrzebują, i słuchanie ich."
@@ -111,10 +111,10 @@
   "q": "What is the author's final message?",
   "group": "g-en-wczyt-01",
   "options": [
-   "A library's value lies in the people it serves, not in the number of books.",
-   "Libraries will disappear within a few years.",
-   "Only large libraries can survive.",
-   "Books are no longer important."
+   "A library's value lies in the people it serves.",
+   "Libraries will disappear completely within a few years.",
+   "Only very large libraries will be able to survive.",
+   "Books are no longer important to young people."
   ],
   "answer": 0,
   "explain": "Autor kończy myślą, że wartość biblioteki mierzy się liczbą ludzi, nie liczbą książek."
@@ -303,10 +303,10 @@
   "q": "What happened in the village square after the first week?",
   "group": "g-en-wczyt-03",
   "options": [
-   "It filled with people who talked to each other.",
-   "It was closed to the public.",
-   "It became a car park.",
-   "It was used only by teenagers."
+   "It filled with people talking to each other.",
+   "It was closed to the public for the whole month.",
+   "It was turned into a car park for visitors.",
+   "It was used only by teenagers after school."
   ],
   "answer": 0,
   "explain": "Plac się zapełnił, a ludzie siedzieli przy tych samych stolikach."
@@ -318,10 +318,10 @@
   "q": "Who proposed the experiment?",
   "group": "g-en-wczyt-03",
   "options": [
-   "A café owner.",
-   "A university researcher.",
+   "A café owner who wanted more customers.",
+   "A university researcher studying the village.",
    "A teacher worried about teenagers' breaks.",
-   "A group of parents."
+   "A group of parents from the neighbouring town."
   ],
   "answer": 2,
   "explain": "Pomysł miała nauczycielka, która zauważyła nastolatków wpatrzonych w ekrany."
@@ -333,10 +333,10 @@
   "q": "On what condition did the council agree to the experiment?",
   "group": "g-en-wczyt-03",
   "options": [
-   "The shops would remain connected to the internet.",
-   "The experiment would last three months.",
-   "The university would pay for it.",
-   "Teenagers would not take part."
+   "The shops would stay connected to the internet.",
+   "The experiment would last no longer than three months.",
+   "The university would pay for all the costs of it.",
+   "Teenagers would not be allowed to take part in it."
   ],
   "answer": 0,
   "explain": "Sklepy miały zachować internet, żeby nikt nie był odcięty od niezbędnych usług."
@@ -348,10 +348,10 @@
   "q": "How did some young people react?",
   "group": "g-en-wczyt-03",
   "options": [
-   "They moved to a neighbouring town.",
-   "They organised a football match.",
-   "They thanked the council.",
-   "They complained of being treated like children and met outside the village."
+   "They moved to the neighbouring town for the summer.",
+   "They organised a football match against the adults.",
+   "They thanked the council in a letter to the village.",
+   "They felt treated like children and met outside the village."
   ],
   "answer": 3,
   "explain": "Część młodych narzekała i spotykała się na parkingu poza wsią, gdzie był zasięg."
@@ -363,10 +363,10 @@
   "q": "Why do the researchers advise caution about the results?",
   "group": "g-en-wczyt-03",
   "options": [
-   "The experiment was not finished.",
-   "One month is short and August is a holiday period.",
-   "Only adults took part.",
-   "Nobody collected any data."
+   "The experiment was stopped before it was finished.",
+   "One month is short and August is a holiday.",
+   "Only adults agreed to take part in the research.",
+   "Nobody collected any data during the experiment."
   ],
   "answer": 1,
   "explain": "Według badaczy miesiąc to za mało, a sierpień to czas wakacji."
@@ -378,10 +378,10 @@
   "q": "What does the village plan for the next summer?",
   "group": "g-en-wczyt-03",
   "options": [
-   "To close all the shops.",
-   "To build a new Wi-Fi network.",
-   "To end the experiment.",
-   "To repeat the project with more events in the square."
+   "To close all the shops in the village centre.",
+   "To build a completely new Wi-Fi network.",
+   "To end the experiment and forget about it.",
+   "To repeat the project with more events."
   ],
   "answer": 3,
   "explain": "Wieś chce powtórzyć projekt z dłuższym programem wydarzeń na placu."

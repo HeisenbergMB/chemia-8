@@ -3,18 +3,18 @@
   {
    "id": "t-en-rslow-01",
    "title": "Słowotwórstwo: przyrostki",
-   "body": "**Rzeczowniki:** -tion/-sion (decision), -ment (agreement), -ness (kindness), -ity (ability), -ship (friendship), -ence/-ance (importance), -ism, -ist (specialist).\n**Przymiotniki:** -ful (useful), -less (careless), -ous (famous), -ive (creative), -able/-ible (reliable), -al (national), -ic (economic), -y (windy).\n**Przysłówki:** -ly (quickly); zmiana y → i (easy – easily).\n**Czasowniki:** -ise/-ize (organise), -en (widen), -ify (simplify).",
+   "body": "**Rzeczowniki:** -tion/-sion (decision), -ment (agreement), -ness (kindness), -ity (ability), -ship (membership), -ence/-ance (importance), -ism, -ist (specialist).\n**Przymiotniki:** -ful (helpful), -less (hopeless), -ous (famous), -ive (creative), -able/-ible (readable, flexible), -al (national), -ic (economic), -y (windy).\n**Przysłówki:** -ly (quickly); zmiana y → i (easy – easily).\n**Czasowniki:** -ise/-ize (organise), -en (widen), -ify (simplify).",
    "tip": "Sprawdź, jakiej części mowy wymaga zdanie – to połowa odpowiedzi."
   },
   {
    "id": "t-en-rslow-02",
    "title": "Słowotwórstwo: przedrostki przeczące",
-   "body": "**un-** (unpleasant), **in-** (incredible, inactive), **im-** przed m, p, b (impossible, immature), **il-** przed l (illegal), **ir-** przed r (irresponsible), **dis-** (disapproval, disagree), **mis-** (misunderstand).\nCzęsto trzeba dodać zarówno przedrostek, jak i przyrostek: effect → ineffective, predict → unpredictable."
+   "body": "**un-** (unusual), **in-** (incredible, inactive), **im-** przed m, p, b (improbable, immature), **il-** przed l (illegal), **ir-** przed r (irresponsible), **dis-** (disapproval, disagree), **mis-** (misunderstand).\nCzęsto trzeba dodać zarówno przedrostek, jak i przyrostek: effect → ineffective, predict → unpredictable."
   },
   {
    "id": "t-en-rslow-03",
    "title": "Synonimy i słowa bliskoznaczne",
-   "body": "W zadaniach z podkreślonym słowem chodzi o **znaczenie w danym kontekście**, nie o pierwsze tłumaczenie z listy.\nUczmy się par: huge – enormous, begin – start, hide – conceal, delay – postpone, angry – furious, tired – exhausted, quick – rapid, important – significant.\nSprawdź, czy wybrane słowo pasuje także gramatycznie."
+   "body": "W zadaniach z podkreślonym słowem chodzi o **znaczenie w danym kontekście**, nie o pierwsze tłumaczenie z listy.\nUczmy się par: big – large, begin – start, buy – purchase, quick – rapid, important – significant, help – assist, end – finish, ask – enquire.\nSprawdź, czy wybrane słowo pasuje także gramatycznie."
   },
   {
    "id": "t-en-rslow-04",
@@ -26,7 +26,7 @@
   {
    "id": "f-en-rslow-01",
    "front": "-less",
-   "back": "bez (careless, useless, homeless)"
+   "back": "bez (hopeless, homeless, endless)"
   },
   {
    "id": "f-en-rslow-02",
@@ -36,7 +36,7 @@
   {
    "id": "f-en-rslow-03",
    "front": "-ship",
-   "back": "stan, relacja (friendship, leadership)"
+   "back": "stan, relacja (membership, leadership)"
   },
   {
    "id": "f-en-rslow-04",
@@ -70,23 +70,23 @@
   },
   {
    "id": "f-en-rslow-10",
-   "front": "delay = ?",
-   "back": "postpone – odłożyć"
+   "front": "rapid",
+   "back": "quick – szybki"
   },
   {
    "id": "f-en-rslow-11",
-   "front": "enormous = ?",
-   "back": "huge – ogromny"
+   "front": "purchase",
+   "back": "buy – kupić"
   },
   {
    "id": "f-en-rslow-12",
-   "front": "furious = ?",
-   "back": "very angry – wściekły"
+   "front": "assist",
+   "back": "help – pomagać"
   },
   {
    "id": "f-en-rslow-13",
-   "front": "conceal = ?",
-   "back": "hide – ukrywać"
+   "front": "commence",
+   "back": "begin – zaczynać"
   },
   {
    "id": "f-en-rslow-14",

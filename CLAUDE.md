@@ -12,6 +12,7 @@ Działa offline, postęp w `localStorage`. Szczegóły formatu danych: `README.m
 - `npm run build` – regeneruje `js/version.js` oraz `VERSION`/`ASSETS` w `sw.js`.
 - `npm run bump` – podbija wersję patch w `package.json` i buduje. **Po każdej zmianie plików aplikacji** (`js/`, `css/`, `data/`, `index.html`) – także po refaktorze, inaczej stary cache offline zostaje na urządzeniu.
 - `npm run lock` – dopisuje nowe id pytań/fiszek do `data/ids.lock.json`.
+- `npm run lint:content` – mechaniczna kontrola jakości treści (część `verify`): błędy w słowie kluczowym i wzorach liter, skrócenia w lukach, rozkład i długość odpowiedzi, ujawnianie kluczy arkuszy w kartach. `node tools/next-id.js <przedmiot> <dział>` podaje następne wolne id; `node tools/blind-sheet.js` wypisuje zadania bez kluczy do niezależnego sprawdzenia.
 - Serwer lokalnie: `python3 -m http.server 8000`.
 
 ## Zasady, których nie wolno złamać
@@ -36,7 +37,8 @@ Działa offline, postęp w `localStorage`. Szczegóły formatu danych: `README.m
 - **Nowy typ pytania** = jeden wpis w `QTYPES` (`js/qtypes.js`: walidacja, rysowanie, ocena) + przypadki w `tests/qtypes.test.js`. Nie twórz drugiej listy typów gdzie indziej. DOM budujemy przez `h()` z `js/dom.js`, nigdy przez `innerHTML` z danymi użytkownika.
 - Dostępność: `aria-*`, `visually-hidden`, obsługa klawiatury i dotyku (docelowo iPad).
 
-## Nowa lekcja / dział
-Użyj skilla `/add-lesson`. Ręcznie: wpis działu w `data/<przedmiot>/curriculum.json` (w odpowiednim module), katalog `data/<przedmiot>/topics/<id>/`
+## Nowa lekcja / dział / pytania
+Skille: `/add-lesson` (nowy dział), `/add-questions` (więcej pytań w istniejącym dziale), `/fact-check` (niezależny przegląd jakości, po każdej większej paczce treści angielskiego).
+Nowa lekcja: użyj `/add-lesson`. Ręcznie: wpis działu w `data/<przedmiot>/curriculum.json` (w odpowiednim module), katalog `data/<przedmiot>/topics/<id>/`
 z `theory.json` (`cards`, `flash`) i `questions.json`, ewentualnie równania/doświadczenia → `npm run lock` → `npm run bump` → `npm run verify`.
 Dział wynika z katalogu paczki – nie wpisuj pola `topic` w kartach, fiszkach ani pytaniach.

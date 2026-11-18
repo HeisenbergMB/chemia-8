@@ -31,8 +31,8 @@ Odhaczamy w trakcie pracy. Legenda: `[x]` zrobione, `[ ]` do zrobienia, `[~]` w 
 - [x] 2.3 Test dymny tras i typów pytań w jsdom (`tests/routes.test.js`, `tests/quiz-types.test.js`)
 
 ## Faza 3b – dalsze skille
-- [ ] 3.4 Skill `add-questions`
-- [ ] 3.5 Skill/subagent `fact-check-chemistry`
+- [x] 3.4 Skill `add-questions` (+ `tools/next-id.js`)
+- [x] 3.5 Skill `fact-check` (chemia i angielski; `tools/blind-sheet.js` do ślepego rozwiązania, `tools/lint-content.js` w `verify`)
 
 ## Faza 4 – opcjonalnie
 - [ ] 4.1 Synchronizacja postępu między urządzeniami
@@ -57,4 +57,4 @@ Wzorzec testów: `docs/angielski-wzorzec-konkursu.md` (oficjalne arkusze Łódzk
   - [x] Etap wojewódzki: 101 osobnych pytań ćwiczeniowych (wersja 1.14.8), w tym 6 zadań „jedno słowo do trzech zdań” z arkusza 2023/24
   - [ ] Etap wojewódzki: kolejne arkusze oraz wyrazy z ramki i życiorysy z arkusza 2023/24
   - [x] Pytania z arkusza są ukryte w ćwiczeniach do pierwszego zatwierdzenia arkusza (`js/practice.js`). Skutek: w angielskim są teraz tylko teoria, fiszki i arkusz – quizy działów pojawią się po zatwierdzeniu arkusza 1 albo po dopisaniu osobnych pytań ćwiczeniowych
-- [ ] 5.4 Skille: `add-lesson` i fact-check per przedmiot; kontrola „jedna poprawna odpowiedź”, poziom, naturalność zdań
+- [x] 5.4 Skille per przedmiot: `add-lesson` (uwagi dla angielskiego), `add-questions`, `fact-check` (jedna poprawna odpowiedź, poziom, naturalność); mechaniczna kontrola treści w `verify`
