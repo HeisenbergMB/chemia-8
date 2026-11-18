@@ -383,5 +383,145 @@
   ],
   "answer": 0,
   "explain": "Jej marzenie to zapobieganie marnowaniu dobrego jedzenia."
+ },
+ {
+  "id": "q-en-czyt-028",
+  "type": "choice",
+  "level": 1,
+  "q": "The project 'Clean Trails' began because one man was tired of rubbish on mountain paths.",
+  "group": "g-en-czyt-04",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Projekt zaczął się, gdy przewodnik Oliver Stone miał dość widoku plastikowych butelek przy szlakach."
+ },
+ {
+  "id": "q-en-czyt-029",
+  "type": "choice",
+  "level": 1,
+  "q": "Oliver counted more than fifty bottles during one walk.",
+  "group": "g-en-czyt-04",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Naliczył czterdzieści trzy butelki, czyli mniej niż pięćdziesiąt."
+ },
+ {
+  "id": "q-en-czyt-030",
+  "type": "choice",
+  "level": 2,
+  "q": "More than half of the present volunteers are younger than thirty.",
+  "group": "g-en-czyt-04",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Tekst mówi, że ponad połowa wolontariuszy ma mniej niż trzydzieści lat."
+ },
+ {
+  "id": "q-en-czyt-031",
+  "type": "choice",
+  "level": 1,
+  "q": "Participants have to pay for their accommodation in the huts.",
+  "group": "g-en-czyt-04",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Uczestnicy nie płacą za nocleg, muszą tylko zabrać własny sprzęt."
+ },
+ {
+  "id": "q-en-czyt-032",
+  "type": "choice",
+  "level": 2,
+  "q": "Every volunteer must bring a sleeping bag.",
+  "group": "g-en-czyt-04",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Wolontariusze mają przywieźć własne buty i dobry śpiwór."
+ },
+ {
+  "id": "q-en-czyt-033",
+  "type": "choice",
+  "level": 1,
+  "q": "The volunteers' work is limited to collecting rubbish.",
+  "group": "g-en-czyt-04",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Wolontariusze naprawiają też schodki, usuwają kamienie i sadzą drzewa."
+ },
+ {
+  "id": "q-en-czyt-034",
+  "type": "choice",
+  "level": 2,
+  "q": "Oliver thinks that signs are more effective than conversations with hikers.",
+  "group": "g-en-czyt-04",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Według Olivera przyjazna rozmowa działa lepiej niż tabliczka z zakazem."
+ },
+ {
+  "id": "q-en-czyt-035",
+  "type": "choice",
+  "level": 1,
+  "q": "All local people are enthusiastic about the project.",
+  "group": "g-en-czyt-04",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Niektórzy rolnicy i właściciele hoteli mają zastrzeżenia."
+ },
+ {
+  "id": "q-en-czyt-036",
+  "type": "choice",
+  "level": 2,
+  "q": "Oliver believes that clean trails will bring fewer visitors in the future.",
+  "group": "g-en-czyt-04",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Oliver wierzy, że czyste szlaki przyciągną w dłuższej perspektywie więcej turystów."
+ },
+ {
+  "id": "q-en-czyt-037",
+  "type": "choice",
+  "level": 2,
+  "q": "The prize money was spent on equipment and a shelter.",
+  "group": "g-en-czyt-04",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Za nagrodę kupiono nowe narzędzia i zbudowano schronisko dla wolontariuszy."
  }
 ]

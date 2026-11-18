@@ -9,6 +9,11 @@
    "id": "t-en-wkult-02",
    "title": "Sławni Brytyjczycy i Amerykanie",
    "body": "**Wielka Brytania:** Isaac Newton (fizyk), Winston Churchill (premier w czasie II wojny światowej), Elżbieta II, The Beatles, J.K. Rowling (autorka Harry'ego Pottera).\n**USA:** Thomas Edison (wynalazca), Rosa Parks (ruch praw obywatelskich), Amelia Earhart (lotniczka), Steve Jobs (Apple), Walt Disney."
+  },
+  {
+   "id": "t-en-wkult-03",
+   "title": "Więcej sławnych Brytyjczyków i Amerykanów",
+   "body": "**Wielka Brytania:** Alan Turing (matematyk i kryptolog), Agatha Christie (autorka powieści kryminalnych), Charlie Chaplin (aktor i reżyser), Stephen Hawking (fizyk), Mary Shelley (autorka \"Frankensteina\").\n**USA:** Benjamin Franklin (polityk i wynalazca), Henry Ford (przemysłowiec), Muhammad Ali (bokser), Maya Angelou (poetka), Walt Disney (twórca filmów animowanych)."
   }
  ],
  "flash": [
@@ -51,6 +56,36 @@
    "id": "f-en-wkult-08",
    "front": "Języki urzędowe Kanady",
    "back": "angielski i francuski"
+  },
+  {
+   "id": "f-en-wkult-09",
+   "front": "Alan Turing",
+   "back": "brytyjski matematyk i kryptolog"
+  },
+  {
+   "id": "f-en-wkult-10",
+   "front": "Agatha Christie",
+   "back": "autorka powieści kryminalnych z Herkulesem Poirot"
+  },
+  {
+   "id": "f-en-wkult-11",
+   "front": "Charlie Chaplin",
+   "back": "aktor i reżyser kina niemego"
+  },
+  {
+   "id": "f-en-wkult-12",
+   "front": "Benjamin Franklin",
+   "back": "amerykański polityk, naukowiec i wynalazca"
+  },
+  {
+   "id": "f-en-wkult-13",
+   "front": "Henry Ford",
+   "back": "amerykański przemysłowiec, twórca samochodów produkowanych taśmowo"
+  },
+  {
+   "id": "f-en-wkult-14",
+   "front": "Muhammad Ali",
+   "back": "amerykański bokser, mistrz wagi ciężkiej"
   }
  ]
 }

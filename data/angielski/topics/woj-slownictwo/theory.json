@@ -15,6 +15,17 @@
    "title": "Tłumaczenie fragmentów zdań",
    "body": "W zadaniu z tłumaczeniem liczy się **poprawna struktura**, nie dosłowność. Typowe pułapki: neither ... nor, the + liczebnik porządkowy + time, Past Perfect Continuous, avoid + -ing w stronie biernej, konstrukcje typu „zakładając, że”, can't have + III forma, tłumaczenie czasu Present Perfect z for/since.",
    "tip": "Sprawdź, czy tłumaczenie wstawione do zdania jest gramatyczne."
+  },
+  {
+   "id": "t-en-wslow-04",
+   "title": "Wyrazy z ramki",
+   "body": "W zadaniu z ramką każde słowo wykorzystujesz **raz** i **zmieniasz jego formę**, a kilka wyrazów jest zbędnych.\nNajpierw ustal **część mowy** wymaganą w luce (rzeczownik, przymiotnik, przysłówek), potem wybierz słowo z ramki o pasującym znaczeniu i dodaj odpowiedni przyrostek lub przedrostek.\nWykreślaj wykorzystane wyrazy, żeby na końcu zostały te zbędne."
+  },
+  {
+   "id": "t-en-wslow-05",
+   "title": "Jedno słowo do trzech zdań",
+   "body": "W zadaniu z trzema zdaniami szukasz słowa, które ma **kilka znaczeń** i **tę samą formę** we wszystkich zdaniach.\nZacznij od zdania, w którym znaczenie jest najbardziej oczywiste, i sprawdź, czy słowo pasuje do pozostałych. Typowe słowa wieloznaczne: run, point, kind, right, spring, bar, plant, pupil, bill, row, key.",
+   "tip": "Sprawdzaj część mowy w każdym zdaniu: to samo słowo bywa czasownikiem, rzeczownikiem i przymiotnikiem."
   }
  ],
  "flash": [
@@ -77,6 +88,46 @@
    "id": "f-en-wslow-12",
    "front": "neither ... nor",
    "back": "ani ... ani"
+  },
+  {
+   "id": "f-en-wslow-13",
+   "front": "break a leg",
+   "back": "powodzenia (życzenie przed występem)"
+  },
+  {
+   "id": "f-en-wslow-14",
+   "front": "hit the sack",
+   "back": "pójść spać"
+  },
+  {
+   "id": "f-en-wslow-15",
+   "front": "two-faced",
+   "back": "dwulicowy"
+  },
+  {
+   "id": "f-en-wslow-16",
+   "front": "let sleeping dogs lie",
+   "back": "nie ruszać tego, co spokojne"
+  },
+  {
+   "id": "f-en-wslow-17",
+   "front": "a storm in a teacup",
+   "back": "burza w szklance wody"
+  },
+  {
+   "id": "f-en-wslow-18",
+   "front": "burn the midnight oil",
+   "back": "pracować do późna w nocy"
+  },
+  {
+   "id": "f-en-wslow-19",
+   "front": "sit on the fence",
+   "back": "nie zajmować stanowiska"
+  },
+  {
+   "id": "f-en-wslow-20",
+   "front": "bury the hatchet",
+   "back": "zakopać topór wojenny"
   }
  ],
  "groups": [
@@ -89,6 +140,26 @@
    "id": "g-en-wslow-02",
    "instruction": "Uzupełnij luki (1–10) odpowiednią formą wyrazu utworzonego od wyrazu podanego w nawiasie (wielkimi literami). Wymagana jest całkowita poprawność pisowni.",
    "text": "Learning a Language with an App\n\nLanguage apps have made studying (1)___ (SIGNIFICANT) easier than it was for previous generations. A learner can practise in a bus queue, and the programmes respond (2)___ (IMMEDIATE) to every answer. Many users are attracted by the (3)___ (PLAY) style of the lessons, in which points and rewards turn revision into a game.\n\nHowever, teachers warn that apps cannot replace real conversation. (4)___ (FLUENT) develops only when learners speak with other people, make mistakes and receive (5)___ (CORRECT) from native speakers. Another (6)___ (WEAK) is that exercises are often repetitive and test (7)___ (MEMORISE) rather than understanding.\n\nThe most (8)___ (SUCCESS) learners combine different methods. They use an app for vocabulary, listen to (9)___ (ENTERTAIN) podcasts, watch films and, above all, talk to anyone who is (10)___ (WILL) to chat."
+  },
+  {
+   "id": "g-en-wslow-03",
+   "instruction": "Uzupełnij zdania (1–10) wyrazami z ramki, tak aby otrzymać logiczne i poprawne językowo wypowiedzi. Za każdym razem zmień formę wyrazu. Cztery wyrazy w ramce są dodatkowe i nie pasują do żadnego zdania. Wymagana jest pełna poprawność pisowni.",
+   "bank": [
+    "ADVERTISE",
+    "ATTRACT",
+    "CHOOSE",
+    "COMPETE",
+    "DEPEND",
+    "DIFFER",
+    "ENJOY",
+    "FAIL",
+    "GROW",
+    "HEALTH",
+    "LAZY",
+    "POPULAR",
+    "SAFE",
+    "WEAK"
+   ]
   }
  ]
 }

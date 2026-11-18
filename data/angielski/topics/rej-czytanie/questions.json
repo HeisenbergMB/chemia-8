@@ -352,5 +352,181 @@
   "gap": 6,
   "answer": 1,
   "explain": "Zdanie o życzliwości słuchaczy tłumaczy, dlaczego większość nie zauważa drobnych błędów."
+ },
+ {
+  "id": "q-en-rczyt-030",
+  "type": "choice",
+  "level": 1,
+  "q": "The swimming programme was started after a tragic accident.",
+  "group": "g-en-rczyt-05",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Decyzja rady zapadła po tragicznym wypadku w 2009 roku."
+ },
+ {
+  "id": "q-en-rczyt-031",
+  "type": "choice",
+  "level": 1,
+  "q": "The council decided to build a fence along the whole river.",
+  "group": "g-en-rczyt-05",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Rada zamiast ogrodzenia wybrała naukę pływania."
+ },
+ {
+  "id": "q-en-rczyt-032",
+  "type": "choice",
+  "level": 2,
+  "q": "The old pool was saved because the programme made it popular.",
+  "group": "g-en-rczyt-05",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Po roku basen był w pełni zajęty, a rada znalazła pieniądze na remont."
+ },
+ {
+  "id": "q-en-rczyt-033",
+  "type": "choice",
+  "level": 1,
+  "q": "Swimming lessons are held only after school.",
+  "group": "g-en-rczyt-05",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Lekcje odbywają się w godzinach szkolnych."
+ },
+ {
+  "id": "q-en-rczyt-034",
+  "type": "choice",
+  "level": 2,
+  "q": "Pupils learn only swimming techniques in the course.",
+  "group": "g-en-rczyt-05",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Uczniowie uczą się też rozpoznawać niebezpieczne prądy i pomagać koledze."
+ },
+ {
+  "id": "q-en-rczyt-035",
+  "type": "choice",
+  "level": 1,
+  "q": "Pupils without a swimming costume can borrow one from the school.",
+  "group": "g-en-rczyt-05",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Dzieci, których rodzin na to nie stać, mogą pożyczyć kostium w szkole."
+ },
+ {
+  "id": "q-en-rczyt-036",
+  "type": "choice",
+  "level": 2,
+  "q": "There has been no accident on the river for the last six years.",
+  "group": "g-en-rczyt-05",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Tekst mówi, że od sześciu lat nie było ani jednego wypadku."
+ },
+ {
+  "id": "q-en-rczyt-037",
+  "type": "choice",
+  "level": 2,
+  "q": "All neighbouring towns have successfully copied the programme.",
+  "group": "g-en-rczyt-05",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Niektóre sąsiednie miasta zrezygnowały z braku wolontariuszy."
+ },
+ {
+  "id": "q-en-rczyt-038",
+  "type": "choice",
+  "level": 2,
+  "q": "Ruth Palmer says that the programme is cheap.",
+  "group": "g-en-rczyt-05",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Mówi, że budżet jest napięty i że \"nikt nie mówił, że będzie tanio\"."
+ },
+ {
+  "id": "q-en-rczyt-039",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (1)",
+  "group": "g-en-rczyt-06",
+  "gap": 1,
+  "answer": 3,
+  "explain": "Po zamknięciu kina pasuje zdanie o smutnym widoku budynku; kolejne opisuje zniszczone okna i plakaty."
+ },
+ {
+  "id": "q-en-rczyt-040",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (2)",
+  "group": "g-en-rczyt-06",
+  "gap": 2,
+  "answer": 5,
+  "explain": "Po \"had an idea\" pasuje wspomnienie Daniela o starym kinie; dalej zbiera wolontariuszy."
+ },
+ {
+  "id": "q-en-rczyt-041",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (3)",
+  "group": "g-en-rczyt-06",
+  "gap": 3,
+  "answer": 0,
+  "explain": "Po sprzątaniu i malowaniu pasuje informacja o wolontariuszach i poczęstunku; dalej stolarze naprawiają fotele."
+ },
+ {
+  "id": "q-en-rczyt-042",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (4)",
+  "group": "g-en-rczyt-06",
+  "gap": 4,
+  "answer": 6,
+  "explain": "Po \"a big surprise\" pasuje liczba widzów większa niż liczba miejsc; dalej ludzie stoją w korytarzach."
+ },
+ {
+  "id": "q-en-rczyt-043",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (5)",
+  "group": "g-en-rczyt-06",
+  "gap": 5,
+  "answer": 2,
+  "explain": "Po zdaniu o seansach pasuje przykład niedziel z babciami i wnukami; \"this is exactly what he hoped for\" odnosi się do wspólnoty."
  }
 ]

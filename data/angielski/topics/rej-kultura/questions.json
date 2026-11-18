@@ -376,5 +376,116 @@
   ],
   "answer": 3,
   "explain": "Walentynki przypadają 14 lutego."
+ },
+ {
+  "id": "q-en-rkult-028",
+  "type": "write",
+  "level": 1,
+  "q": "T___________ Day – an American holiday on the fourth Thursday in November, when families gather for a big dinner",
+  "answers": [
+   "Thanksgiving Day",
+   "Thanksgiving"
+  ],
+  "explain": "Thanksgiving Day – Dzień Dziękczynienia."
+ },
+ {
+  "id": "q-en-rkult-029",
+  "type": "write",
+  "level": 1,
+  "q": "V___________ Day – 14 February, when people give cards, flowers and chocolates to those they love",
+  "answers": [
+   "Valentine's Day",
+   "Valentines Day",
+   "Saint Valentine's Day",
+   "St Valentine's Day"
+  ],
+  "explain": "Valentine's Day – Walentynki."
+ },
+ {
+  "id": "q-en-rkult-030",
+  "type": "write",
+  "level": 2,
+  "q": "A___________ F___________ Day – 1 April, the day for playing jokes on other people",
+  "answers": [
+   "April Fools' Day",
+   "April Fool's Day",
+   "April Fools Day"
+  ],
+  "explain": "April Fools' Day – prima aprilis."
+ },
+ {
+  "id": "q-en-rkult-031",
+  "type": "write",
+  "level": 1,
+  "q": "I___________ Day – the American national holiday celebrated on 4 July with fireworks and parades",
+  "answers": [
+   "Independence Day"
+  ],
+  "explain": "Independence Day – Dzień Niepodległości USA."
+ },
+ {
+  "id": "q-en-rkult-032",
+  "type": "write",
+  "level": 2,
+  "q": "B___________ Day – 26 December, the day after Christmas Day, a public holiday in Britain",
+  "answers": [
+   "Boxing Day"
+  ],
+  "explain": "Boxing Day – drugi dzień Bożego Narodzenia w Wielkiej Brytanii."
+ },
+ {
+  "id": "q-en-rkult-033",
+  "type": "write",
+  "level": 3,
+  "q": "S___________ G___________ Day – 23 April, the national day of England",
+  "answers": [
+   "St George's Day",
+   "Saint George's Day",
+   "St Georges Day"
+  ],
+  "explain": "St George's Day – święto patrona Anglii."
+ },
+ {
+  "id": "q-en-rkult-034",
+  "type": "write",
+  "level": 3,
+  "q": "M___________ Day – 1 May, a spring holiday traditionally celebrated in England with dancing around a maypole",
+  "answers": [
+   "May Day"
+  ],
+  "explain": "May Day – 1 maja, tradycyjne święto wiosny z tańcem wokół słupa."
+ },
+ {
+  "id": "q-en-rkult-035",
+  "type": "write",
+  "level": 1,
+  "q": "C___________ E___________ – 24 December, the evening before Christmas Day",
+  "answers": [
+   "Christmas Eve"
+  ],
+  "explain": "Christmas Eve – Wigilia."
+ },
+ {
+  "id": "q-en-rkult-036",
+  "type": "write",
+  "level": 2,
+  "q": "E___________ S___________ – the Christian holiday when many children look for chocolate eggs",
+  "answers": [
+   "Easter Sunday",
+   "Easter"
+  ],
+  "explain": "Easter Sunday – niedziela wielkanocna."
+ },
+ {
+  "id": "q-en-rkult-037",
+  "type": "write",
+  "level": 1,
+  "q": "H___________ – 31 October, a night of costumes and 'trick or treat'",
+  "answers": [
+   "Halloween",
+   "Hallowe'en",
+   "All Hallows' Eve"
+  ],
+  "explain": "Halloween – wigilia Wszystkich Świętych."
  }
 ]

@@ -95,6 +95,25 @@
     "This is why even very experienced speakers admit that they feel a little afraid.",
     "Instead of trying to hide the excitement, we can treat it as useful energy."
    ]
+  },
+  {
+   "id": "g-en-rczyt-05",
+   "instruction": "Przeczytaj uważnie tekst, a następnie zdania pod tekstem (1–9) i zdecyduj, czy są prawdziwe (TRUE), czy fałszywe (FALSE). Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+   "text": "The town of Westbury lies beside a wide, slow river, and for most of its history the river was a danger rather than a pleasure. Every few years a child fell in, and in 2009 a tragic accident made the local council decide that something had to change. 'We could have built a fence along the whole river,' says councillor Ruth Palmer, 'but we chose to teach children to swim instead.'\n\nThe programme began with a single evening class at the town's old swimming pool, which was about to be closed because it needed expensive repairs. Parents paid a small fee, and a group of retired teachers and lifeguards offered to work as volunteers. Within a year, the pool was fully booked, and the council found money to renovate it.\n\nToday every pupil in Westbury must complete a swimming course before the age of eleven. Lessons are given during school hours, and children who cannot afford swimming costumes can borrow them from the school. The course does not end with swimming skills: pupils also learn how to recognise dangerous currents, how to help a friend in trouble and when to call for help.\n\nThe results have been impressive. In the last six years there has not been a single accident on the river, and the pool has become a social centre where adults take part in water exercise classes in the evening. Neighbouring towns have started similar projects, although some of them have given up because they could not find enough volunteers.\n\nCritics of the programme say that it takes time from other subjects and that a small town should not spend money on a pool when the roads need repairs. Ruth Palmer admits that the budget is tight. 'Nobody said it would be cheap,' she says, 'but I have never heard a parent say it was not worth it.'\n\n(Tekst i dane zostały wymyślone na potrzeby ćwiczenia.)"
+  },
+  {
+   "id": "g-en-rczyt-06",
+   "instruction": "Przeczytaj tekst, z którego usunięto pięć fragmentów. Dla każdej luki wybierz literę (A–G) oznaczającą brakujący fragment tak, aby otrzymać spójny i logiczny tekst. Uwaga: dwa fragmenty zostały podane dodatkowo i nie pasują do żadnej luki.",
+   "text": "When the last cinema in the village of Marlow Bay closed in 2012, nobody expected that it would soon be the heart of the community again. (1)___ The building stood empty for two years, with broken windows and posters that had faded in the sun.\n\nThen a young teacher, Daniel Webb, had an idea. (2)___ He gathered a group of volunteers and asked the owner whether they could use the hall for a single summer. The owner agreed, partly because he had no other plans for the place.\n\nThe volunteers started by cleaning and painting the walls. (3)___ Local carpenters repaired the old seats, and a nearby school lent a projector for the first screening.\n\nThe opening night was a big surprise. (4)___ People stood at the back and in the corridors, and the volunteers had to turn many neighbours away.\n\nToday the cinema shows films four evenings a week. (5)___ Daniel says that this is exactly what he hoped for when he opened the doors for the first time.\n\n(Tekst został wymyślony na potrzeby ćwiczenia.)",
+   "bank": [
+    "Nobody was paid, but everybody was fed with sandwiches and tea provided by the café next door.",
+    "Daniel Webb teaches chemistry at the school and plays the guitar in a band.",
+    "On Sundays it becomes a place where grandparents and grandchildren meet to watch old classics together.",
+    "It soon became a sad sight for everyone who had grown up watching films there.",
+    "The village council plans to build a car park on the empty site.",
+    "He remembered how much he had loved the old cinema as a child and wanted others to share that feeling.",
+    "More than three hundred people came, although the hall had places for only two hundred."
+   ]
   }
  ]
 }

@@ -173,7 +173,7 @@ function checkSubject(subject) {
     if (subject.idTag && !new RegExp(`^g-${subject.idTag}-`).test(g.id)) err(w, `id przedmiotu ${subject.id} musi mieć postać g-${subject.idTag}-…`);
     if (!g.instruction || typeof g.instruction !== 'string') err(w, 'brak instruction (polecenie zadania)');
     if ('text' in g && (typeof g.text !== 'string' || !g.text.trim())) err(w, 'text musi być niepustym tekstem');
-    if ('bank' in g && (!Array.isArray(g.bank) || g.bank.length < 2 || g.bank.length > 12 || g.bank.some((b) => typeof b !== 'string' || !b.trim()))) err(w, 'bank: 2–12 niepustych tekstów (litery A, B, C… wynikają z kolejności)');
+    if ('bank' in g && (!Array.isArray(g.bank) || g.bank.length < 2 || g.bank.length > 16 || g.bank.some((b) => typeof b !== 'string' || !b.trim()))) err(w, 'bank: 2–16 niepustych tekstów (litery A, B, C… wynikają z kolejności)');
     checkText(g.instruction, `${w} instruction`);
     if (g.text) checkText(g.text, `${w} text`);
   }

@@ -902,5 +902,425 @@
   ],
   "answer": 0,
   "explain": "Porównanie: not as good as."
+ },
+ {
+  "id": "q-en-rslow-073",
+  "type": "write",
+  "level": 2,
+  "q": "Her biggest a _ _ i _ _ _ n is to become a surgeon.",
+  "answers": [
+   "ambition"
+  ],
+  "explain": "Ambition – ambicja, cel życiowy."
+ },
+ {
+  "id": "q-en-rslow-074",
+  "type": "write",
+  "level": 3,
+  "q": "The fans showed great e _ _ h _ _ _ _ _ m for the new team.",
+  "answers": [
+   "enthusiasm"
+  ],
+  "explain": "Enthusiasm – entuzjazm."
+ },
+ {
+  "id": "q-en-rslow-075",
+  "type": "write",
+  "level": 3,
+  "q": "She works as a p _ _ r _ _ _ _ _ t and sells medicines.",
+  "answers": [
+   "pharmacist"
+  ],
+  "explain": "Pharmacist – farmaceuta."
+ },
+ {
+  "id": "q-en-rslow-076",
+  "type": "write",
+  "level": 2,
+  "q": "Boats were moored in the h _ _ b _ _ r.",
+  "answers": [
+   "harbour"
+  ],
+  "explain": "Harbour – port (UK)."
+ },
+ {
+  "id": "q-en-rslow-077",
+  "type": "write",
+  "level": 3,
+  "q": "I saw an a _ _ e _ _ _ _ _ _ _ _ t for a new phone on television.",
+  "answers": [
+   "advertisement"
+  ],
+  "explain": "Advertisement – reklama."
+ },
+ {
+  "id": "q-en-rslow-078",
+  "type": "write",
+  "level": 2,
+  "q": "Please offer your seat to e _ _ e _ _ y passengers.",
+  "answers": [
+   "elderly"
+  ],
+  "explain": "Elderly – starsi (ludzie)."
+ },
+ {
+  "id": "q-en-rslow-079",
+  "type": "write",
+  "level": 2,
+  "q": "He is very g _ _ e _ _ _ s: he gave all his money to charity.",
+  "answers": [
+   "generous"
+  ],
+  "explain": "Generous – hojny."
+ },
+ {
+  "id": "q-en-rslow-080",
+  "type": "write",
+  "level": 2,
+  "q": "The m _ _ h _ _ _ c repaired my car engine.",
+  "answers": [
+   "mechanic"
+  ],
+  "explain": "Mechanic – mechanik."
+ },
+ {
+  "id": "q-en-rslow-081",
+  "type": "write",
+  "level": 2,
+  "q": "I followed the r _ _ i _ e to bake a cake.",
+  "answers": [
+   "recipe"
+  ],
+  "explain": "Recipe – przepis kulinarny."
+ },
+ {
+  "id": "q-en-rslow-082",
+  "type": "write",
+  "level": 3,
+  "q": "Nobody likes him because he is so a _ _ o _ _ _ t.",
+  "answers": [
+   "arrogant"
+  ],
+  "explain": "Arrogant – arogancki."
+ },
+ {
+  "id": "q-en-rslow-083",
+  "type": "write",
+  "level": 2,
+  "q": "The j _ _ _ n _ _ _ _ t interviewed the mayor for the newspaper.",
+  "answers": [
+   "journalist"
+  ],
+  "explain": "Journalist – dziennikarz."
+ },
+ {
+  "id": "q-en-rslow-084",
+  "type": "write",
+  "level": 2,
+  "q": "He gave a ___ speech that made everybody cry. (MOVE)",
+  "answers": [
+   "moving"
+  ],
+  "explain": "Przymiotnik od move opisujący wzruszający przekaz: moving."
+ },
+ {
+  "id": "q-en-rslow-085",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ of the bridge took three years. (CONSTRUCT)",
+  "answers": [
+   "construction"
+  ],
+  "explain": "Rzeczownik od construct: construction."
+ },
+ {
+  "id": "q-en-rslow-086",
+  "type": "write",
+  "level": 3,
+  "q": "She takes full ___ for the safety of the passengers. (RESPONSIBLE)",
+  "answers": [
+   "responsibility"
+  ],
+  "explain": "Rzeczownik od responsible: responsibility."
+ },
+ {
+  "id": "q-en-rslow-087",
+  "type": "write",
+  "level": 2,
+  "q": "It was ___ cold, so we stayed at home. (EXTREME)",
+  "answers": [
+   "extremely"
+  ],
+  "explain": "Przysłówek od extreme: extremely."
+ },
+ {
+  "id": "q-en-rslow-088",
+  "type": "write",
+  "level": 2,
+  "q": "He felt ___ after the long journey. (EXHAUST)",
+  "answers": [
+   "exhausted"
+  ],
+  "explain": "Przymiotnik od exhaust: exhausted (wyczerpany)."
+ },
+ {
+  "id": "q-en-rslow-089",
+  "type": "write",
+  "level": 3,
+  "q": "The doctor gave me some good ___. (ADVISE)",
+  "answers": [
+   "advice"
+  ],
+  "explain": "Rzeczownik od advise: advice (zmiana s → c)."
+ },
+ {
+  "id": "q-en-rslow-090",
+  "type": "write",
+  "level": 2,
+  "q": "I have a ___ for how we can save money. (SUGGEST)",
+  "answers": [
+   "suggestion"
+  ],
+  "explain": "Rzeczownik od suggest: suggestion."
+ },
+ {
+  "id": "q-en-rslow-091",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ of this restaurant is growing every year. (POPULAR)",
+  "answers": [
+   "popularity"
+  ],
+  "explain": "Rzeczownik od popular: popularity."
+ },
+ {
+  "id": "q-en-rslow-092",
+  "type": "write",
+  "level": 2,
+  "q": "The children were playing ___ in the garden. (HAPPY)",
+  "answers": [
+   "happily"
+  ],
+  "explain": "Przysłówek od happy: happily (y → i)."
+ },
+ {
+  "id": "q-en-rslow-093",
+  "type": "write",
+  "level": 1,
+  "q": "He answered all the questions ___. (CORRECT)",
+  "answers": [
+   "correctly"
+  ],
+  "explain": "Przysłówek od correct: correctly."
+ },
+ {
+  "id": "q-en-rslow-094",
+  "type": "choice",
+  "level": 1,
+  "q": "He (poprosił mnie o pomoc) ___ with the luggage.",
+  "options": [
+   "asked me help",
+   "asked for me help",
+   "asked help me",
+   "asked me for help"
+  ],
+  "answer": 3,
+  "explain": "Ask someone for help."
+ },
+ {
+  "id": "q-en-rslow-095",
+  "type": "choice",
+  "level": 2,
+  "q": "She is (bardzo wrażliwa) ___.",
+  "options": [
+   "very sensible",
+   "very sensitive",
+   "very sensitiv",
+   "very sensation"
+  ],
+  "answer": 1,
+  "explain": "Sensitive = wrażliwy; sensible to rozsądny."
+ },
+ {
+  "id": "q-en-rslow-096",
+  "type": "choice",
+  "level": 2,
+  "q": "We (nie mamy żadnych) ___ questions.",
+  "options": [
+   "have no any",
+   "haven't some",
+   "don't have no",
+   "don't have any"
+  ],
+  "answer": 3,
+  "explain": "W zdaniu przeczącym: don't have any."
+ },
+ {
+  "id": "q-en-rslow-097",
+  "type": "choice",
+  "level": 2,
+  "q": "I (jestem tu od) ___ Monday.",
+  "options": [
+   "am here since",
+   "have been here since",
+   "was here for",
+   "have been here for"
+  ],
+  "answer": 1,
+  "explain": "Present Perfect z since + moment w czasie."
+ },
+ {
+  "id": "q-en-rslow-098",
+  "type": "choice",
+  "level": 2,
+  "q": "The meeting (został przełożony) ___ until Friday.",
+  "options": [
+   "was postponed",
+   "was postponing",
+   "has postponed",
+   "postponed"
+  ],
+  "answer": 0,
+  "explain": "Strona bierna w Past Simple: was postponed."
+ },
+ {
+  "id": "q-en-rslow-099",
+  "type": "choice",
+  "level": 2,
+  "q": "She (przeprosiła) ___ for the delay.",
+  "options": [
+   "excused",
+   "forgave",
+   "apologised",
+   "regretted"
+  ],
+  "answer": 2,
+  "explain": "Apologise for = przepraszać za."
+ },
+ {
+  "id": "q-en-rslow-100",
+  "type": "choice",
+  "level": 2,
+  "q": "This bag is (taka sama jak) ___ mine.",
+  "options": [
+   "the same as",
+   "the same like",
+   "as same as",
+   "similar with"
+  ],
+  "answer": 0,
+  "explain": "The same as + rzeczownik."
+ },
+ {
+  "id": "q-en-rslow-101",
+  "type": "choice",
+  "level": 1,
+  "q": "I would like to (zarezerwować) ___ a table for two.",
+  "options": [
+   "order",
+   "take",
+   "book",
+   "buy"
+  ],
+  "answer": 2,
+  "explain": "Book a table = zarezerwować stolik."
+ },
+ {
+  "id": "q-en-rslow-102",
+  "type": "choice",
+  "level": 2,
+  "q": "He (przyzwyczaił się do) ___ the noise.",
+  "options": [
+   "used to",
+   "got used to",
+   "was use to",
+   "got use to"
+  ],
+  "answer": 1,
+  "explain": "Get used to + rzeczownik/-ing."
+ },
+ {
+  "id": "q-en-rslow-103",
+  "type": "choice",
+  "level": 3,
+  "q": "She (jest zazdrosna o) ___ her sister.",
+  "options": [
+   "is jealous about",
+   "is jealous from",
+   "is jealous with",
+   "is jealous of"
+  ],
+  "answer": 3,
+  "explain": "Przymiotnik jealous łączy się z przyimkiem of."
+ },
+ {
+  "id": "q-en-rslow-104",
+  "type": "choice",
+  "level": 2,
+  "q": "(Co się stało) ___ to your arm?",
+  "options": [
+   "What did happened",
+   "What happened",
+   "What happens",
+   "What has been happened"
+  ],
+  "answer": 1,
+  "explain": "Pytanie w Past Simple o podmiot: What happened?"
+ },
+ {
+  "id": "q-en-rslow-105",
+  "type": "choice",
+  "level": 1,
+  "q": "I (zgadzam się z) ___ you.",
+  "options": [
+   "agree to",
+   "agree on",
+   "agree at",
+   "agree with"
+  ],
+  "answer": 3,
+  "explain": "Agree with + osoba."
+ },
+ {
+  "id": "q-en-rslow-106",
+  "type": "choice",
+  "level": 1,
+  "q": "We (wygraliśmy) ___ the match 3–1.",
+  "options": [
+   "beat",
+   "gained",
+   "won",
+   "earned"
+  ],
+  "answer": 2,
+  "explain": "Win a match; beat + przeciwnik."
+ },
+ {
+  "id": "q-en-rslow-107",
+  "type": "choice",
+  "level": 2,
+  "q": "I (nie mogę znieść) ___ cold weather.",
+  "options": [
+   "can't stand",
+   "can't stand to",
+   "can't suffer",
+   "can't endurable"
+  ],
+  "answer": 0,
+  "explain": "Can't stand + rzeczownik/-ing."
+ },
+ {
+  "id": "q-en-rslow-108",
+  "type": "choice",
+  "level": 3,
+  "q": "He (zaprzeczył, że) ___ the window.",
+  "options": [
+   "denied to break",
+   "denied break",
+   "denied breaking",
+   "rejected breaking"
+  ],
+  "answer": 2,
+  "explain": "Po czasowniku deny używamy formy -ing."
  }
 ]

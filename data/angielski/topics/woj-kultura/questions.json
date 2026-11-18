@@ -310,5 +310,145 @@
   ],
   "answer": 1,
   "explain": "\"Harry'ego Pottera\" napisała J. K. Rowling."
+ },
+ {
+  "id": "q-en-wkult-025",
+  "type": "choice",
+  "level": 1,
+  "q": "Charles Darwin is best known for his theory of ...",
+  "options": [
+   "relativity",
+   "gravity",
+   "genetics",
+   "evolution"
+  ],
+  "answer": 3,
+  "explain": "Darwin przedstawił teorię ewolucji przez dobór naturalny."
+ },
+ {
+  "id": "q-en-wkult-026",
+  "type": "choice",
+  "level": 1,
+  "q": "Jane Austen wrote novels such as ...",
+  "options": [
+   "Oliver Twist",
+   "Pride and Prejudice",
+   "Jane Eyre",
+   "Wuthering Heights"
+  ],
+  "answer": 1,
+  "explain": "\"Pride and Prejudice\" to powieść Jane Austen; Oliver Twist napisał Dickens, a Jane Eyre i Wichrowe Wzgórza siostry Brontë."
+ },
+ {
+  "id": "q-en-wkult-027",
+  "type": "choice",
+  "level": 1,
+  "q": "In 1969, Neil Armstrong became the first man to walk on ...",
+  "options": [
+   "Mars",
+   "the North Pole",
+   "Mount Everest",
+   "the Moon"
+  ],
+  "answer": 3,
+  "explain": "Armstrong stanął na Księżycu 21 lipca 1969 roku."
+ },
+ {
+  "id": "q-en-wkult-028",
+  "type": "choice",
+  "level": 2,
+  "q": "The Scottish scientist Alexander Fleming discovered ...",
+  "options": [
+   "insulin",
+   "penicillin",
+   "X-rays",
+   "vaccines"
+  ],
+  "answer": 1,
+  "explain": "Fleming odkrył penicylinę w 1928 roku."
+ },
+ {
+  "id": "q-en-wkult-029",
+  "type": "choice",
+  "level": 1,
+  "q": "Martin Luther King Jr. gave the famous speech \"I Have a ...\"",
+  "options": [
+   "Dream",
+   "Wish",
+   "Hope",
+   "Plan"
+  ],
+  "answer": 0,
+  "explain": "Przemówienie \"I Have a Dream\" wygłosił w 1963 roku."
+ },
+ {
+  "id": "q-en-wkult-030",
+  "type": "choice",
+  "level": 2,
+  "q": "Isaac Newton is famous for describing the law of ...",
+  "options": [
+   "evolution",
+   "electricity",
+   "gravity",
+   "relativity"
+  ],
+  "answer": 2,
+  "explain": "Newton opisał prawo powszechnego ciążenia (gravity)."
+ },
+ {
+  "id": "q-en-wkult-031",
+  "type": "choice",
+  "level": 2,
+  "q": "William Shakespeare was born in ...",
+  "options": [
+   "Stratford-upon-Avon",
+   "London",
+   "Oxford",
+   "Edinburgh"
+  ],
+  "answer": 0,
+  "explain": "Szekspir urodził się w Stratford-upon-Avon."
+ },
+ {
+  "id": "q-en-wkult-032",
+  "type": "choice",
+  "level": 3,
+  "q": "Winston Churchill received the Nobel Prize in ...",
+  "options": [
+   "Peace",
+   "Physics",
+   "Literature",
+   "Chemistry"
+  ],
+  "answer": 2,
+  "explain": "Churchill otrzymał Literacką Nagrodę Nobla w 1953 roku."
+ },
+ {
+  "id": "q-en-wkult-033",
+  "type": "choice",
+  "level": 1,
+  "q": "Alexander Graham Bell is associated with the invention of the ...",
+  "options": [
+   "television",
+   "telephone",
+   "radio",
+   "camera"
+  ],
+  "answer": 1,
+  "explain": "Bell jest uznawany za wynalazcę telefonu."
+ },
+ {
+  "id": "q-en-wkult-034",
+  "type": "choice",
+  "level": 2,
+  "q": "Rosa Parks became a symbol of the American ...",
+  "options": [
+   "labour movement",
+   "peace movement",
+   "women's vote",
+   "civil rights movement"
+  ],
+  "answer": 3,
+  "explain": "Rosa Parks stała się symbolem ruchu praw obywatelskich w USA."
  }
 ]

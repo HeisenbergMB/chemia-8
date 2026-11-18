@@ -926,5 +926,558 @@
    "point"
   ],
   "explain": "Point: sens / wskazywać palcem / czubek."
+ },
+ {
+  "id": "q-en-wslow-076",
+  "type": "write",
+  "level": 2,
+  "q": "She read the instructions ___ before she started. (CARE)",
+  "answers": [
+   "carefully"
+  ],
+  "explain": "Przysłówek od care: carefully (z przyrostkiem -ful → -fully)."
+ },
+ {
+  "id": "q-en-wslow-077",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ of the new library is planned for next month. (OPEN)",
+  "answers": [
+   "opening"
+  ],
+  "explain": "Rzeczownik od open: opening."
+ },
+ {
+  "id": "q-en-wslow-078",
+  "type": "write",
+  "level": 3,
+  "q": "He was awarded a prize for his ___ to science. (CONTRIBUTE)",
+  "answers": [
+   "contribution"
+  ],
+  "explain": "Rzeczownik od contribute: contribution."
+ },
+ {
+  "id": "q-en-wslow-079",
+  "type": "write",
+  "level": 2,
+  "q": "It was very ___ of you to lend me your umbrella. (THOUGHT)",
+  "answers": [
+   "thoughtful"
+  ],
+  "explain": "Przymiotnik od thought: thoughtful (troskliwy, uważny)."
+ },
+ {
+  "id": "q-en-wslow-080",
+  "type": "write",
+  "level": 2,
+  "q": "The company announced a ___ in prices. (REDUCE)",
+  "answers": [
+   "reduction"
+  ],
+  "explain": "Rzeczownik od reduce: reduction."
+ },
+ {
+  "id": "q-en-wslow-081",
+  "type": "write",
+  "level": 2,
+  "q": "We need to find a more ___ solution to this problem. (PRACTICE)",
+  "answers": [
+   "practical"
+  ],
+  "explain": "Przymiotnik od practice: practical (praktyczny)."
+ },
+ {
+  "id": "q-en-wslow-082",
+  "type": "write",
+  "level": 3,
+  "q": "She plays the violin ___ well for her age. (REMARK)",
+  "answers": [
+   "remarkably"
+  ],
+  "explain": "Przysłówek od remark: remarkably (niezwykle)."
+ },
+ {
+  "id": "q-en-wslow-083",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ between the two sisters is amazing. (SIMILAR)",
+  "answers": [
+   "similarity",
+   "similarities"
+  ],
+  "explain": "Rzeczownik od similar: similarity."
+ },
+ {
+  "id": "q-en-wslow-084",
+  "type": "write",
+  "level": 2,
+  "q": "He felt ___ when he heard that his daughter was safe. (RELIEVE)",
+  "answers": [
+   "relieved"
+  ],
+  "explain": "Przymiotnik od relieve: relieved (z ulgą)."
+ },
+ {
+  "id": "q-en-wslow-085",
+  "type": "write",
+  "level": 3,
+  "q": "Many customers were ___ with the quality of the service. (SATISFY)",
+  "answers": [
+   "dissatisfied",
+   "unsatisfied"
+  ],
+  "explain": "Przymiotnik z przeczeniem: dissatisfied (niezadowolony)."
+ },
+ {
+  "id": "q-en-wslow-086",
+  "type": "write",
+  "level": 2,
+  "q": "1) In that ___, I would rather stay at home.\n2) She packed everything into a small ___ and left.\n3) The detective is working on a murder ___.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "case"
+  ],
+  "explain": "Case: w takim razie / walizka, futerał / sprawa."
+ },
+ {
+  "id": "q-en-wslow-087",
+  "type": "write",
+  "level": 2,
+  "q": "1) I cannot ___ the noise any longer.\n2) The ___ at the fair sold sweets and toys.\n3) Please ___ up when the judge enters.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "stand"
+  ],
+  "explain": "Stand: znosić / stoisko / wstać."
+ },
+ {
+  "id": "q-en-wslow-088",
+  "type": "write",
+  "level": 2,
+  "q": "1) Leaves ___ from the trees in the autumn.\n2) Prices will ___ next year, experts say.\n3) I always ___ asleep during boring films.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "fall"
+  ],
+  "explain": "Fall: spadać, opadać / spadać (o cenach) / zasypiać (fall asleep)."
+ },
+ {
+  "id": "q-en-wslow-089",
+  "type": "write",
+  "level": 3,
+  "q": "1) What does this word ___ in English?\n2) He is so ___ that he never buys presents.\n3) The ___ of the numbers 4, 8 and 12 is 8.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "mean"
+  ],
+  "explain": "Mean: znaczyć / skąpy / średnia."
+ },
+ {
+  "id": "q-en-wslow-090",
+  "type": "write",
+  "level": 3,
+  "q": "1) The football ___ was covered with snow.\n2) They tried to ___ the tent near the river.\n3) The singer's ___ was perfect.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "pitch"
+  ],
+  "explain": "Pitch: boisko / rozbić (namiot) / wysokość dźwięku."
+ },
+ {
+  "id": "q-en-wslow-091",
+  "type": "write",
+  "level": 2,
+  "q": "1) The teacher was very ___ to all the students.\n2) We went to the village ___ last Saturday.\n3) She has ___ hair and blue eyes.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "fair"
+  ],
+  "explain": "Fair: sprawiedliwy / jarmark / jasny (o włosach)."
+ },
+ {
+  "id": "q-en-wslow-092",
+  "type": "write",
+  "level": 2,
+  "q": "1) Please write the answer on the ___.\n2) The passengers may ___ the plane now.\n3) The ___ of directors meets every Monday.\n(To samo słowo pasuje do wszystkich trzech zdań.)",
+  "answers": [
+   "board"
+  ],
+  "explain": "Board: tablica / wsiadać / zarząd."
+ },
+ {
+  "id": "q-en-wslow-093",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ between the two phones is very small.",
+  "group": "g-en-wslow-03",
+  "answers": [
+   "difference",
+   "differences"
+  ],
+  "explain": "Rzeczownik od differ: difference."
+ },
+ {
+  "id": "q-en-wslow-094",
+  "type": "write",
+  "level": 2,
+  "q": "Her ___ in the exam disappointed everybody.",
+  "group": "g-en-wslow-03",
+  "answers": [
+   "failure"
+  ],
+  "explain": "Rzeczownik od fail: failure."
+ },
+ {
+  "id": "q-en-wslow-095",
+  "type": "write",
+  "level": 3,
+  "q": "The company spent a lot of money on ___.",
+  "group": "g-en-wslow-03",
+  "answers": [
+   "advertising",
+   "advertisement",
+   "advertisements"
+  ],
+  "explain": "Rzeczownik od advertise: advertising / advertisement."
+ },
+ {
+  "id": "q-en-wslow-096",
+  "type": "write",
+  "level": 1,
+  "q": "Eating ___ food is important for growing children.",
+  "group": "g-en-wslow-03",
+  "answers": [
+   "healthy"
+  ],
+  "explain": "Przymiotnik od health: healthy."
+ },
+ {
+  "id": "q-en-wslow-097",
+  "type": "write",
+  "level": 2,
+  "q": "It was an ___ evening in the park with friends.",
+  "group": "g-en-wslow-03",
+  "answers": [
+   "enjoyable"
+  ],
+  "explain": "Przymiotnik od enjoy: enjoyable (przyjemny)."
+ },
+ {
+  "id": "q-en-wslow-098",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ of the city has increased over the last decade.",
+  "group": "g-en-wslow-03",
+  "answers": [
+   "growth"
+  ],
+  "explain": "Rzeczownik od grow: growth."
+ },
+ {
+  "id": "q-en-wslow-099",
+  "type": "write",
+  "level": 2,
+  "q": "There was a wide ___ of dishes on the menu.",
+  "group": "g-en-wslow-03",
+  "answers": [
+   "choice"
+  ],
+  "explain": "Rzeczownik od choose: choice."
+ },
+ {
+  "id": "q-en-wslow-100",
+  "type": "write",
+  "level": 3,
+  "q": "For her age she is remarkably ___.",
+  "group": "g-en-wslow-03",
+  "answers": [
+   "independent"
+  ],
+  "explain": "Przymiotnik z przedrostkiem in-: depend → independent."
+ },
+ {
+  "id": "q-en-wslow-101",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ for the gold medal was very strong.",
+  "group": "g-en-wslow-03",
+  "answers": [
+   "competition"
+  ],
+  "explain": "Rzeczownik od compete: competition."
+ },
+ {
+  "id": "q-en-wslow-102",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ of the passengers is the main priority.",
+  "group": "g-en-wslow-03",
+  "answers": [
+   "safety"
+  ],
+  "explain": "Rzeczownik od safe: safety."
+ },
+ {
+  "id": "q-en-wslow-103",
+  "type": "choice",
+  "level": 2,
+  "q": "It was a blessing in ___: losing that job made him start his own firm.",
+  "options": [
+   "heaven",
+   "hiding",
+   "disguise",
+   "secret"
+  ],
+  "answer": 2,
+  "explain": "A blessing in disguise = szczęście w nieszczęściu."
+ },
+ {
+  "id": "q-en-wslow-104",
+  "type": "choice",
+  "level": 2,
+  "q": "He decided to take the ___ by the horns and ask for a raise.",
+  "options": [
+   "bull",
+   "cow",
+   "goat",
+   "ox"
+  ],
+  "answer": 0,
+  "explain": "Take the bull by the horns = odważnie zmierzyć się z problemem."
+ },
+ {
+  "id": "q-en-wslow-105",
+  "type": "choice",
+  "level": 1,
+  "q": "Don't put all your eggs in one ___.",
+  "options": [
+   "bag",
+   "box",
+   "basket",
+   "nest"
+  ],
+  "answer": 2,
+  "explain": "Don't put all your eggs in one basket = nie stawiaj wszystkiego na jedną kartę."
+ },
+ {
+  "id": "q-en-wslow-106",
+  "type": "choice",
+  "level": 1,
+  "q": "She has a heart of ___; she always helps people in trouble.",
+  "options": [
+   "gold",
+   "silver",
+   "glass",
+   "iron"
+  ],
+  "answer": 0,
+  "explain": "A heart of gold = złote serce."
+ },
+ {
+  "id": "q-en-wslow-107",
+  "type": "choice",
+  "level": 1,
+  "q": "We are all in the same ___ – nobody has any money left.",
+  "options": [
+   "house",
+   "class",
+   "team",
+   "boat"
+  ],
+  "answer": 3,
+  "explain": "In the same boat = w tej samej sytuacji."
+ },
+ {
+  "id": "q-en-wslow-108",
+  "type": "choice",
+  "level": 1,
+  "q": "That exam was a walk in the ___.",
+  "options": [
+   "forest",
+   "park",
+   "garden",
+   "street"
+  ],
+  "answer": 1,
+  "explain": "A walk in the park = bułka z masłem."
+ },
+ {
+  "id": "q-en-wslow-109",
+  "type": "choice",
+  "level": 2,
+  "q": "He has always been the black ___ of the family.",
+  "options": [
+   "cat",
+   "dog",
+   "horse",
+   "sheep"
+  ],
+  "answer": 3,
+  "explain": "The black sheep = czarna owca."
+ },
+ {
+  "id": "q-en-wslow-110",
+  "type": "choice",
+  "level": 2,
+  "q": "I will keep my fingers ___ for you tomorrow.",
+  "options": [
+   "tied",
+   "crossed",
+   "closed",
+   "folded"
+  ],
+  "answer": 1,
+  "explain": "Keep your fingers crossed = trzymać kciuki."
+ },
+ {
+  "id": "q-en-wslow-111",
+  "type": "choice",
+  "level": 1,
+  "q": "You cannot judge a book by its ___.",
+  "options": [
+   "cover",
+   "title",
+   "size",
+   "price"
+  ],
+  "answer": 0,
+  "explain": "Don't judge a book by its cover = nie oceniaj po pozorach."
+ },
+ {
+  "id": "q-en-wslow-112",
+  "type": "choice",
+  "level": 1,
+  "q": "The early bird catches the ___.",
+  "options": [
+   "fish",
+   "bus",
+   "worm",
+   "train"
+  ],
+  "answer": 2,
+  "explain": "The early bird catches the worm = kto rano wstaje, temu Pan Bóg daje."
+ },
+ {
+  "id": "q-en-wslow-113",
+  "type": "write",
+  "level": 3,
+  "q": "My parents (nalegali, żebym został) ___ at home.",
+  "answers": [
+   "insisted that I stay",
+   "insisted that I should stay",
+   "insisted that I stayed",
+   "insisted on my staying"
+  ],
+  "explain": "Insist that + podmiot + (should) + bezokolicznik albo insist on + -ing."
+ },
+ {
+  "id": "q-en-wslow-114",
+  "type": "write",
+  "level": 3,
+  "q": "She (zachowuje się tak, jakby była) ___ the boss.",
+  "answers": [
+   "behaves as if she were",
+   "behaves as if she was",
+   "behaves as though she were",
+   "acts as if she were",
+   "acts as if she was"
+  ],
+  "explain": "As if / as though + Past Simple (were)."
+ },
+ {
+  "id": "q-en-wslow-115",
+  "type": "write",
+  "level": 3,
+  "q": "(Gdyby nie twoja pomoc) ___, we would have lost.",
+  "answers": [
+   "If it hadn't been for your help",
+   "If it had not been for your help",
+   "But for your help",
+   "Had it not been for your help",
+   "Without your help"
+  ],
+  "explain": "If it hadn't been for / But for / Had it not been for."
+ },
+ {
+  "id": "q-en-wslow-116",
+  "type": "write",
+  "level": 2,
+  "q": "I am not used (do jedzenia) ___ spicy food.",
+  "answers": [
+   "to eating"
+  ],
+  "explain": "Be used to + -ing."
+ },
+ {
+  "id": "q-en-wslow-117",
+  "type": "write",
+  "level": 2,
+  "q": "He (musiał zapomnieć) ___ about our meeting.",
+  "answers": [
+   "must have forgotten"
+  ],
+  "explain": "Pewny wniosek o przeszłości: must have + III forma."
+ },
+ {
+  "id": "q-en-wslow-118",
+  "type": "write",
+  "level": 3,
+  "q": "(Im wcześniej wyjedziemy) ___, the sooner we will arrive.",
+  "answers": [
+   "The earlier we leave",
+   "The sooner we leave",
+   "The faster we leave",
+   "The quicker we leave"
+  ],
+  "explain": "Podwójny stopień wyższy: the earlier ..., the sooner ..."
+ },
+ {
+  "id": "q-en-wslow-119",
+  "type": "write",
+  "level": 3,
+  "q": "I (żałuję, że nie powiedziałem) ___ her the truth.",
+  "answers": [
+   "regret not telling",
+   "regret not having told",
+   "wish I had told",
+   "wish I'd told"
+  ],
+  "explain": "Regret + not + -ing / wish + Past Perfect."
+ },
+ {
+  "id": "q-en-wslow-120",
+  "type": "write",
+  "level": 2,
+  "q": "There is (nie ma sensu) ___ arguing with him.",
+  "answers": [
+   "no point in",
+   "no use in",
+   "no sense in"
+  ],
+  "explain": "There is no point in + -ing."
+ },
+ {
+  "id": "q-en-wslow-121",
+  "type": "write",
+  "level": 3,
+  "q": "She (jest uważana za) ___ the best player in the world.",
+  "answers": [
+   "is considered to be",
+   "is thought to be",
+   "is said to be",
+   "is regarded as",
+   "is believed to be"
+  ],
+  "explain": "Konstrukcje bezosobowe: is considered / thought / said to be."
+ },
+ {
+  "id": "q-en-wslow-122",
+  "type": "write",
+  "level": 3,
+  "q": "(Dopiero wtedy zrozumiał) ___ how dangerous it was.",
+  "answers": [
+   "Only then did he realise",
+   "Only then did he realize",
+   "Only then did he understand",
+   "Not until then did he realise",
+   "Not until then did he realize",
+   "Not until then did he understand"
+  ],
+  "explain": "Inwersja po only then / not until then."
  }
 ]

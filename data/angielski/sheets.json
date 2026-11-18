@@ -490,6 +490,489 @@
      ]
     }
    ]
+  },
+  {
+   "id": "s-en-woj-02",
+   "format": "wojewodzki",
+   "title": "Arkusz 2 – etap wojewódzki",
+   "tasks": [
+    {
+     "kind": "gapped-text",
+     "group": "g-en-wczyt-05",
+     "items": [
+      "q-en-wczyt-033",
+      "q-en-wczyt-034",
+      "q-en-wczyt-035",
+      "q-en-wczyt-036",
+      "q-en-wczyt-037",
+      "q-en-wczyt-038",
+      "q-en-wczyt-039",
+      "q-en-wczyt-040"
+     ]
+    },
+    {
+     "kind": "matching-people",
+     "group": "g-en-wczyt-06",
+     "items": [
+      "q-en-wczyt-041",
+      "q-en-wczyt-042",
+      "q-en-wczyt-043",
+      "q-en-wczyt-044",
+      "q-en-wczyt-045",
+      "q-en-wczyt-046",
+      "q-en-wczyt-047",
+      "q-en-wczyt-048",
+      "q-en-wczyt-049",
+      "q-en-wczyt-050",
+      "q-en-wczyt-051",
+      "q-en-wczyt-052",
+      "q-en-wczyt-053",
+      "q-en-wczyt-054",
+      "q-en-wczyt-055"
+     ]
+    },
+    {
+     "kind": "key-word",
+     "instruction": "Przeczytaj zdania (1–10). Wykorzystując wyraz podany wielkimi literami, uzupełnij drugie zdanie z luką tak, aby precyzyjnie oddać sens zdania wyjściowego. Wymagana jest całkowita poprawność pisowni i gramatyki. Nie zmieniaj formy podanego wyrazu. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany. Formy skrócone liczą się jako jedno słowo.",
+     "items": [
+      "q-en-wgram-071",
+      "q-en-wgram-072",
+      "q-en-wgram-073",
+      "q-en-wgram-074",
+      "q-en-wgram-075",
+      "q-en-wgram-076",
+      "q-en-wgram-077",
+      "q-en-wgram-078",
+      "q-en-wgram-079",
+      "q-en-wgram-080"
+     ]
+    },
+    {
+     "kind": "word-formation",
+     "instruction": "Uzupełnij luki (1–10) odpowiednią formą wyrazu utworzonego od wyrazu podanego na końcu zdania. Wymagana jest całkowita poprawność pisowni wpisywanych słów. Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+     "items": [
+      "q-en-wslow-076",
+      "q-en-wslow-077",
+      "q-en-wslow-078",
+      "q-en-wslow-079",
+      "q-en-wslow-080",
+      "q-en-wslow-081",
+      "q-en-wslow-082",
+      "q-en-wslow-083",
+      "q-en-wslow-084",
+      "q-en-wslow-085"
+     ]
+    },
+    {
+     "kind": "triple-gap",
+     "instruction": "Uzupełnij luki w każdej trójce zdań (1–7) tym samym wyrazem, tak by zachować poprawność gramatyczną, ortograficzną i logiczną. Wpisywane słowo musi mieć taką samą formę we wszystkich trzech zdaniach. Przykład (0): make – I need to make the bed every morning. / Let's make a cake. / She will make a good teacher.",
+     "items": [
+      "q-en-wslow-086",
+      "q-en-wslow-087",
+      "q-en-wslow-088",
+      "q-en-wslow-089",
+      "q-en-wslow-090",
+      "q-en-wslow-091",
+      "q-en-wslow-092"
+     ]
+    },
+    {
+     "kind": "word-box",
+     "group": "g-en-wslow-03",
+     "items": [
+      "q-en-wslow-093",
+      "q-en-wslow-094",
+      "q-en-wslow-095",
+      "q-en-wslow-096",
+      "q-en-wslow-097",
+      "q-en-wslow-098",
+      "q-en-wslow-099",
+      "q-en-wslow-100",
+      "q-en-wslow-101",
+      "q-en-wslow-102"
+     ]
+    },
+    {
+     "kind": "mc-cloze",
+     "instruction": "Uzupełnij luki (1–10) jedną z podanych możliwości (A, B, C lub D), tak aby otrzymać zdania poprawne pod względem gramatycznym i logicznym.",
+     "items": [
+      "q-en-wgram-081",
+      "q-en-wgram-082",
+      "q-en-wgram-083",
+      "q-en-wgram-084",
+      "q-en-wgram-085",
+      "q-en-wgram-086",
+      "q-en-wgram-087",
+      "q-en-wgram-088",
+      "q-en-wgram-089",
+      "q-en-wgram-090"
+     ]
+    },
+    {
+     "kind": "idiom",
+     "instruction": "W podanych punktach (1–10) wybierz słowo poprawnie uzupełniające dany idiom.",
+     "items": [
+      "q-en-wslow-103",
+      "q-en-wslow-104",
+      "q-en-wslow-105",
+      "q-en-wslow-106",
+      "q-en-wslow-107",
+      "q-en-wslow-108",
+      "q-en-wslow-109",
+      "q-en-wslow-110",
+      "q-en-wslow-111",
+      "q-en-wslow-112"
+     ]
+    },
+    {
+     "kind": "translation-write",
+     "instruction": "Przetłumacz fragmenty zdań (1–10) podane w nawiasach na język angielski tak, aby otrzymać zdania poprawne pod względem gramatycznym i logicznym.",
+     "items": [
+      "q-en-wslow-113",
+      "q-en-wslow-114",
+      "q-en-wslow-115",
+      "q-en-wslow-116",
+      "q-en-wslow-117",
+      "q-en-wslow-118",
+      "q-en-wslow-119",
+      "q-en-wslow-120",
+      "q-en-wslow-121",
+      "q-en-wslow-122"
+     ]
+    },
+    {
+     "kind": "biography",
+     "instruction": "W podanych punktach (1–10) wybierz ten, który poprawnie uzupełnia informację z życiorysu sławnej osoby.",
+     "items": [
+      "q-en-wkult-025",
+      "q-en-wkult-026",
+      "q-en-wkult-027",
+      "q-en-wkult-028",
+      "q-en-wkult-029",
+      "q-en-wkult-030",
+      "q-en-wkult-031",
+      "q-en-wkult-032",
+      "q-en-wkult-033",
+      "q-en-wkult-034"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s-en-sz-02",
+   "format": "szkolny",
+   "title": "Arkusz 2 – etap szkolny",
+   "tasks": [
+    {
+     "kind": "tf",
+     "group": "g-en-czyt-04",
+     "items": [
+      "q-en-czyt-028",
+      "q-en-czyt-029",
+      "q-en-czyt-030",
+      "q-en-czyt-031",
+      "q-en-czyt-032",
+      "q-en-czyt-033",
+      "q-en-czyt-034",
+      "q-en-czyt-035",
+      "q-en-czyt-036",
+      "q-en-czyt-037"
+     ]
+    },
+    {
+     "kind": "brackets-form",
+     "instruction": "Uzupełnij zdania (1–15), wykorzystując podane w nawiasach wyrazy. Zmień ich formę, jeśli to konieczne. Nie zmieniaj kolejności podanych wyrazów, ale możesz dodać inne wyrazy, tak aby otrzymać logiczne i poprawne gramatycznie zdania. Wymagana jest pełna poprawność pisowni wpisywanych fragmentów zdań.",
+     "items": [
+      "q-en-gram-109",
+      "q-en-gram-110",
+      "q-en-gram-111",
+      "q-en-gram-112",
+      "q-en-gram-113",
+      "q-en-gram-114",
+      "q-en-gram-115",
+      "q-en-gram-116",
+      "q-en-gram-117",
+      "q-en-gram-118",
+      "q-en-gram-119",
+      "q-en-gram-120",
+      "q-en-gram-121",
+      "q-en-gram-122",
+      "q-en-gram-123"
+     ]
+    },
+    {
+     "kind": "open-cloze",
+     "instruction": "Uzupełnij każde zdanie jednym wyrazem tak, aby było ono logiczne i poprawne gramatycznie. Wymagana jest całkowita poprawność pisowni. Nie wolno wstawiać w luki skróceń (isn't, can't itd.).",
+     "items": [
+      "q-en-gram-124",
+      "q-en-gram-125",
+      "q-en-gram-126",
+      "q-en-gram-127",
+      "q-en-gram-128",
+      "q-en-gram-129",
+      "q-en-gram-130",
+      "q-en-gram-131",
+      "q-en-gram-132",
+      "q-en-gram-133",
+      "q-en-gram-134",
+      "q-en-gram-135",
+      "q-en-gram-136",
+      "q-en-gram-137",
+      "q-en-gram-138"
+     ]
+    },
+    {
+     "kind": "question-form",
+     "instruction": "Zadaj pytania o podkreśloną część zdań. Wymagana jest całkowita poprawność pisowni i gramatyki.",
+     "items": [
+      "q-en-gram-139",
+      "q-en-gram-140",
+      "q-en-gram-141",
+      "q-en-gram-142",
+      "q-en-gram-143",
+      "q-en-gram-144",
+      "q-en-gram-145",
+      "q-en-gram-146",
+      "q-en-gram-147",
+      "q-en-gram-148"
+     ]
+    },
+    {
+     "kind": "translation-choice",
+     "instruction": "Wybierz odpowiednie tłumaczenie zwrotów podanych w nawiasach. Zwróć uwagę na poprawność gramatyczną i ortograficzną.",
+     "items": [
+      "q-en-slow-061",
+      "q-en-slow-062",
+      "q-en-slow-063",
+      "q-en-slow-064",
+      "q-en-slow-065",
+      "q-en-slow-066",
+      "q-en-slow-067",
+      "q-en-slow-068",
+      "q-en-slow-069",
+      "q-en-slow-070",
+      "q-en-slow-071",
+      "q-en-slow-072",
+      "q-en-slow-073",
+      "q-en-slow-074",
+      "q-en-slow-075"
+     ]
+    },
+    {
+     "kind": "first-letter",
+     "instruction": "Uzupełnij każde zdanie jednym pasującym wyrazem. Wymagana jest całkowita poprawność pisowni. Liczba kresek odpowiada liczbie brakujących liter w wyrazie, niektóre litery są już podane.",
+     "items": [
+      "q-en-slow-076",
+      "q-en-slow-077",
+      "q-en-slow-078",
+      "q-en-slow-079",
+      "q-en-slow-080",
+      "q-en-slow-081",
+      "q-en-slow-082",
+      "q-en-slow-083",
+      "q-en-slow-084",
+      "q-en-slow-085",
+      "q-en-slow-086",
+      "q-en-slow-087",
+      "q-en-slow-088",
+      "q-en-slow-089",
+      "q-en-slow-090"
+     ]
+    },
+    {
+     "kind": "key-word",
+     "instruction": "Przeczytaj zdania (1–10). Wykorzystując wyraz podany wielkimi literami, uzupełnij drugie zdanie tak, aby zachować sens zdania wyjściowego. Nie zmieniaj formy podanego wyrazu. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany. Wymagana jest pełna poprawność pisowni i gramatyki.",
+     "items": [
+      "q-en-gram-149",
+      "q-en-gram-150",
+      "q-en-gram-151",
+      "q-en-gram-152",
+      "q-en-gram-153",
+      "q-en-gram-154",
+      "q-en-gram-155",
+      "q-en-gram-156",
+      "q-en-gram-157",
+      "q-en-gram-158"
+     ]
+    },
+    {
+     "kind": "culture",
+     "instruction": "Wybierz poprawną odpowiedź.",
+     "items": [
+      "q-en-kult-025",
+      "q-en-kult-026",
+      "q-en-kult-027",
+      "q-en-kult-028",
+      "q-en-kult-029",
+      "q-en-kult-030",
+      "q-en-kult-031",
+      "q-en-kult-032",
+      "q-en-kult-033",
+      "q-en-kult-034"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s-en-rej-02",
+   "format": "rejonowy",
+   "title": "Arkusz 2 – etap rejonowy",
+   "tasks": [
+    {
+     "kind": "tf",
+     "group": "g-en-rczyt-05",
+     "items": [
+      "q-en-rczyt-030",
+      "q-en-rczyt-031",
+      "q-en-rczyt-032",
+      "q-en-rczyt-033",
+      "q-en-rczyt-034",
+      "q-en-rczyt-035",
+      "q-en-rczyt-036",
+      "q-en-rczyt-037",
+      "q-en-rczyt-038"
+     ]
+    },
+    {
+     "kind": "gapped-text",
+     "group": "g-en-rczyt-06",
+     "items": [
+      "q-en-rczyt-039",
+      "q-en-rczyt-040",
+      "q-en-rczyt-041",
+      "q-en-rczyt-042",
+      "q-en-rczyt-043"
+     ]
+    },
+    {
+     "kind": "open-cloze",
+     "group": "g-en-rgram-03",
+     "items": [
+      "q-en-rgram-065",
+      "q-en-rgram-066",
+      "q-en-rgram-067",
+      "q-en-rgram-068",
+      "q-en-rgram-069",
+      "q-en-rgram-070",
+      "q-en-rgram-071",
+      "q-en-rgram-072",
+      "q-en-rgram-073",
+      "q-en-rgram-074",
+      "q-en-rgram-075",
+      "q-en-rgram-076",
+      "q-en-rgram-077",
+      "q-en-rgram-078"
+     ]
+    },
+    {
+     "kind": "key-word",
+     "instruction": "Wykorzystując wyrazy podane w nawiasach, uzupełnij każde zdanie z luką, tak aby zachować sens zdania wyjściowego. Wymagana jest pełna poprawność ortograficzna i gramatyczna wpisywanych fragmentów zdań. Nie zmieniaj formy podanych wyrazów. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany. Formy skrócone liczą się jako jedno słowo.",
+     "items": [
+      "q-en-rgram-079",
+      "q-en-rgram-080",
+      "q-en-rgram-081",
+      "q-en-rgram-082",
+      "q-en-rgram-083",
+      "q-en-rgram-084",
+      "q-en-rgram-085",
+      "q-en-rgram-086",
+      "q-en-rgram-087",
+      "q-en-rgram-088",
+      "q-en-rgram-089"
+     ]
+    },
+    {
+     "kind": "first-letter",
+     "instruction": "Uzupełnij każde zdanie jednym pasującym słowem. Wymagana jest całkowita poprawność pisowni wpisywanych słów. Liczba kresek odpowiada liczbie brakujących liter w słowie. Niektóre litery zostały już podane.",
+     "items": [
+      "q-en-rslow-073",
+      "q-en-rslow-074",
+      "q-en-rslow-075",
+      "q-en-rslow-076",
+      "q-en-rslow-077",
+      "q-en-rslow-078",
+      "q-en-rslow-079",
+      "q-en-rslow-080",
+      "q-en-rslow-081",
+      "q-en-rslow-082",
+      "q-en-rslow-083"
+     ]
+    },
+    {
+     "kind": "word-formation",
+     "instruction": "Przeczytaj zdania. Uzupełnij każdą lukę jednym wyrazem, przekształcając wyraz podany na końcu każdego zdania, tak aby powstało spójne i logiczne zdanie. Wymagana jest pełna poprawność gramatyczna i ortograficzna wpisywanych wyrazów.",
+     "items": [
+      "q-en-rslow-084",
+      "q-en-rslow-085",
+      "q-en-rslow-086",
+      "q-en-rslow-087",
+      "q-en-rslow-088",
+      "q-en-rslow-089",
+      "q-en-rslow-090",
+      "q-en-rslow-091",
+      "q-en-rslow-092",
+      "q-en-rslow-093"
+     ]
+    },
+    {
+     "kind": "mc-cloze",
+     "instruction": "Przeczytaj zdania. Z podanych odpowiedzi wybierz właściwą, tak aby otrzymać logiczne i gramatycznie poprawne zdania.",
+     "items": [
+      "q-en-rgram-090",
+      "q-en-rgram-091",
+      "q-en-rgram-092",
+      "q-en-rgram-093",
+      "q-en-rgram-094",
+      "q-en-rgram-095",
+      "q-en-rgram-096",
+      "q-en-rgram-097",
+      "q-en-rgram-098",
+      "q-en-rgram-099",
+      "q-en-rgram-100",
+      "q-en-rgram-101",
+      "q-en-rgram-102",
+      "q-en-rgram-103",
+      "q-en-rgram-104"
+     ]
+    },
+    {
+     "kind": "translation-choice",
+     "instruction": "Z podanych wersji tłumaczenia wybierz właściwe, tak aby otrzymać logiczne i gramatycznie poprawne zdania.",
+     "items": [
+      "q-en-rslow-094",
+      "q-en-rslow-095",
+      "q-en-rslow-096",
+      "q-en-rslow-097",
+      "q-en-rslow-098",
+      "q-en-rslow-099",
+      "q-en-rslow-100",
+      "q-en-rslow-101",
+      "q-en-rslow-102",
+      "q-en-rslow-103",
+      "q-en-rslow-104",
+      "q-en-rslow-105",
+      "q-en-rslow-106",
+      "q-en-rslow-107",
+      "q-en-rslow-108"
+     ]
+    },
+    {
+     "kind": "culture",
+     "instruction": "Na podstawie opisów świąt i ważnych dni uzupełnij ich nazwy. Podane są pierwsze litery wyrazów.",
+     "items": [
+      "q-en-rkult-028",
+      "q-en-rkult-029",
+      "q-en-rkult-030",
+      "q-en-rkult-031",
+      "q-en-rkult-032",
+      "q-en-rkult-033",
+      "q-en-rkult-034",
+      "q-en-rkult-035",
+      "q-en-rkult-036",
+      "q-en-rkult-037"
+     ]
+    }
+   ]
   }
  ]
 }

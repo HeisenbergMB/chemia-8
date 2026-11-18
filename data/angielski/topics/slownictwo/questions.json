@@ -704,5 +704,350 @@
   ],
   "answer": 2,
   "explain": "Heavy rain – ulewny deszcz."
+ },
+ {
+  "id": "q-en-slow-061",
+  "type": "choice",
+  "level": 1,
+  "q": "(Ile) ___ homework do you have today?",
+  "options": [
+   "How many",
+   "How long",
+   "How much"
+  ],
+  "answer": 2,
+  "explain": "Homework jest niepoliczalne: How much."
+ },
+ {
+  "id": "q-en-slow-062",
+  "type": "choice",
+  "level": 1,
+  "q": "She (zapomniała) ___ to lock the door.",
+  "options": [
+   "forgetted",
+   "forgot",
+   "forgetting"
+  ],
+  "answer": 1,
+  "explain": "Forget – forgot – forgotten."
+ },
+ {
+  "id": "q-en-slow-063",
+  "type": "choice",
+  "level": 2,
+  "q": "We (zatrzymaliśmy się) ___ in a small hotel near the beach.",
+  "options": [
+   "stayed",
+   "lodged",
+   "hosted"
+  ],
+  "answer": 0,
+  "explain": "Stay = mieszkać tymczasowo (w hotelu)."
+ },
+ {
+  "id": "q-en-slow-064",
+  "type": "choice",
+  "level": 2,
+  "q": "The thief (został aresztowany) ___ yesterday.",
+  "options": [
+   "was arrested",
+   "arrested",
+   "has been arresting"
+  ],
+  "answer": 0,
+  "explain": "Strona bierna w Past Simple: was arrested."
+ },
+ {
+  "id": "q-en-slow-065",
+  "type": "choice",
+  "level": 2,
+  "q": "The police (zbadali) ___ the case carefully.",
+  "options": [
+   "invested",
+   "interrupted",
+   "investigated"
+  ],
+  "answer": 2,
+  "explain": "Investigate = badać, prowadzić dochodzenie."
+ },
+ {
+  "id": "q-en-slow-066",
+  "type": "choice",
+  "level": 2,
+  "q": "The weather is (coraz lepsza) ___.",
+  "options": [
+   "getting more good",
+   "getting better",
+   "becoming gooder"
+  ],
+  "answer": 1,
+  "explain": "Stopień wyższy nieregularny: good – better; get better = poprawiać się."
+ },
+ {
+  "id": "q-en-slow-067",
+  "type": "choice",
+  "level": 3,
+  "q": "The teacher (kazał nam czekać) ___ outside.",
+  "options": [
+   "made us to wait",
+   "made us wait",
+   "made us waiting"
+  ],
+  "answer": 1,
+  "explain": "Make + osoba + bezokolicznik bez to."
+ },
+ {
+  "id": "q-en-slow-068",
+  "type": "choice",
+  "level": 2,
+  "q": "I (przyzwyczaiłem się do) ___ the cold weather.",
+  "options": [
+   "got used to",
+   "got use to",
+   "used to got"
+  ],
+  "answer": 0,
+  "explain": "Get used to + rzeczownik/-ing = przyzwyczaić się."
+ },
+ {
+  "id": "q-en-slow-069",
+  "type": "choice",
+  "level": 3,
+  "q": "My phone (jest naprawiany) ___ at the moment.",
+  "options": [
+   "is repairing",
+   "has repaired",
+   "is being repaired"
+  ],
+  "answer": 2,
+  "explain": "Strona bierna w Present Continuous: is being repaired."
+ },
+ {
+  "id": "q-en-slow-070",
+  "type": "choice",
+  "level": 2,
+  "q": "He (wygląda jak) ___ his father.",
+  "options": [
+   "looks as",
+   "looks alike",
+   "looks like"
+  ],
+  "answer": 2,
+  "explain": "Look like + rzeczownik."
+ },
+ {
+  "id": "q-en-slow-071",
+  "type": "choice",
+  "level": 2,
+  "q": "I (nie mogę się doczekać) ___ the holidays.",
+  "options": [
+   "can't wait to",
+   "can't wait for",
+   "can't wait of"
+  ],
+  "answer": 1,
+  "explain": "Can't wait for + rzeczownik."
+ },
+ {
+  "id": "q-en-slow-072",
+  "type": "choice",
+  "level": 2,
+  "q": "She (poradziła mi) ___ to rest more.",
+  "options": [
+   "advised me",
+   "adviced me",
+   "advised to me"
+  ],
+  "answer": 0,
+  "explain": "Advise + osoba + to + bezokolicznik."
+ },
+ {
+  "id": "q-en-slow-073",
+  "type": "choice",
+  "level": 1,
+  "q": "It is (ważne) ___ to be honest.",
+  "options": [
+   "important",
+   "importance",
+   "importantly"
+  ],
+  "answer": 0,
+  "explain": "Przymiotnik po it is: important."
+ },
+ {
+  "id": "q-en-slow-074",
+  "type": "choice",
+  "level": 1,
+  "q": "(Ile razy) ___ have you been to London?",
+  "options": [
+   "How often times",
+   "How much times",
+   "How many times"
+  ],
+  "answer": 2,
+  "explain": "Pytanie o liczbę razy: How many times ...?"
+ },
+ {
+  "id": "q-en-slow-075",
+  "type": "choice",
+  "level": 1,
+  "q": "I (tęsknię za) ___ my friends from the old school.",
+  "options": [
+   "lack",
+   "miss",
+   "lose"
+  ],
+  "answer": 1,
+  "explain": "Miss = tęsknić za."
+ },
+ {
+  "id": "q-en-slow-076",
+  "type": "write",
+  "level": 1,
+  "q": "Fresh bread and rolls are sold at the b _ _ e _ y.",
+  "answers": [
+   "bakery"
+  ],
+  "explain": "Bakery – piekarnia."
+ },
+ {
+  "id": "q-en-slow-077",
+  "type": "write",
+  "level": 2,
+  "q": "I bought a small s _ _ v _ _ _ r from my holiday in Spain.",
+  "answers": [
+   "souvenir"
+  ],
+  "explain": "Souvenir – pamiątka."
+ },
+ {
+  "id": "q-en-slow-078",
+  "type": "write",
+  "level": 2,
+  "q": "There was a big spider on the c _ _ l _ _ g of my room.",
+  "answers": [
+   "ceiling"
+  ],
+  "explain": "Ceiling – sufit."
+ },
+ {
+  "id": "q-en-slow-079",
+  "type": "write",
+  "level": 2,
+  "q": "I wrote the date of the exam in my c _ _ e _ _ _ r.",
+  "answers": [
+   "calendar"
+  ],
+  "explain": "Calendar – kalendarz."
+ },
+ {
+  "id": "q-en-slow-080",
+  "type": "write",
+  "level": 2,
+  "q": "Do not walk in the road; use the p _ _ e _ _ _ t.",
+  "answers": [
+   "pavement"
+  ],
+  "explain": "Pavement – chodnik (UK)."
+ },
+ {
+  "id": "q-en-slow-081",
+  "type": "write",
+  "level": 1,
+  "q": "She wore a warm s _ _ r _ around her neck.",
+  "answers": [
+   "scarf"
+  ],
+  "explain": "Scarf – szalik."
+ },
+ {
+  "id": "q-en-slow-082",
+  "type": "write",
+  "level": 1,
+  "q": "The most important meal of the day is b _ _ a _ _ _ _ t.",
+  "answers": [
+   "breakfast"
+  ],
+  "explain": "Breakfast – śniadanie."
+ },
+ {
+  "id": "q-en-slow-083",
+  "type": "write",
+  "level": 2,
+  "q": "We picked some m _ _ h _ _ _ _ s in the forest for soup.",
+  "answers": [
+   "mushrooms"
+  ],
+  "explain": "Mushrooms – grzyby (liczba mnoga)."
+ },
+ {
+  "id": "q-en-slow-084",
+  "type": "write",
+  "level": 2,
+  "q": "The e _ _ _ h _ _ _ _ e destroyed many houses in the town.",
+  "answers": [
+   "earthquake"
+  ],
+  "explain": "Earthquake – trzęsienie ziemi."
+ },
+ {
+  "id": "q-en-slow-085",
+  "type": "write",
+  "level": 3,
+  "q": "I work with my c _ _ _ e _ _ _ e in the same office.",
+  "answers": [
+   "colleague"
+  ],
+  "explain": "Colleague – kolega z pracy."
+ },
+ {
+  "id": "q-en-slow-086",
+  "type": "write",
+  "level": 3,
+  "q": "He uses a w _ _ _ l _ _ _ _ r because his legs are weak.",
+  "answers": [
+   "wheelchair"
+  ],
+  "explain": "Wheelchair – wózek inwalidzki."
+ },
+ {
+  "id": "q-en-slow-087",
+  "type": "write",
+  "level": 1,
+  "q": "The t _ _ e _ stole my wallet on the bus.",
+  "answers": [
+   "thief"
+  ],
+  "explain": "Thief – złodziej."
+ },
+ {
+  "id": "q-en-slow-088",
+  "type": "write",
+  "level": 2,
+  "q": "She does not eat meat; she is a v _ _ e _ _ _ _ _ n.",
+  "answers": [
+   "vegetarian"
+  ],
+  "explain": "Vegetarian – wegetarianin."
+ },
+ {
+  "id": "q-en-slow-089",
+  "type": "write",
+  "level": 3,
+  "q": "Today is my parents' wedding a _ _ _ v _ _ _ _ _ y.",
+  "answers": [
+   "anniversary"
+  ],
+  "explain": "Anniversary – rocznica."
+ },
+ {
+  "id": "q-en-slow-090",
+  "type": "write",
+  "level": 2,
+  "q": "Each p _ _ _ e _ _ _ r must show a ticket.",
+  "answers": [
+   "passenger"
+  ],
+  "explain": "Passenger – pasażer."
  }
 ]

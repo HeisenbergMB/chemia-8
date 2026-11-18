@@ -816,5 +816,528 @@
   ],
   "answer": 1,
   "explain": "Strona bierna w Past Simple: was sent."
+ },
+ {
+  "id": "q-en-rgram-065",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (1)",
+  "group": "g-en-rgram-03",
+  "gap": 1,
+  "answers": [
+   "did"
+  ],
+  "explain": "Past Simple w przeczeniu: did not arrive."
+ },
+ {
+  "id": "q-en-rgram-066",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (2)",
+  "group": "g-en-rgram-03",
+  "gap": 2,
+  "answers": [
+   "so",
+   "and"
+  ],
+  "explain": "Skutek: expensive, so only rich people could afford it."
+ },
+ {
+  "id": "q-en-rgram-067",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (3)",
+  "group": "g-en-rgram-03",
+  "gap": 3,
+  "answers": [
+   "was"
+  ],
+  "explain": "Past Continuous: almost everybody was drinking it."
+ },
+ {
+  "id": "q-en-rgram-068",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (4)",
+  "group": "g-en-rgram-03",
+  "gap": 4,
+  "answers": [
+   "in",
+   "into"
+  ],
+  "explain": "Put milk in/into the tea."
+ },
+ {
+  "id": "q-en-rgram-069",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (5)",
+  "group": "g-en-rgram-03",
+  "gap": 5,
+  "answers": [
+   "to"
+  ],
+  "explain": "Cel: added to protect – dodano, aby chronić."
+ },
+ {
+  "id": "q-en-rgram-070",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (6)",
+  "group": "g-en-rgram-03",
+  "gap": 6,
+  "answers": [
+   "say",
+   "think",
+   "believe",
+   "claim",
+   "suggest",
+   "argue"
+  ],
+  "explain": "Others say/think/believe that ... – inni twierdzą, że ..."
+ },
+ {
+  "id": "q-en-rgram-071",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (7)",
+  "group": "g-en-rgram-03",
+  "gap": 7,
+  "answers": [
+   "is"
+  ],
+  "explain": "Present Simple: tea is still very popular."
+ },
+ {
+  "id": "q-en-rgram-072",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (8)",
+  "group": "g-en-rgram-03",
+  "gap": 8,
+  "answers": [
+   "among",
+   "with"
+  ],
+  "explain": "Especially among/with young people – zwłaszcza wśród młodych."
+ },
+ {
+  "id": "q-en-rgram-073",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (9)",
+  "group": "g-en-rgram-03",
+  "gap": 9,
+  "answers": [
+   "without"
+  ],
+  "explain": "Start the day without a cup of tea – zacząć dzień bez herbaty."
+ },
+ {
+  "id": "q-en-rgram-074",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (10)",
+  "group": "g-en-rgram-03",
+  "gap": 10,
+  "answers": [
+   "a"
+  ],
+  "explain": "A symbol – rzeczownik policzalny w liczbie pojedynczej."
+ },
+ {
+  "id": "q-en-rgram-075",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (11)",
+  "group": "g-en-rgram-03",
+  "gap": 11,
+  "answers": [
+   "as"
+  ],
+  "explain": "As soon as – jak tylko."
+ },
+ {
+  "id": "q-en-rgram-076",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (12)",
+  "group": "g-en-rgram-03",
+  "gap": 12,
+  "answers": [
+   "more"
+  ],
+  "explain": "Stopień wyższy: growing more popular."
+ },
+ {
+  "id": "q-en-rgram-077",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (13)",
+  "group": "g-en-rgram-03",
+  "gap": 13,
+  "answers": [
+   "a"
+  ],
+  "explain": "Offer a choice of – oferować wybór."
+ },
+ {
+  "id": "q-en-rgram-078",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (14)",
+  "group": "g-en-rgram-03",
+  "gap": 14,
+  "answers": [
+   "no"
+  ],
+  "explain": "Stałe wyrażenie: no matter how – bez względu na to, jak."
+ },
+ {
+  "id": "q-en-rgram-079",
+  "type": "write",
+  "level": 2,
+  "q": "Does reading comics interest your brother? (FOND)\nIs your brother ___ comics?",
+  "keyword": "fond",
+  "maxWords": 5,
+  "answers": [
+   "fond of reading"
+  ],
+  "explain": "Be fond of + -ing = lubić."
+ },
+ {
+  "id": "q-en-rgram-080",
+  "type": "write",
+  "level": 3,
+  "q": "Not many people came to the party. (ONLY)\nThere ___ people at the party.",
+  "keyword": "only",
+  "maxWords": 5,
+  "answers": [
+   "were only a few"
+  ],
+  "explain": "Only a few = tylko kilka osób."
+ },
+ {
+  "id": "q-en-rgram-081",
+  "type": "write",
+  "level": 2,
+  "q": "As a child, she regularly visited her grandmother on Sundays. (WOULD)\nAs a child, she ___ her grandmother on Sundays.",
+  "keyword": "would",
+  "maxWords": 5,
+  "answers": [
+   "would visit",
+   "would regularly visit",
+   "would often visit"
+  ],
+  "explain": "Dawny, powtarzający się zwyczaj: would + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-082",
+  "type": "write",
+  "level": 3,
+  "q": "Is it all right if I open the window? (MIND)\nDo you ___ the window?",
+  "keyword": "mind",
+  "maxWords": 5,
+  "answers": [
+   "mind if I open",
+   "mind my opening"
+  ],
+  "explain": "Do you mind if I + Present Simple?"
+ },
+ {
+  "id": "q-en-rgram-083",
+  "type": "write",
+  "level": 3,
+  "q": "Cooking dinner usually takes me an hour. (SPEND)\nI usually ___ dinner.",
+  "keyword": "spend",
+  "maxWords": 5,
+  "answers": [
+   "spend an hour cooking"
+  ],
+  "explain": "Spend + czas + -ing."
+ },
+ {
+  "id": "q-en-rgram-084",
+  "type": "write",
+  "level": 3,
+  "q": "A mechanic is checking my bike now. (BEING)\nMy bike ___ now.",
+  "keyword": "being",
+  "maxWords": 5,
+  "answers": [
+   "is being checked"
+  ],
+  "explain": "Strona bierna w Present Continuous: is being checked."
+ },
+ {
+  "id": "q-en-rgram-085",
+  "type": "write",
+  "level": 3,
+  "q": "You promised to call me last night, but you did not. (SHOULD)\nYou ___ me last night.",
+  "keyword": "should",
+  "maxWords": 5,
+  "answers": [
+   "should have called"
+  ],
+  "explain": "Should have + III forma: zaniedbanie w przeszłości."
+ },
+ {
+  "id": "q-en-rgram-086",
+  "type": "write",
+  "level": 3,
+  "q": "You should have applied for the job long ago. (HIGH)\nIt is ___ for the job.",
+  "keyword": "high",
+  "maxWords": 5,
+  "answers": [
+   "high time you applied"
+  ],
+  "explain": "It is high time + Past Simple."
+ },
+ {
+  "id": "q-en-rgram-087",
+  "type": "write",
+  "level": 3,
+  "q": "I will always find it hard to accept his decision. (USED)\nI will never ___ his decision.",
+  "keyword": "used",
+  "maxWords": 5,
+  "answers": [
+   "get used to"
+  ],
+  "explain": "Get used to + rzeczownik/-ing = przyzwyczaić się."
+ },
+ {
+  "id": "q-en-rgram-088",
+  "type": "write",
+  "level": 3,
+  "q": "'I broke the vase,' said Lucy. (ADMITTED)\nLucy ___ the vase.",
+  "keyword": "admitted",
+  "maxWords": 5,
+  "answers": [
+   "admitted breaking",
+   "admitted having broken",
+   "admitted to breaking"
+  ],
+  "explain": "Admit + -ing / having + III forma."
+ },
+ {
+  "id": "q-en-rgram-089",
+  "type": "write",
+  "level": 3,
+  "q": "He was not invited, so he did not go to the party. (HAD)\nHe would have gone to the party if he ___.",
+  "keyword": "had",
+  "maxWords": 5,
+  "answers": [
+   "had been invited"
+  ],
+  "explain": "III okres warunkowy: if + Past Perfect (had been invited)."
+ },
+ {
+  "id": "q-en-rgram-090",
+  "type": "choice",
+  "level": 1,
+  "q": "___ any tickets left for tonight's concert?",
+  "options": [
+   "Is there",
+   "Are there",
+   "Have there",
+   "Do there"
+  ],
+  "answer": 1,
+  "explain": "Tickets to liczba mnoga: Are there any ...?"
+ },
+ {
+  "id": "q-en-rgram-091",
+  "type": "choice",
+  "level": 2,
+  "q": "Could you tell me ___ a bank near here?",
+  "options": [
+   "is there",
+   "there is",
+   "whether is there",
+   "if there is"
+  ],
+  "answer": 3,
+  "explain": "Pytanie pośrednie: if + szyk twierdzący."
+ },
+ {
+  "id": "q-en-rgram-092",
+  "type": "choice",
+  "level": 2,
+  "q": "She decided to leave early ___ the traffic.",
+  "options": [
+   "avoiding",
+   "to avoid",
+   "for avoid",
+   "avoid"
+  ],
+  "answer": 1,
+  "explain": "Cel: to avoid + rzeczownik."
+ },
+ {
+  "id": "q-en-rgram-093",
+  "type": "choice",
+  "level": 3,
+  "q": "How long ___ in this city?",
+  "options": [
+   "do you live",
+   "are you living",
+   "did you live",
+   "have you been living"
+  ],
+  "answer": 3,
+  "explain": "Czynność trwająca do teraz: Present Perfect Continuous."
+ },
+ {
+  "id": "q-en-rgram-094",
+  "type": "choice",
+  "level": 2,
+  "q": "He is not used ___ up so early.",
+  "options": [
+   "to get",
+   "for getting",
+   "to getting",
+   "at getting"
+  ],
+  "answer": 2,
+  "explain": "Be used to + -ing."
+ },
+ {
+  "id": "q-en-rgram-095",
+  "type": "choice",
+  "level": 1,
+  "q": "If it ___ tomorrow, we will cancel the picnic.",
+  "options": [
+   "rains",
+   "will rain",
+   "would rain",
+   "rained"
+  ],
+  "answer": 0,
+  "explain": "I okres warunkowy: If + Present Simple."
+ },
+ {
+  "id": "q-en-rgram-096",
+  "type": "choice",
+  "level": 1,
+  "q": "I have not seen him ___ Monday.",
+  "options": [
+   "for",
+   "from",
+   "since",
+   "during"
+  ],
+  "answer": 2,
+  "explain": "Since + moment w czasie."
+ },
+ {
+  "id": "q-en-rgram-097",
+  "type": "choice",
+  "level": 1,
+  "q": "She apologised ___ being late.",
+  "options": [
+   "for",
+   "of",
+   "on",
+   "with"
+  ],
+  "answer": 0,
+  "explain": "Apologise for + -ing."
+ },
+ {
+  "id": "q-en-rgram-098",
+  "type": "choice",
+  "level": 2,
+  "q": "I ___ the film before, so I knew the ending.",
+  "options": [
+   "have seen",
+   "saw",
+   "was seeing",
+   "had seen"
+  ],
+  "answer": 3,
+  "explain": "Czynność wcześniejsza od innej w przeszłości: Past Perfect."
+ },
+ {
+  "id": "q-en-rgram-099",
+  "type": "choice",
+  "level": 1,
+  "q": "They ___ a new house at the moment.",
+  "options": [
+   "build",
+   "are building",
+   "built",
+   "were built"
+  ],
+  "answer": 1,
+  "explain": "Czynność w toku: Present Continuous."
+ },
+ {
+  "id": "q-en-rgram-100",
+  "type": "choice",
+  "level": 1,
+  "q": "You ___ wear a helmet when you ride a bike. It is the law.",
+  "options": [
+   "needn't",
+   "may",
+   "would",
+   "must"
+  ],
+  "answer": 3,
+  "explain": "Obowiązek wynikający z prawa: must."
+ },
+ {
+  "id": "q-en-rgram-101",
+  "type": "choice",
+  "level": 2,
+  "q": "I would rather ___ at home tonight.",
+  "options": [
+   "to stay",
+   "stay",
+   "staying",
+   "stayed"
+  ],
+  "answer": 1,
+  "explain": "Would rather + bezokolicznik bez to."
+ },
+ {
+  "id": "q-en-rgram-102",
+  "type": "choice",
+  "level": 3,
+  "q": "Neither of the boys ___ the answer.",
+  "options": [
+   "knew",
+   "were knowing",
+   "have knowing",
+   "knowing"
+  ],
+  "answer": 0,
+  "explain": "Neither of the boys + czasownik w Past Simple: knew."
+ },
+ {
+  "id": "q-en-rgram-103",
+  "type": "choice",
+  "level": 2,
+  "q": "The more I study, ___ I understand.",
+  "options": [
+   "better",
+   "the best",
+   "the better",
+   "more better"
+  ],
+  "answer": 2,
+  "explain": "Podwójny stopień wyższy: the more ..., the better ..."
+ },
+ {
+  "id": "q-en-rgram-104",
+  "type": "choice",
+  "level": 3,
+  "q": "She told me ___ nobody.",
+  "options": [
+   "not to tell",
+   "not telling",
+   "don't tell",
+   "to telling not"
+  ],
+  "answer": 0,
+  "explain": "Zakaz w mowie zależnej: told + osoba + not to + bezokolicznik."
  }
 ]

@@ -310,5 +310,135 @@
   ],
   "answer": 2,
   "explain": "Dzwon Wolności (Liberty Bell) jest w Filadelfii."
+ },
+ {
+  "id": "q-en-kult-025",
+  "type": "choice",
+  "level": 1,
+  "q": "The Houses of Parliament stand on the banks of the river ...",
+  "options": [
+   "Severn",
+   "Thames",
+   "Mersey"
+  ],
+  "answer": 1,
+  "explain": "Pałac Westminsterski stoi nad Tamizą (Thames)."
+ },
+ {
+  "id": "q-en-kult-026",
+  "type": "choice",
+  "level": 2,
+  "q": "California is nicknamed the ... State.",
+  "options": [
+   "Golden",
+   "Sunshine",
+   "Garden"
+  ],
+  "answer": 0,
+  "explain": "Kalifornia nosi przydomek Golden State."
+ },
+ {
+  "id": "q-en-kult-027",
+  "type": "choice",
+  "level": 2,
+  "q": "Haggis is a traditional dish of ...",
+  "options": [
+   "Wales",
+   "Ireland",
+   "Scotland"
+  ],
+  "answer": 2,
+  "explain": "Haggis to tradycyjna potrawa szkocka."
+ },
+ {
+  "id": "q-en-kult-028",
+  "type": "choice",
+  "level": 3,
+  "q": "The Great Fire destroyed much of London in the year ...",
+  "options": [
+   "1066",
+   "1766",
+   "1666"
+  ],
+  "answer": 2,
+  "explain": "Wielki Pożar Londynu wybuchł w 1666 roku."
+ },
+ {
+  "id": "q-en-kult-029",
+  "type": "choice",
+  "level": 3,
+  "q": "The capital city of the state of Texas is ...",
+  "options": [
+   "Houston",
+   "Austin",
+   "Dallas"
+  ],
+  "answer": 1,
+  "explain": "Stolicą Teksasu jest Austin."
+ },
+ {
+  "id": "q-en-kult-030",
+  "type": "choice",
+  "level": 1,
+  "q": "The Welsh flag shows a red ...",
+  "options": [
+   "dragon",
+   "unicorn",
+   "harp"
+  ],
+  "answer": 0,
+  "explain": "Na fladze Walii jest czerwony smok."
+ },
+ {
+  "id": "q-en-kult-031",
+  "type": "choice",
+  "level": 1,
+  "q": "Which American city is known as 'the Big Apple'?",
+  "options": [
+   "New York",
+   "Chicago",
+   "Boston"
+  ],
+  "answer": 0,
+  "explain": "Przydomek \"Big Apple\" nosi Nowy Jork."
+ },
+ {
+  "id": "q-en-kult-032",
+  "type": "choice",
+  "level": 2,
+  "q": "The Tower of London was originally built as a ...",
+  "options": [
+   "theatre",
+   "hospital",
+   "fortress"
+  ],
+  "answer": 2,
+  "explain": "Tower of London zbudowano jako twierdzę."
+ },
+ {
+  "id": "q-en-kult-033",
+  "type": "choice",
+  "level": 3,
+  "q": "In the USA, Election Day is traditionally held on a ...",
+  "options": [
+   "Sunday",
+   "Tuesday",
+   "Friday"
+  ],
+  "answer": 1,
+  "explain": "Dzień wyborów w USA przypada we wtorek po pierwszym poniedziałku listopada."
+ },
+ {
+  "id": "q-en-kult-034",
+  "type": "choice",
+  "level": 2,
+  "q": "The national symbol of Scotland is the ...",
+  "options": [
+   "daffodil",
+   "thistle",
+   "shamrock"
+  ],
+  "answer": 1,
+  "explain": "Symbolem Szkocji jest oset (thistle); żonkil to Walia, koniczyna – Irlandia."
  }
 ]

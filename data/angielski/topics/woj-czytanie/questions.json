@@ -529,5 +529,340 @@
   ],
   "answer": 0,
   "explain": "Akapit 1: władze wielu miast wolą nowoczesną zabudowę."
+ },
+ {
+  "id": "q-en-wczyt-033",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (1)",
+  "group": "g-en-wczyt-05",
+  "gap": 1,
+  "answer": 4,
+  "explain": "Zdanie o tym, że rodzina nie spodziewała się kariery kucharskiej, poprzedza \"She enjoyed talking to customers, but...\"."
+ },
+ {
+  "id": "q-en-wczyt-034",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (2)",
+  "group": "g-en-wczyt-05",
+  "gap": 2,
+  "answer": 2,
+  "explain": "Po przerabianiu warzyw na zupy pasuje zdanie o wieści rozchodzącej się po okolicy; dalej ludzie pukają do drzwi."
+ },
+ {
+  "id": "q-en-wczyt-035",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (3)",
+  "group": "g-en-wczyt-05",
+  "gap": 3,
+  "answer": 7,
+  "explain": "Blogger odwiedził stoisko; fragment opisuje, że spróbował zupy, a dalej mowa o napisanym przez niego artykule."
+ },
+ {
+  "id": "q-en-wczyt-036",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (4)",
+  "group": "g-en-wczyt-05",
+  "gap": 4,
+  "answer": 5,
+  "explain": "Po \"Success, however, came with problems\" pasuje przykład problemu: za mała kuchnia na tyle zamówień."
+ },
+ {
+  "id": "q-en-wczyt-037",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (5)",
+  "group": "g-en-wczyt-05",
+  "gap": 5,
+  "answer": 0,
+  "explain": "\"Instead of giving her a long lecture\" nawiązuje do właściciela, który okazał się życzliwszy, niż Maya się obawiała."
+ },
+ {
+  "id": "q-en-wczyt-038",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (6)",
+  "group": "g-en-wczyt-05",
+  "gap": 6,
+  "answer": 8,
+  "explain": "Fragment o hałaśliwej kuchni i codziennej nauce łączy zdanie o szybkiej nauce z podsumowaniem po roku."
+ },
+ {
+  "id": "q-en-wczyt-039",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (7)",
+  "group": "g-en-wczyt-05",
+  "gap": 7,
+  "answer": 3,
+  "explain": "Po niespodziewanej ofercie pasuje jej treść: wynajem lokalu za niską cenę; potem Maya się waha."
+ },
+ {
+  "id": "q-en-wczyt-040",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (8)",
+  "group": "g-en-wczyt-05",
+  "gap": 8,
+  "answer": 6,
+  "explain": "Zdanie o pochwałach krytyków wyjaśnia, dlaczego restauracja jest pełna, a potem wraca motyw brzydkich marchewek."
+ },
+ {
+  "id": "q-en-wczyt-041",
+  "type": "choice",
+  "level": 2,
+  "q": "Which person started the habit after a friend challenged them?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 1,
+  "explain": "Marek zaczął pływać po tym, jak przyjaciel namówił go, żeby spróbował zimnej wody."
+ },
+ {
+  "id": "q-en-wczyt-042",
+  "type": "choice",
+  "level": 2,
+  "q": "Which person keeps a project secret from colleagues?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 0,
+  "explain": "Priya pisze powieść, o której nikt w biurze nie wie."
+ },
+ {
+  "id": "q-en-wczyt-043",
+  "type": "choice",
+  "level": 2,
+  "q": "Which person was doubtful about the activity at first?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 2,
+  "explain": "Hannah była bardzo sceptyczna, bo uczniowie rzadko siedzą cicho."
+ },
+ {
+  "id": "q-en-wczyt-044",
+  "type": "choice",
+  "level": 2,
+  "q": "Which person says that the routine makes family meals difficult?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 3,
+  "explain": "Carlos kładzie się o szóstej i traci większość rodzinnych obiadów."
+ },
+ {
+  "id": "q-en-wczyt-045",
+  "type": "choice",
+  "level": 1,
+  "q": "Which person cannot keep a pet at home?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 4,
+  "explain": "Julia nie może trzymać zwierzęcia w pokoju, więc pomaga w schronisku."
+ },
+ {
+  "id": "q-en-wczyt-046",
+  "type": "choice",
+  "level": 2,
+  "q": "Which person got the idea from a magazine?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 2,
+  "explain": "Hannah przeczytała o pięciu minutach ciszy w czasopiśmie."
+ },
+ {
+  "id": "q-en-wczyt-047",
+  "type": "choice",
+  "level": 2,
+  "q": "Which person started the habit because of a health problem?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 1,
+  "explain": "Marek zaczął po urazie pleców, kiedy lekarz zalecił łagodne ćwiczenia."
+ },
+ {
+  "id": "q-en-wczyt-048",
+  "type": "choice",
+  "level": 2,
+  "q": "Which person does not drink coffee in the morning?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 0,
+  "explain": "Priya mówi, że pisanie budzi ją lepiej niż kofeina."
+ },
+ {
+  "id": "q-en-wczyt-049",
+  "type": "choice",
+  "level": 2,
+  "q": "Which person enjoys the quiet of the city at an unusual hour?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 3,
+  "explain": "Carlos lubi puste ulice i ciszę miasta o świcie."
+ },
+ {
+  "id": "q-en-wczyt-050",
+  "type": "choice",
+  "level": 3,
+  "q": "Which person has experienced disappointment connected with their work?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 0,
+  "explain": "Pierwsza książka Priyi została odrzucona przez kilku wydawców."
+ },
+ {
+  "id": "q-en-wczyt-051",
+  "type": "choice",
+  "level": 2,
+  "q": "Which person is thinking of a future profession connected with the activity?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 4,
+  "explain": "Julia chce zostać weterynarzem."
+ },
+ {
+  "id": "q-en-wczyt-052",
+  "type": "choice",
+  "level": 3,
+  "q": "Which person was asked by others to continue the activity?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 2,
+  "explain": "Uczniowie przypomnieli Hannah o ciszy, gdy raz zapomniała."
+ },
+ {
+  "id": "q-en-wczyt-053",
+  "type": "choice",
+  "level": 3,
+  "q": "Which person is helped by a member of the family during the day?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 3,
+  "explain": "Żona Carlosa przynosi mu obiad w południe."
+ },
+ {
+  "id": "q-en-wczyt-054",
+  "type": "choice",
+  "level": 2,
+  "q": "Which person's doctor was surprised by the results?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 1,
+  "explain": "Lekarz Marka nie może uwierzyć, jak bardzo poprawiło się jego samopoczucie."
+ },
+ {
+  "id": "q-en-wczyt-055",
+  "type": "choice",
+  "level": 1,
+  "q": "Which person spends the time helping animals?",
+  "group": "g-en-wczyt-06",
+  "fixed": true,
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "answer": 4,
+  "explain": "Julia wyprowadza psy w schronisku dla zwierząt."
  }
 ]

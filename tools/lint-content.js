@@ -11,7 +11,7 @@ const STOP = new Set(['the', 'a', 'an', 'to', 'of', 'in', 'on', 'at', 'for', 'is
 /** Wszystkie ciągi pojedynczych znaków rozdzielonych spacjami zawierające `_` (wzór słowa: „n _ _ g _ _ s”). */
 function letterRuns(q) {
   const runs = [];
-  const re = /(?:^|\s)((?:[A-Za-z_] ){2,}[A-Za-z_])(?=[\s.,;!?)]|$)/g;
+  const re = /(?:^|\s)((?:[A-Za-z_] ){2,}[A-Za-z_])(?=[\s.,;:!?)]|$)/g;
   let m;
   while ((m = re.exec(q))) if (m[1].includes('_')) runs.push(m[1].split(' '));
   return runs;

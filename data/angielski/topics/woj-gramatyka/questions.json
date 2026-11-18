@@ -918,5 +918,274 @@
   ],
   "answer": 3,
   "explain": "Deny + having + III forma: zaprzeczać, że się było."
+ },
+ {
+  "id": "q-en-wgram-071",
+  "type": "write",
+  "level": 2,
+  "q": "Everybody expects the new bridge to open in May. (EXPECTED)\nThe new bridge ___ open in May.",
+  "keyword": "expected",
+  "maxWords": 5,
+  "answers": [
+   "is expected to"
+  ],
+  "explain": "Konstrukcja bezosobowa: is expected to + bezokolicznik."
+ },
+ {
+  "id": "q-en-wgram-072",
+  "type": "write",
+  "level": 2,
+  "q": "I have not got enough money to buy this laptop. (AFFORD)\nI ___ this laptop.",
+  "keyword": "afford",
+  "maxWords": 5,
+  "answers": [
+   "cannot afford",
+   "can't afford",
+   "am unable to afford",
+   "can not afford"
+  ],
+  "explain": "Afford = pozwolić sobie finansowo na; zwykle z can/cannot."
+ },
+ {
+  "id": "q-en-wgram-073",
+  "type": "write",
+  "level": 3,
+  "q": "She was so shy that she did not say a word. (SUCH)\nShe ___ girl that she did not say a word.",
+  "keyword": "such",
+  "maxWords": 5,
+  "answers": [
+   "was such a shy"
+  ],
+  "explain": "Such + a + przymiotnik + rzeczownik."
+ },
+ {
+  "id": "q-en-wgram-074",
+  "type": "write",
+  "level": 2,
+  "q": "Tom started working here in 2020. (SINCE)\nTom ___ 2020.",
+  "keyword": "since",
+  "maxWords": 5,
+  "answers": [
+   "has worked here since",
+   "has been working here since"
+  ],
+  "explain": "Present Perfect z since: has worked / has been working here since 2020."
+ },
+ {
+  "id": "q-en-wgram-075",
+  "type": "write",
+  "level": 2,
+  "q": "Perhaps Jane has missed the train. (MAY)\nJane ___ the train.",
+  "keyword": "may",
+  "maxWords": 5,
+  "answers": [
+   "may have missed"
+  ],
+  "explain": "Możliwość dotycząca przeszłości: may have + III forma."
+ },
+ {
+  "id": "q-en-wgram-076",
+  "type": "write",
+  "level": 3,
+  "q": "It was a mistake to leave the door open. (SHOULD)\nWe ___ the door open.",
+  "keyword": "should",
+  "maxWords": 5,
+  "answers": [
+   "should not have left",
+   "shouldn't have left"
+  ],
+  "explain": "Krytyka przeszłości: should not have + III forma."
+ },
+ {
+  "id": "q-en-wgram-077",
+  "type": "write",
+  "level": 3,
+  "q": "The film began before we reached the cinema. (ALREADY)\nThe film ___ when we reached the cinema.",
+  "keyword": "already",
+  "maxWords": 5,
+  "answers": [
+   "had already begun",
+   "had already started"
+  ],
+  "explain": "Past Perfect z already: czynność wcześniejsza od innej."
+ },
+ {
+  "id": "q-en-wgram-078",
+  "type": "write",
+  "level": 3,
+  "q": "Peter said that he had not stolen the money. (DENIED)\nPeter ___ the money.",
+  "keyword": "denied",
+  "maxWords": 5,
+  "answers": [
+   "denied stealing",
+   "denied having stolen"
+  ],
+  "explain": "Deny + -ing lub deny having + III forma."
+ },
+ {
+  "id": "q-en-wgram-079",
+  "type": "write",
+  "level": 3,
+  "q": "They will meet us at the airport after we arrive. (ONCE)\nThey will meet us at the airport ___ arrived.",
+  "keyword": "once",
+  "maxWords": 5,
+  "answers": [
+   "once we have",
+   "once we've"
+  ],
+  "explain": "Once + Present Perfect = gdy tylko, po tym jak."
+ },
+ {
+  "id": "q-en-wgram-080",
+  "type": "write",
+  "level": 3,
+  "q": "Without his help, I would have failed. (FOR)\nIf it ___ his help, I would have failed.",
+  "keyword": "for",
+  "maxWords": 5,
+  "answers": [
+   "had not been for",
+   "hadn't been for"
+  ],
+  "explain": "Stałe wyrażenie: If it hadn't been for ... (gdyby nie ...)."
+ },
+ {
+  "id": "q-en-wgram-081",
+  "type": "choice",
+  "level": 2,
+  "q": "She wishes she ___ more time for her hobbies.",
+  "options": [
+   "has",
+   "had",
+   "would have",
+   "will have"
+  ],
+  "answer": 1,
+  "explain": "Wish + Past Simple: żal o teraźniejszość."
+ },
+ {
+  "id": "q-en-wgram-082",
+  "type": "choice",
+  "level": 1,
+  "q": "He apologised ___ the mistake.",
+  "options": [
+   "of",
+   "on",
+   "at",
+   "for"
+  ],
+  "answer": 3,
+  "explain": "Po czasowniku apologise używamy przyimka for."
+ },
+ {
+  "id": "q-en-wgram-083",
+  "type": "choice",
+  "level": 3,
+  "q": "No sooner had I sat down ___ the phone rang.",
+  "options": [
+   "then",
+   "than",
+   "that",
+   "as"
+  ],
+  "answer": 1,
+  "explain": "No sooner ... than."
+ },
+ {
+  "id": "q-en-wgram-084",
+  "type": "choice",
+  "level": 3,
+  "q": "We ___ earlier; now we are stuck in the traffic.",
+  "options": [
+   "should leave",
+   "ought leave",
+   "must leave",
+   "should have left"
+  ],
+  "answer": 3,
+  "explain": "Żal o przeszłość: should have + III forma."
+ },
+ {
+  "id": "q-en-wgram-085",
+  "type": "choice",
+  "level": 3,
+  "q": "The more he talked, ___ I became.",
+  "options": [
+   "angrier",
+   "the most angry",
+   "the angrier",
+   "more angry"
+  ],
+  "answer": 2,
+  "explain": "The more ..., the angrier ..."
+ },
+ {
+  "id": "q-en-wgram-086",
+  "type": "choice",
+  "level": 2,
+  "q": "She denied ___ the money.",
+  "options": [
+   "taking",
+   "to take",
+   "take",
+   "having take"
+  ],
+  "answer": 0,
+  "explain": "Po czasowniku deny używamy formy -ing."
+ },
+ {
+  "id": "q-en-wgram-087",
+  "type": "choice",
+  "level": 3,
+  "q": "It's about time we ___ a new car.",
+  "options": [
+   "buy",
+   "will buy",
+   "bought",
+   "have bought"
+  ],
+  "answer": 2,
+  "explain": "It's about time + Past Simple."
+ },
+ {
+  "id": "q-en-wgram-088",
+  "type": "choice",
+  "level": 2,
+  "q": "Neither the teacher nor the students ___ the answer.",
+  "options": [
+   "knew",
+   "knows",
+   "was knowing",
+   "has known"
+  ],
+  "answer": 0,
+  "explain": "Neither ... nor z podmiotem w liczbie mnogiej; czas przeszły: knew."
+ },
+ {
+  "id": "q-en-wgram-089",
+  "type": "choice",
+  "level": 3,
+  "q": "I'd rather you ___ in the office than at home.",
+  "options": [
+   "work",
+   "will work",
+   "have worked",
+   "worked"
+  ],
+  "answer": 3,
+  "explain": "Would rather + podmiot + Past Simple."
+ },
+ {
+  "id": "q-en-wgram-090",
+  "type": "choice",
+  "level": 3,
+  "q": "Never ___ such a beautiful sunset.",
+  "options": [
+   "I have seen",
+   "have I seen",
+   "I saw",
+   "did I seen"
+  ],
+  "answer": 1,
+  "explain": "Inwersja po never: Never have I seen."
  }
 ]
