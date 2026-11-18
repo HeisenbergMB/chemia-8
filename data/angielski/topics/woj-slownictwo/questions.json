@@ -149,7 +149,8 @@
   "group": "g-en-wslow-01",
   "gap": 2,
   "answers": [
-   "healthy"
+   "healthy",
+   "healthier"
   ],
   "explain": "Przymiotnik od health: healthy."
  },
@@ -271,7 +272,8 @@
   "group": "g-en-wslow-01",
   "gap": 12,
   "answers": [
-   "inventive"
+   "inventive",
+   "invented"
   ],
   "explain": "Przymiotnik od invent: inventive (pomysłowy)."
  },
@@ -373,7 +375,8 @@
   "answers": [
    "Tom can't have said",
    "Tom cannot have said",
-   "Tom couldn't have said"
+   "Tom couldn't have said",
+   "It is impossible for Tom to have said"
   ],
   "explain": "Pewność, że coś nie zaszło: can't/couldn't have + III forma."
  },
@@ -400,7 +403,12 @@
    "have never been treated so well",
    "have never been treated as well",
    "'ve never been treated so well",
-   "'ve never been treated as well"
+   "'ve never been treated as well",
+   "have never been so well treated",
+   "'ve never been so well treated",
+   "have never been as well treated",
+   "had never been treated so well",
+   "had never been so well treated"
   ],
   "explain": "Strona bierna w Present Perfect: have never been treated so well."
  },

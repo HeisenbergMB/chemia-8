@@ -82,7 +82,8 @@
   "gap": 7,
   "answers": [
    "but",
-   "than"
+   "than",
+   "except"
   ],
   "explain": "No other choice but/than to + bezokolicznik."
  },
@@ -123,7 +124,8 @@
   "gap": 10,
   "answers": [
    "some",
-   "many"
+   "many",
+   "several"
   ],
   "explain": "Wyrażenie ilości przed of them: some of them / many of them."
  },
@@ -284,7 +286,8 @@
   "keyword": "warned",
   "maxWords": 5,
   "answers": [
-   "warned us not to touch"
+   "warned us not to touch",
+   "warned us against touching"
   ],
   "explain": "Zakaz w mowie zależnej: warned + osoba + not to + bezokolicznik."
  },
@@ -345,7 +348,8 @@
   "keyword": "whether",
   "maxWords": 5,
   "answers": [
-   "whether I was"
+   "whether I was",
+   "whether I were"
   ],
   "explain": "Pytanie zamknięte w mowie zależnej: whether + szyk twierdzący, czas cofnięty."
  },

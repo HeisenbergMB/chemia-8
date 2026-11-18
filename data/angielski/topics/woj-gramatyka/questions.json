@@ -134,7 +134,8 @@
    "many",
    "some",
    "these",
-   "such"
+   "such",
+   "those"
   ],
   "explain": "In most/many/some cases – w większości/wielu/niektórych przypadkach."
  },
@@ -170,7 +171,9 @@
   "keyword": "running",
   "maxWords": 5,
   "answers": [
-   "are running out of"
+   "are running out of",
+   "are running low on",
+   "are running short of"
   ],
   "explain": "Be running out of = kończyć się."
  },
@@ -182,7 +185,8 @@
   "keyword": "since",
   "maxWords": 5,
   "answers": [
-   "since she wrote"
+   "since she wrote",
+   "since she last wrote"
   ],
   "explain": "It is + okres + since + Past Simple."
  },
@@ -195,7 +199,9 @@
   "maxWords": 5,
   "answers": [
    "otherwise you will miss",
-   "otherwise you'll miss"
+   "otherwise you'll miss",
+   "otherwise you might miss",
+   "otherwise you could miss"
   ],
   "explain": "Otherwise = w przeciwnym razie."
  },
@@ -207,7 +213,8 @@
   "keyword": "apologised",
   "maxWords": 5,
   "answers": [
-   "apologised for breaking"
+   "apologised for breaking",
+   "apologised for having broken"
   ],
   "explain": "Apologise for + -ing."
  },
@@ -267,7 +274,8 @@
   "keyword": "forward",
   "maxWords": 5,
   "answers": [
-   "forward to meeting"
+   "forward to meeting",
+   "forward to seeing"
   ],
   "explain": "Look forward to + -ing."
  },
@@ -279,7 +287,8 @@
   "keyword": "have",
   "maxWords": 5,
   "answers": [
-   "would have taken"
+   "would have taken",
+   "'d have taken"
   ],
   "explain": "III okres warunkowy: would have + III forma."
  },

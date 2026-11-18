@@ -107,3 +107,7 @@ Napisane przeze mnie bez drugiej pary oczu (po 90–100 pytań na etap). Najbard
 - **Idiomy** (`woj-slownictwo`) i **tłumaczenie fragmentów** (klucze z wieloma wariantami).
 - **Pytania o święta i sławne osoby** (`rej-kultura`, `woj-kultura`): fakty uważam za pewne (m.in. Juneteenth 19 czerwca, Presidents' Day w lutym, Amelia Earhart pierwsza kobieta w samotnym locie przez Atlantyk).
 - Dwa nowe teksty rejonowe i trzy wojewódzkie w ćwiczeniach są wymyślone i tak oznaczone.
+
+## Ślepy przegląd arkuszy (angielski)
+Trzy arkusze (szkolny, rejonowy, wojewódzki – po 100 zadań) rozwiązało niezależnie, bez wglądu w klucz, trzech osobnych agentów (ten sam model co autor treści). Zgodność z kluczem: 297 z 300. Rozbieżności i sensowne warianty odpowiedzi dopisano do kluczy (37 wariantów). Pytania wyboru: żadnego zgłoszenia „dwie poprawne odpowiedzi”.
+**Ograniczenie:** to ten sam model, więc błędy wynikające z jego wspólnych słabych punktów (zwłaszcza fakty o UK i USA, rzadkie idiomy, wyczucie naturalności) mogły nie zostać wykryte. Przegląd przez nauczyciela dalej jest potrzebny; ta lista powyżej wskazuje, co sprawdzić w pierwszej kolejności.

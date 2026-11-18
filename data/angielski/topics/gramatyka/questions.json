@@ -36,7 +36,8 @@
   "q": "Do you think you (ever/able/speak) ___ Japanese fluently?",
   "answers": [
    "will ever be able to speak",
-   "would ever be able to speak"
+   "would ever be able to speak",
+   "are ever going to be able to speak"
   ],
   "explain": "Przyszła zdolność: will be able to; ever stoi po will."
  },
@@ -131,7 +132,12 @@
   "q": "I am not sure (the/store/be) ___ open on Sundays.",
   "answers": [
    "if the store is",
-   "whether the store is"
+   "whether the store is",
+   "the store is",
+   "that the store is",
+   "if the store will be",
+   "whether the store will be",
+   "the store will be"
   ],
   "explain": "Pytanie pośrednie: if/whether + szyk zdania twierdzącego."
  },
@@ -244,7 +250,8 @@
   "level": 2,
   "q": "She fell asleep ___ the film because she was so tired.",
   "answers": [
-   "during"
+   "during",
+   "in"
   ],
   "explain": "During + wydarzenie trwające w czasie: during the film."
  },
@@ -330,7 +337,8 @@
   "level": 2,
   "q": "Her cousin has broken ++his left arm++.",
   "answers": [
-   "What has her cousin broken?"
+   "What has her cousin broken?",
+   "Which arm has her cousin broken?"
   ],
   "explain": "Pytanie o dopełnienie w Present Perfect: What has her cousin broken?"
  },
@@ -362,7 +370,9 @@
   "q": "Peter would like to buy a ++green++ bike.",
   "answers": [
    "What colour bike would Peter like to buy?",
-   "What color bike would Peter like to buy?"
+   "What color bike would Peter like to buy?",
+   "What colour of bike would Peter like to buy?",
+   "What color of bike would Peter like to buy?"
   ],
   "explain": "Pytanie o kolor: What colour bike would Peter like to buy?"
  },
@@ -382,7 +392,8 @@
   "level": 2,
   "q": "Adam needs to take his medicine ++three times a day++.",
   "answers": [
-   "How often does Adam need to take his medicine?"
+   "How often does Adam need to take his medicine?",
+   "How many times a day does Adam need to take his medicine?"
   ],
   "explain": "Pytanie o częstotliwość: How often does Adam need to take ...?"
  },
@@ -404,7 +415,8 @@
   "level": 3,
   "q": "Her parents like ++the first++ season of the series best.",
   "answers": [
-   "Which season of the series do her parents like best?"
+   "Which season of the series do her parents like best?",
+   "Which season of the series do her parents like the best?"
   ],
   "explain": "Pytanie o wybór spośród kilku: Which season ...?"
  },
@@ -439,7 +451,8 @@
   "keyword": "too",
   "maxWords": 5,
   "answers": [
-   "are too few"
+   "are too few",
+   "are far too few"
   ],
   "explain": "Za mało policzalnych rzeczy: too few + liczba mnoga."
  },
