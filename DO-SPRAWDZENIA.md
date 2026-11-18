@@ -91,3 +91,11 @@ Też napisane przeze mnie bez drugiej pary oczu. Szczególnie:
 - **Słowotwórstwo:** organisation/organization i behaviour/behavior przyjmuję w obu pisowniach.
 - **Święta i festiwale** (`rej-kultura`): daty i fakty (Remembrance Day 11 listopada, Martin Luther King Jr. Day – trzeci poniedziałek stycznia, Burns Night 25 stycznia, Dzień Świstaka 2 lutego) uważam za pewne, ale warto potwierdzić w literaturze konkursu.
 - Teksty i dane w zadaniach 1 i 2 są wymyślone i tak oznaczone.
+
+## Angielski (etap wojewódzki, arkusz 1) – do sprawdzenia przez nauczyciela
+Bez drugiej pary oczu. Szczególnie:
+- **Zadanie „który akapit”** (`woj-czytanie`, pytania 9–17): sprawdzić, czy każde pytanie wskazuje jednoznaczny akapit; klucz: 1, 2, 3, 4, 5, 6, 2, 4, 3.
+- **Tłumaczenie na angielski** (`woj-slownictwo`, ostatnie 13 pytań): klucze mają wiele wariantów, ale nie wszystkie możliwe. Uczeń może uznać swoją poprawną odpowiedź w przeglądzie arkusza, jednak warto uzupełnić listy `answers` po konsultacji.
+- **Idiomy:** wszystkie użyte idiomy są powszechne, ale warto potwierdzić, że żaden dystraktor nie pasuje do zdania.
+- **Wiedza ogólna tak/nie** (`woj-kultura`): fakty uważam za pewne (stolice, Darwin, Lincoln, Nightingale, Austen, Aoraki / Mount Cook, Armstrong, Wielka Rafa Koralowa, A. G. Bell urodzony w Szkocji).
+- Teksty w zadaniach 1 i 2 są wymyślone i tak oznaczone.

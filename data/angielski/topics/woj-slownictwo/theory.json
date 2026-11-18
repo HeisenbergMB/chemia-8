@@ -1,0 +1,89 @@
+{
+ "cards": [
+  {
+   "id": "t-en-wslow-01",
+   "title": "Idiomy: jak się ich uczyć",
+   "body": "Idiomu nie da się przetłumaczyć słowo w słowo – ucz się go **w całym zdaniu** i z obrazem.\nPrzykłady: **a piece of cake** (bardzo łatwe), **under the weather** (źle się czuć), **break the ice** (przełamać lody), **cost an arm and a leg** (kosztować fortunę), **let the cat out of the bag** (zdradzić sekret), **hit the books** (zakuwać)."
+  },
+  {
+   "id": "t-en-wslow-02",
+   "title": "Słowotwórstwo w tekście",
+   "body": "W tekście z lukami zwróć uwagę na **część mowy** wymaganą przez zdanie: po przedimku i przymiotniku rzeczownik, przed rzeczownikiem przymiotnik, przy czasowniku przysłówek.\nCzęsto zmienia się też liczba (ingredient → ingredients) i pisownia (create → creativity, relate → relationship)."
+  },
+  {
+   "id": "t-en-wslow-03",
+   "title": "Tłumaczenie fragmentów zdań",
+   "body": "W zadaniu z tłumaczeniem liczy się **poprawna struktura**, nie dosłowność. Typowe pułapki: neither ... nor, the + liczebnik porządkowy + time, Past Perfect Continuous, avoid + -ing w stronie biernej, supposing/suppose, can't have + III forma, tłumaczenie czasu Present Perfect z for/since.",
+   "tip": "Sprawdź, czy tłumaczenie wstawione do zdania jest gramatyczne."
+  }
+ ],
+ "flash": [
+  {
+   "id": "f-en-wslow-01",
+   "front": "a piece of cake",
+   "back": "bułka z masłem, bardzo łatwe"
+  },
+  {
+   "id": "f-en-wslow-02",
+   "front": "under the weather",
+   "back": "niezbyt dobrze się czujący"
+  },
+  {
+   "id": "f-en-wslow-03",
+   "front": "break the ice",
+   "back": "przełamać lody"
+  },
+  {
+   "id": "f-en-wslow-04",
+   "front": "cost an arm and a leg",
+   "back": "kosztować fortunę"
+  },
+  {
+   "id": "f-en-wslow-05",
+   "front": "let the cat out of the bag",
+   "back": "zdradzić sekret"
+  },
+  {
+   "id": "f-en-wslow-06",
+   "front": "hit the books",
+   "back": "intensywnie się uczyć"
+  },
+  {
+   "id": "f-en-wslow-07",
+   "front": "once in a blue moon",
+   "back": "bardzo rzadko"
+  },
+  {
+   "id": "f-en-wslow-08",
+   "front": "the last straw",
+   "back": "kropla, która przepełniła czarę"
+  },
+  {
+   "id": "f-en-wslow-09",
+   "front": "freedom",
+   "back": "rzeczownik od free"
+  },
+  {
+   "id": "f-en-wslow-10",
+   "front": "creativity",
+   "back": "rzeczownik od create"
+  },
+  {
+   "id": "f-en-wslow-11",
+   "front": "inventive",
+   "back": "przymiotnik od invent"
+  },
+  {
+   "id": "f-en-wslow-12",
+   "front": "neither ... nor",
+   "back": "ani ... ani"
+  }
+ ],
+ "groups": [
+  {
+   "id": "g-en-wslow-01",
+   "instruction": "Uzupełnij luki (1–12) odpowiednią formą wyrazu utworzonego od wyrazu podanego w nawiasie (wielkimi literami). Wymagana jest całkowita poprawność pisowni wpisywanych słów. Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+   "text": "The Pleasure of Cooking at Home\n\nCooking at home has become (1)___ (INCREASE) popular over the last few years, partly because people are looking for a (2)___ (HEALTH) alternative to ready meals. A home-cooked dinner is usually cheaper, and it gives you complete (3)___ (FREE) from artificial additives.\n\nFor beginners, the most (4)___ (DISCOURAGE) thing is often the length of recipes. However, an (5)___ (EXPERIENCE) cook can prepare a tasty meal in twenty minutes using only a few (6)___ (INGREDIENT). The secret is good (7)___ (ORGANISE): if you read the whole recipe first and prepare everything in advance, the cooking itself becomes (8)___ (SURPRISE) easy.\n\nCooking can also be a social activity. Sharing a meal with family or friends strengthens (9)___ (RELATION) and creates memories that last. Many people say that the (10)___ (SATISFY) of watching others enjoy a dish they have made themselves is greater than any compliment.\n\nFinally, cooking can be a form of (11)___ (CREATE). Once you are confident, you can change recipes, combine unusual flavours and develop your own (12)___ (INVENT) dishes."
+  }
+ ]
+}

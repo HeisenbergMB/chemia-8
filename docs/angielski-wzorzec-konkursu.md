@@ -40,6 +40,7 @@ Kody poniżej to `TASK_KINDS` w `js/sheets.js` (tam jest źródło prawdy; tabel
 | `question-form` | Zadaj pytanie o podkreśloną część zdania | S | lista akceptowanych |
 | `synonym-replace` | Zwrot najlepiej zastępujący zaznaczony | R | jedna odpowiedź |
 | `culture` | Etap szkolny: 10 pytań o geografię i atrakcje UK/USA (3 odpowiedzi). Rejonowy: święta i dni UK/USA – uzupełnij nazwę, dopasuj | S R | lista / jedna |
+| `paragraph-matching` | „Który akapit zawiera informację?”: akapity 1–6, ten sam akapit może być odpowiedzią kilka razy | W | jedna odpowiedź |
 | `matching-people` | Teksty o osobach, przyporządkuj A–E (każdy wielokrotnie) | W | jedna odpowiedź |
 | `triple-gap` | Jedno słowo pasuje do 3 zdań (wieloznaczność) | W | lista akceptowanych |
 | `word-box` | Wyrazy z ramki w zmienionej formie, kilka zbędnych | W | lista akceptowanych |

@@ -1,0 +1,466 @@
+[
+ {
+  "id": "q-en-wgram-001",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (1)",
+  "group": "g-en-wgram-01",
+  "gap": 1,
+  "answers": [
+   "a"
+  ],
+  "explain": "Rzeczownik policzalny w liczbie pojedynczej: a luxury."
+ },
+ {
+  "id": "q-en-wgram-002",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (2)",
+  "group": "g-en-wgram-01",
+  "gap": 2,
+  "answers": [
+   "than"
+  ],
+  "explain": "Less than six hours – mniej niż sześć godzin."
+ },
+ {
+  "id": "q-en-wgram-003",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (3)",
+  "group": "g-en-wgram-01",
+  "gap": 3,
+  "answers": [
+   "have"
+  ],
+  "explain": "Present Perfect: Experiments have shown."
+ },
+ {
+  "id": "q-en-wgram-004",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (4)",
+  "group": "g-en-wgram-01",
+  "gap": 4,
+  "answers": [
+   "in"
+  ],
+  "explain": "Stałe wyrażenie: In addition."
+ },
+ {
+  "id": "q-en-wgram-005",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (5)",
+  "group": "g-en-wgram-01",
+  "gap": 5,
+  "answers": [
+   "why"
+  ],
+  "explain": "Which is why = i dlatego; wskazuje na skutek."
+ },
+ {
+  "id": "q-en-wgram-006",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (6)",
+  "group": "g-en-wgram-01",
+  "gap": 6,
+  "answers": [
+   "to"
+  ],
+  "explain": "Cel: what can be done to improve."
+ },
+ {
+  "id": "q-en-wgram-007",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (7)",
+  "group": "g-en-wgram-01",
+  "gap": 7,
+  "answers": [
+   "of"
+  ],
+  "explain": "Keep something out of + miejsce: keeping screens out of the bedroom."
+ },
+ {
+  "id": "q-en-wgram-008",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (8)",
+  "group": "g-en-wgram-01",
+  "gap": 8,
+  "answers": [
+   "because",
+   "as",
+   "since"
+  ],
+  "explain": "Spójnik przyczyny: because (as, since)."
+ },
+ {
+  "id": "q-en-wgram-009",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (9)",
+  "group": "g-en-wgram-01",
+  "gap": 9,
+  "answers": [
+   "if",
+   "when"
+  ],
+  "explain": "Warunek: If you cannot fall asleep ..."
+ },
+ {
+  "id": "q-en-wgram-010",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (10)",
+  "group": "g-en-wgram-01",
+  "gap": 10,
+  "answers": [
+   "rather"
+  ],
+  "explain": "Rather than = zamiast."
+ },
+ {
+  "id": "q-en-wgram-011",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (11)",
+  "group": "g-en-wgram-01",
+  "gap": 11,
+  "answers": [
+   "most",
+   "many",
+   "some",
+   "these",
+   "such"
+  ],
+  "explain": "In most/many/some cases – w większości/wielu/niektórych przypadkach."
+ },
+ {
+  "id": "q-en-wgram-012",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (12)",
+  "group": "g-en-wgram-01",
+  "gap": 12,
+  "answers": [
+   "how"
+  ],
+  "explain": "Pytanie pośrednie: notice how tired they are."
+ },
+ {
+  "id": "q-en-wgram-013",
+  "type": "write",
+  "level": 2,
+  "q": "There were so many cars in the car park that we could not find a space. (FULL)\nThe car park ___ we could not find a space.",
+  "keyword": "full",
+  "maxWords": 5,
+  "answers": [
+   "was so full that"
+  ],
+  "explain": "So + przymiotnik + that: was so full that."
+ },
+ {
+  "id": "q-en-wgram-014",
+  "type": "write",
+  "level": 3,
+  "q": "Our supplies are almost finished. (RUNNING)\nWe ___ supplies.",
+  "keyword": "running",
+  "maxWords": 5,
+  "answers": [
+   "are running out of"
+  ],
+  "explain": "Be running out of = kończyć się."
+ },
+ {
+  "id": "q-en-wgram-015",
+  "type": "write",
+  "level": 3,
+  "q": "She has not written to me for months. (SINCE)\nIt is months ___ to me.",
+  "keyword": "since",
+  "maxWords": 5,
+  "answers": [
+   "since she wrote"
+  ],
+  "explain": "It is + okres + since + Past Simple."
+ },
+ {
+  "id": "q-en-wgram-016",
+  "type": "write",
+  "level": 2,
+  "q": "Leave now or you will miss the train. (OTHERWISE)\nLeave now; ___ the train.",
+  "keyword": "otherwise",
+  "maxWords": 5,
+  "answers": [
+   "otherwise you will miss",
+   "otherwise you'll miss"
+  ],
+  "explain": "Otherwise = w przeciwnym razie."
+ },
+ {
+  "id": "q-en-wgram-017",
+  "type": "write",
+  "level": 3,
+  "q": "Ben said, 'I am sorry that I broke the cup.' (APOLOGISED)\nBen ___ the cup.",
+  "keyword": "apologised",
+  "maxWords": 5,
+  "answers": [
+   "apologised for breaking"
+  ],
+  "explain": "Apologise for + -ing."
+ },
+ {
+  "id": "q-en-wgram-018",
+  "type": "write",
+  "level": 3,
+  "q": "I cannot tolerate his rudeness any longer. (PUT)\nI cannot ___ his rudeness any longer.",
+  "keyword": "put",
+  "maxWords": 5,
+  "answers": [
+   "put up with"
+  ],
+  "explain": "Put up with = tolerować."
+ },
+ {
+  "id": "q-en-wgram-019",
+  "type": "write",
+  "level": 3,
+  "q": "As soon as she saw the mess, she called the cleaner. (SOONER)\nNo ___ the mess than she called the cleaner.",
+  "keyword": "sooner",
+  "maxWords": 5,
+  "answers": [
+   "sooner had she seen"
+  ],
+  "explain": "Inwersja po no sooner: No sooner had she seen ... than."
+ },
+ {
+  "id": "q-en-wgram-020",
+  "type": "write",
+  "level": 2,
+  "q": "She said she would not accept the offer. (TURNED)\nShe ___ the offer.",
+  "keyword": "turned",
+  "maxWords": 5,
+  "answers": [
+   "turned down"
+  ],
+  "explain": "Turn down = odrzucić."
+ },
+ {
+  "id": "q-en-wgram-021",
+  "type": "write",
+  "level": 2,
+  "q": "It is the director's duty to approve the plans. (RESPONSIBLE)\nThe director ___ approving the plans.",
+  "keyword": "responsible",
+  "maxWords": 5,
+  "answers": [
+   "is responsible for"
+  ],
+  "explain": "Be responsible for + -ing."
+ },
+ {
+  "id": "q-en-wgram-022",
+  "type": "write",
+  "level": 2,
+  "q": "I am eager to meet you next week. (FORWARD)\nI am looking ___ you next week.",
+  "keyword": "forward",
+  "maxWords": 5,
+  "answers": [
+   "forward to meeting"
+  ],
+  "explain": "Look forward to + -ing."
+ },
+ {
+  "id": "q-en-wgram-023",
+  "type": "write",
+  "level": 3,
+  "q": "She did not take the job because the salary was low. (HAVE)\nShe ___ the job if the salary had been higher.",
+  "keyword": "have",
+  "maxWords": 5,
+  "answers": [
+   "would have taken"
+  ],
+  "explain": "III okres warunkowy: would have + III forma."
+ },
+ {
+  "id": "q-en-wgram-024",
+  "type": "write",
+  "level": 3,
+  "q": "You do not need to apply before Friday. (NECESSARY)\nIt is ___ before Friday.",
+  "keyword": "necessary",
+  "maxWords": 5,
+  "answers": [
+   "not necessary to apply"
+  ],
+  "explain": "Brak konieczności: It is not necessary to + bezokolicznik."
+ },
+ {
+  "id": "q-en-wgram-025",
+  "type": "choice",
+  "level": 2,
+  "q": "She has ___ her hair cut twice this month.",
+  "options": [
+   "made",
+   "done",
+   "had",
+   "taken"
+  ],
+  "answer": 2,
+  "explain": "Have + dopełnienie + III forma: usługa wykonana przez kogoś."
+ },
+ {
+  "id": "q-en-wgram-026",
+  "type": "choice",
+  "level": 3,
+  "q": "You hardly ever go jogging, ___?",
+  "options": [
+   "do you",
+   "don't you",
+   "aren't you",
+   "did you"
+  ],
+  "answer": 0,
+  "explain": "Hardly ever ma znaczenie przeczące, więc tag jest twierdzący: do you?"
+ },
+ {
+  "id": "q-en-wgram-027",
+  "type": "choice",
+  "level": 3,
+  "q": "The new bridge ___ by the end of next year.",
+  "options": [
+   "will complete",
+   "will be completing",
+   "will have been completed",
+   "has completed"
+  ],
+  "answer": 2,
+  "explain": "Future Perfect w stronie biernej: will have been completed."
+ },
+ {
+  "id": "q-en-wgram-028",
+  "type": "choice",
+  "level": 3,
+  "q": "If only I ___ more carefully, I would not have failed the test.",
+  "options": [
+   "had listened",
+   "listened",
+   "would listen",
+   "have listened"
+  ],
+  "answer": 0,
+  "explain": "If only + Past Perfect: żal o przeszłość."
+ },
+ {
+  "id": "q-en-wgram-029",
+  "type": "choice",
+  "level": 3,
+  "q": "Not only ___ the exam, but she also got the best mark.",
+  "options": [
+   "she passed",
+   "she did pass",
+   "passed she",
+   "did she pass"
+  ],
+  "answer": 3,
+  "explain": "Inwersja po not only: did she pass."
+ },
+ {
+  "id": "q-en-wgram-030",
+  "type": "choice",
+  "level": 3,
+  "q": "I would rather you ___ smoke in here.",
+  "options": [
+   "don't",
+   "didn't",
+   "wouldn't",
+   "haven't"
+  ],
+  "answer": 1,
+  "explain": "Would rather + podmiot + Past Simple: prośba o inne zachowanie."
+ },
+ {
+  "id": "q-en-wgram-031",
+  "type": "choice",
+  "level": 3,
+  "q": "By the time he retires, he ___ for this company for forty years.",
+  "options": [
+   "will work",
+   "has worked",
+   "will be worked",
+   "will have been working"
+  ],
+  "answer": 3,
+  "explain": "Future Perfect Continuous: will have been working."
+ },
+ {
+  "id": "q-en-wgram-032",
+  "type": "choice",
+  "level": 3,
+  "q": "She spoke as if she ___ everything about the case.",
+  "options": [
+   "would know",
+   "knew",
+   "knowing",
+   "known"
+  ],
+  "answer": 1,
+  "explain": "As if + Past Simple: nierzeczywiste porównanie (knew)."
+ },
+ {
+  "id": "q-en-wgram-033",
+  "type": "choice",
+  "level": 2,
+  "q": "He insisted ___ paying for the meal.",
+  "options": [
+   "on",
+   "at",
+   "in",
+   "for"
+  ],
+  "answer": 0,
+  "explain": "Insist on + -ing."
+ },
+ {
+  "id": "q-en-wgram-034",
+  "type": "choice",
+  "level": 3,
+  "q": "I wish I ___ the tickets earlier. Now they are sold out.",
+  "options": [
+   "bought",
+   "would buy",
+   "had bought",
+   "have bought"
+  ],
+  "answer": 2,
+  "explain": "I wish + Past Perfect: żal o przeszłość."
+ },
+ {
+  "id": "q-en-wgram-035",
+  "type": "choice",
+  "level": 3,
+  "q": "The manager, ___ idea it was, refused to change the plan.",
+  "options": [
+   "whose",
+   "which",
+   "who's",
+   "of whom"
+  ],
+  "answer": 0,
+  "explain": "Whose wskazuje na przynależność: whose idea it was."
+ },
+ {
+  "id": "q-en-wgram-036",
+  "type": "choice",
+  "level": 2,
+  "q": "They are said ___ the best team in Europe.",
+  "options": [
+   "being",
+   "to have",
+   "to be",
+   "be"
+  ],
+  "answer": 2,
+  "explain": "Konstrukcja bezosobowa: are said to be."
+ }
+]

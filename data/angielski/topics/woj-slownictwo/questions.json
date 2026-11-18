@@ -1,0 +1,430 @@
+[
+ {
+  "id": "q-en-wslow-001",
+  "type": "choice",
+  "level": 1,
+  "q": "After months of hard work he finally got the job. He is ___!",
+  "options": [
+   "under the weather",
+   "over the moon",
+   "in hot water"
+  ],
+  "answer": 1,
+  "explain": "Over the moon = bardzo szczęśliwy."
+ },
+ {
+  "id": "q-en-wslow-002",
+  "type": "choice",
+  "level": 1,
+  "q": "I can't come today; I am feeling ___.",
+  "options": [
+   "under the weather",
+   "on thin ice",
+   "in the red"
+  ],
+  "answer": 0,
+  "explain": "Under the weather = niezbyt dobrze się czuć."
+ },
+ {
+  "id": "q-en-wslow-003",
+  "type": "choice",
+  "level": 2,
+  "q": "Don't tell him the plan. He can't keep a secret and will ___.",
+  "options": [
+   "break the ice",
+   "hit the roof",
+   "spill the beans"
+  ],
+  "answer": 2,
+  "explain": "Spill the beans = wygadać sekret."
+ },
+ {
+  "id": "q-en-wslow-004",
+  "type": "choice",
+  "level": 2,
+  "q": "Nobody talked at the party until Tom told a joke and ___.",
+  "options": [
+   "missed the boat",
+   "bit the bullet",
+   "broke the ice"
+  ],
+  "answer": 2,
+  "explain": "Break the ice = przełamać lody."
+ },
+ {
+  "id": "q-en-wslow-005",
+  "type": "choice",
+  "level": 2,
+  "q": "I knew it would hurt, but I decided to ___ and tell her the truth.",
+  "options": [
+   "pull her leg",
+   "bite the bullet",
+   "beat around the bush"
+  ],
+  "answer": 1,
+  "explain": "Bite the bullet = zacisnąć zęby i zrobić trudną rzecz."
+ },
+ {
+  "id": "q-en-wslow-006",
+  "type": "choice",
+  "level": 3,
+  "q": "Stop ___ and tell me what really happened!",
+  "options": [
+   "beating around the bush",
+   "biting the bullet",
+   "breaking the ice"
+  ],
+  "answer": 0,
+  "explain": "Beat around the bush = owijać w bawełnę."
+ },
+ {
+  "id": "q-en-wslow-007",
+  "type": "choice",
+  "level": 2,
+  "q": "If you buy a new phone every month, you are just ___.",
+  "options": [
+   "throwing money down the drain",
+   "making ends meet",
+   "saving for a rainy day"
+  ],
+  "answer": 0,
+  "explain": "Throw money down the drain = wyrzucać pieniądze w błoto."
+ },
+ {
+  "id": "q-en-wslow-008",
+  "type": "choice",
+  "level": 3,
+  "q": "Nobody expects any help from Mark. He never ___ to help anyone.",
+  "options": [
+   "keeps his head",
+   "pulls his socks up",
+   "lifts a finger"
+  ],
+  "answer": 2,
+  "explain": "Never lift a finger = palcem nie kiwnąć."
+ },
+ {
+  "id": "q-en-wslow-009",
+  "type": "choice",
+  "level": 1,
+  "q": "The exam was ___ – I finished it in ten minutes.",
+  "options": [
+   "a hot potato",
+   "a piece of cake",
+   "the last straw"
+  ],
+  "answer": 1,
+  "explain": "A piece of cake = bułka z masłem."
+ },
+ {
+  "id": "q-en-wslow-010",
+  "type": "choice",
+  "level": 2,
+  "q": "I have been working all night. I think I will ___ now.",
+  "options": [
+   "spill the beans",
+   "call it a day",
+   "pull someone's leg"
+  ],
+  "answer": 1,
+  "explain": "Call it a day = skończyć na dziś."
+ },
+ {
+  "id": "q-en-wslow-011",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (1)",
+  "group": "g-en-wslow-01",
+  "gap": 1,
+  "answers": [
+   "increasingly"
+  ],
+  "explain": "Przysłówek od increase: increasingly (coraz bardziej)."
+ },
+ {
+  "id": "q-en-wslow-012",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (2)",
+  "group": "g-en-wslow-01",
+  "gap": 2,
+  "answers": [
+   "healthy"
+  ],
+  "explain": "Przymiotnik od health: healthy."
+ },
+ {
+  "id": "q-en-wslow-013",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (3)",
+  "group": "g-en-wslow-01",
+  "gap": 3,
+  "answers": [
+   "freedom"
+  ],
+  "explain": "Rzeczownik od free: freedom (swoboda, wolność)."
+ },
+ {
+  "id": "q-en-wslow-014",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (4)",
+  "group": "g-en-wslow-01",
+  "gap": 4,
+  "answers": [
+   "discouraging"
+  ],
+  "explain": "Przymiotnik od discourage: discouraging (zniechęcający)."
+ },
+ {
+  "id": "q-en-wslow-015",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (5)",
+  "group": "g-en-wslow-01",
+  "gap": 5,
+  "answers": [
+   "experienced"
+  ],
+  "explain": "Przymiotnik od experience: experienced (doświadczony)."
+ },
+ {
+  "id": "q-en-wslow-016",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (6)",
+  "group": "g-en-wslow-01",
+  "gap": 6,
+  "answers": [
+   "ingredients"
+  ],
+  "explain": "Liczba mnoga po a few: ingredients."
+ },
+ {
+  "id": "q-en-wslow-017",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (7)",
+  "group": "g-en-wslow-01",
+  "gap": 7,
+  "answers": [
+   "organisation",
+   "organization"
+  ],
+  "explain": "Rzeczownik od organise: organisation (UK) / organization."
+ },
+ {
+  "id": "q-en-wslow-018",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (8)",
+  "group": "g-en-wslow-01",
+  "gap": 8,
+  "answers": [
+   "surprisingly"
+  ],
+  "explain": "Przysłówek od surprise: surprisingly."
+ },
+ {
+  "id": "q-en-wslow-019",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (9)",
+  "group": "g-en-wslow-01",
+  "gap": 9,
+  "answers": [
+   "relationships",
+   "relations"
+  ],
+  "explain": "Rzeczownik od relate w liczbie mnogiej: relationships."
+ },
+ {
+  "id": "q-en-wslow-020",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (10)",
+  "group": "g-en-wslow-01",
+  "gap": 10,
+  "answers": [
+   "satisfaction"
+  ],
+  "explain": "Rzeczownik od satisfy: satisfaction."
+ },
+ {
+  "id": "q-en-wslow-021",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (11)",
+  "group": "g-en-wslow-01",
+  "gap": 11,
+  "answers": [
+   "creativity"
+  ],
+  "explain": "Rzeczownik od create: creativity."
+ },
+ {
+  "id": "q-en-wslow-022",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (12)",
+  "group": "g-en-wslow-01",
+  "gap": 12,
+  "answers": [
+   "inventive"
+  ],
+  "explain": "Przymiotnik od invent: inventive (pomysłowy)."
+ },
+ {
+  "id": "q-en-wslow-023",
+  "type": "write",
+  "level": 2,
+  "q": "Anna bought (ani chleba, ani masła) ___ yesterday.",
+  "answers": [
+   "neither bread nor butter"
+  ],
+  "explain": "Neither ... nor – ani ... ani."
+ },
+ {
+  "id": "q-en-wslow-024",
+  "type": "write",
+  "level": 2,
+  "q": "It is (trzeci raz) ___ that he has been late this week.",
+  "answers": [
+   "the third time"
+  ],
+  "explain": "Po it is the ... time używamy Present Perfect: the third time that he has been late."
+ },
+ {
+  "id": "q-en-wslow-025",
+  "type": "write",
+  "level": 3,
+  "q": "I (czytałem) ___ for two hours before I noticed that it was dark.",
+  "answers": [
+   "had been reading"
+  ],
+  "explain": "Czynność trwająca przed momentem w przeszłości: Past Perfect Continuous."
+ },
+ {
+  "id": "q-en-wslow-026",
+  "type": "write",
+  "level": 3,
+  "q": "If (nie powiedziałbyś mi) ___ the truth yesterday, I would still be angry.",
+  "answers": [
+   "you hadn't told me",
+   "you had not told me"
+  ],
+  "explain": "Mieszany okres warunkowy: If + Past Perfect, would + bezokolicznik."
+ },
+ {
+  "id": "q-en-wslow-027",
+  "type": "write",
+  "level": 3,
+  "q": "She tried to (uniknąć bycia zauważoną) ___ by the neighbours.",
+  "answers": [
+   "avoid being seen",
+   "avoid being noticed"
+  ],
+  "explain": "Avoid + -ing w stronie biernej: avoid being seen."
+ },
+ {
+  "id": "q-en-wslow-028",
+  "type": "write",
+  "level": 3,
+  "q": "He (od dawna interesuje się) ___ astronomy.",
+  "answers": [
+   "has been interested in",
+   "has long been interested in"
+  ],
+  "explain": "Stan trwający do teraz: has been interested in."
+ },
+ {
+  "id": "q-en-wslow-029",
+  "type": "write",
+  "level": 2,
+  "q": "They are (zastanawiają się nad sprzedażą) ___ their house.",
+  "answers": [
+   "thinking of selling",
+   "thinking about selling",
+   "considering selling"
+  ],
+  "explain": "Think of/about + -ing; consider + -ing."
+ },
+ {
+  "id": "q-en-wslow-030",
+  "type": "write",
+  "level": 3,
+  "q": "(Zakładając, że) ___ I lent you my bike, would you look after it?",
+  "answers": [
+   "Supposing",
+   "Suppose",
+   "Assuming",
+   "Supposing that",
+   "Suppose that",
+   "Assuming that"
+  ],
+  "explain": "Supposing / suppose / assuming (that) – zakładając, że."
+ },
+ {
+  "id": "q-en-wslow-031",
+  "type": "write",
+  "level": 3,
+  "q": "(Niemożliwe, żeby Tom to powiedział) ___ that! He is always polite.",
+  "answers": [
+   "Tom can't have said",
+   "Tom cannot have said",
+   "Tom couldn't have said"
+  ],
+  "explain": "Pewność, że coś nie zaszło: can't/couldn't have + III forma."
+ },
+ {
+  "id": "q-en-wslow-032",
+  "type": "write",
+  "level": 3,
+  "q": "My house is much (bliżej szkoły) ___ than yours.",
+  "answers": [
+   "nearer to school",
+   "closer to school",
+   "nearer the school",
+   "closer to the school",
+   "nearer to the school"
+  ],
+  "explain": "Stopień wyższy: nearer/closer to ... than."
+ },
+ {
+  "id": "q-en-wslow-033",
+  "type": "write",
+  "level": 3,
+  "q": "We (nigdy nie byliśmy tak dobrze traktowani) ___ before.",
+  "answers": [
+   "have never been treated so well",
+   "have never been treated as well",
+   "'ve never been treated so well",
+   "'ve never been treated as well"
+  ],
+  "explain": "Strona bierna w Present Perfect: have never been treated so well."
+ },
+ {
+  "id": "q-en-wslow-034",
+  "type": "write",
+  "level": 3,
+  "q": "I think I (nigdy nie będę w stanie zrozumieć) ___ this rule.",
+  "answers": [
+   "will never be able to understand",
+   "'ll never be able to understand",
+   "shall never be able to understand"
+  ],
+  "explain": "Przyszła zdolność: will never be able to + bezokolicznik."
+ },
+ {
+  "id": "q-en-wslow-035",
+  "type": "write",
+  "level": 2,
+  "q": "Could you tell me (czy wiesz) ___ where the station is?",
+  "answers": [
+   "if you know",
+   "whether you know"
+  ],
+  "explain": "Pytanie pośrednie: if/whether + szyk twierdzący."
+ }
+]

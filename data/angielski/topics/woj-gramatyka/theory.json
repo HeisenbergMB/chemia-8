@@ -1,0 +1,89 @@
+{
+ "cards": [
+  {
+   "id": "t-en-wgram-01",
+   "title": "Inwersja po wyrażeniach przeczących",
+   "body": "Gdy zdanie zaczyna się od wyrażenia przeczącego lub ograniczającego, szyk przechodzi w pytający:\n**Not only did she ... but also** ...; **Hardly had I arrived when** ...; **No sooner had he left than** ...; **Never have I seen** ...; **Only then did we understand**."
+  },
+  {
+   "id": "t-en-wgram-02",
+   "title": "Wish, if only, would rather",
+   "body": "**I wish / If only + Past Simple** – żal o teraźniejszość (I wish I had more time).\n**I wish / If only + Past Perfect** – żal o przeszłość (If only I had listened).\n**I wish + would** – irytacja cudzym zachowaniem (I wish you would stop).\n**would rather + podmiot + Past Simple** – preferencja co do cudzych działań (I'd rather you didn't)."
+  },
+  {
+   "id": "t-en-wgram-03",
+   "title": "Future Perfect i Future Perfect Continuous",
+   "body": "**will have + III forma** – zdarzenie zakończone do momentu w przyszłości: By Friday I will have finished.\n**will have been + -ing** – czas trwania do momentu w przyszłości: By June she will have been working here for ten years.\nW stronie biernej: will have been done."
+  },
+  {
+   "id": "t-en-wgram-04",
+   "title": "Zdania warunkowe mieszane i as if",
+   "body": "**Mieszany okres warunkowy:** If + Past Perfect, would + bezokolicznik – przeszła przyczyna, teraźniejszy skutek: If I had studied, I would be a doctor now.\n**as if / as though + Past Simple** – nierzeczywiste porównanie: He talks as if he owned the place."
+  },
+  {
+   "id": "t-en-wgram-05",
+   "title": "Luki w tekście wojewódzkim",
+   "body": "Poza przyimkami i rodzajnikami pojawiają się **spójniki i konstrukcje stałe**: which is why, rather than, in addition, in most cases, as long as, not only ... but also, whether, no sooner ... than.\nPo wpisaniu słowa przeczytaj całe zdanie; sprawdź, czy nie potrzeba formy skróconej (w lukach nie wolno ich używać).",
+   "tip": "Zadania ze słowem kluczowym: limit 5 wyrazów wliczając podany; skrócenie to jedno słowo."
+  }
+ ],
+ "flash": [
+  {
+   "id": "f-en-wgram-01",
+   "front": "Not only ... ?",
+   "back": "inwersja: Not only did she pass, but ..."
+  },
+  {
+   "id": "f-en-wgram-02",
+   "front": "Hardly had I arrived ...",
+   "back": "when ... (Hardly had I arrived when it started to rain)"
+  },
+  {
+   "id": "f-en-wgram-03",
+   "front": "No sooner had he left ...",
+   "back": "than ..."
+  },
+  {
+   "id": "f-en-wgram-04",
+   "front": "If only + Past Perfect",
+   "back": "żal o przeszłość"
+  },
+  {
+   "id": "f-en-wgram-05",
+   "front": "I wish + Past Simple",
+   "back": "żal o teraźniejszość"
+  },
+  {
+   "id": "f-en-wgram-06",
+   "front": "would rather + podmiot + ?",
+   "back": "Past Simple: I'd rather you left."
+  },
+  {
+   "id": "f-en-wgram-07",
+   "front": "Future Perfect: budowa",
+   "back": "will have + III forma"
+  },
+  {
+   "id": "f-en-wgram-08",
+   "front": "Future Perfect Continuous: budowa",
+   "back": "will have been + -ing"
+  },
+  {
+   "id": "f-en-wgram-09",
+   "front": "as if + ?",
+   "back": "Past Simple (nierzeczywiste): as if he knew"
+  },
+  {
+   "id": "f-en-wgram-10",
+   "front": "which is why",
+   "back": "i dlatego (wprowadza skutek)"
+  }
+ ],
+ "groups": [
+  {
+   "id": "g-en-wgram-01",
+   "instruction": "Przeczytaj poniższy tekst. Uzupełnij każdą lukę (1–12) JEDNYM wyrazem, tak aby otrzymać spójny i poprawny językowo tekst. Wymagana jest całkowita poprawność pisowni. Nie wolno używać skróceń (isn't, can't itd.). Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+   "text": "Sleep: the forgotten foundation of health\n\nIn a world that rewards constant activity, many people treat sleep as (1)___ luxury rather than a necessity. Doctors, however, warn that regularly sleeping less (2)___ six hours a night can seriously damage our health.\n\nDuring sleep, the body repairs itself and the brain sorts the information it has collected during the day. Experiments (3)___ shown that students who sleep well remember new facts far better than those who stay up all night. (4)___ addition, lack of sleep makes it harder to control emotions, which is (5)___ tired people often become irritated over small things.\n\nSo what can be done (6)___ improve the quality of our sleep? Experts recommend going to bed at the same time every evening, avoiding heavy meals late at night and keeping screens out (7)___ the bedroom. A cool, dark room also helps, (8)___ light and noise prevent the brain from relaxing. (9)___ you cannot fall asleep within half an hour, it is better to get up and read for a while (10)___ than to lie awake worrying.\n\nOf course, there are people who claim that they need only four hours of sleep. In (11)___ cases, however, this turns out to be an illusion: they simply no longer notice (12)___ tired they are."
+  }
+ ]
+}

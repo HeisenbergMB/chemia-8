@@ -61,6 +61,37 @@
      "desc": "Święta, tradycje i festiwale w Wielkiej Brytanii i USA."
     }
    ]
+  },
+  {
+   "id": "wojewodzki",
+   "title": "Etap wojewódzki",
+   "desc": "Zakres etapu wojewódzkiego: idiomy, zaawansowana gramatyka, słowotwórstwo w tekście, tłumaczenie i wiedza o sławnych ludziach i krajach.",
+   "topics": [
+    {
+     "id": "woj-czytanie",
+     "title": "Czytanie i mapa tekstu",
+     "status": "active",
+     "desc": "Pytania wielokrotnego wyboru do tekstu oraz zadanie „który akapit”."
+    },
+    {
+     "id": "woj-gramatyka",
+     "title": "Zaawansowana gramatyka",
+     "status": "active",
+     "desc": "Tekst z lukami, inwersja, wish, Future Perfect i przekształcenia ze słowem kluczowym."
+    },
+    {
+     "id": "woj-slownictwo",
+     "title": "Idiomy, słowotwórstwo, tłumaczenie",
+     "status": "active",
+     "desc": "Idiomy, wyrazy pochodne w tekście i tłumaczenie fragmentów zdań na angielski."
+    },
+    {
+     "id": "woj-kultura",
+     "title": "Sławni ludzie i kraje",
+     "status": "active",
+     "desc": "Sławni Brytyjczycy i Amerykanie oraz Kanada, Australia i Nowa Zelandia."
+    }
+   ]
   }
  ]
 }

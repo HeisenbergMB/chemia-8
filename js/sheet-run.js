@@ -5,7 +5,7 @@
 import { h } from './dom.js';
 import * as store from './store.js';
 import { richText } from './formula.js';
-import { QTYPES, correctHtml, letterOf } from './qtypes.js';
+import { QTYPES, correctHtml, letterOf, shortOptions } from './qtypes.js';
 import { record } from './leitner.js';
 import { gradeSheet, remainingMs, deadlineOf, clock, itemPoints, ROMAN } from './sheets.js';
 
@@ -112,7 +112,8 @@ export function runSheet(root, ctx) {
       return input;
     }
     const choices = q.type === 'bank' ? groupOf(q.group).bank.map((_, i) => ({ i, text: null })) : q.options.map((text, i) => ({ i, text }));
-    const group = h('div', { class: q.type === 'bank' || q.options.length === 2 ? 'picks' : 'options', role: 'group', 'aria-label': label });
+    const compact = q.type === 'choice' && (q.options.length === 2 || shortOptions(q)); // przyciski z samą treścią (TRUE/FALSE, tak/nie, numery)
+    const group = h('div', { class: q.type === 'bank' || compact ? 'picks' : 'options', role: 'group', 'aria-label': label });
     const paint = () => [...group.children].forEach((b, j) => {
       b.classList.toggle('picked', draft.answers[q.id] === j);
       b.setAttribute('aria-pressed', String(draft.answers[q.id] === j));
@@ -123,7 +124,7 @@ export function runSheet(root, ctx) {
           'button',
           {
             type: 'button',
-            class: text == null ? 'pick' : q.options.length === 2 ? 'pick wide' : 'option',
+            class: text == null ? 'pick' : compact ? (shortOptions(q) && q.options.length > 2 ? 'pick' : 'pick wide') : 'option',
             'aria-pressed': 'false',
             'aria-label': text == null ? `${label}: ${letterOf(i)}` : null,
             onClick: () => {
@@ -131,7 +132,7 @@ export function runSheet(root, ctx) {
               paint();
             },
           },
-          text == null ? letterOf(i) : q.options.length === 2 ? text : [h('span', { class: 'letter', 'aria-hidden': 'true' }, letterOf(i)), h('span', { class: 'text', html: richText(text) })]
+          text == null ? letterOf(i) : compact ? text : [h('span', { class: 'letter', 'aria-hidden': 'true' }, letterOf(i)), h('span', { class: 'text', html: richText(text) })]
         )
       )
     );

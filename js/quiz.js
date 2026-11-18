@@ -9,7 +9,7 @@ import { userBalanceReport } from './chem.js';
 import { QTYPES, correctHtml, valueHtml } from './qtypes.js';
 import { groupById } from './data.js';
 
-const LETTERS = ['A', 'B', 'C', 'D', 'E'];
+const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
 /**
  * Uruchamia quiz w kontenerze `root`.

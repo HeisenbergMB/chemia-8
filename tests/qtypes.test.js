@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { QTYPES, TYPES, TYPED_TYPES, correctHtml } from '../js/qtypes.js';
+import { QTYPES, TYPES, TYPED_TYPES, correctHtml, shortOptions } from '../js/qtypes.js';
 
 /** Waliduje pytanie i zwraca listę zgłoszonych błędów. */
 function validate(q) {
@@ -23,7 +23,7 @@ const GOOD = {
 };
 
 const BAD = {
-  choice: [{ options: ['a'], answer: 0 }, { options: ['a', 'a'], answer: 0 }, { options: ['a', 'b'], answer: 5 }],
+  choice: [{ options: ['a'], answer: 0 }, { options: ['a', 'a'], answer: 0 }, { options: ['a', 'b'], answer: 5 }, { options: ['a', 'b', 'c', 'd', 'e', 'f', 'g'], answer: 0 }],
   formula: [{ answer: 5 }, { answer: 'Xx9Q(' }],
   equation: [{ answer: 'Na -> Na^+ + OH^-' }, { answer: 'bez strzałki' }],
   blocks: [{ tokens: ['NaOH', '->'] }, { tokens: ['Na', '->', 'NaOH'] }, { tokens: GOOD.blocks.tokens, extra: ['NaOH'] }, { tokens: GOOD.blocks.tokens, extra: ['A', 'B', 'C', 'D', 'E', 'F'] }],
@@ -84,4 +84,13 @@ test('typ „write” nie używa stylu wzoru chemicznego i pozwala na samoocenę
 test('typ „write”: odpowiedzi użytkownika i klucza trafiają do HTML bez wstrzykiwania znaczników', () => {
   assert.equal(QTYPES.write.valueHtml('<b>x</b> & y'), '&lt;b&gt;x&lt;/b&gt; &amp; y');
   assert.equal(correctHtml({ type: 'write', answers: ['a<b', 'c'] }), 'a&lt;b / c');
+});
+
+test('krótkie odpowiedzi (numery akapitów, tak/nie) są rozpoznawane i pokazywane bez litery', () => {
+  const para = { type: 'choice', options: ['1', '2', '3', '4', '5', '6'], answer: 2 };
+  assert.equal(shortOptions(para), true);
+  assert.equal(QTYPES.choice.sheet.show(para, 2), '3');
+  assert.equal(shortOptions({ options: ['TRUE', 'FALSE'] }), false);
+  assert.equal(QTYPES.choice.sheet.show({ options: ['alpha', 'beta'] }, 1), 'B – beta');
+  assert.deepEqual(validate({ ...GOOD.choice, options: ['1', '2', '3', '4', '5', '6'], answer: 2, fixed: true }), [], 'do 6 odpowiedzi');
 });

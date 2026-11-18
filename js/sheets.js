@@ -26,10 +26,11 @@ export const KIND_LABELS = {
   'synonym-replace': 'Zastąp zaznaczony zwrot',
   culture: 'Święta i kultura UK/USA',
   'matching-people': 'Dopasuj osoby do pytań',
+  'paragraph-matching': 'Który akapit zawiera informację?',
   'triple-gap': 'Jedno słowo do trzech zdań',
   'word-box': 'Wyrazy z ramki',
   idiom: 'Idiomy',
-  biography: 'Życiorysy sławnych osób',
+  biography: 'Sławni ludzie i geografia: tak/nie',
 };
 export const TASK_KINDS = Object.keys(KIND_LABELS);
 

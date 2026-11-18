@@ -108,4 +108,20 @@ test('wszystkie pytania angielskiego dają się wyrenderować w quizie i na spra
   }
 });
 
+test('arkusz wojewódzki: „który akapit” i tak/nie mają kompaktowe przyciski, a wybór zapisuje się w szkicu', async () => {
+  const store = await import('../js/store.js');
+  store.update((st) => (st.draft = null));
+  await app.goto('#/sheet/s-en-woj-01/run');
+  const next = () => [...app.main.querySelectorAll('button')].find((b) => b.textContent.includes('Następne zadanie')).click();
+  next(); // zadanie II: który akapit
+  const first = app.main.querySelector('.sheet-item');
+  assert.deepEqual([...first.querySelectorAll('.pick')].map((b) => b.textContent), ['1', '2', '3', '4', '5', '6']);
+  first.querySelectorAll('.pick')[2].click();
+  const id = Object.keys(store.get().draft.answers)[0];
+  assert.equal(store.get().draft.answers[id], 2, 'zapisany indeks odpowiedzi (akapit 3)');
+  for (let i = 0; i < 7; i++) next(); // do zadania IX: yes/no
+  assert.deepEqual([...app.main.querySelector('.sheet-item').querySelectorAll('.pick')].map((b) => b.textContent), ['yes', 'no']);
+  store.update((st) => (st.draft = null));
+});
+
 test('brak błędów JS', () => assert.deepEqual(app.errors, []));

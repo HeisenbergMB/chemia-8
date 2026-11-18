@@ -1,0 +1,284 @@
+[
+ {
+  "id": "q-en-wczyt-001",
+  "type": "choice",
+  "level": 2,
+  "q": "Why were early predictions about public libraries gloomy?",
+  "group": "g-en-wczyt-01",
+  "options": [
+   "Fewer people were able to read printed books.",
+   "Experts thought that digital reading would make library buildings unnecessary.",
+   "Libraries were too expensive to build.",
+   "Most librarians wanted to retire."
+  ],
+  "answer": 1,
+  "explain": "Eksperci pytali, kto będzie potrzebował budynku pełnego papieru, skoro książki można kupić online."
+ },
+ {
+  "id": "q-en-wczyt-002",
+  "type": "choice",
+  "level": 2,
+  "q": "According to the text, why do more people visit libraries today?",
+  "group": "g-en-wczyt-01",
+  "options": [
+   "Libraries sell books at lower prices.",
+   "Libraries have become much bigger.",
+   "More people have stopped using the Internet.",
+   "Libraries now work as meeting places with many activities."
+  ],
+  "answer": 3,
+  "explain": "Biblioteki \"have become meeting places\" i oferują znacznie więcej niż regały."
+ },
+ {
+  "id": "q-en-wczyt-003",
+  "type": "choice",
+  "level": 2,
+  "q": "What does the text say about language cafés?",
+  "group": "g-en-wczyt-01",
+  "options": [
+   "They teach foreign languages to local children.",
+   "Newcomers practise the local language there with volunteers.",
+   "They are open only to university students.",
+   "They replace regular language courses."
+  ],
+  "answer": 1,
+  "explain": "Przybysze ćwiczą język z wolontariuszami przy herbacie."
+ },
+ {
+  "id": "q-en-wczyt-004",
+  "type": "choice",
+  "level": 2,
+  "q": "Why may a library be especially important for some people?",
+  "group": "g-en-wczyt-01",
+  "options": [
+   "It lends them money for their studies.",
+   "It offers free medical advice.",
+   "It finds them a job directly.",
+   "It gives them access to a computer to apply for jobs and fill in forms."
+  ],
+  "answer": 3,
+  "explain": "Bez komputera w domu biblioteka bywa jedynym miejscem do składania podań i formularzy online."
+ },
+ {
+  "id": "q-en-wczyt-005",
+  "type": "choice",
+  "level": 2,
+  "q": "What do critics of modern libraries claim?",
+  "group": "g-en-wczyt-01",
+  "options": [
+   "Libraries should be closed completely.",
+   "Libraries should sell e-books.",
+   "A library with too few books is no longer a real library.",
+   "Librarians are not well educated."
+  ],
+  "answer": 2,
+  "explain": "Krytycy twierdzą, że biblioteka bez wystarczającej liczby książek przestaje być biblioteką."
+ },
+ {
+  "id": "q-en-wczyt-006",
+  "type": "choice",
+  "level": 3,
+  "q": "How do librarians answer the critics?",
+  "group": "g-en-wczyt-01",
+  "options": [
+   "They say that collections now include digital materials.",
+   "They agree and plan to buy more shelves.",
+   "They ask the government for more volunteers.",
+   "They refuse to comment."
+  ],
+  "answer": 0,
+  "explain": "Zbiory się rozrosły o e-booki, audiobooki i cyfrowe czasopisma."
+ },
+ {
+  "id": "q-en-wczyt-007",
+  "type": "choice",
+  "level": 3,
+  "q": "What did the director of the northern library consider the key to success?",
+  "group": "g-en-wczyt-01",
+  "options": [
+   "Opening on Sundays only.",
+   "Hiring more librarians.",
+   "Asking residents about their needs before planning.",
+   "Copying a famous library abroad."
+  ],
+  "answer": 2,
+  "explain": "Dyrektorka mówi, że klucz to pytanie mieszkańców, czego potrzebują, i słuchanie ich."
+ },
+ {
+  "id": "q-en-wczyt-008",
+  "type": "choice",
+  "level": 3,
+  "q": "What is the author's final message?",
+  "group": "g-en-wczyt-01",
+  "options": [
+   "A library's value lies in the people it serves, not in the number of books.",
+   "Libraries will disappear within a few years.",
+   "Only large libraries can survive.",
+   "Books are no longer important."
+  ],
+  "answer": 0,
+  "explain": "Autor kończy myślą, że wartość biblioteki mierzy się liczbą ludzi, nie liczbą książek."
+ },
+ {
+  "id": "q-en-wczyt-009",
+  "type": "choice",
+  "level": 1,
+  "q": "Which paragraph explains why the five-day week was introduced in the first place?",
+  "group": "g-en-wczyt-02",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 0,
+  "explain": "Akapit 1: pięciodniowy tydzień upowszechnił się, bo zmęczeni pracownicy popełniali więcej błędów."
+ },
+ {
+  "id": "q-en-wczyt-010",
+  "type": "choice",
+  "level": 2,
+  "q": "Which paragraph describes a trial in which employees did not lose any salary?",
+  "group": "g-en-wczyt-02",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 1,
+  "explain": "Akapit 2: pracownicy zachowali pełne pensje, choć pracowali 32 godziny zamiast 40."
+ },
+ {
+  "id": "q-en-wczyt-011",
+  "type": "choice",
+  "level": 2,
+  "q": "Which paragraph mentions improvements in the private lives of employees?",
+  "group": "g-en-wczyt-02",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 2,
+  "explain": "Akapit 3: więcej snu, czasu z rodziną i na hobby."
+ },
+ {
+  "id": "q-en-wczyt-012",
+  "type": "choice",
+  "level": 3,
+  "q": "Which paragraph suggests that the results of the trials may not be typical?",
+  "group": "g-en-wczyt-02",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 3,
+  "explain": "Akapit 4: ekonomiści zauważają, że próby były małe, a firmy zgłosiły się same."
+ },
+ {
+  "id": "q-en-wczyt-013",
+  "type": "choice",
+  "level": 2,
+  "q": "Which paragraph discusses jobs that cannot simply stop work on certain days?",
+  "group": "g-en-wczyt-02",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 4,
+  "explain": "Akapit 5: szpital nie może być zamknięty w piątek, a sklep otwarty siedem dni potrzebuje obsady."
+ },
+ {
+  "id": "q-en-wczyt-014",
+  "type": "choice",
+  "level": 3,
+  "q": "Which paragraph mentions a change in the way employers judge success?",
+  "group": "g-en-wczyt-02",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 5,
+  "explain": "Akapit 6: pracodawcy zaczęli oceniać wyniki, a nie liczbę godzin w biurze."
+ },
+ {
+  "id": "q-en-wczyt-015",
+  "type": "choice",
+  "level": 3,
+  "q": "Which paragraph reports that fewer employees left their jobs?",
+  "group": "g-en-wczyt-02",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 1,
+  "explain": "Akapit 2: kilka firm odnotowało mniejszą liczbę odejść z pracy."
+ },
+ {
+  "id": "q-en-wczyt-016",
+  "type": "choice",
+  "level": 2,
+  "q": "Which paragraph gives the opinion of economists?",
+  "group": "g-en-wczyt-02",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 3,
+  "explain": "Akapit 4 zaczyna się od zastrzeżeń ekonomistów."
+ },
+ {
+  "id": "q-en-wczyt-017",
+  "type": "choice",
+  "level": 2,
+  "q": "Which paragraph mentions that sick leave decreased?",
+  "group": "g-en-wczyt-02",
+  "fixed": true,
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 2,
+  "explain": "Akapit 3: menedżerowie zauważyli mniej zwolnień chorobowych."
+ }
+]

@@ -1,0 +1,54 @@
+{
+ "cards": [
+  {
+   "id": "t-en-wczyt-01",
+   "title": "Pytania wielokrotnego wyboru do tekstu",
+   "body": "Najpierw przeczytaj pytanie, potem tekst. Dla każdej opcji sprawdź, czy tekst ją **potwierdza**, **zaprzecza** jej, czy o niej **milczy**; błędne opcje często zawierają prawdziwe słowa z tekstu użyte w złym kontekście.\nPoprawna odpowiedź jest zwykle parafrazą zdania z tekstu, a nie jego kopią."
+  },
+  {
+   "id": "t-en-wczyt-02",
+   "title": "Który akapit zawiera informację?",
+   "body": "Najpierw **zrób mapę tekstu**: obok każdego akapitu zapisz w kilku słowach, o czym jest (pierwszy akapit często wprowadza temat, ostatni podsumowuje).\nW pytaniach szukaj słów kluczowych (economic, trade-offs, remote areas) i ich synonimów. Akapit może być odpowiedzią na kilka pytań.",
+   "tip": "Pytanie bywa ogólniejsze niż akapit: dopasuj główną myśl, nie pojedyncze słowo."
+  },
+  {
+   "id": "t-en-wczyt-03",
+   "title": "Czas w arkuszu wojewódzkim",
+   "body": "Arkusz wojewódzki trwa **120 minut** i ma **100 punktów**.\nZadania czytania zajmują najwięcej czasu, ale mają stosunkowo mało punktów na minutę – zacznij od zadań językowych, które możesz zrobić szybko (idiomy, wybór A–D), potem wróć do tekstów. Zostaw 10 minut na przegląd."
+  }
+ ],
+ "flash": [
+  {
+   "id": "f-en-wczyt-01",
+   "front": "Pytanie \"Which paragraph ...?\" – jak zacząć?",
+   "back": "od mapy tekstu: krótkie hasło przy każdym akapicie"
+  },
+  {
+   "id": "f-en-wczyt-02",
+   "front": "Opcja A–D zawiera słowa z tekstu, ale w złym kontekście. Co to znaczy?",
+   "back": "To typowa opcja błędna – sprawdź, czy tekst naprawdę to potwierdza."
+  },
+  {
+   "id": "f-en-wczyt-03",
+   "front": "Ile trwa arkusz wojewódzki i ile ma punktów?",
+   "back": "120 minut i 100 punktów."
+  },
+  {
+   "id": "f-en-wczyt-04",
+   "front": "parafraza",
+   "back": "to samo znaczenie innymi słowami"
+  }
+ ],
+ "groups": [
+  {
+   "id": "g-en-wczyt-01",
+   "instruction": "Przeczytaj uważnie tekst, a następnie odpowiedz na pytania, wybierając prawidłową odpowiedź A, B, C lub D. Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+   "text": "The quiet revolution in public libraries\n\nFor years, predictions about the future of public libraries were gloomy. If books could be bought online in seconds and read on a tablet, many experts asked, who would need a building full of paper? Yet in several countries the number of library visitors has risen, and the reason is simple: libraries have stopped trying to be warehouses of books and have become meeting places.\n\nA typical modern library offers far more than shelves. There are rooms where students can work in silence, studios where teenagers record podcasts, and workshops with 3D printers that anyone can use after a short introduction. Many libraries also run language cafés for newcomers to the country, who practise the local language with volunteers over a cup of tea. For people without a computer at home, a library may be the only place where they can apply for a job or fill in official forms online.\n\nThe change has not been easy. Budgets have been cut in many towns, and some councils have chosen to close small branches instead of investing in new services. Critics argue that a library without enough books is no longer a library at all. Librarians reply that their collections have not disappeared but have grown to include e-books, audiobooks and digital magazines, which can be borrowed without leaving home.\n\nOne example of a successful transformation is a library in a converted factory in a northern town. Opened five years ago, it attracts families at the weekend and pensioners on weekday mornings, when a team of volunteers teaches them how to use smartphones. The director says that the key was to ask the residents what they needed before planning anything. 'We did not guess,' she explains. 'We asked, and then we listened.'\n\nWhether libraries can survive in the long term will depend on money, but also on imagination. The most successful ones seem to understand that a library's real value is not measured by the number of books it owns, but by the number of people who walk through its doors and leave a little better informed than they arrived.\n\n(Tekst został wymyślony na potrzeby ćwiczenia.)"
+  },
+  {
+   "id": "g-en-wczyt-02",
+   "instruction": "Przeczytaj uważnie tekst, a następnie wskaż numer akapitu (1–6), w którym znajduje się podana informacja. Ten sam akapit może być odpowiedzią na więcej niż jedno pytanie. Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+   "text": "Paragraph 1: The five-day working week, with a free Saturday and Sunday, is so familiar that it is easy to forget how recent it is. It became widespread during the twentieth century, after employers noticed that tired workers made more mistakes. Today, a growing number of companies are asking whether it is time for another change: a working week of four days.\n\nParagraph 2: The idea has been tested in several trials. In one trial involving thirty small firms, employees kept their full salaries but worked thirty-two hours instead of forty. After six months, almost every company decided to continue the arrangement, and several reported that fewer people had left their jobs.\n\nParagraph 3: Employees themselves describe the change in simple terms. They say they sleep longer, spend more time with their families and can finally find time for hobbies or medical appointments. Many report feeling less stressed on Monday mornings, and managers noticed that sick leave decreased.\n\nParagraph 4: Not everyone is convinced, however. Economists point out that the trials were small and that the firms that volunteered were probably the ones most likely to succeed. They warn that results might be different in companies where the pace of work is difficult to speed up, and that employees may simply work harder for four days and feel exhausted.\n\nParagraph 5: There are also practical problems. A hospital cannot close on Fridays, and a shop that is open seven days a week needs enough staff to cover every shift. Some organisations have solved this by dividing staff into groups with different days off, but this makes planning more complicated and can increase costs.\n\nParagraph 6: Whatever the final verdict, the discussion has already changed attitudes. Employers have begun to measure success by results rather than by hours spent in the office, and workers are more confident when they ask for flexible conditions. The four-day week may not suit every business, but it has shown that old habits can be questioned.\n\n(Tekst został wymyślony na potrzeby ćwiczenia.)"
+  }
+ ]
+}

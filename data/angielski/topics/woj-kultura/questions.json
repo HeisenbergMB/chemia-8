@@ -1,0 +1,158 @@
+[
+ {
+  "id": "q-en-wkult-001",
+  "type": "choice",
+  "level": 1,
+  "q": "Is Ottawa the capital of Canada?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Stolicą Kanady jest Ottawa."
+ },
+ {
+  "id": "q-en-wkult-002",
+  "type": "choice",
+  "level": 1,
+  "q": "Is Sydney the capital of Australia?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 1,
+  "explain": "Stolicą Australii jest Canberra, a Sydney jest największym miastem."
+ },
+ {
+  "id": "q-en-wkult-003",
+  "type": "choice",
+  "level": 1,
+  "q": "Is Wellington the capital of New Zealand?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Stolicą Nowej Zelandii jest Wellington."
+ },
+ {
+  "id": "q-en-wkult-004",
+  "type": "choice",
+  "level": 2,
+  "q": "Did Charles Darwin write 'On the Origin of Species'?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Darwin opublikował \"On the Origin of Species\" w 1859 roku."
+ },
+ {
+  "id": "q-en-wkult-005",
+  "type": "choice",
+  "level": 2,
+  "q": "Was Abraham Lincoln the first President of the United States?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 1,
+  "explain": "Pierwszym prezydentem był George Washington."
+ },
+ {
+  "id": "q-en-wkult-006",
+  "type": "choice",
+  "level": 2,
+  "q": "Was Florence Nightingale famous for her work as a nurse?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Florence Nightingale jest uznawana za założycielkę nowoczesnego pielęgniarstwa."
+ },
+ {
+  "id": "q-en-wkult-007",
+  "type": "choice",
+  "level": 1,
+  "q": "Did William Shakespeare write 'Pride and Prejudice'?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 1,
+  "explain": "\"Pride and Prejudice\" napisała Jane Austen."
+ },
+ {
+  "id": "q-en-wkult-008",
+  "type": "choice",
+  "level": 1,
+  "q": "Was Martin Luther King Jr. a leader of the American civil rights movement?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Martin Luther King Jr. był przywódcą ruchu praw obywatelskich w USA."
+ },
+ {
+  "id": "q-en-wkult-009",
+  "type": "choice",
+  "level": 3,
+  "q": "Is Mount Cook (Aoraki) the highest mountain in New Zealand?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Aoraki / Mount Cook jest najwyższym szczytem Nowej Zelandii."
+ },
+ {
+  "id": "q-en-wkult-010",
+  "type": "choice",
+  "level": 1,
+  "q": "Was Neil Armstrong the first person to walk on the Moon?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "Neil Armstrong stanął na Księżycu jako pierwszy człowiek w 1969 roku."
+ },
+ {
+  "id": "q-en-wkult-011",
+  "type": "choice",
+  "level": 1,
+  "q": "Is the Great Barrier Reef located off the coast of Canada?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 1,
+  "explain": "Wielka Rafa Koralowa leży u wybrzeży Australii."
+ },
+ {
+  "id": "q-en-wkult-012",
+  "type": "choice",
+  "level": 3,
+  "q": "Was Alexander Graham Bell born in Canada?",
+  "fixed": true,
+  "options": [
+   "yes",
+   "no"
+  ],
+  "answer": 1,
+  "explain": "Alexander Graham Bell urodził się w Szkocji (Edynburg); później mieszkał w Kanadzie i USA."
+ }
+]

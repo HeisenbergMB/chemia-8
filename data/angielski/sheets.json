@@ -11,6 +11,12 @@
    "title": "Etap rejonowy",
    "minutes": 90,
    "points": 100
+  },
+  {
+   "id": "wojewodzki",
+   "title": "Etap wojewódzki",
+   "minutes": 120,
+   "points": 100
   }
  ],
  "sheets": [
@@ -320,6 +326,167 @@
       "q-en-rkult-013",
       "q-en-rkult-014",
       "q-en-rkult-015"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s-en-woj-01",
+   "format": "wojewodzki",
+   "title": "Arkusz 1 – etap wojewódzki",
+   "tasks": [
+    {
+     "kind": "choice-text",
+     "group": "g-en-wczyt-01",
+     "items": [
+      "q-en-wczyt-001",
+      "q-en-wczyt-002",
+      "q-en-wczyt-003",
+      "q-en-wczyt-004",
+      "q-en-wczyt-005",
+      "q-en-wczyt-006",
+      "q-en-wczyt-007",
+      "q-en-wczyt-008"
+     ]
+    },
+    {
+     "kind": "paragraph-matching",
+     "group": "g-en-wczyt-02",
+     "items": [
+      "q-en-wczyt-009",
+      "q-en-wczyt-010",
+      "q-en-wczyt-011",
+      "q-en-wczyt-012",
+      "q-en-wczyt-013",
+      "q-en-wczyt-014",
+      "q-en-wczyt-015",
+      "q-en-wczyt-016",
+      "q-en-wczyt-017"
+     ]
+    },
+    {
+     "kind": "open-cloze",
+     "group": "g-en-wgram-01",
+     "items": [
+      "q-en-wgram-001",
+      "q-en-wgram-002",
+      "q-en-wgram-003",
+      "q-en-wgram-004",
+      "q-en-wgram-005",
+      "q-en-wgram-006",
+      "q-en-wgram-007",
+      "q-en-wgram-008",
+      "q-en-wgram-009",
+      "q-en-wgram-010",
+      "q-en-wgram-011",
+      "q-en-wgram-012"
+     ]
+    },
+    {
+     "kind": "idiom",
+     "instruction": "W podanych punktach (1–10) wybierz wyrażenie, które poprawnie uzupełnia zdanie. Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+     "items": [
+      "q-en-wslow-001",
+      "q-en-wslow-002",
+      "q-en-wslow-003",
+      "q-en-wslow-004",
+      "q-en-wslow-005",
+      "q-en-wslow-006",
+      "q-en-wslow-007",
+      "q-en-wslow-008",
+      "q-en-wslow-009",
+      "q-en-wslow-010"
+     ]
+    },
+    {
+     "kind": "key-word",
+     "instruction": "Przeczytaj zdania (1–12). Wykorzystując wyraz podany wielkimi literami, uzupełnij drugie zdanie z luką tak, aby precyzyjnie oddać sens zdania wyjściowego. Wymagana jest całkowita poprawność pisowni i gramatyki. Nie zmieniaj formy podanego wyrazu. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany. Formy skrócone (np. mustn't) liczą się jako jedno słowo.",
+     "items": [
+      "q-en-wgram-013",
+      "q-en-wgram-014",
+      "q-en-wgram-015",
+      "q-en-wgram-016",
+      "q-en-wgram-017",
+      "q-en-wgram-018",
+      "q-en-wgram-019",
+      "q-en-wgram-020",
+      "q-en-wgram-021",
+      "q-en-wgram-022",
+      "q-en-wgram-023",
+      "q-en-wgram-024"
+     ]
+    },
+    {
+     "kind": "word-formation",
+     "group": "g-en-wslow-01",
+     "items": [
+      "q-en-wslow-011",
+      "q-en-wslow-012",
+      "q-en-wslow-013",
+      "q-en-wslow-014",
+      "q-en-wslow-015",
+      "q-en-wslow-016",
+      "q-en-wslow-017",
+      "q-en-wslow-018",
+      "q-en-wslow-019",
+      "q-en-wslow-020",
+      "q-en-wslow-021",
+      "q-en-wslow-022"
+     ]
+    },
+    {
+     "kind": "translation-write",
+     "instruction": "Przetłumacz fragmenty zdań (1–13) podane w nawiasach na język angielski tak, aby otrzymać zdania poprawne pod względem gramatycznym i logicznym. Za każdą prawidłową odpowiedź otrzymasz 1 punkt.",
+     "items": [
+      "q-en-wslow-023",
+      "q-en-wslow-024",
+      "q-en-wslow-025",
+      "q-en-wslow-026",
+      "q-en-wslow-027",
+      "q-en-wslow-028",
+      "q-en-wslow-029",
+      "q-en-wslow-030",
+      "q-en-wslow-031",
+      "q-en-wslow-032",
+      "q-en-wslow-033",
+      "q-en-wslow-034",
+      "q-en-wslow-035"
+     ]
+    },
+    {
+     "kind": "mc-cloze",
+     "instruction": "Uzupełnij luki (1–12) jedną z podanych możliwości (A, B, C lub D), tak aby otrzymać zdania poprawne pod względem gramatycznym i logicznym.",
+     "items": [
+      "q-en-wgram-025",
+      "q-en-wgram-026",
+      "q-en-wgram-027",
+      "q-en-wgram-028",
+      "q-en-wgram-029",
+      "q-en-wgram-030",
+      "q-en-wgram-031",
+      "q-en-wgram-032",
+      "q-en-wgram-033",
+      "q-en-wgram-034",
+      "q-en-wgram-035",
+      "q-en-wgram-036"
+     ]
+    },
+    {
+     "kind": "biography",
+     "instruction": "Przeczytaj pytania (1–12) i wybierz odpowiedź: yes albo no. Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+     "items": [
+      "q-en-wkult-001",
+      "q-en-wkult-002",
+      "q-en-wkult-003",
+      "q-en-wkult-004",
+      "q-en-wkult-005",
+      "q-en-wkult-006",
+      "q-en-wkult-007",
+      "q-en-wkult-008",
+      "q-en-wkult-009",
+      "q-en-wkult-010",
+      "q-en-wkult-011",
+      "q-en-wkult-012"
      ]
     }
    ]

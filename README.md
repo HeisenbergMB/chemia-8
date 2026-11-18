@@ -1,7 +1,7 @@
 # Powtórka 8
 
 Aplikacja PWA (czysty HTML/CSS/JS, bez bibliotek i bez backendu) do powtórek do sprawdzianów i konkursów w klasie 8.
-Obsługuje wiele przedmiotów: chemia (klasa 8) oraz angielski (konkurs kuratoryjny, woj. łódzkie: pełne arkusze etapu szkolnego i rejonowego; wojewódzki w planie – `ROADMAP.md`, Faza 5).
+Obsługuje wiele przedmiotów: chemia (klasa 8) oraz angielski (konkurs kuratoryjny, woj. łódzkie: pełne arkusze etapów szkolnego, rejonowego i wojewódzkiego – `ROADMAP.md`, Faza 5).
 Działa offline, zapisuje postęp w `localStorage` (z eksportem/importem w Ustawieniach).
 
 ## Uruchomienie lokalnie
@@ -57,7 +57,7 @@ W każdym tekście: `**pogrubienie**`, `++podkreślenie++`, nowa linia = `\n`.
 
 ### Typy pytań (`topics/<id>/questions.json`)
 Wspólne pola: `id` (unikalne), `type`, `level` (1–3), `q`, `explain`; opcjonalnie `hint` (podpowiedź, niewidoczna na sprawdzianie).
-- `choice` – `options` (2–5), `answer` (indeks poprawnej).
+- `choice` – `options` (2–6; krótkie odpowiedzi typu numer akapitu czy tak/nie są w arkuszu przyciskami z samą treścią), `answer` (indeks poprawnej).
 - `formula` – `answer` (np. `"Ca^2+"`), opcjonalnie `accept` (inne dopuszczalne zapisy).
 - `equation` – `answer` (całe równanie, np. `"NaOH -> Na^+ + OH^-"`); kolejność składników po jednej stronie nie ma znaczenia, strzałki ↑ i ↓ są ignorowane.
 - `blocks` – `tokens` (poprawna kolejność klocków, np. `["NaOH","->","Na^+","+","OH^-"]`), `extra` (klocki-pułapki).

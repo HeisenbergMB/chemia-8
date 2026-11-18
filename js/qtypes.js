@@ -29,6 +29,8 @@ import { h } from './dom.js';
 import { parseEquation, parseSpecies, parseFormula, checkBalance, equationsMatch, formulasMatch } from './chem.js';
 
 export const letterOf = (i) => String.fromCharCode(65 + i);
+/** Krótkie odpowiedzi (numer akapitu, tak/nie) – w arkuszu rysowane jako przyciski z samą treścią, bez liter. */
+export const shortOptions = (q) => q.options.every((o) => String(o).length <= 3);
 
 const withButton = (el, check) => h('div', null, el, h('div', { class: 'btn-row' }, check));
 
@@ -47,11 +49,11 @@ export const QTYPES = {
     typed: false,
     sheet: {
       grade: (q, raw) => raw === q.answer, // raw = indeks odpowiedzi w q.options (w arkuszu kolejność nie jest mieszana)
-      show: (q, raw) => (Number.isInteger(raw) && q.options[raw] != null ? `${letterOf(raw)} – ${richText(q.options[raw])}` : ''),
+      show: (q, raw) => (Number.isInteger(raw) && q.options[raw] != null ? (shortOptions(q) ? richText(q.options[raw]) : `${letterOf(raw)} – ${richText(q.options[raw])}`) : ''),
     },
     correctHtml: (q) => richText(q.options[q.answer]),
     validate(q, v) {
-      if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 5) return v.err('options: 2–5 odpowiedzi');
+      if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 6) return v.err('options: 2–6 odpowiedzi');
       if (new Set(q.options).size !== q.options.length) v.err('options: powtarzające się odpowiedzi');
       if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= q.options.length) v.err(`answer poza zakresem (${q.answer})`);
       if ('fixed' in q && typeof q.fixed !== 'boolean') v.err('fixed musi być true/false (true: stała kolejność odpowiedzi, np. TRUE/FALSE)');
