@@ -1955,5 +1955,331 @@
   ],
   "answer": 3,
   "explain": "Zdanie względne do osób jako podmiot: who."
+ },
+ {
+  "id": "q-en-rgram-150",
+  "type": "write",
+  "level": 2,
+  "q": "'Did you take my pen?' she asked him. (IF)\nShe asked him ___ her pen.",
+  "keyword": "if",
+  "maxWords": 5,
+  "answers": [
+   "if he had taken",
+   "if he took"
+  ],
+  "explain": "Pytanie ogólne w mowie zależnej: if + Past Perfect lub Past Simple."
+ },
+ {
+  "id": "q-en-rgram-151",
+  "type": "write",
+  "level": 2,
+  "q": "It is not necessary to bring a dictionary. (NEED)\nYou ___ a dictionary.",
+  "keyword": "need",
+  "maxWords": 5,
+  "answers": [
+   "need not bring",
+   "needn't bring"
+  ],
+  "explain": "Need not + bezokolicznik – nie musisz."
+ },
+ {
+  "id": "q-en-rgram-152",
+  "type": "write",
+  "level": 1,
+  "q": "Jane is taller than any other girl in her class. (TALLEST)\nJane ___ girl in her class.",
+  "keyword": "tallest",
+  "maxWords": 5,
+  "answers": [
+   "is the tallest"
+  ],
+  "explain": "Stopień najwyższy z the: is the tallest."
+ },
+ {
+  "id": "q-en-rgram-153",
+  "type": "write",
+  "level": 2,
+  "q": "I'm sorry I forgot your birthday. (APOLOGISE)\nI ___ forgetting your birthday.",
+  "keyword": "apologise",
+  "maxWords": 5,
+  "answers": [
+   "apologise for"
+  ],
+  "explain": "Apologise for + forma -ing."
+ },
+ {
+  "id": "q-en-rgram-154",
+  "type": "write",
+  "level": 2,
+  "q": "She was so tired that she couldn't walk. (TOO)\nShe ___ walk.",
+  "keyword": "too",
+  "maxWords": 5,
+  "answers": [
+   "was too tired to"
+  ],
+  "explain": "Too + przymiotnik + to + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-155",
+  "type": "write",
+  "level": 3,
+  "q": "They say the old castle is haunted. (SAID)\nThe old castle ___ haunted.",
+  "keyword": "said",
+  "maxWords": 5,
+  "answers": [
+   "is said to be"
+  ],
+  "explain": "Bezosobowa strona bierna: is said to be."
+ },
+ {
+  "id": "q-en-rgram-156",
+  "type": "write",
+  "level": 2,
+  "q": "We started learning German three years ago. (BEEN)\nWe ___ German for three years.",
+  "keyword": "been",
+  "maxWords": 5,
+  "answers": [
+   "have been learning"
+  ],
+  "explain": "Present Perfect Continuous z for."
+ },
+ {
+  "id": "q-en-rgram-157",
+  "type": "write",
+  "level": 2,
+  "q": "'You must not touch the paintings,' the guard told us. (NOT)\nThe guard told us ___ the paintings.",
+  "keyword": "not",
+  "maxWords": 5,
+  "answers": [
+   "not to touch"
+  ],
+  "explain": "Polecenie przeczące w mowie zależnej: not to + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-158",
+  "type": "write",
+  "level": 2,
+  "q": "The last time I saw him was in May. (SEEN)\nI ___ him since May.",
+  "keyword": "seen",
+  "maxWords": 5,
+  "answers": [
+   "haven't seen",
+   "have not seen"
+  ],
+  "explain": "Present Perfect z since."
+ },
+ {
+  "id": "q-en-rgram-159",
+  "type": "write",
+  "level": 2,
+  "q": "Because of the fog, the flight was cancelled. (DUE)\nThe flight was cancelled ___ the fog.",
+  "keyword": "due",
+  "maxWords": 5,
+  "answers": [
+   "due to"
+  ],
+  "explain": "Due to + rzeczownik – z powodu."
+ },
+ {
+  "id": "q-en-rgram-160",
+  "type": "write",
+  "level": 2,
+  "q": "Peter doesn't have enough money to buy the bike. (AFFORD)\nPeter ___ the bike.",
+  "keyword": "afford",
+  "maxWords": 5,
+  "answers": [
+   "can't afford",
+   "cannot afford",
+   "can not afford"
+  ],
+  "explain": "Can't afford – nie stać kogoś na coś."
+ },
+ {
+  "id": "q-en-rgram-161",
+  "type": "write",
+  "level": 2,
+  "q": "It was a mistake to tell her the secret. (SHOULD)\nI ___ told her the secret.",
+  "keyword": "should",
+  "maxWords": 5,
+  "answers": [
+   "should not have",
+   "shouldn't have"
+  ],
+  "explain": "Should not have + imiesłów – krytyka przeszłości."
+ },
+ {
+  "id": "q-en-rgram-162",
+  "type": "write",
+  "level": 2,
+  "q": "You can't enter if you don't have a ticket. (UNLESS)\nYou can't enter ___ a ticket.",
+  "keyword": "unless",
+  "maxWords": 5,
+  "answers": [
+   "unless you have"
+  ],
+  "explain": "Unless oznacza if not; po nim twierdzenie."
+ },
+ {
+  "id": "q-en-rgram-163",
+  "type": "write",
+  "level": 2,
+  "q": "I don't live in a village any more. (USED)\nI ___ in a village.",
+  "keyword": "used",
+  "maxWords": 5,
+  "answers": [
+   "used to live"
+  ],
+  "explain": "Used to + bezokolicznik – dawny stan."
+ },
+ {
+  "id": "q-en-rgram-164",
+  "type": "write",
+  "level": 1,
+  "q": "I thought the film would be worse. (BETTER)\nThe film was ___ I expected.",
+  "keyword": "better",
+  "maxWords": 5,
+  "answers": [
+   "better than"
+  ],
+  "explain": "Stopień wyższy + than."
+ },
+ {
+  "id": "q-en-rgram-165",
+  "type": "choice",
+  "level": 1,
+  "q": "If it ___ tomorrow, we will stay at home.",
+  "options": [
+   "rains",
+   "will rain",
+   "rained",
+   "would rain"
+  ],
+  "answer": 0,
+  "explain": "I okres warunkowy: if + Present Simple."
+ },
+ {
+  "id": "q-en-rgram-166",
+  "type": "choice",
+  "level": 2,
+  "q": "I wish I ___ speak Italian.",
+  "options": [
+   "will",
+   "would",
+   "can",
+   "could"
+  ],
+  "answer": 3,
+  "explain": "Wish + could – życzenie o teraźniejszości."
+ },
+ {
+  "id": "q-en-rgram-167",
+  "type": "choice",
+  "level": 1,
+  "q": "That is the village ___ my grandparents were born.",
+  "options": [
+   "where",
+   "whose",
+   "who",
+   "which"
+  ],
+  "answer": 0,
+  "explain": "Where odnosi się do miejsca."
+ },
+ {
+  "id": "q-en-rgram-168",
+  "type": "choice",
+  "level": 2,
+  "q": "She denied ___ the money from the drawer.",
+  "options": [
+   "take",
+   "to take",
+   "taking",
+   "took"
+  ],
+  "answer": 2,
+  "explain": "Deny + forma -ing."
+ },
+ {
+  "id": "q-en-rgram-169",
+  "type": "choice",
+  "level": 3,
+  "q": "Nobody knew where ___.",
+  "options": [
+   "has she gone",
+   "had she gone",
+   "she had gone",
+   "did she go"
+  ],
+  "answer": 2,
+  "explain": "Pytanie zależne ma szyk twierdzący, Past Perfect po czasie przeszłym."
+ },
+ {
+  "id": "q-en-rgram-170",
+  "type": "choice",
+  "level": 2,
+  "q": "___ it was raining, they played outside.",
+  "options": [
+   "Because",
+   "Despite",
+   "However",
+   "Although"
+  ],
+  "answer": 3,
+  "explain": "Although łączy dwa zdania; despite wymaga rzeczownika."
+ },
+ {
+  "id": "q-en-rgram-171",
+  "type": "choice",
+  "level": 2,
+  "q": "The harder you work, ___ your results will be.",
+  "options": [
+   "the better",
+   "the best",
+   "best",
+   "better"
+  ],
+  "answer": 0,
+  "explain": "Podwójny stopień wyższy: the more ..., the better."
+ },
+ {
+  "id": "q-en-rgram-172",
+  "type": "choice",
+  "level": 3,
+  "q": "He looked as if he ___ seen a ghost.",
+  "options": [
+   "was",
+   "had",
+   "would have",
+   "has"
+  ],
+  "answer": 1,
+  "explain": "As if + Past Perfect dla przeszłości."
+ },
+ {
+  "id": "q-en-rgram-173",
+  "type": "choice",
+  "level": 1,
+  "q": "There aren't ___ eggs left.",
+  "options": [
+   "any",
+   "none",
+   "some",
+   "no"
+  ],
+  "answer": 0,
+  "explain": "W przeczeniu: any."
+ },
+ {
+  "id": "q-en-rgram-174",
+  "type": "choice",
+  "level": 1,
+  "q": "I have lived here ___ ten years.",
+  "options": [
+   "from",
+   "for",
+   "since",
+   "during"
+  ],
+  "answer": 1,
+  "explain": "For + okres trwania."
  }
 ]

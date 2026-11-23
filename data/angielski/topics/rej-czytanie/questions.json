@@ -648,5 +648,187 @@
   ],
   "answer": 0,
   "explain": "Menedżerowie mówią, że sieć może się podwoić przed końcem dekady."
+ },
+ {
+  "id": "q-en-rczyt-052",
+  "type": "choice",
+  "level": 1,
+  "q": "Mark bought a drill because he needed it for a long project.",
+  "group": "g-en-rczyt-08",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Mark potrzebował wiertarki na dziesięć minut i dlatego zapisał się do wypożyczalni narzędzi, zamiast ją kupować."
+ },
+ {
+  "id": "q-en-rczyt-053",
+  "type": "choice",
+  "level": 1,
+  "q": "Members of a tool library pay a small fee every year.",
+  "group": "g-en-rczyt-08",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Tekst: for a small yearly fee, members can borrow tools."
+ },
+ {
+  "id": "q-en-rczyt-054",
+  "type": "choice",
+  "level": 2,
+  "q": "The first tool libraries were opened in Britain.",
+  "group": "g-en-rczyt-08",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Pierwsze wypożyczalnie narzędzi powstały w Stanach Zjednoczonych w latach 70."
+ },
+ {
+  "id": "q-en-rczyt-055",
+  "type": "choice",
+  "level": 2,
+  "q": "There are more than a hundred tool libraries in the UK today.",
+  "group": "g-en-rczyt-08",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Tekst podaje, że w samej Wielkiej Brytanii jest ich ponad sto."
+ },
+ {
+  "id": "q-en-rczyt-056",
+  "type": "choice",
+  "level": 2,
+  "q": "All tool libraries are run by paid professionals.",
+  "group": "g-en-rczyt-08",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Wiele wypożyczalni prowadzą wolontariusze, więc zdanie o zawodowcach jest fałszywe."
+ },
+ {
+  "id": "q-en-rczyt-057",
+  "type": "choice",
+  "level": 2,
+  "q": "A member who borrows only a few items a year can still save a lot of money.",
+  "group": "g-en-rczyt-08",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Typowy członek wypożycza pięć–sześć rzeczy rocznie, a oszczędza setki funtów."
+ },
+ {
+  "id": "q-en-rczyt-058",
+  "type": "choice",
+  "level": 2,
+  "q": "According to supporters, tool libraries may reduce the amount of waste.",
+  "group": "g-en-rczyt-08",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Mniej produkowanych narzędzi to mniej metalu i plastiku oraz mniej starych maszyn na wysypiskach."
+ },
+ {
+  "id": "q-en-rczyt-059",
+  "type": "choice",
+  "level": 3,
+  "q": "Critics think that people who use a ladder every weekend should borrow one.",
+  "group": "g-en-rczyt-08",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Krytycy twierdzą, że ktoś potrzebujący drabiny co weekend lepiej zrobi, kupując własną."
+ },
+ {
+  "id": "q-en-rczyt-060",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (1)",
+  "group": "g-en-rczyt-09",
+  "gap": 1,
+  "answer": 1,
+  "explain": "Fragment kończy akapit sprostowaniem poglądu; następne zdanie z „In fact” podaje prawdę o wolontariuszach."
+ },
+ {
+  "id": "q-en-rczyt-061",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (2)",
+  "group": "g-en-rczyt-09",
+  "gap": 2,
+  "answer": 5,
+  "explain": "Ćwiczenia w porcie prowadzą do zdania „Only then are they allowed to join a real rescue”."
+ },
+ {
+  "id": "q-en-rczyt-062",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (3)",
+  "group": "g-en-rczyt-09",
+  "gap": 3,
+  "answer": 0,
+  "explain": "Po zdaniu o zwykłych wezwaniach pada przykład, a „Others” kontynuuje listę przyczyn."
+ },
+ {
+  "id": "q-en-rczyt-063",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (4)",
+  "group": "g-en-rczyt-09",
+  "gap": 4,
+  "answer": 2,
+  "explain": "„Money is another matter” prowadzi do informacji o braku płacy i dotacji, a dalej o darowiznach."
+ },
+ {
+  "id": "q-en-rczyt-064",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (5)",
+  "group": "g-en-rczyt-09",
+  "gap": 5,
+  "answer": 4,
+  "explain": "Po darowiznach mowa o dumie lokalnej społeczności; „Several stations” rozwija ten wątek."
+ },
+ {
+  "id": "q-en-rczyt-065",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (6)",
+  "group": "g-en-rczyt-09",
+  "gap": 6,
+  "answer": 6,
+  "explain": "Po zdaniu o nieszczęśliwych akcjach następuje trudność emocjonalna, a potem spotkania wsparcia."
+ },
+ {
+  "id": "q-en-rczyt-066",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (7)",
+  "group": "g-en-rczyt-09",
+  "gap": 7,
+  "answer": 8,
+  "explain": "Zakończenie akapitu: nagroda dla wolontariuszy, a cytat tłumaczy, po co tam są."
  }
 ]

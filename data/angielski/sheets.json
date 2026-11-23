@@ -1128,6 +1128,167 @@
      ]
     }
    ]
+  },
+  {
+   "id": "s-en-rej-04",
+   "format": "rejonowy",
+   "title": "Arkusz 4 – etap rejonowy",
+   "tasks": [
+    {
+     "kind": "tf",
+     "group": "g-en-rczyt-08",
+     "items": [
+      "q-en-rczyt-052",
+      "q-en-rczyt-053",
+      "q-en-rczyt-054",
+      "q-en-rczyt-055",
+      "q-en-rczyt-056",
+      "q-en-rczyt-057",
+      "q-en-rczyt-058",
+      "q-en-rczyt-059"
+     ]
+    },
+    {
+     "kind": "gapped-text",
+     "group": "g-en-rczyt-09",
+     "items": [
+      "q-en-rczyt-060",
+      "q-en-rczyt-061",
+      "q-en-rczyt-062",
+      "q-en-rczyt-063",
+      "q-en-rczyt-064",
+      "q-en-rczyt-065",
+      "q-en-rczyt-066"
+     ]
+    },
+    {
+     "kind": "first-letter",
+     "instruction": "Uzupełnij każde zdanie jednym pasującym słowem. Wymagana jest całkowita poprawność pisowni wpisywanych słów. Liczba kresek odpowiada liczbie brakujących liter w słowie. Niektóre litery zostały już podane.",
+     "items": [
+      "q-en-rslow-146",
+      "q-en-rslow-147",
+      "q-en-rslow-148",
+      "q-en-rslow-149",
+      "q-en-rslow-150",
+      "q-en-rslow-151",
+      "q-en-rslow-152",
+      "q-en-rslow-153",
+      "q-en-rslow-154",
+      "q-en-rslow-155",
+      "q-en-rslow-156",
+      "q-en-rslow-157",
+      "q-en-rslow-158",
+      "q-en-rslow-159",
+      "q-en-rslow-160"
+     ]
+    },
+    {
+     "kind": "word-formation",
+     "instruction": "Uzupełnij luki odpowiednią formą wyrazu utworzonego od wyrazu podanego w nawiasie. Wymagana jest całkowita poprawność pisowni wpisywanych słów. Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+     "items": [
+      "q-en-rslow-161",
+      "q-en-rslow-162",
+      "q-en-rslow-163",
+      "q-en-rslow-164",
+      "q-en-rslow-165",
+      "q-en-rslow-166",
+      "q-en-rslow-167",
+      "q-en-rslow-168",
+      "q-en-rslow-169",
+      "q-en-rslow-170",
+      "q-en-rslow-171",
+      "q-en-rslow-172",
+      "q-en-rslow-173",
+      "q-en-rslow-174",
+      "q-en-rslow-175"
+     ]
+    },
+    {
+     "kind": "key-word",
+     "instruction": "Przeczytaj zdania (1–15). Wykorzystując wyraz podany wielkimi literami, uzupełnij drugie zdanie z luką tak, aby precyzyjnie oddać sens zdania wyjściowego. Wymagana jest całkowita poprawność pisowni i gramatyki. Nie zmieniaj formy podanego wyrazu. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany. Formy skrócone (np. mustn't) liczą się jako jedno słowo.",
+     "items": [
+      "q-en-rgram-150",
+      "q-en-rgram-151",
+      "q-en-rgram-152",
+      "q-en-rgram-153",
+      "q-en-rgram-154",
+      "q-en-rgram-155",
+      "q-en-rgram-156",
+      "q-en-rgram-157",
+      "q-en-rgram-158",
+      "q-en-rgram-159",
+      "q-en-rgram-160",
+      "q-en-rgram-161",
+      "q-en-rgram-162",
+      "q-en-rgram-163",
+      "q-en-rgram-164"
+     ]
+    },
+    {
+     "kind": "mc-cloze",
+     "instruction": "Przeczytaj zdania. Z podanych odpowiedzi wybierz właściwą, tak aby otrzymać logiczne i gramatycznie poprawne zdania.",
+     "items": [
+      "q-en-rgram-165",
+      "q-en-rgram-166",
+      "q-en-rgram-167",
+      "q-en-rgram-168",
+      "q-en-rgram-169",
+      "q-en-rgram-170",
+      "q-en-rgram-171",
+      "q-en-rgram-172",
+      "q-en-rgram-173",
+      "q-en-rgram-174"
+     ]
+    },
+    {
+     "kind": "translation-choice",
+     "instruction": "Z podanych wersji tłumaczenia wybierz właściwe, tak aby otrzymać logiczne i gramatycznie poprawne zdania.",
+     "items": [
+      "q-en-rslow-176",
+      "q-en-rslow-177",
+      "q-en-rslow-178",
+      "q-en-rslow-179",
+      "q-en-rslow-180",
+      "q-en-rslow-181",
+      "q-en-rslow-182",
+      "q-en-rslow-183",
+      "q-en-rslow-184",
+      "q-en-rslow-185",
+      "q-en-rslow-186",
+      "q-en-rslow-187",
+      "q-en-rslow-188",
+      "q-en-rslow-189",
+      "q-en-rslow-190"
+     ]
+    },
+    {
+     "kind": "culture",
+     "instruction": "Przeczytaj uważnie pytania, a następnie wybierz prawidłową odpowiedź A–D. Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+     "items": [
+      "q-en-rkult-048",
+      "q-en-rkult-049",
+      "q-en-rkult-050",
+      "q-en-rkult-051",
+      "q-en-rkult-052",
+      "q-en-rkult-053",
+      "q-en-rkult-054",
+      "q-en-rkult-055",
+      "q-en-rkult-056"
+     ]
+    },
+    {
+     "kind": "culture",
+     "instruction": "Na podstawie opisów świąt i ważnych dni uzupełnij ich nazwy. Podane są pierwsze litery wyrazów.",
+     "items": [
+      "q-en-rkult-057",
+      "q-en-rkult-058",
+      "q-en-rkult-059",
+      "q-en-rkult-060",
+      "q-en-rkult-061",
+      "q-en-rkult-062"
+     ]
+    }
+   ]
   }
  ]
 }

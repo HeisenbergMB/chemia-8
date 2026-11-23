@@ -1793,5 +1793,516 @@
   ],
   "answer": 1,
   "explain": "Deserve + rzeczownik bez przyimka."
+ },
+ {
+  "id": "q-en-rslow-146",
+  "type": "write",
+  "level": 2,
+  "q": "The company wants to e _ _ a _ d its business to other countries.",
+  "answers": [
+   "expand"
+  ],
+  "explain": "Expand – rozszerzać (działalność)."
+ },
+ {
+  "id": "q-en-rslow-147",
+  "type": "write",
+  "level": 2,
+  "q": "A good teacher can i _ _ p _ _ e students to read more.",
+  "answers": [
+   "inspire"
+  ],
+  "explain": "Inspire – inspirować, zachęcać."
+ },
+ {
+  "id": "q-en-rslow-148",
+  "type": "write",
+  "level": 3,
+  "q": "I grew up in a quiet n _ _ _ h _ _ _ _ h _ _ d with many parks.",
+  "answers": [
+   "neighbourhood",
+   "neighborhood"
+  ],
+  "explain": "Neighbourhood – okolica, dzielnica."
+ },
+ {
+  "id": "q-en-rslow-149",
+  "type": "write",
+  "level": 2,
+  "q": "Regular exercise has many health b _ _ _ f _ _ s .",
+  "answers": [
+   "benefits"
+  ],
+  "explain": "Benefits – korzyści (rzeczownik w liczbie mnogiej)."
+ },
+ {
+  "id": "q-en-rslow-150",
+  "type": "write",
+  "level": 2,
+  "q": "In the library you should w _ _ s _ _ r so as not to disturb others.",
+  "answers": [
+   "whisper"
+  ],
+  "explain": "Whisper – szeptać."
+ },
+ {
+  "id": "q-en-rslow-151",
+  "type": "write",
+  "level": 2,
+  "q": "You can trust her; she is a very r _ _ i _ _ _ e person.",
+  "answers": [
+   "reliable"
+  ],
+  "explain": "Reliable – godny zaufania, niezawodny."
+ },
+ {
+  "id": "q-en-rslow-152",
+  "type": "write",
+  "level": 1,
+  "q": "My brother likes to c _ _ _ e _ t old stamps.",
+  "answers": [
+   "collect"
+  ],
+  "explain": "Collect – kolekcjonować."
+ },
+ {
+  "id": "q-en-rslow-153",
+  "type": "write",
+  "level": 1,
+  "q": "Heavy rain caused a f _ _ _ d in the valley.",
+  "answers": [
+   "flood"
+  ],
+  "explain": "Flood – powódź."
+ },
+ {
+  "id": "q-en-rslow-154",
+  "type": "write",
+  "level": 2,
+  "q": "We can't a _ _ o _ d a new car; it's too expensive.",
+  "answers": [
+   "afford"
+  ],
+  "explain": "Afford – pozwolić sobie finansowo na coś."
+ },
+ {
+  "id": "q-en-rslow-155",
+  "type": "write",
+  "level": 2,
+  "q": "We visited the ruins of an a _ _ i _ _ t Roman city.",
+  "answers": [
+   "ancient"
+  ],
+  "explain": "Ancient – starożytny."
+ },
+ {
+  "id": "q-en-rslow-156",
+  "type": "write",
+  "level": 3,
+  "q": "The train s _ _ _ d _ _ e has changed since last month.",
+  "answers": [
+   "schedule"
+  ],
+  "explain": "Schedule – rozkład jazdy, harmonogram."
+ },
+ {
+  "id": "q-en-rslow-157",
+  "type": "write",
+  "level": 2,
+  "q": "Please put the r _ _ _ i _ h in the bin.",
+  "answers": [
+   "rubbish"
+  ],
+  "explain": "Rubbish – śmieci."
+ },
+ {
+  "id": "q-en-rslow-158",
+  "type": "write",
+  "level": 1,
+  "q": "Don't a _ _ _ e with your sister all the time!",
+  "answers": [
+   "argue"
+  ],
+  "explain": "Argue – kłócić się."
+ },
+ {
+  "id": "q-en-rslow-159",
+  "type": "write",
+  "level": 3,
+  "q": "The sailors began their long sea v _ _ a _ e .",
+  "answers": [
+   "voyage"
+  ],
+  "explain": "Voyage – podróż morska."
+ },
+ {
+  "id": "q-en-rslow-160",
+  "type": "write",
+  "level": 2,
+  "q": "She was very g _ _ _ e _ _ l for our help.",
+  "answers": [
+   "grateful"
+  ],
+  "explain": "Grateful – wdzięczny."
+ },
+ {
+  "id": "q-en-rslow-161",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ of the ancient city amazed all the tourists. (DISCOVER)",
+  "answers": [
+   "discovery"
+  ],
+  "explain": "Rzeczownik od discover: discovery."
+ },
+ {
+  "id": "q-en-rslow-162",
+  "type": "write",
+  "level": 1,
+  "q": "He is a very ___ driver and never takes risks. (CARE)",
+  "answers": [
+   "careful"
+  ],
+  "explain": "Przymiotnik od care: careful."
+ },
+ {
+  "id": "q-en-rslow-163",
+  "type": "write",
+  "level": 3,
+  "q": "We were surprised by the ___ of the answer. (SIMPLE)",
+  "answers": [
+   "simplicity"
+  ],
+  "explain": "Rzeczownik od simple: simplicity."
+ },
+ {
+  "id": "q-en-rslow-164",
+  "type": "write",
+  "level": 1,
+  "q": "The museum is open to ___ of all ages. (VISIT)",
+  "answers": [
+   "visitors"
+  ],
+  "explain": "Rzeczownik w liczbie mnogiej: visitors."
+ },
+ {
+  "id": "q-en-rslow-165",
+  "type": "write",
+  "level": 2,
+  "q": "It is ___ to park here; you may get a fine. (LEGAL)",
+  "answers": [
+   "illegal"
+  ],
+  "explain": "Przeczący przedrostek il- przed l: illegal."
+ },
+ {
+  "id": "q-en-rslow-166",
+  "type": "write",
+  "level": 2,
+  "q": "She gave a ___ laugh and looked at the floor. (NERVE)",
+  "answers": [
+   "nervous"
+  ],
+  "explain": "Przymiotnik od nerve: nervous."
+ },
+ {
+  "id": "q-en-rslow-167",
+  "type": "write",
+  "level": 2,
+  "q": "The actors' ___ was excellent and the audience applauded. (PERFORM)",
+  "answers": [
+   "performance"
+  ],
+  "explain": "Rzeczownik od perform: performance."
+ },
+ {
+  "id": "q-en-rslow-168",
+  "type": "write",
+  "level": 2,
+  "q": "You need a lot of ___ to learn a foreign language. (PATIENT)",
+  "answers": [
+   "patience"
+  ],
+  "explain": "Rzeczownik od patient: patience."
+ },
+ {
+  "id": "q-en-rslow-169",
+  "type": "write",
+  "level": 1,
+  "q": "She spelled every word ___ in the dictation. (CORRECT)",
+  "answers": [
+   "correctly"
+  ],
+  "explain": "Przysłówek od correct: correctly."
+ },
+ {
+  "id": "q-en-rslow-170",
+  "type": "write",
+  "level": 3,
+  "q": "Scientists are looking for a ___ solution to the problem of plastic waste. (PRACTICE)",
+  "answers": [
+   "practical"
+  ],
+  "explain": "Przymiotnik od practice: practical."
+ },
+ {
+  "id": "q-en-rslow-171",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ between the two brothers is easy to see. (SIMILAR)",
+  "answers": [
+   "similarity"
+  ],
+  "explain": "Rzeczownik od similar: similarity."
+ },
+ {
+  "id": "q-en-rslow-172",
+  "type": "write",
+  "level": 2,
+  "q": "She was very ___ about her exam results. (DISAPPOINT)",
+  "answers": [
+   "disappointed"
+  ],
+  "explain": "Imiesłów bierny: disappointed – rozczarowana."
+ },
+ {
+  "id": "q-en-rslow-173",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ of the new bridge cost millions of pounds. (CONSTRUCT)",
+  "answers": [
+   "construction"
+  ],
+  "explain": "Rzeczownik od construct: construction."
+ },
+ {
+  "id": "q-en-rslow-174",
+  "type": "write",
+  "level": 3,
+  "q": "His ___ to the team was clear to everyone. (LOYAL)",
+  "answers": [
+   "loyalty"
+  ],
+  "explain": "Rzeczownik od loyal: loyalty."
+ },
+ {
+  "id": "q-en-rslow-175",
+  "type": "write",
+  "level": 2,
+  "q": "They live in a small ___ house near the sea. (WOOD)",
+  "answers": [
+   "wooden"
+  ],
+  "explain": "Przymiotnik od wood: wooden."
+ },
+ {
+  "id": "q-en-rslow-176",
+  "type": "choice",
+  "level": 2,
+  "q": "She (zrezygnowała z) her job last month.",
+  "options": [
+   "gave up",
+   "gave out",
+   "gave off",
+   "gave in"
+  ],
+  "answer": 0,
+  "explain": "Give up – zrezygnować z czegoś."
+ },
+ {
+  "id": "q-en-rslow-177",
+  "type": "choice",
+  "level": 2,
+  "q": "Could you (zająć się) my cat while I'm away?",
+  "options": [
+   "look up",
+   "look at",
+   "look for",
+   "look after"
+  ],
+  "answer": 3,
+  "explain": "Look after – opiekować się."
+ },
+ {
+  "id": "q-en-rslow-178",
+  "type": "choice",
+  "level": 2,
+  "q": "He (przyznał się do) stealing the bike.",
+  "options": [
+   "accepted",
+   "said",
+   "admitted",
+   "told"
+  ],
+  "answer": 2,
+  "explain": "Admit + forma -ing – przyznać się."
+ },
+ {
+  "id": "q-en-rslow-179",
+  "type": "choice",
+  "level": 2,
+  "q": "We (nie mieliśmy wyboru).",
+  "options": [
+   "had no choice",
+   "had no chose",
+   "had not choice",
+   "did not have a chose"
+  ],
+  "answer": 0,
+  "explain": "Have no choice – nie mieć wyboru."
+ },
+ {
+  "id": "q-en-rslow-180",
+  "type": "choice",
+  "level": 1,
+  "q": "I (interesuję się) history.",
+  "options": [
+   "interest in",
+   "have interest of",
+   "am interesting in",
+   "am interested in"
+  ],
+  "answer": 3,
+  "explain": "Be interested in – interesować się."
+ },
+ {
+  "id": "q-en-rslow-181",
+  "type": "choice",
+  "level": 2,
+  "q": "She (wyszła za mąż za) a doctor.",
+  "options": [
+   "got married with",
+   "married with",
+   "was married with",
+   "married"
+  ],
+  "answer": 3,
+  "explain": "Marry + dopełnienie bez przyimka."
+ },
+ {
+  "id": "q-en-rslow-182",
+  "type": "choice",
+  "level": 2,
+  "q": "The shop (jest zamknięty w niedziele).",
+  "options": [
+   "is closed on Sundays",
+   "closed on Sunday's",
+   "is close on Sunday",
+   "closes at Sundays"
+  ],
+  "answer": 0,
+  "explain": "Is closed on Sundays – zamknięty w niedziele."
+ },
+ {
+  "id": "q-en-rslow-183",
+  "type": "choice",
+  "level": 2,
+  "q": "Can I (pożyczyć) your dictionary?",
+  "options": [
+   "rent",
+   "borrow",
+   "lend",
+   "lease"
+  ],
+  "answer": 1,
+  "explain": "Borrow – pożyczać od kogoś; lend – pożyczać komuś."
+ },
+ {
+  "id": "q-en-rslow-184",
+  "type": "choice",
+  "level": 2,
+  "q": "It (zależy od) the weather.",
+  "options": [
+   "depends on",
+   "depends of",
+   "is depend on",
+   "depends from"
+  ],
+  "answer": 0,
+  "explain": "Depend on – zależeć od."
+ },
+ {
+  "id": "q-en-rslow-185",
+  "type": "choice",
+  "level": 2,
+  "q": "Thank you (za zaproszenie mnie).",
+  "options": [
+   "to invite me",
+   "for inviting me",
+   "for invite me",
+   "about invitation"
+  ],
+  "answer": 1,
+  "explain": "Thank you for + forma -ing."
+ },
+ {
+  "id": "q-en-rslow-186",
+  "type": "choice",
+  "level": 1,
+  "q": "He (nie zdał) the driving test.",
+  "options": [
+   "missed",
+   "passed not",
+   "lost",
+   "failed"
+  ],
+  "answer": 3,
+  "explain": "Fail an exam – nie zdać egzaminu."
+ },
+ {
+  "id": "q-en-rslow-187",
+  "type": "choice",
+  "level": 2,
+  "q": "I (zgubiłem się) in the old town.",
+  "options": [
+   "lost myself",
+   "got lost",
+   "was lost me",
+   "lost way"
+  ],
+  "answer": 1,
+  "explain": "Get lost – zgubić się."
+ },
+ {
+  "id": "q-en-rslow-188",
+  "type": "choice",
+  "level": 3,
+  "q": "She (przypomina mi) my aunt.",
+  "options": [
+   "reminds me of",
+   "remembers me of",
+   "reminds to me",
+   "recalls me to"
+  ],
+  "answer": 0,
+  "explain": "Remind someone of – przypominać komuś kogoś."
+ },
+ {
+  "id": "q-en-rslow-189",
+  "type": "choice",
+  "level": 2,
+  "q": "We (nie możemy się doczekać) your visit.",
+  "options": [
+   "are not waiting to",
+   "can't await",
+   "can't expect",
+   "can't wait for"
+  ],
+  "answer": 3,
+  "explain": "Can't wait for – nie móc się doczekać."
+ },
+ {
+  "id": "q-en-rslow-190",
+  "type": "choice",
+  "level": 2,
+  "q": "He (wychował się) in a small village.",
+  "options": [
+   "grew up",
+   "raised up",
+   "got up",
+   "grew out"
+  ],
+  "answer": 0,
+  "explain": "Grow up – dorastać."
  }
 ]

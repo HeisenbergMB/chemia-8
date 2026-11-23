@@ -628,5 +628,191 @@
   ],
   "answer": 3,
   "explain": "Rose Parade odbywa się w Nowy Rok."
+ },
+ {
+  "id": "q-en-rkult-048",
+  "type": "choice",
+  "level": 3,
+  "q": "On Bonfire Night in Britain, a 'guy' is ...",
+  "options": [
+   "a boy who lights the fire",
+   "a traditional sweet",
+   "a figure of Guy Fawkes burned on the bonfire",
+   "a firework shaped like a rocket"
+  ],
+  "answer": 2,
+  "explain": "„Guy” to kukła Guya Fawkesa spalana na ognisku 5 listopada."
+ },
+ {
+  "id": "q-en-rkult-049",
+  "type": "choice",
+  "level": 1,
+  "q": "Pumpkin pie is a traditional dessert at ...",
+  "options": [
+   "Boxing Day",
+   "Burns Night",
+   "Thanksgiving",
+   "Easter"
+  ],
+  "answer": 2,
+  "explain": "Placek dyniowy to klasyczny deser Święta Dziękczynienia."
+ },
+ {
+  "id": "q-en-rkult-050",
+  "type": "choice",
+  "level": 3,
+  "q": "In the USA, Cinco de Mayo is celebrated mainly by people of ... heritage.",
+  "options": [
+   "Mexican",
+   "Scottish",
+   "Irish",
+   "Italian"
+  ],
+  "answer": 0,
+  "explain": "Cinco de Mayo (5 maja) to meksykańskie święto obchodzone także w USA."
+ },
+ {
+  "id": "q-en-rkult-051",
+  "type": "choice",
+  "level": 3,
+  "q": "Kwanzaa, an African-American holiday, begins on ...",
+  "options": [
+   "4 July",
+   "1 November",
+   "25 January",
+   "26 December"
+  ],
+  "answer": 3,
+  "explain": "Kwanzaa trwa od 26 grudnia do 1 stycznia."
+ },
+ {
+  "id": "q-en-rkult-052",
+  "type": "choice",
+  "level": 2,
+  "q": "In the USA, a 'Sweet Sixteen' party celebrates ...",
+  "options": [
+   "a teenager's sixteenth birthday",
+   "sixteen years of marriage",
+   "the sixteenth day of school",
+   "the end of sixteen weeks of summer"
+  ],
+  "answer": 0,
+  "explain": "Sweet Sixteen to przyjęcie z okazji szesnastych urodzin."
+ },
+ {
+  "id": "q-en-rkult-053",
+  "type": "choice",
+  "level": 3,
+  "q": "The Royal Edinburgh Military Tattoo is held every August at Edinburgh ...",
+  "options": [
+   "Castle",
+   "Bridge",
+   "University",
+   "Cathedral"
+  ],
+  "answer": 0,
+  "explain": "Tattoo to pokaz orkiestr wojskowych na esplanadzie Zamku Edynburskiego."
+ },
+ {
+  "id": "q-en-rkult-054",
+  "type": "choice",
+  "level": 2,
+  "q": "Haggis is traditionally eaten on ...",
+  "options": [
+   "Boxing Day",
+   "Pancake Day",
+   "St Patrick's Day",
+   "Burns Night"
+  ],
+  "answer": 3,
+  "explain": "Haggis serwuje się na kolacji z okazji Burns Night."
+ },
+ {
+  "id": "q-en-rkult-055",
+  "type": "choice",
+  "level": 2,
+  "q": "St Andrew's Day on 30 November is the national day of ...",
+  "options": [
+   "Ireland",
+   "Wales",
+   "Scotland",
+   "England"
+  ],
+  "answer": 2,
+  "explain": "Św. Andrzej jest patronem Szkocji."
+ },
+ {
+  "id": "q-en-rkult-056",
+  "type": "choice",
+  "level": 3,
+  "q": "Twelfth Night marks the end of the traditional ... season.",
+  "options": [
+   "summer holiday",
+   "Easter",
+   "Lent",
+   "Christmas"
+  ],
+  "answer": 3,
+  "explain": "Twelfth Night (5/6 stycznia) kończy okres świąt Bożego Narodzenia."
+ },
+ {
+  "id": "q-en-rkult-057",
+  "type": "write",
+  "level": 2,
+  "q": "B___________ H___________ – a public holiday in the UK when banks and most offices are closed",
+  "answers": [
+   "Bank Holiday"
+  ],
+  "explain": "Bank Holiday – dzień wolny od pracy w Wielkiej Brytanii."
+ },
+ {
+  "id": "q-en-rkult-058",
+  "type": "write",
+  "level": 1,
+  "q": "G___________ F___________ – the Friday before Easter Sunday",
+  "answers": [
+   "Good Friday"
+  ],
+  "explain": "Good Friday – Wielki Piątek."
+ },
+ {
+  "id": "q-en-rkult-059",
+  "type": "write",
+  "level": 1,
+  "q": "E___________ D___________ – 22 April, a day for protecting the planet",
+  "answers": [
+   "Earth Day"
+  ],
+  "explain": "Earth Day – Dzień Ziemi, 22 kwietnia."
+ },
+ {
+  "id": "q-en-rkult-060",
+  "type": "write",
+  "level": 3,
+  "q": "A___________ D___________ – an American day on which people plant trees",
+  "answers": [
+   "Arbor Day"
+  ],
+  "explain": "Arbor Day – Dzień Drzewa."
+ },
+ {
+  "id": "q-en-rkult-061",
+  "type": "write",
+  "level": 2,
+  "q": "H___________ F___________ – an autumn thanksgiving service in British schools and churches",
+  "answers": [
+   "Harvest Festival"
+  ],
+  "explain": "Harvest Festival – dziękczynienie za plony."
+ },
+ {
+  "id": "q-en-rkult-062",
+  "type": "write",
+  "level": 2,
+  "q": "E___________ M___________ – the Monday after Easter Sunday, a public holiday in England",
+  "answers": [
+   "Easter Monday"
+  ],
+  "explain": "Easter Monday – poniedziałek wielkanocny."
  }
 ]
