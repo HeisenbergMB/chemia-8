@@ -1899,7 +1899,7 @@
   "id": "q-en-rslow-156",
   "type": "write",
   "level": 3,
-  "q": "The train s _ _ _ d _ _ e has changed since last month.",
+  "q": "Check the bus s _ _ _ d _ _ e before you leave; it changed last month.",
   "answers": [
    "schedule"
   ],
@@ -1949,7 +1949,7 @@
   "id": "q-en-rslow-161",
   "type": "write",
   "level": 2,
-  "q": "The ___ of the ancient city amazed all the tourists. (DISCOVER)",
+  "q": "The ___ of the ancient city amazed archaeologists all over the world. (DISCOVER)",
   "answers": [
    "discovery"
   ],
@@ -2304,5 +2304,441 @@
   ],
   "answer": 0,
   "explain": "Grow up – dorastać."
+ },
+ {
+  "id": "q-en-rslow-191",
+  "type": "write",
+  "level": 2,
+  "q": "The medicine was very ___ against the flu. (EFFECT)",
+  "answers": [
+   "effective"
+  ],
+  "explain": "Przymiotnik od effect: effective."
+ },
+ {
+  "id": "q-en-rslow-192",
+  "type": "write",
+  "level": 3,
+  "q": "He took full ___ for the mistake. (RESPONSIBLE)",
+  "answers": [
+   "responsibility"
+  ],
+  "explain": "Rzeczownik od responsible: responsibility."
+ },
+ {
+  "id": "q-en-rslow-193",
+  "type": "write",
+  "level": 1,
+  "q": "It is ___ to predict the weather a month ahead. (POSSIBLE)",
+  "answers": [
+   "impossible"
+  ],
+  "explain": "Przeczący przedrostek im- przed p: impossible."
+ },
+ {
+  "id": "q-en-rslow-194",
+  "type": "write",
+  "level": 1,
+  "q": "The film was so ___ that I fell asleep. (BORE)",
+  "answers": [
+   "boring"
+  ],
+  "explain": "Przymiotnik z -ing opisujący cechę filmu: boring."
+ },
+ {
+  "id": "q-en-rslow-195",
+  "type": "write",
+  "level": 2,
+  "q": "He thanked us ___ for the help. (WARM)",
+  "answers": [
+   "warmly"
+  ],
+  "explain": "Przysłówek od warm: warmly."
+ },
+ {
+  "id": "q-en-rslow-196",
+  "type": "write",
+  "level": 2,
+  "q": "Our ___ for the trip was growing every day. (EXCITE)",
+  "answers": [
+   "excitement"
+  ],
+  "explain": "Rzeczownik od excite: excitement."
+ },
+ {
+  "id": "q-en-rslow-197",
+  "type": "write",
+  "level": 2,
+  "q": "Years of hard work led to the ___ of the project. (SUCCEED)",
+  "answers": [
+   "success"
+  ],
+  "explain": "Rzeczownik od succeed: success."
+ },
+ {
+  "id": "q-en-rslow-198",
+  "type": "write",
+  "level": 1,
+  "q": "It was a ___ day, with no clouds at all. (SUN)",
+  "answers": [
+   "sunny"
+  ],
+  "explain": "Przymiotnik od sun: sunny."
+ },
+ {
+  "id": "q-en-rslow-199",
+  "type": "write",
+  "level": 3,
+  "q": "The new manager is very ___ and listens to everyone. (UNDERSTAND)",
+  "answers": [
+   "understanding"
+  ],
+  "explain": "Przymiotnik od understand: understanding (wyrozumiały)."
+ },
+ {
+  "id": "q-en-rslow-200",
+  "type": "write",
+  "level": 2,
+  "q": "She felt completely ___ after the long hike. (EXHAUST)",
+  "answers": [
+   "exhausted"
+  ],
+  "explain": "Imiesłów bierny: exhausted – wyczerpana."
+ },
+ {
+  "id": "q-en-rslow-201",
+  "type": "choice",
+  "level": 2,
+  "q": "He was ++eager++ to start the new job.",
+  "options": [
+   "unable",
+   "keen",
+   "nervous",
+   "unwilling"
+  ],
+  "answer": 1,
+  "explain": "Eager = chętny, pełen zapału, czyli keen."
+ },
+ {
+  "id": "q-en-rslow-202",
+  "type": "choice",
+  "level": 2,
+  "q": "The tourists were ++delighted++ with the view.",
+  "options": [
+   "confused",
+   "very pleased",
+   "annoyed",
+   "disappointed"
+  ],
+  "answer": 1,
+  "explain": "Delighted = zachwycony."
+ },
+ {
+  "id": "q-en-rslow-203",
+  "type": "choice",
+  "level": 1,
+  "q": "The road was ++blocked++ by fallen trees.",
+  "options": [
+   "repaired",
+   "widened",
+   "crossed",
+   "closed"
+  ],
+  "answer": 3,
+  "explain": "Blocked = zablokowany, czyli closed."
+ },
+ {
+  "id": "q-en-rslow-204",
+  "type": "choice",
+  "level": 2,
+  "q": "She gave a ++convincing++ explanation.",
+  "options": [
+   "believable",
+   "funny",
+   "rude",
+   "long"
+  ],
+  "answer": 0,
+  "explain": "Convincing = przekonujący, wiarygodny."
+ },
+ {
+  "id": "q-en-rslow-205",
+  "type": "choice",
+  "level": 3,
+  "q": "They ++inherited++ the house from their aunt.",
+  "options": [
+   "rented it",
+   "bought it",
+   "received it after her death",
+   "built it"
+  ],
+  "answer": 2,
+  "explain": "Inherit = odziedziczyć."
+ },
+ {
+  "id": "q-en-rslow-206",
+  "type": "choice",
+  "level": 1,
+  "q": "It was an ++enormous++ cake.",
+  "options": [
+   "tasty",
+   "huge",
+   "plain",
+   "stale"
+  ],
+  "answer": 1,
+  "explain": "Enormous = ogromny."
+ },
+ {
+  "id": "q-en-rslow-207",
+  "type": "choice",
+  "level": 2,
+  "q": "He ++grabbed++ his coat and left.",
+  "options": [
+   "washed",
+   "folded",
+   "took quickly",
+   "forgot"
+  ],
+  "answer": 2,
+  "explain": "Grab = chwycić szybko."
+ },
+ {
+  "id": "q-en-rslow-208",
+  "type": "choice",
+  "level": 2,
+  "q": "We need to ++reduce++ costs.",
+  "options": [
+   "check",
+   "raise",
+   "hide",
+   "cut"
+  ],
+  "answer": 3,
+  "explain": "Reduce = zmniejszać, czyli cut."
+ },
+ {
+  "id": "q-en-rslow-209",
+  "type": "choice",
+  "level": 1,
+  "q": "The ++journey++ to the mountains was long and tiring.",
+  "options": [
+   "view",
+   "trip",
+   "rest",
+   "race"
+  ],
+  "answer": 1,
+  "explain": "Journey = podróż, czyli trip."
+ },
+ {
+  "id": "q-en-rslow-210",
+  "type": "choice",
+  "level": 2,
+  "q": "She felt ++anxious++ before the test.",
+  "options": [
+   "calm",
+   "worried",
+   "proud",
+   "sleepy"
+  ],
+  "answer": 1,
+  "explain": "Anxious = zaniepokojony."
+ },
+ {
+  "id": "q-en-rslow-211",
+  "type": "choice",
+  "level": 1,
+  "q": "Please (zgaś) the light when you leave.",
+  "options": [
+   "turn up",
+   "turn down",
+   "turn on",
+   "turn off"
+  ],
+  "answer": 3,
+  "explain": "Turn off – wyłączyć."
+ },
+ {
+  "id": "q-en-rslow-212",
+  "type": "choice",
+  "level": 2,
+  "q": "The plane (wystartował) late.",
+  "options": [
+   "took off",
+   "took up",
+   "took over",
+   "took out"
+  ],
+  "answer": 0,
+  "explain": "Take off – wystartować (o samolocie)."
+ },
+ {
+  "id": "q-en-rslow-213",
+  "type": "choice",
+  "level": 1,
+  "q": "I (nie mogę znaleźć) my glasses anywhere.",
+  "options": [
+   "can't seek",
+   "don't look",
+   "can't search",
+   "can't find"
+  ],
+  "answer": 3,
+  "explain": "Find – znaleźć; search – szukać."
+ },
+ {
+  "id": "q-en-rslow-214",
+  "type": "choice",
+  "level": 2,
+  "q": "(Ostatnio) I have been very busy.",
+  "options": [
+   "Latest",
+   "Late",
+   "Last",
+   "Lately"
+  ],
+  "answer": 3,
+  "explain": "Lately – ostatnio."
+ },
+ {
+  "id": "q-en-rslow-215",
+  "type": "choice",
+  "level": 2,
+  "q": "The tickets (są wyprzedane).",
+  "options": [
+   "are sold out",
+   "are sold off",
+   "have sold of",
+   "sell out"
+  ],
+  "answer": 0,
+  "explain": "Be sold out – być wyprzedanym."
+ },
+ {
+  "id": "q-en-rslow-216",
+  "type": "choice",
+  "level": 2,
+  "q": "She (nie ma pojęcia) what to do.",
+  "options": [
+   "is no idea",
+   "does not have an idea of",
+   "has not idea",
+   "has no idea"
+  ],
+  "answer": 3,
+  "explain": "Have no idea – nie mieć pojęcia."
+ },
+ {
+  "id": "q-en-rslow-217",
+  "type": "choice",
+  "level": 2,
+  "q": "I (wolałbym) stay at home tonight.",
+  "options": [
+   "would like",
+   "would prefer",
+   "would rather",
+   "had better"
+  ],
+  "answer": 2,
+  "explain": "Would rather + bezokolicznik bez to."
+ },
+ {
+  "id": "q-en-rslow-218",
+  "type": "choice",
+  "level": 2,
+  "q": "We (zdążyliśmy na) the last train.",
+  "options": [
+   "held",
+   "took to",
+   "caught",
+   "reached to"
+  ],
+  "answer": 2,
+  "explain": "Catch the train – zdążyć na pociąg."
+ },
+ {
+  "id": "q-en-rslow-219",
+  "type": "choice",
+  "level": 2,
+  "q": "He (przestał palić) last year.",
+  "options": [
+   "gave up smoking",
+   "stopped to smoke",
+   "quit smoke",
+   "left smoking"
+  ],
+  "answer": 0,
+  "explain": "Give up smoking – rzucić palenie."
+ },
+ {
+  "id": "q-en-rslow-220",
+  "type": "choice",
+  "level": 2,
+  "q": "I (nie mogę się z tobą zgodzić).",
+  "options": [
+   "can't agree with you",
+   "can't be agree with you",
+   "don't agree you",
+   "can't agree to you"
+  ],
+  "answer": 0,
+  "explain": "Agree with someone – zgadzać się z kimś."
+ },
+ {
+  "id": "q-en-rslow-221",
+  "type": "choice",
+  "level": 3,
+  "q": "(Mimo wszystko) she smiled.",
+  "options": [
+   "After all everything",
+   "Anyway of all",
+   "Despite of all",
+   "In spite of everything"
+  ],
+  "answer": 3,
+  "explain": "In spite of everything – mimo wszystko."
+ },
+ {
+  "id": "q-en-rslow-222",
+  "type": "choice",
+  "level": 2,
+  "q": "He (poświęca dużo czasu na) his hobby.",
+  "options": [
+   "passes a lot of time on",
+   "spends a lot of time on",
+   "takes a lot of time to",
+   "makes a lot of time for"
+  ],
+  "answer": 1,
+  "explain": "Spend time on something."
+ },
+ {
+  "id": "q-en-rslow-223",
+  "type": "choice",
+  "level": 1,
+  "q": "The room (była pełna) people.",
+  "options": [
+   "was full of",
+   "was full from",
+   "was fill of",
+   "had full of"
+  ],
+  "answer": 0,
+  "explain": "Be full of – być pełnym czegoś."
+ },
+ {
+  "id": "q-en-rslow-224",
+  "type": "choice",
+  "level": 3,
+  "q": "They (nie pozwolili nam) take photos.",
+  "options": [
+   "didn't allow us",
+   "didn't ask us",
+   "didn't let us",
+   "didn't make us"
+  ],
+  "answer": 2,
+  "explain": "Let + dopełnienie + bezokolicznik bez to."
  }
 ]

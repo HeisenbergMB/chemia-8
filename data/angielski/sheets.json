@@ -1289,6 +1289,167 @@
      ]
     }
    ]
+  },
+  {
+   "id": "s-en-rej-05",
+   "format": "rejonowy",
+   "title": "Arkusz 5 – etap rejonowy",
+   "tasks": [
+    {
+     "kind": "choice-text",
+     "group": "g-en-rczyt-10",
+     "items": [
+      "q-en-rczyt-067",
+      "q-en-rczyt-068",
+      "q-en-rczyt-069",
+      "q-en-rczyt-070",
+      "q-en-rczyt-071",
+      "q-en-rczyt-072",
+      "q-en-rczyt-073",
+      "q-en-rczyt-074"
+     ]
+    },
+    {
+     "kind": "open-cloze",
+     "group": "g-en-rgram-05",
+     "items": [
+      "q-en-rgram-175",
+      "q-en-rgram-176",
+      "q-en-rgram-177",
+      "q-en-rgram-178",
+      "q-en-rgram-179",
+      "q-en-rgram-180",
+      "q-en-rgram-181",
+      "q-en-rgram-182",
+      "q-en-rgram-183",
+      "q-en-rgram-184",
+      "q-en-rgram-185",
+      "q-en-rgram-186",
+      "q-en-rgram-187",
+      "q-en-rgram-188"
+     ]
+    },
+    {
+     "kind": "key-word",
+     "instruction": "Przeczytaj zdania (1–15). Wykorzystując wyraz podany wielkimi literami, uzupełnij drugie zdanie z luką tak, aby precyzyjnie oddać sens zdania wyjściowego. Wymagana jest całkowita poprawność pisowni i gramatyki. Nie zmieniaj formy podanego wyrazu. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany. Formy skrócone (np. mustn't) liczą się jako jedno słowo.",
+     "items": [
+      "q-en-rgram-189",
+      "q-en-rgram-190",
+      "q-en-rgram-191",
+      "q-en-rgram-192",
+      "q-en-rgram-193",
+      "q-en-rgram-194",
+      "q-en-rgram-195",
+      "q-en-rgram-196",
+      "q-en-rgram-197",
+      "q-en-rgram-198",
+      "q-en-rgram-199",
+      "q-en-rgram-200",
+      "q-en-rgram-201",
+      "q-en-rgram-202",
+      "q-en-rgram-203"
+     ]
+    },
+    {
+     "kind": "word-formation",
+     "instruction": "Uzupełnij luki odpowiednią formą wyrazu utworzonego od wyrazu podanego w nawiasie. Wymagana jest całkowita poprawność pisowni wpisywanych słów. Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+     "items": [
+      "q-en-rslow-191",
+      "q-en-rslow-192",
+      "q-en-rslow-193",
+      "q-en-rslow-194",
+      "q-en-rslow-195",
+      "q-en-rslow-196",
+      "q-en-rslow-197",
+      "q-en-rslow-198",
+      "q-en-rslow-199",
+      "q-en-rslow-200"
+     ]
+    },
+    {
+     "kind": "synonym-replace",
+     "instruction": "Przeczytaj zdania (1–10). Wybierz tę z opcji A–D, której znaczenie jest najbardziej zbliżone do podkreślonego słowa.",
+     "items": [
+      "q-en-rslow-201",
+      "q-en-rslow-202",
+      "q-en-rslow-203",
+      "q-en-rslow-204",
+      "q-en-rslow-205",
+      "q-en-rslow-206",
+      "q-en-rslow-207",
+      "q-en-rslow-208",
+      "q-en-rslow-209",
+      "q-en-rslow-210"
+     ]
+    },
+    {
+     "kind": "mc-cloze",
+     "instruction": "Przeczytaj zdania. Z podanych odpowiedzi wybierz właściwą, tak aby otrzymać logiczne i gramatycznie poprawne zdania.",
+     "items": [
+      "q-en-rgram-204",
+      "q-en-rgram-205",
+      "q-en-rgram-206",
+      "q-en-rgram-207",
+      "q-en-rgram-208",
+      "q-en-rgram-209",
+      "q-en-rgram-210",
+      "q-en-rgram-211",
+      "q-en-rgram-212",
+      "q-en-rgram-213",
+      "q-en-rgram-214",
+      "q-en-rgram-215",
+      "q-en-rgram-216",
+      "q-en-rgram-217",
+      "q-en-rgram-218"
+     ]
+    },
+    {
+     "kind": "translation-choice",
+     "instruction": "Z podanych wersji tłumaczenia wybierz właściwe, tak aby otrzymać logiczne i gramatycznie poprawne zdania.",
+     "items": [
+      "q-en-rslow-211",
+      "q-en-rslow-212",
+      "q-en-rslow-213",
+      "q-en-rslow-214",
+      "q-en-rslow-215",
+      "q-en-rslow-216",
+      "q-en-rslow-217",
+      "q-en-rslow-218",
+      "q-en-rslow-219",
+      "q-en-rslow-220",
+      "q-en-rslow-221",
+      "q-en-rslow-222",
+      "q-en-rslow-223",
+      "q-en-rslow-224"
+     ]
+    },
+    {
+     "kind": "culture",
+     "instruction": "Przeczytaj uważnie pytania, a następnie wybierz prawidłową odpowiedź A–D. Za każdą poprawną odpowiedź otrzymasz 1 punkt.",
+     "items": [
+      "q-en-rkult-063",
+      "q-en-rkult-064",
+      "q-en-rkult-065",
+      "q-en-rkult-066",
+      "q-en-rkult-067",
+      "q-en-rkult-068",
+      "q-en-rkult-069",
+      "q-en-rkult-070",
+      "q-en-rkult-071",
+      "q-en-rkult-072"
+     ]
+    },
+    {
+     "kind": "culture",
+     "instruction": "Na podstawie opisów świąt i ważnych dni uzupełnij ich nazwy. Podane są pierwsze litery wyrazów.",
+     "items": [
+      "q-en-rkult-073",
+      "q-en-rkult-074",
+      "q-en-rkult-075",
+      "q-en-rkult-076"
+     ]
+    }
+   ]
   }
  ]
 }

@@ -1978,7 +1978,9 @@
   "maxWords": 5,
   "answers": [
    "need not bring",
-   "needn't bring"
+   "needn't bring",
+   "do not need to bring",
+   "don't need to bring"
   ],
   "explain": "Need not + bezokolicznik – nie musisz."
  },
@@ -2002,7 +2004,10 @@
   "keyword": "apologise",
   "maxWords": 5,
   "answers": [
-   "apologise for"
+   "apologise for",
+   "must apologise for",
+   "want to apologise for",
+   "would like to apologise for"
   ],
   "explain": "Apologise for + forma -ing."
  },
@@ -2038,7 +2043,9 @@
   "keyword": "been",
   "maxWords": 5,
   "answers": [
-   "have been learning"
+   "have been learning",
+   "'ve been learning",
+   "have been studying"
   ],
   "explain": "Present Perfect Continuous z for."
  },
@@ -2089,7 +2096,9 @@
   "answers": [
    "can't afford",
    "cannot afford",
-   "can not afford"
+   "can not afford",
+   "can't afford to buy",
+   "cannot afford to buy"
   ],
   "explain": "Can't afford – nie stać kogoś na coś."
  },
@@ -2114,7 +2123,9 @@
   "keyword": "unless",
   "maxWords": 5,
   "answers": [
-   "unless you have"
+   "unless you have",
+   "unless you've got",
+   "unless you have got"
   ],
   "explain": "Unless oznacza if not; po nim twierdzenie."
  },
@@ -2138,7 +2149,11 @@
   "keyword": "better",
   "maxWords": 5,
   "answers": [
-   "better than"
+   "better than",
+   "much better than",
+   "far better than",
+   "a lot better than",
+   "even better than"
   ],
   "explain": "Stopień wyższy + than."
  },
@@ -2281,5 +2296,581 @@
   ],
   "answer": 1,
   "explain": "For + okres trwania."
+ },
+ {
+  "id": "q-en-rgram-175",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (1)",
+  "group": "g-en-rgram-05",
+  "gap": 1,
+  "answers": [
+   "would",
+   "could"
+  ],
+  "explain": "Czasownik modalny w przeszłości: nobody would have believed."
+ },
+ {
+  "id": "q-en-rgram-176",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (2)",
+  "group": "g-en-rgram-05",
+  "gap": 2,
+  "answers": [
+   "were"
+  ],
+  "explain": "Be used to – być przyzwyczajonym: drivers were used to the idea."
+ },
+ {
+  "id": "q-en-rgram-177",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (3)",
+  "group": "g-en-rgram-05",
+  "gap": 3,
+  "answers": [
+   "to"
+  ],
+  "explain": "Decide + to + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-178",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (4)",
+  "group": "g-en-rgram-05",
+  "gap": 4,
+  "answers": [
+   "was"
+  ],
+  "explain": "Strona bierna Past Simple: the project was criticised."
+ },
+ {
+  "id": "q-en-rgram-179",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (5)",
+  "group": "g-en-rgram-05",
+  "gap": 5,
+  "answers": [
+   "if",
+   "because",
+   "when",
+   "once",
+   "as",
+   "since"
+  ],
+  "explain": "Spójnik wprowadzający warunek lub przyczynę: stop coming if they could not park."
+ },
+ {
+  "id": "q-en-rgram-180",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (6)",
+  "group": "g-en-rgram-05",
+  "gap": 6,
+  "answers": [
+   "by"
+  ],
+  "explain": "Rise by + wartość – wzrosnąć o dziesięć procent."
+ },
+ {
+  "id": "q-en-rgram-181",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (7)",
+  "group": "g-en-rgram-05",
+  "gap": 7,
+  "answers": [
+   "have"
+  ],
+  "explain": "Would never have imagined – III okres warunkowy w formie skróconej."
+ },
+ {
+  "id": "q-en-rgram-182",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (8)",
+  "group": "g-en-rgram-05",
+  "gap": 8,
+  "answers": [
+   "every",
+   "each"
+  ],
+  "explain": "Every spring – co wiosnę; konstrukcja have something done."
+ },
+ {
+  "id": "q-en-rgram-183",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (9)",
+  "group": "g-en-rgram-05",
+  "gap": 9,
+  "answers": [
+   "time"
+  ],
+  "explain": "It is high time + Past Simple – najwyższy czas."
+ },
+ {
+  "id": "q-en-rgram-184",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (10)",
+  "group": "g-en-rgram-05",
+  "gap": 10,
+  "answers": [
+   "used"
+  ],
+  "explain": "Used to + bezokolicznik – dawny nawyk."
+ },
+ {
+  "id": "q-en-rgram-185",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (11)",
+  "group": "g-en-rgram-05",
+  "gap": 11,
+  "answers": [
+   "while",
+   "whereas",
+   "and",
+   "but"
+  ],
+  "explain": "Spójnik zestawiający dwa poglądy: while others say."
+ },
+ {
+  "id": "q-en-rgram-186",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (12)",
+  "group": "g-en-rgram-05",
+  "gap": 12,
+  "answers": [
+   "is",
+   "becomes"
+  ],
+  "explain": "I okres warunkowy: if + Present Simple."
+ },
+ {
+  "id": "q-en-rgram-187",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (13)",
+  "group": "g-en-rgram-05",
+  "gap": 13,
+  "answers": [
+   "no"
+  ],
+  "explain": "No matter how long – bez względu na to, jak długo."
+ },
+ {
+  "id": "q-en-rgram-188",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (14)",
+  "group": "g-en-rgram-05",
+  "gap": 14,
+  "answers": [
+   "so"
+  ],
+  "explain": "So have our children – zgoda z twierdzeniem w Present Perfect."
+ },
+ {
+  "id": "q-en-rgram-189",
+  "type": "write",
+  "level": 2,
+  "q": "'I didn't break the vase,' said Tom. (DENIED)\nTom ___ the vase.",
+  "keyword": "denied",
+  "maxWords": 5,
+  "answers": [
+   "denied breaking"
+  ],
+  "explain": "Deny + forma -ing."
+ },
+ {
+  "id": "q-en-rgram-190",
+  "type": "write",
+  "level": 1,
+  "q": "Somebody has stolen my bike. (BEEN)\nMy bike ___ stolen.",
+  "keyword": "been",
+  "maxWords": 5,
+  "answers": [
+   "has been"
+  ],
+  "explain": "Present Perfect Passive: has been stolen."
+ },
+ {
+  "id": "q-en-rgram-191",
+  "type": "write",
+  "level": 2,
+  "q": "I'd prefer to stay at home. (RATHER)\nI ___ at home.",
+  "keyword": "rather",
+  "maxWords": 5,
+  "answers": [
+   "would rather stay",
+   "'d rather stay"
+  ],
+  "explain": "Would rather + bezokolicznik bez to."
+ },
+ {
+  "id": "q-en-rgram-192",
+  "type": "write",
+  "level": 2,
+  "q": "Her car is more expensive than mine. (AS)\nMy car isn't ___ hers.",
+  "keyword": "as",
+  "maxWords": 5,
+  "answers": [
+   "as expensive as"
+  ],
+  "explain": "Not as ... as – nie tak ... jak."
+ },
+ {
+  "id": "q-en-rgram-193",
+  "type": "write",
+  "level": 2,
+  "q": "'Why don't we go to the beach?' said Ann. (SUGGESTED)\nAnn ___ to the beach.",
+  "keyword": "suggested",
+  "maxWords": 5,
+  "answers": [
+   "suggested going",
+   "suggested we go",
+   "suggested that we go"
+  ],
+  "explain": "Suggest + -ing albo suggest (that) we + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-194",
+  "type": "write",
+  "level": 2,
+  "q": "This is the first time I've flown. (NEVER)\nI ___ before.",
+  "keyword": "never",
+  "maxWords": 5,
+  "answers": [
+   "have never flown"
+  ],
+  "explain": "Present Perfect z never."
+ },
+ {
+  "id": "q-en-rgram-195",
+  "type": "write",
+  "level": 2,
+  "q": "I'm sorry, but you can't park here. (ALLOWED)\nYou ___ park here.",
+  "keyword": "allowed",
+  "maxWords": 5,
+  "answers": [
+   "are not allowed to",
+   "aren't allowed to"
+  ],
+  "explain": "Be allowed to – mieć pozwolenie."
+ },
+ {
+  "id": "q-en-rgram-196",
+  "type": "write",
+  "level": 2,
+  "q": "The dentist is going to check my teeth tomorrow. (HAVE)\nI am going to ___ checked tomorrow.",
+  "keyword": "have",
+  "maxWords": 5,
+  "answers": [
+   "have my teeth"
+  ],
+  "explain": "Have something done – zlecić wykonanie usługi."
+ },
+ {
+  "id": "q-en-rgram-197",
+  "type": "write",
+  "level": 2,
+  "q": "Sport doesn't interest my sister. (INTERESTED)\nMy sister ___ sport.",
+  "keyword": "interested",
+  "maxWords": 5,
+  "answers": [
+   "isn't interested in",
+   "is not interested in"
+  ],
+  "explain": "Be interested in – interesować się."
+ },
+ {
+  "id": "q-en-rgram-198",
+  "type": "write",
+  "level": 2,
+  "q": "The robbers escaped before the police arrived. (HAD)\nBy the time the police arrived, the robbers ___.",
+  "keyword": "had",
+  "maxWords": 5,
+  "answers": [
+   "had escaped",
+   "had already escaped"
+  ],
+  "explain": "Past Perfect dla czynności wcześniejszej."
+ },
+ {
+  "id": "q-en-rgram-199",
+  "type": "write",
+  "level": 2,
+  "q": "It's possible that she lost her phone. (MAY)\nShe ___ her phone.",
+  "keyword": "may",
+  "maxWords": 5,
+  "answers": [
+   "may have lost"
+  ],
+  "explain": "May have + imiesłów – możliwość o przeszłości."
+ },
+ {
+  "id": "q-en-rgram-200",
+  "type": "write",
+  "level": 2,
+  "q": "I know a girl. Her father is a pilot. (WHOSE)\nI know a girl ___ a pilot.",
+  "keyword": "whose",
+  "maxWords": 5,
+  "answers": [
+   "whose father is"
+  ],
+  "explain": "Whose – zaimek dzierżawczy w zdaniu względnym."
+ },
+ {
+  "id": "q-en-rgram-201",
+  "type": "write",
+  "level": 3,
+  "q": "Nobody told me about the change. (WAS)\nI ___ about the change.",
+  "keyword": "was",
+  "maxWords": 5,
+  "answers": [
+   "was not told",
+   "wasn't told"
+  ],
+  "explain": "Strona bierna z przeczeniem: was not told."
+ },
+ {
+  "id": "q-en-rgram-202",
+  "type": "write",
+  "level": 2,
+  "q": "I didn't go to the party because I was ill. (WOULD)\nI ___ to the party if I hadn't been ill.",
+  "keyword": "would",
+  "maxWords": 5,
+  "answers": [
+   "would have gone"
+  ],
+  "explain": "III okres warunkowy: would have + imiesłów."
+ },
+ {
+  "id": "q-en-rgram-203",
+  "type": "write",
+  "level": 2,
+  "q": "She plays the piano better than anyone else in school. (BEST)\nShe is ___ player in school.",
+  "keyword": "best",
+  "maxWords": 5,
+  "answers": [
+   "the best piano"
+  ],
+  "explain": "Stopień najwyższy z the."
+ },
+ {
+  "id": "q-en-rgram-204",
+  "type": "choice",
+  "level": 1,
+  "q": "My teacher asked me ___ I had read the whole book.",
+  "options": [
+   "what",
+   "if",
+   "which",
+   "that"
+  ],
+  "answer": 1,
+  "explain": "Pytanie ogólne w mowie zależnej: if."
+ },
+ {
+  "id": "q-en-rgram-205",
+  "type": "choice",
+  "level": 1,
+  "q": "The film was ___ boring that we left.",
+  "options": [
+   "so",
+   "such",
+   "very",
+   "too"
+  ],
+  "answer": 0,
+  "explain": "So + przymiotnik + that."
+ },
+ {
+  "id": "q-en-rgram-206",
+  "type": "choice",
+  "level": 2,
+  "q": "If she ___ harder, she would have passed the exam.",
+  "options": [
+   "had studied",
+   "has studied",
+   "studied",
+   "would study"
+  ],
+  "answer": 0,
+  "explain": "III okres warunkowy: if + Past Perfect."
+ },
+ {
+  "id": "q-en-rgram-207",
+  "type": "choice",
+  "level": 2,
+  "q": "I've never seen ___ a beautiful sunset.",
+  "options": [
+   "too",
+   "so",
+   "such",
+   "very"
+  ],
+  "answer": 2,
+  "explain": "Such + a + przymiotnik + rzeczownik."
+ },
+ {
+  "id": "q-en-rgram-208",
+  "type": "choice",
+  "level": 2,
+  "q": "Would you mind ___ the window?",
+  "options": [
+   "to open",
+   "open",
+   "opening",
+   "opened"
+  ],
+  "answer": 2,
+  "explain": "Would you mind + forma -ing."
+ },
+ {
+  "id": "q-en-rgram-209",
+  "type": "choice",
+  "level": 1,
+  "q": "The bridge ___ in 1890.",
+  "options": [
+   "has been built",
+   "was built",
+   "is built",
+   "built"
+  ],
+  "answer": 1,
+  "explain": "Strona bierna Past Simple z określeniem roku."
+ },
+ {
+  "id": "q-en-rgram-210",
+  "type": "choice",
+  "level": 2,
+  "q": "If I ___ you, I would take that job.",
+  "options": [
+   "were",
+   "will be",
+   "am",
+   "was"
+  ],
+  "answer": 0,
+  "explain": "II okres warunkowy w radach: if I were you."
+ },
+ {
+  "id": "q-en-rgram-211",
+  "type": "choice",
+  "level": 1,
+  "q": "Be quiet! The baby ___.",
+  "options": [
+   "slept",
+   "has slept",
+   "is sleeping",
+   "sleeps"
+  ],
+  "answer": 2,
+  "explain": "Present Continuous dla czynności w chwili mówienia."
+ },
+ {
+  "id": "q-en-rgram-212",
+  "type": "choice",
+  "level": 2,
+  "q": "By the time I got home, my family ___ dinner.",
+  "options": [
+   "has finished",
+   "finishes",
+   "was finish",
+   "had finished"
+  ],
+  "answer": 3,
+  "explain": "Past Perfect przed momentem w przeszłości."
+ },
+ {
+  "id": "q-en-rgram-213",
+  "type": "choice",
+  "level": 3,
+  "q": "She insisted ___ carrying the heavy bag herself.",
+  "options": [
+   "on",
+   "to",
+   "at",
+   "for"
+  ],
+  "answer": 0,
+  "explain": "Insist on + forma -ing."
+ },
+ {
+  "id": "q-en-rgram-214",
+  "type": "choice",
+  "level": 1,
+  "q": "Tom ___ his homework yet.",
+  "options": [
+   "didn't do",
+   "hasn't done",
+   "doesn't do",
+   "isn't doing"
+  ],
+  "answer": 1,
+  "explain": "Present Perfect z yet."
+ },
+ {
+  "id": "q-en-rgram-215",
+  "type": "choice",
+  "level": 2,
+  "q": "We ___ the news when the phone rang.",
+  "options": [
+   "have watched",
+   "were watching",
+   "had watched",
+   "watched"
+  ],
+  "answer": 1,
+  "explain": "Past Continuous przerwany przez krótszą czynność."
+ },
+ {
+  "id": "q-en-rgram-216",
+  "type": "choice",
+  "level": 1,
+  "q": "You ___ wear a seat belt; it is the law.",
+  "options": [
+   "might",
+   "can",
+   "may",
+   "must"
+  ],
+  "answer": 3,
+  "explain": "Must – obowiązek wynikający z przepisu."
+ },
+ {
+  "id": "q-en-rgram-217",
+  "type": "choice",
+  "level": 2,
+  "q": "The teacher told us ___ talking.",
+  "options": [
+   "to stop",
+   "that stop",
+   "stop",
+   "stopping"
+  ],
+  "answer": 0,
+  "explain": "Tell + dopełnienie + to + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-218",
+  "type": "choice",
+  "level": 2,
+  "q": "He drives ___ than his brother.",
+  "options": [
+   "carefullier",
+   "most carefully",
+   "more careful",
+   "more carefully"
+  ],
+  "answer": 3,
+  "explain": "Stopień wyższy przysłówka: more carefully."
  }
 ]

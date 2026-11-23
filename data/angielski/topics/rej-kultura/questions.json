@@ -809,10 +809,192 @@
   "id": "q-en-rkult-062",
   "type": "write",
   "level": 2,
-  "q": "E___________ M___________ – the Monday after Easter Sunday, a public holiday in England",
+  "q": "E___________ M___________ – the Monday after Easter Sunday, a public holiday in England and Wales",
   "answers": [
    "Easter Monday"
   ],
   "explain": "Easter Monday – poniedziałek wielkanocny."
+ },
+ {
+  "id": "q-en-rkult-063",
+  "type": "choice",
+  "level": 2,
+  "q": "The Macy's Thanksgiving Day Parade takes place in ...",
+  "options": [
+   "New York",
+   "Boston",
+   "Los Angeles",
+   "Chicago"
+  ],
+  "answer": 0,
+  "explain": "Parada Macy's odbywa się w Nowym Jorku w Dzień Dziękczynienia."
+ },
+ {
+  "id": "q-en-rkult-064",
+  "type": "choice",
+  "level": 2,
+  "q": "The bald eagle is the national bird of ...",
+  "options": [
+   "Canada",
+   "Scotland",
+   "Wales",
+   "the USA"
+  ],
+  "answer": 3,
+  "explain": "Bielik amerykański jest godłem i symbolem USA."
+ },
+ {
+  "id": "q-en-rkult-065",
+  "type": "choice",
+  "level": 3,
+  "q": "The Last Night of the Proms, with patriotic songs such as 'Rule, Britannia!', is held in ...",
+  "options": [
+   "Wembley Stadium",
+   "Edinburgh Castle",
+   "Buckingham Palace",
+   "the Royal Albert Hall in London"
+  ],
+  "answer": 3,
+  "explain": "Last Night of the Proms to koncert w Royal Albert Hall w Londynie."
+ },
+ {
+  "id": "q-en-rkult-066",
+  "type": "choice",
+  "level": 2,
+  "q": "The British monarch's televised Christmas message is traditionally broadcast on ...",
+  "options": [
+   "New Year's Day",
+   "Christmas Day",
+   "Boxing Day",
+   "Christmas Eve"
+  ],
+  "answer": 1,
+  "explain": "Orędzie bożonarodzeniowe monarchy nadaje się w Boże Narodzenie."
+ },
+ {
+  "id": "q-en-rkult-067",
+  "type": "choice",
+  "level": 2,
+  "q": "The Glastonbury Festival is famous for ...",
+  "options": [
+   "horse racing",
+   "live music",
+   "fireworks",
+   "a marathon"
+  ],
+  "answer": 1,
+  "explain": "Glastonbury to jeden z najsłynniejszych festiwali muzycznych."
+ },
+ {
+  "id": "q-en-rkult-068",
+  "type": "choice",
+  "level": 3,
+  "q": "The Kentucky Derby is a famous American ...",
+  "options": [
+   "tennis tournament",
+   "golf competition",
+   "baseball game",
+   "horse race"
+  ],
+  "answer": 3,
+  "explain": "Kentucky Derby to słynny wyścig konny."
+ },
+ {
+  "id": "q-en-rkult-069",
+  "type": "choice",
+  "level": 3,
+  "q": "The first Thanksgiving is traditionally linked with the Pilgrims and ...",
+  "options": [
+   "English kings",
+   "Native Americans",
+   "Spanish sailors",
+   "French farmers"
+  ],
+  "answer": 1,
+  "explain": "Tradycja łączy pierwsze dziękczynienie z Pielgrzymami i rdzennymi Amerykanami."
+ },
+ {
+  "id": "q-en-rkult-070",
+  "type": "choice",
+  "level": 3,
+  "q": "'Auld Lang Syne', sung at midnight on New Year's Eve, is linked with the poet ...",
+  "options": [
+   "Lord Byron",
+   "Charles Dickens",
+   "William Shakespeare",
+   "Robert Burns"
+  ],
+  "answer": 3,
+  "explain": "Pieśń „Auld Lang Syne” wiąże się z Robertem Burnsem."
+ },
+ {
+  "id": "q-en-rkult-071",
+  "type": "choice",
+  "level": 2,
+  "q": "In the USA, a 'prom' is ...",
+  "options": [
+   "a school sports day",
+   "a graduation exam",
+   "a summer camp",
+   "a formal dance at the end of high school"
+  ],
+  "answer": 3,
+  "explain": "Prom to uroczysty bal szkoły średniej."
+ },
+ {
+  "id": "q-en-rkult-072",
+  "type": "choice",
+  "level": 3,
+  "q": "The Highland Games in Scotland are famous for tossing the ...",
+  "options": [
+   "football",
+   "hammer only",
+   "net",
+   "caber"
+  ],
+  "answer": 3,
+  "explain": "Rzut caberem (pniem) to jedna z konkurencji Highland Games."
+ },
+ {
+  "id": "q-en-rkult-073",
+  "type": "write",
+  "level": 3,
+  "q": "H___________ – a Jewish festival of lights celebrated in December",
+  "answers": [
+   "Hanukkah",
+   "Chanukah",
+   "Hanukah"
+  ],
+  "explain": "Hanukkah – żydowskie święto świateł."
+ },
+ {
+  "id": "q-en-rkult-074",
+  "type": "write",
+  "level": 2,
+  "q": "A___________ W___________ – the first day of Lent",
+  "answers": [
+   "Ash Wednesday"
+  ],
+  "explain": "Ash Wednesday – Środa Popielcowa."
+ },
+ {
+  "id": "q-en-rkult-075",
+  "type": "write",
+  "level": 2,
+  "q": "P___________ S___________ – the Sunday before Easter Sunday",
+  "answers": [
+   "Palm Sunday"
+  ],
+  "explain": "Palm Sunday – Niedziela Palmowa."
+ },
+ {
+  "id": "q-en-rkult-076",
+  "type": "write",
+  "level": 2,
+  "q": "A___________ – the four weeks before Christmas",
+  "answers": [
+   "Advent"
+  ],
+  "explain": "Advent – adwent."
  }
 ]

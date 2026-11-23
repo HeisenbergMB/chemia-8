@@ -830,5 +830,125 @@
   "gap": 7,
   "answer": 8,
   "explain": "Zakończenie akapitu: nagroda dla wolontariuszy, a cytat tłumaczy, po co tam są."
+ },
+ {
+  "id": "q-en-rczyt-067",
+  "type": "choice",
+  "level": 1,
+  "q": "Why was the pub closed?",
+  "group": "g-en-rczyt-10",
+  "options": [
+   "Not enough people lived in the village.",
+   "It was losing money.",
+   "The building was too old to repair.",
+   "The owner wanted to retire."
+  ],
+  "answer": 1,
+  "explain": "Firma wyjaśniła, że pub przynosi straty."
+ },
+ {
+  "id": "q-en-rczyt-068",
+  "type": "choice",
+  "level": 1,
+  "q": "What was going to happen to the building?",
+  "group": "g-en-rczyt-10",
+  "options": [
+   "It was going to be turned into flats.",
+   "It was going to be pulled down.",
+   "It was going to stay empty.",
+   "It was going to become a shop."
+  ],
+  "answer": 0,
+  "explain": "Budynek miał kupić deweloper, który chciał zrobić z niego mieszkania."
+ },
+ {
+  "id": "q-en-rczyt-069",
+  "type": "choice",
+  "level": 2,
+  "q": "How did many people feel at the first meeting?",
+  "group": "g-en-rczyt-10",
+  "options": [
+   "They wanted to open a restaurant instead.",
+   "They doubted that the plan would work.",
+   "They were sure that they would succeed.",
+   "They were angry with the company."
+  ],
+  "answer": 1,
+  "explain": "Wielu mieszkańców było sceptycznych, bo prowadzenie pubu to coś innego niż w nim picie."
+ },
+ {
+  "id": "q-en-rczyt-070",
+  "type": "choice",
+  "level": 2,
+  "q": "What did the retired accountant explain?",
+  "group": "g-en-rczyt-10",
+  "options": [
+   "A community can ask for the right to buy an important building.",
+   "A new pub would be cheaper than an old one.",
+   "The company had to sell the building cheaply.",
+   "The local council would pay for the pub."
+  ],
+  "answer": 0,
+  "explain": "Księgowy powiedział, że prawo pozwala społeczności ubiegać się o prawo zakupu ważnego budynku."
+ },
+ {
+  "id": "q-en-rczyt-071",
+  "type": "choice",
+  "level": 2,
+  "q": "Which service is NOT mentioned in the text?",
+  "group": "g-en-rczyt-10",
+  "options": [
+   "computer help for older people",
+   "a bank",
+   "a post office counter",
+   "a shop"
+  ],
+  "answer": 1,
+  "explain": "Tekst wymienia sklep, okienko pocztowe i pomoc z komputerami, ale nie bank."
+ },
+ {
+  "id": "q-en-rczyt-072",
+  "type": "choice",
+  "level": 2,
+  "q": "What does the text say about the staff of the pub?",
+  "group": "g-en-rczyt-10",
+  "options": [
+   "They all come from other villages.",
+   "All of them are paid professionals.",
+   "Most of them are volunteers.",
+   "There are only two people working there."
+  ],
+  "answer": 2,
+  "explain": "Pub zatrudnia dwóch pracowników na pełny etat, a większość pozostałych to wolontariusze."
+ },
+ {
+  "id": "q-en-rczyt-073",
+  "type": "choice",
+  "level": 1,
+  "q": "How was last year's profit used?",
+  "group": "g-en-rczyt-10",
+  "options": [
+   "It was spent on new furniture.",
+   "It was used to pay back the farmer.",
+   "It was used to repair the roof.",
+   "It was divided among the volunteers."
+  ],
+  "answer": 2,
+  "explain": "Zysk przeznaczono na naprawę dachu."
+ },
+ {
+  "id": "q-en-rczyt-074",
+  "type": "choice",
+  "level": 3,
+  "q": "What does the founder mean by 'We saved a way of living'?",
+  "group": "g-en-rczyt-10",
+  "options": [
+   "They moved to a bigger village.",
+   "They protected a community tradition, not only a building.",
+   "They saved money on their homes.",
+   "They taught young people to farm."
+  ],
+  "answer": 1,
+  "explain": "Chodziło o ocalenie życia wspólnoty, a nie tylko budynku."
  }
 ]
