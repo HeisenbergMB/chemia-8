@@ -3257,10 +3257,10 @@
   "level": 2,
   "q": "They have ++abandoned++ the project.",
   "options": [
-   "started",
-   "finished",
+   "started again",
+   "carried on",
    "given up",
-   "repeated"
+   "taken over"
   ],
   "answer": 2,
   "explain": "Abandon = porzucić, czyli give up."
@@ -3285,9 +3285,9 @@
   "level": 3,
   "q": "He felt ++ashamed++ of his behaviour.",
   "options": [
-   "surprised",
-   "relaxed",
-   "proud",
+   "angry and loud",
+   "calm and relaxed",
+   "pleased and proud",
    "embarrassed and sorry"
   ],
   "answer": 3,
@@ -3327,9 +3327,9 @@
   "level": 1,
   "q": "The town is ++famous++ for its cheese.",
   "options": [
-   "afraid",
-   "rich",
-   "close",
+   "quite old",
+   "very rich",
+   "far away",
    "well known"
   ],
   "answer": 3,
@@ -3341,10 +3341,10 @@
   "level": 2,
   "q": "We were ++stuck++ in traffic for an hour.",
   "options": [
-   "late",
+   "too late",
    "unable to move",
-   "happy",
-   "bored"
+   "really happy",
+   "very bored"
   ],
   "answer": 1,
   "explain": "Stuck = utknięty."
@@ -3355,8 +3355,8 @@
   "level": 3,
   "q": "He ++sprinted++ to the bus stop.",
   "options": [
-   "crawled",
-   "drove",
+   "crawled slowly",
+   "drove carefully",
    "ran fast",
    "walked slowly"
   ],
@@ -3384,9 +3384,9 @@
   "q": "The weather was ++mild++ for December.",
   "options": [
    "not very cold",
-   "stormy",
-   "rainy",
-   "freezing"
+   "very stormy",
+   "often rainy",
+   "really freezing"
   ],
   "answer": 0,
   "explain": "Mild = łagodny."

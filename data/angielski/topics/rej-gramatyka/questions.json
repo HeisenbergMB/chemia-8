@@ -3580,14 +3580,9 @@
   "group": "g-en-rgram-07",
   "gap": 15,
   "answers": [
-   "join",
-   "start",
-   "form",
-   "open",
-   "create",
-   "found"
+   "set"
   ],
-  "explain": "Czasownik pasujący do założenia lub dołączenia do kółka: join a club."
+  "explain": "Set up a club – założyć kółko; up podane w tekście."
  },
  {
   "id": "q-en-rgram-274",
@@ -3706,13 +3701,14 @@
   "id": "q-en-rgram-283",
   "type": "write",
   "level": 3,
-  "q": "He continued talking in spite of the rule. (KEPT)\nHe ___ talking in spite of the rule.",
+  "q": "He didn't stop talking although the teacher asked him to. (KEPT)\nHe ___ although the teacher asked him to stop.",
   "keyword": "kept",
   "maxWords": 5,
   "answers": [
-   "kept on"
+   "kept on talking",
+   "kept talking"
   ],
-  "explain": "Keep on + forma -ing – nie przestawać."
+  "explain": "Keep (on) + forma -ing – nie przestawać robić czegoś."
  },
  {
   "id": "q-en-rgram-284",
@@ -3780,15 +3776,15 @@
   "id": "q-en-rgram-289",
   "type": "choice",
   "level": 2,
-  "q": "I can't stand ___ in long queues.",
+  "q": "She can't help ___ when she hears that joke.",
   "options": [
-   "to wait",
-   "waited",
-   "wait",
-   "waiting"
+   "to laugh",
+   "laughed",
+   "laugh",
+   "laughing"
   ],
   "answer": 3,
-  "explain": "Can't stand + forma -ing."
+  "explain": "Can't help + forma -ing – nie móc powstrzymać się od czegoś."
  },
  {
   "id": "q-en-rgram-290",
@@ -3869,7 +3865,7 @@
    "many",
    "a",
    "some",
-   "any"
+   "few"
   ],
   "answer": 2,
   "explain": "W propozycji używamy some."

@@ -55,7 +55,7 @@ Wzorzec testów: `docs/angielski-wzorzec-konkursu.md` (oficjalne arkusze Łódzk
   - [ ] Kolejne arkusze (trzecie) i przegląd przez nauczyciela
   - [x] Etap rejonowy, arkusz 1 (`s-en-rej-01`, wersja 1.14.5): 100 pytań w układzie arkusza 2025/26 (90 min, 8 zadań: TRUE/FALSE, tekst z brakującymi zdaniami, tekst z lukami, słowotwórstwo, przekształcanie zdań, synonimy, tłumaczenie, święta UK/USA); działy w module „Etap rejonowy”, karty i fiszki
   - [x] Etap rejonowy: 92 osobne pytania ćwiczeniowe (wersja 1.14.8): dwa teksty, luki, przekształcenia, słowotwórstwo, synonimy, tłumaczenie, święta
-  - [ ] Etap rejonowy: kolejne arkusze
+  - [x] Etap rejonowy: arkusze 3–7 (`s-en-rej-03`…`07`, wersje 1.14.16–1.14.23): po 100 pytań, własne teksty, różne układy (m.in. pytania A–D do tekstu, zdania wstawiane w luki, litery, kultura: tradycje i dni UK/USA); każdy po ślepym przeglądzie niezależnym agentem (Opus). Domyślna data egzaminu rejonowego: 3.12.2026 (`examDate` w `subjects.json`)
   - [x] Etap wojewódzki, arkusz 1 (`s-en-woj-01`, wersja 1.14.7): 100 pytań w układzie arkusza 2024/25 (120 min, 9 zadań: wybór A–D do tekstu, „który akapit”, tekst z lukami, idiomy, przekształcanie zdań, słowotwórstwo w tekście, tłumaczenie na angielski, gramatyka A–D, sławni ludzie i kraje); nowy rodzaj zadania `paragraph-matching`, kompaktowe przyciski dla krótkich odpowiedzi, do 6 odpowiedzi w `choice`
   - [x] Etap wojewódzki: 101 osobnych pytań ćwiczeniowych (wersja 1.14.8), w tym 6 zadań „jedno słowo do trzech zdań” z arkusza 2023/24
   - [ ] Etap wojewódzki: kolejne arkusze oraz wyrazy z ramki i życiorysy z arkusza 2023/24
