@@ -1,9 +1,14 @@
 // Odliczanie do sprawdzianu (data z ustawień).
 
 import * as store from './store.js';
+import { DATA } from './data.js';
+import { effectiveExamDate } from './curriculum.js';
+
+/** Data sprawdzianu aktywnego przedmiotu (z ustawień ucznia albo domyślna z `subjects.json`). */
+export const examDateOf = () => effectiveExamDate(store.get().settings.examDates[store.get().settings.subject], DATA.subject);
 
 export function countInfo() {
-  const iso = store.examDate();
+  const iso = examDateOf();
   if (!iso) return null;
   const [y, m, d] = iso.split('-').map(Number);
   const exam = new Date(y, m - 1, d);

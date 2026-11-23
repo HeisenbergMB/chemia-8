@@ -25,6 +25,7 @@
       "desc": "Konkurs kuratoryjny: etap szkolny, rejonowy i wojewódzki.",
       "icon": "book",
       "status": "active",
+      "examDate": "2026-12-03",
       "features": [
         "sheets"
       ],

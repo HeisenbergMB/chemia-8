@@ -488,5 +488,145 @@
    "All Hallows' Eve"
   ],
   "explain": "Halloween – wigilia Wszystkich Świętych."
+ },
+ {
+  "id": "q-en-rkult-038",
+  "type": "choice",
+  "level": 3,
+  "q": "Mothering Sunday in the UK is celebrated on the ...",
+  "options": [
+   "second Sunday of May",
+   "fourth Sunday of Lent",
+   "first Sunday of Advent",
+   "Sunday after Easter"
+  ],
+  "answer": 1,
+  "explain": "Mothering Sunday, czyli brytyjski Dzień Matki, przypada w czwartą niedzielę Wielkiego Postu."
+ },
+ {
+  "id": "q-en-rkult-039",
+  "type": "choice",
+  "level": 2,
+  "q": "The Boat Race on the River Thames is a rowing competition between the universities of Oxford and ...",
+  "options": [
+   "Cambridge",
+   "Edinburgh",
+   "Harvard",
+   "Durham"
+  ],
+  "answer": 0,
+  "explain": "Boat Race to coroczne zawody wioślarskie Oxford–Cambridge."
+ },
+ {
+  "id": "q-en-rkult-040",
+  "type": "choice",
+  "level": 1,
+  "q": "Black Friday in the USA is the day after ...",
+  "options": [
+   "Independence Day",
+   "Christmas",
+   "Thanksgiving",
+   "Halloween"
+  ],
+  "answer": 2,
+  "explain": "Black Friday to piątek po Dniu Dziękczynienia, początek wyprzedaży."
+ },
+ {
+  "id": "q-en-rkult-041",
+  "type": "choice",
+  "level": 3,
+  "q": "Flag Day in the USA is celebrated on ...",
+  "options": [
+   "14 July",
+   "14 June",
+   "4 July",
+   "30 May"
+  ],
+  "answer": 1,
+  "explain": "Dzień Flagi w USA obchodzi się 14 czerwca."
+ },
+ {
+  "id": "q-en-rkult-042",
+  "type": "choice",
+  "level": 2,
+  "q": "Remembrance Sunday in Britain is held on the Sunday closest to ...",
+  "options": [
+   "11 November",
+   "31 October",
+   "4 July",
+   "1 January"
+  ],
+  "answer": 0,
+  "explain": "Remembrance Sunday: niedziela najbliższa 11 listopada, upamiętnienie poległych."
+ },
+ {
+  "id": "q-en-rkult-043",
+  "type": "choice",
+  "level": 1,
+  "q": "At the Wimbledon tennis tournament spectators traditionally eat ...",
+  "options": [
+   "hot dogs",
+   "apple pie",
+   "fish and chips",
+   "strawberries and cream"
+  ],
+  "answer": 3,
+  "explain": "Truskawki ze śmietaną to tradycja Wimbledonu."
+ },
+ {
+  "id": "q-en-rkult-044",
+  "type": "choice",
+  "level": 1,
+  "q": "The Super Bowl is the championship game of ...",
+  "options": [
+   "American football",
+   "basketball",
+   "ice hockey",
+   "baseball"
+  ],
+  "answer": 0,
+  "explain": "Super Bowl to finał ligi futbolu amerykańskiego (NFL)."
+ },
+ {
+  "id": "q-en-rkult-045",
+  "type": "choice",
+  "level": 3,
+  "q": "The monarch's official birthday in Britain is celebrated with a parade called ...",
+  "options": [
+   "Trooping the Colour",
+   "the Lord Mayor's Show",
+   "the Notting Hill Carnival",
+   "Changing the Guard"
+  ],
+  "answer": 0,
+  "explain": "Trooping the Colour to parada z okazji oficjalnych urodzin monarchy."
+ },
+ {
+  "id": "q-en-rkult-046",
+  "type": "choice",
+  "level": 3,
+  "q": "The president of the USA is inaugurated on ...",
+  "options": [
+   "20 January",
+   "3 November",
+   "4 July",
+   "1 January"
+  ],
+  "answer": 0,
+  "explain": "Zaprzysiężenie prezydenta USA ma miejsce 20 stycznia."
+ },
+ {
+  "id": "q-en-rkult-047",
+  "type": "choice",
+  "level": 3,
+  "q": "The Rose Parade in Pasadena, California, takes place on ...",
+  "options": [
+   "Easter Sunday",
+   "Thanksgiving Day",
+   "Independence Day",
+   "New Year's Day"
+  ],
+  "answer": 3,
+  "explain": "Rose Parade odbywa się w Nowy Rok."
  }
 ]

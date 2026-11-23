@@ -1,2 +1,2 @@
 // PLIK GENEROWANY przez tools/build.js – nie edytuj. Wersję zmieniaj w package.json (npm run bump).
-export const APP_VERSION = '1.14.15';
+export const APP_VERSION = '1.14.16';

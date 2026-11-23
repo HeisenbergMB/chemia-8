@@ -2,6 +2,7 @@
 
 import { h } from './dom.js';
 import * as store from './store.js';
+import { examDateOf } from './countdown.js';
 
 export function renderSettings({ version, onChange, subjectTitle = '' }) {
   const status = h('div', { class: 'status', role: 'status', 'aria-live': 'polite' });
@@ -33,7 +34,7 @@ export function renderSettings({ version, onChange, subjectTitle = '' }) {
 
   // --- data sprawdzianu ---
   const subject = store.get().settings.subject;
-  const date = h('input', { type: 'date', id: 'exam-date', value: store.examDate(subject) });
+  const date = h('input', { type: 'date', id: 'exam-date', value: examDateOf() });
   date.addEventListener('change', () => {
     store.update((s) => (s.settings.examDates[subject] = date.value));
     onChange();

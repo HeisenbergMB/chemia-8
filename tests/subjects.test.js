@@ -75,3 +75,14 @@ test('przedmiot „wkrótce” albo nieistniejący – ekran „nie znaleziono�
 });
 
 test('brak błędów JS', () => assert.deepEqual(app.errors, []));
+
+test('domyślna data sprawdzianu z subjects.json: zapisana wygrywa, pusta wyłącza odliczanie', async () => {
+  const { effectiveExamDate } = await import('../js/curriculum.js');
+  const subj = { examDate: '2026-12-03' };
+  assert.equal(effectiveExamDate(undefined, subj), '2026-12-03', 'brak zapisu → data domyślna');
+  assert.equal(effectiveExamDate('2027-01-10', subj), '2027-01-10', 'zapisana data uczniowi wygrywa');
+  assert.equal(effectiveExamDate('', subj), '', 'uczeń wyczyścił datę → bez odliczania');
+  assert.equal(effectiveExamDate(undefined, { id: 'x' }), '');
+  const { subjects } = loadSubjects();
+  assert.equal(subjects.find((s) => s.id === 'angielski').examDate, '2026-12-03', 'egzamin rejonowy 3.12.2026');
+});

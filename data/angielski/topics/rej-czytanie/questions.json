@@ -528,5 +528,125 @@
   "gap": 5,
   "answer": 2,
   "explain": "Po zdaniu o seansach pasuje przykład niedziel z babciami i wnukami; \"this is exactly what he hoped for\" odnosi się do wspólnoty."
+ },
+ {
+  "id": "q-en-rczyt-044",
+  "type": "choice",
+  "level": 1,
+  "q": "Why were many night trains closed in the past?",
+  "group": "g-en-rczyt-07",
+  "options": [
+   "Passengers complained about the old carriages.",
+   "Airlines bought the railway companies.",
+   "Cheap flights and better roads made them unprofitable.",
+   "Governments wanted to build new motorways."
+  ],
+  "answer": 2,
+  "explain": "Tekst: tanie linie lotnicze i lepsze drogi sprawiły, że wagony sypialne przynosiły zbyt duże straty."
+ },
+ {
+  "id": "q-en-rczyt-045",
+  "type": "choice",
+  "level": 1,
+  "q": "What is the main reason for the present interest in night trains?",
+  "group": "g-en-rczyt-07",
+  "options": [
+   "Tickets have become cheaper than flights.",
+   "People are becoming more concerned about the environment.",
+   "Modern carriages are faster than aeroplanes.",
+   "Hotels in capital cities have grown more expensive."
+  ],
+  "answer": 1,
+  "explain": "Pasażerowie martwią się zanieczyszczeniem powodowanym przez samoloty i chcą mniejszego wpływu na klimat."
+ },
+ {
+  "id": "q-en-rczyt-046",
+  "type": "choice",
+  "level": 2,
+  "q": "What do we learn about the cost of a night trip by train?",
+  "group": "g-en-rczyt-07",
+  "options": [
+   "It is always lower than the price of a hotel and a flight together.",
+   "It is the same in every European country.",
+   "A bed can cost more than a plane ticket.",
+   "It depends on the number of passengers in the compartment."
+  ],
+  "answer": 2,
+  "explain": "Niektórzy pasażerowie skarżą się, że cena łóżka bywa wyższa niż cena biletu lotniczego."
+ },
+ {
+  "id": "q-en-rczyt-047",
+  "type": "choice",
+  "level": 2,
+  "q": "Why can a train crossing several countries cause problems?",
+  "group": "g-en-rczyt-07",
+  "options": [
+   "Passengers need a different ticket in each country.",
+   "Border guards stop the train for several hours.",
+   "The tracks have different widths in different countries.",
+   "Each country has its own safety regulations."
+  ],
+  "answer": 3,
+  "explain": "Pociąg przekraczający trzy granice musi spełnić trzy zestawy przepisów bezpieczeństwa."
+ },
+ {
+  "id": "q-en-rczyt-048",
+  "type": "choice",
+  "level": 3,
+  "q": "What does the railway manager mean by 'People imagine romantic films'?",
+  "group": "g-en-rczyt-07",
+  "options": [
+   "Many passengers have worked in the film industry.",
+   "Travellers prefer short journeys to long ones.",
+   "Films are shown to the passengers during the journey.",
+   "Passengers expect more comfort than the trains offer."
+  ],
+  "answer": 3,
+  "explain": "Menedżer kontrastuje filmowy romantyzm z rzeczywistością: wąska koja i wspólna łazienka."
+ },
+ {
+  "id": "q-en-rczyt-049",
+  "type": "choice",
+  "level": 2,
+  "q": "Which group of passengers has surprised the managers?",
+  "group": "g-en-rczyt-07",
+  "options": [
+   "Retired tourists.",
+   "Airline employees.",
+   "Families with small children.",
+   "Students and business people."
+  ],
+  "answer": 3,
+  "explain": "Zamiast emerytów najchętniej korzystają studenci i biznesmeni."
+ },
+ {
+  "id": "q-en-rczyt-050",
+  "type": "choice",
+  "level": 2,
+  "q": "What does the text say about factories producing sleeping carriages?",
+  "group": "g-en-rczyt-07",
+  "options": [
+   "New ones are being built quickly.",
+   "They have all been closed.",
+   "They produce carriages mainly for other continents.",
+   "Only a few of them remain in Europe."
+  ],
+  "answer": 3,
+  "explain": "Wagony sypialne są drogie, a niewiele fabryk w Europie nadal je produkuje."
+ },
+ {
+  "id": "q-en-rczyt-051",
+  "type": "choice",
+  "level": 1,
+  "q": "What do the managers expect to happen in the next few years?",
+  "group": "g-en-rczyt-07",
+  "options": [
+   "The network will grow considerably.",
+   "Fares will fall sharply.",
+   "Fewer people will fly abroad.",
+   "Many routes will be closed again."
+  ],
+  "answer": 0,
+  "explain": "Menedżerowie mówią, że sieć może się podwoić przed końcem dekady."
  }
 ]

@@ -1322,5 +1322,475 @@
   ],
   "answer": 2,
   "explain": "Po czasowniku deny używamy formy -ing."
+ },
+ {
+  "id": "q-en-rslow-109",
+  "type": "write",
+  "level": 3,
+  "q": "Her ___ to help others made her an excellent nurse. (WILL)",
+  "answers": [
+   "willingness"
+  ],
+  "explain": "Rzeczownik od will: willingness (gotowość)."
+ },
+ {
+  "id": "q-en-rslow-110",
+  "type": "write",
+  "level": 2,
+  "q": "The new law was ___ criticised by environmental groups. (HARSH)",
+  "answers": [
+   "harshly"
+  ],
+  "explain": "Przysłówek od harsh: harshly (ostro)."
+ },
+ {
+  "id": "q-en-rslow-111",
+  "type": "write",
+  "level": 1,
+  "q": "It was very ___ of him to leave without saying goodbye. (POLITE)",
+  "answers": [
+   "impolite"
+  ],
+  "explain": "Przeczący przedrostek im-: impolite (niegrzeczny)."
+ },
+ {
+  "id": "q-en-rslow-112",
+  "type": "write",
+  "level": 3,
+  "q": "The ___ of the museum took place in 1890. (FOUND)",
+  "answers": [
+   "foundation"
+  ],
+  "explain": "Rzeczownik od found (zakładać): foundation."
+ },
+ {
+  "id": "q-en-rslow-113",
+  "type": "write",
+  "level": 3,
+  "q": "He is the most ___ person I know; he never forgets a single face. (OBSERVE)",
+  "answers": [
+   "observant"
+  ],
+  "explain": "Przymiotnik od observe: observant (spostrzegawczy)."
+ },
+ {
+  "id": "q-en-rslow-114",
+  "type": "write",
+  "level": 2,
+  "q": "Don't be so ___ of yourself! Everybody makes mistakes. (CRITIC)",
+  "answers": [
+   "critical"
+  ],
+  "explain": "Przymiotnik od critic: critical (krytyczny)."
+ },
+ {
+  "id": "q-en-rslow-115",
+  "type": "write",
+  "level": 2,
+  "q": "The film had a ___ ending that left the audience in tears. (TRAGEDY)",
+  "answers": [
+   "tragic"
+  ],
+  "explain": "Przymiotnik od tragedy: tragic."
+ },
+ {
+  "id": "q-en-rslow-116",
+  "type": "write",
+  "level": 2,
+  "q": "She spoke ___ about her years abroad. (ENTHUSIASM)",
+  "answers": [
+   "enthusiastically"
+  ],
+  "explain": "Przysłówek od enthusiasm: enthusiastically."
+ },
+ {
+  "id": "q-en-rslow-117",
+  "type": "write",
+  "level": 2,
+  "q": "Long-term ___ is a serious problem for many young people. (EMPLOY)",
+  "answers": [
+   "unemployment"
+  ],
+  "explain": "Rzeczownik z przeczeniem: unemployment (bezrobocie)."
+ },
+ {
+  "id": "q-en-rslow-118",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ of the new software saved us a lot of time. (INSTALL)",
+  "answers": [
+   "installation"
+  ],
+  "explain": "Rzeczownik od install: installation."
+ },
+ {
+  "id": "q-en-rslow-119",
+  "type": "write",
+  "level": 1,
+  "q": "These shoes are very ___ ; I can walk for hours in them. (COMFORT)",
+  "answers": [
+   "comfortable"
+  ],
+  "explain": "Przymiotnik od comfort: comfortable."
+ },
+ {
+  "id": "q-en-rslow-120",
+  "type": "write",
+  "level": 2,
+  "q": "We were ___ by the speed of the repairs. (ASTONISH)",
+  "answers": [
+   "astonished"
+  ],
+  "explain": "Imiesłów bierny: astonished – zdumiony, po were."
+ },
+ {
+  "id": "q-en-rslow-121",
+  "type": "choice",
+  "level": 2,
+  "q": "The teacher was ++furious++ when she saw the mess.",
+  "options": [
+   "a little sad",
+   "bored",
+   "extremely angry",
+   "pleased"
+  ],
+  "answer": 2,
+  "explain": "Furious = wściekły, czyli niezwykle zły."
+ },
+ {
+  "id": "q-en-rslow-122",
+  "type": "choice",
+  "level": 2,
+  "q": "We had to ++postpone++ the picnic because of the storm.",
+  "options": [
+   "arrange earlier",
+   "repeat",
+   "cancel for good",
+   "delay"
+  ],
+  "answer": 3,
+  "explain": "Postpone = przełożyć na później, czyli delay."
+ },
+ {
+  "id": "q-en-rslow-123",
+  "type": "choice",
+  "level": 1,
+  "q": "He gave a ++brief++ answer.",
+  "options": [
+   "clear",
+   "rude",
+   "wrong",
+   "short"
+  ],
+  "answer": 3,
+  "explain": "Brief = krótki."
+ },
+ {
+  "id": "q-en-rslow-124",
+  "type": "choice",
+  "level": 2,
+  "q": "They live in a ++remote++ village in the mountains.",
+  "options": [
+   "crowded",
+   "modern",
+   "beautiful",
+   "distant"
+  ],
+  "answer": 3,
+  "explain": "Remote = odległy, oddalony od miast."
+ },
+ {
+  "id": "q-en-rslow-125",
+  "type": "choice",
+  "level": 2,
+  "q": "It is ++essential++ to book tickets early.",
+  "options": [
+   "necessary",
+   "unusual",
+   "pleasant",
+   "possible"
+  ],
+  "answer": 0,
+  "explain": "Essential = niezbędny, konieczny."
+ },
+ {
+  "id": "q-en-rslow-126",
+  "type": "choice",
+  "level": 2,
+  "q": "She ++hesitated++ before opening the door.",
+  "options": [
+   "paused",
+   "laughed",
+   "refused",
+   "hurried"
+  ],
+  "answer": 0,
+  "explain": "Hesitate = zawahać się, zrobić pauzę."
+ },
+ {
+  "id": "q-en-rslow-127",
+  "type": "choice",
+  "level": 2,
+  "q": "The police ++questioned++ three men about the robbery.",
+  "options": [
+   "interviewed",
+   "arrested",
+   "punished",
+   "followed"
+  ],
+  "answer": 0,
+  "explain": "Question = przesłuchiwać, czyli interview."
+ },
+ {
+  "id": "q-en-rslow-128",
+  "type": "choice",
+  "level": 1,
+  "q": "He ++managed++ to repair the bike.",
+  "options": [
+   "succeeded",
+   "pretended",
+   "forgot",
+   "tried"
+  ],
+  "answer": 0,
+  "explain": "Manage to do = udało się coś zrobić."
+ },
+ {
+  "id": "q-en-rslow-129",
+  "type": "choice",
+  "level": 1,
+  "q": "The soup tasted ++awful++.",
+  "options": [
+   "salty",
+   "hot",
+   "terrible",
+   "delicious"
+  ],
+  "answer": 2,
+  "explain": "Awful = okropny, straszny."
+ },
+ {
+  "id": "q-en-rslow-130",
+  "type": "choice",
+  "level": 2,
+  "q": "She was ++aware++ of the danger.",
+  "options": [
+   "conscious",
+   "tired",
+   "afraid",
+   "sure"
+  ],
+  "answer": 0,
+  "explain": "Aware of = świadomy czegoś, conscious of."
+ },
+ {
+  "id": "q-en-rslow-131",
+  "type": "choice",
+  "level": 1,
+  "q": "The match was (odwołany) because of the snow.",
+  "options": [
+   "cleared",
+   "cancelled",
+   "covered",
+   "closed"
+  ],
+  "answer": 1,
+  "explain": "Cancel = odwołać (mecz)."
+ },
+ {
+  "id": "q-en-rslow-132",
+  "type": "choice",
+  "level": 2,
+  "q": "She is (odpowiedzialna za) the whole project.",
+  "options": [
+   "responsible for",
+   "responsible of",
+   "guilty for",
+   "in charge to"
+  ],
+  "answer": 0,
+  "explain": "Be responsible for something."
+ },
+ {
+  "id": "q-en-rslow-133",
+  "type": "choice",
+  "level": 2,
+  "q": "We (zgodziliśmy się) on a date for the meeting.",
+  "options": [
+   "approved",
+   "allowed",
+   "accepted",
+   "agreed"
+  ],
+  "answer": 3,
+  "explain": "Agree on = uzgodnić, zgodzić się co do."
+ },
+ {
+  "id": "q-en-rslow-134",
+  "type": "choice",
+  "level": 2,
+  "q": "He (wyjaśnił nam) the rules of the game.",
+  "options": [
+   "said us",
+   "explained to us",
+   "explained us",
+   "told to us"
+  ],
+  "answer": 1,
+  "explain": "Explain to someone, nie explain someone."
+ },
+ {
+  "id": "q-en-rslow-135",
+  "type": "choice",
+  "level": 2,
+  "q": "I'm looking forward (do spotkania z wami).",
+  "options": [
+   "to see you",
+   "to seeing you",
+   "for seeing you",
+   "to meet you"
+  ],
+  "answer": 1,
+  "explain": "Look forward to + forma -ing."
+ },
+ {
+  "id": "q-en-rslow-136",
+  "type": "choice",
+  "level": 1,
+  "q": "They (przeprowadzili się) to Kraków last year.",
+  "options": [
+   "travelled",
+   "moved",
+   "changed",
+   "transferred"
+  ],
+  "answer": 1,
+  "explain": "Move to = przeprowadzić się do."
+ },
+ {
+  "id": "q-en-rslow-137",
+  "type": "choice",
+  "level": 1,
+  "q": "Don't (martw się) about the exam; you will pass.",
+  "options": [
+   "trouble",
+   "worry",
+   "care",
+   "mind"
+  ],
+  "answer": 1,
+  "explain": "Worry about = martwić się czymś."
+ },
+ {
+  "id": "q-en-rslow-138",
+  "type": "choice",
+  "level": 2,
+  "q": "She (przeprosiła za) the delay.",
+  "options": [
+   "regretted for",
+   "apologised for",
+   "was sorry for",
+   "excused for"
+  ],
+  "answer": 1,
+  "explain": "Apologise for = przepraszać za."
+ },
+ {
+  "id": "q-en-rslow-139",
+  "type": "choice",
+  "level": 2,
+  "q": "The new shopping centre (został otwarty) last month.",
+  "options": [
+   "has opened",
+   "opened was",
+   "was opened",
+   "was open"
+  ],
+  "answer": 2,
+  "explain": "Strona bierna Past Simple: was opened."
+ },
+ {
+  "id": "q-en-rslow-140",
+  "type": "choice",
+  "level": 2,
+  "q": "My sister (ma alergię na) nuts.",
+  "options": [
+   "is allergic for",
+   "has allergic to",
+   "is allergic to",
+   "is allergy to"
+  ],
+  "answer": 2,
+  "explain": "Be allergic to = mieć uczulenie na."
+ },
+ {
+  "id": "q-en-rslow-141",
+  "type": "choice",
+  "level": 2,
+  "q": "I (nie znoszę) waiting in queues.",
+  "options": [
+   "can't hold",
+   "can't carry",
+   "can't stand",
+   "can't lift"
+  ],
+  "answer": 2,
+  "explain": "Can't stand = nie znosić."
+ },
+ {
+  "id": "q-en-rslow-142",
+  "type": "choice",
+  "level": 2,
+  "q": "(Chociaż) he was ill, he went to work.",
+  "options": [
+   "In spite",
+   "However",
+   "Despite",
+   "Although"
+  ],
+  "answer": 3,
+  "explain": "Although + zdanie; despite wymaga rzeczownika lub -ing."
+ },
+ {
+  "id": "q-en-rslow-143",
+  "type": "choice",
+  "level": 2,
+  "q": "She (jest do mnie podobna).",
+  "options": [
+   "resembles to me",
+   "looks like me",
+   "is like to me",
+   "looks as me"
+  ],
+  "answer": 1,
+  "explain": "Look like = wyglądać jak."
+ },
+ {
+  "id": "q-en-rslow-144",
+  "type": "choice",
+  "level": 3,
+  "q": "We (skończyło nam się) milk.",
+  "options": [
+   "have run out of",
+   "have finished of",
+   "have run out",
+   "are out from"
+  ],
+  "answer": 0,
+  "explain": "Run out of = wyczerpać zapas czegoś."
+ },
+ {
+  "id": "q-en-rslow-145",
+  "type": "choice",
+  "level": 2,
+  "q": "He (zasługuje na) a prize.",
+  "options": [
+   "deserves for",
+   "deserves",
+   "is worthy to",
+   "merits of"
+  ],
+  "answer": 1,
+  "explain": "Deserve + rzeczownik bez przyimka."
  }
 ]

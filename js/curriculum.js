@@ -11,6 +11,8 @@ export const topicPackPath = (subjectId, topicId, file) => subjectPath(subjectId
 
 /** Przedmioty z danymi (status „soon” nie ma jeszcze katalogu). */
 export const activeSubjects = (subjects) => subjects.filter((s) => s.status === 'active');
+/** Data sprawdzianu: zapisana przez ucznia (także pusta = „bez odliczania”), a gdy jej nie ma – domyślna z `subjects.json`. */
+export const effectiveExamDate = (stored, subject) => (stored === undefined ? (subject && subject.examDate) || '' : stored);
 export const hasFeature = (subject, feature) => !!subject && (subject.features || []).includes(feature);
 
 /** Działy z paczkami danych (status „soon” nie ma paczki). */
