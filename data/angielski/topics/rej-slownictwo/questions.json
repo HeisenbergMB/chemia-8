@@ -2865,7 +2865,7 @@
   "id": "q-en-rslow-237",
   "type": "write",
   "level": 3,
-  "q": "He apologised for his ___ behaviour. (RUDE)",
+  "q": "He apologised for his ___ to the waiter. (RUDE)",
   "answers": [
    "rudeness"
   ],
@@ -3029,15 +3029,15 @@
   "id": "q-en-rslow-251",
   "type": "choice",
   "level": 3,
-  "q": "The dress was (w wyprzedaży).",
+  "q": "Everything in the shop was (przeceniony) by fifty per cent.",
   "options": [
-   "in sale",
-   "on sale",
-   "for sale",
-   "at sale"
+   "reduced",
+   "raised",
+   "lifted",
+   "added"
   ],
-  "answer": 1,
-  "explain": "On sale – w obniżonej cenie."
+  "answer": 0,
+  "explain": "Reduce – obniżyć (cenę); przeceniony = reduced."
  },
  {
   "id": "q-en-rslow-252",
@@ -3150,5 +3150,455 @@
   ],
   "answer": 1,
   "explain": "Fall asleep – zasnąć."
+ },
+ {
+  "id": "q-en-rslow-260",
+  "type": "write",
+  "level": 3,
+  "q": "She walked ___ to the stage and started to sing. (CONFIDENCE)",
+  "answers": [
+   "confidently"
+  ],
+  "explain": "Przysłówek od confidence: confidently."
+ },
+ {
+  "id": "q-en-rslow-261",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ of the film shocked everyone in the cinema. (END)",
+  "answers": [
+   "ending"
+  ],
+  "explain": "Rzeczownik od end: ending."
+ },
+ {
+  "id": "q-en-rslow-262",
+  "type": "write",
+  "level": 2,
+  "q": "He is a very ___ young man who never sits still. (ENERGY)",
+  "answers": [
+   "energetic"
+  ],
+  "explain": "Przymiotnik od energy: energetic."
+ },
+ {
+  "id": "q-en-rslow-263",
+  "type": "write",
+  "level": 2,
+  "q": "Be careful! The floor is wet and very ___. (SLIP)",
+  "answers": [
+   "slippery"
+  ],
+  "explain": "Przymiotnik od slip: slippery."
+ },
+ {
+  "id": "q-en-rslow-264",
+  "type": "write",
+  "level": 2,
+  "q": "We were ___ to hear that everybody was safe. (RELIEF)",
+  "answers": [
+   "relieved"
+  ],
+  "explain": "Imiesłów bierny: relieved."
+ },
+ {
+  "id": "q-en-rslow-265",
+  "type": "write",
+  "level": 1,
+  "q": "Thank you for your ___ advice. (HELP)",
+  "answers": [
+   "helpful"
+  ],
+  "explain": "Przymiotnik od help: helpful."
+ },
+ {
+  "id": "q-en-rslow-266",
+  "type": "write",
+  "level": 2,
+  "q": "You have a wide ___ of colours to choose from. (CHOOSE)",
+  "answers": [
+   "choice"
+  ],
+  "explain": "Rzeczownik od choose: choice."
+ },
+ {
+  "id": "q-en-rslow-267",
+  "type": "write",
+  "level": 1,
+  "q": "He always speaks very ___ and nobody can follow him. (QUICK)",
+  "answers": [
+   "quickly"
+  ],
+  "explain": "Przysłówek od quick: quickly."
+ },
+ {
+  "id": "q-en-rslow-268",
+  "type": "write",
+  "level": 3,
+  "q": "The ___ of fresh water is a serious problem in that region. (SHORT)",
+  "answers": [
+   "shortage"
+  ],
+  "explain": "Rzeczownik od short: shortage (niedobór)."
+ },
+ {
+  "id": "q-en-rslow-269",
+  "type": "write",
+  "level": 3,
+  "q": "The ___ of the village welcomed us warmly. (INHABIT)",
+  "answers": [
+   "inhabitants"
+  ],
+  "explain": "Rzeczownik w liczbie mnogiej: inhabitants."
+ },
+ {
+  "id": "q-en-rslow-270",
+  "type": "choice",
+  "level": 2,
+  "q": "They have ++abandoned++ the project.",
+  "options": [
+   "started",
+   "finished",
+   "given up",
+   "repeated"
+  ],
+  "answer": 2,
+  "explain": "Abandon = porzucić, czyli give up."
+ },
+ {
+  "id": "q-en-rslow-271",
+  "type": "choice",
+  "level": 1,
+  "q": "The two sisters look ++alike++.",
+  "options": [
+   "similar",
+   "tired",
+   "different",
+   "angry"
+  ],
+  "answer": 0,
+  "explain": "Alike = podobni."
+ },
+ {
+  "id": "q-en-rslow-272",
+  "type": "choice",
+  "level": 3,
+  "q": "He felt ++ashamed++ of his behaviour.",
+  "options": [
+   "surprised",
+   "relaxed",
+   "proud",
+   "embarrassed and sorry"
+  ],
+  "answer": 3,
+  "explain": "Ashamed = zawstydzony."
+ },
+ {
+  "id": "q-en-rslow-273",
+  "type": "choice",
+  "level": 2,
+  "q": "It was a ++risky++ decision.",
+  "options": [
+   "final",
+   "easy",
+   "dangerous",
+   "popular"
+  ],
+  "answer": 2,
+  "explain": "Risky = ryzykowny, niebezpieczny."
+ },
+ {
+  "id": "q-en-rslow-274",
+  "type": "choice",
+  "level": 2,
+  "q": "She ++admires++ her grandmother.",
+  "options": [
+   "copies",
+   "forgets",
+   "respects",
+   "avoids"
+  ],
+  "answer": 2,
+  "explain": "Admire = podziwiać, szanować."
+ },
+ {
+  "id": "q-en-rslow-275",
+  "type": "choice",
+  "level": 1,
+  "q": "The town is ++famous++ for its cheese.",
+  "options": [
+   "afraid",
+   "rich",
+   "close",
+   "well known"
+  ],
+  "answer": 3,
+  "explain": "Famous = znany."
+ },
+ {
+  "id": "q-en-rslow-276",
+  "type": "choice",
+  "level": 2,
+  "q": "We were ++stuck++ in traffic for an hour.",
+  "options": [
+   "late",
+   "unable to move",
+   "happy",
+   "bored"
+  ],
+  "answer": 1,
+  "explain": "Stuck = utknięty."
+ },
+ {
+  "id": "q-en-rslow-277",
+  "type": "choice",
+  "level": 3,
+  "q": "He ++sprinted++ to the bus stop.",
+  "options": [
+   "crawled",
+   "drove",
+   "ran fast",
+   "walked slowly"
+  ],
+  "answer": 2,
+  "explain": "Sprint = biec szybko."
+ },
+ {
+  "id": "q-en-rslow-278",
+  "type": "choice",
+  "level": 2,
+  "q": "The instructions were ++vague++.",
+  "options": [
+   "short",
+   "funny",
+   "rude",
+   "unclear"
+  ],
+  "answer": 3,
+  "explain": "Vague = niejasny."
+ },
+ {
+  "id": "q-en-rslow-279",
+  "type": "choice",
+  "level": 3,
+  "q": "The weather was ++mild++ for December.",
+  "options": [
+   "not very cold",
+   "stormy",
+   "rainy",
+   "freezing"
+  ],
+  "answer": 0,
+  "explain": "Mild = łagodny."
+ },
+ {
+  "id": "q-en-rslow-280",
+  "type": "choice",
+  "level": 2,
+  "q": "She (nie zgadza się z) her parents about everything.",
+  "options": [
+   "disagrees to",
+   "is disagree with",
+   "disagrees with",
+   "does not agree to"
+  ],
+  "answer": 2,
+  "explain": "Disagree with someone – nie zgadzać się z kimś."
+ },
+ {
+  "id": "q-en-rslow-281",
+  "type": "choice",
+  "level": 2,
+  "q": "I (słyszałem o) that film.",
+  "options": [
+   "have heard of",
+   "have heard from",
+   "have heard",
+   "have listened to"
+  ],
+  "answer": 0,
+  "explain": "Hear of – słyszeć o czymś."
+ },
+ {
+  "id": "q-en-rslow-282",
+  "type": "choice",
+  "level": 2,
+  "q": "Please (przekaż mu) my best wishes.",
+  "options": [
+   "say him",
+   "give him",
+   "tell to him",
+   "speak him"
+  ],
+  "answer": 1,
+  "explain": "Give someone wishes – przekazać życzenia."
+ },
+ {
+  "id": "q-en-rslow-283",
+  "type": "choice",
+  "level": 2,
+  "q": "The meeting (został przełożony).",
+  "options": [
+   "postponed was",
+   "was postponed",
+   "was postpone",
+   "has postponed"
+  ],
+  "answer": 1,
+  "explain": "Strona bierna Past Simple: was postponed."
+ },
+ {
+  "id": "q-en-rslow-284",
+  "type": "choice",
+  "level": 2,
+  "q": "He (jest uzależniony od) his phone.",
+  "options": [
+   "addicts to",
+   "is addict of",
+   "is addicted of",
+   "is addicted to"
+  ],
+  "answer": 3,
+  "explain": "Be addicted to – być uzależnionym od."
+ },
+ {
+  "id": "q-en-rslow-285",
+  "type": "choice",
+  "level": 2,
+  "q": "She (zakochała się w) a famous singer.",
+  "options": [
+   "has fallen love with",
+   "got love with",
+   "fell in love with",
+   "fell in love to"
+  ],
+  "answer": 2,
+  "explain": "Fall in love with – zakochać się w."
+ },
+ {
+  "id": "q-en-rslow-286",
+  "type": "choice",
+  "level": 2,
+  "q": "My brother (jest dobry z) maths.",
+  "options": [
+   "is good for",
+   "is good on",
+   "is good in",
+   "is good at"
+  ],
+  "answer": 3,
+  "explain": "Be good at – być dobrym w czymś."
+ },
+ {
+  "id": "q-en-rslow-287",
+  "type": "choice",
+  "level": 2,
+  "q": "(W przeciwieństwie do) his brother, Tom hates sport.",
+  "options": [
+   "Different",
+   "Not like",
+   "Unlike",
+   "Dislike"
+  ],
+  "answer": 2,
+  "explain": "Unlike – w przeciwieństwie do."
+ },
+ {
+  "id": "q-en-rslow-288",
+  "type": "choice",
+  "level": 2,
+  "q": "He (wyrzucił) the old newspapers.",
+  "options": [
+   "threw away",
+   "threw up",
+   "threw down",
+   "threw off"
+  ],
+  "answer": 0,
+  "explain": "Throw away – wyrzucić."
+ },
+ {
+  "id": "q-en-rslow-289",
+  "type": "choice",
+  "level": 1,
+  "q": "I (dostałem) a promotion last month.",
+  "options": [
+   "took",
+   "got",
+   "won",
+   "made"
+  ],
+  "answer": 1,
+  "explain": "Get a promotion – dostać awans."
+ },
+ {
+  "id": "q-en-rslow-290",
+  "type": "choice",
+  "level": 1,
+  "q": "They (opuścili) the school in June.",
+  "options": [
+   "gone",
+   "went",
+   "dropped",
+   "left"
+  ],
+  "answer": 3,
+  "explain": "Leave – opuścić."
+ },
+ {
+  "id": "q-en-rslow-291",
+  "type": "choice",
+  "level": 2,
+  "q": "He (wspomniał o) the problem during the meeting.",
+  "options": [
+   "mentioned",
+   "said",
+   "spoke",
+   "told"
+  ],
+  "answer": 0,
+  "explain": "Mention – wspomnieć o."
+ },
+ {
+  "id": "q-en-rslow-292",
+  "type": "choice",
+  "level": 3,
+  "q": "I (jestem w trakcie czytania) a good book.",
+  "options": [
+   "am during reading",
+   "am middle reading",
+   "am in the middle of reading",
+   "am at middle of read"
+  ],
+  "answer": 2,
+  "explain": "Be in the middle of + -ing."
+ },
+ {
+  "id": "q-en-rslow-293",
+  "type": "choice",
+  "level": 2,
+  "q": "(Z jednej strony) it's cheap, but on the other hand it's slow.",
+  "options": [
+   "In one hand",
+   "From one hand",
+   "On the one hand",
+   "At one side"
+  ],
+  "answer": 2,
+  "explain": "On the one hand ... on the other hand."
+ },
+ {
+  "id": "q-en-rslow-294",
+  "type": "choice",
+  "level": 1,
+  "q": "She (wygrała) the competition.",
+  "options": [
+   "earned",
+   "won",
+   "passed",
+   "gained"
+  ],
+  "answer": 1,
+  "explain": "Win a competition – wygrać konkurs."
  }
 ]

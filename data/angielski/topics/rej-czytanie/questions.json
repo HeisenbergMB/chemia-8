@@ -1136,5 +1136,195 @@
   "gap": 6,
   "answer": 3,
   "explain": "Po informacji o tanich herbatach pada uwaga o braku nastawienia na zysk, a potem cytat założycielki."
+ },
+ {
+  "id": "q-en-rczyt-090",
+  "type": "choice",
+  "level": 1,
+  "q": "Where is the farm situated?",
+  "group": "g-en-rczyt-13",
+  "options": [
+   "Next to a river.",
+   "Between two car parks on the ground.",
+   "In an old factory.",
+   "On the roof of a former shop."
+  ],
+  "answer": 3,
+  "explain": "Farma zajmuje dach dawnego domu towarowego."
+ },
+ {
+  "id": "q-en-rczyt-091",
+  "type": "choice",
+  "level": 1,
+  "q": "What does the farm produce more than two tonnes of every year?",
+  "group": "g-en-rczyt-13",
+  "options": [
+   "Compost.",
+   "Flowers.",
+   "Vegetables.",
+   "Honey."
+  ],
+  "answer": 2,
+  "explain": "Tekst: ponad dwie tony warzyw rocznie."
+ },
+ {
+  "id": "q-en-rczyt-092",
+  "type": "choice",
+  "level": 2,
+  "q": "Why did engineers check every wall before the farm was started?",
+  "group": "g-en-rczyt-13",
+  "options": [
+   "The wind had damaged the walls.",
+   "The building was very old.",
+   "The plants needed more light.",
+   "A roof can only carry a limited weight."
+  ],
+  "answer": 3,
+  "explain": "Dach nie może przenosić większego obciążenia, niż zaprojektowano."
+ },
+ {
+  "id": "q-en-rczyt-093",
+  "type": "choice",
+  "level": 2,
+  "q": "How was the problem of the wind solved?",
+  "group": "g-en-rczyt-13",
+  "options": [
+   "With low fences made of wood and net.",
+   "By planting tall trees.",
+   "With stronger plant boxes.",
+   "By closing the farm in autumn."
+  ],
+  "answer": 0,
+  "explain": "Niskie płotki z drewna i siatki rozwiązały problem wiatru."
+ },
+ {
+  "id": "q-en-rczyt-094",
+  "type": "choice",
+  "level": 2,
+  "q": "What do the chefs value most in the vegetables?",
+  "group": "g-en-rczyt-13",
+  "options": [
+   "Their unusual taste.",
+   "Their freshness.",
+   "Their delivery by bike.",
+   "Their low price."
+  ],
+  "answer": 1,
+  "explain": "Kucharze mówią, że główną zaletą jest świeżość."
+ },
+ {
+  "id": "q-en-rczyt-095",
+  "type": "choice",
+  "level": 2,
+  "q": "Why do some customers visit the roof on Saturdays?",
+  "group": "g-en-rczyt-13",
+  "options": [
+   "To buy cheaper food.",
+   "To watch the bees.",
+   "To help with the harvest.",
+   "To meet the chefs."
+  ],
+  "answer": 2,
+  "explain": "Niektórzy przychodzą w soboty pomagać przy zbiorach."
+ },
+ {
+  "id": "q-en-rczyt-096",
+  "type": "choice",
+  "level": 2,
+  "q": "What do the critics say about rooftop farms?",
+  "group": "g-en-rczyt-13",
+  "options": [
+   "The vegetables are too expensive.",
+   "Roofs are not safe for farming.",
+   "There is too little space to feed a whole city.",
+   "Bees harm the plants."
+  ],
+  "answer": 2,
+  "explain": "Krytycy: na dachach brakuje miejsca, by wyżywić całe miasto."
+ },
+ {
+  "id": "q-en-rczyt-097",
+  "type": "choice",
+  "level": 3,
+  "q": "What does the founder mean by 'carrots do not grow in plastic bags'?",
+  "group": "g-en-rczyt-13",
+  "options": [
+   "Children should learn where food really comes from.",
+   "Plastic should be banned on farms.",
+   "Supermarkets sell poor quality carrots.",
+   "Carrots are difficult to grow on roofs."
+  ],
+  "answer": 0,
+  "explain": "Zdanie wskazuje na edukację dzieci o pochodzeniu jedzenia."
+ },
+ {
+  "id": "q-en-rczyt-098",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (1)",
+  "group": "g-en-rczyt-14",
+  "gap": 1,
+  "answer": 2,
+  "explain": "Zdanie wprowadza osoby, które nie tylko oglądają, a następne nazywa je fanowskimi tłumaczami."
+ },
+ {
+  "id": "q-en-rczyt-099",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (2)",
+  "group": "g-en-rczyt-14",
+  "gap": 2,
+  "answer": 6,
+  "explain": "Niecierpliwość tłumaczy, dlaczego dziewczyna sama zabrała się do tłumaczenia z użyciem słownika."
+ },
+ {
+  "id": "q-en-rczyt-100",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (3)",
+  "group": "g-en-rczyt-14",
+  "gap": 3,
+  "answer": 1,
+  "explain": "Po przetłumaczeniu odcinka opublikowała go, a znajomi prosili o ciąg dalszy."
+ },
+ {
+  "id": "q-en-rczyt-101",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (4)",
+  "group": "g-en-rczyt-14",
+  "gap": 4,
+  "answer": 8,
+  "explain": "Kolejne zdanie rozwija trudność: wyrażenia związane z lokalnymi zwyczajami."
+ },
+ {
+  "id": "q-en-rczyt-102",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (5)",
+  "group": "g-en-rczyt-14",
+  "gap": 5,
+  "answer": 4,
+  "explain": "Wniosek „sama znajomość słów nie wystarcza” prowadzi do zdania o zespole z osobą znającą kulturę."
+ },
+ {
+  "id": "q-en-rczyt-103",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (6)",
+  "group": "g-en-rczyt-14",
+  "gap": 6,
+  "answer": 3,
+  "explain": "Po ostrzeżeniach pada argument właścicieli praw, do którego odnosi się „that” w następnym zdaniu."
+ },
+ {
+  "id": "q-en-rczyt-104",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (7)",
+  "group": "g-en-rczyt-14",
+  "gap": 7,
+  "answer": 7,
+  "explain": "Zdanie o nagrodzie domyka akapit przed cytatem o hobby i szkole odpowiedzialności."
  }
 ]

@@ -1057,7 +1057,7 @@
   "id": "q-en-rkult-081",
   "type": "choice",
   "level": 3,
-  "q": "The red poppies worn in November remind people of the soldiers who died, in the fields of ...",
+  "q": "The red poppies worn in November remind people of the soldiers who died in the fields of ...",
   "options": [
    "Texas",
    "Flanders",
@@ -1136,5 +1136,145 @@
   ],
   "answer": 3,
   "explain": "Kanadyjskie Święto Dziękczynienia przypada w październiku."
+ },
+ {
+  "id": "q-en-rkult-087",
+  "type": "choice",
+  "level": 2,
+  "q": "In Britain, a 'cuppa' is a cup of ...",
+  "options": [
+   "soup",
+   "coffee",
+   "milk",
+   "tea"
+  ],
+  "answer": 3,
+  "explain": "Cuppa to potoczne określenie filiżanki herbaty."
+ },
+ {
+  "id": "q-en-rkult-088",
+  "type": "choice",
+  "level": 2,
+  "q": "The monarch's official residence in London is ...",
+  "options": [
+   "Edinburgh Castle",
+   "Windsor Castle",
+   "Westminster Abbey",
+   "Buckingham Palace"
+  ],
+  "answer": 3,
+  "explain": "Pałac Buckingham to londyńska rezydencja monarchy."
+ },
+ {
+  "id": "q-en-rkult-089",
+  "type": "choice",
+  "level": 3,
+  "q": "Yorkshire pudding is traditionally served with ...",
+  "options": [
+   "fish",
+   "pasta",
+   "pancakes",
+   "roast beef"
+  ],
+  "answer": 3,
+  "explain": "Yorkshire pudding podaje się tradycyjnie do pieczeni wołowej."
+ },
+ {
+  "id": "q-en-rkult-090",
+  "type": "choice",
+  "level": 2,
+  "q": "St Patrick is the patron saint of ...",
+  "options": [
+   "Canada",
+   "Scotland",
+   "Ireland",
+   "Wales"
+  ],
+  "answer": 2,
+  "explain": "Św. Patryk jest patronem Irlandii."
+ },
+ {
+  "id": "q-en-rkult-091",
+  "type": "choice",
+  "level": 1,
+  "q": "Most American school buses are ...",
+  "options": [
+   "blue",
+   "yellow",
+   "red",
+   "green"
+  ],
+  "answer": 1,
+  "explain": "Amerykańskie autobusy szkolne są typowo żółte."
+ },
+ {
+  "id": "q-en-rkult-092",
+  "type": "choice",
+  "level": 1,
+  "q": "The red double-decker bus is a famous symbol of ...",
+  "options": [
+   "London",
+   "Dublin",
+   "New York",
+   "Edinburgh"
+  ],
+  "answer": 0,
+  "explain": "Czerwone piętrowe autobusy to symbol Londynu."
+ },
+ {
+  "id": "q-en-rkult-093",
+  "type": "choice",
+  "level": 3,
+  "q": "A 'pub quiz' in Britain is ...",
+  "options": [
+   "a school test",
+   "a type of cooking show",
+   "a general knowledge competition held in a pub",
+   "a card game"
+  ],
+  "answer": 2,
+  "explain": "Pub quiz to turniej wiedzy ogólnej urządzany w pubie."
+ },
+ {
+  "id": "q-en-rkult-094",
+  "type": "choice",
+  "level": 2,
+  "q": "At baseball games in the USA, fans traditionally eat ...",
+  "options": [
+   "haggis",
+   "fish and chips",
+   "sushi",
+   "hot dogs"
+  ],
+  "answer": 3,
+  "explain": "Hot dogi to klasyczna przekąska na meczach baseballu."
+ },
+ {
+  "id": "q-en-rkult-095",
+  "type": "choice",
+  "level": 3,
+  "q": "The national emblem of Scotland is the ...",
+  "options": [
+   "thistle",
+   "shamrock",
+   "daffodil",
+   "rose"
+  ],
+  "answer": 0,
+  "explain": "Oset jest symbolem Szkocji."
+ },
+ {
+  "id": "q-en-rkult-096",
+  "type": "choice",
+  "level": 3,
+  "q": "In Gloucestershire, people take part in a race in which they chase a rolling ... down a hill.",
+  "options": [
+   "barrel",
+   "ball",
+   "cheese",
+   "hat"
+  ],
+  "answer": 2,
+  "explain": "Cheese rolling – gonitwa za toczącym się serem."
  }
 ]

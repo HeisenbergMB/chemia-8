@@ -3043,7 +3043,10 @@
    "much",
    "far",
    "even",
-   "still"
+   "still",
+   "considerably",
+   "significantly",
+   "slightly"
   ],
   "explain": "Wzmocnienie stopnia wyższego: much less stressful."
  },
@@ -3306,7 +3309,7 @@
   "q": "I'm fed up ___ waiting for the bus.",
   "options": [
    "at",
-   "of",
+   "on",
    "from",
    "with"
   ],
@@ -3396,5 +3399,521 @@
   ],
   "answer": 0,
   "explain": "It's no use + forma -ing."
+ },
+ {
+  "id": "q-en-rgram-259",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (1)",
+  "group": "g-en-rgram-07",
+  "gap": 1,
+  "answers": [
+   "which",
+   "that"
+  ],
+  "explain": "Zaimek względny odnoszący się do rzeczy: a competition which was organised."
+ },
+ {
+  "id": "q-en-rgram-260",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (2)",
+  "group": "g-en-rgram-07",
+  "gap": 2,
+  "answers": [
+   "was"
+  ],
+  "explain": "Past Simple: I was certainly not the best-prepared."
+ },
+ {
+  "id": "q-en-rgram-261",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (3)",
+  "group": "g-en-rgram-07",
+  "gap": 3,
+  "answers": [
+   "would"
+  ],
+  "explain": "II okres warunkowy w mowie zależnej: would have to practise."
+ },
+ {
+  "id": "q-en-rgram-262",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (4)",
+  "group": "g-en-rgram-07",
+  "gap": 4,
+  "answers": [
+   "at"
+  ],
+  "explain": "At first – na początku."
+ },
+ {
+  "id": "q-en-rgram-263",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (5)",
+  "group": "g-en-rgram-07",
+  "gap": 5,
+  "answers": [
+   "out"
+  ],
+  "explain": "Turn out to be – okazać się."
+ },
+ {
+  "id": "q-en-rgram-264",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (6)",
+  "group": "g-en-rgram-07",
+  "gap": 6,
+  "answers": [
+   "had"
+  ],
+  "explain": "Past Perfect Continuous: had been helping since he was six."
+ },
+ {
+  "id": "q-en-rgram-265",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (7)",
+  "group": "g-en-rgram-07",
+  "gap": 7,
+  "answers": [
+   "was"
+  ],
+  "explain": "Past Simple: the kitchen was already full."
+ },
+ {
+  "id": "q-en-rgram-266",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (8)",
+  "group": "g-en-rgram-07",
+  "gap": 8,
+  "answers": [
+   "which"
+  ],
+  "explain": "Zdanie względne do całości zdania: ..., which was much harder."
+ },
+ {
+  "id": "q-en-rgram-267",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (9)",
+  "group": "g-en-rgram-07",
+  "gap": 9,
+  "answers": [
+   "had"
+  ],
+  "explain": "Past Perfect po realised: we had forgotten."
+ },
+ {
+  "id": "q-en-rgram-268",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (10)",
+  "group": "g-en-rgram-07",
+  "gap": 10,
+  "answers": [
+   "in"
+  ],
+  "explain": "Finish in fourth place – zająć czwarte miejsce."
+ },
+ {
+  "id": "q-en-rgram-269",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (11)",
+  "group": "g-en-rgram-07",
+  "gap": 11,
+  "answers": [
+   "the"
+  ],
+  "explain": "Stopień najwyższy z rodzajnikiem: the best."
+ },
+ {
+  "id": "q-en-rgram-270",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (12)",
+  "group": "g-en-rgram-07",
+  "gap": 12,
+  "answers": [
+   "had"
+  ],
+  "explain": "If only + Past Perfect: żal o przeszłość (had had)."
+ },
+ {
+  "id": "q-en-rgram-271",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (13)",
+  "group": "g-en-rgram-07",
+  "gap": 13,
+  "answers": [
+   "although",
+   "though",
+   "while",
+   "whilst"
+  ],
+  "explain": "Spójnik przeciwstawny: Although the experience was tiring."
+ },
+ {
+  "id": "q-en-rgram-272",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (14)",
+  "group": "g-en-rgram-07",
+  "gap": 14,
+  "answers": [
+   "to"
+  ],
+  "explain": "Look forward to + rzeczownik."
+ },
+ {
+  "id": "q-en-rgram-273",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (15)",
+  "group": "g-en-rgram-07",
+  "gap": 15,
+  "answers": [
+   "join",
+   "start",
+   "form",
+   "open",
+   "create",
+   "found"
+  ],
+  "explain": "Czasownik pasujący do założenia lub dołączenia do kółka: join a club."
+ },
+ {
+  "id": "q-en-rgram-274",
+  "type": "write",
+  "level": 2,
+  "q": "He said he was sorry for being late. (APOLOGISED)\nHe ___ late.",
+  "keyword": "apologised",
+  "maxWords": 5,
+  "answers": [
+   "apologised for being"
+  ],
+  "explain": "Apologise for + forma -ing."
+ },
+ {
+  "id": "q-en-rgram-275",
+  "type": "write",
+  "level": 2,
+  "q": "It's a long time since we last met. (SEEN)\nWe ___ each other for a long time.",
+  "keyword": "seen",
+  "maxWords": 5,
+  "answers": [
+   "haven't seen",
+   "have not seen"
+  ],
+  "explain": "Present Perfect z for."
+ },
+ {
+  "id": "q-en-rgram-276",
+  "type": "write",
+  "level": 1,
+  "q": "Maria's sister doesn't speak French as well as Maria does. (BETTER)\nMaria speaks French ___ her sister.",
+  "keyword": "better",
+  "maxWords": 5,
+  "answers": [
+   "better than"
+  ],
+  "explain": "Stopień wyższy + than."
+ },
+ {
+  "id": "q-en-rgram-277",
+  "type": "write",
+  "level": 2,
+  "q": "I'd like to know the time of the next train. (TELL)\nCould you ___ the next train leaves?",
+  "keyword": "tell",
+  "maxWords": 5,
+  "answers": [
+   "tell me what time",
+   "tell me when"
+  ],
+  "explain": "Pytanie pośrednie po tell me."
+ },
+ {
+  "id": "q-en-rgram-278",
+  "type": "write",
+  "level": 3,
+  "q": "People know that the author lived in Paris. (KNOWN)\nThe author ___ lived in Paris.",
+  "keyword": "known",
+  "maxWords": 5,
+  "answers": [
+   "is known to have"
+  ],
+  "explain": "Bezosobowa strona bierna: is known to have lived."
+ },
+ {
+  "id": "q-en-rgram-279",
+  "type": "write",
+  "level": 2,
+  "q": "He is rich but he isn't happy. (THOUGH)\nHe isn't happy ___ rich.",
+  "keyword": "though",
+  "maxWords": 5,
+  "answers": [
+   "though he is",
+   "even though he is"
+  ],
+  "explain": "Though + zdanie – chociaż."
+ },
+ {
+  "id": "q-en-rgram-280",
+  "type": "write",
+  "level": 2,
+  "q": "She started to play the violin ten years ago. (PLAYING)\nShe has ___ the violin for ten years.",
+  "keyword": "playing",
+  "maxWords": 5,
+  "answers": [
+   "been playing"
+  ],
+  "explain": "Present Perfect Continuous z for."
+ },
+ {
+  "id": "q-en-rgram-281",
+  "type": "write",
+  "level": 2,
+  "q": "Take an umbrella. If you don't, you will get wet. (OTHERWISE)\nTake an umbrella, ___ get wet.",
+  "keyword": "otherwise",
+  "maxWords": 5,
+  "answers": [
+   "otherwise you will",
+   "otherwise you'll"
+  ],
+  "explain": "Otherwise – w przeciwnym razie."
+ },
+ {
+  "id": "q-en-rgram-282",
+  "type": "write",
+  "level": 2,
+  "q": "My phone is not the same as yours. (DIFFERENT)\nMy phone ___ yours.",
+  "keyword": "different",
+  "maxWords": 5,
+  "answers": [
+   "is different from",
+   "is different to"
+  ],
+  "explain": "Be different from/to – różnić się od."
+ },
+ {
+  "id": "q-en-rgram-283",
+  "type": "write",
+  "level": 3,
+  "q": "He continued talking in spite of the rule. (KEPT)\nHe ___ talking in spite of the rule.",
+  "keyword": "kept",
+  "maxWords": 5,
+  "answers": [
+   "kept on"
+  ],
+  "explain": "Keep on + forma -ing – nie przestawać."
+ },
+ {
+  "id": "q-en-rgram-284",
+  "type": "write",
+  "level": 2,
+  "q": "My father taught me to drive. (HOW)\nMy father showed me ___ drive.",
+  "keyword": "how",
+  "maxWords": 5,
+  "answers": [
+   "how to"
+  ],
+  "explain": "Show someone how to – pokazać, jak coś zrobić."
+ },
+ {
+  "id": "q-en-rgram-285",
+  "type": "write",
+  "level": 2,
+  "q": "Perhaps Jack took your book. (MIGHT)\nJack ___ your book.",
+  "keyword": "might",
+  "maxWords": 5,
+  "answers": [
+   "might have taken"
+  ],
+  "explain": "Might have + imiesłów – możliwość o przeszłości."
+ },
+ {
+  "id": "q-en-rgram-286",
+  "type": "write",
+  "level": 3,
+  "q": "'Where did you buy this?' he asked me. (WHERE)\nHe asked me ___ that.",
+  "keyword": "where",
+  "maxWords": 5,
+  "answers": [
+   "where I had bought",
+   "where I bought"
+  ],
+  "explain": "Pytanie zależne: szyk twierdzący."
+ },
+ {
+  "id": "q-en-rgram-287",
+  "type": "write",
+  "level": 3,
+  "q": "I don't like fish and my brother doesn't either. (NEITHER)\nI don't like fish and ___ my brother.",
+  "keyword": "neither",
+  "maxWords": 5,
+  "answers": [
+   "neither does"
+  ],
+  "explain": "Neither + operator + podmiot."
+ },
+ {
+  "id": "q-en-rgram-288",
+  "type": "write",
+  "level": 3,
+  "q": "'The food is cold!' said the customer. (COMPLAINED)\nThe customer ___ cold.",
+  "keyword": "complained",
+  "maxWords": 5,
+  "answers": [
+   "complained that the food was",
+   "complained the food was"
+  ],
+  "explain": "Complain that – skarżyć się, że."
+ },
+ {
+  "id": "q-en-rgram-289",
+  "type": "choice",
+  "level": 2,
+  "q": "I can't stand ___ in long queues.",
+  "options": [
+   "to wait",
+   "waited",
+   "wait",
+   "waiting"
+  ],
+  "answer": 3,
+  "explain": "Can't stand + forma -ing."
+ },
+ {
+  "id": "q-en-rgram-290",
+  "type": "choice",
+  "level": 3,
+  "q": "Neither Tom nor his sisters ___ at home.",
+  "options": [
+   "are being",
+   "was",
+   "were",
+   "is"
+  ],
+  "answer": 2,
+  "explain": "Przy neither … nor czasownik zgadza się z najbliższym podmiotem (sisters)."
+ },
+ {
+  "id": "q-en-rgram-291",
+  "type": "choice",
+  "level": 2,
+  "q": "He drove so fast ___ he missed the turning.",
+  "options": [
+   "that",
+   "which",
+   "as",
+   "than"
+  ],
+  "answer": 0,
+  "explain": "So + przysłówek + that – tak ... że."
+ },
+ {
+  "id": "q-en-rgram-292",
+  "type": "choice",
+  "level": 2,
+  "q": "We'd better ___ a taxi; it's late.",
+  "options": [
+   "took",
+   "take",
+   "to take",
+   "taking"
+  ],
+  "answer": 1,
+  "explain": "Had better + bezokolicznik bez to."
+ },
+ {
+  "id": "q-en-rgram-293",
+  "type": "choice",
+  "level": 2,
+  "q": "You ___ touch the paintings in the museum.",
+  "options": [
+   "aren't able",
+   "mustn't",
+   "don't have",
+   "needn't"
+  ],
+  "answer": 1,
+  "explain": "Mustn't – zakaz."
+ },
+ {
+  "id": "q-en-rgram-294",
+  "type": "choice",
+  "level": 1,
+  "q": "I've been waiting here ___ two o'clock.",
+  "options": [
+   "for",
+   "from",
+   "since",
+   "during"
+  ],
+  "answer": 2,
+  "explain": "Since + punkt w czasie."
+ },
+ {
+  "id": "q-en-rgram-295",
+  "type": "choice",
+  "level": 2,
+  "q": "Would you like ___ more tea?",
+  "options": [
+   "many",
+   "a",
+   "some",
+   "any"
+  ],
+  "answer": 2,
+  "explain": "W propozycji używamy some."
+ },
+ {
+  "id": "q-en-rgram-296",
+  "type": "choice",
+  "level": 1,
+  "q": "The prize was given ___ the youngest competitor.",
+  "options": [
+   "to",
+   "at",
+   "for",
+   "by"
+  ],
+  "answer": 0,
+  "explain": "Give something to someone."
+ },
+ {
+  "id": "q-en-rgram-297",
+  "type": "choice",
+  "level": 2,
+  "q": "I'm not used to ___ at this time.",
+  "options": [
+   "got up",
+   "get up",
+   "have got up",
+   "getting up"
+  ],
+  "answer": 3,
+  "explain": "Be used to + forma -ing."
+ },
+ {
+  "id": "q-en-rgram-298",
+  "type": "choice",
+  "level": 2,
+  "q": "He pretended ___ asleep when she came in.",
+  "options": [
+   "to be",
+   "being",
+   "was",
+   "be"
+  ],
+  "answer": 0,
+  "explain": "Pretend + to + bezokolicznik."
  }
 ]
