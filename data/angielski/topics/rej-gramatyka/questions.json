@@ -1365,7 +1365,8 @@
   "group": "g-en-rgram-04",
   "gap": 1,
   "answers": [
-   "would"
+   "would",
+   "could"
   ],
   "explain": "Czasownik modalny w przeszłości: would never have imagined."
  },
@@ -1389,7 +1390,11 @@
   "group": "g-en-rgram-04",
   "gap": 3,
   "answers": [
-   "were"
+   "were",
+   "seemed",
+   "appeared",
+   "became",
+   "felt"
   ],
   "explain": "Past Simple z podmiotem w liczbie mnogiej: students were interested."
  },
@@ -1502,7 +1507,8 @@
   "answers": [
    "forced",
    "obliged",
-   "made"
+   "made",
+   "compelled"
   ],
   "explain": "Be forced / obliged to + bezokolicznik – zostać zmuszonym."
  },
@@ -1514,7 +1520,12 @@
   "group": "g-en-rgram-04",
   "gap": 13,
   "answers": [
-   "had"
+   "had",
+   "decided",
+   "chose",
+   "needed",
+   "agreed",
+   "wanted"
   ],
   "explain": "Had to + bezokolicznik – musieliśmy użyć pieniędzy."
  },
@@ -1542,7 +1553,8 @@
    "only",
    "merely",
    "simply",
-   "all"
+   "all",
+   "solely"
   ],
   "explain": "It is not just/only about ... – nie chodzi tylko o ..."
  },
@@ -1629,7 +1641,10 @@
   "answers": [
    "despite the heavy rain",
    "despite the rain",
-   "despite heavy rain"
+   "despite heavy rain",
+   "despite it raining heavily",
+   "despite it having rained heavily",
+   "despite the rain being heavy"
   ],
   "explain": "Despite + rzeczownik: despite the heavy rain."
  },
@@ -1701,7 +1716,8 @@
   "keyword": "since",
   "maxWords": 5,
   "answers": [
-   "since I last went"
+   "since I last went",
+   "since I went"
   ],
   "explain": "It is ... since + Past Simple."
  },

@@ -1359,7 +1359,8 @@
   "level": 3,
   "q": "The ___ of the museum took place in 1890. (FOUND)",
   "answers": [
-   "foundation"
+   "foundation",
+   "founding"
   ],
   "explain": "Rzeczownik od found (zakładać): foundation."
  },
@@ -1689,7 +1690,7 @@
   "options": [
    "regretted for",
    "apologised for",
-   "was sorry for",
+   "was sorry of",
    "excused for"
   ],
   "answer": 1,
