@@ -2318,7 +2318,8 @@
   "group": "g-en-rgram-05",
   "gap": 2,
   "answers": [
-   "were"
+   "were",
+   "got"
   ],
   "explain": "Be used to – być przyzwyczajonym: drivers were used to the idea."
  },
@@ -2396,7 +2397,8 @@
   "gap": 8,
   "answers": [
    "every",
-   "each"
+   "each",
+   "in"
   ],
   "explain": "Every spring – co wiosnę; konstrukcja have something done."
  },
@@ -2484,7 +2486,8 @@
   "keyword": "denied",
   "maxWords": 5,
   "answers": [
-   "denied breaking"
+   "denied breaking",
+   "denied having broken"
   ],
   "explain": "Deny + forma -ing."
  },
@@ -2535,7 +2538,9 @@
   "answers": [
    "suggested going",
    "suggested we go",
-   "suggested that we go"
+   "suggested that we go",
+   "suggested that we should go",
+   "suggested we should go"
   ],
   "explain": "Suggest + -ing albo suggest (that) we + bezokolicznik."
  },
@@ -2547,7 +2552,8 @@
   "keyword": "never",
   "maxWords": 5,
   "answers": [
-   "have never flown"
+   "have never flown",
+   "'ve never flown"
   ],
   "explain": "Present Perfect z never."
  },
@@ -2635,7 +2641,8 @@
   "maxWords": 5,
   "answers": [
    "was not told",
-   "wasn't told"
+   "wasn't told",
+   "was never told"
   ],
   "explain": "Strona bierna z przeczeniem: was not told."
  },
@@ -2756,7 +2763,7 @@
    "were",
    "will be",
    "am",
-   "was"
+   "would be"
   ],
   "answer": 0,
   "explain": "II okres warunkowy w radach: if I were you."
