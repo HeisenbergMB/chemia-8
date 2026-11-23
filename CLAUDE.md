@@ -42,3 +42,6 @@ Skille: `/add-lesson` (nowy dział), `/add-questions` (więcej pytań w istniej�
 Nowa lekcja: użyj `/add-lesson`. Ręcznie: wpis działu w `data/<przedmiot>/curriculum.json` (w odpowiednim module), katalog `data/<przedmiot>/topics/<id>/`
 z `theory.json` (`cards`, `flash`) i `questions.json`, ewentualnie równania/doświadczenia → `npm run lock` → `npm run bump` → `npm run verify`.
 Dział wynika z katalogu paczki – nie wpisuj pola `topic` w kartach, fiszkach ani pytaniach.
+
+## Przegląd przez Opusa
+Sesję roboczą prowadzimy na Sonnecie. Po większej paczce zmian (treść, nowy ekran, refaktor) wywołaj agenta `reviewer` (`.claude/agents/reviewer.md`, model Opus), uwzględnij jego uwagi i dopiero potem kończ pracę.
