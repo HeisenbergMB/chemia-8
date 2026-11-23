@@ -996,5 +996,145 @@
    "Advent"
   ],
   "explain": "Advent – adwent."
+ },
+ {
+  "id": "q-en-rkult-077",
+  "type": "choice",
+  "level": 2,
+  "q": "Shakespeare's Globe is a famous theatre in ...",
+  "options": [
+   "Cardiff",
+   "London",
+   "Edinburgh",
+   "Liverpool"
+  ],
+  "answer": 1,
+  "explain": "Shakespeare's Globe to teatr nad Tamizą w Londynie."
+ },
+ {
+  "id": "q-en-rkult-078",
+  "type": "choice",
+  "level": 3,
+  "q": "Thousands of people gather at Stonehenge to watch the sunrise at the summer ...",
+  "options": [
+   "market",
+   "solstice",
+   "festival",
+   "parade"
+  ],
+  "answer": 1,
+  "explain": "Przesilenie letnie przyciąga tłumy do Stonehenge."
+ },
+ {
+  "id": "q-en-rkult-079",
+  "type": "choice",
+  "level": 2,
+  "q": "At Halloween, a carved pumpkin with a candle inside is called a ...",
+  "options": [
+   "maypole",
+   "snowman",
+   "scarecrow",
+   "jack-o'-lantern"
+  ],
+  "answer": 3,
+  "explain": "Jack-o'-lantern to wydrążona dynia z świecą."
+ },
+ {
+  "id": "q-en-rkult-080",
+  "type": "choice",
+  "level": 3,
+  "q": "A ceilidh in Scotland is a ...",
+  "options": [
+   "school exam",
+   "type of whisky",
+   "kind of sport",
+   "social event with folk music and dancing"
+  ],
+  "answer": 3,
+  "explain": "Ceilidh to spotkanie z muzyką ludową i tańcem."
+ },
+ {
+  "id": "q-en-rkult-081",
+  "type": "choice",
+  "level": 3,
+  "q": "The red poppies worn in November remind people of the soldiers who died, in the fields of ...",
+  "options": [
+   "Texas",
+   "Flanders",
+   "Canada",
+   "Wales"
+  ],
+  "answer": 1,
+  "explain": "Maki kojarzą się z polami Flandrii z I wojny światowej."
+ },
+ {
+  "id": "q-en-rkult-082",
+  "type": "choice",
+  "level": 2,
+  "q": "Hot cross buns are traditionally eaten on ...",
+  "options": [
+   "Boxing Day",
+   "Good Friday",
+   "Halloween",
+   "Burns Night"
+  ],
+  "answer": 1,
+  "explain": "Bułeczki z krzyżem je się w Wielki Piątek."
+ },
+ {
+  "id": "q-en-rkult-083",
+  "type": "choice",
+  "level": 2,
+  "q": "The USA declared its independence from Britain in ...",
+  "options": [
+   "1865",
+   "1776",
+   "1492",
+   "1914"
+  ],
+  "answer": 1,
+  "explain": "Deklaracja niepodległości USA pochodzi z 1776 roku."
+ },
+ {
+  "id": "q-en-rkult-084",
+  "type": "choice",
+  "level": 2,
+  "q": "The national symbol on the flag of Wales is a red ...",
+  "options": [
+   "dragon",
+   "lion",
+   "eagle",
+   "rose"
+  ],
+  "answer": 0,
+  "explain": "Czerwony smok widnieje na fladze Walii."
+ },
+ {
+  "id": "q-en-rkult-085",
+  "type": "choice",
+  "level": 1,
+  "q": "On Christmas Eve British children traditionally hang up ... for Father Christmas to fill.",
+  "options": [
+   "hats",
+   "baskets",
+   "stockings",
+   "umbrellas"
+  ],
+  "answer": 2,
+  "explain": "Skarpety na prezenty to tradycja bożonarodzeniowa."
+ },
+ {
+  "id": "q-en-rkult-086",
+  "type": "choice",
+  "level": 3,
+  "q": "In Canada, Thanksgiving is celebrated in ...",
+  "options": [
+   "November",
+   "December",
+   "July",
+   "October"
+  ],
+  "answer": 3,
+  "explain": "Kanadyjskie Święto Dziękczynienia przypada w październiku."
  }
 ]

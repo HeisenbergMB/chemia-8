@@ -950,5 +950,191 @@
   ],
   "answer": 1,
   "explain": "Chodziło o ocalenie życia wspólnoty, a nie tylko budynku."
+ },
+ {
+  "id": "q-en-rczyt-075",
+  "type": "choice",
+  "level": 1,
+  "q": "In the UK and the USA, sleeping at work has traditionally been considered a sign of laziness.",
+  "group": "g-en-rczyt-11",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Tekst: w Wielkiej Brytanii i USA spanie w pracy tradycyjnie uchodziło za oznakę lenistwa."
+ },
+ {
+  "id": "q-en-rczyt-076",
+  "type": "choice",
+  "level": 1,
+  "q": "In the experiment, both groups of volunteers were given a nap after lunch.",
+  "group": "g-en-rczyt-11",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Tylko jedna grupa miała drzemkę, druga pozostała na nogach."
+ },
+ {
+  "id": "q-en-rczyt-077",
+  "type": "choice",
+  "level": 2,
+  "q": "The volunteers who slept made fewer mistakes in a computer game.",
+  "group": "g-en-rczyt-11",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Śpiący popełnili mniej błędów w prostej grze komputerowej."
+ },
+ {
+  "id": "q-en-rczyt-078",
+  "type": "choice",
+  "level": 3,
+  "q": "Researchers are certain that a nap removes all information from the brain.",
+  "group": "g-en-rczyt-11",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Badacze tylko „believe” – nie są pewni, a zdanie mówi o usuwaniu całej informacji."
+ },
+ {
+  "id": "q-en-rczyt-079",
+  "type": "choice",
+  "level": 2,
+  "q": "After a long nap, a person always feels more energetic.",
+  "group": "g-en-rczyt-11",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Po ponad 30 minutach człowiek często czuje się jeszcze bardziej zmęczony."
+ },
+ {
+  "id": "q-en-rczyt-080",
+  "type": "choice",
+  "level": 1,
+  "q": "Experts advise napping for between ten and thirty minutes.",
+  "group": "g-en-rczyt-11",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Zalecany czas to od dziesięciu do trzydziestu minut."
+ },
+ {
+  "id": "q-en-rczyt-081",
+  "type": "choice",
+  "level": 2,
+  "q": "A nap late in the evening may make it harder to fall asleep at night.",
+  "group": "g-en-rczyt-11",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Tekst ostrzega, że drzemka późnym wieczorem może utrudnić zasypianie w nocy."
+ },
+ {
+  "id": "q-en-rczyt-082",
+  "type": "choice",
+  "level": 3,
+  "q": "People who sleep badly at night will certainly sleep better if they nap.",
+  "group": "g-en-rczyt-11",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 1,
+  "explain": "Tekst mówi, że dla takich osób drzemka może pogorszyć problem."
+ },
+ {
+  "id": "q-en-rczyt-083",
+  "type": "choice",
+  "level": 2,
+  "q": "Some scientists say that more research is needed because the groups studied were small.",
+  "group": "g-en-rczyt-11",
+  "fixed": true,
+  "options": [
+   "TRUE",
+   "FALSE"
+  ],
+  "answer": 0,
+  "explain": "Autorzy wskazują, że dotychczasowe badania objęły małe grupy."
+ },
+ {
+  "id": "q-en-rczyt-084",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (1)",
+  "group": "g-en-rczyt-12",
+  "gap": 1,
+  "answer": 2,
+  "explain": "Fragment przeciwstawia zwykłe muzea (obrazy, broń) muzeum z kolejnego zdania, które wybrało inną drogę."
+ },
+ {
+  "id": "q-en-rczyt-085",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (2)",
+  "group": "g-en-rczyt-12",
+  "gap": 2,
+  "answer": 4,
+  "explain": "Pytanie uczniów o maszynę do pisania prowadzi do refleksji, a potem do zbierania przedmiotów."
+ },
+ {
+  "id": "q-en-rczyt-086",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (3)",
+  "group": "g-en-rczyt-12",
+  "gap": 3,
+  "answer": 7,
+  "explain": "Pokój pełen przedmiotów tłumaczy, dlaczego rada miasta zaoferowała pusty sklep."
+ },
+ {
+  "id": "q-en-rczyt-087",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (4)",
+  "group": "g-en-rczyt-12",
+  "gap": 4,
+  "answer": 1,
+  "explain": "Po zdaniu o dotykaniu przedmiotów pada uzasadnienie, a następnie przykłady z dziećmi i dziadkami."
+ },
+ {
+  "id": "q-en-rczyt-088",
+  "type": "bank",
+  "level": 2,
+  "q": "Luka (5)",
+  "group": "g-en-rczyt-12",
+  "gap": 5,
+  "answer": 6,
+  "explain": "Zdanie o rozmowach rozwija wątek dziadków i dzieci, a kolejne mówi o różnych wspomnieniach."
+ },
+ {
+  "id": "q-en-rczyt-089",
+  "type": "bank",
+  "level": 3,
+  "q": "Luka (6)",
+  "group": "g-en-rczyt-12",
+  "gap": 6,
+  "answer": 3,
+  "explain": "Po informacji o tanich herbatach pada uwaga o braku nastawienia na zysk, a potem cytat założycielki."
  }
 ]

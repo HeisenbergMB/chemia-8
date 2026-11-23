@@ -2740,5 +2740,415 @@
   ],
   "answer": 2,
   "explain": "Let + dopełnienie + bezokolicznik bez to."
+ },
+ {
+  "id": "q-en-rslow-225",
+  "type": "write",
+  "level": 2,
+  "q": "The a _ _ _ e _ _ e clapped loudly at the end of the concert.",
+  "answers": [
+   "audience"
+  ],
+  "explain": "Audience – publiczność."
+ },
+ {
+  "id": "q-en-rslow-226",
+  "type": "write",
+  "level": 1,
+  "q": "The kitten was so t _ _ y that it fitted in my hand.",
+  "answers": [
+   "tiny"
+  ],
+  "explain": "Tiny – malutki."
+ },
+ {
+  "id": "q-en-rslow-227",
+  "type": "write",
+  "level": 2,
+  "q": "The t _ _ _ e _ _ _ _ _ e fell below zero last night.",
+  "answers": [
+   "temperature"
+  ],
+  "explain": "Temperature – temperatura."
+ },
+ {
+  "id": "q-en-rslow-228",
+  "type": "write",
+  "level": 1,
+  "q": "I forgot to pack my s _ _ _ c _ _ e for the trip.",
+  "answers": [
+   "suitcase"
+  ],
+  "explain": "Suitcase – walizka."
+ },
+ {
+  "id": "q-en-rslow-229",
+  "type": "write",
+  "level": 2,
+  "q": "What is the main p _ _ p _ _ e of your visit?",
+  "answers": [
+   "purpose"
+  ],
+  "explain": "Purpose – cel, powód wizyty."
+ },
+ {
+  "id": "q-en-rslow-230",
+  "type": "write",
+  "level": 2,
+  "q": "Please r _ _ i _ _ me to call my aunt tomorrow.",
+  "answers": [
+   "remind"
+  ],
+  "explain": "Remind – przypominać."
+ },
+ {
+  "id": "q-en-rslow-231",
+  "type": "write",
+  "level": 2,
+  "q": "She works as a j _ _ _ n _ _ _ _ t for a daily newspaper.",
+  "answers": [
+   "journalist"
+  ],
+  "explain": "Journalist – dziennikarz."
+ },
+ {
+  "id": "q-en-rslow-232",
+  "type": "write",
+  "level": 2,
+  "q": "Don't s _ _ i _ the surprise by telling her!",
+  "answers": [
+   "spoil"
+  ],
+  "explain": "Spoil – psuć (niespodziankę)."
+ },
+ {
+  "id": "q-en-rslow-233",
+  "type": "write",
+  "level": 3,
+  "q": "Nothing has changed here for a d _ _ a _ e .",
+  "answers": [
+   "decade"
+  ],
+  "explain": "Decade – dziesięciolecie."
+ },
+ {
+  "id": "q-en-rslow-234",
+  "type": "write",
+  "level": 2,
+  "q": "The children like to p _ _ _ e _ d that they are pirates.",
+  "answers": [
+   "pretend"
+  ],
+  "explain": "Pretend – udawać."
+ },
+ {
+  "id": "q-en-rslow-235",
+  "type": "write",
+  "level": 2,
+  "q": "The ___ of the new stadium took two years. (BUILD)",
+  "answers": [
+   "building"
+  ],
+  "explain": "Rzeczownik od build: building."
+ },
+ {
+  "id": "q-en-rslow-236",
+  "type": "write",
+  "level": 2,
+  "q": "It is ___ to ride a bike without a helmet. (DANGER)",
+  "answers": [
+   "dangerous"
+  ],
+  "explain": "Przymiotnik od danger: dangerous."
+ },
+ {
+  "id": "q-en-rslow-237",
+  "type": "write",
+  "level": 3,
+  "q": "He apologised for his ___ behaviour. (RUDE)",
+  "answers": [
+   "rudeness"
+  ],
+  "explain": "Rzeczownik od rude: rudeness."
+ },
+ {
+  "id": "q-en-rslow-238",
+  "type": "write",
+  "level": 2,
+  "q": "She is a very ___ girl; she always thinks of others. (THOUGHT)",
+  "answers": [
+   "thoughtful"
+  ],
+  "explain": "Przymiotnik od thought: thoughtful (troskliwa)."
+ },
+ {
+  "id": "q-en-rslow-239",
+  "type": "write",
+  "level": 3,
+  "q": "The ___ of the volcano was a national disaster. (ERUPT)",
+  "answers": [
+   "eruption"
+  ],
+  "explain": "Rzeczownik od erupt: eruption."
+ },
+ {
+  "id": "q-en-rslow-240",
+  "type": "write",
+  "level": 2,
+  "q": "The company was fined for ___ the river. (POLLUTE)",
+  "answers": [
+   "polluting"
+  ],
+  "explain": "Forma -ing po przyimku for."
+ },
+ {
+  "id": "q-en-rslow-241",
+  "type": "write",
+  "level": 1,
+  "q": "The ___ received a golden cup. (WIN)",
+  "answers": [
+   "winner"
+  ],
+  "explain": "Rzeczownik oznaczający osobę: winner."
+ },
+ {
+  "id": "q-en-rslow-242",
+  "type": "write",
+  "level": 1,
+  "q": "I have a ___ with my teacher at ten. (MEET)",
+  "answers": [
+   "meeting"
+  ],
+  "explain": "Rzeczownik od meet: meeting."
+ },
+ {
+  "id": "q-en-rslow-243",
+  "type": "write",
+  "level": 3,
+  "q": "It was ___ cold that day, so we stayed in. (USUAL)",
+  "answers": [
+   "unusually"
+  ],
+  "explain": "Przysłówek z przeczeniem: unusually."
+ },
+ {
+  "id": "q-en-rslow-244",
+  "type": "write",
+  "level": 2,
+  "q": "Eating only sweets is very ___. (HEALTH)",
+  "answers": [
+   "unhealthy"
+  ],
+  "explain": "Przymiotnik z przeczeniem: unhealthy."
+ },
+ {
+  "id": "q-en-rslow-245",
+  "type": "choice",
+  "level": 1,
+  "q": "He (został wybrany) captain of the team.",
+  "options": [
+   "has chosen",
+   "was chosen",
+   "chose",
+   "is choosing"
+  ],
+  "answer": 1,
+  "explain": "Strona bierna: was chosen."
+ },
+ {
+  "id": "q-en-rslow-246",
+  "type": "choice",
+  "level": 2,
+  "q": "I (żałuję) not telling you the truth.",
+  "options": [
+   "repent",
+   "regret",
+   "feel sorry",
+   "pity"
+  ],
+  "answer": 1,
+  "explain": "Regret + -ing – żałować."
+ },
+ {
+  "id": "q-en-rslow-247",
+  "type": "choice",
+  "level": 2,
+  "q": "She (odłożyła na później) the meeting until Friday.",
+  "options": [
+   "put up",
+   "put down",
+   "put off",
+   "put out"
+  ],
+  "answer": 2,
+  "explain": "Put off – odkładać."
+ },
+ {
+  "id": "q-en-rslow-248",
+  "type": "choice",
+  "level": 2,
+  "q": "(Dzięki) your help, I passed the exam.",
+  "options": [
+   "Thanks to",
+   "Owing",
+   "Because",
+   "Due"
+  ],
+  "answer": 0,
+  "explain": "Thanks to + rzeczownik."
+ },
+ {
+  "id": "q-en-rslow-249",
+  "type": "choice",
+  "level": 1,
+  "q": "She (sprawdziła) the answers carefully.",
+  "options": [
+   "looked",
+   "controlled",
+   "tested",
+   "checked"
+  ],
+  "answer": 3,
+  "explain": "Check – sprawdzić."
+ },
+ {
+  "id": "q-en-rslow-250",
+  "type": "choice",
+  "level": 2,
+  "q": "He (jest przyzwyczajony do) cold weather.",
+  "options": [
+   "used to",
+   "uses to",
+   "is used to",
+   "is used for"
+  ],
+  "answer": 2,
+  "explain": "Be used to + rzeczownik – być przyzwyczajonym."
+ },
+ {
+  "id": "q-en-rslow-251",
+  "type": "choice",
+  "level": 3,
+  "q": "The dress was (w wyprzedaży).",
+  "options": [
+   "in sale",
+   "on sale",
+   "for sale",
+   "at sale"
+  ],
+  "answer": 1,
+  "explain": "On sale – w obniżonej cenie."
+ },
+ {
+  "id": "q-en-rslow-252",
+  "type": "choice",
+  "level": 3,
+  "q": "They (dotarli do) the hotel at midnight.",
+  "options": [
+   "reached",
+   "came",
+   "arrived",
+   "entered to"
+  ],
+  "answer": 0,
+  "explain": "Reach + miejsce bez przyimka; arrive wymaga at."
+ },
+ {
+  "id": "q-en-rslow-253",
+  "type": "choice",
+  "level": 2,
+  "q": "He (nie ma nic wspólnego z) the accident.",
+  "options": [
+   "has nothing common with",
+   "is nothing with",
+   "does not have common with",
+   "has nothing to do with"
+  ],
+  "answer": 3,
+  "explain": "Have nothing to do with."
+ },
+ {
+  "id": "q-en-rslow-254",
+  "type": "choice",
+  "level": 2,
+  "q": "My phone (jest wyłączony).",
+  "options": [
+   "is turn off",
+   "is out switched",
+   "is switch off",
+   "is switched off"
+  ],
+  "answer": 3,
+  "explain": "Be switched off – być wyłączonym."
+ },
+ {
+  "id": "q-en-rslow-255",
+  "type": "choice",
+  "level": 1,
+  "q": "She (była zaskoczona) by the news.",
+  "options": [
+   "was surprised",
+   "was surprise",
+   "was surprising",
+   "surprised"
+  ],
+  "answer": 0,
+  "explain": "Imiesłów bierny: was surprised."
+ },
+ {
+  "id": "q-en-rslow-256",
+  "type": "choice",
+  "level": 2,
+  "q": "We (rozmawialiśmy o) our holidays.",
+  "options": [
+   "discussed about",
+   "talked about",
+   "told about",
+   "said about"
+  ],
+  "answer": 1,
+  "explain": "Talk about – rozmawiać o."
+ },
+ {
+  "id": "q-en-rslow-257",
+  "type": "choice",
+  "level": 2,
+  "q": "I'd like to (zarezerwować) a table for four.",
+  "options": [
+   "order",
+   "keep",
+   "buy",
+   "book"
+  ],
+  "answer": 3,
+  "explain": "Book a table – zarezerwować stolik."
+ },
+ {
+  "id": "q-en-rslow-258",
+  "type": "choice",
+  "level": 2,
+  "q": "I (pożyczyłem mu) my bike.",
+  "options": [
+   "hired him",
+   "borrowed him",
+   "rented him",
+   "lent him"
+  ],
+  "answer": 3,
+  "explain": "Lend – pożyczyć komuś."
+ },
+ {
+  "id": "q-en-rslow-259",
+  "type": "choice",
+  "level": 2,
+  "q": "He (zasnął) during the film.",
+  "options": [
+   "got sleep",
+   "fell asleep",
+   "went asleep",
+   "slept in"
+  ],
+  "answer": 1,
+  "explain": "Fall asleep – zasnąć."
  }
 ]

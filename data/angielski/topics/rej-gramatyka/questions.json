@@ -2879,5 +2879,522 @@
   ],
   "answer": 3,
   "explain": "Stopień wyższy przysłówka: more carefully."
+ },
+ {
+  "id": "q-en-rgram-219",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (1)",
+  "group": "g-en-rgram-06",
+  "gap": 1,
+  "answers": [
+   "to",
+   "into"
+  ],
+  "explain": "Move to + miejsce – przeprowadzić się do."
+ },
+ {
+  "id": "q-en-rgram-220",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (2)",
+  "group": "g-en-rgram-06",
+  "gap": 2,
+  "answers": [
+   "within",
+   "in",
+   "after"
+  ],
+  "explain": "Within a week – w ciągu tygodnia."
+ },
+ {
+  "id": "q-en-rgram-221",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (3)",
+  "group": "g-en-rgram-06",
+  "gap": 3,
+  "answers": [
+   "to"
+  ],
+  "explain": "Nothing to do – nic do roboty (bezokolicznik po zaimku)."
+ },
+ {
+  "id": "q-en-rgram-222",
+  "type": "write",
+  "level": 1,
+  "q": "Luka (4)",
+  "group": "g-en-rgram-06",
+  "gap": 4,
+  "answers": [
+   "for"
+  ],
+  "explain": "Present/Past Perfect Continuous z for + okres."
+ },
+ {
+  "id": "q-en-rgram-223",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (5)",
+  "group": "g-en-rgram-06",
+  "gap": 5,
+  "answers": [
+   "before",
+   "by"
+  ],
+  "explain": "Before the winter began – zanim zaczęła się zima."
+ },
+ {
+  "id": "q-en-rgram-224",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (6)",
+  "group": "g-en-rgram-06",
+  "gap": 6,
+  "answers": [
+   "had"
+  ],
+  "explain": "Had to + bezokolicznik – musiała dojeżdżać."
+ },
+ {
+  "id": "q-en-rgram-225",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (7)",
+  "group": "g-en-rgram-06",
+  "gap": 7,
+  "answers": [
+   "had"
+  ],
+  "explain": "Wish + Past Perfect – żal o przeszłość."
+ },
+ {
+  "id": "q-en-rgram-226",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (8)",
+  "group": "g-en-rgram-06",
+  "gap": 8,
+  "answers": [
+   "despite"
+  ],
+  "explain": "Despite + rzeczownik: despite these problems."
+ },
+ {
+  "id": "q-en-rgram-227",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (9)",
+  "group": "g-en-rgram-06",
+  "gap": 9,
+  "answers": [
+   "whom"
+  ],
+  "explain": "Most of whom – spośród których większość; zaimek po przyimku."
+ },
+ {
+  "id": "q-en-rgram-228",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (10)",
+  "group": "g-en-rgram-06",
+  "gap": 10,
+  "answers": [
+   "better"
+  ],
+  "explain": "Had better + bezokolicznik bez to – rada."
+ },
+ {
+  "id": "q-en-rgram-229",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (11)",
+  "group": "g-en-rgram-06",
+  "gap": 11,
+  "answers": [
+   "able",
+   "ready",
+   "happy",
+   "going",
+   "learning"
+  ],
+  "explain": "Be able to – być w stanie; tu: potrafiła zająć się ogrodem."
+ },
+ {
+  "id": "q-en-rgram-230",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (12)",
+  "group": "g-en-rgram-06",
+  "gap": 12,
+  "answers": [
+   "which"
+  ],
+  "explain": "Zdanie względne odnoszące się do całego zdania: ..., which means that."
+ },
+ {
+  "id": "q-en-rgram-231",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (13)",
+  "group": "g-en-rgram-06",
+  "gap": 13,
+  "answers": [
+   "much",
+   "far",
+   "even",
+   "still"
+  ],
+  "explain": "Wzmocnienie stopnia wyższego: much less stressful."
+ },
+ {
+  "id": "q-en-rgram-232",
+  "type": "write",
+  "level": 3,
+  "q": "Luka (14)",
+  "group": "g-en-rgram-06",
+  "gap": 14,
+  "answers": [
+   "unless"
+  ],
+  "explain": "Unless = if not: nie wróciłbym, chyba że musiałbym."
+ },
+ {
+  "id": "q-en-rgram-233",
+  "type": "write",
+  "level": 2,
+  "q": "Luka (15)",
+  "group": "g-en-rgram-06",
+  "gap": 15,
+  "answers": [
+   "at"
+  ],
+  "explain": "Feel at home – czuć się jak u siebie w domu."
+ },
+ {
+  "id": "q-en-rgram-234",
+  "type": "write",
+  "level": 3,
+  "q": "'Let's meet at six,' said Anna. (PROPOSED)\nAnna ___ at six.",
+  "keyword": "proposed",
+  "maxWords": 5,
+  "answers": [
+   "proposed meeting",
+   "proposed that we meet",
+   "proposed we meet"
+  ],
+  "explain": "Propose + -ing albo propose (that) we + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-235",
+  "type": "write",
+  "level": 2,
+  "q": "The box was so heavy that I couldn't lift it. (TOO)\nThe box was ___ lift.",
+  "keyword": "too",
+  "maxWords": 5,
+  "answers": [
+   "too heavy for me to",
+   "too heavy to"
+  ],
+  "explain": "Too + przymiotnik + (for) + to + bezokolicznik."
+ },
+ {
+  "id": "q-en-rgram-236",
+  "type": "write",
+  "level": 2,
+  "q": "They have not decided where to go yet. (STILL)\nThey ___ where to go.",
+  "keyword": "still",
+  "maxWords": 5,
+  "answers": [
+   "still haven't decided",
+   "still have not decided"
+  ],
+  "explain": "Still przed haven't – wciąż nie."
+ },
+ {
+  "id": "q-en-rgram-237",
+  "type": "write",
+  "level": 2,
+  "q": "I didn't go by bus. I walked. (INSTEAD)\nI walked ___ by bus.",
+  "keyword": "instead",
+  "maxWords": 5,
+  "answers": [
+   "instead of going"
+  ],
+  "explain": "Instead of + forma -ing."
+ },
+ {
+  "id": "q-en-rgram-238",
+  "type": "write",
+  "level": 2,
+  "q": "Although he was tired, he finished the race. (SPITE)\nHe finished the race ___ tired.",
+  "keyword": "spite",
+  "maxWords": 5,
+  "answers": [
+   "in spite of being"
+  ],
+  "explain": "In spite of + forma -ing."
+ },
+ {
+  "id": "q-en-rgram-239",
+  "type": "write",
+  "level": 2,
+  "q": "How long have you been learning French? (START)\nWhen ___ French?",
+  "keyword": "start",
+  "maxWords": 5,
+  "answers": [
+   "did you start learning",
+   "did you start to learn"
+  ],
+  "explain": "Pytanie o początek czynności: did you start + -ing."
+ },
+ {
+  "id": "q-en-rgram-240",
+  "type": "write",
+  "level": 2,
+  "q": "My sister can't swim as fast as I can. (FASTER)\nI ___ my sister.",
+  "keyword": "faster",
+  "maxWords": 5,
+  "answers": [
+   "swim faster than"
+  ],
+  "explain": "Stopień wyższy + than."
+ },
+ {
+  "id": "q-en-rgram-241",
+  "type": "write",
+  "level": 2,
+  "q": "I didn't know that the shop was closed. (AWARE)\nI ___ that the shop was closed.",
+  "keyword": "aware",
+  "maxWords": 5,
+  "answers": [
+   "was not aware",
+   "wasn't aware"
+  ],
+  "explain": "Be aware that – zdawać sobie sprawę."
+ },
+ {
+  "id": "q-en-rgram-242",
+  "type": "write",
+  "level": 2,
+  "q": "My parents allowed me to stay up late. (LET)\nMy parents ___ up late.",
+  "keyword": "let",
+  "maxWords": 5,
+  "answers": [
+   "let me stay"
+  ],
+  "explain": "Let + dopełnienie + bezokolicznik bez to."
+ },
+ {
+  "id": "q-en-rgram-243",
+  "type": "write",
+  "level": 2,
+  "q": "Tom said to Kate, 'I'll call you tomorrow.' (PROMISED)\nTom ___ Kate the next day.",
+  "keyword": "promised",
+  "maxWords": 5,
+  "answers": [
+   "promised to call"
+  ],
+  "explain": "Promise + to + bezokolicznik w mowie zależnej."
+ },
+ {
+  "id": "q-en-rgram-244",
+  "type": "write",
+  "level": 2,
+  "q": "He is so shy that he never speaks in class. (SUCH)\nHe is ___ person that he never speaks in class.",
+  "keyword": "such",
+  "maxWords": 5,
+  "answers": [
+   "such a shy"
+  ],
+  "explain": "Such + a + przymiotnik + rzeczownik."
+ },
+ {
+  "id": "q-en-rgram-245",
+  "type": "write",
+  "level": 2,
+  "q": "I'm sure he forgot to lock the door. (MUST)\nHe ___ to lock the door.",
+  "keyword": "must",
+  "maxWords": 5,
+  "answers": [
+   "must have forgotten"
+  ],
+  "explain": "Pewny wniosek o przeszłości: must have + imiesłów."
+ },
+ {
+  "id": "q-en-rgram-246",
+  "type": "write",
+  "level": 2,
+  "q": "We have no more sugar in the house. (RUN)\nWe ___ of sugar.",
+  "keyword": "run",
+  "maxWords": 5,
+  "answers": [
+   "have run out"
+  ],
+  "explain": "Run out of – wyczerpać zapas."
+ },
+ {
+  "id": "q-en-rgram-247",
+  "type": "write",
+  "level": 2,
+  "q": "Someone must clean the kitchen tomorrow. (CLEANED)\nThe kitchen ___ tomorrow.",
+  "keyword": "cleaned",
+  "maxWords": 5,
+  "answers": [
+   "must be cleaned"
+  ],
+  "explain": "Strona bierna z czasownikiem modalnym."
+ },
+ {
+  "id": "q-en-rgram-248",
+  "type": "write",
+  "level": 3,
+  "q": "It's not worth waiting any longer. (POINT)\nThere ___ waiting any longer.",
+  "keyword": "point",
+  "maxWords": 5,
+  "answers": [
+   "is no point in"
+  ],
+  "explain": "There is no point in + forma -ing."
+ },
+ {
+  "id": "q-en-rgram-249",
+  "type": "choice",
+  "level": 2,
+  "q": "I can't find my keys. I think I ___ them on the bus.",
+  "options": [
+   "must have left",
+   "must leave",
+   "can have left",
+   "should leave"
+  ],
+  "answer": 0,
+  "explain": "Wniosek o przeszłości: must have + imiesłów."
+ },
+ {
+  "id": "q-en-rgram-250",
+  "type": "choice",
+  "level": 2,
+  "q": "She ___ in London for five years before she moved to Paris.",
+  "options": [
+   "lives",
+   "has lived",
+   "had lived",
+   "was lived"
+  ],
+  "answer": 2,
+  "explain": "Past Perfect dla czynności wcześniejszej."
+ },
+ {
+  "id": "q-en-rgram-251",
+  "type": "choice",
+  "level": 3,
+  "q": "He asked me where ___ the previous summer.",
+  "options": [
+   "I have been",
+   "had I been",
+   "I was being",
+   "I had been"
+  ],
+  "answer": 3,
+  "explain": "Pytanie zależne: szyk twierdzący i Past Perfect."
+ },
+ {
+  "id": "q-en-rgram-252",
+  "type": "choice",
+  "level": 2,
+  "q": "I'm fed up ___ waiting for the bus.",
+  "options": [
+   "at",
+   "of",
+   "from",
+   "with"
+  ],
+  "answer": 3,
+  "explain": "Be fed up with – mieć dość."
+ },
+ {
+  "id": "q-en-rgram-253",
+  "type": "choice",
+  "level": 3,
+  "q": "She is believed ___ the oldest person in the village.",
+  "options": [
+   "to be",
+   "to have",
+   "be",
+   "being"
+  ],
+  "answer": 0,
+  "explain": "Strona bierna: is believed to be."
+ },
+ {
+  "id": "q-en-rgram-254",
+  "type": "choice",
+  "level": 1,
+  "q": "He hasn't got ___ money to buy a car.",
+  "options": [
+   "so",
+   "too",
+   "very",
+   "enough"
+  ],
+  "answer": 3,
+  "explain": "Enough stoi przed rzeczownikiem."
+ },
+ {
+  "id": "q-en-rgram-255",
+  "type": "choice",
+  "level": 2,
+  "q": "Mum made me ___ my room.",
+  "options": [
+   "cleaned",
+   "clean",
+   "to clean",
+   "cleaning"
+  ],
+  "answer": 1,
+  "explain": "Make + dopełnienie + bezokolicznik bez to."
+ },
+ {
+  "id": "q-en-rgram-256",
+  "type": "choice",
+  "level": 2,
+  "q": "If the weather ___ better, we would go to the lake.",
+  "options": [
+   "will be",
+   "is",
+   "had been",
+   "were"
+  ],
+  "answer": 3,
+  "explain": "II okres warunkowy: if + Past Simple."
+ },
+ {
+  "id": "q-en-rgram-257",
+  "type": "choice",
+  "level": 3,
+  "q": "He is the person ___ I borrowed the book from.",
+  "options": [
+   "whose",
+   "what",
+   "which",
+   "whom"
+  ],
+  "answer": 3,
+  "explain": "Whom – zaimek względny po przyimku (from whom)."
+ },
+ {
+  "id": "q-en-rgram-258",
+  "type": "choice",
+  "level": 2,
+  "q": "It's no use ___ about the past.",
+  "options": [
+   "worrying",
+   "worry",
+   "to worry",
+   "worried"
+  ],
+  "answer": 0,
+  "explain": "It's no use + forma -ing."
  }
 ]
